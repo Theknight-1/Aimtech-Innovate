@@ -6,11 +6,14 @@ import { CiLinkedin } from "react-icons/ci";
 
 export default function Footer() {
   return (
-    <footer class="border-t-2 bg-[#185493] text-white ">
+    <footer class="relative border-t-2 bg-[#000000] text-white ">
+      <div className='absolute z-0 top-0 h-full w-full'>
+        <img src="/vector/waves.svg" className='w-full h-full' alt="" />
+      </div>
       <div class="mx-auto grid max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 sm:px-20 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
         <div class="max-w-sm text-sm">
           <div class="mb-6 flex items-start justify-start flex-col h-16 space-x-2">
-            <img class="h-full object-contain" src="/Brandlogo.png" alt="" />
+            <img class="h-full object-contain" src="/aimtech_logo_white.png" alt="" />
             {/* <span class="text-lg font-medium">AimTech</span> */}
 
           </div>

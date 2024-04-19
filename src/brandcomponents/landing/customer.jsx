@@ -3,7 +3,10 @@ import React from 'react'
 export default function Customer() {
     return (
         <>
-            <div class="mx-auto max-w-screen-lg px-8 pt-20 pb-16 text-gray-700 md:pt-24 md:pb-20">
+            <section className='bg-white'>
+
+           
+            <div class="mx-auto max-w-screen-lg px-8 pt-20 pb-16  text-gray-700 md:pt-24 md:pb-20">
                 <div class="flex flex-wrap">
                     <div class="w-full max-w-full flex-shrink-0 flex flex-col items-start justify-center  border-r-2 border-black lg:mt-2 lg:w-1/3 lg:flex-none">
                         <h2 class="mb-3 text-xs font-bold uppercase tracking-wide text-gray-500 xl:text-base">Our Clients</h2>
@@ -43,7 +46,7 @@ export default function Customer() {
                     </div>
                 </div>
             </div>
-
+            </section>
         </>
 
     )
