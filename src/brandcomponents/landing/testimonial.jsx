@@ -76,8 +76,11 @@ export default function Testimonial() {
               </button>
             </div>
           </div>
-          <div className="flex h-auto flex-1 flex-col items-center justify-center p-8">
-            <div className=" w-full h-full flex flex-col items-center justify-center" >
+          <div className="relative flex h-auto flex-1 flex-col items-center justify-center p-8">
+          <div class="absolute inset-0 z-0 p-8 flex items-center justify-center">
+                        <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
+                    </div>
+            <div className=" relative z-10 w-full h-full flex flex-col items-center justify-center" >
 
 
               <div className="flex flex-row h-auto gap-x-24 min-h-16 w-full items-center justify-center">
@@ -90,7 +93,7 @@ export default function Testimonial() {
                 </button>
                 <img
                   src={currentTestimonial.image}
-                  className="h-24 w-24 border rounded-full bg-white object-cover"
+                  className="h-32 w-32 border rounded-full bg-white object-cover"
                   alt=""
                 />
                 <button onClick={showNextTestimonial}>

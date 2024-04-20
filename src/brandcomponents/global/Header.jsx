@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+// import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function Header() {
     const [scrolling, setScrolling] = useState(false);
@@ -14,10 +14,10 @@ export default function Header() {
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
-      setImageUrl('/Brandlogo.png');
+      setImageUrl('/brand/logo/logo.svg');
     } else {
       setScrolling(false);
-      setImageUrl('/aimtech_logo_white.png');
+      setImageUrl('/brand/logo/logo.svg');
     }
   };
     return (
@@ -29,7 +29,7 @@ export default function Header() {
                 <span className='text-sm md:text-2xl'>+915464565</span>
             </div>
             </div>
-        <header class={`   sticky top-0  ${scrolling ? 'bg-white text-black shadow' : 'text-white'} z-50 mb-2 w-screen`}>
+        <header class={`   sticky top-0  ${scrolling ? 'bg-white/80 text-black shadow' : 'text-white'} z-50 mb-2 w-screen`}>
             <div class=" flex w-full flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
                 <a href="#" class="flex items-center justify-start whitespace-nowrap pl-8 text-2xl font-black">
                     <span class="mr-2 ">

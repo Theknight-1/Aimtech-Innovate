@@ -1,13 +1,28 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+import Accordion from "@/uicomponent/accordian";
 
 export default function Pland() {
+    const [selectedIndex, setSelectedIndex] = useState(null);
+
+    const accordionData = [
+        { title: 'Where is your office located?', content: 'Aimtech is the leading Digital marketting agency based in Canada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores quo tempora expedita porro, doloremque, facilis amet adipisci laboriosam nisi dolore optio magnam magni! Aliquam optio ipsa excepturi sed distinctio? Placeat in laudantium sunt magni nam voluptates veritatis vero optio, maiores accusamus quisquam labore consequatur nobis quod. Accusantium, alias facilis.' },
+        { title: 'Do you serve in US ?', content: 'Yes , we do serve in US. Aimtech is the Aimtech is the leading Digital marketting agency based in Canada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores quo tempora expedita porro, doloremque, facilis amet adipisci laboriosam nisi dolore optio magnam magni! Aliquam optio ipsa excepturi sed distinctio? Placeat in laudantium sunt magni nam voluptates veritatis vero optio, maiores accusamus quisquam labore consequatur nobis quod. Accusantium, alias facilis. leading Digital marketting agency based in Canada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores quo tempora expedita porro, doloremque, facilis amet adipisci laboriosam nisi dolore optio magnam magni! Aliquam optio ipsa excepturi sed distinctio? Placeat in laudantium sunt magni nam voluptates veritatis vero optio, maiores accusamus quisquam labore consequatur nobis quod. Accusantium, alias facilis.' },
+        { title: 'Do you serve in Caneda ?', content: 'Yes , we do serve in Caneda.' },
+        { title: 'What is you tech domain ?', content: 'Yes , we do serve in Caneda.' },
+        { title: 'Do you build only websites or full software?', content: 'Yes , we do serve in Caneda.' },
+        { title: 'How big is your team ?', content: 'Yes , we do serve in Caneda.' },
+       
+        
+       
+    ];
     return (
         <>
             {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
                 <div className='border w-full h-full '></div>
             </div> */}
-            <section class="relative h-auto min-h-96 w-screen  ">
-                <div class="relative h-[calc(100vh-10vh)] w-full bg-[#162F5C]">
+            <section class="relative h-auto min-h-96 w-screen   ">
+                <div class="relative h-[calc(100vh-10vh)] w-full  bg-[#162F5C]">
                     <div className='absolute top-0 z-0 w-full h-full '>
                         <img src="/vector/faqbg.svg" className='w-full h-full object-cover' alt="" />
                     </div>
@@ -25,26 +40,25 @@ export default function Pland() {
                                     <button className='bg-[#FFB700] w-48 p-4 text-xl font-bold text-white rounded mt-4'> +979846135461</button>
                                 </div>
                             </div>
-                            <div className='flex flex-col gap-y-4 p-10 max-h-[60vh] overflow-x-scroll    flex-1 h-auto'>
-                                <div className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'>
+                            {/* Accordion */}
+                            {/* accordian End */}
+                           
+                            <div className='flex flex-col gap-y-4 p-10 h-auto overflow-hidden    flex-1 '>
+                            {accordionData.map((item, index) => (
+                                    <Accordion
+                                        key={index}
+                                        title={item.title}
+                                        content={item.content}
+                                        index={index}
+                                        selectedIndex={selectedIndex}
+                                        setSelectedIndex={setSelectedIndex}
+                                    />
+                                ))}
+                                {/* <div className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'>
                                     <span>Where is aimtech located ?</span>
                                     <button>+</button>
-                                </div>
-                                <div className='w-full h-auto border bg-[#1B1B1B] p-2 text-xl text-white rounded'>
-                                    <p>Aimtech is the leading Digital marketting agency based in Canada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores quo tempora expedita porro, doloremque, facilis amet adipisci laboriosam nisi dolore optio magnam magni! Aliquam optio ipsa excepturi sed distinctio? Placeat in laudantium sunt magni nam voluptates veritatis vero optio, maiores accusamus quisquam labore consequatur nobis quod. Accusantium, alias facilis.</p>
-                                </div>
-                                <div className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'>
-                                    <span>How to reach Aimtech Office?</span>
-                                    <button>+</button>
-                                </div>
-                                <div className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'>
-                                    <span>How to reach Aimtech Office?</span>
-                                    <button>+</button>
-                                </div>
-                                <div className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'>
-                                    <span>How to reach Aimtech Office?</span>
-                                    <button>+</button>
-                                </div>
+                                </div> */}
+                                
 
 
                             </div>
