@@ -48,7 +48,7 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className=" min-h-[calc(100vh-20vh)] w-screen bg-[#162F5C] px-48 ">
+      <section className=" min-h-[calc(100vh-20vh)] w-screen bg-[#162F5C] px-48 mt-8 ">
         <div className="flex h-full w-full flex-col-reverse md:flex-row">
           <div className="flex h-auto gap-2  pl-10  w-full flex-col items-start justify-start md:w-1/2">
             <div className="h-2/4 w-3/4  ">

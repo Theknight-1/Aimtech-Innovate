@@ -6,12 +6,16 @@ const Accordion = ({ title, content, index, selectedIndex, setSelectedIndex }) =
 
   return (
     // className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'
-    <div className="border bg-[#1B1B1B] text-white  text-sm md:text-xl border-gray-300 rounded">
+    <div className="border  text-white  text-sm md:text-xl border-[#FFB700] rounded-xl">
       <div
         className="flex justify-between items-center p-4 cursor-pointer"
         onClick={() => setSelectedIndex(isOpen ? null : index)}
       >
+        <div className='flex gap-x-4 items-center pl-8'>
+        <img src="/arrow-double-end.svg" className=" w-4 h-4 animate-fade-right animate-infinite animate-alternate" alt="" />
+
         <h2 className="text-lg font-semibold">{title}</h2>
+        </div>
         <svg
           className={`w-6 h-6 ${isOpen ? 'transform rotate-180' : ''}`}
           fill="none"
@@ -26,7 +30,14 @@ const Accordion = ({ title, content, index, selectedIndex, setSelectedIndex }) =
           />
         </svg>
       </div>
-      {isOpen && <div className="p-4">{content}</div>}
+      <div className='pl-8'>
+
+      {isOpen && <div className="p-4 flex items-start flex-col justify-center">
+        <article>{content}</article>
+        
+        </div>}
+
+      </div>
     </div>
   );
 };

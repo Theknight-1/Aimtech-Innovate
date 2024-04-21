@@ -24,7 +24,7 @@ export default function Pland() {
             <section class="relative h-auto min-h-96 w-screen   ">
                 <div class="relative h-[calc(100vh-10vh)] w-full  bg-[#162F5C]">
                     <div className='absolute top-0 z-0 w-full h-full '>
-                        <img src="/vector/faqbg.svg" className='w-full h-full object-cover' alt="" />
+                        {/* <img src="/vector/faqbg.svg" className='w-full h-full object-cover' alt="" /> */}
                     </div>
                     <div className='absolute top-0 z-10 w-full h-auto  p-8'>
                         <div className='w-full h-auto  flex   bg-[#27262B] mt-16 p-10'>
@@ -65,7 +65,7 @@ export default function Pland() {
                         </div>
                     </div>
                 </div>
-                <div class="h-auto  w-full flex flex-col items-center justify-center bg-[#FFB700] p-10">
+                <div class="h-auto hidden w-full flex flex-col items-center justify-center bg-[#FFB700] p-10">
                     <div className='p-10 w-full h-full flex flex-col items-center justify-start '>
                         <span className='text-4xl font-bold bg-blue-500 text-white p-2 text-left'>Start</span>
                         <span className='text-[100px] font-bold'>Growing</span>

@@ -13,6 +13,7 @@ import GradientSection from "@/brandcomponents/practice/gradientsection"
 import Accordion from "@/uicomponent/accordian";
 import Hcta from '@/brandcomponents/landing/cta'
 import CaseStudy from '@/brandcomponents/landing/casestudy'
+import Services from '@/brandcomponents/landing/services'
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
@@ -29,15 +30,15 @@ export default function Home() {
     {/* <Carousel/> */}
     <GradientSection/>
   
+    <Services/>
     <CaseStudy/>
     <Testimonial/>
    
     <Pland/>
-    
   
     
     </main>
-    <Customer/>
+    {/* <Customer/> */}
     <Hcta/>
     <Footer/>
     </>

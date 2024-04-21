@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function Header() {
     const [scrolling, setScrolling] = useState(false);
-    const [imageUrl, setImageUrl] = useState('/aimtech_logo_white.png');
+    const [imageUrl, setImageUrl] = useState('/brand/logo/logo.svg');
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
