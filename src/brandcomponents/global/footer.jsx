@@ -13,7 +13,7 @@ export default function Footer() {
       <div class="mx-auto grid max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 sm:px-20 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
         <div class="max-w-sm text-sm">
           <div class="mb-6 flex items-start justify-start flex-col h-16 space-x-2">
-            <img class="h-full object-contain" src="/brand/logo/logo.svg" alt="" />
+            <img class="h-full object-contain" src="/brand/logo/logo_white.svg" alt="" />
             {/* <span class="text-lg font-medium">AimTech</span> */}
 
           </div>

@@ -9,7 +9,7 @@ export default function GradientSection() {
                 </div>
                 <div className=' w-full flex'>
                     <div class="w-full p-2 md:w-1/2 ">
-                        <div class="flex  aspect-square h-full w-full items-center justify-center">
+                        <div class="flex flex-col  aspect-square h-full w-full items-center justify-center">
                             <div className='flex  w-full h-full items-center justify-center'>
                                 <div class=" pl-10 py-10 flex flex-col items-start justify-center w-full h-full">
                                     <div class="">
@@ -19,21 +19,25 @@ export default function GradientSection() {
                                             </svg>
                                             The most cost-effective digital marketing agency of USA and Canada
                                         </p>
-                                        <h2 class="mb-6  text-5xl font-bold leading-snug tracking-tight text-white sm:text-7xl sm:leading-snug">
+                                        <h2 class="mb-6  text-5xl font-bold leading-snug tracking-tight text-white sm:text-5xl sm:leading-snug">
                                             <span>Enhance your Digital Presence and gain Market excellence</span>
-                                            <span class="my-1 inline-block border-b-8 border-white bg-orange-400 px-4 font-bold text-white">different</span>
+                                            <span class="my-1 inline-block border-b-8 border-white  px-4 font-bold text-white">different</span>
                                         </h2>
                                         <p class="text-base text-gray-100">Don't believe it? Request a free quotation today</p>
                                     </div>
-                                    <div class="mt-10 flex flex-col items-center md:flex-row">
-                                        <a href="/" class="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-blue-700 px-6 font-medium tracking-wide text-white shadow-md transition md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800">Stream Now </a>
-                                        <a href="/" aria-label="" class="group inline-flex items-center font-semibold text-white"
-                                        >Watch how it works
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-2 ml-4 h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                            </svg>
-                                        </a>
+                                    <div class="mt-10 w-3/4 h-auto flex flex-col items-center md:flex-row ">
+                                        <div className='w-full h-10 flex items-center justify-start '>
+                                            <select name="SRV" className='w-1/2 h-full  text-black rounded-l-lg ' id="">
+                                                <option value="Digital">Digital Marketting</option>
+                                                <option value="">SEO </option>
+                                                <option value="">Branding </option>
+                                                <option value="">Web development</option>
+                                            </select>
+                                            
+                                            <button className='w-48 h-full px-4 bg-yellow-400 rounded-r-lg'>Get started</button>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
