@@ -26,7 +26,15 @@ export default function Testimonial() {
   ];
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonialIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
 
+    return () => clearInterval(interval);
+  }, [currentTestimonialIndex]);
 
   const showNextTestimonial = () => {
     setCurrentTestimonialIndex((prevIndex) =>
@@ -48,15 +56,15 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className=" min-h-[calc(100vh-20vh)] w-screen bg-[#162F5C] px-48 mt-8 ">
+      <section className=" min-h-[calc(100vh-20vh)] flex flex-col items-center justify-center w-screen bg-[#162F5C] px-48 mt-8 ">
         <div className="flex h-full w-full flex-col-reverse md:flex-row">
-          <div className="flex h-auto gap-2  pl-10  w-full flex-col items-start justify-start md:w-1/2">
-            <div className="h-2/4 w-3/4  ">
+          <div className="flex h-auto gap-y-2  pl-10  w-full flex-col items-start justify-start md:w-1/2">
+            <div className="h-auto w-3/4  ">
               <span className="text-6xl font-bold text-white">
                 We Drive Innovative Marketing for Great Companies
               </span>
             </div>
-            <div className="flex h-auto w-full flex-col  mt-8 p-2">
+            <div className="flex h-auto w-full flex-col  mt-2 p-2">
               <span className="font-bold text-gray-100">
                 More than ever, you need to drive{" "}
                 <a href="#">
@@ -69,7 +77,7 @@ export default function Testimonial() {
                 We increase revenue and lower CAC with strategic marketing.
               </span>
             </div>
-            <div className="w-full flex-1 p-2">
+            <div className="w-full flex-1 p-2 border hidden">
               <button className="w-auto flex items-center justify-center gap-x-4 border bg-yellow-400 p-4 px-8  shadow-lg">
                 <span className="font-bold">Work With Us</span>
                 <img src="/arrow-double-end.svg" className="w-4 h-4 animate-fade-right animate-infinite animate-alternate" alt="" />
@@ -92,8 +100,9 @@ export default function Testimonial() {
                   />
                 </button>
                 <img
+                  key={currentTestimonialIndex}
                   src={currentTestimonial.image}
-                  className="h-32 w-32 border rounded-full bg-white object-cover"
+                  className="h-32 w-32 border animate-fade-left   rounded-full bg-white object-cover"
                   alt=""
                 />
                 <button onClick={showNextTestimonial}>
@@ -105,11 +114,11 @@ export default function Testimonial() {
                 </button>
               </div>
               <div className="flex h-auto min-h-16 w-full items-center justify-center">
-                <span className="text-center text-3xl font-bold text-white">
+                <span key={currentTestimonialIndex}  className="text-center animate-fade-left text-3xl font-bold text-white">
                   “{currentTestimonial.quote}”
                 </span>
               </div>
-              <div className="flex h-auto min-h-16 w-full flex-col items-center justify-center">
+              <div key={currentTestimonialIndex} className="flex animate-fade-left h-auto min-h-16 w-full flex-col items-center justify-center">
                 <span className="text-gray-200">{currentTestimonial.author}</span>
                 <span className="font-bold text-gray-100">
                   {currentTestimonial.company}

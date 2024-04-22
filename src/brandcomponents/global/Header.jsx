@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function Header() {
     const [scrolling, setScrolling] = useState(false);
-    const [imageUrl, setImageUrl] = useState('/brand/logo/logo.svg');
+    const [imageUrl, setImageUrl] = useState('/brand/logo/logo_white.svg');
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -17,7 +17,7 @@ export default function Header() {
       setImageUrl('/brand/logo/logo.svg');
     } else {
       setScrolling(false);
-      setImageUrl('/brand/logo/logo.svg');
+      setImageUrl('/brand/logo/logo_white.svg');
     }
   };
     return (

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from 'react';
 import Header from "../brandcomponents/global/Header"
 import Hero from "../brandcomponents/landing/hero"
-import Whyus from "../brandcomponents/landing/whyus"
+// import Whyus from "../brandcomponents/landing/whyus"
 import Footer from "@/brandcomponents/global/footer";
 import Customer from "@/brandcomponents/landing/customer"
 import Pland from "@/brandcomponents/practice/landing"
@@ -14,6 +14,7 @@ import Accordion from "@/uicomponent/accordian";
 import Hcta from '@/brandcomponents/landing/cta'
 import CaseStudy from '@/brandcomponents/landing/casestudy'
 import Services from '@/brandcomponents/landing/services'
+import Whyus from "../brandcomponents/landing/whyus";
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
@@ -30,6 +31,7 @@ export default function Home() {
     {/* <Carousel/> */}
     <GradientSection/>
   
+    <Whyus/>
     <Services/>
     <CaseStudy/>
     <Testimonial/>
