@@ -142,7 +142,7 @@ function MegaMenu() {
   };
   return (
     <>
-      <header className="flex sticky top-0 z-50 xl:px-28 lg:px-20   flex-col text-white border-[1px] ">
+      <header className="flex sticky top-0 z-50 xl:px-28 lg:px-20   flex-col text-white  ">
         <div className="flex justify-end  itmes-center  w-full lg:mt-3">
           <div className="hidden lg:flex gap-10 text-white font-semibold  ">
             <h4 className="flex items-center gap-2 text-[15px]">
