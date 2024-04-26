@@ -184,7 +184,7 @@ function MegaMenu() {
             />
             {/* <img src={logo.src} width={200} height={150} alt="" /> */}
           </a>
-          <nav className="hidden sticky top-0 lg:flex justify-center items-center gap-8">
+          <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px] text-white gap-4">
               <li className="relative group px-3 py-2">
                 <a href="#" className="hover:opacity-50 cursor-default">
@@ -197,7 +197,7 @@ function MegaMenu() {
                 </a>
               </li>
               {/*Services DropDown  */}
-              <li className="relative group  py-2">
+              <li className="relative group  py-2 ">
                 <button className="hover:opacity-50 cursor-default flex justify-self-auto items-center ">
                   Services
                   <span>
@@ -207,13 +207,13 @@ function MegaMenu() {
                     />
                   </span>
                 </button>
-                <div className="mx-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-[100vw]  transform">
-                  <div className="relative top-6 p-6  rounded-xl shadow-xl w-full bg-white">
-                    <div className="relative z-10 ">
+                <div className="mx-auto  w-full bg-[#122B59]/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                  <div className="relative top-6 p-6  rounded-xl  w-full  ">
+                    <div className="relative z-10  ">
                       <div className="flex gap-5 ">
                         {/* First Column */}
-                        <div className="flex-1" style={{ flexBasis: "15%" }}>
-                          {/* Use flex-1 class for the first box */}
+                        {/* <div className="flex-1" style={{ flexBasis: "15%" }}>
+                          
                           <div className=" uppercase tracking-wider  text-[13px] rounded-tl-lg rounded-tr-lg overflow-hidden">
                             <img
                               src='/brand/logo/logo.svg'
@@ -225,16 +225,16 @@ function MegaMenu() {
                             <h1 className="font-bold text-2xl text-center mt-2">
                               Aimtech Services
                             </h1>
-                            <p className="text-sm text-center font-bold px-3 leading-relaxed">
+                            <p className="text-sm text-center text-red-500 font-bold px-3 leading-relaxed">
                               Our services range from Digital marketing, Web
                               development to many more
                             </p>
                           </div>
-                        </div>
+                        </div> */}
 
                         {/* Second Column */}
                         <div
-                          className="flex-1 flex space-x-5 md:pl-5 pl-2"
+                          className="flex-1 flex items-center justify-center space-x-5  "
                           style={{ flexBasis: "70%" }}
                         >
                           {services.map((categoryObject, index) => {
@@ -268,7 +268,7 @@ function MegaMenu() {
                             }
 
                             return (
-                              <div key={index} className="px-5 lg:px-2 flex-1">
+                              <div key={index} className="px-6  lg:px-2 flex-1 border border-gray-200 p-4 rounded-xl bg-[#122B59]/50 backdrop-blur-2xl shadow-3xl ">
                                 <div className="flex justify-normal items-center gap-4 h-16">
                                   {iconComponent && (
                                     <span>{iconComponent}</span>
@@ -280,16 +280,16 @@ function MegaMenu() {
                                     <li key={idx}>
                                       <a
                                         href="#"
-                                        className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-gray-800 font-semibold hover:text-[#185493]"
+                                        className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-gray-300 font-semibold hover:text-yellow-400"
                                       >
                                         {service}
                                       </a>
                                     </li>
                                   ))}
-                                  <li>
+                                  <li className="animate-bounce">
                                     <a
                                       href="#"
-                                      className="flex items-center justify-start text-[#0029FF] gap-1"
+                                      className="flex items-center justify-start text-yellow-400  gap-1"
                                     >
                                       <span className="text-sm">See all</span>
                                       <LiaGreaterThanSolid size={12} />{" "}

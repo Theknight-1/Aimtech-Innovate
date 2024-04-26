@@ -32,7 +32,7 @@ export default function Home() {
       title="Aimtech innovate"
       description="Your best serach for Digital marketting and brand building."
     />
-      <section>
+      <section className="h-auto">
 
         <Navbar />
       </section>
