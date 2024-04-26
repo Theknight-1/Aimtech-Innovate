@@ -6,7 +6,7 @@ import { CiLinkedin } from "react-icons/ci";
 
 export default function Footer() {
   return (
-    <footer class="relative border-t-2 bg-[#FFFFF] text-white ">
+    <footer class="relative border-t-2 bg-[#FFFFF] text-white bg-opacity-25 backdrop-blur-2xl backdrop-filter">
       <div className='absolute z-0 top-0 h-full w-full'>
         <img src="/vector/waves.svg" className='w-full h-full' alt="" />
       </div>
