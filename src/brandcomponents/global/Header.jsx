@@ -37,7 +37,7 @@ export default function Header() {
       </div>
       <header
         className={`sticky top-0 ${
-          scrolling ? 'bg-white/ backdrop-blur-3xl text-gray-300 shadow-2xl' : 'text-white'
+          scrolling ? 'bg-white/25 backdrop-blur-3xl  text-blue-800 shadow-2xl' : 'text-white'
         } z-50 mb-2 w-screen`}
       >
         <div className='flex w-full flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center'>
@@ -87,7 +87,7 @@ export default function Header() {
                 <AnimatePresence>
                   {showMegaMenu && (
                     <motion.div
-                      className='absolute min-h-96 top-24 left-0 right-0  rounded-b-md'
+                      className='absolute min-h-96 top-24 left-0 right-0 backdrop-blur-2xl  rounded-b-md'
                       initial={{ opacity: 0, y: -20 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
