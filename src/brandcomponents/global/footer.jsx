@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer class="relative border-t-2 bg-[#FFFFF] text-white bg-opacity-25 backdrop-blur-2xl backdrop-filter">
       <div className='absolute z-0 top-0 h-full w-full'>
-        <img src="/vector/waves.svg" className='w-full h-full' alt="" />
+        {/* <img src="/vector/waves.svg" className='w-full h-full' alt="" /> */}
       </div>
       <div class="mx-auto grid max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 sm:px-20 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
         <div class="max-w-sm text-sm">

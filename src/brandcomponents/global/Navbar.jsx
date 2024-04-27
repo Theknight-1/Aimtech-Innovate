@@ -180,7 +180,7 @@ function MegaMenu() {
           <div className=" lg:hidden w-full  py-3 border-b border-gray-300 flex justify-end pr-5 lg:pr-0">
             <a
               href="#"
-              className="rounded-lg px-3 py-2 font-semibold bg-[#FCCF40] w-max "
+              className="rounded-lg px-3 py-2 font-semibold bg-[#FCCF40] w-max-lg "
             >
               <span className="text-[#122B59] font-bold text-sm">
                 Get Proposal
@@ -606,7 +606,7 @@ function MegaMenu() {
                     href="#"
                     className="rounded-lg px-3 py-2 font-semibold bg-[#FCCF40] flex items-center group"
                   >
-                    <span className="mr-2 text-[#122B59] font-bold text-xl">
+                    <span className="mr-2 text-brand-primary font-bold text-xl">
                       Get Proposal
                     </span>
                   </a>
