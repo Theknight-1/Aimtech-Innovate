@@ -56,6 +56,7 @@ function MegaMenu() {
   const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
   const [openCategory, setOpenCategory] = useState(null);
   const [scrolling, setScrolling] = useState(false);
+  const [imageUrl, setImageUrl] = useState("/brand/logo/logo_white.svg");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
