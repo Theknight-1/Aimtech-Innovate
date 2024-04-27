@@ -13,7 +13,6 @@ export default function About() {
             <Testimonial/>
             <Pland/>
             <Footer/>
-
         </>
     )
 }

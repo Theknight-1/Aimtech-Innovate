@@ -9,7 +9,6 @@ export default function CaseStudy() {
     <main className="flex min-h-screen w-screen flex-col items-center justify-start ">
         <Header/>
         <CaseLanding/>
-        
     </main>
     </>
   )
