@@ -65,51 +65,7 @@ export default function CaseStudies() {
                         </div>
                     </div>
                 </div>
-                <div class="flip-card aspect-square h-auto w-96">
-                    <div class="flip-card-inner w-full h-full">
-                        <div class="flip-card-front">
-                        <img className='w-full h-full object-cover' src="https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg" alt="" />
-
-                        </div>
-                        <div class="flip-card-back flex flex-col items-center justify-center">
-                            <h1 className='text-4xl'>Brand Name</h1>
-                            <br />
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
-                            <br />
-                            <a href="#"><p>Learn more...</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card aspect-square h-auto w-96">
-                    <div class="flip-card-inner w-full h-full">
-                        <div class="flip-card-front">
-                        <img className='w-full h-full object-cover' src="https://static.vecteezy.com/system/resources/previews/029/772/275/large_2x/happy-successful-asian-businessman-celebrating-in-modern-office-celebrate-success-and-achieving-goals-male-entrepreneur-celebrate-winning-moments-free-photo.jpeg" alt="" />
-
-                        </div>
-                        <div class="flip-card-back flex flex-col items-center justify-center">
-                            <h1 className='text-4xl'>Brand Name</h1>
-                            <br />
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
-                            <br />
-                            <a href="#"><p>Learn more...</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card aspect-square h-auto w-96">
-                    <div class="flip-card-inner w-full h-full">
-                        <div class="flip-card-front">
-                        <img className='w-full h-full object-cover' src="https://www.betterup.com/hs-fs/hubfs/Employee-smiling-amongst-coworkers-at-office-team-collaboration.jpg?width=2121&height=1414&name=Employee-smiling-amongst-coworkers-at-office-team-collaboration.jpg" alt="" />
-
-                        </div>
-                        <div class="flip-card-back flex flex-col items-center justify-center">
-                            <h1 className='text-4xl'>Brand Name</h1>
-                            <br />
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
-                            <br />
-                            <a href="#"><p>Learn more...</p></a>
-                        </div>
-                    </div>
-                </div>
+               
                 
                 
                

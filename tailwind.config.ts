@@ -9,6 +9,7 @@ const config: Config = {
     "./src/uicomponent/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -17,6 +18,22 @@ const config: Config = {
       },
       backgroundColor: {
         'radial-gradient': 'radial-gradient(169.40% 89.55% at 94.76% 6.29%, rgba(0, 0, 0, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%)',
+      },
+      colors: {
+        brand: {
+          primary: '#122B59',
+          secondary: '#FCCF40',
+          accent: '#F39C12',
+          // Add more brand colors as needed
+        },
+      },
+      classes: {
+        'glass': {
+          'backgroundColor': 'rgba(255, 255, 255, 0.2)',
+          'backdropFilter': 'blur(10px)',
+          'borderRadius': '8px',
+          'boxShadow': '0 0 20px rgba(0, 0, 0, 0.1)',
+        },
       },
     },
   },
