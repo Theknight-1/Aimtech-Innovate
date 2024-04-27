@@ -1,10 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-// import { Link, animateScroll as scroll } from 'react-scroll';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Header() {
-    const [scrolling, setScrolling] = useState(false);
-    const [imageUrl, setImageUrl] = useState('/brand/logo/logo_white.svg');
+  const [scrolling, setScrolling] = useState(false);
+  const [imageUrl, setImageUrl] = useState('/brand/logo/logo_white.svg');
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -14,7 +15,7 @@ export default function Header() {
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
-      setImageUrl('/brand/logo/logo.svg');
+      setImageUrl('/brand/logo/logo_white.svg');
     } else {
       setScrolling(false);
       setImageUrl('/brand/logo/logo_white.svg');

@@ -19,7 +19,7 @@ export default function GradientSection() {
                                             </svg>
                                             The most cost-effective digital marketing agency of USA and Canada
                                         </p>
-                                        <h2 class="mb-6  text-5xl font-bold leading-snug tracking-tight text-white sm:text-5xl sm:leading-snug">
+                                        <h2 class="mb-6 text-sm lg:text-5xl font-bold leading-snug tracking-tight text-white sm:text-5xl sm:leading-snug">
                                             <span>Enhance your Digital Presence and gain Market excellence</span>
                                             <span class="my-1 inline-block border-b-8 border-white  px-4 font-bold text-white">different</span>
                                         </h2>

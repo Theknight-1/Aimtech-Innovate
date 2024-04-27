@@ -4,7 +4,7 @@ export default function brandservice() {
     return (
 
         <section class="overflow-hidden text-white   px-2 md:px-48">
-            <div className='w-full h-48  flex flex-col items-center justify-center p-2 gap-y-4'>
+            <div className='w-full h-auto  flex flex-col items-center justify-center p-2 gap-y-4'>
                 <article className='text-5xl text-center'>Drive More Traffic to Your Website with Professional SEO Services</article>
                 <span>AimTech Innovate’s expert SEO & content marketing team will increase your online visibility, search rankings, and website traffic.</span>
                 <button className='border p-4  gap-2 bg-transparent flex'>Boost Rankings & Revenue <img src="/arrow-double-end.svg" className='h-6 w-auto aspect-square' alt="" /></button>

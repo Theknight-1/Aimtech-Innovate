@@ -16,6 +16,7 @@ import CaseStudies from '@/brandcomponents/landing/casestudy'
 import Services from '@/brandcomponents/landing/services'
 import Whyus from "../brandcomponents/landing/whyus";
 import Navbar from "@/brandcomponents/global/Navbar";
+import { NextSeo } from 'next-seo';
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
@@ -26,12 +27,17 @@ export default function Home() {
   ];
   return (
     <>
-      {/* <section>
+    <title> Aimtech innovate </title>
+    <NextSeo
+      title="Aimtech innovate"
+      description="Your best serach for Digital marketting and brand building."
+    />
+      <section className="h-auto">
 
         <Navbar />
-      </section> */}
+      </section>
       <main className="flex min-h-screen w-screen flex-col items-center justify-start ">
-        <Header />
+        {/* <Header /> */}
         {/* <Carousel/> */}
         <GradientSection />
 
