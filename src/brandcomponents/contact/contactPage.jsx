@@ -39,7 +39,7 @@ const contactPage = () => {
   return (
     <section className="w-full h-full">
       <div className="flex h-full flex-col lg:flex-row mt-10   ">
-        <div className="flex-1 flex  justify-end h-auto p-2 ">
+        <div className="flex-1 flex  justify-center h-auto p-2 ">
           <div className="w-[70%] space-y-10 p-5">
             <h1 className="text-white text-[3rem] font-semibold">
               Contact us to drive your CX & EX at scale
@@ -51,11 +51,36 @@ const contactPage = () => {
               at a fraction of the cost.
             </p>
             <div className="space-y-5">
-              <p className="flex items-center gap-6 text-white text-2xl"><span><FaCheckCircle /></span> Efficient and Timely Completion</p>
-              <p className="flex items-center gap-6 text-white text-2xl"><span><FaCheckCircle /></span> Accuracy and Relevancy</p>
-              <p className="flex items-center gap-6 text-white text-2xl"><span><FaCheckCircle /></span> Efficient and Timely Completion</p>
-              <p className="flex items-center gap-6 text-white text-2xl"><span><FaCheckCircle /></span> Accuracy and Relevancy</p>
-              <p className="flex items-center gap-6 text-white text-2xl"><span><FaCheckCircle /></span> Efficient and Timely Completion</p>
+              <p className="flex items-center gap-6 text-white text-2xl">
+                <span>
+                  <FaCheckCircle />
+                </span>{" "}
+                Efficient and Timely Completion
+              </p>
+              <p className="flex items-center gap-6 text-white text-2xl">
+                <span>
+                  <FaCheckCircle />
+                </span>{" "}
+                Accuracy and Relevancy
+              </p>
+              <p className="flex items-center gap-6 text-white text-2xl">
+                <span>
+                  <FaCheckCircle />
+                </span>{" "}
+                Efficient and Timely Completion
+              </p>
+              <p className="flex items-center gap-6 text-white text-2xl">
+                <span>
+                  <FaCheckCircle />
+                </span>{" "}
+                Accuracy and Relevancy
+              </p>
+              <p className="flex items-center gap-6 text-white text-2xl">
+                <span>
+                  <FaCheckCircle />
+                </span>{" "}
+                Efficient and Timely Completion
+              </p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/brandcomponents/global/Header";
+import Navbar from '@/brandcomponents/global/Navbar'
 import Hero from "@/brandcomponents/landing/hero";
 import CaseStudy from "@/brandcomponents/landing/casestudy";
 import ContactPage from "@/brandcomponents/contact/contactPage";
@@ -9,7 +9,7 @@ import Footer from "@/brandcomponents/global/footer";
 export default function Contach() {
   return (
     <>
-      <Header />
+      <Navbar />
       {/* <Hero/> */}
       <ContactPage />
       <SecondPage />

@@ -12,7 +12,6 @@ import { RiExchangeDollarLine } from "react-icons/ri";
 import { SiAffinitydesigner } from "react-icons/si";
 import { GiTechnoHeart } from "react-icons/gi";
 
-
 const AnimatedHamburger = ({ handleMobileView }) => {
   const [open, setOpen] = useState(false);
 
@@ -56,6 +55,22 @@ function MegaMenu() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
   const [openCategory, setOpenCategory] = useState(null);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  //handleScroll effect
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setScrolling(true);
+      setImageUrl("/brand/logo/logo_white.svg");
+    } else {
+      setScrolling(false);
+      setImageUrl("/brand/logo/logo_white.svg");
+    }
+  };
 
   const services = [
     {
@@ -101,8 +116,6 @@ function MegaMenu() {
     "Management Project",
   ];
 
-  
-
   const toggleCategory = (category) => {
     setOpenCategory(openCategory === category ? null : category);
   };
@@ -129,7 +142,7 @@ function MegaMenu() {
   const handleMobileView = () => {
     setServicesOpen(false);
     setCaseStudiesOpen(false);
-    setOpenCategory(false)
+    setOpenCategory(false);
     setMobileNav((pre) => !pre);
   };
 
@@ -142,7 +155,7 @@ function MegaMenu() {
   };
   return (
     <>
-      <header className="flex sticky top-0 z-50 xl:px-28 lg:px-20   flex-col text-white  ">
+      <header className="flex  flex-col text-white  ">
         <div className="flex justify-end  itmes-center  w-full lg:mt-3">
           <div className="hidden lg:flex gap-10 text-white font-semibold  ">
             <h4 className="flex items-center gap-2 text-[15px]">
@@ -175,7 +188,11 @@ function MegaMenu() {
             </a>
           </div>
         </div>
-        <div className="flex justify-between items-center  lg:h-20 h-14 px-5 lg:px-0">
+        <div
+          className={`flex items-center justify-between sticky top-0  ${
+            scrolling ? "bg-white/80 text-black shadow" : "text-white"
+          } z-50 mb-2 w-screen`}
+        >
           <a href="/" className="font-bold text-black text-xl ">
             <img
               src="/brand/logo/logo_white.svg"
@@ -187,26 +204,28 @@ function MegaMenu() {
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px] text-white gap-4">
               <li className="relative group px-3 py-2">
-                <a href="#" className="hover:opacity-50 cursor-default">
+                <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a>
               </li>
               <li className="relative group px-3 py-2">
-                <a href="#" className="hover:opacity-50 cursor-default">
+                <a href="/about" className="hover:opacity-50 cursor-pointer">
                   About us
                 </a>
               </li>
               {/*Services DropDown  */}
               <li className="relative group  py-2 ">
-                <button className="hover:opacity-50 cursor-default flex justify-self-auto items-center ">
-                  Services
-                  <span>
-                    <RiArrowDropDownLine
-                      size={30}
-                      className="group-hover:-rotate-180 transition duration-300"
-                    />
-                  </span>
-                </button>
+                <a href="/services">
+                  <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center ">
+                    Services
+                    <span>
+                      <RiArrowDropDownLine
+                        size={30}
+                        className="group-hover:-rotate-180 transition duration-300"
+                      />
+                    </span>
+                  </button>
+                </a>
                 <div className="mx-auto  w-full bg-[#122B59]/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
                   <div className="relative top-6 p-6  rounded-xl  w-full  ">
                     <div className="relative z-10  ">
@@ -268,7 +287,10 @@ function MegaMenu() {
                             }
 
                             return (
-                              <div key={index} className="px-6  lg:px-2 flex-1 border border-gray-200 p-4 rounded-xl bg-[#122B59]/50 backdrop-blur-2xl shadow-3xl ">
+                              <div
+                                key={index}
+                                className="px-6  lg:px-2 flex-1 border border-gray-200 p-4 rounded-xl bg-[#122B59]/50 backdrop-blur-2xl shadow-3xl "
+                              >
                                 <div className="flex justify-normal items-center gap-4 h-16">
                                   {iconComponent && (
                                     <span>{iconComponent}</span>
@@ -328,15 +350,17 @@ function MegaMenu() {
               </li>
               {/* Case Study DropDown */}
               <li className="relative group py-2 ">
-                <button className="hover:opacity-50 cursor-default flex justify-self-auto items-center">
-                  Case Studies
-                  <span>
-                    <RiArrowDropDownLine
-                      size={30}
-                      className="group-hover:-rotate-180 transition duration-300"
-                    />
-                  </span>
-                </button>
+                <a href="/casestudy">
+                  <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center">
+                    Case Studies
+                    <span>
+                      <RiArrowDropDownLine
+                        size={30}
+                        className="group-hover:-rotate-180 transition duration-300"
+                      />
+                    </span>
+                  </button>
+                </a>
                 <div className="mx-auto fixed top-32 left-0 transition group-hover:-translate-y-10 translate-y-0   opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-[100vw]  transform">
                   <div className="relative top-6 p-6  rounded-xl shadow-xl w-full bg-white">
                     {/* triangle box */}
@@ -570,7 +594,7 @@ function MegaMenu() {
               </li>
               {/* Other list items and dropdowns go here */}
               <li className="relative group px-3 py-2">
-                <a href="#" className="hover:opacity-50 cursor-default">
+                <a href="/contact" className="hover:opacity-50 cursor-pointer">
                   Contact
                 </a>
               </li>
@@ -648,7 +672,7 @@ function MegaMenu() {
                                 className="cursor-pointer flex justify-between w-full"
                               >
                                 <span>{category}</span>{" "}
-                                <RiArrowDropDownLine size={30} className=""/>
+                                <RiArrowDropDownLine size={30} className="" />
                               </span>
                             </div>
                             {isOpen && (

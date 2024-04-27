@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Header from '@/brandcomponents/global/Header'
+import Navbar from '@/brandcomponents/global/Navbar'
 import Footer from '@/brandcomponents/global/footer'
 import Testimonial from '@/brandcomponents/landing/testimonial'
 import Accordion from '@/uicomponent/accordian'
@@ -9,7 +9,7 @@ export default function About() {
    
     return (
         <>
-            <Header/>
+            <Navbar/>
             <Testimonial/>
             <Pland/>
             <Footer/>
