@@ -1,13 +1,20 @@
-import React from 'react'
-import Header from '@/brandcomponents/global/Header'
-import Hero from '@/brandcomponents/landing/hero'
-import CaseStudy from '@/brandcomponents/landing/casestudy'
+import React from "react";
+import Header from "@/brandcomponents/global/Header";
+import Hero from "@/brandcomponents/landing/hero";
+import CaseStudy from "@/brandcomponents/landing/casestudy";
+import ContactPage from "@/brandcomponents/contact/contactPage";
+import SecondPage from "@/brandcomponents/contact/secondPage";
+import ThirdPage from "@/brandcomponents/contact/thirdPage";
+import Footer from "@/brandcomponents/global/footer";
 export default function Contach() {
   return (
     <>
-    <Header/>
-    {/* <Hero/> */}
-    {/* <CaseStudy/> */}
+      <Header />
+      {/* <Hero/> */}
+      <ContactPage />
+      <SecondPage />
+      <ThirdPage />
+      <Footer/>
     </>
-  )
+  );
 }
