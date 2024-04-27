@@ -1,124 +1,185 @@
-import React from 'react'
-
+import React from "react";
+import Cards from "@/brandcomponents/casestudy/cards";
 export default function CaseLanding() {
-    return (
-        <>
-            <main className='text-white  w-full' >
-                <article>
-                    <header class=" pt-8 text-center">
-                        <p class="">Published April 4, 2022</p>
-                        <h1 class="mt-2 text-3xl font-bold  sm:text-5xl">7 rules of effective marketing</h1>
-                        <p class="mt-6 text-lg ">You're doing marketing the wrong way</p>
-                        <div class="mt-6 flex text-gray-600 flex-wrap justify-center gap-2" aria-label="Tags">
-                            <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium  hover:bg-gray-200">Marketing</button>
-                            <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium  hover:bg-gray-200">Branding</button>
-                            <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium  hover:bg-gray-200">Digital</button>
-                            <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium  hover:bg-gray-200">Identity</button>
-                            <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium  hover:bg-gray-200">Development</button>
-                            <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium  hover:bg-gray-200">Publishing</button>
-                        </div>
-                        <div className=' w-full h-[calc(100vh-20vh)]  flex items-center justify-center p-4 px-32'>
-
-                            <img class=" w-full h-full object-contain" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Featured Image" />
-                        </div>
-                    </header>
-
-                    <div class="md:px-32 mt-10 flex flex-col gap-y-4 ">
-                        <div>
-                            <h1 className='text-xl md:text-4xl'>Heading</h1>
-                            <ul className='pt-2 '>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum? lorem</p></li>
-                            </ul>
-                        </div>
-                        <hr />
-                        <div>
-                            <h1 className='text-xl md:text-4xl'>Another Heading</h1>
-                            <ul className='pt-2 '>
-                                <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores unde cumque eveniet mollitia molestias reprehenderit consequatur animi totam, rerum possimus ipsum provident a blanditiis! Enim tempore inventore obcaecati natus libero. Sunt eligendi corrupti, eius possimus repellendus laborum reprehenderit eum beatae nostrum neque est assumenda odio, aut quod veniam tempore totam.</p></li>
-                            </ul>
-                        </div>
-                        <hr />
-                        <div>
-                            <h1 className='text-xl md:text-4xl'>Another Heading</h1>
-                            <ul className='pt-2 '>
-                                <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, libero fuga obcaecati distinctio repellat neque nesciunt consequatur, fugit mollitia, enim sit id odit dolorum cupiditate quisquam labore! Nulla libero nobis, reprehenderit temporibus illum dolorum adipisci fugit? Tempora ad provident alias maiores assumenda dolor in ut esse delectus similique reprehenderit minus repellat enim illum voluptates, est neque sunt, dicta vel necessitatibus. Inventore eos earum ipsam fugit beatae dolor quidem mollitia, assumenda ex cum molestias nostrum tenetur similique incidunt corporis minima asperiores, enim sunt voluptatum. Quo, sit eveniet? Recusandae quam perspiciatis iste eaque, asperiores laboriosam assumenda soluta a aliquam reprehenderit, culpa possimus!</p></li>
-                            </ul>
-                        </div>
-                        <hr />
-                        <div>
-                            <h1 className='text-xl md:text-4xl'>Another Heading</h1>
-                            <ul className='pt-2 '>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum? lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt, ipsum officiis ea provident dolore vitae, qui sint eum neque soluta tempora, officia repellendus? Quaerat non ratione obcaecati, quae neque nemo asperiores eum nostrum maxime eos ad voluptas error exercitationem atque! Repellendus tempore impedit, nihil facere officia vitae natus quasi ex id sequi deserunt tenetur laudantium unde illo numquam. Tenetur.</p></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </article>
-            </main>
-            <section class="py-20 ">
-                <h1 class="mb-12 text-center font-sans text-5xl text-white font-bold">Recent Posts</h1>
-                <div class=" px-32 grid  grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-10">
-
-                    
-
-                    <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
-                        <a href="#" class="block h-full w-full">
-                            <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
-                            <div class="w-full bg-white p-4">
-                                <p class="text-md font-medium text-indigo-500">Coding</p>
-                                <p class="mb-2 text-xl font-medium ">Getting to know the Ice Factory Pattern</p>
-                                <p class="text-md font-light ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
-                                <div class="justify-starts mt-4 flex flex-wrap items-center">
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#js</div>
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#icefactory</div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
-                        <a href="#" class="block h-full w-full">
-                            <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
-                            <div class="w-full bg-white p-4">
-                                <p class="text-md font-medium text-indigo-500">Coding</p>
-                                <p class="mb-2 text-xl font-medium ">Getting to know the Ice Factory Pattern</p>
-                                <p class="text-md font-light ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
-                                <div class="justify-starts mt-4 flex flex-wrap items-center">
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#js</div>
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#icefactory</div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
-                        <a href="#" class="block h-full w-full">
-                            <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
-                            <div class="w-full bg-white p-4">
-                                <p class="text-md font-medium text-indigo-500">Coding</p>
-                                <p class="mb-2 text-xl font-medium ">Getting to know the Ice Factory Pattern</p>
-                                <p class="text-md font-light ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
-                                <div class="justify-starts mt-4 flex flex-wrap items-center">
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#js</div>
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#icefactory</div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
-                        <a href="#" class="block h-full w-full">
-                            <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
-                            <div class="w-full bg-white p-4">
-                                <p class="text-md font-medium text-indigo-500">Coding</p>
-                                <p class="mb-2 text-xl font-medium ">Getting to know the Ice Factory Pattern</p>
-                                <p class="text-md font-light ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
-                                <div class="justify-starts mt-4 flex flex-wrap items-center">
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#js</div>
-                                    <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs ">#icefactory</div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
+  // const images = [
+  //   {
+  //     url: "https://source.unsplash.com/random/400x600",
+  //     alt: "Image 1",
+  //     size: "h-96",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/800x400",
+  //     alt: "Image 2",
+  //     size: "h-56",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/600x800",
+  //     alt: "Image 3",
+  //     size: "h-96",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/600x600",
+  //     alt: "Image 4",
+  //     size: "h-72",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/800x600",
+  //     alt: "Image 5",
+  //     size: "h-56",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/400x800",
+  //     alt: "Image 6",
+  //     size: "h-96",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/800x800",
+  //     alt: "Image 7",
+  //     size: "h-96",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/600x400",
+  //     alt: "Image 8",
+  //     size: "h-56",
+  //   },
+  //   {
+  //     url: "https://source.unsplash.com/random/400x400",
+  //     alt: "Image 9",
+  //     size: "h-72",
+  //   },
+  // ];
+  return (
+    <>
+      <section className="text-white  w-full">
+        <article>
+          <header className="text-center">
+            <div className="relative w-full h-[calc(100vh-35vh)] flex items-center justify-center">
+              <div className="absolute text-white z-20">
+                <h1 className="text-4xl font-bold">Demo Brand Name</h1>
+                <h1 className="text-[4rem] font-bold">SEO Case Study</h1>
+              </div>
+              <div className="absolute w-full h-full ">
+                <div className="absolute inset-0 w-full h-full bg-black opacity-50"></div>
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="Featured Image"
+                />
+              </div>
+            </div>
+          </header>
+          <div className="mt-10">
+            <div>
+              <h1 className="text-[3rem] font-bold text-center">
+                published datt
+              </h1>
+            </div>
+            <div className="flex w-full mx-36">
+              <div className="w-[40%] flex flex-col ">
+                <div>
+                  <h1 className="text-[3.5rem] font-bold uppercase mb-3">
+                    Used Plateform
+                  </h1>
+                  <ul>
+                    <li className="text-3xl">Facebook</li>
+                    <li className="text-3xl">Google</li>
+                    <li className="text-3xl">Ads</li>
+                  </ul>
                 </div>
-            </section>
-        </>
-    )
+              </div>
+              <div className="w-[45%]">
+                <ul className="flex justify-center gap-10">
+                  <li>
+                    <h1 className="text-[3rem] font-bold">7.5X</h1>
+                    <p className="text-2xl">
+                      ROAS (Return on Ad Spend) on Facebook
+                    </p>
+                  </li>
+                  <li>
+                    <h1 className="text-[3rem] font-bold">10.1X</h1>
+                    <p className="text-2xl">
+                      ROAS (Return on Ad Spend) on Google Ads
+                    </p>
+                  </li>
+                  <li>
+                    <h1 className="text-[3rem] font-bold">49%</h1>
+                    <p className="text-2xl">Increase in Attributed Sales</p>
+                  </li>
+                  <li>
+                    <h1 className="text-[3rem] font-bold">1.8%</h1>
+                    <p className="text-2xl">CTR</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="md:px-32 mt-10 flex gap-10   gap-y-4 ">
+            <div className="flex-1">
+              <h1 className="text-[3.5rem] font-bold uppercase mb-3">
+                Client Goals
+              </h1>
+              <ul className="space-y-5 p-2 tracking-normal">
+                <li className="text-3xl">
+                  1. Increase brand awareness and reach within the target
+                  audience.
+                </li>
+                <li className="text-3xl">
+                  2. Drive website traffic and boost sales of fitness equipment
+                  and accessories.
+                </li>
+                <li className="text-3xl">
+                  3. Improve return on investment (ROI) and return on ad spend
+                  (ROAS) from advertising efforts.
+                </li>
+                <li className="text-3xl">
+                  4. Enhance engagement metrics such as click-through rate (CTR)
+                  and conversion rate.
+                </li>
+              </ul>
+            </div>
+            <div className="flex-1">
+              <img src="./case-study-1.png" alt="" />
+            </div>
+          </div>
+          <div class="md:px-32 mt-10 flex gap-10 w-full gap-y-4 ">
+            <div className="flex-1">
+              <img src="./case-study-2.png" alt="" />
+            </div>
+            <div className="flex-1 p-5">
+              <h1 className="text-[3.5rem] font-bold uppercase mb-3">
+                How We Helped
+              </h1>
+              <p className="text-3xl leading-normal">
+                Our strategy involved the creation of new creative assets that
+                would inform and educate the audience about the solutions and
+                expertise that Kintec offers. For this, we created campaigns for
+                every step of the funnel, using the most relevant interest
+                targeting and also leveraging custom and lookalike audiences for
+                maximum reach and engagement of our target audience.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section className="w-full">
+        {/* <div className="grid grid-cols-3 gap-4">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`bg-gray-200 overflow-hidden rounded-lg shadow-md ${image.size}`}
+            >
+              <img
+                src={image.url}
+                alt={image.alt}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          ))}
+        </div> */}
+      </section>
+      <section class="py-20 ">
+        <Cards />
+      </section>
+    </>
+  );
 }
