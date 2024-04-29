@@ -32,10 +32,9 @@ export default function Home() {
       title="Aimtech innovate"
       description="Your best serach for Digital marketting and brand building."
     />
-      <section className="h-auto">
+      
 
         <Navbar />
-      </section>
       <main className="flex min-h-screen w-screen flex-col items-center justify-start ">
         {/* <Header /> */}
         {/* <Carousel/> */}

@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from "../brandcomponents/global/Header"
+import Navbar from '@/brandcomponents/global/Navbar'
 export default function NotFound() {
     return (
         <>
         <main className="flex min-h-screen w-screen flex-col items-center justify-start ">
-            <Header/>
+            <Navbar/>
             <div class="w-full h-[90vh] border bg-white flex flex-col items-center justify-center">
                 <div class="flex flex-col items-center justify-center">
                     <img src="/404.svg" alt="" />

@@ -3,7 +3,7 @@ import React from "react";
 export default function GradientSection() {
   return (
     <>
-      <section class="relative flex h-screen w-screen flex-col bg-[#162F5C] text-white md:flex-row">
+      <section class="flex h-full w-screen flex-col bg-[#162F5C] text-white md:flex-row">
         <div className="absolute z-0 w-full h-full">
           <img src="/vector/Waves.svg" alt="" />
         </div>
@@ -29,10 +29,8 @@ export default function GradientSection() {
                       The most cost-effective digital marketing agency of USA
                       and Canada
                     </p>
-                    <h2 class="mb-6 text-sm lg:text-5xl font-bold leading-snug tracking-tight text-white sm:text-5xl sm:leading-snug">
-                      <span>
+                    <h2 class="mb-6 text-sm lg:text-5xl font-bold leading-snug tracking-tight text-white sm:text-3xl sm:leading-snug">
                         Enhance your Digital Presence and gain Market excellence
-                      </span>
                       <span class="my-1 inline-block border-b-8 border-white  px-4 font-bold text-white">
                         different
                       </span>

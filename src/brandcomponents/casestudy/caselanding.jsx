@@ -161,7 +161,7 @@ export default function CaseLanding() {
           </div>
         </article>
       </section>
-      <section className="w-full">
+      <section className="w-full h-full mt-10">
         {/* <div className="grid grid-cols-3 gap-4">
           {images.map((image, index) => (
             <div
@@ -176,6 +176,50 @@ export default function CaseLanding() {
             </div>
           ))}
         </div> */}
+        <h1 className="text-[3.5rem] font-bold uppercase mb-3 text-center text-white">
+                Explore our work
+              </h1>
+        <ul class=" flex gap-2">
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1541411438265-4cb4687110f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGQlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+          </li>
+          <li className="">
+            <img
+              src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGQlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+             <img
+              src="https://images.unsplash.com/photo-1597283712405-819a6021326c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhkJTIwcGhvdG9zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              alt=""
+              className="mt-5"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1614160859544-177611d11f6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGQlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+          </li>
+
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGQlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+          </li>
+          <li>
+           
+          </li>
+        </ul>
       </section>
       <section class="py-20 ">
         <Cards />

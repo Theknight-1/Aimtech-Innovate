@@ -154,46 +154,54 @@ function MegaMenu() {
   const toggleCaseStudies = () => {
     setCaseStudiesOpen(!caseStudiesOpen);
   };
+
+  //convet the service into slug
+  const toSlug = (str) => {
+    return str
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w\-]+/g, "");
+  };
   return (
     <>
-      <header className="flex  flex-col text-white  ">
-        <div className="flex justify-end  itmes-center  w-full lg:mt-3">
-          <div className="hidden lg:flex gap-10 text-white font-semibold  ">
-            <h4 className="flex items-center gap-2 text-[15px]">
-              <span>
-                <GoDeviceCameraVideo size={22} />
-              </span>{" "}
-              Schedule Discovery Meet
-            </h4>
-            <h4 className="flex items-center gap-2 text-[15px]">
-              <span>
-                <FaWhatsapp size={22} />
-              </span>
-              Whatsapp{" "}
-            </h4>
-            <h4 className="flex items-center gap-2 text-xl font-bold">
-              <span>
-                <FaPhone size={15} />
-              </span>{" "}
-              +123-423-2323{" "}
-            </h4>
-          </div>
-          <div className=" lg:hidden w-full  py-3 border-b border-gray-300 flex justify-end pr-5 lg:pr-0">
-            <a
-              href="#"
-              className="rounded-lg px-3 py-2 font-semibold bg-[#FCCF40] w-max-lg "
-            >
-              <span className="text-[#122B59] font-bold text-sm">
-                Get Proposal
-              </span>
-            </a>
-          </div>
+      <div className="flex justify-end  itmes-center  w-full px-6 md:px-12 py-2 border-b border-gray-300 lg:border-none">
+        <div className="hidden lg:flex gap-10 text-white font-semibold">
+          <h4 className="flex items-center gap-2 text-[15px]">
+            <span>
+              <GoDeviceCameraVideo size={22} />
+            </span>{" "}
+            Schedule Discovery Meet
+          </h4>
+          <h4 className="flex items-center gap-2 text-[15px]">
+            <span>
+              <FaWhatsapp size={22} />
+            </span>
+            Whatsapp{" "}
+          </h4>
+          <h4 className="flex items-center gap-2 text-xl font-bold">
+            <span>
+              <FaPhone size={15} />
+            </span>{" "}
+            +123-423-2323{" "}
+          </h4>
         </div>
-        <div
-          className={`flex items-center justify-between sticky top-0  ${
-            scrolling ? "bg-white/80 text-black shadow" : "text-white"
-          } z-50 mb-2 w-screen`}
-        >
+        <div className=" lg:hidden w-full  flex justify-end">
+          <a
+            href="#"
+            className="rounded-lg px-2 py-1 font-semibold bg-[#FCCF40] w-max-lg "
+          >
+            <span className="text-[#122B59] font-bold text-sm">
+              Get Proposal
+            </span>
+          </a>
+        </div>
+      </div>
+      <header
+        className={`sticky top-0 px-6 md:px-12 ${
+          scrolling ? "bg-white/80 text-black shadow" : "text-white"
+        } z-50 mb-2 w-screen`}
+      >
+        <div className="flex items-center justify-between">
           <a href="/" className="font-bold text-black text-xl ">
             <img
               src="/brand/logo/logo_white.svg"
@@ -203,7 +211,7 @@ function MegaMenu() {
             {/* <img src={logo.src} width={200} height={150} alt="" /> */}
           </a>
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
-            <ul className="flex items-center justify-evenly xl:text-[22px] text-white gap-4">
+            <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2">
                 <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
@@ -302,7 +310,7 @@ function MegaMenu() {
                                   {servicesList.map((service, idx) => (
                                     <li key={idx}>
                                       <a
-                                        href="#"
+                                        href={`/services/${toSlug(service)}`} // Use the slug as the href
                                         className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-gray-300 font-semibold hover:text-yellow-400"
                                       >
                                         {service}
@@ -362,19 +370,18 @@ function MegaMenu() {
                     </span>
                   </button>
                 </a>
-                <div className="mx-auto fixed top-32 left-0 transition group-hover:-translate-y-10 translate-y-0   opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-[100vw]  transform">
-                  <div className="relative top-6 p-6  rounded-xl shadow-xl w-full bg-white">
+                <div className="mx-auto  w-full bg-[#122B59]/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                  <div className="relative top-6 p-6  rounded-xl shadow-xl w-full">
                     {/* triangle box */}
-                    <div className="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform    group-hover:translate-x-[20rem] duration-500 ease-in-out rounded-sm"></div>
                     <div className="relative z-10 ">
                       <div className="flex gap-5 ">
                         {/* Second Column */}
                         <div
-                          className="flex-1 flex space-x-1"
+                          className="flex-1 flex space-x-5"
                           style={{ flexBasis: "85%" }}
                         >
                           {/* Use flex-2 class for the second box */}
-                          <div className="px-3">
+                          <div className="p-4 border border-white rounded-lg">
                             <div className="">
                               <h1 className="font-bold">Latest Case Studies</h1>
                             </div>
@@ -438,7 +445,7 @@ function MegaMenu() {
                               </li>
                             </ul>
                           </div>
-                          <div className="px-3">
+                          <div className="p-4 border border-white rounded-lg">
                             <div className="">
                               <h1 className="font-bold">Latest Case Studies</h1>
                             </div>
@@ -502,7 +509,7 @@ function MegaMenu() {
                               </li>
                             </ul>
                           </div>
-                          <div className="px-3">
+                          <div className="p-4 border border-white rounded-lg">
                             <div className="">
                               <h1 className="font-bold">Latest Case Studies</h1>
                             </div>
