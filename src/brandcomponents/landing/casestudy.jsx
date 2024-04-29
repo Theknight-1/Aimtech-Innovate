@@ -2,7 +2,7 @@ import React from 'react'
 import '@/brandcomponents/landing/css/style.css'
 export default function CaseStudies() {
     return (
-        <section class="container mx-auto flex flex-col items-center gap-y-10 p-10 mb-10 ">
+        <section class="container mx-auto flex flex-col items-center gap-y-10 p-10 min-h-screen ">
             <div class="flex h-16 flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
                 <div class="w-1/10 h-full"></div>
                 <div class="flex-1 flex items-center justify-center text-6xl mb-16 gap-x-8">

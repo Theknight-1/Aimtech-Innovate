@@ -1,67 +1,222 @@
-'use client'
-import React, { useState } from 'react'
-import Accordion from "@/uicomponent/accordian";
+"use client";
+import React, { useState } from "react";
+import { gsap } from "gsap";
+
+const images = [
+  "https://images.unsplash.com/photo-1594384448519-1e9529be29f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1680468710443-c5d3929403ad?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1560807707-6a5f2291a2c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1544083098-76551842b5fc?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1544083098-76551842b5fc?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+];
 
 export default function Services() {
-    const [selectedIndex, setSelectedIndex] = useState(null);
+  const [currentContent, setCurrentContent] = useState("businessImpact");
+  const [currentImage, setCurrentImage] = useState(images[0]);
 
-    const accordionData = [
-        { title: 'Web Development Services.', content: 'Yes , You heard it right , we provide Web Development Services.' },
-        { title: 'SEO Optimization', content: 'Yes , You heard it right , we provide SEO Optimization services' },
-        { title: 'Digital Marketing', content: 'Yes , You heard it right , we provide Digital Marketing services' },
-        { title: 'Software development Services.', content: 'Yes , You heard it right , we provide Software development Services' },
-        { title: 'Brand marketing service', content: 'Yes , You heard it right , we provide Brand marketing service' },
-        { title: 'Team Of Experienced Professional.', content: 'We have a team Of Experienced Professionals for every work you need.' },
+  const handleButtonClick = (targetId) => {
+    const contentContainer = document.querySelector(".content-container");
 
-    ];
-    return (
-        <section className='w-screen h-[calc(100vh-20vh)] mx-20 flex flex-col md:flex-row px-24'>
-            <div className='relative w-full gap-4 md:w-1/2 h-full p-10 flex flex-col items-center justify-start'>
-                {/* <div className='absolute -z-0 w-3/4 h-auto aspect-square rounded-full  bg-[#15BEE3]/30 blur-3xl'></div> */}
-                <div className='absolute z-0 w-full gap-4  h-full p-10 flex flex-col mt-16 items-center justify-start'>
+    if (targetId !== currentContent) {
+      gsap.to(contentContainer, {
+        opacity: 0,
+        duration: 0.5,
+        onComplete: () => {
+          setCurrentContent(targetId);
+          // Change image for new content
+          const randomIndex = Math.floor(Math.random() * images.length);
+          setCurrentImage(images[randomIndex]);
+          gsap.to(contentContainer, { opacity: 1, duration: 0.5 });
+        },
+      });
+    }
+  };
 
-                    <div className='flex gap-4 w-full items-center justify-center '>
-                        {/* <svg width="129" height="146" className='scale-x-[-1]' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
-                        </svg> */}
-
-                        <span className='text-sm md:text-6xl font-bold w-full  text-[#FFB700] text-left'>What we provide</span>
-                        {/* <svg width="129" height="146" className='' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
-                        </svg> */}
-
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center gap-y-4 text-white'>
-                        <button className='p-4 w-full 12 text-sm md:text-4xl text-left  hover:bg-yellow-400 active:bg-yellow-400 active:text-white font-bold'>Digital marketting</button>
-                        <button className='p-4 w-full 12 text-sm md:text-4xl text-left  hover:bg-yellow-400'>SEO Optimization</button>
-                        <button className='p-4 w-full 12 text-sm md:text-4xl text-left  hover:bg-yellow-400'>Web Developement</button>
-                        <button className='p-4 w-full 12 text-sm md:text-4xl text-left  hover:bg-yellow-400'>Brnad marketing</button>
-                        <button className='p-4 w-full 12 text-sm md:text-4xl text-left  hover:bg-yellow-400'>Software Development</button>
-
-                    </div>
-                </div>
+  const getContent = () => {
+    switch (currentContent) {
+      case "businessImpact":
+        return (
+          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+            <div className="absolute text-white z-20 text-center">
+              <h1 className="text-2xl font-bold">Demo Brand Name</h1>
+              <h1 className="text-[2rem] font-bold">SEO Case Study</h1>
+              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+                Get Started
+              </button>
             </div>
-            <div className=' w-full md:w-1/2 h-full flex items-center justify-center p-4'>
-                <div className='relative flex flex-col items-center justify-center gap-y-4 p-10 h-full overflow-hidden     flex-1 '>
-                    <div className='absolute -z-0 opacity-80 w-full h-auto aspect-video'>
-
-                        <img src="https://www.shutterstock.com/image-photo/digital-online-marketing-businessman-using-600nw-1792952278.jpg" alt="" className='w-full h-full opacity-65' srcset="" />
-                    </div>
-                    <div className='absolute z-0 text-white flex items-center gap-y-4 justify-start  flex-col p-6 text-center'>
-                        <span className='text-sm md:text-5xl font-bold text-white'>
-                        Push your product to next level.
-                        </span>
-                        <div>
-                        <span className='text-center'>End-to-end payments and financial management in a single solution.</span><br />
-
-                        <span className='text-center'>Meet the right platform to help realize.</span>
-                        </div>
-                        <button className='border bg-yellow-400 text-black font-bold px-4 rounded'>Get started</button>
-                       
-                    </div>
-
-                </div>
+            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+              <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
+              <img
+                src={currentImage}
+                alt=""
+                className="h-full w-full object-cover"
+              />
             </div>
-        </section>
-    )
+          </div>
+        );
+
+      case "contentMarketing":
+        return (
+          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+            <div className="absolute text-white z-20 text-center">
+              <h1 className="text-2xl font-bold">Content Marketing</h1>
+              <p>This is the content for Content Marketing.</p>
+              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+                Get Started
+              </button>
+            </div>
+            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+              <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
+              <img
+                src={currentImage}
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        );
+
+      case "ecommerceDevelopment":
+        return (
+          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+            <div className="absolute text-white z-20 text-center">
+              <h1 className="text-2xl font-bold">Ecommerce Development</h1>
+              <p>This is the content for Ecommerce Development.</p>
+              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+                Get Started
+              </button>
+            </div>
+            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+              <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
+              <img
+                src={currentImage}
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        );
+
+      case "webDesign":
+        return (
+          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+            <div className="absolute text-white z-20 text-center">
+              <h1 className="text-2xl font-bold">Website Design</h1>
+              <p>This is the content for Website Design.</p>
+              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+                Get Started
+              </button>
+            </div>
+            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+              <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
+              <img
+                src={currentImage}
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        );
+
+      case "seoService":
+        return (
+          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+            <div className="absolute text-white z-20 text-center">
+              <h1 className="text-2xl font-bold">SEO Service</h1>
+              <p>This is the content for SEO Service.</p>
+              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+                Get Started
+              </button>
+            </div>
+            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+              <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
+              <img
+                src={currentImage}
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <section
+      id="services"
+      className="w-full min-h-screen  flex justify-center items-center"
+    >
+      <section className="flex items-center  w-full h-full  md:mx-28">
+        {/* Service Buttons */}
+        <div className="flex-1 flex flex-col justify-start items-start w-full pl-8 py-12 space-y-5 ">
+          <h1 className="text-[4.5rem] font-semibold text-[#FFB700]">
+            What we provide
+          </h1>
+          <div className="w-full pr-14">
+            <button
+              onClick={() => handleButtonClick("businessImpact")}
+              className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
+                currentContent === "businessImpact"
+                  ? "bg-[#FFB700] text-[#122F5D] font-normal"
+                  : "text-white"
+              }`}
+            >
+              Digital Marketing
+            </button>
+            <button
+              onClick={() => handleButtonClick("contentMarketing")}
+              className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
+                currentContent === "contentMarketing"
+                  ? "bg-[#FFB700] text-[#122F5D] font-normal"
+                  : "text-white"
+              }`}
+            >
+              Content Marketing
+            </button>
+            <button
+              onClick={() => handleButtonClick("ecommerceDevelopment")}
+              className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
+                currentContent === "ecommerceDevelopment"
+                  ? "bg-[#FFB700] text-[#122F5D] font-normal"
+                  : "text-white"
+              }`}
+            >
+              Ecommerce Development
+            </button>
+            <button
+              onClick={() => handleButtonClick("webDesign")}
+              className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
+                currentContent === "webDesign"
+                  ? "bg-[#FFB700] text-[#122F5D] font-normal"
+                  : "text-white"
+              }`}
+            >
+              Website Design
+            </button>
+            <button
+              onClick={() => handleButtonClick("seoService")}
+              className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
+                currentContent === "seoService"
+                  ? "bg-[#FFB700] text-[#122F5D] font-normal"
+                  : "text-white"
+              }`}
+            >
+              SEO Service
+            </button>
+          </div>
+        </div>
+
+        {/* Content Container */}
+        <div className="flex-1 flex justify-center  mt-16 ">
+          <div className="w-full h-full flex items-center justify-center ">
+            {/* Render content based on currentContent */}
+            {getContent()}
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 }

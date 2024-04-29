@@ -11,6 +11,7 @@ import { FaSignal } from "react-icons/fa";
 import { RiExchangeDollarLine } from "react-icons/ri";
 import { SiAffinitydesigner } from "react-icons/si";
 import { GiTechnoHeart } from "react-icons/gi";
+import Link from "next/link";
 
 const AnimatedHamburger = ({ handleMobileView }) => {
   const [open, setOpen] = useState(false);
@@ -224,7 +225,7 @@ function MegaMenu() {
               </li>
               {/*Services DropDown  */}
               <li className="relative group  py-2 ">
-                <a href="/services">
+                <a href="#">
                   <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center ">
                     Services
                     <span>
@@ -347,9 +348,11 @@ function MegaMenu() {
                             <span className="flex justify-center items-center">
                               <FaSignal className="text-green-300" size={80} />
                             </span>
-                            <button className="xl:px-5 px-2 py-4 md:text-sm text-[12px] font-bold bg-[#FCCF40] rounded">
-                              Read our case study
-                            </button>
+                            <Link href="/services">
+                              <button className="xl:px-5 px-2 py-4 md:text-sm text-[12px] font-bold bg-[#FCCF40] rounded">
+                                Read our case study
+                              </button>
+                            </Link>
                           </div>
                         </div>
                       </div>
