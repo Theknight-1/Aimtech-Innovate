@@ -4,7 +4,7 @@ export default function Hcta() {
   return (
     <section className="py-10 text-gray-800  sm:py-16 md:py-20 md:pb-16">
       <div className="mx-auto mb-10 hidden aspect-video h-auto w-full max-w-5xl overflow-hidden rounded-xl  shadow-lg md:block">
-        <img className="h-full w-full" src="./Frame1.png" alt="" />
+        <img className="h-full w-full" src="/Frame1.png" alt="" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:flex lg:px-8">

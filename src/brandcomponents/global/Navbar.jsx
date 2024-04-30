@@ -166,24 +166,33 @@ function MegaMenu() {
   return (
     <>
       <div className="flex justify-end  itmes-center  w-full px-6 md:px-12 py-2 border-b border-gray-300 lg:border-none">
-        <div className="hidden lg:flex gap-10 text-white font-semibold">
+        <div className="hidden lg:flex gap-10 text-white font-semibold ">
           <h4 className="flex items-center gap-2 text-[15px]">
-            <span>
-              <GoDeviceCameraVideo size={22} />
-            </span>{" "}
-            Schedule Discovery Meet
+            <a
+              href="https://calendly.com/himanshusaxena5500/30min"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <span>
+                <GoDeviceCameraVideo size={22} />
+              </span>{" "}
+              Schedule Discovery Meet
+            </a>
           </h4>
           <h4 className="flex items-center gap-2 text-[15px]">
             <span>
               <FaWhatsapp size={22} />
             </span>
-            Whatsapp{" "}
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+1905-399-6642&text=Hello from the website">
+              {" "}
+              Whatsapp{" "}
+            </a>
           </h4>
           <h4 className="flex items-center gap-2 text-xl font-bold">
             <span>
               <FaPhone size={15} />
             </span>{" "}
-            +123-423-2323{" "}
+            <a href="tel:+1905-399-6642"> +1 905-399-6642 </a>
           </h4>
         </div>
         <div className=" lg:hidden w-full  flex justify-end">
@@ -199,7 +208,9 @@ function MegaMenu() {
       </div>
       <header
         className={`sticky top-0 px-6 md:px-12 ${
-          scrolling ? "bg-white/50 backdrop-blur-3xl text-black shadow" : "text-white"
+          scrolling
+            ? "bg-white/50 backdrop-blur-3xl text-black shadow"
+            : "text-white"
         } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between">
@@ -214,30 +225,31 @@ function MegaMenu() {
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2">
-               <Link href="/"> Home</Link>
+                <Link href="/"> Home</Link>
                 {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a> */}
               </li>
               <li className="relative group px-3 py-2">
-                <Link href='/about' className="hover:opacity-50 cursor-pointer">About us</Link>
+                <Link href="/about" className="hover:opacity-50 cursor-pointer">
+                  About us
+                </Link>
                 {/* <a href="/about" className="hover:opacity-50 cursor-pointer">
                   About us
                 </a> */}
               </li>
               {/*Services DropDown  */}
               <li className="relative group  py-2 ">
-                
-                  <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center ">
-                    Services
-                    <span>
-                      <RiArrowDropDownLine
-                        size={30}
-                        className="group-hover:-rotate-180 transition duration-300"
-                      />
-                    </span>
-                  </button>
-               
+                <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center ">
+                  Services
+                  <span>
+                    <RiArrowDropDownLine
+                      size={30}
+                      className="group-hover:-rotate-180 transition duration-300"
+                    />
+                  </span>
+                </button>
+
                 <div className="mx-auto  w-full bg-[#122B59]/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
                   <div className="relative top-6 p-6  rounded-xl  w-full  ">
                     <div className="relative z-10  ">
@@ -607,7 +619,12 @@ function MegaMenu() {
               </li>
               {/* Other list items and dropdowns go here */}
               <li className="relative group px-3 py-2">
-                <Link href='/contact' className="hover:opacity-50 cursor-pointer">Contact</Link>
+                <Link
+                  href="/contact"
+                  className="hover:opacity-50 cursor-pointer"
+                >
+                  Contact
+                </Link>
                 {/* <a href="/contact" className="hover:opacity-50 cursor-pointer">
                   Contact
                 </a> */}

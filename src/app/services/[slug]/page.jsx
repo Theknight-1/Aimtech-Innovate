@@ -20,7 +20,7 @@ const page = () => {
     <>
       <Navbar />
       <Brandservice slug={params?.slug}/>
-      <section className="w-full h-full px-44">
+      {/* <section className="w-full h-full px-44">
         {params?.slug === "seo-services" ? (
           <div className="text-4xl text-center text-white">
             <h1>{file?.description}</h1>
@@ -28,7 +28,13 @@ const page = () => {
         ) : (
           <div className="text-4xl text-center text-white">{params.slug}</div>
         )}
-      </section>
+      </section> */}
+      <FCStudy/>
+      <CaseStudies />
+      <Testimonial />
+      <Pland />
+      <Hcta />
+      <Footer />
     </>
   );
 };

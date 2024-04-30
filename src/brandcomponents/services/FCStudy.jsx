@@ -2,7 +2,7 @@ import React from "react";
 
 const FCStudy = () => {
   return (
-    <section class="overflow-hidden text-white h-screen  lg:mb-16   px-2 md:px-56">
+    <section class="overflow-hidden text-white h-screen mt-5 lg:mb-16   px-2 md:px-56">
       <div className="w-full h-auto  flex flex-col items-center justify-center p-2 gap-y-4">
         <article className="text-4xl font-semibold tracking-wider text-center text-[#FCBD40]">
           Featured Case Study: Dot Foods
@@ -51,7 +51,7 @@ const FCStudy = () => {
         <div className="flex-1  w-full">
           <div className="flex flex-col items-center justify-center">
             <div className="">
-              <img src="./image31.png" alt="" />
+              <img src="/image31.png" alt="" />
             </div>
             <div className="space-y-5 mt-8">
               <h1 className="text-2xl font-semibold">Learnings</h1>
