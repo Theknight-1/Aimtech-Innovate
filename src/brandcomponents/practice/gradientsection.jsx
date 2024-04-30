@@ -10,6 +10,7 @@ import {
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { IconType } from "react-icons";
+import Link from "next/link";
 
 export default function GradientSection() {
   const [open, setOpen] = useState(false);
@@ -68,24 +69,26 @@ export default function GradientSection() {
                       style={{ originY: "top", translateX: "-50%" }}
                       className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-96 overflow-hidden"
                     >
-                      <Option setOpen={setOpen} Icon={FiEdit} text="Edit" />
+                      <Option setOpen={setOpen} Icon={"FiEdit"} text="Web Design and Development"  className="text-lg"/>
                       <Option
                         setOpen={setOpen}
-                        Icon={FiPlusSquare}
-                        text="Duplicate"
+                        Icon={"FiPlusSquare"}
+                        text="Search Engine Optimization"
+                        className="text-lg"
                       />
-                      <Option setOpen={setOpen} Icon={FiShare} text="Share" />
-                      <Option setOpen={setOpen} Icon={FiTrash} text="Remove" />
+                      <Option setOpen={setOpen} Icon={"FiShare"} text="Social Media Management" className="text-lg"/>
+                      <Option setOpen={setOpen} Icon={"FiTrash"} text="PPC Advertisement" className="text-lg"/>
+                      <Option setOpen={setOpen} Icon={"FiTrash"} text="Email Marketing" className="text-lg"/>
                     </motion.ul>
                   </motion.div>
                 </div>
               </div>
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center px-5 py-3.5 text-base font-medium text-center text-gray-900 bg-[#FFB700]  dark:text-white dark:border-gray-700 dark:hover:bg-[#ffb700d3]"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
             <div className="mt-10">
               <span></span>

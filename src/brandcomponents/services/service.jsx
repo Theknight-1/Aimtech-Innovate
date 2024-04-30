@@ -1,6 +1,17 @@
 import React from "react";
+import file from "@/Data.json";
+import Link from "next/link";
 
-export default function brandservice() {
+export default function brandservice({ slug }) {
+  const dataOBJ = {
+    title: "Search Engine Optimization",
+    tagLine: "Best SEO service",
+    desciption:
+      "SEO is all about improving a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users.",
+    benifits: ["Fast", "Optimized", "Upscale", "Ontime"],
+    link: "/contact",
+  };
+
   return (
     <section class="overflow-hidden text-white ">
       <section className="w-full h-[90vh]  flex  justify-evenly items-center bg-[url('/vector/Waves.svg')] ">
@@ -11,20 +22,24 @@ export default function brandservice() {
         </div>
         <div className=" flex items-center  justify-start">
           <div className="w-[40vw] h-[60vh] space-y-8  ">
-            <h1 className="text-[#FCCF40] text-xl">ABOUT OUR SEO SERVICE</h1>
-            <h1 className="text-[4rem] font-semibold">The Perfect Digital Connection</h1>
-            <p className="text-gray-400 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur adipiscing.</p>
-            <div className="flex text-[#FCCF40] gap-44 text-2xl">
-                <ul className="space-y-10">
-                    <li>Faster Process</li>
-                    <li>Faster Process</li>
-                </ul>
-                <ul className="space-y-10">
-                    <li>Faster Process</li>
-                    <li>24/7 Full Support</li>
-                </ul>
+            <h1 className="text-[#FCCF40] text-xl uppercase">
+              ABOUT OUR <span className="uppercase"> {slug}</span>
+            </h1>
+            <h1 className="text-[4rem] font-semibold">{dataOBJ.tagLine}</h1>
+            <p className="text-gray-200 text-lg">{dataOBJ.desciption}</p>
+            <div className="grid grid-cols-2 text-[#FCCF40] gap-4 text-2xl">
+              {dataOBJ.benifits.map((ben) => (
+                <span>{ben}</span>
+              ))}
             </div>
-            <button className="px-6 py-6 bg-[#FFB700] text-[#102D5E] font-bold text-lg rounded-xl">Discover More</button>
+            <div >
+              <Link
+                href={dataOBJ.link}
+                className="px-6 w-max block py-6 bg-[#FFB700] text-[#102D5E] font-bold text-lg rounded-xl"
+              >
+                Discover More
+              </Link>
+            </div>
           </div>
         </div>
       </section>

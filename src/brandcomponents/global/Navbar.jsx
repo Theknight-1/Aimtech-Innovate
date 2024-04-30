@@ -203,18 +203,18 @@ function MegaMenu() {
         } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between">
-          <a href="/" className="font-bold text-black text-xl ">
+          <Link href="/" className="font-bold text-black text-xl ">
             <img
               src="/brand/logo/logoFinal.png"
               className="w-24 h-12  lg:w-44 lg:h-20"
               alt=""
             />
             {/* <img src={logo.src} width={200} height={150} alt="" /> */}
-          </a>
+          </Link>
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2">
-               <Link href='/'> Home</Link>
+               <Link href="/"> Home</Link>
                 {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a> */}
@@ -312,12 +312,12 @@ function MegaMenu() {
                                 <ul className="mt-3 text-[15px]">
                                   {servicesList.map((service, idx) => (
                                     <li key={idx}>
-                                      <a
+                                      <Link
                                         href={`/services/${toSlug(service)}`} // Use the slug as the href
                                         className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-gray-300 font-semibold hover:text-yellow-400"
                                       >
                                         {service}
-                                      </a>
+                                      </Link>
                                     </li>
                                   ))}
                                   <li className="animate-bounce">
