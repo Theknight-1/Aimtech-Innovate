@@ -48,6 +48,7 @@ export default function Services() {
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
                 src={currentImage}
+                loading="lazy"
                 alt=""
                 className="h-full w-full object-cover"
               />
@@ -69,6 +70,7 @@ export default function Services() {
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
                 src={currentImage}
+                loading="lazy"
                 alt=""
                 className="h-full w-full object-cover"
               />
@@ -90,6 +92,7 @@ export default function Services() {
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
                 src={currentImage}
+                loading="lazy"
                 alt=""
                 className="h-full w-full object-cover"
               />
@@ -111,6 +114,7 @@ export default function Services() {
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
                 src={currentImage}
+                loading="lazy"
                 alt=""
                 className="h-full w-full object-cover"
               />
@@ -132,6 +136,7 @@ export default function Services() {
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
                 src={currentImage}
+                loading="lazy"
                 alt=""
                 className="h-full w-full object-cover"
               />

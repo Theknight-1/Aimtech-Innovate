@@ -214,18 +214,20 @@ function MegaMenu() {
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2">
-                <a href="/" className="hover:opacity-50 cursor-pointer">
+               <Link href='/'> Home</Link>
+                {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
-                </a>
+                </a> */}
               </li>
               <li className="relative group px-3 py-2">
-                <a href="/about" className="hover:opacity-50 cursor-pointer">
+                <Link href='/about' className="hover:opacity-50 cursor-pointer">About us</Link>
+                {/* <a href="/about" className="hover:opacity-50 cursor-pointer">
                   About us
-                </a>
+                </a> */}
               </li>
               {/*Services DropDown  */}
               <li className="relative group  py-2 ">
-                <a href="#">
+                
                   <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center ">
                     Services
                     <span>
@@ -235,7 +237,7 @@ function MegaMenu() {
                       />
                     </span>
                   </button>
-                </a>
+               
                 <div className="mx-auto  w-full bg-[#122B59]/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
                   <div className="relative top-6 p-6  rounded-xl  w-full  ">
                     <div className="relative z-10  ">
@@ -605,9 +607,10 @@ function MegaMenu() {
               </li>
               {/* Other list items and dropdowns go here */}
               <li className="relative group px-3 py-2">
-                <a href="/contact" className="hover:opacity-50 cursor-pointer">
+                <Link href='/contact' className="hover:opacity-50 cursor-pointer">Contact</Link>
+                {/* <a href="/contact" className="hover:opacity-50 cursor-pointer">
                   Contact
-                </a>
+                </a> */}
               </li>
             </ul>
             <nav>
