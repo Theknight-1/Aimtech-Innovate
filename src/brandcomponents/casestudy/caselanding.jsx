@@ -94,7 +94,7 @@ export default function CaseLanding() {
         key={sq.id}
         layout
         transition={{ duration: 0.5, type: "spring" }}
-        className="w-full h-full" // Adjusted to fill the container
+        className="w-full h-[150px]" // Adjusted to fill the container
         style={{
           backgroundImage: `url(${sq.src})`,
           backgroundSize: "cover",
