@@ -6,13 +6,13 @@ const Accordion = ({ title, content, index, selectedIndex, setSelectedIndex }) =
 
   return (
     // className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'
-    <div className="border  text-white  text-sm md:text-xl border-[#FFB700] rounded-xl">
+    <div className={`border  group  text-sm md:text-xl border-[#FFB700] rounded-xl ${isOpen ? "bg-[#FFB700] text-[#122B59]" : "text-white"}`}>
       <div
         className="flex justify-between items-center p-4 cursor-pointer"
         onClick={() => setSelectedIndex(isOpen ? null : index)}
       >
         <div className='flex gap-x-4 items-center pl-8'>
-        <img src="/arrow-double-end.svg" className=" w-4 h-4 animate-fade-right animate-infinite animate-alternate" alt="" />
+        <img src="/arrow-double-end.svg" className={` w-4 h-4  group-hover:animate-fade-right group-hover:animate-infinite group-hover:animate-alternate ${isOpen ? "hidden" :""}`} alt="" />
 
         <h2 className="text-lg font-semibold">{title}</h2>
         </div>

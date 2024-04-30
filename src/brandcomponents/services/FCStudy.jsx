@@ -2,7 +2,7 @@ import React from "react";
 
 const FCStudy = () => {
   return (
-    <section class="overflow-hidden text-white   px-2 md:px-56">
+    <section class="overflow-hidden text-white h-screen  lg:mb-16   px-2 md:px-56">
       <div className="w-full h-auto  flex flex-col items-center justify-center p-2 gap-y-4">
         <article className="text-4xl font-semibold tracking-wider text-center text-[#FCBD40]">
           Featured Case Study: Dot Foods

@@ -21,16 +21,16 @@ export default function Pland() {
             {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
                 <div className='border w-full h-full '></div>
             </div> */}
-            <section class="relative h-auto min-h-96 w-screen   ">
-                <div class="relative h-[calc(100vh-10vh)] w-full  bg-[#162F5C]">
+            <section class="relative  min-h-screen  w-screen flex items-center justify-center ">
+                <div class="relative h-[calc(100vh-10vh)] w-full  bg-[#162F5C]  ">
                     <div className='absolute top-0 z-0 w-full h-full '>
                         {/* <img src="/vector/faqbg.svg" className='w-full h-full object-cover' alt="" /> */}
                     </div>
                     <div className='absolute top-0 z-10 w-full h-auto  p-8'>
-                        <div className='w-full h-auto  flex   bg-[#27262B] mt-16 p-10'>
+                        <div className='w-full h-auto  flex   bg-[#050505e1] mt-16 p-10'>
                             <div className='flex flex-col justify-between  w-1/3 h-full p-16 '>
                                 <div>
-                                    <span className='font-bold text-6xl text-white '>Frequently Asked Questions?</span><br />
+                                    <span className='font-bold text-6xl text-white leading-normal'>Frequently Asked Questions?</span><br />
                                 </div>
                                 <hr />
                                 <br />
@@ -65,7 +65,7 @@ export default function Pland() {
                         </div>
                     </div>
                 </div>
-                <div class="h-auto hidden w-full flex flex-col items-center justify-center bg-[#FFB700] p-10">
+                {/* <div class="h-auto hidden w-full lg:flex flex-col items-center justify-center bg-[#FFB700] p-10">
                     <div className='p-10 w-full h-full flex flex-col items-center justify-start '>
                         <span className='text-4xl font-bold bg-blue-500 text-white p-2 text-left'>Start</span>
                         <span className='text-[100px] font-bold'>Growing</span>
@@ -77,7 +77,7 @@ export default function Pland() {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
             </section>
         </>
 

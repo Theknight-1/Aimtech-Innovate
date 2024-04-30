@@ -8,7 +8,7 @@ const cards = () => {
       </h1>
 
       <div className="mx-40">
-        <div className="grid h-[60vh] justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-10">
+        <div className="grid h-[50vh] justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-10">
           {/* Card 1 */}
 
           <div className="bg-white rounded-lg border shadow-md max-w-xs md:max-w-[50vh] overflow-hidden">
@@ -83,8 +83,8 @@ const cards = () => {
         </div>
       </div>
       <div className="flex  flex-col justify-center items-center">
-        <h1 className="text-center text-[4rem] font-bold text-white w-[40%]">
-          Have a project in mind? Let’s get to work.
+        <h1 className="text-center text-[3rem] font-bold text-white w-[40%]">
+          Have a project in mind? <br /> Let’s get to work.
         </h1>
         <button className="px-10 py-3 rounded-lg text-lg mt-12 bg-[#FFB700]">Start Project</button>
       </div>

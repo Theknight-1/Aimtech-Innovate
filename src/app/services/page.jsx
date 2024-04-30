@@ -13,8 +13,8 @@ export default function Services() {
       <Navbar />
       <Brandservice />
       <div className="h-32"></div>
-      <CaseStudies />
       <FCStudy/>
+      <CaseStudies />
       <Testimonial />
       <Pland />
       <Hcta />

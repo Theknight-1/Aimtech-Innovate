@@ -57,7 +57,7 @@ function MegaMenu() {
   const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
   const [openCategory, setOpenCategory] = useState(null);
   const [scrolling, setScrolling] = useState(false);
-  const [imageUrl, setImageUrl] = useState("/brand/logo/logo_white.svg");
+  const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -67,10 +67,10 @@ function MegaMenu() {
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
-      setImageUrl("/brand/logo/logo_white.svg");
+      setImageUrl("/brand/logo/logoFinal.png");
     } else {
       setScrolling(false);
-      setImageUrl("/brand/logo/logo_white.svg");
+      setImageUrl("/brand/logo/logoFinal.png");
     }
   };
 
@@ -199,14 +199,14 @@ function MegaMenu() {
       </div>
       <header
         className={`sticky top-0 px-6 md:px-12 ${
-          scrolling ? "bg-white/80 text-black shadow" : "text-white"
+          scrolling ? "bg-white/50 backdrop-blur-3xl text-black shadow" : "text-white"
         } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between">
           <a href="/" className="font-bold text-black text-xl ">
             <img
-              src="/brand/logo/logo_white.svg"
-              className="w-24 h-12  lg:w-36 lg:h-20"
+              src="/brand/logo/logoFinal.png"
+              className="w-24 h-12  lg:w-44 lg:h-20"
               alt=""
             />
             {/* <img src={logo.src} width={200} height={150} alt="" /> */}

@@ -36,11 +36,11 @@ export default function Services() {
     switch (currentContent) {
       case "businessImpact":
         return (
-          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+          <div className="relative w-full h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center">
-              <h1 className="text-2xl font-bold">Demo Brand Name</h1>
-              <h1 className="text-[2rem] font-bold">SEO Case Study</h1>
-              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+              <h1 className="text-3xl font-bold">Demo Brand Name</h1>
+              <h1 className="text-[3rem] font-bold">SEO Case Study</h1>
+              <button className=" text-xl text-[#122B59] font-bold  text-center rounded-xl bg-[#FFB700] px-3 py-2">
                 Get Started
               </button>
             </div>
@@ -57,11 +57,11 @@ export default function Services() {
 
       case "contentMarketing":
         return (
-          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+          <div className="relative w-full h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center">
-              <h1 className="text-2xl font-bold">Content Marketing</h1>
-              <p>This is the content for Content Marketing.</p>
-              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+              <h1 className="text-3xl font-bold">Content Marketing</h1>
+              <h1 className="text-[3rem] font-bold">This is the content for Content Marketing.</h1>
+              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-[#FFB700] px-3 py-2">
                 Get Started
               </button>
             </div>
@@ -78,11 +78,11 @@ export default function Services() {
 
       case "ecommerceDevelopment":
         return (
-          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+          <div className="relative w-full h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center">
               <h1 className="text-2xl font-bold">Ecommerce Development</h1>
-              <p>This is the content for Ecommerce Development.</p>
-              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+              <h1 className="text-[3rem] font-bold">This is the content for Ecommerce Development.</h1>
+              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-[#FFB700] px-3 py-2">
                 Get Started
               </button>
             </div>
@@ -99,11 +99,11 @@ export default function Services() {
 
       case "webDesign":
         return (
-          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+          <div className="relative w-full h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center">
               <h1 className="text-2xl font-bold">Website Design</h1>
-              <p>This is the content for Website Design.</p>
-              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+              <h1 className="text-[3rem] font-bold">This is the content for Website Design.</h1>
+              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-[#FFB700] px-3 py-2">
                 Get Started
               </button>
             </div>
@@ -120,11 +120,11 @@ export default function Services() {
 
       case "seoService":
         return (
-          <div className="relative w-full h-[25rem] flex items-center justify-center ">
+          <div className="relative w-full h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center">
               <h1 className="text-2xl font-bold">SEO Service</h1>
-              <p>This is the content for SEO Service.</p>
-              <button className="text-black  text-center rounded-xl bg-[#FFB700] px-3 py-2">
+              <h1 className="text-[3rem] font-bold">This is the content for SEO Service.</h1>
+              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-[#FFB700] px-3 py-2">
                 Get Started
               </button>
             </div>
@@ -147,15 +147,15 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full min-h-screen  flex justify-center items-center"
+      className="w-full min-h-screen flex justify-center items-center "
     >
       <section className="flex items-center  w-full h-full  md:mx-28">
         {/* Service Buttons */}
-        <div className="flex-1 flex flex-col justify-start items-start w-full pl-8 py-12 space-y-5 ">
-          <h1 className="text-[4.5rem] font-semibold text-[#FFB700]">
-            What we provide
+        <div className="flex-1 flex flex-col justify-start items-start w-full pl-8 py-12 space-y-10  ">
+          <h1 className="text-[5rem] font-semibold text-[#FFB700]">
+            What we provide ?
           </h1>
-          <div className="w-full pr-14">
+          <div className="w-full pr-14 space-y-5">
             <button
               onClick={() => handleButtonClick("businessImpact")}
               className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
@@ -210,7 +210,7 @@ export default function Services() {
         </div>
 
         {/* Content Container */}
-        <div className="flex-1 flex justify-center  mt-16 ">
+        <div className="flex-1 flex   mt-16 ">
           <div className="w-full h-full flex items-center justify-center ">
             {/* Render content based on currentContent */}
             {getContent()}

@@ -2,8 +2,8 @@ import React from 'react'
 import '@/brandcomponents/landing/css/style.css'
 export default function CaseStudies() {
     return (
-        <section class="container mx-auto flex flex-col items-center gap-y-10 p-10 min-h-screen ">
-            <div class="flex h-16 flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
+        <section class="container mx-auto flex flex-col items-center gap-y-10 p-10 min-h-[120vh] pb-0">
+            <div class="flex h-8 flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
                 <div class="w-1/10 h-full"></div>
                 <div class="flex-1 flex items-center justify-center text-6xl mb-16 gap-x-8">
                     <svg width="129" height="146" className='scale-x-[-1]' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,12 +39,57 @@ export default function CaseStudies() {
                     <div class="flip-card-inner w-full h-full">
                         <div class="flip-card-front flex items-center justify-center">
                         {/* <img className='w-full h-full object-cover' src="https://www.betterup.com/hs-fs/hubfs/Employee-smiling-amongst-coworkers-at-office-team-collaboration.jpg?width=2121&height=1414&name=Employee-smiling-amongst-coworkers-at-office-team-collaboration.jpg" alt="" /> */}
-                            <span className='text-6xl text-white font-bold'>?</span>
+                            <span className='text-6xl text-[#122B59] font-bold'>?</span>
                         </div>
                         <div class="flip-card-back flex flex-col items-center justify-center">
                             <h1 className='text-4xl'>You can be the Next</h1>
                             <br />
                             <p> We can help you grow.</p>
+                            <br />
+                            <a href="#"><p>Learn more...</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card aspect-square h-auto w-96">
+                    <div class="flip-card-inner w-full h-full">
+                        <div class="flip-card-front">
+                        <img className='w-full h-full object-cover' src="https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg" alt="" />
+
+                        </div>
+                        <div class="flip-card-back flex flex-col items-center justify-center">
+                            <h1 className='text-4xl'>Brand Name</h1>
+                            <br />
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
+                            <br />
+                            <a href="#"><p>Learn more...</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card aspect-square h-auto w-96">
+                    <div class="flip-card-inner w-full h-full">
+                        <div class="flip-card-front">
+                        <img className='w-full h-full object-cover' src="https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg" alt="" />
+
+                        </div>
+                        <div class="flip-card-back flex flex-col items-center justify-center">
+                            <h1 className='text-4xl'>Brand Name</h1>
+                            <br />
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
+                            <br />
+                            <a href="#"><p>Learn more...</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card aspect-square h-auto w-96">
+                    <div class="flip-card-inner w-full h-full">
+                        <div class="flip-card-front">
+                        <img className='w-full h-full object-cover' src="https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg" alt="" />
+
+                        </div>
+                        <div class="flip-card-back flex flex-col items-center justify-center">
+                            <h1 className='text-4xl'>Brand Name</h1>
+                            <br />
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
                             <br />
                             <a href="#"><p>Learn more...</p></a>
                         </div>
