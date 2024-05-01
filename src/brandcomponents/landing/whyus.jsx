@@ -38,9 +38,12 @@ export default function Whyus() {
   ];
   return (
     <section className="w-screen h-[calc(100vh-20vh)] flex  flex-col md:flex-row xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
-      <div className="relative w-full  md:w-1/2 h-full  flex flex-col  items-center justify-start">
-        <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
-        <div className="absolute z-0 w-full gap-4 md:w-full h-full  flex flex-col  items-center justify-center space-y-7">
+      
+      <div className=" w-full px-8  md:w-1/2 h-full  flex flex-col  items-center justify-start">
+        {/* <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div> */}
+        <div className="relative w-full gap-4 md:w-full h-full  flex flex-col  items-center justify-center space-y-7">
+        <div className="absolute top-0  -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
+
           <div className="w-full  flex  items-end justify-end px-10">
             <svg
               width="40"
@@ -62,7 +65,7 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
 
-            <span className="  text-[#FFB700] text-center animate-typing overflow-hidden whitespace-nowrap  pr-5 md:text-6xl sm:text-3xl text-2xl  font-bold">
+            <span className="  text-[#FFB700] text-center animate-pulse overflow-hidden whitespace-nowrap  pr-5 md:text-6xl sm:text-3xl text-2xl  font-bold">
               Why us?
             </span>
             {/* <svg width="129" height="146" className='' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">

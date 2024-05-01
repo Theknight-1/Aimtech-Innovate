@@ -257,9 +257,9 @@ function MegaMenu() {
                   </span>
                 </button>
 
-                <div className="mx-auto  w-full bg-brand-primary/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
-                  <div className="relative top-6 p-6  rounded-xl  w-full  ">
-                    <div className="relative z-10  ">
+                <div className="mx-auto  w-full bg-white h-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                  <div className="relative  p-6 h-auto rounded-lg  w-full  ">
+                    <div className=" z-10  ">
                       <div className="flex gap-5 ">
                         {/* First Column */}
                         {/* <div className="flex-1" style={{ flexBasis: "15%" }}>
@@ -284,7 +284,7 @@ function MegaMenu() {
 
                         {/* Second Column */}
                         <div
-                          className="flex-1 flex items-center justify-center space-x-5  "
+                          className="flex-1 flex items-center  justify-center space-x-5  "
                           style={{ flexBasis: "70%" }}
                         >
                           {services.map((categoryObject, index) => {
@@ -320,9 +320,9 @@ function MegaMenu() {
                             return (
                               <div
                                 key={index}
-                                className="px-6  lg:px-2 flex-1 border border-gray-200 p-4 rounded-xl bg-[#122B59]/50 backdrop-blur-2xl shadow-3xl "
+                                className="px-6  lg:px-2 flex-1 text-black  p-4 rounded-xl   "
                               >
-                                <div className="flex justify-normal items-center gap-4 h-16">
+                                <div className="flex justify-normal items-center text-brand-primary gap-4 h-16">
                                   {iconComponent && (
                                     <span>{iconComponent}</span>
                                   )}
@@ -333,7 +333,7 @@ function MegaMenu() {
                                     <li key={idx}>
                                       <Link
                                         href={`/services/${toSlug(service)}`} // Use the slug as the href
-                                        className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-gray-300 font-semibold hover:text-yellow-400"
+                                        className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-brand-primary font-semibold hover:text-brand-secondary "
                                       >
                                         {service}
                                       </Link>
@@ -342,9 +342,9 @@ function MegaMenu() {
                                   <li className="animate-bounce">
                                     <a
                                       href="#"
-                                      className="flex items-center justify-start text-yellow-400  gap-1"
+                                      className="flex items-center justify-start text-brand-secondary  gap-1"
                                     >
-                                      <span className="text-sm">See all</span>
+                                      <span className="text-sm font-bold">See all</span>
                                       <LiaGreaterThanSolid size={12} />{" "}
                                     </a>
                                   </li>
@@ -394,7 +394,7 @@ function MegaMenu() {
                     </span>
                   </button>
                 </a>
-                <div className="mx-auto divide-x divide-solid border-r-2  p-10  w-full bg-white h-auto fixed top-28 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                <div className="mx-auto divide-x divide-solid border-r-2  p-10  w-full bg-white h-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
                   <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6">
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">

@@ -56,18 +56,18 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className=" min-h-[calc(100vh-10vh)] flex flex-col items-center justify-center w-screen mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
-        <div className="flex relative h-full   w-full flex-col-reverse md:flex-row   ">
+      <section className=" min-h-[calc(100vh-10vh)] flex flex-col items-center justify-center w-full  overflow-x-hidden mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+        <div className="flex relative h-full   w-full flex-col-reverse lg:flex-row   ">
           <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>            
           
-          <div className="flex   h-auto gap-y-2 w-full flex-col items-start justify-start md:w-1/2 ">
-            <div className="h-auto w-full  ">
+          <div className="flex  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
+            <div className="h-auto w-full  flex items-center justify-center  ">
 
-              <span className="text-[5rem] font-bold text-white leading-normal">
+              <span className="text-2xl text-center lg:text-left lg:text-[4rem] font-bold text-white leading-normal">
                 We Drive Innovative Marketing for Great Companies
               </span>
             </div>
-            <div className="flex h-auto w-full flex-col  mt-2 p-2 ">
+            <div className="flex h-auto w-full  items-center lg:items-start justify-center flex-col  mt-2 p-2 ">
               <span className="font-bold text-gray-100 text-2xl">
                 More than ever, you need to drive{" "}
                 <a href="#">

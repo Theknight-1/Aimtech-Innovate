@@ -152,12 +152,12 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full min-h-screen flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4"
+      className="w-full h-auto flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 mb-10"
     >
-      <section className="flex items-center  w-full h-full">
+      <section className="flex flex-col lg:flex-row items-center  w-full h-full">
         {/* Service Buttons */}
         <div className="flex-1 flex flex-col justify-start items-start w-full py-12 space-y-10  ">
-          <h1 className="text-[5rem] font-semibold text-[#FFB700]">
+          <h1 className="text-[4rem] font-semibold text-[#FFB700]">
             What we provide ?
           </h1>
           <div className="w-full pr-14 space-y-5">
@@ -183,7 +183,7 @@ export default function Services() {
             </button>
             <button
               onClick={() => handleButtonClick("ecommerceDevelopment")}
-              className={`flex h-20 w-full items-center text-wrap pl-4 text-3xl py-8  service-btn ${
+              className={`flex h-20 w-full items-start text-left  text-wrap pl-4 text-3xl service-btn ${
                 currentContent === "ecommerceDevelopment"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"

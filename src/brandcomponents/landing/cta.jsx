@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Hcta() {
   return (
-    <section className="py-10 text-gray-800 sm:py-16 md:py-20 ">
-      <div className="relative mx-auto z-10  hidden aspect-video h-auto w-full max-w-5xl  rounded-xl  shadow-lg md:block">
+    <section className="py-10 text-gray-800 sm:py-16 md:py-20 overflow-hidden w-full px-32">
+      <div className="relative mx-auto z-10  hidden aspect-video h-auto w-full   rounded-xl  shadow-lg md:block">
         <div className="absolute top-0 -left-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
         <div className="absolute top-0 -right-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
-        <div className="relative  w-full h-full">
-          <img className="h-full  w-full" src="/Frame1.png" alt="image" />
+        <div className="absolute  flex items-center justify-center w-full h-full">
+          <img className="h-auto  w-4/5" src="/Frame1.png" alt="image" />
         </div>
       </div>
       <div className="mx-auto max-w-7xl mt-2 p-4 sm:px-6 md:flex lg:px-8">
@@ -23,8 +23,7 @@ export default function Hcta() {
 
           <div className="flex flex-col sm:flex-row sm:space-x-4 sm:px-0 ">
             <button className="relative mt-4 rounded-full bg-[#FFB700] px-6 py-2  text-blue-800 font-bold text-2xl shadow transition hover:bg-yellow-400">
-              <div className=""></div>
-              Start for free
+              Get Started
             </button>
           </div>
         </div>

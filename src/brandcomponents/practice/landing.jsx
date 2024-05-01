@@ -21,20 +21,18 @@ export default function Pland() {
             {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
                 <div className='border w-full h-full '></div>
             </div> */}
-            <section class="relative  min-h-screen  w-screen flex items-center justify-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-                <div class="relative h-[calc(100vh-10vh)] w-full  bg-[#162F5C]  ">
-                    <div className='absolute top-0 z-0 w-full h-full '>
-                        {/* <img src="/vector/faqbg.svg" className='w-full h-full object-cover' alt="" /> */}
-                    </div>
-                    <div className='absolute top-0 z-10 w-full h-auto'>
-                        <div className='w-full h-auto  flex   bg-[#050505e1] mt-16 p-10'>
-                            <div className='flex flex-col justify-between  w-1/3 h-full p-16 '>
+            <section class="  min-h-screen mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24  sm:px-8 px-4 ">
+                <div class=" h-auto w-full  bg-[#162F5C]  ">
+                    
+                    <div className='  w-full h-auto'>
+                        <div className='w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  p-10'>
+                            <div className='flex flex-col justify-between w-full lg:w-1/3 h-full p-16 '>
                                 <div>
-                                    <span className='font-bold text-6xl text-white leading-normal'>Frequently Asked Questions?</span><br />
+                                    <span className='font-bold  text-6xl text-white leading-normal'>Frequently Asked Questions?</span><br />
                                 </div>
                                 <hr />
                                 <br />
-                                <div>
+                                <div className=''>
                                     <span className='font-bold  text-2xl text-white mt-16'>Still have some Questions?</span><br />
                                     <span className='text-xl text-white'>Contact us , we will help you.</span> <br />
                                     <button className='bg-[#FFB700] w-max p-5 text-3xl font-bold text-[#141F39] rounded mt-4'> +979846135461</button>
