@@ -31,16 +31,19 @@ const AnimatedHamburger = ({ handleMobileView }) => {
         >
           <div className="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <span
-              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${open ? "rotate-45 " : "-translate-y-1.5"
-                }`}
+              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${
+                open ? "rotate-45 " : "-translate-y-1.5"
+              }`}
             ></span>
             <span
-              className={`block absolute h-0.5 w-5 bg-black transition-opacity duration-400 ease-in-out ${open ? "opacity-0" : "opacity-100"
-                }`}
+              className={`block absolute h-0.5 w-5 bg-black transition-opacity duration-400 ease-in-out ${
+                open ? "opacity-0" : "opacity-100"
+              }`}
             ></span>
             <span
-              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${open ? "-rotate-45 " : "translate-y-1.5"
-                }`}
+              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${
+                open ? "-rotate-45 " : "translate-y-1.5"
+              }`}
             ></span>
           </div>
         </button>
@@ -210,10 +213,9 @@ function MegaMenu() {
         </div>
       </div>
       <header
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${scrolling
-          ? "bg-white text-black shadow"
-          : "text-white"
-          } z-50 mb-2 w-screen`}
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
+          scrolling ? "bg-white text-black shadow" : "text-white"
+        } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between ">
           <Link href="/" className="font-bold text-black  text-xl ">
@@ -396,13 +398,16 @@ function MegaMenu() {
                   <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6">
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-blue-500 text-xl">Email related</h1>
+                      <h1 className="font-bold text-blue-500 text-xl">
+                        Email related
+                      </h1>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -411,7 +416,8 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -420,23 +426,25 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
-
-
                     </div>
                     {/* card end */}
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-[#7E62DD] text-xl">SEO related</h1>
+                      <h1 className="font-bold text-[#7E62DD] text-xl">
+                        SEO related
+                      </h1>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -445,7 +453,8 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -454,23 +463,25 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
-
-
                     </div>
                     {/* card end */}
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-green-500 text-xl">Web Developement related</h1>
+                      <h1 className="font-bold text-green-500 text-xl">
+                        Web Developement related
+                      </h1>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -479,7 +490,8 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -488,23 +500,25 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
-
-
                     </div>
                     {/* card end */}
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-[#7E62DD] text-xl">PPC related</h1>
+                      <h1 className="font-bold text-[#7E62DD] text-xl">
+                        PPC related
+                      </h1>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -513,7 +527,8 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
@@ -522,19 +537,16 @@ function MegaMenu() {
                         <div className="flex flex-col items-start gap-2 ">
                           <span className="text-xl font-bold">Case title</span>
                           <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quaerat, aut.
                           </article>
                         </div>
                       </div>
-
-
                     </div>
                     {/* card end */}
-
 
                     {/* card start */}
                     <div className="w-1/5 h-auto rounded-lg  p-2 overflow-hidden text-wrap">
-
                       <div
                         className="w-full h-full flex justify-center items-center"
                         style={{ flexBasis: "15%" }}
@@ -550,18 +562,15 @@ function MegaMenu() {
                           <span className="flex justify-center items-center">
                             <FaSignal className="text-green-300" size={80} />
                           </span>
-                          <Link href='/casestudy'>
+                          <Link href="/casestudy">
                             <button className="px-5 py-4 text-sm font-bold bg-[#FCCF40] rounded ">
                               Read our case study
                             </button>
                           </Link>
                         </div>
                       </div>
-
                     </div>
                     {/* card end */}
-
-
                   </div>
                   <div className="relative hidden top-6 p-6  rounded-xl shadow-xl w-full">
                     {/* triangle box */}
@@ -829,9 +838,7 @@ function MegaMenu() {
         </div>
       </header>
       {isOpen && (
-        <div
-          className={``}
-        >
+        <div className={``}>
           <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       )}
@@ -859,16 +866,18 @@ function MegaMenu() {
                   <span>
                     <RiArrowDropDownLine
                       size={30}
-                      className={`transform transition-transform duration-300 ${servicesOpen ? "rotate-180 opacity-50" : ""
-                        }`}
+                      className={`transform transition-transform duration-300 ${
+                        servicesOpen ? "rotate-180 opacity-50" : ""
+                      }`}
                     />
                   </span>
                 </button>
                 <div
-                  className={`w-full  ${servicesOpen
-                    ? " visible opacity-100 transition translate-y-0 duration-300 ease-linear"
-                    : "invisible opacity-0 translate-y-10 "
-                    }`}
+                  className={`w-full  ${
+                    servicesOpen
+                      ? " visible opacity-100 transition translate-y-0 duration-300 ease-linear"
+                      : "invisible opacity-0 translate-y-10 "
+                  }`}
                 >
                   {servicesOpen && (
                     <ul>
@@ -915,16 +924,18 @@ function MegaMenu() {
                   <span>
                     <RiArrowDropDownLine
                       size={30}
-                      className={`transform transition-transform duration-300 ${caseStudiesOpen ? "rotate-180" : ""
-                        }`}
+                      className={`transform transition-transform duration-300 ${
+                        caseStudiesOpen ? "rotate-180" : ""
+                      }`}
                     />
                   </span>
                 </button>
                 <div
-                  className={`w-full ${caseStudiesOpen
-                    ? "visible opacity-100 transition translate-y-0 duration-300 ease-linear "
-                    : "invisible opacity-0 translate-y-10 "
-                    }`}
+                  className={`w-full ${
+                    caseStudiesOpen
+                      ? "visible opacity-100 transition translate-y-0 duration-300 ease-linear "
+                      : "invisible opacity-0 translate-y-10 "
+                  }`}
                 >
                   {caseStudiesOpen && (
                     <ul>
