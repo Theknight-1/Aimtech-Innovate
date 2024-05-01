@@ -210,16 +210,10 @@ function MegaMenu() {
         </div>
       </div>
       <header
-<<<<<<< HEAD
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
-          scrolling ? "bg-white text-black shadow" : "text-white"
-        } z-50 mb-2 w-screen`}
-=======
         className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${scrolling
-            ? "bg-white text-black shadow"
-            : "text-white"
+          ? "bg-white text-black shadow"
+          : "text-white"
           } z-50 mb-2 w-screen`}
->>>>>>> 274ef3ed33bfba93fd412132651407e348cb9847
       >
         <div className="flex items-center justify-between ">
           <Link href="/" className="font-bold text-black  text-xl ">
@@ -872,8 +866,8 @@ function MegaMenu() {
                 </button>
                 <div
                   className={`w-full  ${servicesOpen
-                      ? " visible opacity-100 transition translate-y-0 duration-300 ease-linear"
-                      : "invisible opacity-0 translate-y-10 "
+                    ? " visible opacity-100 transition translate-y-0 duration-300 ease-linear"
+                    : "invisible opacity-0 translate-y-10 "
                     }`}
                 >
                   {servicesOpen && (
@@ -928,8 +922,8 @@ function MegaMenu() {
                 </button>
                 <div
                   className={`w-full ${caseStudiesOpen
-                      ? "visible opacity-100 transition translate-y-0 duration-300 ease-linear "
-                      : "invisible opacity-0 translate-y-10 "
+                    ? "visible opacity-100 transition translate-y-0 duration-300 ease-linear "
+                    : "invisible opacity-0 translate-y-10 "
                     }`}
                 >
                   {caseStudiesOpen && (
