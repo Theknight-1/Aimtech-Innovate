@@ -12,6 +12,7 @@ import { RiExchangeDollarLine } from "react-icons/ri";
 import { SiAffinitydesigner } from "react-icons/si";
 import { GiTechnoHeart } from "react-icons/gi";
 import Link from "next/link";
+import SpringModal from "@/brandcomponents/Modal/SpringModal";
 
 const AnimatedHamburger = ({ handleMobileView }) => {
   const [open, setOpen] = useState(false);
@@ -58,6 +59,8 @@ function MegaMenu() {
   const [openCategory, setOpenCategory] = useState(null);
   const [scrolling, setScrolling] = useState(false);
   const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
+
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -183,7 +186,10 @@ function MegaMenu() {
             <span>
               <FaWhatsapp size={22} />
             </span>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=+1905-399-6642&text=Hello from the website">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=+1905-399-6642&text=Hello from the website"
+            >
               {" "}
               Whatsapp{" "}
             </a>
@@ -208,9 +214,7 @@ function MegaMenu() {
       </div>
       <header
         className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
-          scrolling
-            ? "bg-white text-black shadow"
-            : "text-white"
+          scrolling ? "bg-white text-black shadow" : "text-white"
         } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between ">
@@ -225,7 +229,10 @@ function MegaMenu() {
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2 ">
-                <Link href="/" className="hover:opacity-50 cursor-pointer"> Home</Link>
+                <Link href="/" className="hover:opacity-50 cursor-pointer">
+                  {" "}
+                  Home
+                </Link>
                 {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a> */}
@@ -633,14 +640,16 @@ function MegaMenu() {
             <nav>
               <ul>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      setIsOpen(!isOpen);
+                    }}
                     className="rounded-lg px-3 py-2 font-semibold bg-[#FCCF40] flex items-center group"
                   >
                     <span className="mr-2 text-brand-primary font-bold text-xl">
                       Get Proposal
                     </span>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -651,6 +660,13 @@ function MegaMenu() {
           </nav>
         </div>
       </header>
+      {isOpen && (
+        <div
+          className={``}
+        >
+          <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
+      )}
       {mobileNav && (
         <div className="z-9999 fixed w-full bg-white">
           <nav className="flex flex-col ">
