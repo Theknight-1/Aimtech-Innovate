@@ -9,7 +9,7 @@ const DMsg = () => {
           <div className="flex-1 flex justify-center">
             <img src="/about/TeamMember.png" alt="" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 text-white text-2xl">
             <p>
               Founded in 2003 by Principal Architect Jordan Peters, we employ
               strategies to manage resources efficiently, including passive and
