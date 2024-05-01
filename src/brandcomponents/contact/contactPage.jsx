@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
-const contactPage = () => {
+const ContactPage = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     designation: "",
@@ -200,4 +200,4 @@ const contactPage = () => {
   );
 };
 
-export default contactPage;
+export default ContactPage;

@@ -37,7 +37,7 @@ export default function Testimonial() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentTestimonialIndex]);
+  }, [currentTestimonialIndex, testimonials.length]);
 
   const showNextTestimonial = () => {
     setCurrentTestimonialIndex((prevIndex) =>

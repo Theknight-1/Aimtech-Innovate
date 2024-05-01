@@ -110,7 +110,7 @@ export default function CaseLanding() {
     shuffleSquares();
 
     return () => clearTimeout(timeoutRef.current);
-  }, []);
+  });
 
   const shuffleSquares = () => {
     setSquares(generateSquares());

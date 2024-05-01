@@ -13,13 +13,12 @@ import CaseStudies from "@/brandcomponents/landing/casestudy";
 import Testimonial from "@/brandcomponents/landing/testimonial";
 import Hcta from "@/brandcomponents/landing/cta";
 
-
-const page = () => {
+const Page = () => {
   const params = useParams();
   return (
     <>
       <Navbar />
-      <Brandservice slug={params?.slug}/>
+      <Brandservice slug={params?.slug} />
       {/* <section className="w-full h-full px-44">
         {params?.slug === "seo-services" ? (
           <div className="text-4xl text-center text-white">
@@ -29,7 +28,7 @@ const page = () => {
           <div className="text-4xl text-center text-white">{params.slug}</div>
         )}
       </section> */}
-      <FCStudy/>
+      <FCStudy />
       <CaseStudies />
       <Testimonial />
       <Pland />
@@ -39,4 +38,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

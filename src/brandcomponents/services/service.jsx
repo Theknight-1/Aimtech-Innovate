@@ -28,8 +28,8 @@ export default function brandservice({ slug }) {
             <h1 className="text-[4rem] font-semibold">{dataOBJ.tagLine}</h1>
             <p className="text-gray-200 text-lg">{dataOBJ.desciption}</p>
             <div className="grid grid-cols-2 text-[#FCCF40] gap-4 text-2xl">
-              {dataOBJ.benifits.map((ben) => (
-                <span>{ben}</span>
+              {dataOBJ.benifits.map((ben , index) => (
+                <span key={index}>{ben}</span>
               ))}
             </div>
             <div >
