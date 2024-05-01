@@ -38,10 +38,10 @@ export default function CaseStudies() {
                 <div class="flip-card aspect-square h-auto w-96">
                     <div class="flip-card-inner w-full h-full">
                         <div class="flip-card-front flex items-center justify-center">
-                        {/* <img className='w-full h-full object-cover' src="https://www.betterup.com/hs-fs/hubfs/Employee-smiling-amongst-coworkers-at-office-team-collaboration.jpg?width=2121&height=1414&name=Employee-smiling-amongst-coworkers-at-office-team-collaboration.jpg" alt="" /> */}
+                        {/* <img className='w-full h-full object-cover' src="/landingPage/quetionmark.jpg" alt="" /> */}
                             <span className='text-6xl text-[#122B59] font-bold'>?</span>
                         </div>
-                        <div class="flip-card-back flex flex-col items-center justify-center">
+                        <div class=" flip-card-back flex flex-col items-center justify-center">
                             <h1 className='text-4xl'>You can be the Next</h1>
                             <br />
                             <p> We can help you grow.</p>
