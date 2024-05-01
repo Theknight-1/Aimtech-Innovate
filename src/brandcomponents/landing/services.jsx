@@ -152,11 +152,11 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full min-h-screen flex justify-center items-center "
+      className="w-full min-h-screen flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4"
     >
-      <section className="flex items-center  w-full h-full  md:mx-28">
+      <section className="flex items-center  w-full h-full">
         {/* Service Buttons */}
-        <div className="flex-1 flex flex-col justify-start items-start w-full pl-8 py-12 space-y-10  ">
+        <div className="flex-1 flex flex-col justify-start items-start w-full py-12 space-y-10  ">
           <h1 className="text-[5rem] font-semibold text-[#FFB700]">
             What we provide ?
           </h1>

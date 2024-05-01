@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
 import {
-  FiEdit,
   FiChevronDown,
-  FiTrash,
-  FiShare,
-  FiPlusSquare,
 } from "react-icons/fi";
+import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { IconType } from "react-icons";
@@ -16,15 +13,15 @@ export default function GradientSection() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <section className="w-full h-[calc(100vh-20vh)] flex justify-center items-center bg-[url('/vector/Waves.svg')]">
-        <div className="grid max-w-screen px-4 py-8 lg:mx-28 md:mx-20 mx-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div className="mr-auto place-self-center lg:col-span-7  h-full space-y-8">
-            <h3 className="max-w-4xl mb-4 text-3xl uppercase tracking-tight md:text-1xl xl:text-xl dark:text-white bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
+      <section className="w-full h-[calc(100vh-20vh)] flex justify-center items-center bg-[url('/vector/Waves.svg')] xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+        <div className="grid max-w-screen px-4 py-8  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div className="mr-auto place-self-center lg:col-span-7  h-full space-y-5">
+            <h3 className="max-w-4xl  uppercase tracking-tight md:text-1xl xl:text-xl dark:text-white bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text ">
               The most cost-effective digital marketing agency of{" "}
               <span className="text-yellow-300">USA</span> and{" "}
               <span className="text-green-300"> Canada</span>
             </h3>
-            <h1 className="max-w-7xl leading-relaxed text-4xl font-semibold tracking-wider  md:text-5xl xl:text-6xl dark:text-white">
+            <h1 className="max-w-7xl leading-relaxed sm:text-4xl font-semibold tracking-wider  md:text-5xl xl:text-7xl dark:text-white">
               Enhance your Digital Presence and gain Market excellence
             </h1>
             <div className="flex justify-end items-center my-5 mr-20">
@@ -67,18 +64,18 @@ export default function GradientSection() {
                       initial={wrapperVariants.closed}
                       variants={wrapperVariants}
                       style={{ originY: "top", translateX: "-50%" }}
-                      className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-96 overflow-hidden"
+                      className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl  absolute top-[120%] left-[50%] w-96 overflow-hidden"
                     >
-                      <Option setOpen={setOpen} Icon={"FiEdit"} text="Web Design and Development"  className="text-lg"/>
+                      <Option setOpen={setOpen} Icon={"FiEdit"} text="Web Design and Development"  />
                       <Option
                         setOpen={setOpen}
                         Icon={"FiPlusSquare"}
                         text="Search Engine Optimization"
                         className="text-lg"
                       />
-                      <Option setOpen={setOpen} Icon={"FiShare"} text="Social Media Management" className="text-lg"/>
-                      <Option setOpen={setOpen} Icon={"FiTrash"} text="PPC Advertisement" className="text-lg"/>
-                      <Option setOpen={setOpen} Icon={"FiTrash"} text="Email Marketing" className="text-lg"/>
+                      <Option setOpen={setOpen} Icon={"FiShare"} text="Social Media Management" />
+                      <Option setOpen={setOpen} Icon={"FiTrash"} text="PPC Advertisement" />
+                      <Option setOpen={setOpen} Icon={"FiTrash"} text="Email Marketing" />
                     </motion.ul>
                   </motion.div>
                 </div>
@@ -90,8 +87,16 @@ export default function GradientSection() {
                 Get Started
               </Link>
             </div>
-            <div className="mt-10">
-              <span></span>
+            <div className="mt-10 flex items-center gap-5">
+              <span>
+                <ul className="flex gap-2 text-xl text-white">
+                  <li><FaStar /></li>
+                  <li><FaStar /></li>
+                  <li><FaStar /></li>
+                  <li><FaStar /></li>
+                  <li><FaStar /></li>
+                </ul>
+              </span>
               <span className="text-white ">
                 4.8/5 based on 6,873 reviews | GDPR Compliant
               </span>
@@ -116,7 +121,7 @@ const Option = ({ text, Icon, setOpen }) => {
     <motion.li
       variants={itemVariants}
       onClick={() => setOpen(false)}
-      className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+      className="flex items-center gap-2 w-full  text-[15px] font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
     >
       <motion.span variants={actionIconVariants}>
         <Icon />

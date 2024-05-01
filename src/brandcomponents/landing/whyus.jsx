@@ -37,10 +37,10 @@ export default function Whyus() {
     },
   ];
   return (
-    <section className="w-screen h-[calc(100vh-20vh)] flex flex-col md:flex-row">
-      <div className="relative w-full  gap-4 md:w-1/2 h-full p-10 flex flex-col items-center justify-start">
-        <div className="absolute -z-0 w-3/4 h-auto aspect-square rounded-full border bg-[#15BEE3]/30 blur-3xl"></div>
-        <div className="absolute z-0 w-full gap-4 md:w-full h-full p-10 flex flex-col  items-center justify-start space-y-7">
+    <section className="w-screen h-[calc(100vh-20vh)] flex  flex-col md:flex-row xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+      <div className="relative w-full  md:w-1/2 h-full  flex flex-col  items-center justify-start">
+        <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
+        <div className="absolute z-0 w-full gap-4 md:w-full h-full  flex flex-col  items-center justify-center space-y-7">
           <div className="w-full  flex  items-end justify-end px-10">
             <svg
               width="40"
@@ -62,24 +62,24 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
 
-            <span className="text-sm md:text-6xl font-bold text-[#FFB700] text-center">
+            <span className="  text-[#FFB700] text-center animate-typing overflow-hidden whitespace-nowrap  pr-5 md:text-6xl sm:text-3xl text-2xl  font-bold">
               Why us?
             </span>
             {/* <svg width="129" height="146" className='' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
-          <article className="max-w-3xl  text-sm md:text-2xl text-white text-justify leading-normal  ">
+          <article className="max-w-3xl md:text-3xl sm:text-2xl text-xl text-white text-justify leading-snug">
             Aimtech Innovate offers premier digital marketing services at
             unbeatable rates in the US and Canada, thanks to our partnership
             with Nepal's Next Coach Incubator Program. Access top-quality work
             at a fraction of the cost.
           </article>
-          <button className="w-auto flex items-center justify-center gap-x-4 border bg-white p-4 px-8  shadow-lg group">
-            <span className="font-bold">Work With Us</span>
+          <button className="w-auto rounded-lg flex  items-center justify-center gap-x-2 border bg-white p-4 px-8  shadow-lg group">
+            <span className="font-bold text-[#122B59] text-lg ">Work With Us</span>
             <img
               src="/arrow-double-end.svg"
-              className="w-4 h-4 group-hover:animate-fade-right group-hover:animate-infinite group-hover:animate-alternate"
+              className="w-4 h-4 invisible group-hover:visible group-hover:animate-fade-right group-hover:animate-infinite group-hover:animate-alternate"
               alt=""
             />
           </button>
@@ -101,8 +101,9 @@ export default function Whyus() {
           </div>
         </div>
       </div>
-      <div className=" w-full md:w-1/2 h-full flex items-center justify-center p-4">
-        <div className="flex flex-col gap-y-4 p-10 h-auto overflow-hidden    flex-1 ">
+      <div className=" w-full md:w-1/2 h-full flex items-center justify-center">
+        <div className="flex flex-col gap-y-4  h-auto overflow-hidden    flex-1 ">
+          
           {accordionData.map((item, index) => (
             <Accordion
               key={index}

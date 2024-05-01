@@ -2,13 +2,13 @@ import React from "react";
 
 const cards = () => {
   return (
-    <section className="h-full w-screen  p-8">
+    <section className="">
       <h1 className="text-center text-[3rem] font-bold text-white">
         Recent Case Studies
       </h1>
 
-      <div className="mx-40">
-        <div className="grid h-[50vh] justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-10">
+      <div className="">
+        <div className="grid h-[50vh] justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
           {/* Card 1 */}
 
           <div className="bg-white rounded-lg border shadow-md max-w-xs md:max-w-[50vh] overflow-hidden">
@@ -86,7 +86,7 @@ const cards = () => {
         <h1 className="text-center text-[3rem] font-bold text-white w-[40%]">
           Have a project in mind? <br /> Let’s get to work.
         </h1>
-        <button className="px-10 py-3 rounded-lg text-lg mt-12 bg-[#FFB700]">Start Project</button>
+        <button className="px-10 py-3 rounded-lg text-lg mt-10 bg-[#FFB700]">Start Project</button>
       </div>
     </section>
   );

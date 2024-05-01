@@ -31,7 +31,7 @@ export default function CaseStudies() {
                             <br />
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
                             <br />
-                            <a href="/casestudy/aimtech"><p>Learn more...</p></a>
+                            <a href="/casestudy/aimtech" className='bg-[#122B59] p-3 rounded-lg text-white'><p>Learn more...</p></a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export default function CaseStudies() {
                             <br />
                             <p> We can help you grow.</p>
                             <br />
-                            <a href="#"><p>Learn more...</p></a>
+                            <a href="#" className='bg-[#122B59] p-3 rounded-lg text-white'><p>Learn more...</p></a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ export default function CaseStudies() {
                             <br />
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
                             <br />
-                            <a href="#"><p>Learn more...</p></a>
+                            <a href="#" className='bg-[#122B59] p-3 rounded-lg text-white'><p>Learn more...</p></a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export default function CaseStudies() {
                             <br />
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
                             <br />
-                            <a href="#"><p>Learn more...</p></a>
+                            <a href="#" className='bg-[#122B59] p-3 rounded-lg text-white'><p>Learn more...</p></a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ export default function CaseStudies() {
                             <br />
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
                             <br />
-                            <a href="#"><p>Learn more...</p></a>
+                            <a href="#" className='bg-[#122B59] p-3 rounded-lg text-white'><p>Learn more...</p></a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ export default function CaseStudies() {
                             <br />
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!</p>
                             <br />
-                            <a href="#"><p>Learn more...</p></a>
+                            <a href="#" className='bg-[#122B59] p-3 rounded-lg text-white'><p>Learn more...</p></a>
                         </div>
                     </div>
                 </div>

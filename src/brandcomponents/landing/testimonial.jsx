@@ -56,15 +56,18 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className=" min-h-[calc(100vh-20vh)] flex flex-col items-center justify-center w-screen bg-[#162F5C] px-24  mt-8 ">
-        <div className="flex h-full w-full flex-col-reverse md:flex-row   ">
-          <div className="flex  h-auto gap-y-2  pl-10  w-full flex-col items-start justify-start md:w-1/2 ">
-            <div className="h-auto w-3/4  ">
-              <span className="text-6xl font-bold text-white leading-normal">
+      <section className=" min-h-[calc(100vh-10vh)] flex flex-col items-center justify-center w-screen mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+        <div className="flex relative h-full   w-full flex-col-reverse md:flex-row   ">
+          <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>            
+          
+          <div className="flex   h-auto gap-y-2 w-full flex-col items-start justify-start md:w-1/2 ">
+            <div className="h-auto w-full  ">
+
+              <span className="text-[5rem] font-bold text-white leading-normal">
                 We Drive Innovative Marketing for Great Companies
               </span>
             </div>
-            <div className="flex h-auto w-full flex-col  mt-2 p-2">
+            <div className="flex h-auto w-full flex-col  mt-2 p-2 ">
               <span className="font-bold text-gray-100 text-2xl">
                 More than ever, you need to drive{" "}
                 <a href="#">
@@ -88,11 +91,11 @@ export default function Testimonial() {
               </button>
             </div>
           </div>
-          <div className="relative flex h-auto flex-1 flex-col items-center justify-center p-8">
-            <div class="absolute inset-0 z-0 p-8 flex items-center justify-center">
+          <div className="relative flex h-auto flex-1 flex-col items-center justify-center">
+            <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div>
-            <div className=" relative z-10 w-full h-full flex flex-col items-center justify-center">
+            <div className=" relative z-10 w-full h-full flex flex-col items-center justify-center ">
               <div className="flex flex-row h-auto gap-x-24 min-h-16 w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
                   <img

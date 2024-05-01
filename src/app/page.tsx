@@ -35,7 +35,7 @@ export default function Home() {
       
 
         <Navbar />
-      <main className="flex min-h-screen w-screen flex-col items-center justify-start ">
+      <main className="flex h-auto w-screen flex-col items-center justify-start ">
         {/* <Header /> */}
         {/* <Carousel/> */}
         <GradientSection />
@@ -48,9 +48,9 @@ export default function Home() {
         <Pland />
 
 
+      <Hcta />
       </main>
       {/* <Customer/> */}
-      <Hcta />
       <Footer />
     </>
   );

@@ -67,7 +67,7 @@ function MegaMenu() {
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
-      setImageUrl("/brand/logo/logoFinal.png");
+      setImageUrl("/brand/logo/blue-logo.png");
     } else {
       setScrolling(false);
       setImageUrl("/brand/logo/logoFinal.png");
@@ -165,9 +165,9 @@ function MegaMenu() {
   };
   return (
     <>
-      <div className="flex justify-end  itmes-center  w-full px-6 md:px-12 py-2 border-b border-gray-300 lg:border-none">
+      <div className="flex justify-end  itmes-center  w-screen px-6 md:px-28 py-2 border-b border-gray-300 lg:border-none ">
         <div className="hidden lg:flex gap-10 text-white font-semibold ">
-          <h4 className="flex items-center gap-2 text-[15px]">
+          <h4 className="flex items-center gap-2 text-lg">
             <a
               href="https://calendly.com/himanshusaxena5500/30min"
               target="_blank"
@@ -179,7 +179,7 @@ function MegaMenu() {
               Schedule Discovery Meet
             </a>
           </h4>
-          <h4 className="flex items-center gap-2 text-[15px]">
+          <h4 className="flex items-center gap-2 text-lg">
             <span>
               <FaWhatsapp size={22} />
             </span>
@@ -188,7 +188,7 @@ function MegaMenu() {
               Whatsapp{" "}
             </a>
           </h4>
-          <h4 className="flex items-center gap-2 text-xl font-bold">
+          <h4 className="flex items-center gap-2 text-xl font-bold text-[#fcd040d3] hover:text-[#FCCF40]">
             <span>
               <FaPhone size={15} />
             </span>{" "}
@@ -207,25 +207,25 @@ function MegaMenu() {
         </div>
       </div>
       <header
-        className={`sticky top-0 px-6 md:px-12 ${
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
           scrolling
-            ? "bg-white/50 backdrop-blur-3xl text-black shadow"
+            ? "bg-white text-black shadow"
             : "text-white"
         } z-50 mb-2 w-screen`}
       >
-        <div className="flex items-center justify-between">
-          <Link href="/" className="font-bold text-black text-xl ">
+        <div className="flex items-center justify-between ">
+          <Link href="/" className="font-bold text-black  text-xl ">
             <img
-              src="/brand/logo/logoFinal.png"
-              className="w-24 h-12  lg:w-44 lg:h-20"
-              alt=""
+              src={imageUrl}
+              className="w-24 h-12  lg:w-40 p-1 lg:h-16 object-scale-down"
+              alt="logo"
             />
             {/* <img src={logo.src} width={200} height={150} alt="" /> */}
           </Link>
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
-              <li className="relative group px-3 py-2">
-                <Link href="/"> Home</Link>
+              <li className="relative group px-3 py-2 ">
+                <Link href="/" className="hover:opacity-50 cursor-pointer"> Home</Link>
                 {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a> */}
