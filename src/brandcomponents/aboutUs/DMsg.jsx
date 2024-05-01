@@ -124,7 +124,7 @@ const DMsg = () => {
                 <div className=" flex items-center justify-center">
                   <img src="/about/laughing.png" alt="img" className="" />
                 </div>
-                <h1 className="text-3xl font-bold text-white text-center">
+                <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                   Good to Great Culture
                 </h1>
                 <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 border-r-2">
@@ -138,8 +138,8 @@ const DMsg = () => {
                 <div className=" flex items-center justify-center">
                   <img src="/about/laughing.png" alt="img" className="" />
                 </div>
-                <h1 className="text-3xl font-bold text-white text-center">
-                  Good to Great Culture
+                <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                Growing
                 </h1>
                 <div className="flex flex-col space-y-3 text-white text-xl p-5 border-yellow-600 border-r-2">
                   <span>+ Methodical</span>
@@ -152,14 +152,13 @@ const DMsg = () => {
                 <div className=" flex items-center justify-center">
                   <img src="/about/laughing.png" alt="img" className="" />
                 </div>
-                <h1 className="text-3xl font-bold text-white text-center">
-                  Good to Great Culture
+                <h1 className="text-3xl font-bold text-center mt-5 text-[#FFB700]">
+                Well Balance
                 </h1>
-                <div className="flex flex-col space-y-3 text-white text-xl ">
-                  <span>+ Methodical</span>
-                  <span>+ Proactive</span>
-                  <span> + System and process Improvement</span>
-                  <span>+ Structure</span>
+                <div className="flex flex-col space-y-3 p-5 text-white text-xl ">
+                  <span>+ Work life balance</span>
+                  <span>+ Enjoyable environment</span>
+                  <span> + Friendship and family</span>
                 </div>
               </div>
               

@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative h-[50vh] bg-[url('/vector/Waves.svg')] bg-center bg-cover bg-blend-screen text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+    <footer className="relative h-[50vh]  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
       <div className="flex items-center justify-around  h-[80%] w-full">
         <div className="text-sm  max-w-72 space-y-3">
           <div className="mb-6 flex items-start justify-center text-center flex-col h-24 space-x-2 ">
@@ -181,7 +181,7 @@ export default function Footer() {
       </div>
       <div className="border-t text-white">
         <div className="mx-auto  max-w-lg gap-5  py-3 text-center flex justify-center items-center cursor-pointer">
-          <p className="w-max">© 2024 AimTech | All Rights Reserved</p>
+          <p className="w-max">© 2024 Aimtech Innovate | A Joint venture With </p>
           <div>
             <img src="/brand/logo/logo-12.png" alt="logo12" />
           </div>

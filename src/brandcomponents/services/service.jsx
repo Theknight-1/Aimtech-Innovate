@@ -17,7 +17,11 @@ export default function brandservice({ slug }) {
       <section className="w-full h-[90vh]  flex  justify-evenly items-center bg-[url('/vector/Waves.svg')] ">
         <div className=" flex items-center justify-center">
           <div className="">
-            <img src="/service/Img2-about-section.png" alt="" />
+            <img
+              src="/service/Img2-about-section.png"
+              alt="Product screenshot"
+              class=" h-full object-cover"
+            />
           </div>
         </div>
         <div className=" flex items-center  justify-start">
@@ -28,11 +32,11 @@ export default function brandservice({ slug }) {
             <h1 className="text-[4rem] font-semibold">{dataOBJ.tagLine}</h1>
             <p className="text-gray-200 text-lg">{dataOBJ.desciption}</p>
             <div className="grid grid-cols-2 text-[#FCCF40] gap-4 text-2xl">
-              {dataOBJ.benifits.map((ben , index) => (
+              {dataOBJ.benifits.map((ben, index) => (
                 <span key={index}>{ben}</span>
               ))}
             </div>
-            <div >
+            <div>
               <Link
                 href={dataOBJ.link}
                 className="px-6 w-max block py-6 bg-[#FFB700] text-[#102D5E] font-bold text-lg rounded-xl"
@@ -43,16 +47,19 @@ export default function brandservice({ slug }) {
           </div>
         </div>
       </section>
-      <section class=" mx-36 px-6 lg:px-8 ">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div class="lg:pr-8 lg:pt-4">
-            <div class="lg:max-w-lg">
+      <section class=" w-full h-screen xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-5">
+          <div class="lg:pr-8 lg:pt-4  p-10 mt-9">
+            <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
-              <p class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">
+              <p class="mt-2  text-3xl font-normal tracking-tight  sm:text-5xl ">
                 Growing Your Business
-              </p>
-              <p class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">
-                and Increasing Your SEO Revenue
+                <br />
+                and{" "}
+                <span className="text-[#FFB700] underline ">
+                  Increasing
+                </span>{" "}
+                Your SEO Revenue
               </p>
               <br />
               <div>
@@ -60,7 +67,7 @@ export default function brandservice({ slug }) {
               </div>
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none ">
-                <ul class="list-disc">
+                <ul class="list-disc space-y-5 text-xl">
                   <li>
                     You’re overly dependent on paid ads and not seeing enough
                     ROI
@@ -88,7 +95,7 @@ export default function brandservice({ slug }) {
                 </ul>
               </dl>
             </div>
-            <div class="mt-10 flex flex-col items-center gap-x-6">
+            <div class="list-disc space-y-5 text-xl mt-5">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
                 molestiae provident harum recusandae cupiditate aliquid
@@ -108,7 +115,7 @@ export default function brandservice({ slug }) {
           </div>
           <div className="">
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb21wdXRlcnxlbnwwfDB8fHwxNjkxODE2NjY3fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              src="/service/image28.png"
               alt="Product screenshot"
               class="w-full h-full object-contain"
             />
@@ -119,19 +126,22 @@ export default function brandservice({ slug }) {
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="">
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb21wdXRlcnxlbnwwfDB8fHwxNjkxODE2NjY3fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              src="/service/image30.png"
               alt="Product screenshot"
-              class="w-full h-full object-contain"
+              class=" h-full object-cover"
             />
           </div>
           <div class="lg:pr-8 lg:pt-4">
-            <div class="lg:max-w-lg">
+            <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
-              <p class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">
+              <p class="mt-2  text-3xl font-normal tracking-tight  sm:text-5xl ">
                 Growing Your Business
-              </p>
-              <p class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">
-                and Increasing Your SEO Revenue
+                <br />
+                and{" "}
+                <span className="text-[#FFB700] underline ">
+                  Increasing
+                </span>{" "}
+                Your SEO Revenue
               </p>
               <br />
               <div>
@@ -139,7 +149,7 @@ export default function brandservice({ slug }) {
               </div>
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none ">
-                <ul class="list-disc">
+                <ul class="list-disc space-y-5">
                   <li>
                     You’re overly dependent on paid ads and not seeing enough
                     ROI

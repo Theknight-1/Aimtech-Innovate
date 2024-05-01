@@ -157,7 +157,8 @@ const ContactPage = () => {
                     onChange={handleChange}
                     className="mt-1 p-2 w-full border rounded-md"
                   >
-                    <option value="Nepal">Nepal</option>
+                    <option value="Canada">Canada</option>
+                    <option value="US">US</option>
                     {/* Add more country options here */}
                   </select>
                 </div>
