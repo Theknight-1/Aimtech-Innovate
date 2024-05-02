@@ -88,7 +88,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer fixed w-screen h-screen left-0 "
+          className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer fixed w-[100vw] h-[100vh] left-0 "
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}

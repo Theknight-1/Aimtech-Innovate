@@ -184,7 +184,7 @@ export default function CaseLanding() {
         <section className="h-screen w-full flex items-center justify-center">
           <div className="h-[70%] flex items-center justify-center gap-10 gap-y-4 ">
             <div className="relative z-0 flex-1">
-            <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>
+              <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>
               <h1 className="text-[3.5rem] font-bold uppercase mb-3 text-[#FFB700]">
                 Client Goals
               </h1>
@@ -226,7 +226,7 @@ export default function CaseLanding() {
               />
             </div>
             <div className="relative flex-1 p-5">
-            <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>
+              <div className="absolute -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>
               <h1 className="text-[3.5rem] font-bold uppercase mb-3 text-[#FFB700]">
                 How We Helped
               </h1>
@@ -250,8 +250,8 @@ export default function CaseLanding() {
           {squares.map((sq) => sq)}
         </div>
       </section>
-      <section className="w-screen h-screen xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
-        <Cards />
+      <section className="">
+        <Cards heading={"Recent Case studies"} getStartedButton={"Start Project"} />
       </section>
     </>
   );

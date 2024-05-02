@@ -183,7 +183,7 @@ export default function Services() {
             </button>
             <button
               onClick={() => handleButtonClick("ecommerceDevelopment")}
-              className={`flex h-20 w-full items-start text-left  text-wrap pl-4 text-3xl service-btn ${
+              className={`flex h-20 w-full items-center text-left  text-wrap pl-4 text-3xl service-btn ${
                 currentContent === "ecommerceDevelopment"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"

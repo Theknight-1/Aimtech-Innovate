@@ -78,7 +78,7 @@ export default function Whyus() {
             with Nepal's Next Coach Incubator Program. Access top-quality work
             at a fraction of the cost.
           </article>
-          <button className="w-auto rounded-lg flex  items-center justify-center gap-x-2 border bg-white p-4 px-8  shadow-lg group">
+          <button className="w-auto rounded-lg flex  items-center justify-center gap-x-2 border bg-white p-4 px-8 z-10 shadow-lg group">
             <span className="font-bold text-[#122B59] text-lg ">Work With Us</span>
             <img
               src="/arrow-double-end.svg"

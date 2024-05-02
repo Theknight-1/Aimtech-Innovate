@@ -1,17 +1,20 @@
-import React from 'react'
-import Navbar from '@/brandcomponents/global/Navbar'
-import CaseStudies from '@/brandcomponents/landing/casestudy'
-import CaseLanding from '@/brandcomponents/casestudy/caselanding'
-import Footer from '@/brandcomponents/global/footer'
+import React from "react";
+import Navbar from "@/brandcomponents/global/Navbar";
+import Cards from "@/brandcomponents/casestudy/cards";
+import Hero from "@/brandcomponents/CaseStudyLanding/Hero";
+import Banner from "@/brandcomponents/CaseStudyLanding/Banner";
+import Footer from "@/brandcomponents/global/footer";
 
-export default function CaseStudy() {
+const page = () => {
   return (
     <>
-    
-        <Navbar/>
-        <CaseLanding/>
-        <Footer/>
-   
+      <Navbar />
+      <Hero />
+      <Cards heading={"Explore our Case Studies"} />
+      <Banner/>
+      <Footer />
     </>
-  )
-}
+  );
+};
+
+export default page;
