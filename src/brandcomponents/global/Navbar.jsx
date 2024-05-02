@@ -374,28 +374,6 @@ function MegaMenu() {
                            ))}
                         </div>
                         {/* Third Column */}
-                        <div
-                          className="flex-1 hidden flex justify-center items-center"
-                          style={{ flexBasis: "15%" }}
-                        >
-                          {/* Use flex-2 class for the third box */}
-                          <div className="space-y-5 text-center">
-                            <p className="uppercase tracking-wider text-green-300 text-center text-4xl font-semibold">
-                              155%
-                            </p>
-                            <p className="text-sm font-bold px-10 text-center text-black">
-                              Increase in organic tranactions
-                            </p>
-                            <span className="flex justify-center items-center">
-                              <FaSignal className="text-green-300" size={80} />
-                            </span>
-                            <Link href="/services">
-                              <button className="xl:px-5 px-2 py-4 md:text-sm text-[12px] font-bold bg-[#FCCF40] rounded">
-                                Read our case study
-                              </button>
-                            </Link>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
