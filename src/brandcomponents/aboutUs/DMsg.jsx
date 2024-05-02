@@ -1,11 +1,59 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import { FaSignal } from "react-icons/fa";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { LiaLessThanSolid } from "react-icons/lia";
+import Swiper from "swiper";
 
 const DMsg = () => {
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    swiperRef.current = new Swiper(".multiple-slide-carousel", {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".multiple-slide-carousel .swiper-button-next",
+        prevEl: ".multiple-slide-carousel .swiper-button-prev",
+      },
+      breakpoints: {
+        1920: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1028: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        990: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      },
+    });
+
+    return () => {
+      if (swiperRef.current) {
+        swiperRef.current.destroy();
+      }
+    };
+  }, []);
+
+  const handleNextButtonClick = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
+
+  const handlePrevButtonClick = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+
   return (
     <>
       <section className="h-[90vh] w-full">
@@ -111,16 +159,11 @@ const DMsg = () => {
           </div>
         </div>
       </section>
-      <section className="h-[80vh] w-full ">
-        <div className="h-full w-full flex-col flex  items-center">
-          <h1 className="text-5xl text-[#FFB700] text-center leading-normal">
-            Our <br />
-            <span className="text-5xl font-bold">Culture</span>
-          </h1>
-          <div className="mt-10 flex items-center justify-center">
-            <div className="text-6xl text-white"><LiaLessThanSolid /></div>
-            <div className="grid grid-cols-3 xl:px-28 gap-28">
-              <div className="">
+      <div className="w-full flex items-center justify-center h-[70vh] relative xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+        <div className="swiper multiple-slide-carousel swiper-container relative flex flex-col overflow-hidden ">
+          <div className="swiper-wrapper mb-8 flex items-center justify-center ">
+            <div className="swiper-slide  w-[50%]">
+              <div className="h-full">
                 <div className=" flex items-center justify-center">
                   <img src="/about/laughing.png" alt="img" className="" />
                 </div>
@@ -134,39 +177,112 @@ const DMsg = () => {
                   <span>+ Structure</span>
                 </div>
               </div>
-              <div className="">
-                <div className=" flex items-center justify-center">
-                  <img src="/about/laughing.png" alt="img" className="" />
-                </div>
-                <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
-                Growing
-                </h1>
-                <div className="flex flex-col space-y-3 text-white text-xl p-5 border-yellow-600 border-r-2">
-                  <span>+ Methodical</span>
-                  <span>+ Proactive</span>
-                  <span> + System and process Improvement</span>
-                  <span>+ Structure</span>
-                </div>
-              </div>
-              <div className="">
-                <div className=" flex items-center justify-center">
-                  <img src="/about/laughing.png" alt="img" className="" />
-                </div>
-                <h1 className="text-3xl font-bold text-center mt-5 text-[#FFB700]">
-                Well Balance
-                </h1>
-                <div className="flex flex-col space-y-3 p-5 text-white text-xl ">
-                  <span>+ Work life balance</span>
-                  <span>+ Enjoyable environment</span>
-                  <span> + Friendship and family</span>
-                </div>
-              </div>
-              
             </div>
-            <div className="text-6xl text-white"><LiaGreaterThanSolid /></div>
+            <div className="swiper-slide  w-[40%]">
+              <div className=" rounded-2xl h-96 flex justify-center items-center">
+                <div className="h-full">
+                  <div className=" flex items-center justify-center">
+                    <img src="/about/laughing.png" alt="img" className="" />
+                  </div>
+                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                    Good to Great Culture
+                  </h1>
+                  <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 border-r-2">
+                    <span>+ Methodical</span>
+                    <span>+ Proactive</span>
+                    <span> + System and process Improvement</span>
+                    <span>+ Structure</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="swiper-slide  w-[40%]">
+              <div className=" rounded-2xl h-96 flex justify-center items-center">
+                <div className="h-full">
+                  <div className=" flex items-center justify-center">
+                    <img src="/about/laughing.png" alt="img" className="" />
+                  </div>
+                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                    Good to Great Culture
+                  </h1>
+                  <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 border-r-2">
+                    <span>+ Methodical</span>
+                    <span>+ Proactive</span>
+                    <span> + System and process Improvement</span>
+                    <span>+ Structure</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="swiper-slide  w-[40%]">
+              <div className=" rounded-2xl h-96 flex justify-center items-center">
+                <div className="h-full">
+                  <div className=" flex items-center justify-center">
+                    <img src="/about/laughing.png" alt="img" className="" />
+                  </div>
+                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                    Good to Great Culture
+                  </h1>
+                  <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
+                    <span>+ Methodical</span>
+                    <span>+ Proactive</span>
+                    <span> + System and process Improvement</span>
+                    <span>+ Structure</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
+            <button
+              id="slider-button-left"
+              className="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-yellow-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-yellow-600 !-translate-x-16"
+              data-carousel-prev
+              onClick={handlePrevButtonClick}
+            >
+              <svg
+                className="h-5 w-5 text-yellow-600 group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              id="slider-button-right"
+              className="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-yellow-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-yellow-600 !translate-x-16"
+              data-carousel-next
+              onClick={handleNextButtonClick}
+            >
+              <svg
+                className="h-5 w-5 text-yellow-600 group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

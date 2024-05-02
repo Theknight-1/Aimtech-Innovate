@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
-  background: #162F5C;
+  background: #162f5c;
   overflow-x: hidden;
 }
 
@@ -24,14 +22,14 @@ body {
 ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray; 
+  background: gray;
   border-radius: 0px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: green; 
+  background: green;
 }

@@ -17,6 +17,12 @@ import Services from '@/brandcomponents/landing/services'
 import Whyus from "../brandcomponents/landing/whyus";
 import Navbar from "@/brandcomponents/global/Navbar";
 import { NextSeo } from 'next-seo';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/components/effect-coverflow/effect-coverflow.min.css';
+
+
+
+
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
@@ -27,14 +33,14 @@ export default function Home() {
   ];
   return (
     <>
-    <title> Aimtech innovate </title>
-    <NextSeo
-      title="Aimtech innovate"
-      description="Your best serach for Digital marketting and brand building."
-    />
-      
+      <title> Aimtech innovate </title>
+      <NextSeo
+        title="Aimtech innovate"
+        description="Your best serach for Digital marketting and brand building."
+      />
 
-        <Navbar />
+
+      <Navbar />
       <main className="flex h-auto w-screen flex-col items-center justify-start ">
         {/* <Header /> */}
         {/* <Carousel/> */}
@@ -48,7 +54,7 @@ export default function Home() {
         <Pland />
 
 
-      <Hcta />
+        <Hcta />
       </main>
       {/* <Customer/> */}
       <Footer />
