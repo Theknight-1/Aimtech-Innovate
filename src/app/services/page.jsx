@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from '@/brandcomponents/global/Navbar'
-import Brandservice from "@/brandcomponents/services/service";
+import Hero from "@/brandcomponents/services/hero"
 import FCStudy from "@/brandcomponents/services/FCStudy";
 import Pland from "@/brandcomponents/practice/landing";
 import Footer from "@/brandcomponents/global/footer";
@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <>
       <Navbar />
-      {/* <Brandservice /> */}
+      <Hero/>
       <div className="h-32"></div>
       <FCStudy/>
       <CaseStudies />
