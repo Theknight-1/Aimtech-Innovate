@@ -8,13 +8,14 @@ import DMsg from "@/brandcomponents/aboutUs/DMsg.jsx";
 import AboutContact from "@/brandcomponents/aboutUs/aboutContact";
 import Accordion from "@/uicomponent/accordian";
 import Pland from "@/brandcomponents/practice/landing";
-
+import Carousel from "../../brandcomponents/about/carousel";
 export default function About() {
   return (
     <>
       <Navbar />
       <LearnMore />
       <DMsg/>
+      <Carousel/>
       <Map />
       <Pland />
       <AboutContact />

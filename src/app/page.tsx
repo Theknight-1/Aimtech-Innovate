@@ -17,8 +17,7 @@ import Services from '@/brandcomponents/landing/services'
 import Whyus from "../brandcomponents/landing/whyus";
 import Navbar from "@/brandcomponents/global/Navbar";
 import { NextSeo } from 'next-seo';
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/components/effect-coverflow/effect-coverflow.min.css';
+
 
 
 
