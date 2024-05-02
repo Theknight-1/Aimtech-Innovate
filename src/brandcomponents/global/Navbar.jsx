@@ -12,7 +12,6 @@ import { RiExchangeDollarLine } from "react-icons/ri";
 import { SiAffinitydesigner } from "react-icons/si";
 import { GiTechnoHeart } from "react-icons/gi";
 import Link from "next/link";
-import SpringModal from "@/brandcomponents/Modal/SpringModal";
 
 const AnimatedHamburger = ({ handleMobileView }) => {
   const [open, setOpen] = useState(false);
@@ -31,16 +30,19 @@ const AnimatedHamburger = ({ handleMobileView }) => {
         >
           <div className="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <span
-              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${open ? "rotate-45 " : "-translate-y-1.5"
-                }`}
+              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${
+                open ? "rotate-45 " : "-translate-y-1.5"
+              }`}
             ></span>
             <span
-              className={`block absolute h-0.5 w-5 bg-black transition-opacity duration-400 ease-in-out ${open ? "opacity-0" : "opacity-100"
-                }`}
+              className={`block absolute h-0.5 w-5 bg-black transition-opacity duration-400 ease-in-out ${
+                open ? "opacity-0" : "opacity-100"
+              }`}
             ></span>
             <span
-              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${open ? "-rotate-45 " : "translate-y-1.5"
-                }`}
+              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${
+                open ? "-rotate-45 " : "translate-y-1.5"
+              }`}
             ></span>
           </div>
         </button>
@@ -57,8 +59,6 @@ function MegaMenu() {
   const [scrolling, setScrolling] = useState(false);
   const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
 
-  const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -73,59 +73,6 @@ function MegaMenu() {
       setImageUrl("/brand/logo/logoFinal.png");
     }
   };
-
-  const servicedata = [
-    {
-      title: "Web design and Developemtn",
-      services: [
-        { name: "SEO Service", pagelink: "/seo-service" },
-        { name: "Enterprise SEO Services", pagelink: "/seo-service" },
-        { name: "Digital Maketing Service", pagelink: "/digital-marketing" },
-        { name: "Local SEO Services", pagelink: "/seo-service" },
-        { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
-    },
-    {
-      title: "Social Media Marketing",
-      services: [
-        { name: "SEO Service", pagelink: "/seo-service" },
-        { name: "Enterprise SEO Services", pagelink: "/seo-service" },
-        { name: "Digital Maketing Service", pagelink: "/seo-service" },
-        { name: "Local SEO Services", pagelink: "/seo-service" },
-        { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
-    },
-    {
-      title: "Pay Per Click Advertisement",
-      services: [
-        { name: "SEO Service", pagelink: "/seo-service" },
-        { name: "Enterprise SEO Services", pagelink: "/seo-service" },
-        { name: "Digital Maketing Service", pagelink: "/seo-service" },
-        { name: "Local SEO Services", pagelink: "/seo-service" },
-        { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
-    },
-    {
-      title: "Search Engine Optimization",
-      services: [
-        { name: "SEO Service", pagelink: "/seo-service" },
-        { name: "Enterprise SEO Services", pagelink: "/seo-service" },
-        { name: "Digital Maketing Service", pagelink: "/seo-service" },
-        { name: "Local SEO Services", pagelink: "/seo-service" },
-        { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
-    },
-    {
-      title: "Email marketting",
-      services: [
-        { name: "SEO Service", pagelink: "/seo-service" },
-        { name: "Enterprise SEO Services", pagelink: "/seo-service" },
-        { name: "Digital Maketing Service", pagelink: "/seo-service" },
-        { name: "Local SEO Services", pagelink: "/seo-service" },
-        { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
-    },
-  ]
 
   const services = [
     {
@@ -236,10 +183,7 @@ function MegaMenu() {
             <span>
               <FaWhatsapp size={22} />
             </span>
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=+1905-399-6642&text=Hello from the website"
-            >
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+1905-399-6642&text=Hello from the website">
               {" "}
               Whatsapp{" "}
             </a>
@@ -263,8 +207,11 @@ function MegaMenu() {
         </div>
       </div>
       <header
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${scrolling ? "bg-white text-black shadow" : "text-white"
-          } z-50 mb-2 w-screen`}
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
+          scrolling
+            ? "bg-white text-black shadow"
+            : "text-white"
+        } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between ">
           <Link href="/" className="font-bold text-black  text-xl ">
@@ -278,10 +225,7 @@ function MegaMenu() {
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2 ">
-                <Link href="/" className="hover:opacity-50 cursor-pointer">
-                  {" "}
-                  Home
-                </Link>
+                <Link href="/" className="hover:opacity-50 cursor-pointer"> Home</Link>
                 {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a> */}
@@ -306,9 +250,9 @@ function MegaMenu() {
                   </span>
                 </button>
 
-                <div className="mx-auto  w-full bg-white h-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
-                  <div className="relative  p-6 h-auto rounded-lg  w-full  ">
-                    <div className=" z-10  ">
+                <div className="mx-auto  w-full bg-brand-primary/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                  <div className="relative top-6 p-6  rounded-xl  w-full  ">
+                    <div className="relative z-10  ">
                       <div className="flex gap-5 ">
                         {/* First Column */}
                         {/* <div className="flex-1" style={{ flexBasis: "15%" }}>
@@ -333,49 +277,78 @@ function MegaMenu() {
 
                         {/* Second Column */}
                         <div
-                          className="flex-1 flex items-center  justify-center space-x-5  "
+                          className="flex-1 flex items-center justify-center space-x-5  "
                           style={{ flexBasis: "70%" }}
                         >
-                        {servicedata.map((service, idx) => (
-                          <div key={idx}
-                            className="px-6  lg:px-2 flex-1 text-black  p-4  border-r-2 border-black  "
-                          >
-                            <div className="flex justify-normal items-center text-brand-primary gap-4 h-16">
-                              <FaMagnifyingGlassChart size={35} />
-                              <h1 className="font-bold">{service.title}</h1>
-                            </div>
-                            <ul className="mt-3 text-[15px]">
-                            {service.services.map((srv, serviceIndex) => (
-                           
-                               <li key={serviceIndex} >
-                               <Link
-                                 href={`/services${srv.pagelink}`} // Use the slug as the href
-                                 className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-brand-primary font-semibold hover:text-brand-secondary "
-                               >
-                                 {srv.name}
-                               </Link>
-                             </li>
-                        
-                               
-                              ))}
-                             
+                          {services.map((categoryObject, index) => {
+                            const categoryName = Object.keys(categoryObject)[0]; // Extract category name
+                            const servicesList = categoryObject[categoryName]; // Extract services list for the category
 
-                              <li className="animate-bounce">
-                                <a
-                                  href="#"
-                                  className="flex items-center justify-start text-brand-secondary  gap-1"
-                                >
-                                  <span className="text-sm font-bold">See all</span>
-                                  <LiaGreaterThanSolid size={12} />{" "}
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                           ))}
+                            let iconComponent;
+
+                            switch (categoryName) {
+                              case "SEO & Lead Generation":
+                                iconComponent = (
+                                  <FaMagnifyingGlassChart size={35} />
+                                );
+                                break;
+                              case "Revenue Marketing & CRO":
+                                iconComponent = (
+                                  <RiExchangeDollarLine size={35} />
+                                );
+                                break;
+                              case "UX & Interactive":
+                                iconComponent = (
+                                  <SiAffinitydesigner size={35} />
+                                );
+                                break;
+                              case "Technology":
+                                iconComponent = <GiTechnoHeart size={35} />;
+                                break;
+                              default:
+                                iconComponent = null;
+                                break;
+                            }
+
+                            return (
+                              <div
+                                key={index}
+                                className="px-6  lg:px-2 flex-1 border border-gray-200 p-4 rounded-xl bg-[#122B59]/50 backdrop-blur-2xl shadow-3xl "
+                              >
+                                <div className="flex justify-normal items-center gap-4 h-16">
+                                  {iconComponent && (
+                                    <span>{iconComponent}</span>
+                                  )}
+                                  <h1 className="font-bold">{categoryName}</h1>
+                                </div>
+                                <ul className="mt-3 text-[15px]">
+                                  {servicesList.map((service, idx) => (
+                                    <li key={idx}>
+                                      <Link
+                                        href={`/services/${toSlug(service)}`} // Use the slug as the href
+                                        className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-gray-300 font-semibold hover:text-yellow-400"
+                                      >
+                                        {service}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                  <li className="animate-bounce">
+                                    <a
+                                      href="#"
+                                      className="flex items-center justify-start text-yellow-400  gap-1"
+                                    >
+                                      <span className="text-sm">See all</span>
+                                      <LiaGreaterThanSolid size={12} />{" "}
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            );
+                          })}
                         </div>
                         {/* Third Column */}
                         <div
-                          className="flex-1 hidden flex justify-center items-center"
+                          className="flex-1 flex justify-center items-center"
                           style={{ flexBasis: "15%" }}
                         >
                           {/* Use flex-2 class for the third box */}
@@ -414,187 +387,10 @@ function MegaMenu() {
                     </span>
                   </button>
                 </a>
-                <div className="mx-auto divide-x divide-solid border-r-2  p-10  w-full bg-white h-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
-                  <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6">
-                    {/* card start */}
-                    <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-blue-500 text-xl">
-                        Email related
-                      </h1>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    {/* card end */}
-                    {/* card start */}
-                    <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-[#7E62DD] text-xl">
-                        SEO related
-                      </h1>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    {/* card end */}
-                    {/* card start */}
-                    <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-green-500 text-xl">
-                        Web Developement related
-                      </h1>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    {/* card end */}
-                    {/* card start */}
-                    <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-[#7E62DD] text-xl">
-                        PPC related
-                      </h1>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                      <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
-                          <span className="text-xl font-bold">Case title</span>
-                          <article className="text-sm">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quaerat, aut.
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    {/* card end */}
-
-                    {/* card start */}
-                    <div className="w-1/5 h-auto rounded-lg  p-2 overflow-hidden text-wrap">
-                      <div
-                        className="w-full h-full flex justify-center items-center"
-                        style={{ flexBasis: "15%" }}
-                      >
-                        {/* Use flex-2 class for the third box */}
-                        <div className="space-y-5 text-center">
-                          <p className="uppercase tracking-wider text-green-300 text-center text-4xl font-semibold">
-                            155%
-                          </p>
-                          <p className="text-sm font-bold px-10 text-center text-black">
-                            Increase in organic tranactions
-                          </p>
-                          <span className="flex justify-center items-center">
-                            <FaSignal className="text-green-300" size={80} />
-                          </span>
-                          <Link href="/casestudy">
-                            <button className="px-5 py-4 text-sm font-bold bg-[#FCCF40] rounded ">
-                              Read our case study
-                            </button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    {/* card end */}
-                  </div>
-                  <div className="relative hidden top-6 p-6  rounded-xl shadow-xl w-full">
+                <div className="mx-auto  w-full bg-[#122B59]/30 backdrop-blur-3xl h-96 fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                  <div className="relative top-6 p-6  rounded-xl shadow-xl w-full">
                     {/* triangle box */}
-                    <div className=" relative z-10 ">
+                    <div className="relative z-10 ">
                       <div className="flex gap-5 ">
                         {/* Second Column */}
                         <div
@@ -837,16 +633,14 @@ function MegaMenu() {
             <nav>
               <ul>
                 <li>
-                  <button
-                    onClick={() => {
-                      setIsOpen(!isOpen);
-                    }}
+                  <a
+                    href="#"
                     className="rounded-lg px-3 py-2 font-semibold bg-[#FCCF40] flex items-center group"
                   >
                     <span className="mr-2 text-brand-primary font-bold text-xl">
                       Get Proposal
                     </span>
-                  </button>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -857,11 +651,6 @@ function MegaMenu() {
           </nav>
         </div>
       </header>
-      {isOpen && (
-        <div className={``}>
-          <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
-        </div>
-      )}
       {mobileNav && (
         <div className="z-9999 fixed w-full bg-white">
           <nav className="flex flex-col ">
@@ -886,16 +675,18 @@ function MegaMenu() {
                   <span>
                     <RiArrowDropDownLine
                       size={30}
-                      className={`transform transition-transform duration-300 ${servicesOpen ? "rotate-180 opacity-50" : ""
-                        }`}
+                      className={`transform transition-transform duration-300 ${
+                        servicesOpen ? "rotate-180 opacity-50" : ""
+                      }`}
                     />
                   </span>
                 </button>
                 <div
-                  className={`w-full  ${servicesOpen
+                  className={`w-full  ${
+                    servicesOpen
                       ? " visible opacity-100 transition translate-y-0 duration-300 ease-linear"
                       : "invisible opacity-0 translate-y-10 "
-                    }`}
+                  }`}
                 >
                   {servicesOpen && (
                     <ul>
@@ -942,16 +733,18 @@ function MegaMenu() {
                   <span>
                     <RiArrowDropDownLine
                       size={30}
-                      className={`transform transition-transform duration-300 ${caseStudiesOpen ? "rotate-180" : ""
-                        }`}
+                      className={`transform transition-transform duration-300 ${
+                        caseStudiesOpen ? "rotate-180" : ""
+                      }`}
                     />
                   </span>
                 </button>
                 <div
-                  className={`w-full ${caseStudiesOpen
+                  className={`w-full ${
+                    caseStudiesOpen
                       ? "visible opacity-100 transition translate-y-0 duration-300 ease-linear "
                       : "invisible opacity-0 translate-y-10 "
-                    }`}
+                  }`}
                 >
                   {caseStudiesOpen && (
                     <ul>
