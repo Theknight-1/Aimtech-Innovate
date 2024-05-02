@@ -2,15 +2,8 @@ import React from "react";
 import file from "@/Data.json";
 import Link from "next/link";
 
-export default function brandservice({ slug }) {
-  const dataOBJ = {
-    title: "Search Engine Optimization",
-    tagLine: "Best SEO service",
-    desciption:
-      "SEO is all about improving a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users.",
-    benifits: ["Fast", "Optimized", "Upscale", "Ontime"],
-    link: "/contact",
-  };
+export default function brandservice({ data }) {
+  const dataOBJ = data;
 
   return (
     <section class="overflow-hidden text-white ">
@@ -27,7 +20,7 @@ export default function brandservice({ slug }) {
         <div className=" flex items-center  justify-start">
           <div className="w-[40vw] h-[60vh] space-y-8  ">
             <h1 className="text-[#FCCF40] text-xl uppercase">
-              ABOUT OUR <span className="uppercase"> {slug}</span>
+              ABOUT OUR <span className="uppercase"> SEO Service</span>
             </h1>
             <h1 className="text-[4rem] font-semibold">{dataOBJ.tagLine}</h1>
             <p className="text-gray-200 text-lg">{dataOBJ.desciption}</p>
@@ -52,7 +45,9 @@ export default function brandservice({ slug }) {
           <div class="lg:pr-8 lg:pt-4  p-10 mt-9">
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
-              <p class="mt-2  text-3xl font-normal tracking-tight  sm:text-5xl ">
+
+              <p className="mt-2  text-3xl font-normal tracking-tight text-brand-secondary sm:text-5xl" >{dataOBJ.second.title}</p>
+              <p class="mt-2 hidden text-3xl font-normal tracking-tight  sm:text-5xl ">
                 Growing Your Business
                 <br />
                 and{" "}
@@ -62,60 +57,31 @@ export default function brandservice({ slug }) {
                 Your SEO Revenue
               </p>
               <br />
-              <div>
+              {/* <div>
                 <h1>Does this sound like you Business</h1>
-              </div>
+              </div> */}
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none ">
-                <ul class="list-disc space-y-5 text-xl">
-                  <li>
-                    You’re overly dependent on paid ads and not seeing enough
-                    ROI
-                  </li>
-                  <li>
-                    You want to enhance your PPC efforts with SEO for more
-                    success
-                  </li>
-                  <li>
-                    You’re trying to attract high-intent visitors (who are eager
-                    to buy your product or service) to your website
-                  </li>
-                  <li>
-                    You want to improve brand credibility by showing up in the
-                    SERPs for your business’ keywords
-                  </li>
-                  <li>
-                    You want to improve the user engagement rate on your site
-                  </li>
-                  <li>You need more sales of your top-notch products</li>
-                  <li>
-                    Now this is a story all about how, my life got
-                    flipped-turned upside down
-                  </li>
+                <ul class="list-disc space-y-5 text-xl" >
+
+                  {dataOBJ.second.points.map(item => (
+                    <li key={item}>{item}</li>
+                  ))}
+
+
                 </ul>
               </dl>
             </div>
             <div class="list-disc space-y-5 text-xl mt-5">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                molestiae provident harum recusandae cupiditate aliquid
-                laboriosam neque nisi, non sit.
+                {dataOBJ.second.description}
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                molestiae provident harum recusandae cupiditate aliquid
-                laboriosam neque nisi, non sit.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                molestiae provident harum recusandae cupiditate aliquid
-                laboriosam neque nisi, non sit.
-              </p>
+           
             </div>
           </div>
           <div className="">
             <img
-              src="/service/image28.png"
+              src={dataOBJ.second.image}
               alt="Product screenshot"
               class="w-full h-full object-contain"
             />
@@ -126,15 +92,17 @@ export default function brandservice({ slug }) {
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="">
             <img
-              src="/service/image30.png"
+              src={dataOBJ.third.image}
               alt="Product screenshot"
               class=" h-full object-cover"
             />
           </div>
-          <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:pr-8 lg:pt-4  p-10 mt-9">
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
-              <p class="mt-2  text-3xl font-normal tracking-tight  sm:text-5xl ">
+
+              <p className="mt-2  text-3xl font-normal tracking-tight text-brand-secondary sm:text-5xl" >{dataOBJ.third.title}</p>
+              <p class="mt-2 hidden text-3xl font-normal tracking-tight  sm:text-5xl ">
                 Growing Your Business
                 <br />
                 and{" "}
@@ -144,55 +112,26 @@ export default function brandservice({ slug }) {
                 Your SEO Revenue
               </p>
               <br />
-              <div>
+              {/* <div>
                 <h1>Does this sound like you Business</h1>
-              </div>
+              </div> */}
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none ">
-                <ul class="list-disc space-y-5">
-                  <li>
-                    You’re overly dependent on paid ads and not seeing enough
-                    ROI
-                  </li>
-                  <li>
-                    You want to enhance your PPC efforts with SEO for more
-                    success
-                  </li>
-                  <li>
-                    You’re trying to attract high-intent visitors (who are eager
-                    to buy your product or service) to your website
-                  </li>
-                  <li>
-                    You want to improve brand credibility by showing up in the
-                    SERPs for your business’ keywords
-                  </li>
-                  <li>
-                    You want to improve the user engagement rate on your site
-                  </li>
-                  <li>You need more sales of your top-notch products</li>
-                  <li>
-                    Now this is a story all about how, my life got
-                    flipped-turned upside down
-                  </li>
+                <ul class="list-disc space-y-5 text-xl" >
+
+                  {dataOBJ.third.points.map(item => (
+                    <li key={item}>{item}</li>
+                  ))}
+
+
                 </ul>
               </dl>
             </div>
-            <div class="mt-10 flex flex-col items-center gap-x-6">
+            <div class="list-disc space-y-5 text-xl mt-5">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                molestiae provident harum recusandae cupiditate aliquid
-                laboriosam neque nisi, non sit.
+                {dataOBJ.third.description}
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                molestiae provident harum recusandae cupiditate aliquid
-                laboriosam neque nisi, non sit.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                molestiae provident harum recusandae cupiditate aliquid
-                laboriosam neque nisi, non sit.
-              </p>
+           
             </div>
           </div>
         </div>

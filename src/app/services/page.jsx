@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <>
       <Navbar />
-      <Brandservice />
+      {/* <Brandservice /> */}
       <div className="h-32"></div>
       <FCStudy/>
       <CaseStudies />
