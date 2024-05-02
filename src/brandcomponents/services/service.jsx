@@ -40,9 +40,9 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full h-screen xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-5">
-          <div class="lg:pr-8 lg:pt-4  p-10 mt-9">
+      <section class=" w-full h-screen flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-5 ">
+          <div class="lg:pr-8 lg:pt-4  p-10 mt-9 flex flex-col items-center justify-center">
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
@@ -61,8 +61,8 @@ export default function brandservice({ data }) {
                 <h1>Does this sound like you Business</h1>
               </div> */}
 
-              <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none ">
-                <ul class="list-disc space-y-5 text-xl" >
+              <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
+                <ul class="list-disc space-y-6 text-xl" >
 
                   {dataOBJ.second.points.map(item => (
                     <li key={item}>{item}</li>
@@ -73,7 +73,7 @@ export default function brandservice({ data }) {
               </dl>
             </div>
             <div class="list-disc space-y-5 text-xl mt-5">
-              <p>
+              <p className="leading-normal">
                 {dataOBJ.second.description}
               </p>
            
@@ -88,7 +88,7 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class="mx-36 px-6 lg:px-8 ">
+      <section class="w-full h-screen flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="">
             <img
