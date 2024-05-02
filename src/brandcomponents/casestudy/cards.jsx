@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { PaginationNav1Presentation } from "@/uicomponent/PagiNation";
 const cards = ({ heading, getStartedButton }) => {
   return (
@@ -108,9 +109,11 @@ const cards = ({ heading, getStartedButton }) => {
           <h4 className="text-center text-[32px] font-bold text-white w-[40%]">
             Have a project in mind? <br /> Let’s get to work.
           </h4>
-          <button className="px-10 py-3 rounded-lg text-lg mt-5 bg-[#FFB700]">
+          <Link href='/contact' className=" mt-5">
+          <span className="px-10 py-3 rounded-lg text-lg  bg-[#FFB700]">
             {getStartedButton}
-          </button>
+          </span>
+          </Link>
         </div>
       ) : (
         <div className="flex  justify-center items-center">

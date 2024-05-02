@@ -137,10 +137,14 @@ export default function CaseLanding() {
           </div>
         </header>
         <div className="mt-10">
-          <div>
-            <h1 className="text-[3rem] font-bold text-center">
-              published date
-            </h1>
+          <div className=" p-4 flex flex-col items-center justify-center">
+            <span className="text-xl font-bold text-center">
+              published on : 2024-05-02 
+            </span>
+           
+            <span className="text-xl font-bold text-center">
+              Author : Aimtech Reserch lab
+            </span>
           </div>
           <div className="flex flex-1 w-full">
             <div className="w-[50%] flex flex-col">
@@ -209,7 +213,7 @@ export default function CaseLanding() {
             </div>
             <div className="flex-1 h-full ">
               <img
-                src="./case-study-1.png"
+                src="/case-study-1.png"
                 alt="image"
                 className="h-full w-full object-cover"
               />
@@ -220,7 +224,7 @@ export default function CaseLanding() {
           <div className="h-[70%] flex items-center justify-center gap-10 gap-y-4 ">
             <div className="flex-1 h-full">
               <img
-                src="./case-study-2.png"
+                src="/case-study-2.png"
                 alt="image"
                 className="h-full w-full object-cover"
               />
@@ -242,16 +246,9 @@ export default function CaseLanding() {
           </div>
         </section>
       </section>
-      <section className="w-full min-h-screen flex flex-col justify-center items-center">
-        <h1 className="text-[3.5rem] font-bold uppercase mb-3 text-white">
-          Explore our work
-        </h1>
-        <div className="grid grid-cols-4 grid-rows-4 max-w-screen-3xl w-full h-auto gap-4">
-          {squares.map((sq) => sq)}
-        </div>
-      </section>
+      
       <section className="">
-        <Cards heading={"Recent Case studies"} getStartedButton={"Start Project"} />
+        <Cards heading={"Recent Case studies"} getStartedButton={"Get started"} />
       </section>
     </>
   );

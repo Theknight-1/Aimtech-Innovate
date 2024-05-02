@@ -4,11 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 
-export default () => {
+const Carousel = () => {
     return (
         <section className='w-full my-24   h-auto py-32'>
-
-
             <Swiper
                 spaceBetween={25}
                 slidesPerView={3}
@@ -117,3 +115,7 @@ export default () => {
         </section>
     );
 };
+
+Carousel.displayName = 'Carousel';
+
+export default Carousel;

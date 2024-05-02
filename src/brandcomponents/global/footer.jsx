@@ -38,14 +38,9 @@ export default function Footer() {
             <span className="text-2xl">
               <CiMail />
             </span>
-            <span>info@aimtechinnovate.com</span>
+            <span>support@aimtechinnovate.com</span>
           </div>
-          <div className="flex items-center gap-5 px-3">
-            <span className="text-2xl">
-              <TfiWorld />
-            </span>
-            <span>www.aimtechinnovate.com</span>
-          </div>
+          
           <div className="flex flex-row items-center justify-center text-3xl gap-4">
             <FaFacebookF />
             <BiLogoInstagram />
@@ -55,34 +50,25 @@ export default function Footer() {
         <div className=" grid gap-12   md:grid-cols-2 xl:grid-cols-4">
          
           <div className="">
-            <div className="font-medium xl:mb-4">Services</div>
+            <div className="font-medium xl:mb-4">Case studies</div>
             <nav aria-label="Footer Navigation" className="">
               <ul className="space-y-4">
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Pricing
+                    Aimtech
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Demo
+                    Nextcoach
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Press
+                    ?..
                   </a>
                 </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Support Hub
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Contact
-                  </a>
-                </li>
+                
               </ul>
             </nav>
           </div>
@@ -92,54 +78,23 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Pricing
+                    About us
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Demo
+                    Blog
+                  </a>
+                </li>
+                
+                <li>
+                  <a className="hover:text-blue-600 hover:underline" href="#">
+                    Customers
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Press
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Support Hub
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="">
-            <div className=" font-medium xl:mb-4">Case studies</div>
-            <nav aria-label="Guides Navigation" className="">
-              <ul className="space-y-4">
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    How to make a footer
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Designing your app
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Getting help from the us
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Pricing vs Hourly Rate
+                    Brand
                   </a>
                 </li>
               </ul>
@@ -147,33 +102,57 @@ export default function Footer() {
           </div>
           <div className="">
             <div className=" font-medium xl:mb-4">Services</div>
+            <nav aria-label="Guides Navigation" className="">
+              <ul className="space-y-4">
+                <li>
+                  <a className="hover:text-blue-600 hover:underline" href="#">
+                    Web development & design
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-blue-600 hover:underline" href="#">
+                    PPC Advertisement
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-blue-600 hover:underline" href="#">
+                    SEO
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-blue-600 hover:underline" href="#">
+                    Digital Marketting
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-blue-600 hover:underline" href="#">
+                    Email Marketting
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="">
+            <div className=" font-medium xl:mb-4">Resources</div>
             <nav aria-label="Footer Navigation" className="">
               <ul className="space-y-4">
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Pricing
+                    Sitemap
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Demo
+                  <a className="hover:text-blue-600 hover:underline" href="terms-and-conditions">
+                    T & C
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Press
+                  <a className="hover:text-blue-600 hover:underline" href="/contact" target="_blank">
+                    Privacy Policy
                   </a>
                 </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Support Hub
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Contact
-                  </a>
-                </li>
+                
+                
               </ul>
             </nav>
           </div>
