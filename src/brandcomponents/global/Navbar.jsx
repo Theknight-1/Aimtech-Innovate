@@ -189,20 +189,23 @@ function MegaMenu() {
     const handleResize = () => {
       if (window.innerWidth > 1024) {
         setMobileNav(false);
+      } else {
+        setMobileNav(true); // Update mobile nav state if window width is <= 1024
       }
     };
-
+  
     // Initial check on mount
     handleResize();
-
+  
     // Event listener for window resize
     window.addEventListener("resize", handleResize);
-
+  
     // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, []); // If you have dependencies, include them here (e.g., [someProp, someState])
+  
 
   const handleMobileView = () => {
     setServicesOpen(false);
@@ -353,7 +356,7 @@ function MegaMenu() {
                           >
                             <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
                               {service.icon}
-                              <Link href={service.pagelink} target="_blank"> 
+                              <Link href={service.pagelink}> 
                               <h1 className="font-bold  hover:text-green-400">{service.title}</h1>
                               </Link>
                             </div>
@@ -491,7 +494,7 @@ function MegaMenu() {
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
-                          <Link href='casestudy/aimtech-casestudy'>
+                          <Link href='/casestudy/aimtech-casestudy'>
                           <span className="text-xl font-bold">Aimtech Casestudy</span>
                           </Link>
                           <article className="text-sm">
@@ -861,12 +864,12 @@ function MegaMenu() {
           <nav className="flex flex-col ">
             <ul className="flex flex-col justify-start p-5  xl:text-[22px] text-gray-900 gap-4">
               <li className="flex  group  py-2 border-b ">
-                <a href="#" className=" cursor-pointer font-bold">
+                <a href="/" className=" cursor-pointer font-bold">
                   Home
                 </a>
               </li>
               <li className="relative group  py-2 border-b ">
-                <a href="#" className=" cursor-pointer font-bold">
+                <a href="/about" className=" cursor-pointer font-bold">
                   About us
                 </a>
               </li>
