@@ -1,58 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FaSignal } from "react-icons/fa";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { IoBagHandleOutline } from "react-icons/io5";
-import { LiaGreaterThanSolid } from "react-icons/lia";
-import { LiaLessThanSolid } from "react-icons/lia";
-import Swiper from "swiper";
-
 const DMsg = () => {
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    swiperRef.current = new Swiper(".multiple-slide-carousel", {
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".multiple-slide-carousel .swiper-button-next",
-        prevEl: ".multiple-slide-carousel .swiper-button-prev",
-      },
-      breakpoints: {
-        1920: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1028: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        990: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-      },
-    });
-
-    return () => {
-      if (swiperRef.current) {
-        swiperRef.current.destroy();
-      }
-    };
-  }, []);
-
-  const handleNextButtonClick = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
-  const handlePrevButtonClick = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
 
   return (
     <>

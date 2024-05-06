@@ -6,7 +6,7 @@ import 'swiper/css';
 
 const Carousel = () => {
     return (
-        <section className='w-full my-24   h-auto py-32'>
+        <section className='w-full my-24   h-auto py-32 px-16 flex items-center justify-center'>
             <Swiper
                 spaceBetween={25}
                 slidesPerView={3}

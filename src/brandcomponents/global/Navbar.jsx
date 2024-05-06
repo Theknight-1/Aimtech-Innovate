@@ -77,6 +77,8 @@ function MegaMenu() {
   const servicedata = [
     {
       title: "Web design and Developemtn",
+      pagelink : "/services/web-development",
+      icon : <SiAffinitydesigner size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
@@ -87,6 +89,8 @@ function MegaMenu() {
     },
     {
       title: "Social Media Marketing",
+      pagelink : "/services/social-media-marketing",
+      icon : <RxHamburgerMenu size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
@@ -97,6 +101,8 @@ function MegaMenu() {
     },
     {
       title: "Pay Per Click Advertisement",
+      pagelink : "/services/ppc-advertisement",
+      icon : <RiExchangeDollarLine size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
@@ -107,6 +113,8 @@ function MegaMenu() {
     },
     {
       title: "Search Engine Optimization",
+      pagelink : "/services/seo-service",
+      icon : <GiTechnoHeart size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
@@ -117,6 +125,8 @@ function MegaMenu() {
     },
     {
       title: "Email marketting",
+      pagelink : "/services/email-marketing",
+      icon : <FaWhatsapp size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
@@ -337,40 +347,45 @@ function MegaMenu() {
                           style={{ flexBasis: "70%" }}
                         >
                         {servicedata.map((service, idx) => (
+                           
                           <div key={idx}
-                            className="px-6  lg:px-2 flex-1 text-black  p-4  border-r-2 border-black  "
+                            className="px-6  lg:px-2 flex-1 text-black  p-4  border shadow-xl rounded-xl   "
                           >
-                            <div className="flex justify-normal items-center text-brand-primary gap-4 h-16">
-                              <FaMagnifyingGlassChart size={35} />
-                              <h1 className="font-bold">{service.title}</h1>
+                            <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
+                              {service.icon}
+                              <Link href={service.pagelink} target="_blank"> 
+                              <h1 className="font-bold  hover:text-green-400">{service.title}</h1>
+                              </Link>
                             </div>
-                            <ul className="mt-3 text-[15px]">
+                            <ul className="mt-3 text-sm md:text-xl  p-2 font-semi-bold">
                             {service.services.map((srv, serviceIndex) => (
                            
-                               <li key={serviceIndex} >
-                               <Link
+                               <li key={serviceIndex} className="text-brand-primary hover:bg-brand-secondary px-4" >
+                                 {srv.name}
+                               {/* <Link
                                  href={`/services${srv.pagelink}`} // Use the slug as the href
                                  className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-brand-primary font-semibold hover:text-brand-secondary "
                                >
                                  {srv.name}
-                               </Link>
+                               </Link> */}
                              </li>
                         
                                
                               ))}
                              
 
-                              <li className="animate-bounce">
+                              <li className="animate-bounce px-4 mt-2">
                                 <a
-                                  href="#"
+                                  href="/services"
                                   className="flex items-center justify-start text-brand-secondary  gap-1"
                                 >
                                   <span className="text-sm font-bold">See all</span>
-                                  <LiaGreaterThanSolid size={12} />{" "}
+                                  
                                 </a>
                               </li>
                             </ul>
                           </div>
+                        
                            ))}
                         </div>
                         {/* Third Column */}
@@ -476,7 +491,7 @@ function MegaMenu() {
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
-                          <Link href='/aimtech-casestudy'>
+                          <Link href='casestudy/aimtech-casestudy'>
                           <span className="text-xl font-bold">Aimtech Casestudy</span>
                           </Link>
                           <article className="text-sm">
