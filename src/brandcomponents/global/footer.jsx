@@ -8,14 +8,135 @@ import { CiMail } from "react-icons/ci";
 import { TfiWorld } from "react-icons/tfi";
 import Link from "next/link";
 
+const ProvidedSchems = () => {
+  return (
+    <div className=" grid gap-12  md:grid-cols-2 xl:grid-cols-4 ">
+      <div className="">
+        <div className="font-medium xl:mb-4">Case studies</div>
+        <nav aria-label="Footer Navigation" className="">
+          <ul className="space-y-4">
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Aimtech
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Nextcoach
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                ?..
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className="">
+        <div className=" font-medium xl:mb-4">Company</div>
+        <nav aria-label="Footer Navigation" className="">
+          <ul className="space-y-4">
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                About us
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Blog
+              </a>
+            </li>
+
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Customers
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Brand
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className="">
+        <div className=" font-medium xl:mb-4">Services</div>
+        <nav aria-label="Guides Navigation" className="">
+          <ul className="space-y-4">
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Web development & design
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                PPC Advertisement
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                SEO
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Digital Marketting
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Email Marketting
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className="">
+        <div className=" font-medium xl:mb-4">Resources</div>
+        <nav aria-label="Footer Navigation" className="">
+          <ul className="space-y-4">
+            <li>
+              <a className="hover:text-blue-600 hover:underline" href="#">
+                Sitemap
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-blue-600 hover:underline"
+                href="terms-and-conditions"
+              >
+                T & C
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-blue-600 hover:underline"
+                href="/contact"
+                target="_blank"
+              >
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+};
+
 export default function Footer() {
   return (
     <footer className="relative h-[50vh]  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
-      <div className="flex items-center justify-around  h-[80%] w-full">
-        <div className="text-sm  max-w-72 space-y-3">
-          <div className="mb-6 flex items-start justify-center text-center flex-col h-24 space-x-2 ">
+      <div className=" md:flex md:items-center md:justify-around  h-[80%] w-full">
+        <div>
+         
+        </div>
+        <div className="text-sm  md:max-w-72 w-full space-y-3  ">
+          <div className="m-4 md:m-0 md:flex md:items-cemter md:justify-start   text-center flex-col h-24  ">
             <img
-              className="w-full h-full object-contain"
+              className=" h-full object-contain"
               src="/brand/logo/footer-logo.png"
               alt=""
             />
@@ -40,127 +161,22 @@ export default function Footer() {
             </span>
             <span>support@aimtechinnovate.com</span>
           </div>
-          
+
           <div className="flex flex-row items-center justify-center text-3xl gap-4">
             <FaFacebookF />
             <BiLogoInstagram />
             <CiLinkedin />
           </div>
         </div>
-        <div className=" grid gap-12   md:grid-cols-2 xl:grid-cols-4">
-         
-          <div className="">
-            <div className="font-medium xl:mb-4">Case studies</div>
-            <nav aria-label="Footer Navigation" className="">
-              <ul className="space-y-4">
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Aimtech
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Nextcoach
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    ?..
-                  </a>
-                </li>
-                
-              </ul>
-            </nav>
-          </div>
-          <div className="">
-            <div className=" font-medium xl:mb-4">Company</div>
-            <nav aria-label="Footer Navigation" className="">
-              <ul className="space-y-4">
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Blog
-                  </a>
-                </li>
-                
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Customers
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Brand
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="">
-            <div className=" font-medium xl:mb-4">Services</div>
-            <nav aria-label="Guides Navigation" className="">
-              <ul className="space-y-4">
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Web development & design
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    PPC Advertisement
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    SEO
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Digital Marketting
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Email Marketting
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="">
-            <div className=" font-medium xl:mb-4">Resources</div>
-            <nav aria-label="Footer Navigation" className="">
-              <ul className="space-y-4">
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="#">
-                    Sitemap
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="terms-and-conditions">
-                    T & C
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-blue-600 hover:underline" href="/contact" target="_blank">
-                    Privacy Policy
-                  </a>
-                </li>
-                
-                
-              </ul>
-            </nav>
-          </div>
+        <div className="md:block hidden">
+          <ProvidedSchems />
         </div>
       </div>
       <div className="border-t text-white">
         <div className="mx-auto  max-w-lg gap-5  py-3 text-center flex justify-center items-center cursor-pointer">
-          <p className="w-max">© 2024 Aimtech Innovate | A Joint venture With </p>
+          <p className="w-max">
+            © 2024 Aimtech Innovate | A Joint venture With{" "}
+          </p>
           <div>
             <img src="/brand/logo/logo-12.png" alt="logo12" />
           </div>

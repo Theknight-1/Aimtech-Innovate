@@ -13,7 +13,7 @@ const Accordion = ({
   return (
     // className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'
     <div
-      className={`border  group  text-sm md:text-xl border-[#FFB700] rounded-xl ${
+      className={`border  group   border-[#FFB700] rounded-xl  ${
         isOpen ? "bg-[#FFB700] text-brand-primary" : "text-white"
       }`}
     >
@@ -24,7 +24,7 @@ const Accordion = ({
         <div className="flex gap-x-4 items-center ">
           {/* <img src="/arrow-double-end.svg" className={` w-4 h-4  group-hover:animate-fade-right group-hover:animate-infinite group-hover:animate-alternate ${isOpen ? "hidden" :""}`} alt="" /> */}
 
-          <h2 className="text-2xl font-semibold">{title}</h2>
+          <h2 className=" font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl">{title}</h2>
         </div>
         <svg
           className={`w-6 h-6 ${isOpen ? "transform rotate-180" : ""}`}
@@ -43,7 +43,7 @@ const Accordion = ({
       <div className="px-6">
         {isOpen && (
           <div className=" flex items-start flex-col justify-center">
-            <article className="text-sm lg:text-2xl">{content}</article>
+            <article className="text-sm sm:text-lg md:text-xl xl:text-2xl py-3">{content}</article>
           </div>
         )}
       </div>
