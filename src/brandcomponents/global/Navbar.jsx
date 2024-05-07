@@ -347,9 +347,9 @@ function MegaMenu() {
                           style={{ flexBasis: "70%" }}
                         >
                           {servicedata.map((service, idx) => (
-                            <Link href={service.pagelink}>
+                            <Link key={idx} href={service.pagelink}>
                             <div
-                              key={idx}
+                              
                               className="px-6 h-full lg:px-2 flex-1 text-black  p-4 border  shadow-xl hover:shadow-2xl hover:border-2 hover:border-brand-secondary rounded-xl   "
                               >
                               <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
