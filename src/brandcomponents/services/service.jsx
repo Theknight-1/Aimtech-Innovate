@@ -6,33 +6,33 @@ export default function brandservice({ data }) {
   const dataOBJ = data;
 
   return (
-    <section class="overflow-hidden text-white ">
-      <section className="w-full h-[90vh]  flex  justify-evenly items-center bg-[url('/vector/Waves.svg')] ">
-        <div className=" flex items-center justify-center">
-          <div className="">
+    <section class="overflow-x-hidden h-auto  text-white gap-y-8 ">
+      <section className="w-full h-auto  flex flex-col md:flex-row    justify-evenly items-center bg-[url('/vector/Waves.svg')] ">
+        <div className="w-1/2  flex items-center justify-center p-8 ">
+          
             <img
               src="/service/Img2-about-section.png"
               alt="Product screenshot"
               class=" h-full object-cover"
             />
-          </div>
+          
         </div>
-        <div className=" flex items-center  justify-start">
-          <div className="w-[40vw] h-[60vh] space-y-8  ">
-            <h1 className="text-[#FCCF40] text-xl uppercase">
+        <div className=" flex-1 p-8 flex items-center   justify-start">
+          <div className="w-full h-auto space-y-8   ">
+            <h1 className="text-brand-secondary text-xl uppercase">
               ABOUT OUR <span className="uppercase"> SEO Service</span>
             </h1>
-            <h1 className="text-[4rem] font-semibold">{dataOBJ.tagLine}</h1>
-            <p className="text-gray-200 text-lg">{dataOBJ.desciption}</p>
+            <article className="text-xl lg:text-4xl font-semibold">{dataOBJ.tagLine}</article>
+            <p className="text-white text-xl lg:text-lg">{dataOBJ.desciption}</p>
             <div className="grid grid-cols-2 text-[#FCCF40] gap-4 text-2xl">
               {dataOBJ.benifits.map((ben, index) => (
                 <span key={index}>{ben}</span>
               ))}
             </div>
-            <div>
+            <div className="">
               <Link
                 href={dataOBJ.link}
-                className="px-6 w-max block py-6 bg-[#FFB700] text-[#102D5E] font-bold text-lg rounded-xl"
+                className="p-4 bg-brand-secondary text-center text-brand-primary font-bold text-sm md:text-lg rounded-xl"
               >
                 Discover More
               </Link>
@@ -40,9 +40,9 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full h-screen flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-5 ">
-          <div class="lg:pr-8 lg:pt-4  p-10 mt-9 flex flex-col items-center justify-center">
+      <section class=" w-full mt-20 h-auto flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+        <div class=" h-full flex flex-col-reverse md:flex-row items-center justify-center gap-2">
+          <div class="w-full lg:w-1/2 h-full  lg:pr-8  p-10  overflow-hidden flex flex-col items-center justify-center ">
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
@@ -79,16 +79,16 @@ export default function brandservice({ data }) {
            
             </div>
           </div>
-          <div className="">
+          <div className="flex-1 h-full ">
             <img
               src={dataOBJ.second.image}
               alt="Product screenshot"
-              class="w-full h-full object-contain"
+              class="w-full h-full object-contain aspect-square"
             />
           </div>
         </div>
       </section>
-      <section class="w-full h-screen flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+      <section class="w-full h-auto flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="">
             <img

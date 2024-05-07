@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import { gsap } from "gsap";
 
 const images = [
-  "https://images.unsplash.com/photo-1594384448519-1e9529be29f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1680468710443-c5d3929403ad?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1560807707-6a5f2291a2c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1544083098-76551842b5fc?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1544083098-76551842b5fc?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
 ];
+
+
+
 
 export default function Services() {
   const [currentContent, setCurrentContent] = useState("businessImpact");
@@ -44,13 +43,13 @@ export default function Services() {
                 Get Started
               </button>
             </div>
-            <div className="absolute w-full h-full rounded-xl overflow-hidden">
-              <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
+            <div className="absolute w-full h-full rounded-xl overflow-hidden opacity-50">
+              {/* <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div> */}
               <img
                 src={currentImage}
-                loading="lazy"
+                
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
               />
             </div>
           </div>

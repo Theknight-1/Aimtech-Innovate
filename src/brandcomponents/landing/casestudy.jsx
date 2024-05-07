@@ -7,27 +7,27 @@ const caseStudiesData = [
     id: 1,
     image:
       "https://static.vecteezy.com/system/resources/previews/029/772/275/large_2x/happy-successful-asian-businessman-celebrating-in-modern-office-celebrate-success-and-achieving-goals-male-entrepreneur-celebrate-winning-moments-free-photo.jpeg",
-    title: "Brand Name 1",
+    title: "Aimtech",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!",
+      "Digital Marketing agency based in canada.",
     link: "/casestudy/aimtech",
   },
   {
     id: 2,
     image:
       "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Brand Name 2",
+    title: "Next coach",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!",
+      "IT service Company",
     link: "/casestudy/aimtech",
   },
   {
     id: 2,
     image:
-      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Brand Name 2",
+      "/landingPage/questionmark.jpg",
+    title: "This can be you",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nostrum!",
+      "Contact us for your case study",
     link: "/casestudy/aimtech",
   },
   // Add more case study data objects as needed
@@ -35,8 +35,8 @@ const caseStudiesData = [
 
 export default function CaseStudies() {
   return (
-    <section className="container mx-auto flex flex-col items-center gap-y-10 p-10 min-h-[120vh] pb-0 mt-8">
-      <div class="flex h-8 flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
+    <section className="flex flex-col items-center justify-center mt-20 h-auto lg:min-h-screen  gap-y-8 p-10 mt-8">
+      <div class="flex h-full flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
         <div class="w-1/10 h-full"></div>
         <div class="flex-1 flex items-center justify-center text-3xl md:text-4xl lg:text-5xl mb-16 gap-x-4 capitalize">
           <svg

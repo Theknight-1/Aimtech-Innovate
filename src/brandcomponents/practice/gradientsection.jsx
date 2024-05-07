@@ -12,12 +12,12 @@ export default function GradientSection() {
     <section className="w-screen min-h-[calc(100vh-10vh)] flex justify-center items-center bg-[url('/vector/Waves.svg')] xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
       <div className="grid max-w-screen  py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7 h-full space-y-5 ">
-          <h3 className="max-w-4xl uppercase tracking-tight text-sm md:text-lg xl:text-lg 2xl:text-xl dark:text-white bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
+          <h3 className="max-w-4xl uppercase text-white tracking-tight text-sm md:text-lg xl:text-lg 2xl:text-xl dark:text-white bg-gradient-to-r from-blue-500 to-blue-700  bg-clip-text">
             The most cost-effective digital marketing agency of{" "}
             <span className="text-yellow-300">USA</span> and{" "}
             <span className="text-green-300">Canada</span>
           </h3>
-          <h1 className="max-w-7xl  font-semibold tracking-wider text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl dark:text-white">
+          <h1 className="max-w-7xl text-white font-semibold tracking-wider text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl dark:text-white">
             Enhance your Digital Presence and gain Market excellence
           </h1>
           <div className="flex justify-end items-center my-5 ">
@@ -35,7 +35,7 @@ export default function GradientSection() {
               />
             </svg>
           </div>
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-white">
+          <p className="max-w-2xl mb-6 font-semibold text-white lg:mb-8 md:text-lg lg:text-xl dark:text-white">
             Don't believe it? Request a free quotation today
           </p>
           <div className="flex  items-center justify-start">

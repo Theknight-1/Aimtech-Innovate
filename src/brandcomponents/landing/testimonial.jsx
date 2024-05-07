@@ -58,7 +58,7 @@ export default function Testimonial() {
     <>
       <section className=" min-h-[calc(100vh-10vh)] flex flex-col items-center justify-center w-full  overflow-x-hidden mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div className="flex relative h-full   w-full flex-col-reverse lg:flex-row   ">
-          <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>            
+          {/* <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>             */}
           
           <div className="flex  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
             <div className="h-auto w-full  flex items-center justify-center  ">
