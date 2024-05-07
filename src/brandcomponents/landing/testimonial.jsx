@@ -56,7 +56,7 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className=" min-h-[calc(100vh-10vh)] flex flex-col items-center justify-center w-full  overflow-x-hidden mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+      <section className=" min-h-[calc(100vh-10vh)] flex flex-col items-center justify-center w-full  overflow-x-hidden mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div className="flex relative h-full   w-full flex-col-reverse lg:flex-row   ">
           <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>            
           
@@ -85,13 +85,13 @@ export default function Testimonial() {
                 <span className="font-bold">Work With Us</span>
                 <img
                   src="/arrow-double-end.svg"
-                  className="w-4 h-4 animate-fade-right animate-infinite animate-alternate"
+                  className="w-8 h-8 lg:w-6 lg:h-6 animate-fade-right animate-infinite animate-alternate"
                   alt=""
                 />
               </button>
             </div>
           </div>
-          <div className="relative flex h-auto flex-1 flex-col items-center justify-center">
+          <div className="relative flex h-auto flex-1 flex-col items-center justify-center space-y-5">
             <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div>
@@ -100,7 +100,7 @@ export default function Testimonial() {
                 <button onClick={showPreviousTestimonial}>
                   <img
                     src="/arrow-double-start.svg"
-                    className="w-4 h-4"
+                    className="w-8 h-8 lg:w-6 lg:h-6"
                     alt="arrow"
                   />
                 </button>
@@ -113,27 +113,27 @@ export default function Testimonial() {
                 <button onClick={showNextTestimonial}>
                   <img
                     src="/arrow-double-end.svg"
-                    className="w-4 h-4"
+                    className="w-8 h-8 lg:w-6 lg:h-6"
                     alt="arrow"
                   />
                 </button>
               </div>
-              <div className="flex h-auto min-h-16 w-full items-center justify-center">
+              <div className="flex h-auto min-h-16 w-full items-center justify-center  ">
                 <span
                   key={currentTestimonialIndex}
-                  className="text-center animate-fade-left text-3xl font-bold text-white"
+                  className="text-center animate-fade-left text-2xl sm:text-4xl md:text-3xl lg:text-3xl font-bold text-white"
                 >
                   “{currentTestimonial.quote}”
                 </span>
               </div>
               <div
                 key={currentTestimonialIndex}
-                className="flex animate-fade-left h-auto min-h-16 w-full flex-col items-center justify-center"
+                className="flex animate-fade-left h-auto min-h-16 w-full flex-col items-center justify-center "
               >
-                <span className="text-gray-200">
+                <span className="text-gray-200 text-2xl lg:text-3xl">
                   {currentTestimonial.author}
                 </span>
-                <span className="font-bold text-gray-100">
+                <span className="font-bold text-gray-100 ">
                   {currentTestimonial.company}
                 </span>
               </div>

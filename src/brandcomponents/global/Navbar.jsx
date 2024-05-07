@@ -31,16 +31,19 @@ const AnimatedHamburger = ({ handleMobileView }) => {
         >
           <div className="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <span
-              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${open ? "rotate-45 " : "-translate-y-1.5"
-                }`}
+              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${
+                open ? "rotate-45 " : "-translate-y-1.5"
+              }`}
             ></span>
             <span
-              className={`block absolute h-0.5 w-5 bg-black transition-opacity duration-400 ease-in-out ${open ? "opacity-0" : "opacity-100"
-                }`}
+              className={`block absolute h-0.5 w-5 bg-black transition-opacity duration-400 ease-in-out ${
+                open ? "opacity-0" : "opacity-100"
+              }`}
             ></span>
             <span
-              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${open ? "-rotate-45 " : "translate-y-1.5"
-                }`}
+              className={`block absolute h-0.5 w-7 bg-black transition-transform duration-400 ease-in-out ${
+                open ? "-rotate-45 " : "translate-y-1.5"
+              }`}
             ></span>
           </div>
         </button>
@@ -77,65 +80,65 @@ function MegaMenu() {
   const servicedata = [
     {
       title: "Web design and Developemtn",
-      pagelink : "/services/web-development",
-      icon : <SiAffinitydesigner size={35} />,
+      pagelink: "/services/web-development",
+      icon: <SiAffinitydesigner size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
         { name: "Digital Maketing Service", pagelink: "/digital-marketing" },
         { name: "Local SEO Services", pagelink: "/seo-service" },
         { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
+      ],
     },
     {
       title: "Social Media Marketing",
-      pagelink : "/services/social-media-marketing",
-      icon : <RxHamburgerMenu size={35} />,
+      pagelink: "/services/social-media-marketing",
+      icon: <RxHamburgerMenu size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
         { name: "Digital Maketing Service", pagelink: "/seo-service" },
         { name: "Local SEO Services", pagelink: "/seo-service" },
         { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
+      ],
     },
     {
       title: "Pay Per Click Advertisement",
-      pagelink : "/services/ppc-advertisement",
-      icon : <RiExchangeDollarLine size={35} />,
+      pagelink: "/services/ppc-advertisement",
+      icon: <RiExchangeDollarLine size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
         { name: "Digital Maketing Service", pagelink: "/seo-service" },
         { name: "Local SEO Services", pagelink: "/seo-service" },
         { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
+      ],
     },
     {
       title: "Search Engine Optimization",
-      pagelink : "/services/seo-service",
-      icon : <GiTechnoHeart size={35} />,
+      pagelink: "/services/seo-service",
+      icon: <GiTechnoHeart size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
         { name: "Digital Maketing Service", pagelink: "/seo-service" },
         { name: "Local SEO Services", pagelink: "/seo-service" },
         { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
+      ],
     },
     {
       title: "Email marketting",
-      pagelink : "/services/email-marketing",
-      icon : <FaWhatsapp size={35} />,
+      pagelink: "/services/email-marketing",
+      icon: <FaWhatsapp size={35} />,
       services: [
         { name: "SEO Service", pagelink: "/seo-service" },
         { name: "Enterprise SEO Services", pagelink: "/seo-service" },
         { name: "Digital Maketing Service", pagelink: "/seo-service" },
         { name: "Local SEO Services", pagelink: "/seo-service" },
         { name: "Google Local Service Ads", pagelink: "/seo-service" },
-      ]
+      ],
     },
-  ]
+  ];
 
   const services = [
     {
@@ -189,23 +192,23 @@ function MegaMenu() {
     const handleResize = () => {
       if (window.innerWidth > 1024) {
         setMobileNav(false);
-      } else {
-        setMobileNav(true); // Update mobile nav state if window width is <= 1024
-      }
+      } 
+      // else {
+      //   setMobileNav(true); // Update mobile nav state if window width is <= 1024
+      // }
     };
-  
+
     // Initial check on mount
     handleResize();
-  
+
     // Event listener for window resize
     window.addEventListener("resize", handleResize);
-  
+
     // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []); // If you have dependencies, include them here (e.g., [someProp, someState])
-  
 
   const handleMobileView = () => {
     setServicesOpen(false);
@@ -276,8 +279,9 @@ function MegaMenu() {
         </div>
       </div>
       <header
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${scrolling ? "bg-white text-black shadow" : "text-white"
-          } z-50 mb-2 w-screen`}
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
+          scrolling ? "bg-white text-black shadow" : "text-white"
+        } z-50 mb-2 w-screen`}
       >
         <div className="flex items-center justify-between ">
           <Link href="/" className="font-bold text-black  text-xl ">
@@ -319,7 +323,11 @@ function MegaMenu() {
                   </span>
                 </button>
 
-                <div className={`mx-auto   w-full bg-white ${scrolling ? "top-26" : "top-36"} h-auto fixed  left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform`}>
+                <div
+                  className={`mx-auto   w-full bg-white ${
+                    scrolling ? "top-26" : "top-36"
+                  } h-auto fixed  left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform`}
+                >
                   <div className="relative  p-6 h-auto rounded-lg  w-full  ">
                     <div className=" z-10  ">
                       <div className="flex gap-5 ">
@@ -349,47 +357,48 @@ function MegaMenu() {
                           className="flex-1 flex items-center  justify-center space-x-5  "
                           style={{ flexBasis: "70%" }}
                         >
-                        {servicedata.map((service, idx) => (
-                           
-                          <div key={idx}
-                            className="px-6  lg:px-2 flex-1 text-black  p-4  border shadow-xl rounded-xl   "
-                          >
-                            <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
-                              {service.icon}
-                              <Link href={service.pagelink}> 
-                              <h1 className="font-bold  hover:text-green-400">{service.title}</h1>
-                              </Link>
-                            </div>
-                            <ul className="mt-3 text-sm md:text-xl  p-2 font-semi-bold">
-                            {service.services.map((srv, serviceIndex) => (
-                           
-                               <li key={serviceIndex} className="text-brand-primary hover:bg-brand-secondary px-4" >
-                                 {srv.name}
-                               {/* <Link
+                          {servicedata.map((service, idx) => (
+                            <div
+                              key={idx}
+                              className="px-6  lg:px-2 flex-1 text-black  p-4  border shadow-xl rounded-xl   "
+                            >
+                              <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
+                                {service.icon}
+                                <Link href={service.pagelink}>
+                                  <h1 className="font-bold  hover:text-green-400">
+                                    {service.title}
+                                  </h1>
+                                </Link>
+                              </div>
+                              <ul className="mt-3 text-sm md:text-xl  p-2 font-semi-bold">
+                                {service.services.map((srv, serviceIndex) => (
+                                  <li
+                                    key={serviceIndex}
+                                    className="text-brand-primary hover:bg-brand-secondary px-4"
+                                  >
+                                    {srv.name}
+                                    {/* <Link
                                  href={`/services${srv.pagelink}`} // Use the slug as the href
                                  className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-brand-primary font-semibold hover:text-brand-secondary "
                                >
                                  {srv.name}
                                </Link> */}
-                             </li>
-                        
-                               
-                              ))}
-                             
+                                  </li>
+                                ))}
 
-                              <li className="animate-bounce px-4 mt-2">
-                                <a
-                                  href="/services"
-                                  className="flex items-center justify-start text-brand-secondary  gap-1"
-                                >
-                                  <span className="text-sm font-bold">See all</span>
-                                  
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        
-                           ))}
+                                <li className="animate-bounce px-4 mt-2">
+                                  <a
+                                    href="/services"
+                                    className="flex items-center justify-start text-brand-secondary  gap-1"
+                                  >
+                                    <span className="text-sm font-bold">
+                                      See all
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          ))}
                         </div>
                         {/* Third Column */}
                       </div>
@@ -410,7 +419,11 @@ function MegaMenu() {
                     </span>
                   </button>
                 </a>
-                <div className={`mx-auto divide-x divide-solid border-r-2  p-10  w-full bg-white h-auto fixed ${scrolling ? "top-26" : "top-36"} left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform`}>
+                <div
+                  className={`mx-auto divide-x divide-solid border-r-2  p-10  w-full bg-white h-auto fixed ${
+                    scrolling ? "top-26" : "top-36"
+                  } left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform`}
+                >
                   <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6">
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
@@ -494,11 +507,14 @@ function MegaMenu() {
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
-                          <Link href='/casestudy/aimtech-casestudy'>
-                          <span className="text-xl font-bold">Aimtech Casestudy</span>
+                          <Link href="/casestudy/aimtech-casestudy">
+                            <span className="text-xl font-bold">
+                              Aimtech Casestudy
+                            </span>
                           </Link>
                           <article className="text-sm">
-                            Studied aimtech core busness aspect and helped them grow with our expertise.
+                            Studied aimtech core busness aspect and helped them
+                            grow with our expertise.
                           </article>
                         </div>
                       </div>
@@ -883,16 +899,18 @@ function MegaMenu() {
                   <span>
                     <RiArrowDropDownLine
                       size={30}
-                      className={`transform transition-transform duration-300 ${servicesOpen ? "rotate-180 opacity-50" : ""
-                        }`}
+                      className={`transform transition-transform duration-300 ${
+                        servicesOpen ? "rotate-180 opacity-50" : ""
+                      }`}
                     />
                   </span>
                 </button>
                 <div
-                  className={`w-full  ${servicesOpen
+                  className={`w-full  ${
+                    servicesOpen
                       ? " visible opacity-100 transition translate-y-0 duration-300 ease-linear"
                       : "invisible opacity-0 translate-y-10 "
-                    }`}
+                  }`}
                 >
                   {servicesOpen && (
                     <ul>
@@ -939,16 +957,18 @@ function MegaMenu() {
                   <span>
                     <RiArrowDropDownLine
                       size={30}
-                      className={`transform transition-transform duration-300 ${caseStudiesOpen ? "rotate-180" : ""
-                        }`}
+                      className={`transform transition-transform duration-300 ${
+                        caseStudiesOpen ? "rotate-180" : ""
+                      }`}
                     />
                   </span>
                 </button>
                 <div
-                  className={`w-full ${caseStudiesOpen
+                  className={`w-full ${
+                    caseStudiesOpen
                       ? "visible opacity-100 transition translate-y-0 duration-300 ease-linear "
                       : "invisible opacity-0 translate-y-10 "
-                    }`}
+                  }`}
                 >
                   {caseStudiesOpen && (
                     <ul>
