@@ -223,9 +223,9 @@ function MegaMenu() {
 
   return (
     <>
-      <div className="flex justify-end  itmes-center  w-screen px-6 md:px-28 py-2 border-b border-gray-300 lg:border-none ">
-        <div className="hidden lg:flex gap-10 text-white font-semibold ">
-          <h4 className="flex items-center gap-2 text-lg">
+      <div className="flex justify-end  itmes-center  w-screen py-1 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 border-b border-gray-300 lg:border-none ">
+        <div className="hidden lg:flex gap-10 text-white  ">
+          <h4 className="flex items-center gap-2 text-xl">
             <a
               href="https://calendly.com/himanshusaxena5500/30min"
               target="_blank"
@@ -237,7 +237,7 @@ function MegaMenu() {
               Schedule Discovery Meet
             </a>
           </h4>
-          <h4 className="flex items-center gap-2 text-lg">
+          <h4 className="flex items-center gap-2 text-xl">
             <span>
               <FaWhatsapp size={22} />
             </span>
@@ -257,14 +257,16 @@ function MegaMenu() {
           </h4>
         </div>
         <div className=" lg:hidden w-full  flex justify-end">
-          <a
-            href="#"
-            className="rounded-lg px-2 py-1 font-semibold bg-brand-secondary w-max-lg "
+          <button
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className="rounded-lg px-2 py-1.5 font-semibold bg-brand-secondary w-max-lg "
           >
-            <span className="text-brand-primary hover:text-white font-bold text-sm">
+            <span className="text-brand-primary hover:text-white font-bold text-lg">
               Get Proposal
             </span>
-          </a>
+          </button>
         </div>
       </div>
       <header

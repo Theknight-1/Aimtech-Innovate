@@ -35,10 +35,10 @@ const caseStudiesData = [
 
 export default function CaseStudies() {
   return (
-    <section className="flex flex-col items-center justify-center mt-20 h-auto lg:min-h-screen  gap-y-8 p-10 mt-8">
+    <section className="flex flex-col items-center justify-center  h-auto lg:min-h-screen  gap-y-8 space-y-5">
       <div class="flex h-full flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
         <div class="w-1/10 h-full"></div>
-        <div class="flex-1 flex items-center justify-center text-3xl md:text-4xl lg:text-5xl mb-16 gap-x-4 capitalize">
+        <div class="flex-1 flex items-center justify-center text-2xl md:text-4xl lg:text-6xl  gap-x-4 capitalize">
           <svg
             className="w-10 h-auto md:w-20 lg:w-32 md:h-12 lg:h-16 scale-x-[-1]"
             viewBox="0 0 129 146"
@@ -72,9 +72,9 @@ export default function CaseStudies() {
         </div>
         <div class="w-1/10"></div>
       </div>
-      <div className="flex h-full w-full flex-row flex-wrap items-center justify-center gap-8">
+      <div className="flex h-full w-full flex-row flex-wrap items-center justify-center gap-5 lg:gap-8">
         {caseStudiesData.map((study) => (
-          <div key={study.id} className="flip-card aspect-square h-auto w-96">
+          <div key={study.id} className="flip-card aspect-square h-auto w-9/12 lg:w-96">
             <div className="flip-card-inner w-full h-full">
               <div className="flip-card-front">
                 <img
@@ -102,7 +102,7 @@ export default function CaseStudies() {
       <div>
         <Link
           href="/casestudy"
-          className="rounded-lg bg-yellow-400 p-4 shadow-lg font-bold hover:text-white"
+          className="rounded-lg bg-yellow-400 p-5 text-lg shadow-lg font-bold hover:text-white"
         >
           Explore More Case studies
         </Link>
