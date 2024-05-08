@@ -38,11 +38,11 @@ export default function Pland() {
       {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
                 <div className='border w-full h-full '></div>
             </div> */}
-      <section class="  min-h-screen mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24  sm:px-8 px-4  ">
-        <div class=" h-auto w-full  bg-[#162F5C]  ">
+      <section class="  min-h-screen mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4  ">
+        <div class=" h-auto w-full ">
           <div className="  w-full h-auto">
-            <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  md:p-6">
-              <div className="flex flex-col justify-between w-full lg:w-1/3 h-full md:p-10 sm:p-7 p-5">
+            <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 ">
+              <div className="flex flex-col justify-between w-full lg:w-1/3 h-full  sm:p-7 md:p-6 xl:p-5">
                 <div className="mb-3 text-center md:text-left">
                   <span className="font-bold  text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-white leading-normal">
                     Frequently Asked Questions?
@@ -60,7 +60,7 @@ export default function Pland() {
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
-                  <button className="bg-[#FFB700] w-max p-5 md:text-3xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 ">
+                  <button className="bg-[#FFB700] w-max xl:p-5 lg:p-3 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 ">
                     {" "}
                     +979846135461
                   </button>
@@ -69,7 +69,7 @@ export default function Pland() {
               {/* Accordion */}
               {/* accordian End */}
 
-              <div className="flex flex-col gap-y-4 md:p-10 p-4 h-auto overflow-hidden flex-1 ">
+              <div className="flex flex-col gap-y-4 p-4 sm:p-7 md:p-8 xl:p-6 h-auto overflow-hidden flex-1 ">
                 {accordionData.map((item, index) => (
                   <Accordion
                     key={index}

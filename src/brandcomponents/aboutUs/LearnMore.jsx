@@ -2,18 +2,22 @@ import React from "react";
 
 const LearnMore = () => {
   return (
-    <section className="w-full h-screen">
-      <div className="w-full h-full">
-        <div className="w-full flex items-center ">
-          <div className=" flex-1">
-            <img src="/about/aboutUsPlaceholder.png" alt="" />
+    <section className="w-full h-auto lg:h-screen flex justify-center items-center ">
+      <div className="w-full lg:px-0 ">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="flex-1 mb-6 lg:mb-0 lg:mr-6">
+            <img
+              src="/about/aboutUsPlaceholder.png"
+              alt="About Us"
+              className="w-full lg:w-auto h-auto object-cover"
+            />
           </div>
-          <div className="flex-1 ">
-            <div className="px-20 space-y-5">
-              <h1 className="text-5xl tracking-wide font-semibold text-white">
+          <div className="flex-1">
+            <div className="px-4 lg:px-0 space-y-5">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl tracking-wide font-semibold text-white">
                 Learn More <br /> About Us
               </h1>
-              <p className="text-2xl text-white">
+              <p className="text-lg lg:text-xl text-white">
                 Aimtech Innovate is a leading provider of Digital Marketing
                 Services in the US and Canadian markets. With a focus on
                 delivering innovative solutions tailored to each client's unique
@@ -31,39 +35,42 @@ const LearnMore = () => {
                 maintain customer relationships through personalized
                 communication.
               </p>
-              <div className=" pl-5 flex items-center gap-5">
-                <div class="mt-3 flex -space-x-5">
+              <div className="flex items-center space-x-4 lg:space-x-8">
+                <div className="flex items-center">
                   <img
-                    class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                    className="h-12 w-12 lg:h-16 lg:w-16 rounded-full ring-2 ring-white"
                     src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
                   <img
-                    class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                    className="h-12 w-12 lg:h-16 lg:w-16 rounded-full ring-2 ring-white"
                     src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
                   <img
-                    class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                    className="h-12 w-12 lg:h-16 lg:w-16 rounded-full ring-2 ring-white"
                     src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                     alt=""
                   />
                   <img
-                    class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                    className="h-12 w-12 lg:h-16 lg:w-16 rounded-full ring-2 ring-white"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
                   <img
-                    class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                    className="h-12 w-12 lg:h-16 lg:w-16 rounded-full ring-2 ring-white"
                     src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
                 </div>
-                <div class="mt-3 text-sm font-medium leading-0">
-                  <a href="#" class="text-[#FFB700] text-6xl font-bold">
+                <div className="text-xs lg:text-sm text-white">
+                  <a
+                    href="#"
+                    className="text-[#FFB700] text-2xl lg:text-4xl font-bold"
+                  >
                     50k+
                   </a>
-                  <p className="text-lg text-white">Joined in already</p>
+                  <p className="text-lg lg:text-base">Joined already</p>
                 </div>
               </div>
             </div>

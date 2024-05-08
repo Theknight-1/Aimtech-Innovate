@@ -28,15 +28,13 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const message = { ...formData };
     // Here you can perform actions with formData, like submitting it to a server
-    const formDataOBJ = JSON.stringify(formData);
-    console.log(formDataOBJ);
-
     emailjs
       .send(
         "service_g79hhi5",
         "template_1ns7gma",
-        { formDataOBJ },
+        { message: JSON.stringify(message) },
 
         "TTp0Vsx20RoZKcD4I"
       )

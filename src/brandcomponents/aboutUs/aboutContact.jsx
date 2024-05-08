@@ -3,7 +3,7 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const aboutContact = () => {
   return (
-    <section className="w-full relative h-[60vh]">
+    <section className="w-full relative h-[60vh] border">
       <div className="w-full h-full ">
         <div className="flex gap-20 items-center justify-center">
           <div>

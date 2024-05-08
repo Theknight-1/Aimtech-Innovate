@@ -163,7 +163,7 @@ export default function Services() {
           <div className="w-full  space-y-5 lg:pr-20 pr-0">
             <button
               onClick={() => handleButtonClick("businessImpact")}
-              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-3xl sm:text-3xl lg:text-4xl py-8  service-btn ${
+              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-2xl sm:text-3xl lg:text-4xl py-8  service-btn ${
                 currentContent === "businessImpact"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"
@@ -173,7 +173,7 @@ export default function Services() {
             </button>
             <button
               onClick={() => handleButtonClick("contentMarketing")}
-              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-3xl sm:text-3xl lg:text-4xl py-8  service-btn ${
+              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-2xl sm:text-3xl lg:text-4xl py-8  service-btn ${
                 currentContent === "contentMarketing"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"
@@ -183,7 +183,7 @@ export default function Services() {
             </button>
             <button
               onClick={() => handleButtonClick("ecommerceDevelopment")}
-              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center  text-wrap tracking-tight text-3xl sm:text-3xl lg:text-4xl py-8  service-btn ${
+              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center  text-wrap tracking-tight text-2xl sm:text-3xl lg:text-4xl py-8  service-btn ${
                 currentContent === "ecommerceDevelopment"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"
@@ -193,7 +193,7 @@ export default function Services() {
             </button>
             <button
               onClick={() => handleButtonClick("webDesign")}
-              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-3xl sm:text-3xl lg:text-4xl py-8  service-btn ${
+              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-2xl sm:text-3xl lg:text-4xl py-8  service-btn ${
                 currentContent === "webDesign"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"
@@ -203,7 +203,7 @@ export default function Services() {
             </button>
             <button
               onClick={() => handleButtonClick("seoService")}
-              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-3xl sm:text-3xl lg:text-4xl py-8  service-btn ${
+              className={`flex h-12 sm:h-16 lg:h-20 w-full items-center text-wrap tracking-tight text-2xl sm:text-3xl lg:text-4xl py-8  service-btn ${
                 currentContent === "seoService"
                   ? "bg-[#FFB700] text-[#122F5D] font-normal"
                   : "text-white"
