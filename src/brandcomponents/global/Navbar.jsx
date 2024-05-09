@@ -5,6 +5,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaWhatsapp,FaSignal } from "react-icons/fa";
 import { FaPhone,FaMagnifyingGlassChart } from "react-icons/fa6";
 import { GoDeviceCameraVideo } from "react-icons/go";
+import { FcNext } from "react-icons/fc";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
 // react icons
 
@@ -319,7 +320,7 @@ function MegaMenu() {
                     scrolling ? "top-26" : "top-36"
                   } h-auto fixed  left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform`}
                 >
-                  <div className="relative bg-white p-6 h-auto rounded-lg  w-full h-96  ">
+                  <div className="relative bg-white p-6  rounded-lg  w-full h-96">
                     <div className="   h-full ">
                       <div className="flex gap-5 h-full ">
                         {/* First Column */}
@@ -345,14 +346,14 @@ function MegaMenu() {
 
                         {/* Second Column */}
                         <div
-                          className="flex-1 flex items-center h-full   justify-center space-x-5  "
+                          className="flex-1 flex items-center h-full py-24 justify-around space-x-5  "
                           style={{ flexBasis: "70%" }}
                         >
                           {servicedata.map((service, idx) => (
                             <Link key={idx} href={service.pagelink}>
                             <div
                               
-                              className="px-6 h-full lg:px-2 flex-1 text-black  p-4 border  shadow-xl hover:shadow-2xl hover:border-2 hover:border-brand-secondary rounded-xl   "
+                              className="px-6 h-full lg:px-2 flex-1 text-black  p-4 border shadow-xl hover:shadow-2xl hover:border-2 hover:border-brand-secondary rounded-xl   "
                               >
                               <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
                                 {service.icon}
@@ -366,8 +367,9 @@ function MegaMenu() {
                                 {service.services.map((srv, serviceIndex) => (
                                   <li
                                     key={serviceIndex}
-                                    className="text-brand-primary cursor-pointer px-4"
+                                    className="text-brand-primary cursor-pointer px-4 flex items-center justify-start p-1 gap-2"
                                   >
+                                    <span><FcNext /></span>
                                     {srv.name}
                                     {/* <Link
                                  href={`/services${srv.pagelink}`} // Use the slug as the href
@@ -411,13 +413,13 @@ function MegaMenu() {
                   <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6  text-brand-primary">
                     <div className="flex flex-col md:flex-row gap-6  ">
                     {/* card start */}
-                    <div className="w-1/4 border-2 border-brand-secondary hover:shadow-2xl  rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
+                    <div className="w-1/4 border-2  hover:shadow-2xl  rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
                       <h1 className="font-bold text-blue-500 text-xl ">
                         Email related
                       </h1>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
-                        <div className="flex flex-col items-start gap-2 ">
+                        <div className="flex flex-col items-start gap-2">
                           <span className="text-xl font-bold  hover:text-brand-secondary ">Next coach</span>
                           <article className="text-sm">
                             Lorem ipsum dolor sit amet consectetur adipisicing
@@ -448,7 +450,7 @@ function MegaMenu() {
                     </div>
                     {/* card end */}
                     {/* card start */}
-                    <div className="w-1/4 border-2 border-brand-secondary hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
+                    <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
                       <h1 className="font-bold text-[#7E62DD] text-xl">
                         SEO related
                       </h1>
@@ -485,7 +487,7 @@ function MegaMenu() {
                     </div>
                     {/* card end */}
                     {/* card start */}
-                    <div className="w-1/4 border-2 border-brand-secondary hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
+                    <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
                       <h1 className="font-bold text-green-500 text-xl">
                         Web Developement related
                       </h1>
@@ -526,7 +528,7 @@ function MegaMenu() {
                     </div>
                     {/* card end */}
                     {/* card start */}
-                    <div className="w-1/4 border-2 border-brand-secondary hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
+                    <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
                       <h1 className="font-bold text-[#7E62DD] text-xl">
                         PPC related
                       </h1>
@@ -564,24 +566,24 @@ function MegaMenu() {
                     {/* card end */}
                     </div>
                     {/* card start */}
-                    <div className="w-1/4 h-auto rounded-lg border-2 border-brand-secondary hover:shadow-2xl  p-2 overflow-hidden text-wrap">
+                    <div className="w-1/4 h-auto rounded-lg border-2 bg-brand-secondary hover:shadow-2xl  p-2 overflow-hidden text-wrap">
                       <div
                         className="w-full h-full flex justify-center items-center"
                         style={{ flexBasis: "15%" }}
                       >
                         {/* Use flex-2 class for the third box */}
                         <div className="space-y-5 text-center">
-                          <p className="uppercase tracking-wider text-green-300 text-center text-4xl font-semibold">
+                          <p className="uppercase tracking-wider text-brand-primary text-center text-4xl font-semibold">
                             155%
                           </p>
-                          <p className="text-sm font-bold px-10 text-center text-black">
+                          <p className="text-xl font-bold px-10 text-center text-black">
                             Increase in organic tranactions
                           </p>
                           <span className="flex justify-center items-center">
-                            <FaSignal className="text-green-300" size={80} />
+                            <FaSignal className="text-brand-primary" size={80} />
                           </span>
                           <Link href="/casestudy">
-                            <button className="px-5 py-4 text-sm font-bold bg-[#FCCF40] rounded ">
+                            <button className="px-5 py-4 text-sm font-bold bg-brand-primary rounded text-white">
                               Read our case study
                             </button>
                           </Link>

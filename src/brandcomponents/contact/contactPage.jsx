@@ -10,6 +10,7 @@ const ContactPage = () => {
     businessEmail: "",
     mobileNumber: "",
     country: "",
+    services: "",
     company: "",
     howDidYouKnow: "",
   });
@@ -47,6 +48,7 @@ const ContactPage = () => {
             businessEmail: "",
             mobileNumber: "",
             country: "Nepal",
+            services: "",
             company: "",
             howDidYouKnow: "",
           });
@@ -90,7 +92,8 @@ const ContactPage = () => {
                 <span>
                   <FaCheckCircle />
                 </span>{" "}
-                SEO is all about improving a website's visibility on search engines like Google
+                SEO is all about improving a website's visibility on search
+                engines like Google
               </p>
               <p className="flex items-center gap-6 text-white text-xl lg:text-2xl">
                 <span>
@@ -102,7 +105,8 @@ const ContactPage = () => {
                 <span>
                   <FaCheckCircle />
                 </span>{" "}
-                Improved user experience & customer satisfaction through our specialized design approach.
+                Improved user experience & customer satisfaction through our
+                specialized design approach.
               </p>
             </div>
           </div>
@@ -127,7 +131,7 @@ const ContactPage = () => {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                     required
                   />
                 </div>
@@ -140,7 +144,7 @@ const ContactPage = () => {
                     name="designation"
                     value={formData.designation}
                     onChange={handleChange}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                     required
                   />
                 </div>
@@ -153,7 +157,7 @@ const ContactPage = () => {
                     name="businessEmail"
                     value={formData.businessEmail}
                     onChange={handleChange}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                     required
                   />
                 </div>
@@ -166,7 +170,7 @@ const ContactPage = () => {
                     name="mobileNumber"
                     value={formData.mobileNumber}
                     onChange={handleChange}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                     required
                   />
                 </div>
@@ -178,13 +182,33 @@ const ContactPage = () => {
                     name="country"
                     value={formData.country}
                     onChange={handleChange}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                   >
                     <option value="Canada">Canada</option>
                     <option value="US">US</option>
                     <option value="Nepal">Nepal</option>{" "}
                     {/* Corrected value for Nepal */}
                     {/* Add more country options here */}
+                  </select>
+                </div>
+                <div className="mb-4">
+                  <label className="block font-medium text-black text-xl">
+                    Services
+                  </label>
+                  <select
+                    name="services"
+                    value={formData.services}
+                    onChange={handleChange}
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
+                  >
+                    <option className="w-full" value="Web Design and Development">
+                      Web Design and Development
+                    </option>
+                    <option className="w-full"  value="Social Media Management">
+                      Social Media Management
+                    </option>
+                    <option className="w-full"  value="PPC Advertisement">PPC Advertisement</option>
+                    <option className="w-full"  value="Email Marketing">Email Marketing</option>
                   </select>
                 </div>
                 <div className="mb-4">
@@ -196,7 +220,7 @@ const ContactPage = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                   />
                 </div>
                 <div className="mb-4">
@@ -208,7 +232,7 @@ const ContactPage = () => {
                     value={formData.howDidYouKnow}
                     onChange={handleChange}
                     rows={3}
-                    className="mt-1 p-2 w-full  rounded-md text-xl border-yellow-400 border-2"
+                    className="mt-1 p-2 w-full  rounded-md text-xl border-black border-2"
                   />
                 </div>
                 <button

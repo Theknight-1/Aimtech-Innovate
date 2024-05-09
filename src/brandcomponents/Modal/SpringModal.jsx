@@ -35,7 +35,6 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
         "service_g79hhi5",
         "template_1ns7gma",
         { message: JSON.stringify(message) },
-
         "TTp0Vsx20RoZKcD4I"
       )
       .then(
