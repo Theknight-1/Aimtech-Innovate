@@ -9,8 +9,8 @@ export default function GradientSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="w-screen min-h-[calc(100vh-10vh)] flex justify-center items-center bg-[url('/vector/Waves.svg')] xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-      <div className="grid max-w-screen  py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <section className="w-screen min-h-screen flex flex-col lg:flex-row  items-center bg-[url('/vector/Waves.svg')] xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+      <div className="grid max-w-screen  py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
         <div className="mr-auto place-self-center lg:col-span-7 h-full space-y-5 ">
           <h3 className="max-w-4xl uppercase text-white tracking-tight text-sm md:text-lg xl:text-lg 2xl:text-xl dark:text-white bg-gradient-to-r from-blue-500 to-blue-700  bg-clip-text">
             The most cost-effective digital marketing agency of{" "}
@@ -86,7 +86,7 @@ export default function GradientSection() {
               Get Started
             </Link>
           </div>
-          <div className="mt-10 flex flex-col md:flex-row items-center gap-5">
+          <div className="mt-10 flex flex-col md:flex-row  gap-5">
             <ul className="flex gap-2 text-xl text-white">
               <li>
                 <FaStar />
@@ -109,7 +109,7 @@ export default function GradientSection() {
             </span>
           </div>
         </div>
-        <div className="hidden relative lg:mt-0 lg:col-span-5 lg:flex items-center justify-center">
+        <div className=" relative lg:mt-0 lg:col-span-5 lg:flex items-center justify-center">
           <div className="absolute -z-0 w-full h-auto aspect-square rounded-full border bg-[#15BEE3]/30 blur-3xl"></div>
           <img
             src="./landingPage/Mockup.png"

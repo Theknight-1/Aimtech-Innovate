@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Accordion from "@/uicomponent/accordian";
+import Link from "next/link";
 
 export default function Pland() {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -42,28 +43,30 @@ export default function Pland() {
         <div class=" h-auto w-full ">
           <div className="  w-full h-auto">
             <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 ">
-              <div className="flex flex-col justify-between w-full lg:w-1/3 h-full  sm:p-7 md:p-6 xl:p-5">
+              <div className="flex flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
                 <div className="mb-3 text-center md:text-left">
                   <span className="font-bold  text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-white leading-normal">
                     Frequently Asked Questions?
                   </span>
                   <br />
                 </div>
-                <hr />
-                <br />
                 <div className="text-center md:text-left md:block hidden">
                   <span className="font-bold  text-2xl text-white mt-16">
                     Still have some Questions?
                   </span>
-                  <br />
                   <span className="text-xl text-white">
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
-                  <button className="bg-[#FFB700] w-max xl:p-5 lg:p-3 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 ">
-                    {" "}
-                    +979846135461
-                  </button>
+                  <div className=" mt-4 w-full h-full p-4">
+                    <Link
+                      href="tel:+1905-399-6642"
+                      className="bg-[#FFB700] w-max h-full xl:p-5 lg:p-3 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 "
+                    >
+                      {" "}
+                      +979846135461
+                    </Link>
+                  </div>
                 </div>
               </div>
               {/* Accordion */}
@@ -93,10 +96,15 @@ export default function Pland() {
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
-                  <button className="bg-[#FFB700] w-max p-5 md:text-3xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 ">
-                    {" "}
-                    +979846135461
-                  </button>
+                  <div className=" mt-4 w-full h-full p-4">
+                    <Link
+                      href="tel:+1905-399-6642"
+                      className="bg-[#FFB700] w-max h-full xl:p-5 lg:p-3 md:p-4 p-4 xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 "
+                    >
+                      {" "}
+                      +979846135461
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

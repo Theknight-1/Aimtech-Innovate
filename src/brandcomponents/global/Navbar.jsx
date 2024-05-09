@@ -254,7 +254,7 @@ function MegaMenu() {
             <span>
               <FaPhone size={15} />
             </span>{" "}
-            <a href="tel:+1905-399-6642"> +1 905-399-6642 </a>
+            <Link href="tel:+1905-399-6642"> +1 905-399-6642 </Link>
           </h4>
         </div>
         <div className=" lg:hidden w-full  flex justify-end">

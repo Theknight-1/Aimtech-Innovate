@@ -4,11 +4,11 @@ import React from "react";
 export default function Hcta() {
   return (
     <section className="py-10 text-gray-800 sm:py-16 md:py-20 overflow-hidden w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-      <div className="relative mx-auto z-10  hidden aspect-video h-auto w-full   rounded-xl  shadow-lg md:block">
+      <div className="relative mx-auto z-10   aspect-video h-auto w-full   rounded-xl  shadow-lg block">
         <div className="absolute top-0 -left-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
         <div className="absolute top-0 -right-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
         <div className="absolute  flex items-center justify-center w-full h-full">
-          <img className="h-auto  w-4/5" src="/Frame1.png" alt="image" />
+          <img className="h-auto w-full" src="/Frame1.png" alt="image" />
         </div>
       </div>
       <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">

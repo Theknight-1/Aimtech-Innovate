@@ -215,7 +215,7 @@ export default function Services() {
         </div>
 
         {/* Content Container */}
-        <div className="flex-1 flex   md:mt-16 mt-4 w-full">
+        <div className="flex-1 lg:flex  hidden  md:mt-16 mt-4 w-full">
           <div className="w-full h-full flex items-center justify-center ">
             {/* Render content based on currentContent */}
             {getContent()}

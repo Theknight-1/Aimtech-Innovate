@@ -15,7 +15,7 @@ export default function About() {
       <Navbar />
       <LearnMore />
       <DMsg/>
-      <Carousel/>
+      {/* <Carousel/> */}
       <Map />
       <Pland />
       <AboutContact />
