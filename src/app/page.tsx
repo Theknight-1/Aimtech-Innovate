@@ -32,10 +32,10 @@ export default function Home() {
   ];
   return (
     <>
-      <title> Aimtech innovate </title>
+      <title> Digital Marketing Agency Based in Canada, | Aim Tech Innovate</title>
       <NextSeo
-        title="Aimtech innovate"
-        description="Your best serach for Digital marketting and brand building."
+        title="Digital Marketing Agency Based in Canada, | Aim Tech Innovate"
+        description="Increase ROI with the best digital marketing agency || Performance guarantees || Canada Based Company ||  Local & global | Get in touch today!"
       />
 
 

@@ -18,7 +18,8 @@ export default function GradientSection() {
             <span className="text-green-300">Canada</span>
           </h3>
           <h1 className="max-w-7xl text-white font-semibold tracking-wider text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl">
-            Enhance your Digital Presence and gain Market excellence
+          Explode Your Sales In The Next 90 Days Or We Work For Free
+
           </h1>
           <div className="flex justify-end items-center my-5 ">
             <svg

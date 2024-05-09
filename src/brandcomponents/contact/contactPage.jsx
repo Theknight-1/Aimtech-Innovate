@@ -67,13 +67,11 @@ const ContactPage = () => {
         <div className="flex-1 flex justify-center items-center h-[90vh] ">
           <div className="w-full lg:w-[80%] space-y-4 md:space-y-10 py-5 ">
             <h1 className="text-white text-4xl sm:text-6xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
-              Contact us to drive your CX & EX at scale
+            Get Seen, Get Heard, Get Found Online
             </h1>
-            <p className="text-white text-xl lg:text-2xl leading-normal">
-              Aimtech Innovate offers premier digital marketing services at
-              unbeatable rates in the US and Canada, thanks to our partnership
-              with Nepal's Next Coach Incubator Program. Access top-quality work
-              at a fraction of the cost.
+            <p className="text-white text-justify text-xl lg:text-2xl leading-normal">
+            If you are a business owner and want to increase your profit, then contact Aim Tech Innovate. Schedule a meeting to discuss, how Aim Tech Innovate can help you boost your sales and revenue like crazy! So, tell us what you desire by filling out the form below. We will contact you very soon.
+
             </p>
             <div className="space-y-3 lg:space-y-5">
               <p className="flex items-center gap-6 text-white text-xl lg:text-2xl">
@@ -95,12 +93,7 @@ const ContactPage = () => {
                 SEO is all about improving a website's visibility on search
                 engines like Google
               </p>
-              <p className="flex items-center gap-6 text-white text-xl lg:text-2xl">
-                <span>
-                  <FaCheckCircle />
-                </span>{" "}
-                Accuracy and Relevancy
-              </p>
+              
               <p className="flex items-center gap-6 text-white text-xl lg:text-2xl">
                 <span>
                   <FaCheckCircle />
@@ -113,12 +106,10 @@ const ContactPage = () => {
         </div>
         <div className="flex-1 flex items-center justify-center h-full">
           <div className="bg-white rounded-lg lg:rounded-[4rem] space-y-5 lg:w-[90%] p-4 md:p-8 lg:py-10 xl:p-16 ">
-            <h1 className="text-2xl lg:text-4xl font-bold">Contact Page</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold">Get in touch
+</h1>
             <p className="font-bold text-lg lg:text-xl">
-              Aimtech Innovate offers premier digital marketing services at
-              unbeatable rates in the US and Canada, thanks to our partnership
-              with Nepal's Next Coach Incubator Program. Access top-quality work
-              at a fraction of the cost.
+            We always get started with a conversation to better understand your needs, so fill in your details and one of our team will be in touch with you.
             </p>
             <div>
               <form onSubmit={handleSubmit} className=" p-0 lg:p-4 ">

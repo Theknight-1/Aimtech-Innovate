@@ -46,7 +46,7 @@ const DMsg = () => {
           </div>
         </div>
       </section>
-      <section className="lg:h-[80vh] h-auto w-full overflow-hidden">
+      <section className=" h-auto w-full overflow-hidden">
         <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center lg:gap-6 gap-2 lg:p-10 md:p-6 sm:p-4 p-2 py-4 ">
           <div className="relative items-center justify-center flex w-1/2">
             <img
@@ -59,33 +59,34 @@ const DMsg = () => {
           <div className="lg:w-1/2 w-full text-white text-lg lg:text-2xl p-2 lg:px-0 space-y-3 lg:space-y-10 ">
             <div className="h-auto w-full lg:w-9/12 space-y-2">
               <p className="text-blue-500 text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
-                Why choose us
+                Our Core Values
               </p>
               <h1 className="text-3xl font-bold">Key Features</h1>
               <div className="space-y-2 lg:space-y-6">
                 <div className="flex items-center gap-4">
                   <FaSignal className="text-xl lg:text-3xl" />
-                  <h1 className="text-lg lg:text-xl">Expand Your Reach</h1>
+                  <h1 className="text-lg lg:text-xl">Great Success </h1>
                 </div>
                 <p className="text-gray-300">
-                  With a focus on delivering innovative solutions, Aimtech
-                  Innovate offers a wide range of services.
+                Our focus is on your success. We treat you actively with confidence and care. Team puts passion into the delivery of each project and excels at world-class quality standards. And this is exactly how we manage any project to run effectively and well above our client’s expectations.
                 </p>
                 <div className="flex items-center gap-4">
                   <AiOutlinePieChart className="text-xl lg:text-3xl" />
-                  <h1 className="text-lg lg:text-xl">Improve Efficiency</h1>
+                  <h1 className="text-lg lg:text-xl">Our commitment
+</h1>
                 </div>
                 <p className="text-gray-300">
-                  With a focus on delivering innovative solutions, Aimtech
-                  Innovate offers a wide range of services.
+                We are your success partner for today and beyond. We keep the promises we make and keep being a persistently improving organization in all aspects of our work.
+
                 </p>
                 <div className="flex items-center gap-4">
                   <IoBagHandleOutline className="text-xl lg:text-3xl" />
-                  <h1 className="text-lg lg:text-xl">Enhance Productivity</h1>
+                  <h1 className="text-lg lg:text-xl">Team collaborate
+</h1>
                 </div>
                 <p className="text-gray-300">
-                  With a focus on delivering innovative solutions, Aimtech
-                  Innovate offers a wide range of services.
+                Our teamwork culture ensures that everyone is held responsible, and our commitments to you will be the same as they were. With years of combined knowledge, we can identify the top-notch results for your particular task.
+
                 </p>
               </div>
             </div>

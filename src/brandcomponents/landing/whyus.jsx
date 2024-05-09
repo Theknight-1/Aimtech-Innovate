@@ -7,32 +7,29 @@ export default function Whyus() {
 
   const accordionData = [
     {
-      title: "Web Development Services",
-      content: "Yes, You heard it right, we provide Web Development Services.",
+      title: "Integrity",
+      content: "We genuinely care about our clients and uphold strong moral principles in all we do. We deliver on our promises and are committed to providing honest and transparent recommendations.",
     },
     {
-      title: "SEO Optimization",
-      content: "Yes, You heard it right, we provide SEO Optimization services.",
+      title: "Customer Care",
+      content: "We treat our clients the way we like to be treated. We partner with our clients to deliver the highest standards of service excellence imaginable. Our response times are fast and we make sure clients are informed promptly every step of the way.",
     },
     {
-      title: "Digital Marketing",
+      title: "Team Work",
       content:
-        "Yes, You heard it right, we provide Digital Marketing services.",
+        "We believe in holding ourselves accountable for the work we promise to deliver and ensuring that we support each other to achieve the overall best outcome for our clients. We work as one team and share all our knowledge and expertise to get the best outcome for our clients.",
     },
     {
-      title: "Software Development Services",
+      title: "Continuous Improvement",
       content:
-        "Yes, You heard it right, we provide Software Development Services.",
+        "We never stop learning and never stop reaching for excellence in execution and service delivery. We upskill and stay connected with industry innovations to ensure that our offering is best practice and up with the latest trends.",
     },
     {
-      title: "Brand Marketing Service",
-      content: "Yes, You heard it right, we provide Brand Marketing service.",
-    },
-    {
-      title: "Team of Experienced Professionals",
+      title: "Our commitment",
       content:
-        "We have a team of Experienced Professionals for every work you need.",
+        "We’re committed to your success from day one. We make promises we can deliver and stay committed to continuous improvement in everything we do.",
     },
+   
   ];
 
   return (
@@ -61,18 +58,17 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
 
-            <span className="  text-[#FFB700] text-center animate-pulse overflow-hidden whitespace-nowrap  pr-5 xl:text-7xl md:text-6xl sm:text-5xl text-5xl  font-bold">
-              Why us?
+            <span className="  text-[#FFB700] text-center  overflow-hidden whitespace-nowrap  pr-5 xl:text-7xl md:text-6xl sm:text-5xl text-5xl  font-bold">
+              Why choose us?
             </span>
             {/* <svg width="129" height="146" className='' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
           <article className="max-w-3xl text-xl sm:text-2xl md:text-xl lg:text-3xl  text-white text-justify leading-snug">
-            Aimtech Innovate offers premier digital marketing services at
-            unbeatable rates in the US and Canada, thanks to our partnership
-            with Nepal's Next Coach Incubator Program. Access top-quality work
-            at a fraction of the cost.
+          <span>Guaranteed Google #1 ranking (90 days) or we work FREE! Explode sales & crush competitors with our proven online growth strategies.</span> <br /><br />
+<span> Trusted by businesses (USA & Canada). FREE consultation - see how we can skyrocket your success. Risk-free - we guarantee results!</span>
+
           </article>
           <button className="w-auto rounded-lg flex items-center justify-center gap-x-2 border bg-white p-4 px-8 z-10 shadow-lg group">
             <span className="font-bold text-[#122B59] md:text-lg text-sm">

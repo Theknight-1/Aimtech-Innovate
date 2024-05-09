@@ -9,13 +9,14 @@ const ThirdPage = () => {
           <div className="w-full lg:w-[60%] bg-[#FAC954] flex justify-center items-center rounded-tl-[3rem] lg:rounded-tl-none lg:rounded-bl-[3rem]">
             <div className="p-8 sm:p-10 lg:p-12 xl:p-20 space-y-5">
               <h1 className="text-3xl md:text-4xl lg:text-[3rem] font-bold ">
-                Let’s get acquainted{" "}
+              Ready to unleash the explosive potential of your business?
+{" "}
               </h1>
               <p className="text-lg lg:text-2xl font-medium leading-relaxed">
-                Aimtech Innovate offers premier digital marketing services at
-                unbeatable rates in the US and Canada, thanks to our partnership
-                with Nepal's Next Coach Incubator Program. Access top-quality
-                work at a fraction of the cost.
+              Contact Aim Tech Innovate today and let's get started.  Remember, it's risk-free. Your success is our guarantee. <br /> <br />
+
+ Get a FREE consultation to discuss your unique growth strategy!
+
               </p>
               <div className=" w-full">
                 <Link href="/about">

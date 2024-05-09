@@ -22,25 +22,26 @@ const LearnMore = () => {
           <div className="flex-1">
             <div className="px-2 lg:px-0 space-y-5">
               <h1 className="text-3xl md:text-4xl lg:text-5xl tracking-wide font-semibold text-white">
-                Learn More <br /> About Us
+                Your Digital Marketing Team & Long-Term Partners
+
               </h1>
               <p className="text-lg lg:text-xl text-white">
-                Aimtech Innovate is a leading provider of Digital Marketing
-                Services in the US and Canadian markets. With a focus on
-                delivering innovative solutions tailored to each client's unique
-                needs, Aimtech Innovate offers a wide range of services. These
-                include Web Design and Development, where they create
-                aesthetically pleasing and user-friendly websites to improve
-                customer engagement and increase conversions. Their Social Media
-                Management services ensure clients' social platforms are
-                effectively utilized to engage with their audience and build
-                brand awareness. The company also specializes in PPC
-                Advertisement, strategically placing ads to reach potential
-                customers at the right time. Additionally, they offer Search
-                Engine Optimization to improve clients' online visibility and
-                ranking on search engines, and Email Marketing to cultivate and
-                maintain customer relationships through personalized
-                communication.
+                We're more than an agency, we're your long-term growth partner. <br /> <br />
+
+                Our team of 10+ experienced digital marketing experts is hand-picked for their specific skills. We have social media wizards, Google gurus, talented local web developers, creative graphic designers, data-driven business analysts, and strategic masterminds. <br /><br />
+
+                Located in Canada and the USA, we're here to serve you across North America. <br /> <br />
+
+
+                We're a team of 10+ digital marketers
+                Canada and USA-based teams.
+                9+ years in total experience
+                We started our adventure in 2015
+                Google & Facebook/Instagram Partners
+                TikTok, Spotify & Pinterest Media Specialists
+                Certified Meta Business Member
+
+
               </p>
               <div className="flex items-center space-x-4 lg:space-x-8">
                 <div className="flex items-center space-x-2 lg:space-x-4 overflow-x-hidden">
@@ -58,9 +59,9 @@ const LearnMore = () => {
                     href="#"
                     className="text-[#FFB700] text-2xl lg:text-4xl font-bold"
                   >
-                    50k+
+                    200+
                   </a>
-                  <p className="text-lg lg:text-base">Joined already</p>
+                  <p className="text-lg lg:text-base">Customers</p>
                 </div>
               </div>
             </div>
