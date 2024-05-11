@@ -4,18 +4,18 @@ import { useState } from "react";
 import { FiAlertCircle } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 
-const ExampleWrapper = ({ isOpen, setIsOpen }) => {
+const ExampleWrapper = ({ isOpen, setIsOpen , selectedOption }) => {
   const [formData, setFormData] = useState({
     email: "",
     firstName: "",
     lastName: "",
     designation: "",
     companyName: "",
+    service: selectedOption || "Web Design and Development", // Default value
     phoneNumber: "",
     country: "",
   });
 
-  // Function to handle input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -24,12 +24,10 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
     });
   };
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const message = { ...formData };
-    // Here you can perform actions with formData, like submitting it to a server
     emailjs
       .send(
         "service_g79hhi5",
@@ -39,25 +37,20 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
       )
       .then(
         () => {
-          // setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
-          // Clear form data after successful submission
           setFormData({
             email: "",
             firstName: "",
             lastName: "",
             designation: "",
             companyName: "",
+            service: "Web Design and Development",
             phoneNumber: "",
             country: "",
           });
-
-          // Close the modal
           setIsOpen(false);
         },
         (error) => {
-          // setLoading(false);
           console.error(error);
           alert("Ahh, something went wrong. Please try again.");
         }
@@ -160,6 +153,45 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
                     Last name
                   </label>
                 </div>
+                <div className="relative z-0 w-full mb-5 group">
+                  <select
+                    name="service"
+                    value={formData.service}
+                    onChange={handleInputChange}
+                    className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    required
+                  >
+                    <option value="Web Design and Development">
+                      Web Design and Development
+                    </option>
+                    <option value="Social Media Management">
+                      Social Media Management
+                    </option>
+                    <option value="PPC Advertisement">PPC Advertisement</option>
+                    <option value="Email Marketing">Email Marketing</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <svg
+                      className="h-5 w-5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 011.414-1.414L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-.707.293z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <label
+                    htmlFor="service"
+                    className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Services
+                  </label>
+                </div>
                 <div className="grid md:grid-cols-2 md:gap-6">
                   <div className="relative z-0 w-full mb-5 group">
                     <input
@@ -208,14 +240,14 @@ const ExampleWrapper = ({ isOpen, setIsOpen }) => {
                       value={formData.phoneNumber}
                       onChange={handleInputChange}
                       className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
+                      placeholder=""
                       required
                     />
                     <label
                       htmlFor="floating_phone_number"
                       className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
-                      Phone number (123-456-7890)
+                      Phone number
                     </label>
                   </div>
                   <div className="relative z-0 w-full mb-5 group">
