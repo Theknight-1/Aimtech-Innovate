@@ -30,7 +30,7 @@ function PaginationNav1({
 }) {
   const renderPageLinks = useCallback(() => {
     if (pageCount === 0) return null;
-    const visiblePageButtonCount = 5;
+    const visiblePageButtonCount = 2;
     let numberOfButtons =
       pageCount < visiblePageButtonCount ? pageCount : visiblePageButtonCount;
     const pageIndices = [pageIndex];
@@ -90,7 +90,7 @@ function PaginationNav1({
 
 function PaginationNav1Presentation() {
   const [pageIndex, setPageIndex] = useState(0);
-  const pageCount = 10;
+  const pageCount = 2;
   return (
     <div className="flex gap-3 flex-wrap p-6 py-12">
       <PaginationNav1

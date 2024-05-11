@@ -11,7 +11,7 @@ const page = () => {
       <Navbar />
       <Hero />
       <Cards heading={"Explore our Case Studies"} />
-      <Banner/>
+      {/* <Banner/> */}
       <Footer />
     </>
   );

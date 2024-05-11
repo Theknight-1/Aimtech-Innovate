@@ -102,7 +102,7 @@ export default function CaseStudies() {
       <div>
         <Link
           href="/casestudy"
-          className="rounded-lg bg-yellow-400 p-5 text-lg shadow-lg font-bold hover:text-white"
+          className="rounded-lg bg-brand-secondary text-brand-primary p-4 text-xl shadow-lg font-bold hover:text-white"
         >
           Explore More Case studies
         </Link>

@@ -4,26 +4,26 @@ import React from "react";
 export default function Hcta() {
   return (
     <section className="py-10 text-gray-800 sm:py-16 md:py-20 overflow-hidden w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-      <div className="relative mx-auto z-10   aspect-video h-auto w-full   rounded-xl  shadow-lg block">
+      <div className="relative mx-auto z-10   aspect-video sm:w-[80%] md:w-[70%] lg:w-[60%]   rounded-xl  shadow-lg ">
         <div className="absolute top-0 -left-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
         <div className="absolute top-0 -right-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
         <div className="absolute  flex items-center justify-center w-full h-full">
-          <img className="h-auto w-full" src="/Frame1.png" alt="image" />
+          <img className="h-full w-full" src="/Frame1.png" alt="image" />
         </div>
       </div>
       <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">
         <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white">
-          <h2 className="text-3xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+          <h2 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             Keep every one{" "}
             <span className="whitespace-nowrap">in the loop</span>
           </h2>
-          <p className="mt-4 font-medium md:text-2xl sm:text-xl text-xl">
+          <p className="mt-4 font-medium md:text-2xl sm:text-xl text-lg">
             <span>All good things starts with a homepage.</span> <br />{" "}
             <span>Get inspired without breaking your wallet.</span>{" "}
           </p>
 
           <div className="flex flex-col sm:flex-row sm:space-x-4 sm:px-0">
-            <Link href="/contact" className="relative mt-4 rounded-full bg-[#FFB700] px-4 py-2 text-blue-800 font-bold text-2xl shadow transition hover:bg-yellow-400">
+            <Link href="/contact" className="relative mt-4 rounded-full bg-brand-secondary px-4 py-2 text-brand-primary font-bold text-2xl shadow transition hover:bg-yellow-400">
               Get Started
             </Link>
           </div>

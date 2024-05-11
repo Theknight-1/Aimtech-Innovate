@@ -11,9 +11,8 @@ const Accordion = ({
   const isOpen = index === selectedIndex;
 
   return (
-    // className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'
     <div
-      className={`border  group   border-[#FFB700] rounded-xl  ${
+      className={`border group border-[#FFB700] rounded-xl ${
         isOpen ? "bg-[#FFB700] text-brand-primary" : "text-white"
       }`}
     >
@@ -22,9 +21,9 @@ const Accordion = ({
         onClick={() => setSelectedIndex(isOpen ? null : index)}
       >
         <div className="flex gap-x-4 items-center ">
-          {/* <img src="/arrow-double-end.svg" className={` w-4 h-4  group-hover:animate-fade-right group-hover:animate-infinite group-hover:animate-alternate ${isOpen ? "hidden" :""}`} alt="" /> */}
-
-          <h2 className=" font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl">{title}</h2>
+          <h2 className="font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl">
+            {title}
+          </h2>
         </div>
         <svg
           className={`w-6 h-6 ${isOpen ? "transform rotate-180" : ""}`}
@@ -40,12 +39,19 @@ const Accordion = ({
           />
         </svg>
       </div>
-      <div className="px-6">
-        {isOpen && (
-          <div className=" flex items-start flex-col justify-center">
-            <article className="text-sm sm:text-lg md:text-xl xl:text-2xl py-3">{content}</article>
-          </div>
-        )}
+      <div
+        className="px-6"
+        style={{
+          maxHeight: isOpen ? "1000px" : "0", // Set max height based on open/close state
+          overflow: "hidden", // Hide overflow when closed
+          transition: `max-height 0.6s ease-in`, // Adding transition with different duration based on open/close state
+        }}
+      >
+        <div className="flex items-start flex-col justify-center">
+          <article className="text-sm sm:text-lg md:text-xl xl:text-2xl py-3">
+            {content}
+          </article>
+        </div>
       </div>
     </div>
   );
