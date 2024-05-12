@@ -26,9 +26,32 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const accordionData = [
-    { title: 'Where is your office located?', content: 'Aimtech is the leading Digital marketting agency based in Canada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores quo tempora expedita porro, doloremque, facilis amet adipisci laboriosam nisi dolore optio magnam magni! Aliquam optio ipsa excepturi sed distinctio? Placeat in laudantium sunt magni nam voluptates veritatis vero optio, maiores accusamus quisquam labore consequatur nobis quod. Accusantium, alias facilis.' },
-    { title: 'Do you serve in US ?', content: 'Yes , we do serve in US.' },
-    { title: 'Do you serve in Caneda ?', content: 'Yes , we do serve in Caneda.' },
+    {
+      title: "Where is your office located?",
+      content:
+        "We don't have a physical office location - we work virtually! This allows us to serve clients across North America efficiently.",
+    },
+    {
+      title: "Do you serve in the US?",
+      content:
+        "Yes! We're proud to partner with businesses across the United States.",
+    },
+    {
+      title: "Do you serve in Canada?",
+      content: "Absolutely!  Canadian businesses are a core part of our clientele.",
+    },
+    {
+      title: "What is your tech domain?",
+      content: "Our expertise lies in online marketing, with a focus on web design, development, and SEO to drive explosive growth for your business.",
+    },
+    {
+      title: "Do you build only websites or full software?",
+      content: "We primarily focus on web design and development, creating impactful online presences. However, we can also discuss your specific software needs to see if we can be a good fit.",
+    },
+    {
+      title: "How big is your team ?",
+      content: "Our team size is flexible, allowing us to scale our expertise to meet your project's needs. We have a network of skilled professionals to ensure we deliver exceptional results.",
+    },
   ];
   return (
     <>
@@ -50,7 +73,7 @@ export default function Home() {
         <CaseStudies />
         <Testimonial />
 
-        <Pland />
+        <Pland faqdata={accordionData} />
 
 
         <Hcta />

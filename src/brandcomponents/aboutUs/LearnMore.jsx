@@ -43,12 +43,12 @@ const LearnMore = () => {
 
 
               </p>
-              <div className="flex items-center space-x-4 lg:space-x-8">
+              <div className="flex items-center space-x-4 lg:space-x-8  h-auto p-2">
                 <div className="flex items-center space-x-2 lg:space-x-4 overflow-x-hidden">
                   {imageUrls.map((imageUrl, index) => (
                     <img
                       key={index}
-                      className="h-12 w-12 lg:h-16 lg:w-16 rounded-full ring-2 ring-white"
+                      className="h-12 w-12 aspect-square  lg:h-16 lg:w-16 ring-2  ring-white"
                       src={imageUrl}
                       alt=""
                     />

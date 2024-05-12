@@ -226,7 +226,7 @@ function MegaMenu() {
     <>
       <div className="flex justify-end  itmes-center  w-screen py-1 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 border-b border-gray-300 lg:border-none ">
         <div className="hidden lg:flex gap-10 text-white  ">
-          <h4 className="flex items-center gap-2 text-xl">
+          <h4 className="flex hover:border-b-2 hover:border-brand-secondary items-center gap-2 text-xl">
             <a
               href="https://calendly.com/himanshusaxena5500/30min"
               target="_blank"
@@ -238,7 +238,7 @@ function MegaMenu() {
               Schedule Discovery Meet
             </a>
           </h4>
-          <h4 className="flex items-center gap-2 text-xl">
+          <h4 className="flex hover:border-b-2 hover:border-brand-secondary items-center gap-2 text-xl">
             <span>
               <FaWhatsapp size={22} />
             </span>
@@ -250,7 +250,7 @@ function MegaMenu() {
               Whatsapp{" "}
             </a>
           </h4>
-          <h4 className="flex items-center gap-2 text-xl font-bold text-white hover:text-brand-secondary">
+          <h4 className="flex hover:border-b-2 hover:border-brand-secondary items-center gap-2 text-xl font-bold text-white hover:text-brand-secondary">
             <span>
               <FaPhone size={15} />
             </span>{" "}
@@ -287,16 +287,16 @@ function MegaMenu() {
           <nav className="hidden   sticky top-0 lg:flex justify-center items-center gap-8">
             <ul className="flex items-center justify-evenly xl:text-[22px]  gap-4">
               <li className="relative group px-3 py-2 ">
-                <Link href="/" className="hover:opacity-50 cursor-pointer">
+                <Link href="/" className=" hover:border-b-2 hover:border-brand-secondary cursor-pointer">
                   {" "}
-                  Home
+                 <span >Home</span> 
                 </Link>
                 {/* <a href="/" className="hover:opacity-50 cursor-pointer">
                   Home
                 </a> */}
               </li>
               <li className="relative group px-3 py-2">
-                <Link href="/about" className="hover:opacity-50 cursor-pointer">
+                <Link href="/about" className="hover:border-b-2 hover:border-brand-secondary cursor-pointer">
                   About us
                 </Link>
                 {/* <a href="/about" className="hover:opacity-50 cursor-pointer">
@@ -305,7 +305,7 @@ function MegaMenu() {
               </li>
               {/*Services DropDown  */}
               <li className="relative group  py-2 ">
-                <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center ">
+                <button className="hover:border-b-2 hover:border-brand-secondary cursor-pointer flex justify-self-auto items-center ">
                   Services
                   <span>
                     <RiArrowDropDownLine
@@ -395,7 +395,7 @@ function MegaMenu() {
               {/* Case Study DropDown */}
               <li className="relative group py-2 ">
                 <a href="/casestudy">
-                  <button className="hover:opacity-50 cursor-pointer flex justify-self-auto items-center">
+                  <button className="hover:border-b-2 hover:border-brand-secondary cursor-pointer flex justify-self-auto items-center">
                     Case Studies
                     <span>
                       <RiArrowDropDownLine
@@ -410,7 +410,7 @@ function MegaMenu() {
                     scrolling ? "top-26" : "top-36"
                   } left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform`}
                 >
-                  <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6  text-brand-primary">
+                  <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
                     <div className="flex flex-col md:flex-row gap-6  ">
                     {/* card start */}
                     <div className="w-1/4 border-2  hover:shadow-2xl  rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
@@ -825,7 +825,7 @@ function MegaMenu() {
               <li className="relative group px-3 py-2">
                 <Link
                   href="/contact"
-                  className="hover:opacity-50 cursor-pointer"
+                  className="hover:border-b-2 hover:border-brand-secondary cursor-pointer"
                 >
                   Contact
                 </Link>

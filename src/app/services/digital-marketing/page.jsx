@@ -52,6 +52,34 @@ export default function page() {
         }
       };
    
+      const accordionData = [
+        {
+          title: "What services do you offer?",
+          content:
+            "Aim Tech Innovate provides a full range of digital marketing services, including social media marketing, search engine optimisation (SEO), web development, graphic design, and strategic consulting.",
+        },
+        {
+          title: "What makes us different?",
+          content:
+            "Our team of 10+ experienced professionals is certified by Google, Facebook/Instagram, and other major platforms. We combine creativity, data analysis, and strategic thinking to deliver exceptional results.",
+        },
+        {
+          title: "How long have you been around?",
+          content: "We've been helping businesses thrive online since 2015, constantly adapting to the ever-changing digital landscape.",
+        },
+        {
+          title: "What is you tech domain ?",
+          content: "Our expertise lies in online marketing, with a focus on web design, development, and SEO to drive explosive growth for your business.",
+        },
+        {
+          title: "Do you build only websites or full software?",
+          content: "We primarily focus on web design and development, creating impactful online presences. However, we can also discuss your specific software needs to see if we can be a good fit.",
+        },
+        {
+          title: "How big is your team ?",
+          content: "Our team size is flexible, allowing us to scale our expertise to meet your project's needs. We have a network of skilled professionals to ensure we deliver exceptional results.",
+        },
+      ];
   return (
     <>
     <Navbar />
@@ -68,7 +96,7 @@ export default function page() {
     <FCStudy />
     <CaseStudies />
     <Testimonial />
-    <Pland />
+    <Pland faqdata={accordionData} />
     <Hcta />
     <Footer />
   </>

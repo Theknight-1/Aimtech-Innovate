@@ -62,7 +62,7 @@ export default function Hero() {
                     alt=""
                   />
                   <div class="">
-                    <span class="pl-8 font-semibold">Customer Reviews</span>
+                    <span class="pl-8 font-semibold">Get Your Free Consultation Today!</span>
                     <div class="flex w-auto items-center justify-center space-x-1 pl-8">
                       <svg
                         class="h-auto w-5 fill-current text-yellow-500"

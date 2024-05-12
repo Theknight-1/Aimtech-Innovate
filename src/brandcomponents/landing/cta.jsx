@@ -14,12 +14,14 @@ export default function Hcta() {
       <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">
         <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white">
           <h2 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            Keep every one{" "}
-            <span className="whitespace-nowrap">in the loop</span>
+            Ready to unleash the explosive potential of your business?
+
           </h2>
           <p className="mt-4 font-medium md:text-2xl sm:text-xl text-lg">
-            <span>All good things starts with a homepage.</span> <br />{" "}
-            <span>Get inspired without breaking your wallet.</span>{" "}
+            <span>Contact Aim Tech Innovate today and let's get started.  Remember, it's risk-free. Your success is our guarantee.
+              <br />
+              <span>Limited Time Offer: Get a FREE consultation to discuss your unique growth strategy!
+              </span> <br />{" "}</span>{" "}
           </p>
 
           <div className="flex flex-col sm:flex-row sm:space-x-4 sm:px-0">

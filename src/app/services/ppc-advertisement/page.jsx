@@ -51,6 +51,27 @@ export default function page() {
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     }
   };
+  const accordionData = [
+    {
+      title: "What does PPC mean?",
+      content:
+        "PPC advertising involves paying a fee each time someone clicks on your ad.",
+    },
+    {
+      title: "How does PPC work?",
+      content:
+        "You create targeted ads on platforms like Google Ads and only pay when someone clicks on your ad, driving traffic to your website.",
+    },
+    {
+      title: "What are the types of PPC?",
+      content: "Common types include search engine advertising (SEA), display advertising, and social media advertising.",
+    },
+    {
+      title: "What's the difference between SEO and PPC?",
+      content: "SEO drives organic traffic through website optimization, while PPC uses paid ads to get immediate results.",
+    },
+    
+  ];
    
   return (
     <>
@@ -68,7 +89,7 @@ export default function page() {
     <FCStudy />
     <CaseStudies />
     <Testimonial />
-    <Pland />
+    <Pland faqdata={accordionData} />
     <Hcta />
     <Footer />
   </>

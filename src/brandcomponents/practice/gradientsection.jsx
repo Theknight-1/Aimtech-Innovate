@@ -87,12 +87,12 @@ export default function GradientSection() {
               <ul className="flex gap-2 text-xl text-white">
                 {[...Array(5)].map((_, index) => (
                   <li key={index}>
-                    <FaStar />
+                    <FaStar className="text-brand-secondary" />
                   </li>
                 ))}
               </ul>
               <span className="text-white">
-                4.8/5 based on 6,873 reviews | GDPR Compliant
+              Get Your Free Consultation Today!
               </span>
             </div>
           </div>

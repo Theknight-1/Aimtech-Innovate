@@ -51,6 +51,23 @@ export default function page() {
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     }
   };
+  const accordionData = [
+    {
+      title: "What is SEO and how does it work?",
+      content:
+        "SEO optimizes your website for search engines like Google, making it more likely to appear in relevant search results. This involves using targeted keywords and high-quality content.",
+    },
+    {
+      title: "Can I do SEO for my website myself?",
+      content:
+        "Yes, but it requires ongoing effort and expertise. We can help you achieve optimal results.",
+    },
+    {
+      title: "Does SEO still work?",
+      content: "Absolutely! SEO is crucial for organic website traffic and brand visibility in search results.",
+    },
+    
+  ];
    
   return (
     <>
@@ -68,7 +85,7 @@ export default function page() {
     <FCStudy />
     <CaseStudies />
     <Testimonial />
-    <Pland />
+    <Pland faqdata={accordionData} />
     <Hcta />
     <Footer />
   </>

@@ -7,7 +7,7 @@ const DMsg = () => {
   return (
     <>
       <section className=" h-auto w-full  p-4 md:p-6 lg:p-4  overflow-hidden">
-        <h1 className=" text-5xl lg:text-6xl text-white font-bold text-center mb-3 ">
+        <h1 className=" text-5xl lg:text-6xl text-brand-secondary font-bold text-center mb-3 ">
           Director’s Message
         </h1>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:h-[70%]">
@@ -58,10 +58,10 @@ const DMsg = () => {
           </div>
           <div className="lg:w-1/2 w-full text-white text-lg lg:text-2xl p-2 lg:px-0 space-y-3 lg:space-y-10 ">
             <div className="h-auto w-full lg:w-9/12 space-y-2">
-              <p className="text-blue-500 text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
+              <p className="text-brand-secondary text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
                 Our Core Values
               </p>
-              <h1 className="text-3xl font-bold">Key Features</h1>
+              
               <div className="space-y-2 lg:space-y-6">
                 <div className="flex items-center gap-4">
                   <FaSignal className="text-xl lg:text-3xl" />

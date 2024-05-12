@@ -3,37 +3,10 @@ import React, { useState } from "react";
 import Accordion from "@/uicomponent/accordian";
 import Link from "next/link";
 
-export default function Pland() {
+export default function Pland({faqdata = []}) {
   const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const accordionData = [
-    {
-      title: "What services do you offer?",
-      content:
-        "Aim Tech Innovate provides a full range of digital marketing services, including social media marketing, search engine optimisation (SEO), web development, graphic design, and strategic consulting.",
-    },
-    {
-      title: "What makes us different?",
-      content:
-        "Our team of 10+ experienced professionals is certified by Google, Facebook/Instagram, and other major platforms. We combine creativity, data analysis, and strategic thinking to deliver exceptional results.",
-    },
-    {
-      title: "How long have you been around?",
-      content: "We've been helping businesses thrive online since 2015, constantly adapting to the ever-changing digital landscape.",
-    },
-    {
-      title: "What is you tech domain ?",
-      content: "Our expertise lies in online marketing, with a focus on web design, development, and SEO to drive explosive growth for your business.",
-    },
-    {
-      title: "Do you build only websites or full software?",
-      content: "We primarily focus on web design and development, creating impactful online presences. However, we can also discuss your specific software needs to see if we can be a good fit.",
-    },
-    {
-      title: "How big is your team ?",
-      content: "Our team size is flexible, allowing us to scale our expertise to meet your project's needs. We have a network of skilled professionals to ensure we deliver exceptional results.",
-    },
-  ];
+  const faqs = faqdata;
+ 
   return (
     <>
       {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
@@ -54,11 +27,12 @@ export default function Pland() {
                   <span className="font-bold  text-2xl text-white mt-16">
                     Still have some Questions?{" "}
                   </span>
+                  <br />
                   <span className="text-xl text-white">
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
-                  <div className=" mt-4 w-full h-full p-4">
+                  <div className=" mt-8 w-full h-full ">
                     <Link
                       href="tel:+1905-399-6642"
                       className="bg-brand-secondary w-max h-full xl:p-5 lg:p-3 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-brand-primary rounded mt-4 "
@@ -73,7 +47,7 @@ export default function Pland() {
               {/* accordian End */}
 
               <div className="flex flex-col gap-y-4 p-4 sm:p-7 md:p-8 xl:p-6 h-auto overflow-hidden flex-1 ">
-                {accordionData.map((item, index) => (
+                {faqs.map((item, index) => (
                   <Accordion
                     key={index}
                     title={item.title}
