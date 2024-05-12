@@ -51,8 +51,8 @@ export default function GradientSection() {
             <p className="max-w-2xl mb-6 font-semibold text-white">
               Don't believe it? Request a free quotation today
             </p>
-            <div className="flex items-center justify-start">
-              <div className="relative w-full md:w-96">
+            <div className="flex items-center justify-start ">
+              <div className="relative w-full md:w-96 rounded-lg">
                 <div className="relative">
                   <select
                     value={selectedOption}
@@ -92,7 +92,7 @@ export default function GradientSection() {
                 ))}
               </ul>
               <span className="text-white">
-              Get Your Free Consultation Today!
+              4.8/5 based on 6,873 reviews | GDPR Compliant
               </span>
             </div>
           </div>

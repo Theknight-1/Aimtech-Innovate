@@ -24,6 +24,33 @@ const caseStudiesData = [
   {
     id: 2,
     image:
+      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
+    title: "Next coach",
+    description:
+      "IT service Company",
+    link: "/casestudy/aimtech",
+  },
+  {
+    id: 2,
+    image:
+      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
+    title: "Next coach",
+    description:
+      "IT service Company",
+    link: "/casestudy/aimtech",
+  },
+  {
+    id: 2,
+    image:
+      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
+    title: "Next coach",
+    description:
+      "IT service Company",
+    link: "/casestudy/aimtech",
+  },
+  {
+    id: 2,
+    image:
       "/landingPage/questionmark.jpg",
     title: "This can be you",
     description:
@@ -35,7 +62,7 @@ const caseStudiesData = [
 
 export default function CaseStudies() {
   return (
-    <section className="flex flex-col items-center justify-center  h-auto lg:min-h-screen  gap-y-8 space-y-5">
+    <section className="flex flex-col w-full items-center justify-center  h-auto xl:min-h-screen   gap-y-8 space-y-5">
       <div class="flex h-full flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
         <div class="w-1/10 h-full"></div>
         <div class="flex-1 flex items-center justify-center text-2xl md:text-4xl lg:text-6xl  gap-x-4 capitalize">
@@ -72,9 +99,9 @@ export default function CaseStudies() {
         </div>
         <div class="w-1/10"></div>
       </div>
-      <div className="flex h-full w-full flex-row flex-wrap items-center justify-center gap-5 lg:gap-8">
+      <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
         {caseStudiesData.map((study) => (
-          <div key={study.id} className="flip-card aspect-square h-auto w-9/12 lg:w-96">
+          <div key={study.id} className="flip-card aspect-square h-auto w-full">
             <div className="flip-card-inner w-full h-full">
               <div className="flip-card-front">
                 <img
@@ -90,7 +117,7 @@ export default function CaseStudies() {
                 <br />
                 <Link
                   href={study.link}
-                  className="bg-[#122b59ee] hover:bg-[#122B59] p-3 rounded-lg text-white"
+                  className="bg-brand-secondary hover:bg-[#122B59] p-3 rounded-lg text-white"
                 >
                   <p>Learn more...</p>
                 </Link>

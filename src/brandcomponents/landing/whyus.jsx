@@ -69,18 +69,9 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
-          <article className="max-w-3xl text-xl z-10 sm:text-2xl md:text-xl lg:text-3xl  text-white text-justify leading-snug">
-            <span>
-              Guaranteed Google #1 ranking (90 days) or we work FREE! Explode
-              sales & crush competitors with our proven online growth
-              strategies.
-            </span>{" "}
-            <br />
-            <br />
-            <span>
-              {" "}
-              Trusted by businesses (USA & Canada). FREE consultation - see how
-              we can skyrocket your success. Risk-free - we guarantee results!
+          <article className="max-w-2xl px-12 text-xl z-10 sm:text-xl md:text-xl lg:text-xl  text-white text-justify ">
+            <span className="">
+            Aimtech Innovate offers premier digital marketing services at unbeatable rates in the US and Canada, thanks to our partnership with Nepal's Next Coach Incubator Program. Access top-quality work at a fraction of the cost.
             </span>
           </article>
           <Link href="/contact" className="z-10">

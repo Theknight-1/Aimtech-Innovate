@@ -16,14 +16,17 @@ export default function Pland({faqdata = []}) {
         <div class=" h-auto w-full ">
           <div className="  w-full h-auto">
             <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">
-              <div className="flex flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
+              <div className="flex  space-y-8 flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
                 <div className="mb-3 text-center md:text-left">
-                  <span className="font-bold  text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-white leading-normal">
+                  <span className=" text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-white leading-normal">
                     Frequently Asked Questions?
                   </span>
                   <br />
                 </div>
                 <div className="text-center md:text-left md:block hidden">
+                  <div>
+
+                  
                   <span className="font-bold  text-2xl text-white mt-16">
                     Still have some Questions?{" "}
                   </span>
@@ -32,6 +35,7 @@ export default function Pland({faqdata = []}) {
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
+                  </div>
                   <div className=" mt-8 w-full h-full ">
                     <Link
                       href="tel:+1905-399-6642"

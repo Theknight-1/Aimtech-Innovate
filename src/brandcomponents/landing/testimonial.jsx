@@ -56,19 +56,19 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className=" lg:min-h-[calc(100vh-40vh)] h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden mt-8 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+      <section className="  mt-20 py-20 h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div className="flex relative h-full   w-full flex-col gap-10 lg:gap-0 lg:flex-row py-6  sm:p-10 lg:p-0 ">
           {/* <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>             */}
           
-          <div className="flex  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
+          <div className="flex  space-y-20  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
             <div className="h-auto w-full  flex items-center justify-center  ">
 
-              <span className="text-3xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem] font-bold text-white leading-normal">
+              <span className="text-3xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem]  text-white leading-normal">
                 We Drive Innovative Marketing for Great Companies
               </span>
             </div>
             <div className="flex flex-col items-center lg:items-start justify-center   mt-2 h-auto w-full text-center lg:text-left">
-              <span className="font-bold text-gray-100 text-lg lg:text-2xl">
+              <span className=" text-gray-100 ">
                 More than ever, you need to drive{" "}
                 <a href="#">
                   <span className="font-bold text-white underline">
@@ -76,8 +76,8 @@ export default function Testimonial() {
                   </span>
                 </a>
               </span>
-              <span className="font-bold text-gray-100">
-                We increase revenue and lower CAC with strategic marketing.
+              <span className=" text-gray-100 text-lg lg:text-2xl">
+                We increase revenue and lower <span className="font-semibold">CAC</span>  with <span className="font-bold text-brand-secondary">strategic marketing.</span>
               </span>
             </div>
             <div className="w-full flex-1 p-2 border hidden">
@@ -95,7 +95,7 @@ export default function Testimonial() {
             <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div>
-            <div className=" relative z-10 w-full h-full flex flex-col items-center justify-center ">
+            <div className="  px-32 space-y-8 relative z-10 w-full h-full flex flex-col items-center justify-center ">
               <div className="flex flex-row h-auto gap-x-24 min-h-16 w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
                   <img

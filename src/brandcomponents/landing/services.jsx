@@ -41,10 +41,10 @@ export default function Services() {
       case "businessImpact":
         return (
           <div className="relative w-full h-[35rem] flex items-center justify-center ">
-            <div className="absolute text-white z-20 text-center">
-              <h1 className="text-3xl  font-bold">Demo Brand Name</h1>
-              <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-bold">
-                SEO Case Study
+            <div className="absolute text-white z-20 text-center space-y-10 px-32">
+              <h1 className="text-4xl  font-bold">Push your product to next level.</h1>
+              <h1 className="text-sm sm:text-xl lg:text-xl ">
+              End-to-end payments and financial management in a single solution. Meet the right platform to help realize.
               </h1>
               <button className=" text-xl sm:text-2xl lg:text-3xl text-[#122B59] font-bold  text-center rounded-xl bg-brand-secondary px-3 py-2">
                 Get Started
