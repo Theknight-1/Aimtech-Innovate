@@ -35,7 +35,7 @@ export default function Whyus() {
   ];
 
   return (
-    <section className="w-full min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+    <section className="w-full  min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
       <div className="w-full md:w-1/2 h-full flex flex-col justify-start  p-4  ">
         <div className="relative w-full h-full flex flex-col items-center justify-center space-y-7 ">
           <div className="absolute top-0 left-0 w-full h-full rounded-full bg-[#15BEE3]/30 blur-3xl"></div>

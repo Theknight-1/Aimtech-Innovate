@@ -11,10 +11,10 @@ const AboutContact = () => {
             <img className="md:w-9/12 lg:w-11/12 /2 sm:w-1/2 w-80" src="/about/aboutLast.png" alt="" />
           </div>
           <div className="flex flex-col lg:gap-4 gap-2 max-w-md md:max-w-lg p-2 md:p-6 lg:p-4 xl:p-2 ">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#FFB700] font-bold leading-normal">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-brand-secondary font-bold leading-normal">
               Infuse Your Brand with Excellence
             </h1>
-            <p className="text-gray-400 text-lg md:text-xl lg:text-2xl">
+            <p className=" text-white text-lg md:text-xl lg:text-2xl">
               Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
               aspernatur aut odit aut fugit.
             </p>
@@ -38,7 +38,7 @@ const AboutContact = () => {
                 <p>Labore et dolore magna</p>
               </span>
             </div>
-            <Link href="/contact" className="px-4 py-3 md:py-4 w-max bg-[#ffb700ea] hover:bg-[#FFB700] rounded-lg text-[#122B59] text-lg md:text-xl font-semibold">
+            <Link href="/contact" className="px-4 py-3 md:py-4 w-max bg-brand-secondary rounded-lg text-[#122B59] text-lg md:text-xl font-semibold">
               Contact Us
             </Link>
           </div>

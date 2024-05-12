@@ -14,7 +14,7 @@ export default function Hero() {
       </div>
       <div className=" flex items-center  justify-start">
         <div className="w-full lg:w-[40vw] h-[60vh] space-y-8  ">
-          <h1 className="text-[#FCCF40] text-xl uppercase text-center lg:text-left">
+          <h1 className="text-brand-secondary text-xl uppercase text-center lg:text-left">
             ABOUT OUR <span className="uppercase"> Services</span>
           </h1>
           <h1 className="text-[1rem] sm:text-[2rem]  lg:text-[4rem] text-white font-semibold text-center lg:text-left">

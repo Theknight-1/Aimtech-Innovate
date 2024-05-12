@@ -34,7 +34,7 @@ export default function page() {
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
-        title : "Get More sales",
+        title : "We Are Masters at  Running High-ROI SEO Campaign",
         points : [
             "You’re overly dependent on paid ads and not seeing enough ROI",
             "You want to enhance your PPC efforts with SEO for more success",

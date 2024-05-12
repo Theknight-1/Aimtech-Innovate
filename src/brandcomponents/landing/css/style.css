@@ -23,10 +23,12 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 20px;
   }
   
   .flip-card-front {
     background-color: #ffd900fc;
+    
   }
   
   .flip-card-back {

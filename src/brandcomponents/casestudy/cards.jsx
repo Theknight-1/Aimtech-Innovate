@@ -3,21 +3,21 @@ import Link from "next/link";
 import { PaginationNav1Presentation } from "@/uicomponent/PagiNation";
 
 const Card = ({ imageUrl, title, description, date }) => (
-  <div className="bg-white w-[90%] rounded-lg shadow-md overflow-hidden">
+  <div className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden ">
     <img
-      className="h-50 lg:h-60 w-full object-cover"
+      className=" h-auto aspect-video w-full object-cover"
       src={imageUrl}
       alt={title}
     />
-    <div className="relative h-[40%] flex justify-center items-center">
-      <div className="space-y-5">
+    <div className=" h-full   flex border">
+      <div className="space-y-5  pt-4">
         <h4 className="font-semibold text-2xl leading-6 text-gray-700 my-2 px-3">
           {title}
         </h4>
         <p className="paragraph-normal text-gray-600 text-[1rem] px-3">
           {description}
         </p>
-        <div className="absolute flex items-center justify-between h-20 w-full p-3">
+        <div className=" flex items-center justify-between h-20 w-full p-3">
           <span className="text-sm text-primary">{date}</span>
           <a
             className="px-4 py-2 text-white rounded-lg bg-[#122b59ec] hover:bg-[#122B59]"
@@ -36,27 +36,27 @@ const Cards = ({ heading, getStartedButton }) => (
     <h1 className="text-center text-5xl font-bold text-white">{heading}</h1>
     <div className="grid h-[60vh] justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
       <Card
-        imageUrl="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW4lMjBlbXBvd2VybWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        title="International Women's Day 2022: Date, history, significance, theme this year"
+        imageUrl="/Maskgroup.png"
+        title="Tools, Resources, and Education"
         description="Happy Women's Day 2022: Read on to know all about the history and significance..."
         date="November 19, 2022"
       />
       <Card
-        imageUrl="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW4lMjBlbXBvd2VybWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        title="International Women's Day 2022: Date, history, significance, theme this year"
+        imageUrl="/Maskgroup.png"
+        title="Tools, Resources, and Education"
         description="Happy Women's Day 2022: Read on to know all about the history and significance..."
         date="November 19, 2022"
       />
       <Card
-        imageUrl="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW4lMjBlbXBvd2VybWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        title="International Women's Day 2022: Date, history, significance, theme this year"
+        imageUrl="/Maskgroup.png"
+        title="Tools, Resources, and Education"
         description="Happy Women's Day 2022: Read on to know all about the history and significance..."
         date="November 19, 2022"
       />
     </div>
     {getStartedButton ? (
-      <div className="flex flex-col justify-center items-center">
-        <h4 className="text-center text-2xl font-bold text-white w-[40%]">
+      <div className="flex w-full h-64 flex-col justify-center items-center ">
+        <h4 className="text-center text-2xl font-bold text-white w-1/2">
           Have a project in mind? <br /> Let’s get to work.
         </h4>
         <Link href="/contact" className="mt-5">

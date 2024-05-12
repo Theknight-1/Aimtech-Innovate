@@ -183,7 +183,7 @@ export default function Services() {
               <React.Fragment key={contentId}>
                 <button
                   onClick={() => handleButtonClick(contentId)}
-                  className={`flex h-12 sm:h-14 lg:h-20 w-full items-center text-wrap tracking-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl py-8 pl-2 rounded-md service-btn ${
+                  className={`flex h-12 sm:h-14 lg:h-20 w-full items-center text-wrap tracking-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl py-8 pl-4 rounded-md service-btn ${
                     currentContent === contentId
                       ? "bg-brand-secondary text-brand-primary font-semibold"
                       : "text-white"

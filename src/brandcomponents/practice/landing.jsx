@@ -12,7 +12,7 @@ export default function Pland({faqdata = []}) {
       {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
                 <div className='border w-full h-full '></div>
             </div> */}
-      <section class="  min-h-screen mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4  ">
+      <section class=" lg:min-h-[calc(100vh-30vh)] mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4  ">
         <div class=" h-auto w-full ">
           <div className="  w-full h-auto">
             <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">

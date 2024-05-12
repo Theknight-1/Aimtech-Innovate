@@ -22,7 +22,7 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen min-h-screen flex flex-col lg:flex-row justify-between items-center bg-[url('/vector/Waves.svg')] px-4 md:px-8 lg:px-24 xl:px-28">
+      <section className="w-screen pt-20 overflow-hidden lg:overflow-visible  h-auto  flex flex-col lg:flex-row justify-between items-center  px-4 md:px-8 lg:px-24 xl:px-28">
         <div className="grid max-w-screen py-8 lg:py-16 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-7 h-full space-y-5">
             <h3 className="max-w-4xl uppercase text-white tracking-tight text-sm md:text-lg xl:text-lg 2xl:text-xl bg-gradient-to-r bg-clip-text">
@@ -96,7 +96,7 @@ export default function GradientSection() {
               </span>
             </div>
           </div>
-          <div className="relative lg:col-span-5 lg:flex items-center justify-center">
+          <div className="relative lg:col-span-5 lg:flex items-center justify-center ">
             <div className="absolute -z-0 w-full h-auto aspect-square rounded-full border bg-blue-300/30 blur-3xl"></div>
             <img
               src="./landingPage/Mockup.png"

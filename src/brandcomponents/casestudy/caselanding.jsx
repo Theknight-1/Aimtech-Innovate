@@ -36,9 +36,9 @@ export default function CaseLanding() {
             <p className="lg:px-24">We helped aimtech get best of their possible thorough our expertise and professionals supports and wide range of services.</p>
           </div>
           <div className="mt-8 text-center">
-            <span className="mx-2 mb-2 inline-block rounded bg-blue-500 px-6 py-2 text-xl font-medium text-white shadow hover:scale-105 hover:shadow-md md:mx-4 md:mt-2 md:text-lg" href="#" target="_blank">Facebook</span>
-            <span className="mx-2 mb-2 inline-block rounded bg-blue-500 px-6 py-2 text-xl font-medium text-white shadow hover:scale-105 hover:shadow-md md:mx-4 md:mt-2 md:text-lg" href="#" target="_blank">Google</span>
-            <span className="mx-2 mb-2 inline-block rounded bg-blue-500 px-6 py-2 text-xl font-medium text-white shadow hover:scale-105 hover:shadow-md md:mx-4 md:mt-2 md:text-lg" href="#" target="_blank">Instagram</span>
+            <span className="mx-2 mb-2 inline-block rounded bg-brand-secondary px-6 py-2 text-xl font-medium text-white shadow hover:scale-105 hover:shadow-md md:mx-4 md:mt-2 md:text-lg" href="#" target="_blank">Facebook</span>
+            <span className="mx-2 mb-2 inline-block rounded bg-brand-secondary px-6 py-2 text-xl font-medium text-white shadow hover:scale-105 hover:shadow-md md:mx-4 md:mt-2 md:text-lg" href="#" target="_blank">Google</span>
+            <span className="mx-2 mb-2 inline-block rounded bg-brand-secondary px-6 py-2 text-xl font-medium text-white shadow hover:scale-105 hover:shadow-md md:mx-4 md:mt-2 md:text-lg" href="#" target="_blank">Instagram</span>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ export default function CaseLanding() {
 
       <section className="flex w-full flex-col p-2 px-10 md:flex-row">
         <div className="flex aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 lg:w-1/2">
-          <h2 className="mb-4 pl-2 text-4xl lg:text-8xl font-bold text-yellow-400">Client Goals</h2>
+          <h2 className="mb-4 pl-2 text-4xl lg:text-8xl font-bold text-brand-secondary">Client Goals</h2>
           <p className=" text-2xl lg:text-4xl pl-2 font-bold text-white">Reach more customers with ads and Branding.</p>
           <div className="w-full">
             <ol className="flex h-full list-inside list-decimal flex-col gap-4 text-2xl lg:text-4xl  text-white">
@@ -100,7 +100,7 @@ export default function CaseLanding() {
           <img className="h-full w-full object-contain" src="https://nrtimes.co.uk/wp-content/uploads/2021/02/19199739-scaled.jpg" alt="" />
         </div>
         <div className="flex lg:space-x-6 aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 md:w-1/2">
-          <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-yellow-400 ">How We Helped</h2>
+          <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-brand-secondary ">How We Helped</h2>
           <p className="text-xl md:text-4xl leading-normal text-white">
             Our strategy involved the creation of new creative assets that
             would inform and educate the audience about the solutions and

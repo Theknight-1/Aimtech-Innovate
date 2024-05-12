@@ -56,11 +56,11 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className="  mt-20 py-20 h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+      <section className="  mt-20 lg:py-20 h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div className="flex relative h-full   w-full flex-col gap-10 lg:gap-0 lg:flex-row py-6  sm:p-10 lg:p-0 ">
           {/* <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>             */}
           
-          <div className="flex  space-y-20  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
+          <div className="flex  lg:space-y-20  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
             <div className="h-auto w-full  flex items-center justify-center  ">
 
               <span className="text-3xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem]  text-white leading-normal">
@@ -95,7 +95,7 @@ export default function Testimonial() {
             <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div>
-            <div className="  px-32 space-y-8 relative z-10 w-full h-full flex flex-col items-center justify-center ">
+            <div className="  lg:px-32 space-y-8 relative z-10 w-full h-full flex flex-col items-center justify-center ">
               <div className="flex flex-row h-auto gap-x-24 min-h-16 w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
                   <img

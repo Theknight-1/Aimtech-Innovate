@@ -101,23 +101,23 @@ export default function CaseStudies() {
       </div>
       <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
         {caseStudiesData.map((study) => (
-          <div key={study.id} className="flip-card aspect-square h-auto w-full">
+          <div key={study.id} className="flip-card aspect-square h-auto w-full  ">
             <div className="flip-card-inner w-full h-full">
-              <div className="flip-card-front">
+              <div className="flip-card-front overflow-hidden">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                   src={study.image}
                   alt=""
                 />
               </div>
-              <div className="flip-card-back flex flex-col items-center justify-center">
+              <div className="flip-card-back flex flex-col items-center justify-center ">
                 <h1 className="text-4xl">{study.title}</h1>
                 <br />
                 <p>{study.description}</p>
                 <br />
                 <Link
                   href={study.link}
-                  className="bg-brand-secondary hover:bg-[#122B59] p-3 rounded-lg text-white"
+                  className="bg-brand-secondary  p-3 rounded-lg text-white"
                 >
                   <p>Learn more...</p>
                 </Link>

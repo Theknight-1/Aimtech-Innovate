@@ -20,7 +20,7 @@ const DMsg = () => {
               />
             </div>
           </div>
-          <div className=" lg:w-1/2   lg:pr-0 space-y-2  lg:pt-10   lg:mt-0 ">
+          <div className=" lg:w-1/2  text-justify lg:pr-0 space-y-2  lg:pt-10   lg:mt-0 ">
             <div className="w-full  h-auto text-white text-base md:text-xl lg:text-2xl  lg:space-y-7 md:space-y-4">
               <p>
                 Founded in 2003 by Principal Architect Jordan Peters, we employ
@@ -56,7 +56,7 @@ const DMsg = () => {
             />
             <div className="absolute -top-20 left-40 lg:left-auto right-40 lg:right-auto w-[250px] lg:w-[350px] h-[250px] lg:h-[350px] bg-[#15BEE3]/30 blur-3xl rounded-full"></div>
           </div>
-          <div className="lg:w-1/2 w-full text-white text-lg lg:text-2xl p-2 lg:px-0 space-y-3 lg:space-y-10 ">
+          <div className="lg:w-1/2 text-justify w-full text-white text-lg lg:text-2xl p-2 lg:px-0 space-y-3 lg:space-y-10 ">
             <div className="h-auto w-full lg:w-9/12 space-y-2">
               <p className="text-brand-secondary text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
                 Our Core Values

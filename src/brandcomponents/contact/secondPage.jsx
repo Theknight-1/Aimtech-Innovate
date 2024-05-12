@@ -17,7 +17,7 @@ const SecondPage = () => {
 
             </h1>
             <div className="space-y-3 lg:space-y-5">
-              <ul className=" text-brand-secondary text-xl lg:text-2xl">
+              <ul className=" text-white text-xl lg:text-2xl">
                 <li className="flex items-center gap-6"><FaCheckCircle  />Google Ads</li>
                 <li className="flex items-center gap-6"><FaCheckCircle />Linkedin Ads</li>
                 <li className="flex items-center gap-6"><FaCheckCircle />SEO Services</li>

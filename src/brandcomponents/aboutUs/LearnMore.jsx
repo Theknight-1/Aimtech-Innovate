@@ -21,7 +21,7 @@ const LearnMore = () => {
           </div>
           <div className="flex-1">
             <div className="px-2 lg:px-0 space-y-5">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl tracking-wide font-semibold text-white">
+              <h1 className="text-3xl text-brand-secondary md:text-4xl lg:text-5xl tracking-wide font-semibold ">
                 Your Digital Marketing Team & Long-Term Partners
 
               </h1>

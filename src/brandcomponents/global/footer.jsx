@@ -178,7 +178,7 @@ export default function Footer() {
             © 2024 Aimtech Innovate | A Joint venture With{" "}
           </p>
           <div>
-            <img src="/brand/logo/logo-12.png" alt="logo12" />
+            <img src="/brand/logo/nxtcoachlogo.png" alt="next coach logo" />
           </div>
         </div>
       </div>
