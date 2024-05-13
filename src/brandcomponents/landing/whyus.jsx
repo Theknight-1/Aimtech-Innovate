@@ -37,7 +37,7 @@ export default function Whyus() {
   return (
     <section className="w-full  min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
       <div className="w-full md:w-1/2 h-full flex flex-col justify-start  p-4  ">
-        <div className="relative w-full h-full flex flex-col items-center justify-center space-y-7 ">
+        <div className="relative w-full h-full flex flex-col items-center justify-center space-y-7 border ">
           <div className="absolute top-0 left-0 w-full h-full rounded-full bg-[#15BEE3]/30 blur-3xl"></div>
           <div className="w-full flex items-end justify-end px-10 ">
             <svg
@@ -69,7 +69,7 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
-          <article className="max-w-2xl px-12 text-xl z-10 sm:text-xl md:text-xl lg:text-xl  text-white text-justify ">
+          <article className="max-w-2xl  text-xl z-10 sm:text-xl md:text-xl lg:text-xl  text-white text-justify">
             <span className="">
             Aimtech Innovate offers premier digital marketing services at unbeatable rates in the US and Canada, thanks to our partnership with Nepal's Next Coach Incubator Program. Access top-quality work at a fraction of the cost.
             </span>
