@@ -22,7 +22,7 @@ const config: Config = {
       colors: {
         brand: {
           primary: "#122B59",
-          secondary: "#FFA300",
+          secondary: "#FFB700",
           accent: "#F39C12",
           // Add more brand colors as needed
         },

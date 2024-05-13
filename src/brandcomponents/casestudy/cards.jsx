@@ -55,7 +55,7 @@ const Cards = ({ heading, getStartedButton }) => (
       />
     </div>
     {getStartedButton ? (
-      <div className="flex w-full h-64 flex-col justify-center items-center ">
+      <div className="flex hidden w-full h-64 flex-col justify-center items-center ">
         <h4 className="text-center text-2xl font-bold text-white w-1/2">
           Have a project in mind? <br /> Let’s get to work.
         </h4>

@@ -9,6 +9,7 @@ import AboutContact from "@/brandcomponents/aboutUs/aboutContact";
 import Accordion from "@/uicomponent/accordian";
 import Pland from "@/brandcomponents/practice/landing";
 import Carousel from "../../brandcomponents/about/carousel";
+import Hcta from '@/brandcomponents/landing/cta'
 import { NextSeo } from 'next-seo';
 export default function About() {
   const accordionData = [
@@ -45,6 +46,7 @@ export default function About() {
       {/* <Carousel/> */}
       <Map />
       <Pland faqdata={accordionData} />
+      
       <AboutContact />
       <Footer />
     </>

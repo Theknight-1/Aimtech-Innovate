@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import Cards from "@/brandcomponents/casestudy/cards";
-import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import Hcta from '@/brandcomponents/landing/cta'
 export default function CaseLanding() {
   return (
     <>
@@ -16,12 +15,12 @@ export default function CaseLanding() {
             />
 
             <div className="p-2 space-y-10 mt-4">
-              <p className="text-2xl"><span className="font-bold">Published date :</span> June 12, 2023</p>
+              <p className="text-2xl"><span className="">Published date :</span> May-13, 2024</p>
               <h1 className=" text-3xl font-bold sm:text-5xl">
-                Case study on Aimtech Innovate
+                Web Design For Digital Marketting Agency
               </h1>
-              <div className=" text-center  mt-6 block w-full text-xl text-wrap lg:text-3xl font-bold leading-9 ">
-                <p className="lg:px-24">
+              <div className=" text-center  flex items-center justify-center mt-6 block w-full text-xl text-wrap lg:text-2xl  ">
+                <p className="lg:px-24 lg:w-1/2">
                   We helped aimtech get best of their possible thorough our
                   expertise and professionals supports and wide range of
                   services.
@@ -105,16 +104,16 @@ export default function CaseLanding() {
         </div>
       </section>
 
-      <section className="flex w-full flex-col p-2 px-10 md:flex-row">
+      <section className="flex w-full flex-col p-2 px-10 md:flex-row ">
         <div className="flex aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 lg:w-1/2">
           <h2 className="mb-4 pl-2 text-4xl lg:text-8xl font-bold text-brand-secondary">
             Client Goals
           </h2>
-          <p className=" text-2xl lg:text-4xl pl-2 font-bold text-white">
+          <p className=" text-2xl lg:text-3xl pl-2 font-bold text-white">
             Reach more customers with ads and Branding.
           </p>
           <div className="w-full">
-            <ol className="flex h-full list-inside list-decimal flex-col gap-4 text-2xl lg:text-4xl  text-white">
+            <ol className="flex h-full list-inside list-decimal flex-col gap-4 text-2xl lg:text-2xl  text-white">
               <li className="rounded  p-2">
                 Increase brand awareness and reach within the target audience.
               </li>
@@ -153,7 +152,7 @@ export default function CaseLanding() {
           <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-brand-secondary ">
             How We Helped
           </h2>
-          <p className="text-xl md:text-4xl leading-normal text-white">
+          <p className="text-xl md:text-2xl leading-normal text-white">
             Our strategy involved the creation of new creative assets that would
             inform and educate the audience about the solutions and expertise
             that Kintec offers. For this, we created campaigns for every step of
@@ -300,6 +299,8 @@ export default function CaseLanding() {
           getStartedButton={"Get started"}
         />
       </section>
+      <Hcta/>
+
     </>
   );
 }

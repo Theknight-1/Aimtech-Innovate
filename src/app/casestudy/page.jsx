@@ -4,6 +4,7 @@ import Cards from "@/brandcomponents/casestudy/cards";
 import Hero from "@/brandcomponents/CaseStudyLanding/Hero";
 import Banner from "@/brandcomponents/CaseStudyLanding/Banner";
 import Footer from "@/brandcomponents/global/footer";
+import Hcta from '@/brandcomponents/landing/cta';
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <Hero />
       <Cards heading={"Explore our Case Studies"} />
       {/* <Banner/> */}
+      <Hcta/>
       <Footer />
     </>
   );

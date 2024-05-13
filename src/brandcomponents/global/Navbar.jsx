@@ -316,7 +316,7 @@ const Navbar = () => {
                     Whatsapp{" "}
                   </a>
                 </h4>
-                <h4 className="flex  items-center gap-2 text-xl font-bold hover:text-brand-secondary">
+                <h4 className="flex  items-center gap-2 text-lg font-bold hover:text-brand-secondary">
                   <span>
                     <FaPhone size={15} />
                   </span>{" "}
