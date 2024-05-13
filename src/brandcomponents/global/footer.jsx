@@ -461,7 +461,7 @@ export default function Footer() {
             <span className="text-xl">
               <FaMapLocationDot />
             </span>
-            <span>1188 settlers St. Windsor Ontario N9G2W7 Canada</span>
+            <span>1188 settlers St. Windsor Ontario <br /> N9G2W7 Canada</span>
           </div>
           <div className="flex items-center gap-5 ">
             <span className="text-xl">
@@ -487,9 +487,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t-2 text-white">
-        <div className="mx-auto  max-w-lg gap-5  py-4 text-center flex justify-center items-center cursor-pointer">
-          <p className="w-max text-lg">
-            © 2024 Aimtech Innovate | A Joint venture With{" "}
+        <div className="mx-auto  max-w-lg gap-5  py-4 text-center flex flex-col lg:flex-row text-xs justify-center items-center cursor-pointer">
+          <p className="w-max  text-xm lg:text-lg ">
+            © 2024 Aimtech Innovate | <br />
+             A Joint venture With{" "}
           </p>
           <div>
             <img src="/brand/logo/nxtcoachlogo.png" alt="next coach logo" />

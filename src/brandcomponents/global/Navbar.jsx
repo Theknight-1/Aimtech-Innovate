@@ -9,7 +9,7 @@ import { FaPhone, FaMagnifyingGlassChart } from "react-icons/fa6";
 import { GoDeviceCameraVideo } from "react-icons/go";
 import { FcNext } from "react-icons/fc";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
-// react icons
+
 
 import {
   FcBarChart,
@@ -33,7 +33,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  //handleScroll effect
+
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
@@ -241,22 +241,20 @@ const Navbar = () => {
       if (window.innerWidth > 1024) {
         setMobileNav(false);
       }
-      // else {
-      //   setMobileNav(true); // Update mobile nav state if window width is <= 1024
-      // }
+      
     };
 
-    // Initial check on mount
+   
     handleResize();
 
-    // Event listener for window resize
+
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener when component unmounts
+ 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); // If you have dependencies, include them here (e.g., [someProp, someState])
+  }, []); 
 
   const handleMobileView = () => {
     setServicesOpen(false);
@@ -446,7 +444,7 @@ const Navbar = () => {
                        
                               <article className="text-sm">
                                  Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                adipisicing  elit. Quaerat, aut. 
                               </article>
                               
                             </div>
@@ -464,7 +462,7 @@ const Navbar = () => {
                               
                               <article className="text-sm">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                adipisicing elit. Quaerat, aut. 
                               </article>
                               
                             </div>
@@ -482,7 +480,7 @@ const Navbar = () => {
                               
                               <article className="text-sm">
                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                adipisicing  elit. Quaerat, aut. 
                               </article>
                               
                             </div>
@@ -527,7 +525,7 @@ const Navbar = () => {
                               
                               <article className="text-sm">
                                  Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                adipisicing  elit. Quaerat, aut. 
                               </article>
                               
                             </div>
@@ -594,7 +592,7 @@ const Navbar = () => {
                               
                               <article className="text-sm">
                            Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                adipisicing  elit. Quaerat, aut. 
                               </article>
                               
                             </div>
@@ -611,8 +609,8 @@ const Navbar = () => {
                               </span>
                               
                               <article className="text-sm">
-                                // Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                 Lorem ipsum dolor sit amet consectetur
+                                adipisicing  elit. Quaerat, aut. 
                               </article>
                               
                             </div>
@@ -638,8 +636,8 @@ const Navbar = () => {
                               </span>
                               
                               <article className="text-sm">
-                                // Lorem ipsum dolor sit amet consectetur
-                                adipisicing // elit. Quaerat, aut. 
+                                 Lorem ipsum dolor sit amet consectetur
+                                adipisicing  elit. Quaerat, aut. 
                               </article>
                               
                             </div>
