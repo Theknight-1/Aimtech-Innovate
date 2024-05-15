@@ -191,7 +191,7 @@ export default function Footer() {
             } divide-y divide-gray-100 rounded-lg shadow w-full`}
           >
             <ul
-              className="py-2 text-sm text-gray-700 dark:text-gray-200"
+              className="py-2 text-sm text-white dark:text-white"
               aria-labelledby="caseStudyDropdownButton"
             >
               <li>
@@ -269,7 +269,7 @@ export default function Footer() {
             } divide-y divide-gray-100 rounded-lg shadow w-full`}
           >
             <ul
-              className="py-2 text-sm text-gray-700 dark:text-gray-200"
+              className="py-2 text-sm text-white dark:text-white"
               aria-labelledby="companyDropdownButton"
             >
               <li>
@@ -339,7 +339,7 @@ export default function Footer() {
             } divide-y divide-gray-100 rounded-lg shadow w-full`}
           >
             <ul
-              className="py-2 text-sm text-gray-700 dark:text-gray-200"
+              className="py-2 text-sm text-white dark:text-white"
               aria-labelledby="servicesDropdownButton"
             >
               <li>
@@ -417,7 +417,7 @@ export default function Footer() {
             } divide-y divide-gray-100 rounded-lg shadow w-full`}
           >
             <ul
-              className="py-2 text-sm text-gray-700 dark:text-gray-200"
+              className="py-2 text-sm text-white dark:text-white"
               aria-labelledby="resourcesDropdownButton"
             >
               <li>

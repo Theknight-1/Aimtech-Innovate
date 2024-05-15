@@ -90,6 +90,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen , selectedOption }) => {
             <h1 className="text-black text-center text-5xl font-bold">
               Request a Proposal
             </h1>
+            
             <p className="text-black text-center">
               Just fill in the form, and let our experts handle the rest. Here’s
               what will happen next:
@@ -169,6 +170,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen , selectedOption }) => {
                     </option>
                     <option value="PPC Advertisement">PPC Advertisement</option>
                     <option value="Email Marketing">Email Marketing</option>
+                    <option value="others">others</option>
                   </select>
                   <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                     <svg

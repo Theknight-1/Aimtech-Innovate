@@ -59,6 +59,9 @@ const config: Config = {
           "typing 4s steps(20) infinite  alternate, ease-out blink .7s infinite",
       },
     },
+    fontFamily: {
+      satoshi: ['satoshi', 'sans-serif'],
+     },
   },
   plugins: [require("tailwindcss-animated")],
 };

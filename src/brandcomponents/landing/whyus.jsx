@@ -8,37 +8,37 @@ export default function Whyus() {
 
   const accordionData = [
     {
-      title: "Integrity",
+      title: "Localized Tech and Market Experience",
       content:
-        "We genuinely care about our clients and uphold strong moral principles in all we do. We deliver on our promises and are committed to providing honest and transparent recommendations.",
+        "With HQ in Canada and Production in Nepal, our agency offers deep understanding and expertise in the unique digital landscapes of the latest technology and marketplace. We tailor our strategies to resonate with the diverse demographics, cultural nuances, and regulatory environments of each region, ensuring maximum effectiveness for our clients.",
     },
     {
-      title: "Customer Care",
+      title: "Quick Data driven Results",
       content:
-        "We treat our clients the way we like to be treated. We partner with our clients to deliver the highest standards of service excellence imaginable. Our response times are fast and we make sure clients are informed promptly every step of the way.",
+        "Our commitment to data-driven marketing ensures that we deliver measurable results with lightning-fast turnaround times. Leveraging advanced analytics and technology, we track, analyze, and optimize campaigns in real-time, enabling us to adapt quickly and maximize ROI for our clients. This agile approach means our clients see tangible business growth faster than ever before.",
     },
     {
-      title: "Team Work",
+      title: "Multifaceted Digital Presence Service",
       content:
-        "We believe in holding ourselves accountable for the work we promise to deliver and ensuring that we support each other to achieve the overall best outcome for our clients. We work as one team and share all our knowledge and expertise to get the best outcome for our clients.",
+        "We offer a comprehensive suite of services covering every aspect of digital marketing. From SEO and SEM to social media management, content marketing, email marketing, and more, our integrated approach ensures consistent messaging and maximum impact across all channels. Clients benefit from the convenience of a one-stop solution and the synergistic effect of cohesive, multi-channel campaigns.",
     },
     {
-      title: "Continuous Improvement",
+      title: "Creative innovation on repeat",
       content:
-        "We never stop learning and never stop reaching for excellence in execution and service delivery. We upskill and stay connected with industry innovations to ensure that our offering is best practice and up with the latest trends.",
+        "Creativity is our cornerstone. Our team of talented professionals excels at developing innovative, attention-grabbing campaigns that captivate audiences and drive engagement. Whether it's crafting compelling content, designing interactive experiences, or engineering viral-worthy campaigns, our creative prowess sets our clients apart from the competition.",
     },
     {
-      title: "Our commitment",
+      title: "24/7 Client-centric approach",
       content:
-        "We’re committed to your success from day one. We make promises we can deliver and stay committed to continuous improvement in everything we do.",
+        "We prioritize client satisfaction above all else. Our streamlined processes and dedicated account managers make it easy for clients to work with us, ensuring a seamless experience from start to finish. Plus, our commitment to cost-cutting means clients get maximum value for their investment without compromising on quality. By offering competitive pricing and transparent billing, we empower clients to achieve their goals without breaking the bank.",
     },
   ];
 
   return (
-    <section className="w-full  min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+    <section className="w-full font-satoshi  min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
       <div className="w-full md:w-1/2 h-full flex flex-col justify-start  p-4  ">
         <div className="relative w-full h-full flex flex-col items-center justify-center space-y-7  ">
-          <div className="absolute top-0 left-0 w-full h-full rounded-full bg-[#15BEE3]/30 blur-3xl"></div>
+          <div className="absolute -z-0 top-0 left-0 w-full h-full rounded-full bg-[#15BEE3]/15 blur-3xl"></div>
           <div className="w-full flex items-end justify-end px-10 ">
             <svg
               width="40"
@@ -62,17 +62,16 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
 
-            <span className="  text-[#FFB700] text-center  overflow-hidden whitespace-nowrap  z-10 pr-5 xl:text-6xl md:text-5xl sm:text-4xl text-4xl md:tracking-tighter lg:tracking-normal font-bold">
-              Why choose us?
+            <span className="text-brand-secondary  h-auto p-2 text-center  overflow-hidden whitespace-nowrap  z-10 pr-5  md:text-6xl sm:text-2xl text-2xl md:tracking-tighter lg:tracking-normal font-semibold">
+              Why Us?
             </span>
             {/* <svg width="129" height="146" className='' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
-          <article className="max-w-2xl  text-xl z-10 sm:text-xl md:text-xl lg:text-xl  text-white text-justify">
-            <span className="">
-            Aimtech Innovate offers premier digital marketing services at unbeatable rates in the US and Canada, thanks to our partnership with Nepal's Next Coach Incubator Program. Access top-quality work at a fraction of the cost.
-            </span>
+          <article className="w-full lg:w-2/3   text-xl z-10 sm:text-xl md:text-xl lg:text-xl  text-white text-justify">
+            <span className="font-satoshi">
+            Aimtech Innovate offers premium digital marketing services at unbeatable pricing in the US and Canada, thanks to our partnership with Nepal's Next Coach. Access top-quality work at a fraction of the usual price.            </span>
           </article>
           <Link href="/contact" className="z-10">
             <button className="w-auto rounded-lg flex items-center justify-center gap-x-2 border bg-white p-4 px-8  shadow-lg group">
@@ -81,7 +80,8 @@ export default function Whyus() {
               </span>
               <img
                 src="/arrow-double-end.svg"
-                className="w-4 h-4 invisible group-hover:visible group-hover:animate-fade-right group-hover:animate-infinite group-hover:animate-alternate"
+                className="w-4 h-4 
+                "
                 alt=""
               />
             </button>
@@ -108,6 +108,7 @@ export default function Whyus() {
       <div className="w-full md:w-1/2 h-full flex items-center justify-center p-2">
         <div className="flex flex-col gap-y-4 h-auto overflow-hidden flex-1">
           {accordionData.map((item, index) => (
+            <div className="border-2 border-brand-secondary rounded-lg">
             <Accordion
               key={index}
               title={item.title}
@@ -115,7 +116,7 @@ export default function Whyus() {
               index={index}
               selectedIndex={selectedIndex}
               setSelectedIndex={setSelectedIndex}
-            />
+            /></div>
           ))}
         </div>
       </div>

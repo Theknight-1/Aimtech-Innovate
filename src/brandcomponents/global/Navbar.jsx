@@ -291,8 +291,11 @@ const Navbar = () => {
           </div>
           <div>
             <div className="flex justify-end  itmes-center  ">
-              <div className="hidden lg:flex gap-4 lg:gap-7  ">
-                <h4 className="flex  items-center gap-2 text-base">
+              {/* <div className={`lg:flex gap-4 lg:gap-7 ${
+          scrolling ? "text-green-400 hidden" : "text-red-400"
+        }`}> */}
+              <div className={`lg:flex gap-4 lg:gap-7 `}>
+                <h4 className={`flex  items-center gap-2 text-base ${scrolling ? "hidden":""}`}>
                   <a
                     href="https://calendly.com/himanshusaxena5500/30min"
                     target="_blank"
@@ -304,7 +307,7 @@ const Navbar = () => {
                     Schedule Discovery Meet
                   </a>
                 </h4>
-                <h4 className="flex  items-center gap-2 text-base">
+                <h4 className={`flex  items-center gap-2 text-base ${scrolling ? "hidden":""}`}>
                   <span>
                     <FaWhatsapp size={22} />
                   </span>
@@ -316,7 +319,7 @@ const Navbar = () => {
                     Whatsapp{" "}
                   </a>
                 </h4>
-                <h4 className="flex  items-center gap-2 text-lg font-bold hover:text-brand-secondary">
+                <h4 className={`flex  items-center gap-2 text-base text-lg font-bold hover:text-brand-secondary ${scrolling ? "hidden":""}`}>
                   <span>
                     <FaPhone size={15} />
                   </span>{" "}
@@ -343,7 +346,7 @@ const Navbar = () => {
               <li className="relative block py-6 px-4 lg:p-6 text-sm lg:text-xl  ">
                 <Link
                   href="/"
-                  className=" hover:border-b-2 hover:border-brand-secondary cursor-pointer "
+                  className="  hover:border-brand-secondary cursor-pointer "
                 >
                   <span>Home</span>
                 </Link>
@@ -351,7 +354,7 @@ const Navbar = () => {
               <li className="relative block py-6 px-4 lg:p-6 text-sm lg:text-xl ">
                 <Link
                   href="/about"
-                  className="hover:border-b-2 hover:border-brand-secondary cursor-pointer"
+                  className=" hover:border-brand-secondary cursor-pointer"
                 >
                   About us
                 </Link>
@@ -360,7 +363,7 @@ const Navbar = () => {
               <li className="hoverable group py-6 px-4 relative text-sm lg:text-xl ">
                 <Link
                   href="#"
-                  className="   hover:border-b-2 hover:border-brand-secondary  flex justify-center items-center"
+                  className="    hover:border-brand-secondary  flex justify-center items-center"
                 >
                   Services
                   <span>
@@ -411,7 +414,7 @@ const Navbar = () => {
               <li className="hoverable group py-6 px-4 relative text-sm lg:text-xl ">
                 <Link
                   href="#"
-                  className="   hover:border-b-2 hover:border-brand-secondary cursor-pointer flex justify-center items-center"
+                  className="    hover:border-brand-secondary cursor-pointer flex justify-center items-center"
                 >
                   Case Study
                   <span>
@@ -955,7 +958,7 @@ const Navbar = () => {
               <li className="relative block py-6 px-4 lg:p-6 text-sm lg:text-xl">
                 <Link
                   href="/contact"
-                  className="hover:border-b-2 hover:border-brand-secondary cursor-pointer"
+                  className=" hover:border-brand-secondary cursor-pointer"
                 >
                   Contact
                 </Link>

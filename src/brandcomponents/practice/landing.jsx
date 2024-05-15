@@ -18,9 +18,11 @@ export default function Pland({faqdata = []}) {
             <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">
               <div className="flex  space-y-8 flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
                 <div className="mb-3 text-center md:text-left">
-                  <span className=" text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-white leading-normal">
-                    Frequently Asked Questions?
-                  </span>
+                  <p className=" text-3xl sm:text-4xl flex flex-col items-start justify-start gap-y-2 md:text-5xl xl:text-4xl 2xl:text-5xl text-white leading-normal">
+                    <span>Frequently</span>
+                    <span>Asked</span>
+                    <span>Questions?</span>
+                  </p>
                   <br />
                 </div>
                 <div className="text-center md:text-left md:block hidden">
@@ -59,7 +61,7 @@ export default function Pland({faqdata = []}) {
                     index={index}
                     selectedIndex={selectedIndex}
                     setSelectedIndex={setSelectedIndex}
-                  />
+ />
                 ))}
                 {/* <div className='w-full h-16 border flex flex-row items-center rounded-lg bg-[#1B1B1B] justify-between p-2 text-xl text-white'>
                                     <span>Where is aimtech located ?</span>
@@ -80,7 +82,7 @@ export default function Pland({faqdata = []}) {
                       className="bg-[#FFB700] w-max h-full xl:p-5 lg:p-3 md:p-4 p-4 xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 "
                     >
                       {" "}
-                      +979846135461
+                      +1 905-399-6642
                     </Link>
                   </div>
                 </div>

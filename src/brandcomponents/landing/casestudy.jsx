@@ -7,9 +7,18 @@ const caseStudiesData = [
     id: 1,
     image:
       "https://static.vecteezy.com/system/resources/previews/029/772/275/large_2x/happy-successful-asian-businessman-celebrating-in-modern-office-celebrate-success-and-achieving-goals-male-entrepreneur-celebrate-winning-moments-free-photo.jpeg",
+    title: "Title",
+    description:
+      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
+    link: "/casestudy/aimtech",
+  },
+  {
+    id: 2,
+    image:
+      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
     title: "Aimtech",
     description:
-      "Digital Marketing agency based in canada.",
+      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
     link: "/casestudy/aimtech",
   },
   {
@@ -18,34 +27,25 @@ const caseStudiesData = [
       "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
     title: "Next coach",
     description:
-      "IT service Company",
+      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
     link: "/casestudy/aimtech",
   },
   {
     id: 2,
     image:
       "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Next coach",
+    title: "FANGG",
     description:
-      "IT service Company",
+      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
     link: "/casestudy/aimtech",
   },
   {
     id: 2,
     image:
       "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Next coach",
+    title: "GOOGLE",
     description:
-      "IT service Company",
-    link: "/casestudy/aimtech",
-  },
-  {
-    id: 2,
-    image:
-      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Next coach",
-    description:
-      "IT service Company",
+      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
     link: "/casestudy/aimtech",
   },
   {
@@ -102,7 +102,7 @@ export default function CaseStudies() {
       <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
         {caseStudiesData.map((study) => (
           <div key={study.id} className="flip-card aspect-square h-auto w-full  ">
-            <div className="flip-card-inner w-full h-full">
+            <div className="flip-card-inner w-full h-full p-2">
               <div className="flip-card-front overflow-hidden">
                 <img
                   className="w-full h-full object-cover "
@@ -110,14 +110,14 @@ export default function CaseStudies() {
                   alt=""
                 />
               </div>
-              <div className="flip-card-back flex flex-col items-center justify-center ">
-                <h1 className="text-4xl">{study.title}</h1>
+              <div className="flip-card-back flex flex-col items-center justify-center px-8 text-justify font-bold">
+                <h1 className="text-4xl border-b-2 border-brand-primary">{study.title}</h1>
                 <br />
                 <p>{study.description}</p>
                 <br />
                 <Link
                   href={study.link}
-                  className="bg-brand-secondary  p-3 rounded-lg text-white"
+                  className="bg-brand-secondary w-1/2 text-center p-3 rounded-lg text-white"
                 >
                   <p>Learn more...</p>
                 </Link>

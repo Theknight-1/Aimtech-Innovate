@@ -21,10 +21,10 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen pt-20 overflow-hidden lg:overflow-visible  h-auto  flex flex-col lg:flex-row justify-between items-center  px-4 md:px-8 lg:px-24 xl:px-28">
-        <div className="grid max-w-screen py-8 lg:py-16 lg:grid-cols-12 gap-8  ">
+      <section className="w-screen font-satoshi pt-20 overflow-hidden lg:overflow-visible  h-auto   flex flex-col lg:flex-row justify-between items-center  px-4 md:px-8 lg:px-24 xl:px-28">
+        <div className="grid  max-w-screen py-8 lg:py-16 lg:grid-cols-12 gap-8  ">
           <div className="lg:col-span-6 h-full space-y-8">
-            <h1 className="max-w-7xl text-white font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl">
+            <h1 className=" max-w-7xl text-white font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl">
             Enhance your digital presence and gain market excellence
             </h1>
             <h3 className="max-w-4xl  text-white tracking-tight text-sm md:text-lg xl:text-lg 2xl:text-2xl bg-gradient-to-r bg-clip-text">
@@ -57,7 +57,7 @@ export default function GradientSection() {
                     <select
                       value={selectedOption}
                       onChange={handleSelectChange}
-                      className="block appearance-none w-full bg-white border border-gray-300 text-gray-800 text-xl py-4 px-4 pr-8  leading-tight "
+                      className="block appearance-none w-full bg-white  border-gray-300 text-gray-800 text-xl py-4 px-4 pr-8  leading-tight "
                     >
                       <option value="Web Design and Development">
                         Web Design and Development
@@ -72,6 +72,7 @@ export default function GradientSection() {
                         PPC Advertisement
                       </option>
                       <option value="Email Marketing">Email Marketing</option>
+                      <option value="others">Others</option>
                     </select>
                     <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                       <FiChevronDown className="h-4 w-4 text-gray-500" />
@@ -101,10 +102,10 @@ export default function GradientSection() {
             </div>
             </div>
           </div>
-          <div className="relative lg:col-span-6 lg:flex items-center justify-center ">
-            <div className="absolute -z-0 w-full h-auto aspect-square rounded-full  bg-blue-600/25 blur-3xl"></div>
+          <div className="relative lg:col-span-6 lg:flex items-center justify-end  ">
+            <div className="absolute left-10 -z-0 w-full h-auto aspect-square justify-end rounded-full  bg-[#15BEE3]/25 blur-3xl "></div>
             <img
-              src="./landingPage/HeroSection.png"
+              src="/landingPage/HeroSection.png"
               alt="mockup"
               className="absolute z-0 w-[80%] object-cover"
             />

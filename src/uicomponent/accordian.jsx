@@ -12,8 +12,8 @@ const Accordion = ({
 
   return (
     <div
-      className={`border group border-[#FFB700] rounded-xl ${
-        isOpen ? "bg-[#FFB700] text-brand-primary" : "text-white"
+      className={`bg-[#1B1B1B] group  rounded-xl ${
+        isOpen ? " text-white " : "text-white"
       }`}
     >
       <div
@@ -21,7 +21,7 @@ const Accordion = ({
         onClick={() => setSelectedIndex(isOpen ? null : index)}
       >
         <div className="flex gap-x-4 items-center ">
-          <h2 className="font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl">
+          <h2 className=" text-sm sm:text-lg md:text-xl xl:text-2xl">
             {title}
           </h2>
         </div>
@@ -44,7 +44,7 @@ const Accordion = ({
         style={{
           maxHeight: isOpen ? "1000px" : "0", // Set max height based on open/close state
           overflow: "hidden", // Hide overflow when closed
-          transition: `max-height 0.6s ease-in`, // Adding transition with different duration based on open/close state
+          transition: `max-height 0.6s ease-in-out`, // Adding transition with different duration based on open/close state
         }}
       >
         <div className="flex items-start flex-col justify-center">

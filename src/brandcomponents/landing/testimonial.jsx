@@ -13,17 +13,17 @@ export default function Testimonial() {
     },
     {
       quote:
-        "The team is productive and creative , they help us get to market within our deadline.",
-      author: "Ramkumar",
-      company: "Software Engineer",
-      image: "https://rkmahato.com.np/images/Profile.png",
+        "We can count on them to bring new ideas to the table consistently",
+      author: "Mark Henry",
+      company: "CEO - Alpha & company",
+      image: "https://w7.pngwing.com/pngs/214/506/png-transparent-company-chief-executive-business-finance-goal-lorm-ipsum.png",
     },
     {
       quote:
-        "We were thrilled to use aimtech services, they are highly skilled and are the one we can trust",
-      author: "Sailesh rokaya",
+        "We can count on them to bring new ideas to the table consistently",
+      author: "Bill willow",
       company: "CEO -SBRC Infosys",
-      image: "https://broadwayinfosys.com/uploads/testimonials/1521784284.jpg",
+      image: "https://toppng.com/uploads/preview/osco-daewoo-ceo-kim-young-sang-young-sang-kim-posco-daewoo-11563201738ixvi9ad3ey.png",
     },
     // Add more testimonials as needed
   ];
@@ -64,7 +64,7 @@ export default function Testimonial() {
             <div className="h-auto w-full  flex items-center justify-center  ">
 
               <span className="text-3xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem]  text-white leading-normal">
-                We Drive Innovative Marketing for Great Companies
+              We helped businesses achieve massive <br /> <span className="border-b-2 border-brand-secondary">Profitable</span> results
               </span>
             </div>
             <div className="flex flex-col items-center lg:items-start justify-center   mt-2 h-auto w-full text-center lg:text-left">

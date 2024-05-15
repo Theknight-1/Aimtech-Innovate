@@ -42,18 +42,19 @@ export default function Services() {
         return (
           <div className="relative w-full h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center space-y-10 px-32">
-              <h1 className="text-4xl  font-bold">Push your product to next level.</h1>
+              <h1 className="text-4xl  font-bold">Design a Website That Converts Visitors into Leads</h1>
               <h1 className="text-sm sm:text-xl lg:text-xl ">
-              End-to-end payments and financial management in a single solution. Meet the right platform to help realize.
+              Attract, engage, and convert visitors with a stunning, user-friendly website designed to achieve your business goals.
+
               </h1>
-              <button className=" text-xl sm:text-2xl lg:text-3xl text-[#122B59] font-bold  text-center rounded-xl bg-brand-secondary px-3 py-2">
-                Get Started
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+                learn More 
               </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
-                src={currentImage}
+                src="/case-study-1.png"
                 alt=""
                 className="h-full w-full object-cover "
               />
@@ -64,22 +65,22 @@ export default function Services() {
       case "contentMarketing":
         return (
           <div className="relative w-full h-[35rem] flex items-center justify-center ">
-            <div className="absolute text-white z-20 text-center">
-              <h1 className="text-3xl font-bold">Content Marketing</h1>
-              <h1 className="text-[3rem] font-bold">
-                This is the content for Content Marketing.
+
+            <div className="absolute text-white z-20 text-center space-y-10 px-32">
+              <h1 className="text-4xl  font-bold">Target Your Ideal Customers to Maximize Your Sales</h1>
+              <h1 className="text-sm sm:text-xl lg:text-xl ">
+              Reach the right audience at the right time with strategic PPC campaigns that deliver measurable results.
               </h1>
-              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-brand-secondary px-3 py-2">
-                Get Started
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+                learn More 
               </button>
             </div>
-            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+            <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
-                src={currentImage}
-                loading="lazy"
+                src="/case-study-2.png"
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
               />
             </div>
           </div>
@@ -88,22 +89,21 @@ export default function Services() {
       case "ecommerceDevelopment":
         return (
           <div className="relative w-full h-[35rem] flex items-center justify-center ">
-            <div className="absolute text-white z-20 text-center">
-              <h1 className="text-2xl font-bold">Ecommerce Development</h1>
-              <h1 className="text-[3rem] font-bold">
-                This is the content for Ecommerce Development.
+            <div className="absolute text-white z-20 text-center space-y-10 px-32">
+              <h1 className="text-4xl  font-bold">Dominate Search Results to Drive Organic Traffic</h1>
+              <h1 className="text-sm sm:text-xl lg:text-xl ">
+              Unleash the power of SEO to maximize search rankings that attract qualified leads, and grow your online presence organically.
               </h1>
-              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-brand-secondary px-3 py-2">
-                Get Started
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+                learn More 
               </button>
             </div>
-            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+            <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
-                src={currentImage}
-                loading="lazy"
+                src="/case-study-1.png"
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
               />
             </div>
           </div>
@@ -112,22 +112,21 @@ export default function Services() {
       case "webDesign":
         return (
           <div className="relative w-full h-[35rem] flex items-center justify-center ">
-            <div className="absolute text-white z-20 text-center">
-              <h1 className="text-2xl font-bold">Website Design</h1>
-              <h1 className="text-[3rem] font-bold">
-                This is the content for Website Design.
+            <div className="absolute text-white z-20 text-center space-y-10 px-32">
+              <h1 className="text-4xl  font-bold">Build Trust to Drive Engagement and Customer Interaction</h1>
+              <h1 className="text-sm sm:text-xl lg:text-xl ">
+              Building social media presence with engaging content, community management, and targeted social media advertising.
               </h1>
-              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-brand-secondary px-3 py-2">
-                Get Started
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+                learn More 
               </button>
             </div>
-            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+            <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
-                src={currentImage}
-                loading="lazy"
+                src="/case-study-2.png"
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
               />
             </div>
           </div>
@@ -136,22 +135,21 @@ export default function Services() {
       case "seoService":
         return (
           <div className="relative w-full h-[35rem] flex items-center justify-center ">
-            <div className="absolute text-white z-20 text-center">
-              <h1 className="text-2xl font-bold">SEO Service</h1>
-              <h1 className="text-[3rem] font-bold">
-                This is the content for SEO Service.
+            <div className="absolute text-white z-20 text-center space-y-10 px-32">
+              <h1 className="text-4xl  font-bold">Personalized Emails that build Customer Base</h1>
+              <h1 className="text-sm sm:text-xl lg:text-xl ">
+              Targeted email campaigns that nurture leads, build brand loyalty, and drive sales through powerful email marketing strategies.
               </h1>
-              <button className="text-xl text-[#122B59] font-bold  text-center rounded-xl bg-brand-secondary px-3 py-2">
-                Get Started
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+                learn More 
               </button>
             </div>
-            <div className="absolute w-full h-full rounded-xl overflow-hidden">
+            <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
               <img
-                src={currentImage}
-                loading="lazy"
+                src="/case-study-1.png"
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
               />
             </div>
           </div>
@@ -169,8 +167,8 @@ export default function Services() {
       <section className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Service Buttons */}
         <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2">
-          <h1 className="text-[2.5rem] leading-snug sm:text-[4rem] font-semibold text-[#FFB700]">
-            What we provide?
+          <h1 className="text-2xl leading-snug sm:text-[4rem] font-semibold text-brand-secondary">
+            Our services
           </h1>
           <div className="w-full md:space-y-5 lg:pr-16 pr-0">
             {[
@@ -189,12 +187,12 @@ export default function Services() {
                       : "text-white"
                   }`}
                 >
-                  {contentId === "businessImpact" && "Digital Marketing"}
-                  {contentId === "contentMarketing" && "Content Marketing"}
+                  {contentId === "businessImpact" && "Web Design and Development"}
+                  {contentId === "contentMarketing" && "Pay-Per-Click Advertisement"}
                   {contentId === "ecommerceDevelopment" &&
-                    "Ecommerce Development"}
-                  {contentId === "webDesign" && "Website Design"}
-                  {contentId === "seoService" && "SEO Service"}
+                    "Search Engine Optimization"}
+                  {contentId === "webDesign" && "Social Media Management"}
+                  {contentId === "seoService" && "Email Marketing"}
                 </button>
                 {isSmallScreen && currentContent === contentId && (
                   <div className="pt-4">{getContent()}</div>

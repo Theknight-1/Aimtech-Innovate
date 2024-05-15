@@ -14,13 +14,13 @@ export default function Hcta() {
       <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">
         <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white">
           <h2 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            Keep Everyone in the loop.
+            Get a Free Audit Report
 
           </h2>
           <p className="mt-4 font-medium md:text-2xl sm:text-xl text-lg">
-            <span>All good things starts with a homepage.
+            <span>Get you free consultation today.
               <br />
-               Get inspired without breaking your wallet.
+               Learn how we can boost your ROI.
               </span>{" "}
           </p>
 
