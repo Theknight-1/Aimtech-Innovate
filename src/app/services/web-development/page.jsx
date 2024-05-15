@@ -12,88 +12,94 @@ import Hcta from "@/brandcomponents/landing/cta";
 
 export default function page() {
   const dataOBJ = {
-    title: "Web Design and Development",
-    tagLine: "The only Web dev Service You need to scale your businee to new heights.",
+    title: "Lead Generating Web Design and Development",
+    tagLine: "Grow your Business with our Custom Website Design & Development Services",
     desciption:
-      "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users.",
-    benifits: ["Website marketting", "Product marketting", "Safe", "Secure"],
+      "Make a good impression on potential customers right away. Our talented team of web designers and developers creates websites that are both aesthetically pleasing and conversion-focused. We believe that a unique, customized website design makes the business stand out from the crowd and creates an online presence.",
+    benifits: ["WordPress", "Shopify ", "WooCommerce", "Custom Code (Almost any Tech Stack)"],
     link: "/contact",
     image:"/png/revenue.png",
 
 
     second : {
-        title : "Growing Your Business and Increasing Your SEO Revenue",
+        title : "Designing your business web presence and generating leads online",
         points : [
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
+            "You don’t have a website for your business to have a digital presence.",
+            "Your website looks great, but it's not optimized for search engines. As a result, it's nearly impossible for customers to find you online.",
+            "You built your website a few years ago, but it's outdated and doesn't work well on mobile devices. This is turning customers away.",
+            "Managing your website's content is a nightmare. You have to go through your web developer every time you want to make a simple update.",
+            "Your website lacks important features like e-commerce capabilities or online appointment booking. This limits your ability to generate revenue.",
+            "Your website doesn't integrate with your other business systems, so you're stuck doing manual data entry and wasting time.",
            
         ],
         short : [
-          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
-          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
-          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
+          "Without a high-converting website, you might lose your important prospects even though your efforts are consistent and that means you are not getting out what you should have from your website.",
+          "Building a website helps your business to thrive in a competitive market. We help you with a 20% increase in website traffic in just 3 months and 15%  in customer engagement and a 25% jump in customer satisfaction. Let's grow your business together!",
+          "By working with Aimtech Innovate and setting clear goals, We help businesses improve their online presence, attract more customers, and increase sales. Our approach helps your business grow in revenue and a stronger position in the market."
         ],
         image : "/service/image28.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
-        title : "We Are Masters at  Running High-ROI SEO Campaign",
+        title : "We are incredible at developing web designs that resonate with your business idea",
         points : [
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
+            "Wireframing",
+            "User scenarios",
+            "Usability testing",
+            "Website Design",
+            "Website Copywriting",
+            "Website Development",
+            "SEO Optimisation",
+            "Website Analytics",
+            "Content Creation",
+            "Website Audit",
+            "Conversion Optimisation",
+            "Digital content management",
+            "Website maintenance & updating",
+            "Mobile and Tablet responsiveness",
+            "Crash control & stats analysis",
+            "And many more",
         ],
         short : [
-          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
-          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
-          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
+          "At Aimtech Innovate, Our website development service follows a systematic process that combines a deep understanding of what matters most to your audience, an understanding of your business priorities, beautiful design and UI/UX principles, combined with behavioral psychology and neuromarketing.",
+          "We have skilled expertise in WordPress, Wix, Shopify, WooCommerce and Custom Code (with NextJS, Django and MERN stack).",
+          "We always provide a custom Web Design and Development plan for our clients but in general, it consists of:"
         ],
         image : "/service/image30.png",
-        description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
+        description : "We always provide a custom Web Design and Development plan for our clients but in general, it consists of:"
     },
     fourth:{
-      ctatext : "LET’S DISCUSS YOUR PPC STRATEGY",
+      ctatext : "LET’S BUILD A WEBSITE",
       ctalink : "/contact",
     }
   };
 
   const accordionData = [
     {
-      title: "What services do you offer?",
+      title: "How do I choose the right website design and development company?",
       content:
-        "Aim Tech Innovate provides a full range of digital marketing services, including social media marketing, search engine optimisation (SEO), web development, graphic design, and strategic consulting.",
+        "Businesses must choose the top website design and development company in Canada if they want to expand their online presence. When choosing a website design company for new website designs, it's important to keep in mind that SEO and website development are always evolving. It's also a good idea to look at how well their prior clients' websites are, since this will demonstrate how effectively they can improve your website.",
     },
     {
-      title: "What makes us different?",
+      title: "How much does it cost to design a website?",
       content:
-        "Our team of 10+ experienced professionals is certified by Google, Facebook/Instagram, and other major platforms. We combine creativity, data analysis, and strategic thinking to deliver exceptional results.",
+        "You must invest money in the creation of your website. As more businesses move toward internet marketing, having a quality website may boost your online presence and attract new customers. Website design might cost anywhere from $800 to $30,000, depending on the complexity and needs of the business.",
     },
     {
-      title: "How long have you been around?",
-      content: "We've been helping businesses thrive online since 2015, constantly adapting to the ever-changing digital landscape.",
+      title: "How long does it take to build a website?",
+      content: "To optimize a website for Google and other search engines, it may require more work than just building one. Depending on the design and development components and whether the website is for e-commerce or not, the construction of a website can take four to eight weeks.",
     },
     {
-      title: "What is you tech domain ?",
-      content: "Our expertise lies in online marketing, with a focus on web design, development, and SEO to drive explosive growth for your business.",
+      title: "How does website design help my website to rank on Google?",
+      content: "There are several ways in which the design of your website might affect its position on Google and other search engines. Search engines look upon user experience in addition to search engine optimization. For instance, content on a low-ranked website could be difficult to navigate. This also applies to really huge photo loads. Additionally, there's a significant chance that if your website's construction and design are not optimized for user experience, its ranking will suffer.",
     },
     {
-      title: "Do you build only websites or full software?",
-      content: "We primarily focus on web design and development, creating impactful online presences. However, we can also discuss your specific software needs to see if we can be a good fit.",
+      title: "What is the information required before designing and developing the website?",
+      content: "The content needs to be ready, and that includes the following ( High-resolution logos, High-quality images of products and services, Sitemap ,Enquiry forms to collect contact information, Domain and hosting logins if you own existing accounts)",
     },
     {
-      title: "How big is your team ?",
-      content: "Our team size is flexible, allowing us to scale our expertise to meet your project's needs. We have a network of skilled professionals to ensure we deliver exceptional results.",
+      title: "Can you help me improve my site without building a new website?",
+      content: "Through our maintenance service, we can help you in improving the design, features and overall performance of your website without the need for a new one. Our web experts can also help you with suggestions on improving user experience in an existing website hence, we can enhance your existing website without any hassle.",
     },
   ];
    
@@ -114,7 +120,7 @@ export default function page() {
     <CaseStudies />
     <Testimonial />
     <Pland faqdata={accordionData} />
-    <Hcta />
+    <Hcta title='Get a Free Website Audit Report' d1='Get your free consultation today.' d2='Learn how we can boost your ROI.'/>
     <Footer />
   </>
   )

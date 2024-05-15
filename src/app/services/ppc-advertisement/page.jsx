@@ -42,7 +42,7 @@ export default function page() {
     third : {
         title : "PPC Management Tailored to Your Business Goals",
         points : [
-            "YCompelling Ad Copy & Creative",
+            "Compelling Ad Copy & Creative",
             "Landing Page Optimization",
             "Google Analytics & Conversion Tracking",
             "Bid Management & Budgeting",

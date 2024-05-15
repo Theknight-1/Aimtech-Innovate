@@ -77,7 +77,7 @@ export default function Home() {
         <Pland faqdata={accordionData} />
 
 
-        <Hcta />
+        <Hcta title="Get a Free Audit Report" d1="Get your free consultation today." d2="Learn how we can boost your ROI." />
       </main>
       {/* <Customer/> */}
       <Footer />
