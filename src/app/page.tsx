@@ -27,26 +27,26 @@ export default function Home() {
 
   const accordionData = [
     {
-      title: "Where is your office located?",
+      title: "Would my business benefit from hiring a digital marketing agency?",
       content:
-        "We don't have a physical office location - we work virtually! This allows us to serve clients across North America efficiently.",
+        "Definitely yes. Hiring a digital marketing agency is worth it for their expertise, industry insights, cost-effective lead generation, proven results, up-to-date strategies, and time-saving benefits. With the digital marketing industry booming and agencies offering specialized services, businesses can benefit from their tailored approach to online marketing, driving growth and maximizing ROI.",
     },
     {
-      title: "Do you serve in the US?",
+      title: "What can a digital marketing agency do for my business?",
       content:
-        "Yes! We're proud to partner with businesses across the United States.",
+        "A digital marketing agency can provide your business with expertise across multiple channels, cost-effective and scalable services, improved online presence and lead generation, High ROI, and professional support. By partnering with an agency, you can focus on your core business while experts drive results, giving you a competitive edge in the digital landscape.",
     },
     {
-      title: "Do you serve in Canada?",
-      content: "Absolutely!  Canadian businesses are a core part of our clientele.",
+      title: "How do you report on your results?",
+      content: "We provide reports based on digital marketing results that define clear goals, organize and prioritize data, structure metrics, use reporting tools like Office 365 or Coefficient, and create custom reports tailored to client needs. By filtering and structuring data, you can track performance accurately and showcase the success of cross-channel marketing efforts. These steps streamline reporting, provide actionable insights, and communicate the impact of digital strategies to stakeholders. Leveraging tools and custom reports enhances transparency, demonstrates ROI, and helps optimize future marketing campaigns for continued success.",
     },
     {
-      title: "What is your tech domain?",
-      content: "Our expertise lies in online marketing, with a focus on web design, development, and SEO to drive explosive growth for your business.",
+      title: "Why is Aimtech Innovate the most cost-effective digital marketing agency across the US and Canada?",
+      content: "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services Our reputation for providing quality services at an affordable rate positions us as a top choice for businesses looking to optimize their online presence without compromising on quality or effectiveness.",
     },
     {
-      title: "Do you build only websites or full software?",
-      content: "We primarily focus on web design and development, creating impactful online presences. However, we can also discuss your specific software needs to see if we can be a good fit.",
+      title: "What questions should I ask a digital marketing agency before I hire them?",
+      content: "Before hiring a digital marketing agency, ensure alignment by asking key questions: Understand your needs and their process, inquire about their experience with similar companies, clarify team composition for consistent communication, discuss cost, billing, and potential expenses, question their success measurement and analytics provision, understand their service offerings and integration with your plan, and discuss reporting frequency, key metrics, and progress tracking tools. These questions help assess expertise, approach, experience, and fit with your goals, ensuring a successful partnership that drives your business forward.",
     },
     {
       title: "How big is your team ?",
