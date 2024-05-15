@@ -11,16 +11,21 @@ export default function brandservice({ data }) {
         <div className="w-1/2  flex items-center justify-center p-8 ">
           
             <img
-              src="/service/Img2-about-section.png"
+              src={dataOBJ.image}
               alt="Product screenshot"
               class=" h-full object-cover"
             />
+            {/* <img
+              src="/service/Img2-about-section.png"
+              alt="Product screenshot"
+              class=" h-full object-cover"
+            /> */}
           
         </div>
         <div className=" flex-1 p-8 flex items-center   justify-start">
           <div className="w-full h-auto space-y-8   ">
             <h1 className="text-brand-secondary text-2xl font-bold uppercase">
-              ABOUT OUR <span className="uppercase"> SEO Service</span>
+              {dataOBJ.title}
             </h1>
             <article className="text-xl lg:text-4xl font-semibold">{dataOBJ.tagLine}</article>
             <p className="text-white text-xl lg:text-lg">{dataOBJ.desciption}</p>
@@ -46,23 +51,15 @@ export default function brandservice({ data }) {
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
-              <p className="mt-2  text-3xl font-normal tracking-tight text-white sm:text-5xl" >{dataOBJ.second.title}</p>
-              <p class="mt-2 hidden text-3xl font-normal tracking-tight  sm:text-5xl ">
-                Growing Your Business
-                <br />
-                and{" "}
-                <span className="text-[#FFB700] underline ">
-                  Increasing
-                </span>{" "}
-                Your SEO Revenue
-              </p>
+              <p className="mt-2  text-3xl font-normal tracking-tight text-brand-secondary sm:text-5xl" >{dataOBJ.second.title}</p>
+              
               <br />
               {/* <div>
                 <h1>Does this sound like you Business</h1>
               </div> */}
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
-                <ul class="list-inside list-disc space-y-6 text-sm lg:text-xl" >
+                <ul class="pl-4 list-disc space-y-6 text-sm lg:text-xl" >
 
                   {dataOBJ.second.points.map(item => (
                     <li key={item}>{item}</li>
@@ -72,10 +69,14 @@ export default function brandservice({ data }) {
                 </ul>
               </dl>
             </div>
-            <div class="list-disc space-y-5 text-xl mt-5">
-              <p className="leading-normal">
-                {dataOBJ.second.description}
-              </p>
+            <div class="  w-full space-y-5 text-xl mt-5 flex flex-col items-start justify-start">
+              
+                {/* {dataOBJ.second.short} */}
+                
+                  {dataOBJ.second.short.map((dn, index) => (
+                <span key={index}>{dn}</span>
+              ))}
+              
            
             </div>
           </div>
@@ -90,46 +91,47 @@ export default function brandservice({ data }) {
       </section>
       <section class=" w-full mt-20 h-auto flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div class=" h-full  flex flex-col-reverse md:flex-row-reverse items-start justify-start gap-2">
-          <div class="w-full lg:w-1/2 h-full  lg:pr-8  p-10  overflow-hidden flex flex-col items-center justify-center ">
+          <div class="w-full lg:w-1/2 h-full  lg:pr-8  p-10  overflow-hidden flex flex-col items-start justify-center ">
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
-              <p className="mt-2  text-3xl font-normal tracking-tight text-brand-secondary sm:text-5xl" >{dataOBJ.second.title}</p>
-              <p class="mt-2 hidden text-3xl font-normal tracking-tight  sm:text-5xl ">
-                Growing Your Business
-                <br />
-                and{" "}
-                <span className="text-[#FFB700] underline ">
-                  Increasing
-                </span>{" "}
-                Your SEO Revenue
-              </p>
+              <p className="mt-2  text-3xl font-normal tracking-tight text-brand-secondary sm:text-5xl" >{dataOBJ.third.title}</p>
+             
               <br />
               {/* <div>
                 <h1>Does this sound like you Business</h1>
               </div> */}
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
-                <ul class="list-inside list-disc space-y-6 text-sm lg:text-xl" >
+              <div class="  w-full space-y-5 text-xl mt-5 flex flex-col items-start justify-start">
+              
+                {/* {dataOBJ.second.short} */}
+                
+                  {dataOBJ.third.short.map((dn, index) => (
+                <span key={index}>{dn}</span>
+              ))}
+              
+           
+            </div>
+             
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 list-inside list-disc text-sm lg:text-xl">
+              {dataOBJ.third.points.map((item, index) => (
+                <div key={index} className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
 
-                  {dataOBJ.second.points.map(item => (
-                    <li key={item}>{item}</li>
-                  ))}
-
-
-                </ul>
               </dl>
             </div>
             <div class="list-disc space-y-5 text-xl mt-5">
-              <p className="leading-normal">
-                {dataOBJ.second.description}
-              </p>
-                <button className=" bg-brand-secondary p-4 rounded">Boost your rankings and revenue</button>  
+                <button className=" bg-brand-secondary p-4 rounded">{dataOBJ.fourth.ctatext}</button>  
             </div>
           </div>
           <div className="flex-1 h-full  flex items-center justify-center ">
             <img
-              src={dataOBJ.second.image}
+              src={dataOBJ.third.image}
               alt="Product screenshot"
               class="w-1/2 h-full object-contain aspect-square"
             />

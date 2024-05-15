@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Hcta() {
+export default function Hcta({title="",d1="",d2=""}) {
   return (
     <section className="py-10 text-gray-800 sm:py-16 md:py-20 overflow-hidden w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
       <div className="relative mx-auto z-10   aspect-video sm:w-[80%] md:w-[70%] lg:w-[60%]   rounded-xl   ">
@@ -14,13 +14,14 @@ export default function Hcta() {
       <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">
         <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white">
           <h2 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            Get a Free Audit Report
+           
+            {title}
 
           </h2>
           <p className="mt-4 font-medium md:text-2xl sm:text-xl text-lg">
-            <span>Get you free consultation today.
+            <span>{d1}
               <br />
-               Learn how we can boost your ROI.
+               {d2}
               </span>{" "}
           </p>
 
