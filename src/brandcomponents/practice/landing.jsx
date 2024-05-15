@@ -18,10 +18,10 @@ export default function Pland({faqdata = []}) {
             <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">
               <div className="flex  space-y-8 flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
                 <div className="mb-3 text-center md:text-left">
-                  <p className=" text-3xl sm:text-4xl flex flex-col items-start justify-start gap-y-2 md:text-5xl xl:text-4xl 2xl:text-5xl text-white leading-normal">
+                  <p className=" text-3xl font-bold sm:text-4xl flex flex-col items-start justify-start gap-y-4 md:text-5xl xl:text-4xl 2xl:text-5xl text-white leading-normal">
                     <span>Frequently</span>
                     <span>Asked</span>
-                    <span>Questions?</span>
+                    <span>Questions</span>
                   </p>
                   <br />
                 </div>
@@ -29,16 +29,16 @@ export default function Pland({faqdata = []}) {
                   <div>
 
                   
-                  <span className="font-bold  text-2xl text-white mt-16">
+                  <span className="  text-2xl text-white mt-16">
                     Still have some Questions?{" "}
                   </span>
                   <br />
-                  <span className="text-xl text-white">
-                    Contact us , we will help you.
+                  <span className="text-2xl text-white">
+                    Contact us! We will be happy to help you
                   </span>{" "}
                   <br />
                   </div>
-                  <div className=" mt-8 w-full h-full ">
+                  <div className=" mt-12 w-full h-full ">
                     <Link
                       href="tel:+1905-399-6642"
                       className="bg-brand-secondary w-max h-full xl:p-5 lg:p-3 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-brand-primary rounded mt-4 "
@@ -76,7 +76,7 @@ export default function Pland({faqdata = []}) {
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
-                  <div className=" mt-4 w-full h-full p-4">
+                  <div className=" mt-12 w-full h-full p-4">
                     <Link
                       href="tel:+1905-399-6642"
                       className="bg-[#FFB700] w-max h-full xl:p-5 lg:p-3 md:p-4 p-4 xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 "

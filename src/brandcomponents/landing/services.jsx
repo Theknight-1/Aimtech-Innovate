@@ -48,7 +48,7 @@ export default function Services() {
 
               </h1>
               <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
-                learn More 
+                Learn More
               </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
@@ -72,7 +72,7 @@ export default function Services() {
               Reach the right audience at the right time with strategic PPC campaigns that deliver measurable results.
               </h1>
               <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
-                learn More 
+                Learn More
               </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
@@ -95,7 +95,7 @@ export default function Services() {
               Unleash the power of SEO to maximize search rankings that attract qualified leads, and grow your online presence organically.
               </h1>
               <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
-                learn More 
+                Learn More
               </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
@@ -118,7 +118,7 @@ export default function Services() {
               Building social media presence with engaging content, community management, and targeted social media advertising.
               </h1>
               <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
-                learn More 
+                Learn More
               </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
@@ -141,7 +141,7 @@ export default function Services() {
               Targeted email campaigns that nurture leads, build brand loyalty, and drive sales through powerful email marketing strategies.
               </h1>
               <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
-                learn More 
+                Learn More
               </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
@@ -168,7 +168,7 @@ export default function Services() {
         {/* Service Buttons */}
         <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2">
           <h1 className="text-2xl leading-snug sm:text-[4rem] font-semibold text-brand-secondary">
-            Our services
+            What We Provide
           </h1>
           <div className="w-full md:space-y-5 lg:pr-16 pr-0">
             {[

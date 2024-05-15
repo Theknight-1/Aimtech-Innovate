@@ -37,6 +37,10 @@ export default function Home() {
         "A digital marketing agency can provide your business with expertise across multiple channels, cost-effective and scalable services, improved online presence and lead generation, High ROI, and professional support. By partnering with an agency, you can focus on your core business while experts drive results, giving you a competitive edge in the digital landscape.",
     },
     {
+      title: "Do you have experience in my industry?",
+      content: "The systems we use work for any industry. Our team has worked with clients in hundreds of E-commerce, SAAS, Fintech, Small businesses, Kickstarter campaigns and everything in between. No matter the industry, the key ingredients for success include having an irresistible offer and a quality product that people want. If you’ve got that, our creative team can help you get the attention you need to sell your product/service.",
+    },
+    {
       title: "How do you report on your results?",
       content: "We provide reports based on digital marketing results that define clear goals, organize and prioritize data, structure metrics, use reporting tools like Office 365 or Coefficient, and create custom reports tailored to client needs. By filtering and structuring data, you can track performance accurately and showcase the success of cross-channel marketing efforts. These steps streamline reporting, provide actionable insights, and communicate the impact of digital strategies to stakeholders. Leveraging tools and custom reports enhances transparency, demonstrates ROI, and helps optimize future marketing campaigns for continued success.",
     },
@@ -48,10 +52,7 @@ export default function Home() {
       title: "What questions should I ask a digital marketing agency before I hire them?",
       content: "Before hiring a digital marketing agency, ensure alignment by asking key questions: Understand your needs and their process, inquire about their experience with similar companies, clarify team composition for consistent communication, discuss cost, billing, and potential expenses, question their success measurement and analytics provision, understand their service offerings and integration with your plan, and discuss reporting frequency, key metrics, and progress tracking tools. These questions help assess expertise, approach, experience, and fit with your goals, ensuring a successful partnership that drives your business forward.",
     },
-    {
-      title: "How big is your team ?",
-      content: "Our team size is flexible, allowing us to scale our expertise to meet your project's needs. We have a network of skilled professionals to ensure we deliver exceptional results.",
-    },
+    
   ];
   return (
     <>

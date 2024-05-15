@@ -48,7 +48,7 @@ export default function GradientSection() {
             </div> */}
 
             <div className="flex flex-col  justify-start space-y-2 ">
-              <p className="max-w-2xl  font-semibold text-white">
+              <p className="max-w-2xl text-2xl  text-white">
                 Don't believe it? Request a free quotation today
               </p>
               <div className=" flex justify-start ">
@@ -57,7 +57,7 @@ export default function GradientSection() {
                     <select
                       value={selectedOption}
                       onChange={handleSelectChange}
-                      className="block appearance-none w-full bg-white  border-gray-300 text-gray-800 text-xl py-4 px-4 pr-8  leading-tight "
+                      className="block font-bold appearance-none w-full bg-white  border-gray-300 text-gray-800 text-xl py-4 px-4 pr-8  leading-tight "
                     >
                       <option value="Web Design and Development">
                         Web Design and Development
@@ -83,7 +83,7 @@ export default function GradientSection() {
                   onClick={() => {
                     setIsOpen(true);
                   }}
-                  className="inline-flex w-max items-center justify-center px-5 lg:py-4 lg:text-lg md:py-4 sm:py-3 py-2.5 md:text-lg text-sm font-medium text-center text-gray-900 bg-[#FFB700] hover:bg-[#ffb700d3] dark:text-white dark:bg-[#FFB700] dark:hover:bg-[#ffb700d3] dark:border-gray-700"
+                  className="inline-flex font-bold w-max items-center justify-center px-5 lg:py-4 lg:text-lg md:py-4 sm:py-3 py-2.5 md:text-lg text-sm font-medium text-center text-gray-900 bg-[#FFB700] hover:bg-[#ffb700d3] dark:text-white dark:bg-[#FFB700] dark:hover:bg-[#ffb700d3] dark:border-gray-700"
                 >
                   Get Started
                 </button>
@@ -96,7 +96,7 @@ export default function GradientSection() {
                   </li>
                 ))}
               </ul>
-              <span className="text-white">
+              <span className="text-white font-bold">
                 4.8/5 based on 6,873 reviews | GDPR Compliant
               </span>
             </div>

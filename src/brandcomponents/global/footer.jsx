@@ -18,34 +18,15 @@ const ProvidedSchems = () => {
           <ul className="lg:space-y-4 space-y-2 text-sm ">
             <li>
               <a className=" hover:underline" href="#">
-                Integrations
+                Popular
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-                Pricing
+                recent
               </a>
             </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Changelog
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Docs
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Linear Method
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Download
-              </a>
-            </li>
+            
           </ul>
         </nav>
       </div>
@@ -54,7 +35,7 @@ const ProvidedSchems = () => {
         <nav aria-label="Footer Navigation" className="">
           <ul className=" lg:space-y-4 space-y-2 text-sm">
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/about">
                 About us
               </a>
             </li>
@@ -66,14 +47,10 @@ const ProvidedSchems = () => {
 
             <li>
               <a className=" hover:underline" href="#">
-                Customers
+                Media Coverage
               </a>
             </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Brand
-              </a>
-            </li>
+            
           </ul>
         </nav>
       </div>
@@ -83,27 +60,27 @@ const ProvidedSchems = () => {
           <ul className="lg:space-y-4 space-y-2 text-sm">
             <li>
               <a className=" hover:underline" href="#">
-                Web development & design
+                Web design & development
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-                PPC Advertisement
+              Pay-Per-Click Advertisement
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-                SEO
+              Search Engine Optimization
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-                Digital Marketting
+              Social Media Management
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-                Email Marketting
+              Email Marketing
               </a>
             </li>
           </ul>
@@ -274,7 +251,7 @@ export default function Footer() {
             >
               <li>
                 <Link
-                  href={"#"}
+                  href={"/about"}
                   className="block px-4 py-2 hover:bg-brand-secondary "
                 >
                   About us
@@ -285,7 +262,7 @@ export default function Footer() {
                   href={"#"}
                   className="block px-4 py-2 hover:bg-brand-secondary "
                 >
-                  Blog
+                  Media Coverage
                 </Link>
               </li>
               <li>
@@ -293,17 +270,10 @@ export default function Footer() {
                   href={"#"}
                   className="block px-4 py-2 hover:bg-brand-secondary "
                 >
-                  Customers
+                  Media Coverage
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  Brand
-                </Link>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -477,9 +447,16 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-row items-center justify-start text-2xl gap-4 ">
+            <a href="https://www.facebook.com/profile.php?id=61555909964483" target="_blank">
             <FaFacebookF />
+            </a>
+            <a href="https://www.instagram.com/aimtech_innovate" target="_blank">
             <BiLogoInstagram />
+            </a>
+            <a href="https://www.linkedin.com/company/aimtech-innovate" target="_blank">
+
             <CiLinkedin />
+            </a>
           </div>
         </div>
         <div className="md:block hidden w-[50%]">
@@ -489,11 +466,12 @@ export default function Footer() {
       <div className="border-t-2 text-white">
         <div className="mx-auto  max-w-lg gap-5  py-4 text-center flex flex-col lg:flex-row text-xs justify-center items-center cursor-pointer">
           <p className="w-max  text-xm lg:text-lg ">
-            © 2024 Aimtech Innovate | <br />
-             A Joint venture With{" "}
+            © 2024 Aimtech Innovate | A Joint venture With{" "}
           </p>
           <div>
+            <a href="https://nxtcoach.com" target="_blank">
             <img src="/brand/logo/nxtcoachlogo.png" alt="next coach logo" />
+            </a>
           </div>
         </div>
       </div>

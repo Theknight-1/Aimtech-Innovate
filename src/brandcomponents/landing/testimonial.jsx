@@ -63,21 +63,21 @@ export default function Testimonial() {
           <div className="flex  lg:space-y-20  h-auto gap-y-2 w-full flex-col items-center justify-center  lg:w-1/2 ">
             <div className="h-auto w-full  flex items-center justify-center  ">
 
-              <span className="text-3xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem]  text-white leading-normal">
-              We helped businesses achieve massive <br /> <span className="border-b-2 border-brand-secondary">Profitable</span> results
+              <span className="text-2xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem]  text-white leading-normal">
+              We helped businesses achieve massive <br /> <span className="border-b-2 border-brand-secondary">profitable</span> results
               </span>
             </div>
             <div className="flex flex-col items-center lg:items-start justify-center   mt-2 h-auto w-full text-center lg:text-left">
-              <span className=" text-gray-100 ">
-                More than ever, you need to drive{" "}
+              <span className=" text-gray-100 lg:text-2xl">
+                More than ever, We help you drive{" "}
                 <a href="#">
-                  <span className="font-bold text-white underline">
-                    RESULTS.
+                  <span className="text-white ">
+                    results.
                   </span>
                 </a>
               </span>
               <span className=" text-gray-100 text-lg lg:text-2xl">
-                We increase revenue and lower <span className="font-semibold">CAC</span>  with <span className="font-bold text-brand-secondary">strategic marketing.</span>
+                We increase revenue and lower <span className="font-semibold">CAC</span>  with <span className="font-bold text-brand-secondary">innovative marketing</span>
               </span>
             </div>
             <div className="w-full flex-1 p-2 border hidden">
@@ -92,9 +92,9 @@ export default function Testimonial() {
             </div>
           </div>
           <div className="relative flex h-auto flex-1 flex-col items-center justify-center space-y-5">
-            <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
+            {/* <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
-            </div>
+            </div> */}
             <div className="  lg:px-32 space-y-8 relative z-10 w-full h-full flex flex-col items-center justify-center ">
               <div className="flex flex-row h-auto gap-x-24 min-h-16 w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
@@ -121,7 +121,7 @@ export default function Testimonial() {
               <div className="flex h-auto min-h-16 w-full items-center justify-center  ">
                 <span
                   key={currentTestimonialIndex}
-                  className="text-center animate-fade-left text-2xl sm:text-4xl md:text-3xl lg:text-3xl font-bold text-white"
+                  className="text-center animate-fade-left text-2xl sm:text-4xl md:text-3xl lg:text-3xl  text-white"
                 >
                   “{currentTestimonial.quote}”
                 </span>
@@ -133,7 +133,7 @@ export default function Testimonial() {
                 <span className="text-gray-200 text-2xl lg:text-3xl">
                   {currentTestimonial.author}
                 </span>
-                <span className="font-bold text-gray-100 ">
+                <span className="text-gray-100 ">
                   {currentTestimonial.company}
                 </span>
               </div>
