@@ -108,7 +108,6 @@ export default function Whyus() {
       <div className="w-full md:w-1/2 h-full flex items-center justify-center p-2">
         <div className="flex flex-col gap-y-4 h-auto overflow-hidden flex-1">
           {accordionData.map((item, index) => (
-            <div className="border-2 border-brand-secondary rounded-lg">
             <Accordion
               key={index}
               title={item.title}
@@ -116,7 +115,7 @@ export default function Whyus() {
               index={index}
               selectedIndex={selectedIndex}
               setSelectedIndex={setSelectedIndex}
-            /></div>
+            />
           ))}
         </div>
       </div>
