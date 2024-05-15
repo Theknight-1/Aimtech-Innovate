@@ -18,7 +18,7 @@ export default function page() {
       "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users.",
     benifits: ["Website marketting", "Product marketting", "Safe", "Secure"],
     link: "/contact",
-
+    image:"/png/revenue.png",
     second : {
         title : "Growing Your Business and Increasing Your SEO Revenue",
         points : [
@@ -29,6 +29,11 @@ export default function page() {
             "You’re overly dependent on paid ads and not seeing enough ROI",
             "You want to enhance your PPC efforts with SEO for more success",
            
+        ],
+        short : [
+          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
+          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
+          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
         ],
         image : "/service/image28.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
@@ -47,8 +52,17 @@ export default function page() {
             "You’re overly dependent on paid ads and not seeing enough ROI",
             "You want to enhance your PPC efforts with SEO for more success",
         ],
+        short : [
+          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
+          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
+          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
+        ],
         image : "/service/image30.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
+    },
+    fourth:{
+      ctatext : "LET’S DISCUSS YOUR PPC STRATEGY",
+      ctalink : "/contact",
     }
   };
   const accordionData = [
