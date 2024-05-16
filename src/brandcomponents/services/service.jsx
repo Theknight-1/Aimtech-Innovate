@@ -52,7 +52,7 @@ export default function brandservice({ data }) {
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
-              <p className="mt-2 text-6xl font-bold tracking-tight text-white sm:text-5xl" >{dataOBJ.second.title}</p>
+              <p className="mt-2 text-6xl font-bold tracking-tight text-white sm:text-5xl text-justify" >{dataOBJ.second.title}</p>
               
               <br />
               <div>
@@ -97,7 +97,7 @@ export default function brandservice({ data }) {
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
-              <p className="mt-2  text-3xl font-normal tracking-tight text-brand-secondary sm:text-5xl" >{dataOBJ.third.title}</p>
+              <p className="mt-2  text-3xl font-normal tracking-tight text-white sm:text-5xl text-justify" >{dataOBJ.third.title}</p>
              
               <br />
               {/* <div>
