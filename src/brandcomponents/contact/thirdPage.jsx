@@ -6,22 +6,20 @@ const ThirdPage = () => {
     <section className="relative h-screen w-screen  ">
       <div className="flex items-center justify-center w-full h-full">
         <div className="mx-4 lg:mx-28 flex flex-col lg:flex-row">
-          <div className="w-full lg:w-[60%] bg-brand-secondary flex justify-center items-center lg:rounded-l-3xl">
-            <div className="p-8 sm:p-10 lg:p-12 xl:p-20 space-y-5">
-              <h1 className="text-3xl md:text-4xl lg:text-[3rem] font-bold ">
-                Ready to unleash the explosive potential of your business?
+          <div className="w-full lg:w-3/5 bg-brand-secondary flex justify-center items-center lg:rounded-l-3xl">
+            <div className="p-8 sm:p-10 lg:p-12 xl:p-20 space-y-8">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+              Still confused how a digital marketing agency can help your business?
                 {" "}
               </h1>
-              <p className="text-lg lg:text-2xl font-medium leading-relaxed">
-                Contact Aim Tech Innovate today and let's get started.  Remember, it's risk-free. Your success is our guarantee. <br /> <br />
-
-                Get a FREE consultation to discuss your unique growth strategy!
-
+              <p className="text-lg lg:text-2xl font-medium ">
+              <span>We have industry experts to crack the code and take your online presence to the next level. </span> <br /><br />
+              <span className="text-lg lg:text-2xl font-medium ">Schedule a meeting with our Digital Marketing Expert to discuss your goals and unlock the possibilities.</span>
               </p>
               <div className=" w-full">
-                <Link href="/about">
-                  <button className="bg-[#11225F] px-8 lg:px-12 py-3 text-white rounded-lg">
-                    Know More About Us
+                <Link href="/contact">
+                  <button className="bg-brand-primary px-8 lg:px-12 py-3 text-white rounded-lg">
+                  LET’S SCHEDULE
                   </button>
                 </Link>
               </div>
