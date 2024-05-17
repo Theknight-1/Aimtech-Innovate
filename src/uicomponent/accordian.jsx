@@ -7,13 +7,15 @@ const Accordion = ({
   index,
   selectedIndex,
   setSelectedIndex,
+  style = 'bg-[#1B1B1B] group  rounded-xl',
+  textcolor = 'text-white'
 }) => {
   const isOpen = index === selectedIndex;
 
   return (
     <div
-      className={`bg-[#1B1B1B] group  rounded-xl ${
-        isOpen ? " text-white " : "text-white"
+      className={`${style} ${
+        isOpen ? textcolor : "text-white"
       }`}
     >
       <div
