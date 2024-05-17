@@ -1,12 +1,13 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { FiAlertCircle } from "react-icons/fi";
 import { IoIosCloseCircle } from "react-icons/io";
 import emailjs from "@emailjs/browser";
 
-const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
+const ExampleWrapper = ({ isOpen = true }) => {
+  const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
@@ -68,7 +69,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
       return;
     }
 
-    const message = { ...formData, phoneCode };
+    const message = { ...formData , phoneCode };
     setLoading(true);
     emailjs
       .send(
@@ -97,42 +98,24 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
         }
       );
   };
+
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          // onClick={() => setIsOpen(false)}
-          className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer fixed w-[100vw] h-[100vh] left-0 "
-        >
-          <motion.div
-            initial={{ scale: 0, rotate: "12.5deg" }}
-            animate={{ scale: 1, rotate: "0deg" }}
-            exit={{ scale: 0, rotate: "0deg" }}
-            onClick={(e) => e.stopPropagation()}
-            className="bg-white text-white p-5 rounded-lg w-full max-w-4xl shadow-xl cursor-default relative overflow-hidden "
-          >
-            <span
-              className="absolute z-10  text-black md:right-5 right-2 md:top-5 top-5 cursor-pointer"
-              onClick={() => setIsOpen(false)}
-            >
-              <IoIosCloseCircle size={30} />
-            </span>
-            <div className=" space-y-4">
-              <h1 className="text-black text-center text-5xl font-bold">
-                Request a Proposal
+        <div className="min-h-screen w-full flex flex-col items-center justify-center lg:gap-10 gap-3 p-4 sm:p-6 md:p-8 lg:p-3 xl:p-0">
+          <div className="text-center">
+            <img src={imageUrl} alt="logo" className="w-56" />
+          </div>
+          <div className="bg-white text-white p-3 sm:p-4 md:p-5 lg:p-10 rounded-3xl w-full max-w-4xl shadow-xl cursor-default relative overflow-hidden">
+            <div className="space-y-4">
+              <h1 className="text-black text-start text-3xl sm:text-4xl md:text-5xl font-bold">
+                Required Information
               </h1>
-              <p className="text-black text-center">
-                Just fill in the form, and let our experts handle the rest.
-                Here’s what will happen next:
-              </p>
             </div>
-            <div className="relative p-5">
+            <div className="relative p-2 md:p-4 lg:p-8">
               <form
                 onSubmit={handleSubmit}
-                className="max-w-full mx-auto bg-white rounded-lg md:space-y-8 space-y-5"
+                className="max-w-full mx-auto bg-white rounded-lg space-y-10"
               >
                 <div className="relative z-0 w-full mb-5 group">
                   <input
@@ -213,8 +196,8 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     Services
                   </label>
                 </div>
-                <div className="flex flex-col md:flex-row w-full md:gap-6 ">
-                  <div className="relative z-0 md:w-[30%] w-full  group">
+                <div className="flex flex-col md:flex-row w-full md:gap-6">
+                  <div className="relative z-0 md:w-[30%] w-full mb-5 group">
                     <select
                       name="country"
                       value={formData.country}
@@ -273,7 +256,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       {formData.country === "United States" ? "+1" : phoneCode}
                     </h1>
                   </div>
-                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0 md:mb-0  group">
+                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0 md:mb-5 group">
                     <input
                       type="tel"
                       name="phoneNumber"
@@ -293,7 +276,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     </label>
                   </div>
                 </div>
-                <div className="relative z-0 w-full mb-5  group">
+                <div className="relative z-0 w-full mb-5 group">
                   <input
                     type="text"
                     name="companyName"
@@ -317,7 +300,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                     checked={isCheckboxChecked}
                   />
-                  <p className="text-black md:text-lg text-sm">
+                  <p className="text-black text-lg">
                     I agree to share my above information for Aimtech Marketing
                     and Promotional activities
                   </p>
@@ -339,8 +322,8 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                 </div>
               </form>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
     </AnimatePresence>
   );

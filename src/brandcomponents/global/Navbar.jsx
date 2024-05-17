@@ -1,5 +1,3 @@
-
-
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -9,7 +7,6 @@ import { FaPhone, FaMagnifyingGlassChart } from "react-icons/fa6";
 import { GoDeviceCameraVideo } from "react-icons/go";
 import { FcNext } from "react-icons/fc";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
-
 
 import {
   FcBarChart,
@@ -241,20 +238,16 @@ const Navbar = () => {
       if (window.innerWidth > 1024) {
         setMobileNav(false);
       }
-      
     };
 
-   
     handleResize();
-
 
     window.addEventListener("resize", handleResize);
 
- 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); 
+  }, []);
 
   const handleMobileView = () => {
     setServicesOpen(false);
@@ -277,25 +270,31 @@ const Navbar = () => {
           scrolling ? "bg-white text-black shadow" : "text-white"
         } z-50 mb-2 w-screen`}
       >
-        <div className=" mx-auto flex justify-between items-center py-2">
-          <div className="relative block  text-xl text-blue-600 font-bold">
+        <div className="  mx-auto flex justify-between items-center py-2">
+          <div className=" relative block  text-xl text-blue-600 font-bold">
             <Link href="/" className="font-bold text-black  text-xl ">
               {" "}
               <img
                 src={imageUrl}
-                className="w-28  lg:w-48 p-1 object-scale-down"
+                className={` p-1 object-scale-down ${
+                  scrolling ? "w-32" : "w-28  lg:w-40 xl:w-48"
+                }`}
                 alt="logo"
               />
               {/* <img src={logo.src} width={200} height={150} alt="" /> */}
             </Link>
           </div>
-          <div>
+          <div className="">
             <div className="flex justify-end  itmes-center  ">
               {/* <div className={`lg:flex gap-4 lg:gap-7 ${
           scrolling ? "text-green-400 hidden" : "text-red-400"
         }`}> */}
-              <div className={`lg:flex gap-4 lg:gap-7 `}>
-                <h4 className={`flex  items-center gap-2 text-base ${scrolling ? "hidden":""}`}>
+              <div className={`lg:flex gap-4 lg:gap-7 hidden`}>
+                <h4
+                  className={`flex  items-center gap-2 text-base ${
+                    scrolling ? "hidden" : ""
+                  }`}
+                >
                   <a
                     href="https://calendly.com/himanshusaxena5500/30min"
                     target="_blank"
@@ -307,7 +306,11 @@ const Navbar = () => {
                     Schedule Discovery Meet
                   </a>
                 </h4>
-                <h4 className={`flex  items-center gap-2 text-base ${scrolling ? "hidden":""}`}>
+                <h4
+                  className={`flex  items-center gap-2 text-base ${
+                    scrolling ? "hidden" : ""
+                  }`}
+                >
                   <span>
                     <FaWhatsapp size={22} />
                   </span>
@@ -319,7 +322,11 @@ const Navbar = () => {
                     Whatsapp{" "}
                   </a>
                 </h4>
-                <h4 className={`flex  items-center gap-2 text-base text-lg font-bold hover:text-brand-secondary ${scrolling ? "hidden":""}`}>
+                <h4
+                  className={`flex  items-center gap-2  text-lg font-bold hover:text-brand-secondary ${
+                    scrolling ? "hidden" : ""
+                  }`}
+                >
                   <span>
                     <FaPhone size={15} />
                   </span>{" "}
@@ -329,12 +336,12 @@ const Navbar = () => {
                   </Link>
                 </h4>
               </div>
-              <div className=" lg:hidden w-full  flex justify-end">
+              <div className=" lg:hidden w-full  flex justify-end ">
                 <button
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className="rounded-lg px-2 py-1.5 font-semibold bg-brand-secondary w-max-lg "
+                  className="rounded-lg px-2 py-1.5  font-semibold bg-brand-secondary hover:bg-yellow-400 w-max-lg "
                 >
                   <span className="text-brand-primary hover:text-white font-bold text-lg">
                     Get Proposal
@@ -342,8 +349,8 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
-            <ul className=" hidden lg:flex items-center justify-center">
-              <li className="relative block py-6 px-4 lg:p-6 text-sm lg:text-xl  ">
+            <ul className=" hidden lg:flex items-center justify-center lg:gap-5 xl:gap-10 2xl:gap-12 text-lg xl:text-xl">
+              <li className="relative block py-6  ">
                 <Link
                   href="/"
                   className="  hover:border-brand-secondary cursor-pointer "
@@ -351,7 +358,7 @@ const Navbar = () => {
                   <span>Home</span>
                 </Link>
               </li>
-              <li className="relative block py-6 px-4 lg:p-6 text-sm lg:text-xl ">
+              <li className="relative block py-6  ">
                 <Link
                   href="/about"
                   className=" hover:border-brand-secondary cursor-pointer"
@@ -360,10 +367,10 @@ const Navbar = () => {
                 </Link>
               </li>
               {/* Hoverable Link */}
-              <li className="hoverable group py-6 px-4 relative text-sm lg:text-xl ">
+              <li className="hoverable group py-6  relative ">
                 <Link
                   href="#"
-                  className="    hover:border-brand-secondary  flex justify-center items-center"
+                  className=" hover:border-brand-secondary  flex justify-center items-center"
                 >
                   Services
                   <span>
@@ -374,32 +381,29 @@ const Navbar = () => {
                   </span>
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
-                  <div className="relative bg-white p-6   w-full h-96">
-                    <div className="flex justify-evenly items-center">
+                  <div
+                    className={`relative bg-white p-6 w-full h-auto ${
+                      scrolling ? "-top-5" : ""
+                    }`}
+                  >
+                    <div className="flex justify-evenly lg:gap-3 xl:gap-6">
                       {servicedata.map((service, idx) => (
                         <Link key={idx} href={service.pagelink}>
-                          <div className="px-6 h-full lg:px-2 flex-1 text-black  p-4 border shadow-xl hover:shadow-2xl hover:border-2 hover:border-brand-secondary rounded-xl   ">
+                          <div className="h-full text-black p-4 shadow-xl hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
                             <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
                               {service.icon}
-
-                              <h1 className="font-bold  ">{service.title}</h1>
+                              <h1 className="font-bold">{service.title}</h1>
                             </div>
-                            <ul className="mt-3 text-sm md:text-xl  p-2 font-semi-bold">
+                            <ul className="mt-3 text-sm md:text-lg xl:text-xl font-semi-bold">
                               {service.services.map((srv, serviceIndex) => (
                                 <li
                                   key={serviceIndex}
-                                  className="text-brand-primary cursor-pointer px-4 flex items-center justify-start p-1 gap-2"
+                                  className="text-brand-primary cursor-pointer px-0 text-sm md:text-base xl:text-lg flex items-center justify-start p-1 gap-2"
                                 >
                                   <span>
                                     <FcNext />
                                   </span>
                                   {srv.name}
-                                  {/* <Link
-                                 href={`/services${srv.pagelink}`} // Use the slug as the href
-                                 className="block p-2 -mx-2 rounded-lg xl:text-[17px] text-sm text-brand-primary font-semibold hover:text-brand-secondary "
-                               >
-                                 {srv.name}
-                               </Link> */}
                                 </li>
                               ))}
                             </ul>
@@ -411,10 +415,10 @@ const Navbar = () => {
                   {/* Third Column */}
                 </div>
               </li>
-              <li className="hoverable group py-6 px-4 relative text-sm lg:text-xl ">
+              <li className="hoverable group py-6  relative  ">
                 <Link
                   href="#"
-                  className="    hover:border-brand-secondary cursor-pointer flex justify-center items-center"
+                  className=" hover:border-brand-secondary cursor-pointer flex justify-center items-center"
                 >
                   Case Study
                   <span>
@@ -425,272 +429,200 @@ const Navbar = () => {
                   </span>
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
-                  <div className="relative bg-white p-6   w-full h-auto">
+                  <div
+                    className={`relative bg-white p-6 w-full h-auto ${
+                      scrolling ? "-top-5" : ""
+                    }`}
+                  >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
-                   
-                      <div className="flex flex-col md:flex-row gap-6  ">
-               
-                 
-                        <div className="w-1/4 border-2  hover:shadow-2xl  rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
-                  
+                      <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-6  ">
+                        <div className="w-1/4 border-2  hover:shadow-2xl  rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  ">
                           <h1 className="font-bold text-blue-500 text-xl ">
-                            Email related 
+                            Email related
                           </h1>
-            
+
                           <div className="flex flex-row gap-2 mt-2">
-                   
                             <div className="flex flex-col items-start gap-2">
-                         
-                              <span className="text-xl font-bold  hover:text-brand-secondary ">
+                              <span className="xl:text-xl lg:text-lg font-bold  hover:text-brand-secondary ">
                                 Next coach
                               </span>
-                       
-                              <article className="text-sm">
-                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
-                              </article>
-                              
-                            </div>
-                            
-                          </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                            <span>📑</span>
-                            
-                            <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                ABC company
-                              </span>
-                              
+
                               <article className="text-sm">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut. 
+                                adipisicing elit. Quaerat, aut.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
                             <span>📑</span>
-                            
+
                             <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                Rk builders
-                              </span>
-                              
+                              <span className=" font-bold">ABC company</span>
+
                               <article className="text-sm">
-                               Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
+                            <div className="flex flex-col items-start gap-2 ">
+                              <span className=" font-bold">Rk builders</span>
+
+                              <article className="text-sm">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
+                              </article>
+                            </div>
+                          </div>
                         </div>
-                 
-                        
-                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
-                          
+
+                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 lg:p-4  xl:p-8 overflow-hidden text-wrap">
                           <h1 className="font-bold text-[#7E62DD] text-xl">
-                            SEO related 
+                            SEO related
                           </h1>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                  <span>📑</span>
-                            
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
                             <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                Marketing Firm
-                              </span>
-                              
+                              <span className=" font-bold">Marketing Firm</span>
+
                               <article className="text-sm">
-                              Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                          <span>📑</span>
-                            
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
                             <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                US Market
-                              </span>
-                              
+                              <span className=" font-bold">US Market</span>
+
                               <article className="text-sm">
-                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                          <span>📑</span>
-                            
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
                             <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                Canada Market
-                              </span>
-                              
+                              <span className=" font-bold">Canada Market</span>
+
                               <article className="text-sm">
-                              Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
                         </div>
-                        
-                        
-                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
-                          
+
+                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 lg:p-4  xl:p-8 overflow-hidden text-wrap">
                           <h1 className="font-bold text-green-500 text-xl">
-                    Web Developement related 
+                            Web Developement related
                           </h1>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                          <span>📑</span>
-                            
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
                             <div className="flex flex-col items-start gap-2 ">
-                              
                               <Link href="/casestudy/aimtech-casestudy">
-                                
-                                <span className="text-xl font-bold">
-                                 Aimtech Casestudy 
+                                <span className="font-bold">
+                                  Aimtech Casestudy
                                 </span>
-                                
                               </Link>
-                              
+
                               <article className="text-sm">
-                               Studied aimtech core busness aspect and
-                                helped them  grow with our expertise. 
+                                Studied aimtech core busness aspect and helped
+                                them grow with our expertise.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                     <span>📑</span>
-                            
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
                             <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                Next coach
-                              </span>
-                              
-                              <article className="text-sm">
-                           Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
-                              </article>
-                              
-                            </div>
-                            
-                          </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                           <span>📑</span>
-                            
-                            <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                Google Tags
-                              </span>
-                              
-                              <article className="text-sm">
-                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
-                              </article>
-                              
-                            </div>
-                            
-                          </div>
-                          
-                        </div>
-                        
-                        
-                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 p-8 overflow-hidden text-wrap">
-                          
-                          <h1 className="font-bold text-[#7E62DD] text-xl">
-                            PPC related 
-                          </h1>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                             <span>📑</span>
-                            
-                            <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">
-                                Analytics
-                              </span>
-                              
-                              <article className="text-sm">
-                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing  elit. Quaerat, aut. 
-                              </article>
-                              
-                            </div>
-                            
-                          </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                           <span>📑</span>
-                            
-                            <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">FANGG</span>
-                              
-                              <article className="text-sm">
-                               Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut. 
-                              </article>
-                              
-                            </div>
-                            
-                          </div>
-                          
-                          <div className="flex flex-row gap-2 mt-2">
-                        <span>📑</span>
-                            
-                            <div className="flex flex-col items-start gap-2 ">
-                              
-                              <span className="text-xl font-bold">Meta Vr</span>
-                              
+                              <span className="font-bold">Next coach</span>
+
                               <article className="text-sm">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut. 
+                                adipisicing elit. Quaerat, aut.
                               </article>
-                              
                             </div>
-                            
                           </div>
-                          
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
+                            <div className="flex flex-col items-start gap-2 ">
+                              <span className="font-bold">Google Tags</span>
+
+                              <article className="text-sm">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
+                              </article>
+                            </div>
+                          </div>
                         </div>
-                        
-                        
+
+                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 lg:p-4  xl:p-8 overflow-hidden text-wrap">
+                          <h1 className="font-bold text-[#7E62DD] text-xl">
+                            PPC related
+                          </h1>
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
+                            <div className="flex flex-col items-start gap-2 ">
+                              <span className=" font-bold">Analytics</span>
+
+                              <article className="text-sm">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
+                              </article>
+                            </div>
+                          </div>
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
+                            <div className="flex flex-col items-start gap-2 ">
+                              <span className=" font-bold">FANGG</span>
+
+                              <article className="text-sm">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
+                              </article>
+                            </div>
+                          </div>
+
+                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                            <span>📑</span>
+
+                            <div className="flex flex-col items-start gap-2 ">
+                              <span className=" font-bold">Meta Vr</span>
+
+                              <article className="text-sm">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quaerat, aut.
+                              </article>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    
-                      
-                      <div className="w-1/4 h-auto rounded-lg border-2 bg-brand-secondary hover:shadow-2xl  p-2 overflow-hidden text-wrap">
-                        
-                        <div
-                          className="w-full h-full flex justify-center items-center"
-                          style={{ flexBasis: "15%" }}
-                        >
+
+                      <div className="lg:w-1/4 hidden xl:block h-auto rounded-lg  bg-brand-secondary hover:shadow-2xl  p-8 lg:p-5 xl:p-3 overflow-hidden text-wrap ">
+                        <div className="w-full h-full flex justify-center items-center">
                           {/* Use flex-2 class for the third box */}
                           <div className="space-y-5 text-center">
                             <p className="uppercase tracking-wider text-brand-primary text-center text-4xl font-semibold">
@@ -706,7 +638,7 @@ const Navbar = () => {
                               />
                             </span>
                             <Link href="/casestudy">
-                              <button className="px-5 py-4 text-sm font-bold bg-brand-primary rounded text-white">
+                              <button className="xl:px-1 lg:px-3 py-4 font-bold bg-brand-primary rounded text-white xl:text-base 2xl:text-lg text-sm">
                                 Read our case study
                               </button>
                             </Link>
@@ -715,247 +647,11 @@ const Navbar = () => {
                       </div>
                       {/* card end */}
                     </div>
-                    <div className="relative hidden top-6 p-6  rounded-xl shadow-xl w-full">
-                      {/* triangle box */}
-                      <div className=" relative z-10 ">
-                        <div className="flex gap-5 ">
-                          {/* Second Column */}
-                          <div
-                            className="flex-1 flex space-x-5"
-                            style={{ flexBasis: "85%" }}
-                          >
-                            {/* Use flex-2 class for the second box */}
-                            <div className="p-4 border border-white rounded-lg">
-                              <div className="">
-                                <h1 className="font-bold">
-                                  Latest Case Studies
-                                </h1>
-                              </div>
-                              <ul className="mt-3 text-[15px]">
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="p-4 border border-white rounded-lg">
-                              <div className="">
-                                <h1 className="font-bold">
-                                  Latest Case Studies
-                                </h1>
-                              </div>
-                              <ul className="mt-3 text-[15px]">
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="p-4 border border-white rounded-lg">
-                              <div className="">
-                                <h1 className="font-bold">
-                                  Latest Case Studies
-                                </h1>
-                              </div>
-                              <ul className="mt-3 text-[15px]">
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    href="#"
-                                    className=" -mx-2 rounded-lg  text-gray-950 font-bold flex justify-normal items-center gap-4"
-                                  >
-                                    <span>
-                                      <FaMagnifyingGlassChart size={30} />
-                                    </span>
-                                    Food Delivery Project
-                                  </a>
-                                  <a
-                                    href="#"
-                                    className="block p-2 -mx-2 rounded-lg  text-black hover:text-[#185493] text-sm"
-                                  >
-                                    The project highlights the food e-commerce
-                                    website that we created to bring the service
-                                    of good meals.
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          {/* Third Column */}
-                          <div
-                            className="flex-1 flex justify-center items-center"
-                            style={{ flexBasis: "15%" }}
-                          >
-                            {/* Use flex-2 class for the third box */}
-                            <div className="space-y-5 text-center">
-                              <p className="uppercase tracking-wider text-green-300 text-center text-4xl font-semibold">
-                                155%
-                              </p>
-                              <p className="text-sm font-bold px-10 text-center text-black">
-                                Increase in organic tranactions
-                              </p>
-                              <span className="flex justify-center items-center">
-                                <FaSignal
-                                  className="text-green-300"
-                                  size={80}
-                                />
-                              </span>
-                              <button className="px-5 py-4 text-sm font-bold bg-[#FCCF40] rounded ">
-                                Read our case study
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   {/* Third Column */}
                 </div>
               </li>
-              <li className="relative block py-6 px-4 lg:p-6 text-sm lg:text-xl">
+              <li className="relative block py-6 ">
                 <Link
                   href="/contact"
                   className=" hover:border-brand-secondary cursor-pointer"
@@ -968,9 +664,9 @@ const Navbar = () => {
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className="rounded-lg px-3 py-2 font-semibold bg-brand-secondary hover:bg-[#ecb85d] flex items-center group z-10"
+                  className="rounded-lg px-1 lg:px-2 xl:px-3 py-2 font-semibold bg-brand-secondary hover:bg-yellow-400 flex items-center group z-10"
                 >
-                  <span className="mr-2 text-brand-primary hover:text-white font-bold text-xl">
+                  <span className="mr-2 text-brand-primary  font-bold xl:text-xl lg:text-lg text-base">
                     Get Proposal
                   </span>
                 </button>

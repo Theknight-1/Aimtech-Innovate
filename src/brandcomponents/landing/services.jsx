@@ -47,7 +47,7 @@ export default function Services() {
               Attract, engage, and convert visitors with a stunning, user-friendly website designed to achieve your business goals.
 
               </h1>
-              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary hover:bg-yellow-400 hover:bg-yellow-400 px-6 py-2">
                 Learn More
               </button>
             </div>
@@ -71,7 +71,7 @@ export default function Services() {
               <h1 className="text-sm sm:text-xl lg:text-xl ">
               Reach the right audience at the right time with strategic PPC campaigns that deliver measurable results.
               </h1>
-              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary hover:bg-yellow-400 px-6 py-2">
                 Learn More
               </button>
             </div>
@@ -94,7 +94,7 @@ export default function Services() {
               <h1 className="text-sm sm:text-xl lg:text-xl ">
               Unleash the power of SEO to maximize search rankings that attract qualified leads, and grow your online presence organically.
               </h1>
-              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary hover:bg-yellow-400 px-6 py-2">
                 Learn More
               </button>
             </div>
@@ -117,7 +117,7 @@ export default function Services() {
               <h1 className="text-sm sm:text-xl lg:text-xl ">
               Building social media presence with engaging content, community management, and targeted social media advertising.
               </h1>
-              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary hover:bg-yellow-400 px-6 py-2">
                 Learn More
               </button>
             </div>
@@ -140,7 +140,7 @@ export default function Services() {
               <h1 className="text-sm sm:text-xl lg:text-xl ">
               Targeted email campaigns that nurture leads, build brand loyalty, and drive sales through powerful email marketing strategies.
               </h1>
-              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary px-6 py-2">
+              <button className=" text-xl sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary hover:bg-yellow-400 px-6 py-2">
                 Learn More
               </button>
             </div>
@@ -183,7 +183,7 @@ export default function Services() {
                   onClick={() => handleButtonClick(contentId)}
                   className={`flex h-12 sm:h-14 lg:h-20 w-full items-center text-wrap tracking-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl py-8 pl-4 rounded-md service-btn ${
                     currentContent === contentId
-                      ? "bg-brand-secondary text-brand-primary font-semibold"
+                      ? "bg-brand-secondary hover:bg-yellow-400 text-brand-primary font-semibold"
                       : "text-white"
                   }`}
                 >

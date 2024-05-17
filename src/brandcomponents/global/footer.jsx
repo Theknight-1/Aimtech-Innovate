@@ -11,11 +11,11 @@ import Link from "next/link";
 
 const ProvidedSchems = () => {
   return (
-    <div className=" grid lg:gap-12 gap-8  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-gray-300 p-2 md:p-0">
+    <div className=" grid lg:gap-10 gap-8  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-gray-300 p-2 md:p-0">
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Case studies</div>
         <nav aria-label="Footer Navigation" className="">
-          <ul className="lg:space-y-4 space-y-2 text-sm ">
+          <ul className="lg:space-y-2 space-y-1 text-sm ">
             <li>
               <a className=" hover:underline" href="#">
                 Popular
@@ -33,7 +33,7 @@ const ProvidedSchems = () => {
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Company</div>
         <nav aria-label="Footer Navigation" className="">
-          <ul className=" lg:space-y-4 space-y-2 text-sm">
+          <ul className=" lg:space-y-2 space-y-1 text-sm">
             <li>
               <a className=" hover:underline" href="/about">
                 About us
@@ -57,7 +57,7 @@ const ProvidedSchems = () => {
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Services</div>
         <nav aria-label="Guides Navigation" className="">
-          <ul className="lg:space-y-4 space-y-2 text-sm">
+          <ul className="lg:space-y-3 space-y-2 text-sm">
             <li>
               <a className=" hover:underline" href="#">
                 Web design & development
@@ -89,7 +89,7 @@ const ProvidedSchems = () => {
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Resources</div>
         <nav aria-label="Footer Navigation" className="">
-          <ul className="lg:space-y-4 space-y-2 text-sm">
+          <ul className="lg:space-y-2 space-y-1 text-sm">
             <li>
               <a className=" hover:underline" href="#">
                 Sitemap
@@ -135,7 +135,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative md:h-[50vh]  text-white bg-black flex flex-col xl:px-32 lg:px-24 md:px-2 sm:px-8 px-4 ">
+    <footer className="relative md:h-[50vh]  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-4 sm:px-8 px-4 ">
       {/* dropdown */}
       <div className="md:hidden block w-full  mt-3">
         {/* Case Study Dropdown */}
@@ -418,7 +418,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="md:flex md:items-center justify-evenly md:gap-20 lg:gap-32 xl:gap-36 h-[80%]  w-full ">
+      <div className="md:flex md:items-center justify-between md:gap-20 lg:gap-24 xl:gap-28 h-[80%]  w-full  2xl:px-32 xl:px-24">
         <div className="text-sm w-full md:w-[25%] lg:w-[20%] space-y-3  lg:space-y-5 p-2 md:p-0">
           <div className="m-4 md:m-0 md:flex md:items-start md:justify-start text-center flex-col h-32  ">
             <img
@@ -459,12 +459,12 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="md:block hidden w-[50%]">
+        <div className="md:block hidden w-[60%]">
           <ProvidedSchems />
         </div>
       </div>
       <div className="border-t-2 text-white">
-        <div className="mx-auto  max-w-lg gap-5  py-4 text-center flex flex-col lg:flex-row text-xs justify-center items-center cursor-pointer">
+        <div className="mx-auto  max-w-lg gap-5  py-4 text-center flex  text-xs justify-center items-center cursor-pointer">
           <p className="w-max  text-xm lg:text-lg ">
             © 2024 Aimtech Innovate | A Joint venture With{" "}
           </p>

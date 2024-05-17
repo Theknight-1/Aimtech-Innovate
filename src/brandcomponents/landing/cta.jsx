@@ -26,7 +26,7 @@ export default function Hcta({title="",d1="",d2=""}) {
           </p>
 
           <div className="flex flex-col sm:flex-row sm:space-x-4 sm:px-0">
-            <Link href="/contact" className="relative mt-4 rounded-full bg-brand-secondary px-4 py-2 text-brand-primary font-bold text-2xl shadow transition hover:bg-yellow-400">
+            <Link href="/contact" className="relative mt-4 rounded-full  px-4 py-2 text-brand-primary font-bold text-2xl shadow transition bg-brand-secondary hover:bg-yellow-400">
               Get Started
             </Link>
           </div>
