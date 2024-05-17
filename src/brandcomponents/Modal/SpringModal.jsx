@@ -13,7 +13,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
     fullName: "",
     designation: "",
     companyName: "",
-    service: "Select Digital Presence Services",
+    service: selectedOption || "Select Digital Presence Services",
     phoneNumber: "",
     country: "Canada",
   });

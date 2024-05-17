@@ -79,7 +79,7 @@ export default function Whyus() {
           <Link href="/contact" className="z-10">
             <button className="w-auto rounded-lg flex items-center justify-center gap-x-2 border bg-white p-4 px-8  shadow-lg group">
               <span className="font-bold text-[#122B59] md:text-lg text-sm">
-                Work With Us
+                Know more about us
               </span>
               <img
                 src="/arrow-double-end.svg"

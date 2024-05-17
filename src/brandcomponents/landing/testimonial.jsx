@@ -112,8 +112,8 @@ export default function Testimonial() {
                 />
                 <button onClick={showNextTestimonial}>
                   <img
-                    src="/arrow-double-end.svg"
-                    className="w-8 h-8 lg:w-6 lg:h-6"
+                    src="/arrow-double-start.svg"
+                    className="w-8 h-8 lg:w-6 lg:h-6 rotate-180"
                     alt="arrow"
                   />
                 </button>

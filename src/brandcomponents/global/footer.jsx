@@ -13,23 +13,38 @@ const ProvidedSchems = () => {
   return (
     <div className=" grid lg:gap-10 gap-8  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-gray-300 p-2 md:p-0">
       <div className="">
-        <div className=" xl:mb-4 text-lg font-semibold">Case studies</div>
-        <nav aria-label="Footer Navigation" className="">
-          <ul className="lg:space-y-2 space-y-1 text-sm ">
+        <div className=" xl:mb-4 text-lg font-semibold">Services</div>
+        <nav aria-label="Guides Navigation" className="">
+          <ul className="lg:space-y-3 space-y-2 text-sm">
             <li>
               <a className=" hover:underline" href="#">
-                Popular
+                Web design & development
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-                recent
+                Pay-Per-Click Advertisement
               </a>
             </li>
-            
+            <li>
+              <a className=" hover:underline" href="#">
+                Search Engine Optimization
+              </a>
+            </li>
+            <li>
+              <a className=" hover:underline" href="#">
+                Social Media Management
+              </a>
+            </li>
+            <li>
+              <a className=" hover:underline" href="#">
+                Email Marketing
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
+
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Company</div>
         <nav aria-label="Footer Navigation" className="">
@@ -50,37 +65,26 @@ const ProvidedSchems = () => {
                 Media Coverage
               </a>
             </li>
-            
           </ul>
         </nav>
       </div>
       <div className="">
-        <div className=" xl:mb-4 text-lg font-semibold">Services</div>
-        <nav aria-label="Guides Navigation" className="">
-          <ul className="lg:space-y-3 space-y-2 text-sm">
+        <div className=" xl:mb-4 text-lg font-semibold">Case studies</div>
+        <nav aria-label="Footer Navigation" className="">
+          <ul className="lg:space-y-2 space-y-1 text-sm ">
             <li>
               <a className=" hover:underline" href="#">
-                Web design & development
+                Popular
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-              Pay-Per-Click Advertisement
+                Recent
               </a>
             </li>
             <li>
               <a className=" hover:underline" href="#">
-              Search Engine Optimization
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-              Social Media Management
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-              Email Marketing
+                Tranding
               </a>
             </li>
           </ul>
@@ -273,7 +277,6 @@ export default function Footer() {
                   Media Coverage
                 </Link>
               </li>
-              
             </ul>
           </div>
         </div>
@@ -431,7 +434,9 @@ export default function Footer() {
             <span className="text-xl">
               <FaMapLocationDot />
             </span>
-            <span>1188 settlers St. Windsor Ontario <br /> N9G2W7 Canada</span>
+            <span>
+              1188 settlers St. Windsor Ontario <br /> N9G2W7 Canada
+            </span>
           </div>
           <div className="flex items-center gap-5 ">
             <span className="text-xl">
@@ -447,15 +452,23 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-row items-center justify-start text-2xl gap-4 ">
-            <a href="https://www.facebook.com/profile.php?id=61555909964483" target="_blank">
-            <FaFacebookF />
+            <a
+              href="https://www.facebook.com/profile.php?id=61555909964483"
+              target="_blank"
+            >
+              <FaFacebookF />
             </a>
-            <a href="https://www.instagram.com/aimtech_innovate" target="_blank">
-            <BiLogoInstagram />
+            <a
+              href="https://www.instagram.com/aimtech_innovate"
+              target="_blank"
+            >
+              <BiLogoInstagram />
             </a>
-            <a href="https://www.linkedin.com/company/aimtech-innovate" target="_blank">
-
-            <CiLinkedin />
+            <a
+              href="https://www.linkedin.com/company/aimtech-innovate"
+              target="_blank"
+            >
+              <CiLinkedin />
             </a>
           </div>
         </div>
@@ -470,7 +483,7 @@ export default function Footer() {
           </p>
           <div>
             <a href="https://nxtcoach.com" target="_blank">
-            <img src="/brand/logo/nxtcoachlogo.png" alt="next coach logo" />
+              <img src="/brand/logo/nxtcoachlogo.png" alt="next coach logo" />
             </a>
           </div>
         </div>
