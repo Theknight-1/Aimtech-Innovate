@@ -17,7 +17,7 @@ export default function page() {
       "Need help to attract customers to your new website? Quality traffic increases sales and boosts business profits. SEO is the only solution! Our Canada based SEO services optimize your website for search engines, driving organic traffic and boosting your online presence. Let's help your business grow!",
     benifits: ["Technical & Local SEO", "On-Page Optimization", "Content Marketing", "Link Building"],
     link: "/contact",
-    image:"/png/revenue.png",
+    image:"/png/svg/seo-hero.svg",
     second : {
         title : "Take Your Business to the Top of Search Engine Rankings",
         points : [
@@ -34,7 +34,7 @@ export default function page() {
           "We specialize in helping businesses like yours use SEO tactics to increase website traffic, drive conversions, and increase sales. We provide custom SEO strategies for your organic business growth, you can gain an increase in website traffic by 40% and increase your sales by 65%",
           "By working with Aimtech Innovate and setting clear goals, We help businesses improve their SEO strategies, attract organic traffic, and increase sales. Our approach helps your business to rank at the top of the search results."
         ],
-        image : "/service/image28.png",
+        image : "/png/seo-first.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
@@ -62,7 +62,7 @@ export default function page() {
           "We have skilled expertise in On page SEO, Off-page SEO, Local SEO, Technical SEO and Content marketing, as well as Copywriting and Website maintenance!",
           "We always provide custom search engine optimization strategies for our clients that consist of:"
         ],
-        image : "/service/image30.png",
+        image : "/png/seo-second.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     fourth:{

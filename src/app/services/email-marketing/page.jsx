@@ -18,7 +18,7 @@ export default function page() {
       "Are you looking for an effective way to reach and engage with your customers? Look no further than email marketing! Email marketing is the most effective digital marketing channel and delivers even higher ROI than paid ads or social media.",
     benifits: ["Audience Segmentation", "Compelling Content", "Eye-catching Design", "Clear Call-to-Action (CTA)"],
     link: "/contact",
-    image:"/png/revenue.png",
+    image:"/png/svg/email-hero.svg",
     second : {
         title : "Attract. Connect. Win Over Customers with Email Marketing",
         points : [
@@ -28,14 +28,13 @@ export default function page() {
             "Your email campaigns are not optimized for mobile devices, resulting in a poor user experience and low engagement.",
             "Your email content is not personalized, leading to low open rates and a lack of conversions.",
             "You're not tracking your email marketing metrics, so you have no idea what's working and what's not.",
-           
         ],
         short : [
           "Without any email marketing campaigns, you may be losing customers that you have built over time – and that means you have been wasting your marketing efforts.",
           "We specialize in helping businesses like yours use email to build customer trust, drive conversions, and increase sales. By activating/reactivating your customer database, you can gain an increase of inward leads by around 30% and increase your client base by 60%. Send emails and generate leads now.",
           "By working with Aimtech Innovate and setting clear goals, We help businesses improve their email marketing campaigns, attract more customers, and increase sales. Our approach helps your business grow in revenue and a stronger position in the market."
         ],
-        image : "/service/image28.png",
+        image : "/png/email-first.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
@@ -62,7 +61,7 @@ export default function page() {
           "We have skilled expertise in Hootsuite, Mailchimp, Brevo, Hubspot and Zapier along with custom template design, copywriting and personalized touch.",
           "We always provide custom email marketing strategies for our clients that consist of:"
         ],
-        image : "/service/image30.png",
+        image : "/png/email-second.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     fourth:{

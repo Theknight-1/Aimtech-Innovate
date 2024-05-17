@@ -8,7 +8,7 @@ const DMsg = () => {
     <>
       <section className=" h-auto w-full  p-4 md:p-6 lg:mt-12  lg:px-16  overflow-hidden">
         <h1 className=" text-5xl lg:text-6xl text-brand-secondary font-bold text-center mb-3 ">
-         "Director’s Message"
+         Director’s Message
         </h1>
         <div className="flex  flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:h-[70%]">
           <div className="flex-1 lg:w-1/3 flex flex-col items-center justify-center ">
@@ -19,29 +19,18 @@ const DMsg = () => {
                 className="w-9/12 lg:w-auto h-auto object-cover rounded-lg shadow-2xl"
               />
             </div>
-              <span className="text-2xl text-brand-secondary w-full text-center font-bold ">Mr. Adil</span>
+              <span className="text-2xl text-brand-secondary w-full text-center font-bold ">Adil Muhammad</span>
           </div>
           <div className=" lg:w-2/3  h-full text-justify lg:pr-0 space-y-2    p-2 ">
             <div className="w-full  h-auto text-white text-base md:text-xl lg:text-2xl  lg:space-y-7 md:space-y-4">
               <p>
-                Founded in 2003 by Principal Architect Jordan Peters, we employ
-                strategies to manage resources efficiently, including passive
-                and active design, and carefully selecting sustainable and
-                environmentally responsible building materials to ensure that
-                the long term impact on the environment is minimal.
+              At Aimtech Innovate, we attribute our success to the unwavering commitment to delivering exceptional quality services, which have consistently exceeded the expectations of our valued clientele. Our reputation as a premier provider of business solutions is a testament to our steadfast dedication to excellence.
               </p>
               <p>
-                The firm has been involved in a wide range of services including
-                residential, civic and commercial design, design of
-                architectural signage and graphics, workplace consultancy and
-                renovation, landscape design and affordable housing design.
+              Central to our organizational ethos is a culture of integrity, professionalism, and innovation. Our diverse and talented teams are the cornerstone of our operations, embodying our core values and principles. We take immense pride in fostering an environment where expertise is cultivated, and each member of our team is empowered to contribute to our collective success.
               </p>
               <p>
-                Notable works include the Advantage Place (12-storey office
-                complex for Enterprise Properties Ltd), Visitor’s Centre for the
-                Kakum National Park, the Gomoa Fetteh Feyenoord Football Academy
-                (now the West African Football Academy) and the renovation of
-                the Headquarters of the Ghana Revenue Authority.
+              Whether you represent a governmental institution, a manufacturing enterprise, a retail establishment, or any other facet of industry, Aimtech Innovate stands ready to collaborate with you in achieving your objectives. Our commitment to delivering bespoke solutions tailored to your unique requirements is unwavering, and your satisfaction remains our paramount concern.
               </p>
             </div>
           </div>

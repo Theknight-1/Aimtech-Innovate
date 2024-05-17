@@ -18,7 +18,7 @@ export default function page() {
       "Take your business to the next level with our comprehensive social media management solutions. Our team of social media experts creates and implements customized strategies that drive engagement, increase brand awareness, and generate leads. We believe that a strong social media presence is crucial for businesses to thrive in today's digital landscape.",
     benifits: ["Facebook & Instagram", "LinkedIn  & Twitter", "TikTok", "Youtube"],
     link: "/contact",
-    image:"/png/revenue.png",
+    image:"/png/svg/smm-hero.svg",
 
     second : {
         title : "Elevate Your Social Media Game and Grow Your Business",
@@ -35,7 +35,7 @@ export default function page() {
           "Without a solid social media strategy, you might be missing out on valuable opportunities to connect with your target audience – and that means you are losing potential customers on social media.",
           "Our social media management services can help you increase your followers by about 20% in just 3 months, boost engagements by 15% and customer satisfaction by 25%.Improve your online reputation and credibility with social media presence.",
         ],
-        image : "/service/image28.png",
+        image : "/png/smm-first.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
@@ -63,7 +63,7 @@ export default function page() {
           "We have skilled expertise in Facebook, Instagram, Twitter, Linkedin, Youtube and TikTok handle management along with planning personalized social media plans for our clients.",
           "We always provide custom social media marketing strategies for our clients that consist of:"
         ],
-        image : "/service/image30.png",
+        image : "/png/smm-second.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     fourth:{
