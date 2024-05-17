@@ -353,7 +353,7 @@ const Navbar = () => {
               <li className="relative block py-6  ">
                 <Link
                   href="/"
-                  className="  hover:border-brand-secondary cursor-pointer "
+                  className="border-b border-transparent   hover:border-brand-secondary cursor-pointer "
                 >
                   <span>Home</span>
                 </Link>
@@ -361,7 +361,7 @@ const Navbar = () => {
               <li className="relative block py-6  ">
                 <Link
                   href="/about"
-                  className=" hover:border-brand-secondary cursor-pointer"
+                  className="border-b border-transparent hover:border-brand-secondary cursor-pointer"
                 >
                   About us
                 </Link>
@@ -370,7 +370,7 @@ const Navbar = () => {
               <li className="hoverable group py-6  relative ">
                 <Link
                   href="#"
-                  className=" hover:border-brand-secondary  flex justify-center items-center"
+                  className="border-b border-transparent hover:border-brand-secondary  flex justify-center items-center"
                 >
                   Services
                   <span>
@@ -418,7 +418,7 @@ const Navbar = () => {
               <li className="hoverable group py-6  relative  ">
                 <Link
                   href="#"
-                  className=" hover:border-brand-secondary cursor-pointer flex justify-center items-center"
+                  className="border-b border-transparent hover:border-brand-secondary cursor-pointer flex justify-center items-center"
                 >
                   Case Study
                   <span>
@@ -654,7 +654,7 @@ const Navbar = () => {
               <li className="relative block py-6 ">
                 <Link
                   href="/contact"
-                  className=" hover:border-brand-secondary cursor-pointer"
+                  className="border-b border-transparent hover:border-brand-secondary cursor-pointer"
                 >
                   Contact
                 </Link>

@@ -15,7 +15,7 @@ const ExampleWrapper = () => {
     fullName: "",
     designation: "",
     companyName: "",
-    service: "Web Design and Development",
+    service: "Select Digital Presence Services",
     phoneNumber: "",
     country: "Canada",
   });
@@ -103,13 +103,13 @@ const ExampleWrapper = () => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="min-h-screen w-full flex flex-col items-center justify-center lg:gap-10 gap-3 p-4 sm:p-6 md:p-8 lg:p-3 xl:p-0">
-          <div className="text-center">
+        <div className="min-h-screen w-full flex flex-col items-center justify-center lg:gap-5 gap-3 p-4 sm:p-6 md:p-8 lg:p-3 xl:p-5">
+          <div className="text-center p-5">
             <img src={imageUrl} alt="logo" className="w-56" />
           </div>
           <div className="bg-white text-white p-3 sm:p-4 md:p-5 lg:p-10 rounded-3xl w-full max-w-4xl shadow-xl cursor-default relative overflow-hidden">
             <div className="space-y-4">
-              <h1 className="text-black text-start text-3xl sm:text-4xl md:text-5xl font-bold">
+              <h1 className="text-black text-center text-3xl sm:text-4xl md:text-5xl font-bold">
                 Required Information
               </h1>
             </div>
@@ -162,6 +162,9 @@ const ExampleWrapper = () => {
                     className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     required
                   >
+                    <option value="Select Digital Presence Services">
+                      Select Digital Presence Services
+                    </option>
                     <option value="Web Design and Development">
                       Web Design and Development
                     </option>
@@ -198,7 +201,7 @@ const ExampleWrapper = () => {
                   </label>
                 </div>
                 <div className="flex flex-col md:flex-row w-full md:gap-6">
-                  <div className="relative z-0 md:w-[30%] w-full mb-5 group">
+                  <div className="relative z-0 md:w-[30%] w-full mb-5 md:mb-0 group">
                     <select
                       name="country"
                       value={formData.country}
@@ -257,7 +260,7 @@ const ExampleWrapper = () => {
                       {formData.country === "United States" ? "+1" : phoneCode}
                     </h1>
                   </div>
-                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0 md:mb-5 group">
+                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0  group">
                     <input
                       type="tel"
                       name="phoneNumber"

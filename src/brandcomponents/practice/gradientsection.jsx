@@ -2,13 +2,11 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
-import { motion } from "framer-motion";
-import Link from "next/link";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
 
 export default function GradientSection() {
   const [selectedOption, setSelectedOption] = useState(
-    "Web Design and Development"
+    "Select Digital Presence Services"
   );
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,11 +23,11 @@ export default function GradientSection() {
         <div className="grid  max-w-screen py-8 lg:py-16 lg:grid-cols-12 gap-8  ">
           <div className="lg:col-span-6 h-full space-y-8 ">
             <h1 className=" max-w-7xl text-white font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl  ">
-            Enhance your digital presence and gain market excellence
+              Enhance your digital presence and gain market excellence
             </h1>
             <h3 className="max-w-4xl  text-white  text-sm md:text-lg xl:text-lg 2xl:text-2xl bg-gradient-to-r bg-clip-text tracking-wider">
-              Most cost-effective digital marketing agency of{" "}
-              <span>USA</span> and <span>Canada</span>
+              Most cost-effective digital marketing agency of <span>USA</span>{" "}
+              and <span>Canada</span>
             </h3>
             {/* <div className="flex justify-end items-center my-5 ">
               <svg
@@ -57,8 +55,11 @@ export default function GradientSection() {
                     <select
                       value={selectedOption}
                       onChange={handleSelectChange}
-                      className="block font-bold appearance-none w-full bg-white  border-gray-300 text-gray-800 text-xl py-5 px-4 pr-8  leading-tight rounded-tl-lg rounded-bl-lg"
+                      className="block font-bold appearance-none w-full bg-white border-gray-300 text-gray-800 text-xl py-5 px-4 pr-8 leading-tight rounded-tl-lg rounded-bl-lg"
                     >
+                      <option value="Select Digital Presence Services">
+                      Select Digital Presence Services
+                      </option>
                       <option value="Web Design and Development">
                         Web Design and Development
                       </option>
@@ -89,17 +90,17 @@ export default function GradientSection() {
                 </button>
               </div>
               <div className=" flex flex-col md:flex-row gap-5 ">
-              <ul className="flex gap-2 text-xl text-white">
-                {[...Array(5)].map((_, index) => (
-                  <li key={index}>
-                    <FaStar className="text-brand-secondary" />
-                  </li>
-                ))}
-              </ul>
-              <span className="text-white font-bold">
-                4.8/5 based on 6,873 reviews | GDPR Compliant
-              </span>
-            </div>
+                <ul className="flex gap-2 text-xl text-white">
+                  {[...Array(5)].map((_, index) => (
+                    <li key={index}>
+                      <FaStar className="text-brand-secondary" />
+                    </li>
+                  ))}
+                </ul>
+                <span className="text-white font-bold">
+                  4.8/5 based on 6,873 reviews | GDPR Compliant
+                </span>
+              </div>
             </div>
           </div>
           <div className="relative lg:col-span-6 lg:flex items-center justify-end  ">

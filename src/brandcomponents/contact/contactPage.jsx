@@ -11,7 +11,7 @@ const ContactPage = () => {
     fullName: "",
     designation: "",
     companyName: "",
-    service: "Web Design and Development",
+    service: "Select Digital Presence Services",
     phoneNumber: "",
     country: "Canada",
   });
@@ -102,7 +102,7 @@ const ContactPage = () => {
         <div className="flex-1 flex justify-center items-center h-[90vh] ">
           <div className="w-full lg:w-[80%] space-y-4 md:space-y-10 py-5 text-white">
             <h1 className=" text-4xl text-brand-secondary sm:text-6xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
-            Get Seen, Get Heard, Get Found Online
+              Get Seen, Get Heard, Get Found Online
             </h1>
             <p className=" text-justify text-xl lg:text-2xl leading-normal">
               If you are a business owner and want to increase your profit, then
@@ -200,6 +200,9 @@ const ContactPage = () => {
                     className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     required
                   >
+                    <option value="Select Digital Presence Services">
+                    Select Digital Presence Services
+                    </option>
                     <option value="Web Design and Development">
                       Web Design and Development
                     </option>
