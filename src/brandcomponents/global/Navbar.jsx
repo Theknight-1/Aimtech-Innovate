@@ -454,7 +454,7 @@ const Navbar = () => {
                              {ckey.category}
                           </h1>
                           {ckey.data.map((cstudy,idx)=>(
-                            <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer">
+                            <div key={idx} className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer">
                             <span>📑</span>
 
                             <div className="flex flex-col items-start gap-2 ">
