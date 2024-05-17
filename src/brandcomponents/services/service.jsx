@@ -24,14 +24,14 @@ export default function brandservice({ data }) {
         </div>
         <div className=" flex-1  flex items-center  text-justify  justify-start ">
           <div className="w-full h-auto space-y-8 ">
-            <h1 className="text-brand-secondary text-2xl font-bold uppercase">
+            <h1 className="text-brand-secondary text-2xl font-semibold uppercase">
               {dataOBJ.title}
             </h1>
             <article className="text-xl lg:text-5xl font-semibold">{dataOBJ.tagLine}</article>
             <p className="text-white text-xl lg:text-lg">{dataOBJ.desciption}</p>
-            <div className="grid grid-cols-2 text-brand-secondary gap-4 text-2xl">
+            <div className="grid grid-cols-2  text-brand-secondary font-semibold gap-4 text-2xl">
               {dataOBJ.benifits.map((ben, index) => (
-                <span key={index}>{ben}</span>
+                <span key={index}> {ben}</span>
               ))}
             </div>
             <div className="hidden">
@@ -45,23 +45,23 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full mt-20 h-auto flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-        <div class=" h-full  flex flex-col-reverse md:flex-row items-start justify-start gap-2">
-          <div class="w-full lg:w-1/2 h-full  lg:pr-8  p-10  overflow-hidden flex flex-col items-center justify-center ">
+      <section class=" w-full mt-20 h-auto flex justify-center items-center  ">
+        <div class=" h-full flex flex-col-reverse md:flex-row items-start justify-start gap-2">
+          <div class="w-full lg:w-3/5 h-full  lg:pr-8     overflow-hidden flex flex-col items-center justify-center ">
             
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
-              <p className="mt-2 text-6xl font-bold tracking-tight text-white sm:text-5xl text-justify" >{dataOBJ.second.title}</p>
+              <p className="mt-2 text-6xl font-semibold tracking-tight text-white sm:text-5xl " >{dataOBJ.second.title}</p>
               
               <br />
               <div>
-                <h1>Does this sound like you Business</h1>
+                <h1 className="lg:text-xl">Does this sound like you Business?</h1>
               </div>
               <br />
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
-                <ul class="pl-4 font-satoshi list-disc space-y-6 text-sm lg:text-xl" >
+                <ul class="pl-4 font-satoshi list-disc space-y-6 text-sm " >
 
                   {dataOBJ.second.points.map(item => (
                     <li key={item}>{item}</li>
@@ -82,7 +82,7 @@ export default function brandservice({ data }) {
            
             </div>
           </div>
-          <div className="flex-1 h-full lg:pt-72  flex items-center justify-center ">
+          <div className="flex-1  h-full lg:pt-32 flex items-center justify-center ">
             <img
               src={dataOBJ.second.image}
               alt="Product screenshot"
@@ -91,9 +91,9 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full mt-20 h-auto flex justify-center items-center xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+      <section class=" w-full  mt-20 h-auto flex justify-center items-center  ">
         <div class=" h-full  flex flex-col-reverse md:flex-row-reverse items-start justify-start gap-2">
-          <div class="w-full lg:w-1/2 h-full  lg:pr-8  p-10  overflow-hidden flex flex-col items-start justify-center ">
+          <div class="w-full lg:w-3/5 h-full  lg:pr-8    overflow-hidden flex flex-col items-start justify-center ">
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
@@ -135,7 +135,7 @@ export default function brandservice({ data }) {
             <img
               src={dataOBJ.third.image}
               alt="Product screenshot"
-              class="w-2/3 h-full object-contain aspect-square"
+              class="w-2/3 mt-32 h-full object-contain aspect-square"
             />
           </div>
         </div>

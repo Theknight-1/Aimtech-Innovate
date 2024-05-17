@@ -105,7 +105,7 @@ export default function GradientSection() {
           <div className="relative lg:col-span-6 lg:flex items-center justify-end  ">
             <div className="absolute left-10 -z-0 w-full h-auto aspect-square justify-end rounded-full  bg-[#15BEE3]/25 blur-3xl "></div>
             <img
-              src="/landingPage/HeroSection.png"
+              src="/landingPage/hero-image.svg"
               alt="mockup"
               className="absolute z-0 w-[80%] object-cover"
             />
