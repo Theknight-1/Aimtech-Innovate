@@ -118,6 +118,8 @@ export default function Whyus() {
               index={index}
               selectedIndex={selectedIndex}
               setSelectedIndex={setSelectedIndex}
+              style="border-2 border-brand-secondary group  rounded-xl"
+              textcolor="bg-white text-black"
             />
           ))}
         </div>
