@@ -14,11 +14,11 @@ export default function Pland({faqdata = []}) {
             </div> */}
       <section class=" lg:min-h-[calc(100vh-30vh)] mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4  ">
         <div class=" h-auto w-full ">
-          <div className="  w-full h-auto">
-            <div className="w-full h-auto  flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">
-              <div className="flex  space-y-8 flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
+          <div className="  w-full h-auto ">
+            <div className="w-full h-auto flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">
+              <div className="flex gap-y-12  h-full  space-y-8 flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
                 <div className="mb-3 text-center md:text-left">
-                  <p className=" text-3xl font-bold sm:text-4xl flex flex-col items-start justify-start gap-y-4 md:text-5xl xl:text-4xl 2xl:text-5xl text-white leading-normal">
+                  <p className="text-3xl font-bold sm:text-4xl flex flex-col items-start justify-start gap-y-4 md:text-6xl xl:text-6xl 2xl:text-6xl text-white leading-normal">
                     <span>Frequently</span>
                     <span>Asked</span>
                     <span>Questions</span>
