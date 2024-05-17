@@ -149,16 +149,19 @@ const Navbar = () => {
       data: [
         {
           title: "Next coach",
+          link:"",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
         {
           title: "ABC company",
+          link:"",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
         {
           title: "Rk builders",
+          link:"",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
@@ -169,19 +172,22 @@ const Navbar = () => {
       icon: "🔍",
       data: [
         {
-          title: "Marketing Firm",
+          title: "fultime service for automobiles",
+          link:"/casestudy/full-time-operatonal-services-for-automobile",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
+            "Aimtech Innovate provided comprehensive IT infrastructure ..",
         },
         {
-          title: "US Market",
+          title: "SEO For Fintech",
+          link:"/casestudy/seo-for-fintech",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
+            "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
         },
         {
           title: "Canada Market",
+          link:"",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
+            "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company..",
         },
       ],
     },
@@ -190,17 +196,20 @@ const Navbar = () => {
       icon: "🌐",
       data: [
         {
-          title: "Aimtech Casestudy",
+          title: "CRM For Fintech",
+          link:"/casestudy/crm-for-fintech",
           description:
-            "Studied aimtech core busness aspect and helped them grow with our expertise.",
+            "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
         },
         {
-          title: "Next coach",
+          title: "high-school web design",
+          link:"/casestudy/web-design-for-high-school",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
+            "Aimtech Innovate helped create a best-in-class website for a high school...",
         },
         {
           title: "Google Tags",
+          link:"",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
@@ -211,17 +220,20 @@ const Navbar = () => {
       icon: "💰",
       data: [
         {
-          title: "Analytics",
+          title: "social-media-marketing-for-ai-startup",
+          link:"/casestudy/social-media-marketing-for-ai-startup",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
+            "Aimtech Innovate resolved many problems for AI startups..",
         },
         {
           title: "FANGG",
+          link:"",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
         {
           title: "Meta Vr",
+          link:"",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
@@ -436,189 +448,30 @@ const Navbar = () => {
                   >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
                       <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-6  ">
-                        <div className="w-1/4 border-2  hover:shadow-2xl  rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  ">
+                        {caseStudiesData.map((ckey,index)=>(                      
+                        <div key={index} className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  ">
                           <h1 className="font-bold text-blue-500 text-xl ">
-                            Email related
+                             {ckey.category}
                           </h1>
-
-                          <div className="flex flex-row gap-2 mt-2">
-                            <div className="flex flex-col items-start gap-2">
-                              <span className="xl:text-xl lg:text-lg font-bold  hover:text-brand-secondary ">
-                                Next coach
-                              </span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
+                          {ckey.data.map((cstudy,idx)=>(
+                            <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer">
                             <span>📑</span>
 
                             <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">ABC company</span>
+                              <Link href={cstudy.link}><span className=" font-bold">{cstudy.title}</span></Link>
 
                               <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
+                                {cstudy.description}
                               </article>
                             </div>
                           </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">Rk builders</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
+                          ))}
+                          
+                         
                         </div>
+                         ))}
 
-                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 lg:p-4  xl:p-8 overflow-hidden text-wrap">
-                          <h1 className="font-bold text-[#7E62DD] text-xl">
-                            SEO related
-                          </h1>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">Marketing Firm</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">US Market</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">Canada Market</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 lg:p-4  xl:p-8 overflow-hidden text-wrap">
-                          <h1 className="font-bold text-green-500 text-xl">
-                            Web Developement related
-                          </h1>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <Link href="/casestudy/aimtech-casestudy">
-                                <span className="font-bold">
-                                  Aimtech Casestudy
-                                </span>
-                              </Link>
-
-                              <article className="text-sm">
-                                Studied aimtech core busness aspect and helped
-                                them grow with our expertise.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className="font-bold">Next coach</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className="font-bold">Google Tags</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="w-1/4 border  hover:shadow-2xl rounded-lg h-auto blue-200 lg:p-4  xl:p-8 overflow-hidden text-wrap">
-                          <h1 className="font-bold text-[#7E62DD] text-xl">
-                            PPC related
-                          </h1>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">Analytics</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">FANGG</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-
-                          <div className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg">
-                            <span>📑</span>
-
-                            <div className="flex flex-col items-start gap-2 ">
-                              <span className=" font-bold">Meta Vr</span>
-
-                              <article className="text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, aut.
-                              </article>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
 
                       <div className="lg:w-1/4 hidden xl:block h-auto rounded-lg  bg-brand-secondary hover:shadow-2xl  p-8 lg:p-5 xl:p-3 overflow-hidden text-wrap ">
@@ -638,7 +491,7 @@ const Navbar = () => {
                               />
                             </span>
                             <Link href="/casestudy">
-                              <button className="xl:px-1 lg:px-3 py-2 font-bold bg-brand-primary rounded text-white xl:text-base 2xl:text-lg text-sm">
+                              <button className="xl:px-4 lg:px-12 py-2 font-bold bg-brand-primary rounded text-white xl:text-base 2xl:text-lg text-sm">
                                 Read our case study
                               </button>
                             </Link>

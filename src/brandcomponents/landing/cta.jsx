@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Hcta({title="",d1="",d2=""}) {
+export default function Hcta({title="Get a Free Audit Report",d1="Get your free consultation today.",d2="Learn how we can boost your ROI."}) {
   return (
     <section className="py-10 text-gray-800 sm:py-16 md:py-20 overflow-hidden w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
       <div className="relative mx-auto z-10   aspect-video sm:w-[80%] md:w-[70%] lg:w-[60%]   rounded-xl   ">
