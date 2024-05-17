@@ -102,7 +102,7 @@ const ContactPage = () => {
         <div className="flex-1 flex justify-center items-center h-[90vh] ">
           <div className="w-full lg:w-[80%] space-y-4 md:space-y-10 py-5 text-white">
             <h1 className=" text-4xl text-brand-secondary sm:text-6xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
-              Get Seen, Get Heard, Get Found Online
+            Get Seen, Get Heard, Get Found Online
             </h1>
             <p className=" text-justify text-xl lg:text-2xl leading-normal">
               If you are a business owner and want to increase your profit, then
@@ -116,28 +116,26 @@ const ContactPage = () => {
                 <span>
                   <FaCheckCircle />
                 </span>{" "}
-                Efficient and Timely Completion
+                Cost Effective Marketing Solutions
               </p>
               <p className="flex items-center gap-6  text-xl lg:text-2xl">
                 <span>
                   <FaCheckCircle />
                 </span>{" "}
-                Accuracy and Relevancy
+                Less Turn-around Time
               </p>
               <p className="flex items-center gap-6  text-xl lg:text-2xl">
                 <span>
                   <FaCheckCircle />
                 </span>{" "}
-                SEO is all about improving a website's visibility on search
-                engines like Google
+                Commitment to transparency
               </p>
 
               <p className="flex items-center gap-6  text-xl lg:text-2xl">
                 <span>
                   <FaCheckCircle />
                 </span>{" "}
-                Improved user experience & customer satisfaction through our
-                specialized design approach.
+                Data-driven and personalized
               </p>
             </div>
           </div>

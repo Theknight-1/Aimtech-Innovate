@@ -11,44 +11,33 @@ const LearnMore = () => {
   return (
     <section className="w-full h-auto lg:h-screen flex justify-center items-center">
       <div className="w-full lg:max-w-full  lg:px-0">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="flex-1 mb-6 lg:mb-0 lg:pr-6">
-            <img
-              src="/about/aboutUsPlaceholder.png"
-              alt="About Us"
-              className="w-full h-auto lg:w-full lg:h-full object-cover "
-            />
-          </div>
-          <div className="flex-1">
+        <div className="flex flex-col lg:flex-row items-center  px-16">
+          
+          <div className="flex-1 ">
             <div className="px-2 lg:px-0 space-y-5">
               <h1 className="text-3xl text-brand-secondary md:text-4xl lg:text-5xl tracking-wide font-semibold ">
-                Your Digital Marketing Team & Long-Term Partners
+                World Class Creative Digital Marketing Agency
 
               </h1>
               <p className="text-lg lg:text-xl text-white">
                 We're more than an agency, we're your long-term growth partner. <br /> <br />
 
-                Our team of 10+ experienced digital marketing experts is hand-picked for their specific skills. We have social media wizards, Google gurus, talented local web developers, creative graphic designers, data-driven business analysts, and strategic masterminds. <br /><br />
+                Our team of 10+ experienced digital marketing experts is hand-picked for their specific skills. We have social media wizards, Google gurus, talented web developers, creative graphic designers, data-driven business analysts, and strategic masterminds.
+                <br /><br />
 
                 Located in Canada and the USA, we're here to serve you across North America. <br /> <br />
 
 
-                We're a team of 10+ digital marketers
-                Canada and USA-based teams.
-                9+ years in total experience
-                We started our adventure in 2015
-                Google & Facebook/Instagram Partners
-                TikTok, Spotify & Pinterest Media Specialists
-                Certified Meta Business Member
+
 
 
               </p>
               <div className="flex items-center space-x-4 lg:space-x-8  h-auto p-2">
-                <div className="flex items-center space-x-2 lg:space-x-4 overflow-x-hidden">
+                <div className="flex items-center  p-2  overflow-x-hidden">
                   {imageUrls.map((imageUrl, index) => (
                     <img
                       key={index}
-                      className="h-12 w-12 aspect-square  lg:h-16 lg:w-16 ring-2  ring-white"
+                      className="h-12 w-12 aspect-square rounded-full lg:h-16 lg:w-16 ring-2  ring-white"
                       src={imageUrl}
                       alt=""
                     />
@@ -65,6 +54,13 @@ const LearnMore = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex-1 mb-6 lg:mb-0 lg:pr-6">
+            <img
+              src="/png/aboutus-head.png"
+              alt="About Us"
+              className="w-full h-auto lg:w-full lg:h-full object-cover "
+            />
           </div>
         </div>
       </div>

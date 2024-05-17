@@ -12,30 +12,30 @@ const AboutContact = () => {
           </div>
           <div className="flex flex-col lg:gap-4 gap-2 max-w-md md:max-w-lg p-2 md:p-6 lg:p-4 xl:p-2 ">
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-brand-secondary font-bold leading-normal">
-              Infuse Your Brand with Excellence
+            Ready to Elevate Your Digital Game?
             </h1>
             <p className=" text-white text-lg md:text-xl lg:text-2xl">
-              Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit.
+            Contact us today to schedule a free consultation and learn how our team of digital marketing experts can help you
             </p>
             <div className="text-white text-sm md:text-lg lg:text-xl space-y-2">
               <span className="flex items-center gap-3">
                 <span>
                   <AiOutlineCheckCircle />
                 </span>
-                <p>Adipiscing eli sed eiusmod</p>
+                <p>Develop a winning strategy for business goals
+</p>
               </span>
               <span className="flex items-center gap-3">
                 <span>
                   <AiOutlineCheckCircle />
                 </span>
-                <p>Tempor incididunt</p>
+                <p>Increase brand awareness, website traffic leads, and sales through proven tactics</p>
               </span>
               <span className="flex items-center gap-3">
                 <span>
                   <AiOutlineCheckCircle />
                 </span>
-                <p>Labore et dolore magna</p>
+                <p>Stay ahead of the curve with cutting-edge digital marketing techniques</p>
               </span>
             </div>
             <Link href="/contact" className="px-4 py-3 md:py-4 w-max bg-brand-secondary rounded-lg text-[#122B59] text-lg md:text-xl font-semibold">

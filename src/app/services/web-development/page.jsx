@@ -18,7 +18,7 @@ export default function page() {
       "Make a good impression on potential customers right away. Our talented team of web designers and developers creates websites that are both aesthetically pleasing and conversion-focused. We believe that a unique, customized website design makes the business stand out from the crowd and creates an online presence.",
     benifits: ["WordPress", "Shopify ", "WooCommerce", "Custom Code (Almost any Tech Stack)"],
     link: "/contact",
-    image:"/png/revenue.png",
+    image:"/png/svg/webdev.svg",
 
 
     second : {
@@ -37,7 +37,7 @@ export default function page() {
           "Building a website helps your business to thrive in a competitive market. We help you with a 20% increase in website traffic in just 3 months and 15%  in customer engagement and a 25% jump in customer satisfaction. Let's grow your business together!",
           "By working with Aimtech Innovate and setting clear goals, We help businesses improve their online presence, attract more customers, and increase sales. Our approach helps your business grow in revenue and a stronger position in the market."
         ],
-        image : "/service/image28.png",
+        image : "/png/web-first.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
@@ -65,7 +65,7 @@ export default function page() {
           "We have skilled expertise in WordPress, Wix, Shopify, WooCommerce and Custom Code (with NextJS, Django and MERN stack).",
           "We always provide a custom Web Design and Development plan for our clients but in general, it consists of:"
         ],
-        image : "/service/image30.png",
+        image : "/png/web-second.png",
         description : "We always provide a custom Web Design and Development plan for our clients but in general, it consists of:"
     },
     fourth:{

@@ -11,60 +11,95 @@ import Testimonial from "@/brandcomponents/landing/testimonial";
 import Hcta from "@/brandcomponents/landing/cta";
 export default function page() {
   const dataOBJ = {
-    title: "SEO SERVICE",
-    tagLine: "The only SEO Service You need to scale your businee to new heights.",
+    title: "Refine your online presence with a comprehensive SEO strategy",
+    tagLine: "Boost Your Online Visibility with Our Expert Search Engine Optimization Services",
     desciption:
-      "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users.",
-    benifits: ["Website marketting", "Product marketting", "Safe", "Secure"],
+      "Need help to attract customers to your new website? Quality traffic increases sales and boosts business profits. SEO is the only solution! Our Canada based SEO services optimize your website for search engines, driving organic traffic and boosting your online presence. Let's help your business grow!",
+    benifits: ["Technical & Local SEO", "On-Page Optimization", "Content Marketing", "Link Building"],
     link: "/contact",
-    image:"/png/revenue.png",
+    image:"/png/svg/seo-hero.svg",
     second : {
-        title : "Growing Your Business and Increasing Your SEO Revenue",
+        title : "Take Your Business to the Top of Search Engine Rankings",
         points : [
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
+            "Your website isn't showing up on the first few pages of Google for relevant keywords",
+            "You're getting traffic, but it's not converting into leads or sales",
+            "You don't have a consistent stream of new content to improve your search visibility",
+            "Your website has technical issues that are hurting your ability to rank",
+            "You're unsure how to optimize for voice search and mobile-first indexing",
+            "You lack the in-house resources and expertise to fully execute an SEO strategy",
            
         ],
         short : [
-          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
-          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
-          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
+          "Without implementing SEO strategies, you may lose potential web traffic and end up getting less sales – which might keep you out of the organic game.",
+          "We specialize in helping businesses like yours use SEO tactics to increase website traffic, drive conversions, and increase sales. We provide custom SEO strategies for your organic business growth, you can gain an increase in website traffic by 40% and increase your sales by 65%",
+          "By working with Aimtech Innovate and setting clear goals, We help businesses improve their SEO strategies, attract organic traffic, and increase sales. Our approach helps your business to rank at the top of the search results."
         ],
-        image : "/service/image28.png",
+        image : "/png/seo-first.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     third : {
-        title : "Get More sales",
+        title : "Supercharge Your Business With Our SEO Services",
         points : [
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
-            "You’re overly dependent on paid ads and not seeing enough ROI",
-            "You want to enhance your PPC efforts with SEO for more success",
+            "SEO Consulting",
+            "SEO Audits",
+            "SEO Strategy",
+            "Keyword Research",
+            "E-commerce SEO",
+            "Local SEO",
+            "Technical Optimization",
+            "On-page Optimization",
+            "Off-page Optimization",
+            "Link building campaigns",
+            "Google My Business",
+            "Local and International SEO",
+            "WordPress SEO",
+            "YouTube SEO",
+            "Shopify SEO",
+            "And many more...",
         ],
         short : [
-          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
-          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
-          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
+          "At Aimtech Innovate, our SEO services are designed to drive real results for your business. We take the time to understand your target audience, your business goals, and your industry. Our approach combines technical SEO mastery with high-quality content creation and marketing, ensuring that your website is optimized for both search engines and users.",
+          "We have skilled expertise in On page SEO, Off-page SEO, Local SEO, Technical SEO and Content marketing, as well as Copywriting and Website maintenance!",
+          "We always provide custom search engine optimization strategies for our clients that consist of:"
         ],
-        image : "/service/image30.png",
+        image : "/png/seo-second.png",
         description : "Marketing is all about getting reach to more number of visitors on a website's visibility on search engines like Google. Aimtech Innovate uses a variety of techniques to optimize clients' websites, improving their search engine rankings and making them more easily discoverable by users."
     },
     fourth:{
-      ctatext : "LET’S DISCUSS YOUR PPC STRATEGY",
+      ctatext : "LET’S RANK MY WEBSITE",
       ctalink : "/contact",
     }
   };
-   
+  
+  const accordionData = [
+    {
+      title: "How long does it take to see results from SEO?",
+      content:
+        "SEO is a long-term investment, but you can often see improvements in 3-6 months depending on your website's condition and the competitiveness of keywords. Significant traffic and ranking increases usually happen in 6-12 months with consistent, strategic SEO work.",
+    },
+    {
+      title: "What factors influence SEO pricing?",
+      content:
+        "SEO pricing depends on several factors like your target locations, industry competitiveness, number of key services/products, and the current condition of your website. Rates can range from $5,00-$5,000+ per month.",
+    },
+    {
+      title: "Can you guarantee first-page rankings?",
+      content: "While we aim to get you ranking on the first page for your most valuable keywords, it's impossible to truly guarantee rankings. Search engines remain tight-lipped about their algorithms, which change frequently.",
+    },
+    {
+      title: "Is SEO still effective in 2024?",
+      content: "Absolutely! As long as users continue searching on Google and other engines, SEO will retain its importance. However, the strategies and priorities evolve alongside search technology advancements like AI, voice, and mobile.",
+    },
+    {
+      title: "What is the difference between SEO and PPC?",
+      content: "SEO (Search Engine Optimization) and PPC (Pay-Per-Click) are both strategies for driving traffic to your website, but they work in different ways. SEO focuses on optimizing your website and content to rank higher in organic search results, while PPC involves paying to have your ads displayed at the top of the search results or on other websites. SEO is a long-term strategy that can provide a higher ROI over time, while PPC can provide more immediate results but requires an ongoing investment. Many businesses use a combination of both SEO and PPC to maximize their online visibility and reach.",
+    },
+    {
+      title: "How do I know if my SEO strategy is working?",
+      content: "There are several key metrics you can use to measure the success of your SEO strategy, including:Organic search traffic: Track the number of visitors coming to your website from organic search results.Keyword rankings: Monitor your rankings for your target keywords and track any improvements over time.Conversion rate: Measure the percentage of visitors who take a desired action, such as making a purchase or filling out a contact form.Backlink profile: Assess the quality and quantity of backlinks pointing to your website.ROI: Calculate the return on investment of your SEO efforts in terms of increased revenue or leads.By regularly tracking these metrics and making adjustments to your strategy as needed, you can ensure that your SEO efforts are delivering a positive return on investment for your business.",
+    },
+    
+  ];
   return (
     <>
     <Navbar />
@@ -81,8 +116,8 @@ export default function page() {
     <FCStudy />
     <CaseStudies />
     <Testimonial />
-    <Pland />
-    <Hcta />
+    <Pland faqdata={accordionData}/>
+    <Hcta title='Get a Free SEO Audit Report' d1='Get your free consultation today.' d2='Learn how we can increase your website traffic.' />
     <Footer />
   </>
   )
