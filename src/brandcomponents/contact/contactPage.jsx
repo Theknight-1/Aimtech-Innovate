@@ -289,20 +289,8 @@ const ContactPage = () => {
                       Country
                     </label>
                   </div>
-                  <div className="text-black md:w-[10%] w-full">
-                    <h1
-                      className="block py-2.5 px-0 w-full text-lg text-black
-                      bg-transparent border-0 border-b-2 border-gray-300
-                      appearance-none dark:text-black dark:border-gray-600
-                      dark:focus:border-blue-500 focus:outline-none focus:ring-0
-                      focus:border-blue-600 peer"
-                      placeholder=""
-                      required
-                    >
-                      {formData.country === "United States" ? "+1" : phoneCode}
-                    </h1>
-                  </div>
-                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
+                  
+                  <div className="relative z-0 md:w-[70%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
                     <input
                       type="tel"
                       name="phoneNumber"

@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FiAlertCircle } from "react-icons/fi";
 import { IoIosCloseCircle } from "react-icons/io";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
 
 const ExampleWrapper = () => {
   const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
@@ -105,7 +106,9 @@ const ExampleWrapper = () => {
       {isOpen && (
         <div className="min-h-screen w-full flex flex-col items-center justify-center lg:gap-5 gap-3 p-4 sm:p-6 md:p-8 lg:p-3 xl:p-5">
           <div className="text-center p-5">
-            <img src={imageUrl} alt="logo" className="w-56" />
+            <Link href={"/"}>
+              <img src={imageUrl} alt="logo" className="w-56" />
+            </Link>
           </div>
           <div className="bg-white text-white p-3 sm:p-4 md:p-5 lg:p-10 rounded-3xl w-full max-w-4xl shadow-xl cursor-default relative overflow-hidden">
             <div className="space-y-4">
@@ -162,7 +165,10 @@ const ExampleWrapper = () => {
                     className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     required
                   >
-                    <option value="Select Digital Presence Services" disabled={true}>
+                    <option
+                      value="Select Digital Presence Services"
+                      disabled={true}
+                    >
                       Select Digital Presence Services
                     </option>
                     <option value="Web Design and Development">
@@ -206,7 +212,6 @@ const ExampleWrapper = () => {
                       name="country"
                       value={formData.country}
                       onChange={handleCountryChange}
-                      
                       className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       required
                     >
@@ -248,20 +253,8 @@ const ExampleWrapper = () => {
                       Country
                     </label>
                   </div>
-                  <div className="text-black md:w-[10%] w-full">
-                    <h1
-                      className="block py-2.5 px-0 w-full text-lg text-black
-                      bg-transparent border-0 border-b-2 border-gray-300
-                      appearance-none dark:text-black dark:border-gray-600
-                      dark:focus:border-blue-500 focus:outline-none focus:ring-0
-                      focus:border-blue-600 peer"
-                      placeholder=""
-                      required
-                    >
-                      {formData.country === "United States" ? "+1" : phoneCode}
-                    </h1>
-                  </div>
-                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0  group">
+
+                  <div className="relative z-0 md:w-[70%] w-full mt-5 md:mt-0  group">
                     <input
                       type="tel"
                       name="phoneNumber"

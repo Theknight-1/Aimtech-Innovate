@@ -270,7 +270,7 @@ const Navbar = () => {
           scrolling ? "bg-white text-black shadow" : "text-white"
         } z-50 mb-2 w-screen`}
       >
-        <div className={`  mx-auto flex justify-between items-center ${!scrolling ? "py-2" : "py-0"}`}>
+        <div className={`  mx-auto flex justify-between items-center py-2`}>
           <div className=" relative block  text-xl text-blue-600 font-bold">
             <Link href="/" className="font-bold text-black  text-xl ">
               {" "}

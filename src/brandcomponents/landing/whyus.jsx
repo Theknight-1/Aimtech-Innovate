@@ -76,10 +76,10 @@ export default function Whyus() {
               the usual price.{" "}
             </span>
           </article>
-          <Link href="/contact" className="z-10">
+          <Link href="/about" className="z-10">
             <button className="w-auto rounded-lg flex items-center justify-center gap-x-2 border bg-white p-4 px-8  shadow-lg group">
               <span className="font-bold text-[#122B59] md:text-lg text-sm">
-                Know more about us
+                Know More About Us
               </span>
               <img
                 src="/arrow-double-end.svg"
