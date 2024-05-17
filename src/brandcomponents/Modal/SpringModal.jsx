@@ -126,7 +126,6 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
               </h1>
               <p className="text-black text-center">
                 Just fill in the form, and let our experts handle the rest.
-                Here’s what will happen next:
               </p>
             </div>
             <div className="relative p-5">
@@ -217,7 +216,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                   </label>
                 </div>
                 <div className="flex flex-col md:flex-row w-full md:gap-6 ">
-                  <div className="relative z-0 md:w-[30%] w-full  group">
+                  <div className="relative z-0 md:w-[70%] w-full  group">
                     <select
                       name="country"
                       value={formData.country}
@@ -264,7 +263,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     </label>
                   </div>
                   
-                  <div className="relative z-0 md:w-[70%] w-full mt-5 md:mt-0 md:mb-0  group">
+                  <div className="relative z-0 md:w-[30%] w-full mt-5 md:mt-0 md:mb-0  group">
                     <input
                       type="tel"
                       name="phoneNumber"
@@ -301,16 +300,16 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     Company name <span className="text-sm">(optional)</span>
                   </label>
                 </div>
-                <div className="relative z-0 w-full mb-5 group flex items-center gap-5">
+                <div className="relative z-0 w-full mb-5 group flex border items-center gap-5 ">
                   <input
                     type="checkbox"
-                    className="w-5 h-5"
+                    className="w-6 h-6"
                     onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                     checked={isCheckboxChecked}
                   />
-                  <p className="text-black md:text-lg text-sm">
+                  <p className="text-black md:text-lg text-sm ">
                     I agree to share my above information for Aimtech Marketing
-                    and Promotional activities
+                    and Promotional activities.
                   </p>
                 </div>
                 <div className="flex ">

@@ -389,7 +389,7 @@ const Navbar = () => {
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
                       {servicedata.map((service, idx) => (
                         <Link key={idx} href={service.pagelink}>
-                          <div className="h-full text-black p-4 shadow-xl hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
+                          <div className="h-full text-black p-4  hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
                             <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
                               {service.icon}
                               <h1 className="font-bold">{service.title}</h1>

@@ -207,7 +207,7 @@ const ExampleWrapper = () => {
                   </label>
                 </div>
                 <div className="flex flex-col md:flex-row w-full md:gap-6">
-                  <div className="relative z-0 md:w-[30%] w-full mb-5 md:mb-0 group">
+                  <div className="relative z-0 md:w-[70%] w-full mb-5 md:mb-0 group">
                     <select
                       name="country"
                       value={formData.country}
@@ -254,7 +254,7 @@ const ExampleWrapper = () => {
                     </label>
                   </div>
 
-                  <div className="relative z-0 md:w-[70%] w-full mt-5 md:mt-0  group">
+                  <div className="relative z-0 md:w-[30%] w-full mt-5 md:mt-0  group">
                     <input
                       type="tel"
                       name="phoneNumber"
@@ -292,7 +292,7 @@ const ExampleWrapper = () => {
                     Company name <span className="text-sm">(optional)</span>
                   </label>
                 </div>
-                <div className="relative z-0 w-full mb-5 group flex items-center gap-5">
+                <div className="relative z-0 w-full mb-5 group flex  gap-5">
                   <input
                     type="checkbox"
                     className="w-5 h-5"
@@ -301,7 +301,7 @@ const ExampleWrapper = () => {
                   />
                   <p className="text-black text-lg">
                     I agree to share my above information for Aimtech Marketing
-                    and Promotional activities
+                    and Promotional activities.
                   </p>
                 </div>
                 <div className="flex ">

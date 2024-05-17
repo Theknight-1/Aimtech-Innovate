@@ -243,7 +243,7 @@ const ContactPage = () => {
                   </label>
                 </div>
                 <div className="flex flex-col md:flex-row w-full md:gap-6">
-                  <div className="relative z-0 md:w-[30%] w-full  group">
+                  <div className="relative z-0 md:w-[70%] w-full  group">
                     <select
                       name="country"
                       value={formData.country}
@@ -290,7 +290,7 @@ const ContactPage = () => {
                     </label>
                   </div>
                   
-                  <div className="relative z-0 md:w-[70%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
+                  <div className="relative z-0 md:w-[30%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
                     <input
                       type="tel"
                       name="phoneNumber"
