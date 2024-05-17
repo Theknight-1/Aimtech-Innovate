@@ -6,9 +6,10 @@ import { FiAlertCircle } from "react-icons/fi";
 import { IoIosCloseCircle } from "react-icons/io";
 import emailjs from "@emailjs/browser";
 
-const ExampleWrapper = ({ isOpen = true }) => {
+const ExampleWrapper = () => {
   const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
   const [loading, setLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [formData, setFormData] = useState({
     email: "",
     fullName: "",
@@ -69,7 +70,7 @@ const ExampleWrapper = ({ isOpen = true }) => {
       return;
     }
 
-    const message = { ...formData , phoneCode };
+    const message = { ...formData, phoneCode };
     setLoading(true);
     emailjs
       .send(
