@@ -105,11 +105,12 @@ const ContactPage = () => {
               Get Seen, Get Heard, Get Found Online
             </h1>
             <p className=" text-justify text-xl lg:text-2xl leading-normal">
-              If you are a business owner and want to increase your profit, then
-              contact Aim Tech Innovate. Schedule a meeting to discuss, how Aim
-              Tech Innovate can help you boost your sales and revenue like
-              crazy! So, tell us what you desire by filling out the form below.
-              We will contact you very soon.
+              We are glad to see your interest in Aimtech Innovate. We are a
+              Canada based digital marketing agency providing all kinds of
+              digital marketing services such as SEO, Social Media Marketing,
+              Email Marketing, PPC, Google Adwords and Facebook Ads, and Web
+              Development. Here are 4 reasons why you should opt us as your
+              digital marketing agency:
             </p>
             <div className="space-y-3 lg:space-y-5">
               <p className="flex items-center gap-6  text-xl lg:text-2xl">
@@ -142,7 +143,7 @@ const ContactPage = () => {
         </div>
         <div className="flex-1 flex items-center justify-center h-full text-brand-primary">
           <div className="bg-white rounded-lg lg:rounded-[4rem] space-y-5 lg:w-[90%] p-4 md:p-8 lg:py-10 xl:p-16 ">
-            <h1 className="text-2xl text-brand-secondary lg:text-4xl font-bold">
+            <h1 className="text-2xl text-primary lg:text-4xl font-bold">
               Get in touch
             </h1>
             <p className="font-bold text-lg lg:text-xl">
@@ -200,8 +201,11 @@ const ContactPage = () => {
                     className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     required
                   >
-                    <option value="Select Digital Presence Services">
-                    Select Digital Presence Services
+                    <option
+                      value="Select Digital Presence Services"
+                      disabled={true}
+                    >
+                      Select Digital Presence Services
                     </option>
                     <option value="Web Design and Development">
                       Web Design and Development
@@ -239,7 +243,7 @@ const ContactPage = () => {
                   </label>
                 </div>
                 <div className="flex flex-col md:flex-row w-full md:gap-6">
-                  <div className="relative z-0 md:w-[30%] w-full mb-5 group">
+                  <div className="relative z-0 md:w-[30%] w-full  group">
                     <select
                       name="country"
                       value={formData.country}
@@ -298,7 +302,7 @@ const ContactPage = () => {
                       {formData.country === "United States" ? "+1" : phoneCode}
                     </h1>
                   </div>
-                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0 md:mb-5 group">
+                  <div className="relative z-0 md:w-[60%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
                     <input
                       type="tel"
                       name="phoneNumber"
@@ -339,6 +343,7 @@ const ContactPage = () => {
                 <div className="relative z-0 w-full mb-5 group flex items-center gap-5">
                   <input
                     type="checkbox"
+                    className="w-5 h-5"
                     onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                     checked={isCheckboxChecked}
                   />
@@ -363,15 +368,6 @@ const ContactPage = () => {
                   </button>
                 </div>
               </form>
-              <article className="font-bold text-lg lg:text-xl mt-3">
-                Need to reach us right away? Here’s where you can find us.
-                <br />
-                Phone +1 905-399-6642
-                <br />
-                Email support@aimtechinnovate.com
-                <br />
-                Address 1188 settlers St. Windsor Ontario N9G2W7 Canada
-              </article>
             </div>
           </div>
         </div>

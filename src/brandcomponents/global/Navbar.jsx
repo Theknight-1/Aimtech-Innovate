@@ -277,7 +277,7 @@ const Navbar = () => {
               <img
                 src={imageUrl}
                 className={` p-1 object-scale-down ${
-                  scrolling ? "w-32" : "w-28  lg:w-40 xl:w-48"
+                  scrolling ? "w-32 " : "w-28  lg:w-40 xl:w-48"
                 }`}
                 alt="logo"
               />
@@ -349,8 +349,8 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
-            <ul className=" hidden lg:flex items-center justify-center lg:gap-5 xl:gap-10 2xl:gap-12 text-lg xl:text-xl">
-              <li className="relative block py-6  ">
+            <ul className={` hidden lg:flex items-center justify-center lg:gap-5 xl:gap-10 2xl:gap-12 text-lg xl:text-xl ${scrolling ? "font-bold" : "font-normal"}`}>
+              <li className="relative block py-4  ">
                 <Link
                   href="/"
                   className="border-b border-transparent   hover:border-brand-secondary cursor-pointer "
@@ -358,7 +358,7 @@ const Navbar = () => {
                   <span>Home</span>
                 </Link>
               </li>
-              <li className="relative block py-6  ">
+              <li className="relative block py-4  ">
                 <Link
                   href="/about"
                   className="border-b border-transparent hover:border-brand-secondary cursor-pointer"
@@ -367,7 +367,7 @@ const Navbar = () => {
                 </Link>
               </li>
               {/* Hoverable Link */}
-              <li className="hoverable group py-6  relative ">
+              <li className="hoverable group py-4  relative ">
                 <Link
                   href="#"
                   className="border-b border-transparent hover:border-brand-secondary  flex justify-center items-center"
@@ -383,7 +383,7 @@ const Navbar = () => {
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-5" : ""
+                      scrolling ? "-top-7" : ""
                     }`}
                   >
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
@@ -415,7 +415,7 @@ const Navbar = () => {
                   {/* Third Column */}
                 </div>
               </li>
-              <li className="hoverable group py-6  relative  ">
+              <li className="hoverable group py-4  relative  ">
                 <Link
                   href="#"
                   className="border-b border-transparent hover:border-brand-secondary cursor-pointer flex justify-center items-center"
@@ -431,7 +431,7 @@ const Navbar = () => {
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-5" : ""
+                      scrolling ? "-top-7" : ""
                     }`}
                   >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
@@ -651,7 +651,7 @@ const Navbar = () => {
                   {/* Third Column */}
                 </div>
               </li>
-              <li className="relative block py-6 ">
+              <li className="relative block py-4 ">
                 <Link
                   href="/contact"
                   className="border-b border-transparent hover:border-brand-secondary cursor-pointer"

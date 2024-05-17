@@ -18,7 +18,7 @@ const ThirdPage = () => {
               </p>
               <div className=" w-full">
                 <Link href="/contact">
-                  <button className="bg-brand-primary px-8 lg:px-12 py-3 text-white rounded-lg">
+                  <button className="bg-brand-primary px-8 lg:px-12 py-3 text-white rounded-lg font-bold">
                   LET’S SCHEDULE
                   </button>
                 </Link>

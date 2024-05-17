@@ -162,7 +162,7 @@ const ExampleWrapper = () => {
                     className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     required
                   >
-                    <option value="Select Digital Presence Services">
+                    <option value="Select Digital Presence Services" disabled={true}>
                       Select Digital Presence Services
                     </option>
                     <option value="Web Design and Development">
@@ -206,6 +206,7 @@ const ExampleWrapper = () => {
                       name="country"
                       value={formData.country}
                       onChange={handleCountryChange}
+                      
                       className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       required
                     >
@@ -301,6 +302,7 @@ const ExampleWrapper = () => {
                 <div className="relative z-0 w-full mb-5 group flex items-center gap-5">
                   <input
                     type="checkbox"
+                    className="w-5 h-5"
                     onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                     checked={isCheckboxChecked}
                   />

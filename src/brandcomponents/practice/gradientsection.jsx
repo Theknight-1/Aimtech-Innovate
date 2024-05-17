@@ -9,11 +9,11 @@ export default function GradientSection() {
     "Select Digital Presence Services"
   );
   const [isOpen, setIsOpen] = useState(false);
+  const [newValue, setNewValue] = useState("");
 
   const handleSelectChange = (e) => {
-    const newValue = e.target.value;
-
-    setSelectedOption(newValue);
+    setSelectedOption(e.target.value);
+    setNewValue(e.target.value);
     // Open modal only when a different value is selected
   };
 
@@ -57,8 +57,11 @@ export default function GradientSection() {
                       onChange={handleSelectChange}
                       className="block font-bold appearance-none w-full bg-white border-gray-300 text-gray-800 text-xl py-5 px-4 pr-8 leading-tight rounded-tl-lg rounded-bl-lg"
                     >
-                      <option value="Select Digital Presence Services">
-                      Select Digital Presence Services
+                      <option
+                        value="Select Digital Presence Services"
+                        disabled={true}
+                      >
+                        Select Digital Presence Services
                       </option>
                       <option value="Web Design and Development">
                         Web Design and Development
@@ -81,9 +84,7 @@ export default function GradientSection() {
                   </div>
                 </div>
                 <button
-                  onClick={() => {
-                    setIsOpen(true);
-                  }}
+                  onClick={() => newValue && setIsOpen(true)}
                   className="inline-flex font-semibold w-max items-center justify-center px-8 lg:py-4 lg:text-lg md:py-4 sm:py-3 py-2.5 md:text-lg text-sm text-center text-gray-900 bg-brand-secondary hover:bg-yellow-400] dark:text-black/80  dark:bg-[#FFB700] dark:hover:bg-[#ffb700d3] dark:border-gray-700 rounded-tr-lg rounded-br-lg "
                 >
                   Get Started

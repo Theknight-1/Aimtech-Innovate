@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { FiAlertCircle } from "react-icons/fi";
-import { IoIosCloseCircle } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
 
 const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
@@ -105,20 +105,20 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           // onClick={() => setIsOpen(false)}
-          className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer fixed w-[100vw] h-[100vh] left-0 "
+          className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll  fixed w-[100vw] h-[100vh] left-0 "
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white text-white p-5 rounded-lg w-full max-w-4xl shadow-xl cursor-default relative overflow-hidden "
+            className="bg-white text-white p-5 rounded-lg w-full max-w-3xl shadow-xl cursor-default relative overflow-hidden "
           >
             <span
               className="absolute z-10  text-black md:right-5 right-2 md:top-5 top-5 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
-              <IoIosCloseCircle size={30} />
+              <IoCloseSharp  size={30} />
             </span>
             <div className=" space-y-4">
               <h1 className="text-black text-center text-5xl font-bold">
@@ -317,6 +317,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                 <div className="relative z-0 w-full mb-5 group flex items-center gap-5">
                   <input
                     type="checkbox"
+                    className="w-5 h-5"
                     onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                     checked={isCheckboxChecked}
                   />
@@ -336,7 +337,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     {loading ? (
                       <div className="animate-spin h-7 w-7  border-t-2 border-black rounded-full "></div>
                     ) : (
-                      <h1>Submit</h1>
+                      <h1>Get My Custom Quote</h1>
                     )}
                   </button>
                 </div>
