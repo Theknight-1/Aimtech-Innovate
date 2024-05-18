@@ -27,19 +27,22 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolling(true);
+        setImageUrl("/brand/logo/blue-logo.png");
+      } else {
+        setScrolling(false);
+        setImageUrl("/brand/logo/logoFinal.png");
+      }
+    };
+
+    // Check the scroll position on initial render
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleScroll = () => {
-    if (window.scrollY > 20) {
-      setScrolling(true);
-      setImageUrl("/brand/logo/blue-logo.png");
-    } else {
-      setScrolling(false);
-      setImageUrl("/brand/logo/logoFinal.png");
-    }
-  };
 
   const servicedata = [
     {
@@ -104,44 +107,7 @@ const Navbar = () => {
     },
   ];
 
-  const services = [
-    {
-      "SEO & Lead Generation": [
-        "SEO Services",
-        "Enterprise SEO Services",
-        "Digital Maketing Service",
-        "Local SEO Services",
-        "Google Local Service Ads",
-      ],
-    },
-    {
-      "Revenue Marketing & CRO": [
-        "SEO Services",
-        "Enterprise SEO Services",
-        "Digital Maketing Service",
-        "Local SEO Services",
-        "Google Local Service Ads",
-      ],
-    },
-    {
-      "UX & Interactive": [
-        "SEO Services",
-        "Enterprise SEO Services",
-        "Digital Maketing Service",
-        "Local SEO Services",
-        "Google Local Service Ads",
-      ],
-    },
-    {
-      Technology: [
-        "SEO Services",
-        "Enterprise SEO Services",
-        "Digital Maketing Service",
-        "Local SEO Services",
-        "Google Local Service Ads",
-      ],
-    },
-  ];
+
   const caseStudiesData = [
     {
       category: "Email related",
@@ -149,19 +115,19 @@ const Navbar = () => {
       data: [
         {
           title: "Next coach",
-          link:"",
+          link: "",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
         {
           title: "ABC company",
-          link:"",
+          link: "",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
         {
           title: "Rk builders",
-          link:"",
+          link: "",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
@@ -173,19 +139,19 @@ const Navbar = () => {
       data: [
         {
           title: "fultime service for automobiles",
-          link:"/casestudy/full-time-operatonal-services-for-automobile",
+          link: "/casestudy/full-time-operatonal-services-for-automobile",
           description:
             "Aimtech Innovate provided comprehensive IT infrastructure ..",
         },
         {
           title: "SEO For Fintech",
-          link:"/casestudy/seo-for-fintech",
+          link: "/casestudy/seo-for-fintech",
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
         },
         {
           title: "Canada Market",
-          link:"",
+          link: "",
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company..",
         },
@@ -197,19 +163,19 @@ const Navbar = () => {
       data: [
         {
           title: "CRM For Fintech",
-          link:"/casestudy/crm-for-fintech",
+          link: "/casestudy/crm-for-fintech",
           description:
             "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
         },
         {
           title: "high-school web design",
-          link:"/casestudy/web-design-for-high-school",
+          link: "/casestudy/web-design-for-high-school",
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
         },
         {
           title: "Google Tags",
-          link:"",
+          link: "",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
@@ -221,19 +187,19 @@ const Navbar = () => {
       data: [
         {
           title: "social-media-marketing-for-ai-startup",
-          link:"/casestudy/social-media-marketing-for-ai-startup",
+          link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
         {
           title: "FANGG",
-          link:"",
+          link: "",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
         {
           title: "Meta Vr",
-          link:"",
+          link: "",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
         },
@@ -265,15 +231,19 @@ const Navbar = () => {
     setServicesOpen(false);
     setCaseStudiesOpen(false);
     setOpenCategory(false);
-    setMobileNav((pre) => !pre);
+    setMobileNav((prev) => !prev);
   };
 
   const toggleServices = () => {
-    setServicesOpen(!servicesOpen);
+    setServicesOpen((prev) => !prev);
+    setCaseStudiesOpen(false);
+    setOpenCategory(false);
   };
 
   const toggleCaseStudies = () => {
-    setCaseStudiesOpen(!caseStudiesOpen);
+    setCaseStudiesOpen((prev) => !prev);
+    setServicesOpen(false);
+    setOpenCategory(false);
   };
   return (
     <>
@@ -361,7 +331,9 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
-            <ul className={` hidden lg:flex items-center justify-center lg:gap-5 xl:gap-10 2xl:gap-12 text-lg xl:text-xl `}>
+            <ul
+              className={` hidden lg:flex items-center justify-center lg:gap-5 xl:gap-10 2xl:gap-12 text-lg xl:text-xl `}
+            >
               <li className="relative block py-2  ">
                 <Link
                   href="/"
@@ -395,7 +367,7 @@ const Navbar = () => {
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-12" : ""
+                      scrolling ? "-top-5" : ""
                     }`}
                   >
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
@@ -443,35 +415,41 @@ const Navbar = () => {
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-12" : ""
+                      scrolling ? "-top-5" : ""
                     }`}
                   >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
                       <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-6  ">
-                        {caseStudiesData.map((ckey,index)=>(                      
-                        <div key={index} className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  ">
-                          <h1 className="font-bold text-blue-500 text-xl ">
-                             {ckey.category}
-                          </h1>
-                          {ckey.data.map((cstudy,idx)=>(
-                            <div key={idx} className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer">
-                            <span>📑</span>
+                        {caseStudiesData.map((ckey, index) => (
+                          <div
+                            key={index}
+                            className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  "
+                          >
+                            <h1 className="font-bold text-blue-500 text-xl ">
+                              {ckey.category}
+                            </h1>
+                            {ckey.data.map((cstudy, idx) => (
+                              <div
+                                key={idx}
+                                className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer"
+                              >
+                                <span>📑</span>
 
-                            <div className="flex flex-col items-start gap-2 ">
-                              <Link href={cstudy.link}><span className=" font-bold">{cstudy.title}</span></Link>
+                                <div className="flex flex-col items-start gap-2 ">
+                                  <Link href={cstudy.link}>
+                                    <span className=" font-bold">
+                                      {cstudy.title}
+                                    </span>
+                                  </Link>
 
-                              <article className="text-sm">
-                                {cstudy.description}
-                              </article>
-                            </div>
+                                  <article className="text-sm">
+                                    {cstudy.description}
+                                  </article>
+                                </div>
+                              </div>
+                            ))}
                           </div>
-                          ))}
-                          
-                         
-                        </div>
-                         ))}
-
-                        
+                        ))}
                       </div>
 
                       <div className="lg:w-1/4 hidden xl:block h-auto rounded-lg  bg-brand-secondary hover:shadow-2xl  p-8 lg:p-5 xl:p-3 overflow-hidden text-wrap ">

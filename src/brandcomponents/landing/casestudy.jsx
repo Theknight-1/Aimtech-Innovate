@@ -117,7 +117,7 @@ export default function CaseStudies() {
                 <br />
                 <Link
                   href={study.link}
-                  className="bg-brand-secondary hover:bg-yellow-400 w-1/2 text-center p-3 rounded-lg text-white"
+                  className="bg-brand-secondary hover:bg-yellow-400 w-1/2 text-center p-3 rounded-lg text-brand-primary"
                 >
                   <p>Learn more...</p>
                 </Link>

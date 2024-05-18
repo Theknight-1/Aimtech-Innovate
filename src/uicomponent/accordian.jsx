@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Accordion = ({
   title,
@@ -7,28 +7,38 @@ const Accordion = ({
   index,
   selectedIndex,
   setSelectedIndex,
-  style = 'bg-[#1B1B1B] group  rounded-xl',
-  textcolor = 'text-white'
+  style = "bg-[#1B1B1B] group rounded-xl",
+  textcolor = "text-white",
 }) => {
   const isOpen = index === selectedIndex;
+  const [maxHeight, setMaxHeight] = useState("0");
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      setMaxHeight(`${contentRef.current.scrollHeight}px`);
+    } else {
+      setMaxHeight("0");
+    }
+  }, [isOpen]);
+
+  const handleClick = () => {
+    setSelectedIndex(isOpen ? null : index);
+  };
 
   return (
-    <div
-      className={`${style} ${
-        isOpen ? textcolor : "text-white"
-      }`}
-    >
+    <div className={`${style} ${isOpen ? textcolor : "text-white"}`}>
       <div
         className="flex justify-between items-center p-4 px-6 cursor-pointer"
-        onClick={() => setSelectedIndex(isOpen ? null : index)}
+        onClick={handleClick}
       >
-        <div className="flex gap-x-4 items-center ">
-          <h2 className=" text-sm sm:text-lg md:text-xl xl:text-2xl">
-            {title}
-          </h2>
+        <div className="flex gap-x-4 items-center">
+          <h2 className="text-sm sm:text-lg md:text-xl xl:text-2xl">{title}</h2>
         </div>
         <svg
-          className={`w-6 h-6 ${isOpen ? "transform rotate-180" : ""}`}
+          className={`w-6 h-6 transition-transform duration-300 ${
+            isOpen ? "transform rotate-180" : ""
+          }`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -42,15 +52,15 @@ const Accordion = ({
         </svg>
       </div>
       <div
-        className="px-6"
+        ref={contentRef}
+        className="px-6 overflow-hidden transition-max-height"
         style={{
-          maxHeight: isOpen ? "1000px" : "0", // Set max height based on open/close state
-          overflow: "hidden", // Hide overflow when closed
-          transition: `max-height 0.6s ease-in-out`, // Adding transition with different duration based on open/close state
+          maxHeight: maxHeight,
+          transition: `max-height ${isOpen ? "0.6s" : "0.3s"} ease-in`,
         }}
       >
         <div className="flex items-start flex-col justify-center">
-          <article className="text-sm sm:text-sm md:text-lg  py-3">
+          <article className="text-sm sm:text-sm md:text-lg py-3">
             {content}
           </article>
         </div>

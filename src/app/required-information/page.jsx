@@ -7,8 +7,68 @@ import { IoIosCloseCircle } from "react-icons/io";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
+const DeleteConfirmationModal = ({
+  confirmation,
+  setConfirmation,
+  isOpen,
+  setIsOpen,
+}) => {
+  const handleClose = () => {
+    setIsOpen(!isOpen);
+    setConfirmation(!confirmation);
+  };
+  return (
+    confirmation && (
+      <div
+        id="deleteModal"
+        tabIndex="-1"
+        aria-hidden="true"
+        className="fixed inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto overflow-x-hidden"
+      >
+        <div className="relative p-4 w-full max-w-md h-full md:h-auto">
+          <div className="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5 ">
+            <button
+              type="button"
+              className="text-gray-400 absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white "
+              onClick={handleClose}
+            >
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <span className="sr-only">Close modal</span>
+            </button>
+            <p className="mb-4 text-gray-500 dark:text-gray-300 p-3">
+              Thank you. I will get back to you as soon as possible.
+            </p>
+            <div className="flex justify-center items-center space-x-4">
+              <button
+                type="submit"
+                onClick={handleClose}
+                className="py-2 px-3 text-sm font-medium text-center text-brand-primary  rounded-lg  bg-brand-secondary hover:bg-yellow-400"
+              >
+                Thank you
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+};
+
 const ExampleWrapper = () => {
   const [imageUrl, setImageUrl] = useState("/brand/logo/logoFinal.png");
+  const [confirmation, setConfirmation] = useState(false);
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
   const [formData, setFormData] = useState({
@@ -83,7 +143,7 @@ const ExampleWrapper = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setConfirmation(!confirmation);
           setFormData({
             email: "",
             fullName: "",
@@ -102,8 +162,8 @@ const ExampleWrapper = () => {
   };
 
   return (
-    <AnimatePresence>
-      {isOpen && (
+    <>
+      <AnimatePresence>
         <div className="min-h-screen w-full flex flex-col items-center justify-center lg:gap-5 gap-3 p-4 sm:p-6 md:p-8 lg:p-3 xl:p-5">
           <div className="text-center p-5">
             <Link href={"/"}>
@@ -283,7 +343,6 @@ const ExampleWrapper = () => {
                     onChange={handleInputChange}
                     className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=""
-                    required
                   />
                   <label
                     htmlFor="floating_company_name"
@@ -323,8 +382,18 @@ const ExampleWrapper = () => {
             </div>
           </div>
         </div>
+      </AnimatePresence>
+      {confirmation && (
+        <div className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll  fixed w-[100vw] h-[100vh] left-0 ">
+          <DeleteConfirmationModal
+            confirmation={confirmation}
+            setConfirmation={setConfirmation}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
+        </div>
       )}
-    </AnimatePresence>
+    </>
   );
 };
 
