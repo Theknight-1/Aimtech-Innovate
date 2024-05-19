@@ -74,7 +74,7 @@ export default function Pland({faqdata = []}) {
                     Contact us , we will help you.
                   </span>{" "}
                   <br />
-                  <div className=" mt-12 w-full h-full p-4">
+                  <div className=" mt-4 w-full h-full p-4">
                     <Link
                       href="tel:+1905-399-6642"
                       className="bg-brand-secondary hover:bg-yellow-400 w-max h-full xl:p-5 lg:p-3 md:p-4 p-4 xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-[#141F39] rounded mt-4 "
