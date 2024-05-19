@@ -13,39 +13,6 @@ const ProvidedSchems = () => {
   return (
     <div className=" grid lg:gap-10 gap-8  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-gray-300 p-2 md:p-0">
       <div className="">
-        <div className=" xl:mb-4 text-lg font-semibold">Services</div>
-        <nav aria-label="Guides Navigation" className="">
-          <ul className="lg:space-y-3 space-y-2 text-sm">
-            <li>
-              <a className=" hover:underline" href="#">
-                Web design & development
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Pay-Per-Click Advertisement
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Search Engine Optimization
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Social Media Management
-              </a>
-            </li>
-            <li>
-              <a className=" hover:underline" href="#">
-                Email Marketing
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Company</div>
         <nav aria-label="Footer Navigation" className="">
           <ul className=" lg:space-y-2 space-y-1 text-sm">
@@ -55,35 +22,69 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/about">
                 Blog
               </a>
             </li>
 
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/about">
                 Media Coverage
               </a>
             </li>
           </ul>
         </nav>
       </div>
+     <div className="">
+        <div className=" xl:mb-4 text-lg font-semibold">Services</div>
+        <nav aria-label="Guides Navigation" className="">
+          <ul className="lg:space-y-3 space-y-2 text-sm">
+            <li>
+              <a className=" hover:underline" href="/services/web-development">
+                Web design & development
+              </a>
+            </li>
+            <li>
+              <a className=" hover:underline" href="/services/ppc-advertisement">
+                Pay-Per-Click Advertisement
+              </a>
+            </li>
+            <li>
+              <a className=" hover:underline" href="/services/seo-service">
+                Search Engine Optimization
+              </a>
+            </li>
+            <li>
+              <a className=" hover:underline" href="/services/social-media-marketing">
+                Social Media Management
+              </a>
+            </li>
+            <li>
+              <a className=" hover:underline" href="/services/email-marketing">
+                Email Marketing
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+     
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Case studies</div>
         <nav aria-label="Footer Navigation" className="">
           <ul className="lg:space-y-2 space-y-1 text-sm ">
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/casestudy">
                 Popular
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/casestudy">
                 Recent
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/casestudy">
                 Tranding
               </a>
             </li>
@@ -100,12 +101,12 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="terms-and-conditions">
+              <a className=" hover:underline" href="/terms-and-conditions">
                 T & C
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/contact" target="_blank">
+              <a className=" hover:underline" href="/privacy-policy" target="_blank">
                 Privacy Policy
               </a>
             </li>
@@ -442,13 +443,13 @@ export default function Footer() {
             <span className="text-xl">
               <LuPhoneCall />
             </span>
-            <span>+1 905 399 6642</span>
+            <span><a href="tel:+1 905 399 6642">+1 905 399 6642</a> </span>
           </div>
           <div className="flex items-center gap-5 ">
             <span className="text-xl">
               <CiMail />
             </span>
-            <span>support@aimtechinnovate.com</span>
+            <span><a href="mailto:support@aimtechinnovate.com">support@aimtechinnovate.com</a></span>
           </div>
 
           <div className="flex flex-row items-center justify-start text-2xl gap-4 ">
