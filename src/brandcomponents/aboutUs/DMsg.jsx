@@ -7,14 +7,14 @@ const DMsg = () => {
   return (
     <>
       <section className=" h-auto w-full  p-4 md:p-6 lg:mt-12  lg:px-16  overflow-hidden">
-        <h1 className=" text-5xl lg:text-6xl text-brand-secondary font-bold text-center mb-3 ">
+        <span className=" text-5xl lg:text-6xl text-brand-secondary font-bold text-center mb-3 ">
          Director’s Message
-        </h1>
-        <div className="flex  flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:h-[70%]">
+        </span>
+        <div className="flex  p-4 mt-10  flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:h-[70%]">
           <div className="flex-1 lg:w-1/3 flex flex-col items-center justify-center ">
-            <div className=" ">
+            <div className=" w-2/3 ">
               <img
-                src="/about/TeamMember.png"
+                src="/director-aimtech.jpeg"
                 alt="Team Member"
                 className="w-9/12 lg:w-auto h-auto object-cover rounded-lg shadow-2xl"
               />
@@ -49,15 +49,15 @@ const DMsg = () => {
               <div className="space-y-2 lg:space-y-6">
                 <div className="flex items-center gap-4">
                   <FaSignal className="text-xl lg:text-3xl" />
-                  <h1 className="text-lg lg:text-xl">Great Success </h1>
+                  <span className="text-lg lg:text-xl">Great Success </span>
                 </div>
                 <p className="text-gray-300">
                   Our focus is on your success. We treat you actively with confidence and care. Team puts passion into the delivery of each project and excels at world-class quality standards. And this is exactly how we manage any project to run effectively and well above our client’s expectations.
                 </p>
                 <div className="flex items-center gap-4">
                   <AiOutlinePieChart className="text-xl lg:text-3xl" />
-                  <h1 className="text-lg lg:text-xl">Our commitment
-                  </h1>
+                  <span className="text-lg lg:text-xl">Our commitment
+                  </span>
                 </div>
                 <p className="text-gray-300">
                   We are your success partner for today and beyond. We keep the promises we make and keep being a persistently improving organization in all aspects of our work.
@@ -65,8 +65,8 @@ const DMsg = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <IoBagHandleOutline className="text-xl lg:text-3xl" />
-                  <h1 className="text-lg lg:text-xl">Team collaborate
-                  </h1>
+                  <span className="text-lg lg:text-xl">Team collaborate
+                  </span>
                 </div>
                 <p className="text-gray-300">
                   Our teamwork culture ensures that everyone is held responsible, and our commitments to you will be the same as they were. With years of combined knowledge, we can identify the top-notch results for your particular task.

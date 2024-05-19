@@ -1,7 +1,21 @@
 User-agent: *
+Disallow: /required-information 
 Disallow: 
 Disallow: /cgi-bin/
+sitemap: https://aimtechinnovate.com/sitemap.xml
 Allow: /about
 Allow: /contact
-Allow: /casestudies
-Allow: services/seo-service
+Allow: /casestudy
+Allow: /services/seo-service
+Allow: /services/web-development
+Allow: /services/email-marketing
+Allow: /services/ppc-advertisement
+Allow: /services/social-media-marketing
+Allow: /casestudy/crm-for-fintech
+Allow: /casestudy/full-time-operatonal-services-for-automobile
+Allow: /casestudy/seo-for-fintech
+Allow: /casestudy/social-media-marketing-for-ai-startup
+Allow: /casestudy/web-design-for-high-school
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+

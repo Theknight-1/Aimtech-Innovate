@@ -85,7 +85,7 @@ export default function GradientSection() {
                 </div>
                 <button
                   onClick={() => newValue && setIsOpen(true)}
-                  className="inline-flex font-semibold w-max items-center justify-center px-8 lg:py-4 lg:text-lg md:py-4 sm:py-3 py-2.5 md:text-lg text-sm text-center text-gray-900 bg-brand-secondary hover:bg-yellow-400] dark:text-black/80  dark:bg-[#FFB700] dark:hover:bg-[#ffb700d3] dark:border-gray-700 rounded-tr-lg rounded-br-lg "
+                  className="inline-flex font-semibold w-max items-center justify-center px-8 lg:py-4 lg:text-lg md:py-4 sm:py-3 py-2.5 md:text-lg text-sm text-center text-gray-900 bg-brand-secondary hover:bg-yellow-300 dark:text-black/80  dark:bg-[#FFB700] dark:hover:bg-[#ffb700d3] dark:border-gray-700 rounded-tr-lg rounded-br-lg "
                 >
                   Get Started
                 </button>

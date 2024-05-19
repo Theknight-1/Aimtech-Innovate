@@ -19,9 +19,9 @@ const Carousel = () => {
                   <div className=" flex items-center justify-center">
                     <img src="/about/laughing.png" alt="img" className="" />
                   </div>
-                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                  <span className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                     Good to Great Culture
-                  </h1>
+                  </span>
                   <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
                     <span>+ Methodical</span>
                     <span>+ Proactive</span>
@@ -35,9 +35,9 @@ const Carousel = () => {
                   <div className=" flex items-center justify-center">
                     <img src="/about/laughing.png" alt="img" className="" />
                   </div>
-                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                  <span className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                     Good to Great Culture
-                  </h1>
+                  </span>
                   <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
                     <span>+ Methodical</span>
                     <span>+ Proactive</span>
@@ -51,9 +51,9 @@ const Carousel = () => {
                   <div className=" flex items-center justify-center">
                     <img src="/about/laughing.png" alt="img" className="" />
                   </div>
-                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                  <span className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                     Good to Great Culture
-                  </h1>
+                  </span>
                   <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
                     <span>+ Methodical</span>
                     <span>+ Proactive</span>
@@ -67,9 +67,9 @@ const Carousel = () => {
                   <div className=" flex items-center justify-center">
                     <img src="/about/laughing.png" alt="img" className="" />
                   </div>
-                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                  <span className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                     Good to Great Culture
-                  </h1>
+                  </span>
                   <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
                     <span>+ Methodical</span>
                     <span>+ Proactive</span>
@@ -83,9 +83,9 @@ const Carousel = () => {
                   <div className=" flex items-center justify-center">
                     <img src="/about/laughing.png" alt="img" className="" />
                   </div>
-                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                  <span className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                     Good to Great Culture
-                  </h1>
+                  </span>
                   <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
                     <span>+ Methodical</span>
                     <span>+ Proactive</span>
@@ -99,9 +99,9 @@ const Carousel = () => {
                   <div className=" flex items-center justify-center">
                     <img src="/about/laughing.png" alt="img" className="" />
                   </div>
-                  <h1 className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
+                  <span className="text-3xl font-bold  text-center mt-5 text-[#FFB700]">
                     Good to Great Culture
-                  </h1>
+                  </span>
                   <div className="flex flex-col space-y-3 text-white text-xl p-5  border-yellow-600 ">
                     <span>+ Methodical</span>
                     <span>+ Proactive</span>

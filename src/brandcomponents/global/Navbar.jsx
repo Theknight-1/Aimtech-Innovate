@@ -110,14 +110,14 @@ const Navbar = () => {
 
   const caseStudiesData = [
     {
-      category: "Email related",
+      category: "SMM related",
       icon: "📧",
       data: [
         {
-          title: "SEO For Fintech",
-          link: "/casestudy/seo-for-fintech",
+          title: "SMM for ai startup",
+          link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
-            "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
+            "Aimtech Innovate resolved many problems for AI startups..",
         },
        
       ],
@@ -152,7 +152,7 @@ const Navbar = () => {
             "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
         },
         {
-          title: "highschool web design",
+          title: "Highschool Web Design",
           link: "/casestudy/web-design-for-high-school",
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
@@ -165,7 +165,7 @@ const Navbar = () => {
       icon: "💰",
       data: [
         {
-          title: "SMM for ai startup",
+          title: "SMM For AI Atartup",
           link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
@@ -344,7 +344,7 @@ const Navbar = () => {
                           <div className="h-full text-black p-4  hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
                             <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
                               {service.icon}
-                              <h1 className="font-bold">{service.title}</h1>
+                              <span className="font-bold">{service.title}</span>
                             </div>
                             <ul className="mt-3 text-sm md:text-lg xl:text-xl font-semi-bold">
                               {service.services.map((srv, serviceIndex) => (
@@ -393,9 +393,9 @@ const Navbar = () => {
                             key={index}
                             className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  "
                           >
-                            <h1 className="font-bold text-blue-500 text-xl ">
+                            <span className="font-bold text-blue-500 text-xl ">
                               {ckey.category}
-                            </h1>
+                            </span>
                             {ckey.data.map((cstudy, idx) => (
                                <Link key={idx} href={cstudy.link}>
                               <div

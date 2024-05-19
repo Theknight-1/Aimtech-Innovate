@@ -56,7 +56,7 @@ export default function brandservice({ data }) {
               
               <br />
               <div>
-                <h1 className="lg:text-xl">Does this sound like you Business?</h1>
+                <span className="lg:text-xl">Does this sound like you Business?</span>
               </div>
               <br />
 
@@ -101,7 +101,7 @@ export default function brandservice({ data }) {
              
               <br />
               {/* <div>
-                <h1>Does this sound like you Business</h1>
+                <span>Does this sound like you Business</span>
               </div> */}
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">

@@ -14,12 +14,12 @@ export default function Hero() {
       </div>
       <div className=" flex items-center  justify-start">
         <div className="w-full lg:w-[40vw] h-[60vh] space-y-8  ">
-          <h1 className="text-brand-secondary text-xl uppercase text-center lg:text-left">
+          <span className="text-brand-secondary text-xl uppercase text-center lg:text-left">
             ABOUT OUR <span className="uppercase"> Services</span>
-          </h1>
-          <h1 className="text-[1rem] sm:text-[2rem]  lg:text-[4rem] text-white font-semibold text-center lg:text-left">
+          </span>
+          <span className="text-[1rem] sm:text-[2rem]  lg:text-[4rem] text-white font-semibold text-center lg:text-left">
             SERVICE TAGLINE
-          </h1>
+          </span>
           <p className="text-gray-200 text-lg text-center lg:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
             officiis dolores sapiente assumenda amet nihil ea temporibus fugiat

@@ -6,7 +6,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/png/seo-first.png",
+      "/CaseStudy/seo-fintech.jpg",
       title: "SEO For Fintech",
       link: "/casestudy/seo-for-fintech",
       description:
@@ -15,7 +15,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/png/ppc-ads.png",
+      "/CaseStudy/digital.jpg",
       title: "Fultime service for automobiles",
       link: "/casestudy/full-time-operatonal-services-for-automobile",
       description:
@@ -24,7 +24,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/png/smm-first.png",
+      "/CaseStudy/crm.jpg",
       title: "CRM For Fintech",
       link: "/casestudy/crm-for-fintech",
       description:
@@ -33,7 +33,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/png/web-first.png",
+      "/CaseStudy/education.jpg",
       title: "Highschool web design",
       link: "/casestudy/web-design-for-high-school",
       description:
@@ -42,7 +42,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/png/smm-second.png",
+      "/CaseStudy/social-media-ai.jpg",
       title: "SMM for ai startup",
       link: "/casestudy/social-media-marketing-for-ai-startup",
       description:
@@ -105,7 +105,7 @@ export default function CaseStudies() {
             <div className="flip-card-inner w-full h-full p-2">
               <div className="flip-card-front overflow-hidden">
                 <img
-                  className="w-full h-full object-fit "
+                  className="w-full h-full object-cover "
                   src={study.image}
                   alt=""
                 />

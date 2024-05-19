@@ -1,16 +1,10 @@
 'use client'
-import Image from "next/image";
-import React, { useState } from 'react';
-import Header from "../brandcomponents/global/Header"
-import Hero from "../brandcomponents/landing/hero"
+import React from 'react';
 // import Whyus from "../brandcomponents/landing/whyus"
 import Footer from "@/brandcomponents/global/footer";
-import Customer from "@/brandcomponents/landing/customer"
 import Pland from "@/brandcomponents/practice/landing"
 import Testimonial from "@/brandcomponents/landing/testimonial"
-import Carousel from "@/brandcomponents/practice/carousel"
 import GradientSection from "@/brandcomponents/practice/gradientsection"
-import Accordion from "@/uicomponent/accordian";
 import Hcta from '@/brandcomponents/landing/cta'
 import CaseStudies from '@/brandcomponents/landing/casestudy'
 import Services from '@/brandcomponents/landing/services'
@@ -23,7 +17,7 @@ import { NextSeo } from 'next-seo';
 
 
 export default function Home() {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  
 
   const accordionData = [
     {

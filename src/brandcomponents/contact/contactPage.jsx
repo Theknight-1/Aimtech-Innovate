@@ -201,9 +201,9 @@ const ContactPage = () => {
           </div>
           <div className="flex-1 flex items-center justify-center h-full text-brand-primary">
             <div className="bg-white rounded-lg lg:rounded-[4rem] space-y-5 lg:w-[90%] p-4 md:p-8 lg:py-10 xl:p-16 ">
-              <h1 className="text-2xl text-primary lg:text-4xl font-bold">
+              <span className="text-2xl text-primary lg:text-4xl font-bold">
                 Get in touch
-              </h1>
+              </span>
               <p className="font-bold text-lg lg:text-xl">
                 We always get started with a conversation to better understand
                 your needs, so fill in your details and one of our team will be
@@ -412,7 +412,7 @@ const ContactPage = () => {
                       {loading ? (
                         <div className="animate-spin h-7 w-7  border-t-2 border-black rounded-full "></div>
                       ) : (
-                        <h1>Submit</h1>
+                        <span>Submit</span>
                       )}
                     </button>
                   </div>

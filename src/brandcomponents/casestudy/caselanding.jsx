@@ -27,7 +27,7 @@ export default function CaseLanding({casedata}) {
               </div>
               {/* <p className=" text-lg">R & D on SEO</p> */}
             </div>
-            <div className=" flex flex-wrap justify-center gap-2 p-2 mt-6 " aria-label="Tags">
+            <div className=" flex flex-wrap justify-center gap-2 p-2 mt-6 mb-8 " aria-label="Tags">
             {cdata.keywords.map((keyword, index) => (
               <spna key={index} className="rounded-lg bg-brand-secondary text-brand-primary px-4 py-2 text-xl font-bold hover:bg-yellow-600">
                   {keyword}
@@ -35,7 +35,7 @@ export default function CaseLanding({casedata}) {
               ))}
               
             </div>
-            <h1 className="text-2xl lg:text-5xl font-bold mt-24">Our Achievements</h1>
+            <span className="text-2xl lg:text-5xl font-bold mt-24">Our Achievements</span>
           </header>
         </article>
       </section>
@@ -109,20 +109,20 @@ export default function CaseLanding({casedata}) {
         <div className="aspect-square h-auto lg:p-32  flex-1">
           <img
             className="h-full w-full object-fit"
-            src="/png/case-first.png"
+            src="/CaseStudy/case-one.svg"
             alt=""
           />
         </div>
       </section>
-      <section className="flex w-full flex-col p-2 px-10 md:flex-row">
-        <div className="aspect-square h-auto lg:p-32 flex-1">
+      <section className="flex w-full flex-col  p-2 px-10 md:flex-row">
+        <div className="aspect-square h-auto p-16 flex-1 ">
           <img
             className="h-full w-full object-contain"
-            src="/png/case-second.png"
+            src="/CaseStudy/case-two.svg"
             alt=""
           />
         </div>
-        <div className="flex lg:space-x-6 aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 md:w-1/2">
+        <div className="flex lg:space-x-6  aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 md:w-1/2">
           <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-brand-secondary ">
             How We Helped
           </h2>

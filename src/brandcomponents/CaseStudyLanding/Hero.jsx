@@ -5,12 +5,12 @@ const Hero = () => {
     <section className="h-auto md:h-[calc(100vh-10vh)] w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex justify-center items-center">
       <div className="flex flex-col md:flex-row justify-center items-center w-full">
         <div className="flex flex-col md:w-[60%] w-full md:pr-8 space-y-5">
-          <h3 className="text-[#FCCF40] text-4xl md:text-5xl">
+          <h1 className="text-[#FCCF40] text-4xl md:text-5xl">
             EXPLORE OUR CASE STUDIES
-          </h3>
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-[130%]">
-            Experience our expertise <br /> based projects
           </h1>
+          <h2 className="text-5xl md:text-6xl font-bold text-white leading-[130%]">
+            Experience our expertise <br /> based projects
+          </h2>
           <p className="font-normal text-lg md:text-xl leading-relaxed text-gray-400">
             Aimtech helps you grow. Reach us to bring you business to the wolrd.
           </p>

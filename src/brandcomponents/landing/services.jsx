@@ -81,7 +81,7 @@ export default function Services() {
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
               <img
-                src="/landingPage/ppc-service.jpg"
+                src="/landingPage/smm-service.png"
                 alt=""
                 className="h-full w-full object-cover "
               />
@@ -173,9 +173,9 @@ export default function Services() {
       <section className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Service Buttons */}
         <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2">
-          <h1 className="text-2xl leading-snug sm:text-[4rem] font-semibold text-brand-secondary">
+          <span className="text-2xl leading-snug sm:text-[4rem] font-semibold text-brand-secondary">
             What We Provide
-          </h1>
+          </span>
           <div className="w-full md:space-y-5 lg:pr-16 pr-0">
             {[
               "businessImpact",

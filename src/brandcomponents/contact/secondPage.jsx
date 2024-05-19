@@ -12,10 +12,10 @@ const SecondPage = () => {
         </div>
         <div className="flex-1 flex items-center justify-center lg:justify-start h-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
           <div className="space-y-6 lg:space-y-10 w-full">
-            <h1 className="text-brand-secondary text-4xl sm:text-6xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
+            <span className="text-brand-secondary text-4xl sm:text-6xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
             Ready to Take Your Digital Marketing to the Next Level?
 
-            </h1>
+            </span>
             <div className="space-y-3 lg:space-y-5">
               <ul className=" text-white text-xl lg:text-2xl">
                 <li className="flex items-center gap-6"><FaCheckCircle  />Customized Strategies</li>

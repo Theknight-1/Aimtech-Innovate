@@ -182,9 +182,9 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                 <IoCloseSharp size={30} />
               </span>
               <div className=" space-y-4">
-                <h1 className="text-black text-center text-5xl font-bold">
+                <span className="text-black text-center text-5xl font-bold">
                   Request a Proposal
-                </h1>
+                </span>
                 <p className="text-black text-center">
                   Just fill in the form, and let our experts handle the rest.
                 </p>
@@ -391,7 +391,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       {loading ? (
                         <div className="animate-spin h-7 w-7  border-t-2 border-black rounded-full "></div>
                       ) : (
-                        <h1>Get My Custom Quote</h1>
+                        <span>Get My Custom Quote</span>
                       )}
                     </button>
                   </div>

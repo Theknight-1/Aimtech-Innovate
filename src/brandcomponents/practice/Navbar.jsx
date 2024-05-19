@@ -4,7 +4,6 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { GoDeviceCameraVideo } from "react-icons/go";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 import { FaSignal } from "react-icons/fa";
@@ -315,9 +314,9 @@ function MegaMenu() {
                             />
                           </div>
                           <div className="flex flex-col space-y-2">
-                            <h1 className="font-bold text-2xl text-center mt-2">
+                            <span className="font-bold text-2xl text-center mt-2">
                               Aimtech Services
-                            </h1>
+                            </span>
                             <p className="text-sm text-center text-red-500 font-bold px-3 leading-relaxed">
                               Our services range from Digital marketing, Web
                               development to many more
@@ -369,7 +368,7 @@ function MegaMenu() {
                                   {iconComponent && (
                                     <span>{iconComponent}</span>
                                   )}
-                                  <h1 className="font-bold">{categoryName}</h1>
+                                  <span className="font-bold">{categoryName}</span>
                                 </div>
                                 <ul className="mt-3 text-[15px]">
                                   {servicesList.map((service, idx) => (
@@ -441,9 +440,9 @@ function MegaMenu() {
                   <div className=" w-full h-auto p-2 text-black flex flex-col md:flex-row gap-6">
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-blue-500 text-xl">
+                      <span className="font-bold text-blue-500 text-xl">
                         Email related
-                      </h1>
+                      </span>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
@@ -478,9 +477,9 @@ function MegaMenu() {
                     {/* card end */}
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-[#7E62DD] text-xl">
+                      <span className="font-bold text-[#7E62DD] text-xl">
                         SEO related
-                      </h1>
+                      </span>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
@@ -515,9 +514,9 @@ function MegaMenu() {
                     {/* card end */}
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-green-500 text-xl">
+                      <span className="font-bold text-green-500 text-xl">
                         Web Developement related
-                      </h1>
+                      </span>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
@@ -552,9 +551,9 @@ function MegaMenu() {
                     {/* card end */}
                     {/* card start */}
                     <div className="w-1/5 h-auto blue-200 p-8 overflow-hidden text-wrap">
-                      <h1 className="font-bold text-[#7E62DD] text-xl">
+                      <span className="font-bold text-[#7E62DD] text-xl">
                         PPC related
-                      </h1>
+                      </span>
                       <div className="flex flex-row gap-2 mt-2">
                         <span>📑</span>
                         <div className="flex flex-col items-start gap-2 ">
@@ -627,7 +626,7 @@ function MegaMenu() {
                           {/* Use flex-2 class for the second box */}
                           <div className="p-4 border border-white rounded-lg">
                             <div className="">
-                              <h1 className="font-bold">Latest Case Studies</h1>
+                              <span className="font-bold">Latest Case Studies</span>
                             </div>
                             <ul className="mt-3 text-[15px]">
                               <li>
@@ -691,7 +690,7 @@ function MegaMenu() {
                           </div>
                           <div className="p-4 border border-white rounded-lg">
                             <div className="">
-                              <h1 className="font-bold">Latest Case Studies</h1>
+                              <span className="font-bold">Latest Case Studies</span>
                             </div>
                             <ul className="mt-3 text-[15px]">
                               <li>
@@ -755,7 +754,7 @@ function MegaMenu() {
                           </div>
                           <div className="p-4 border border-white rounded-lg">
                             <div className="">
-                              <h1 className="font-bold">Latest Case Studies</h1>
+                              <span className="font-bold">Latest Case Studies</span>
                             </div>
                             <ul className="mt-3 text-[15px]">
                               <li>

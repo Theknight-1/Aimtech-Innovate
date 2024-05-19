@@ -31,48 +31,50 @@ const caseStudiesData = [
         description:
           "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
       },
-      {
-        date: "Feb 12, 2024",
-        image:"/png/web-first.png",
-        title: "highschool web design",
-        link: "/casestudy/web-design-for-high-school",
-        description:
-          "Aimtech Innovate helped create a best-in-class website for a high school...",
-      },
-      {
-        date: "May 12, 2024",
-        image:"/png/smm-second.png",
-        title: "SMM for ai startup",
-        link: "/casestudy/social-media-marketing-for-ai-startup",
-        description:
-          "Aimtech Innovate resolved many problems for AI startups..",
-      },
-      {
-        date: "May 12, 2024",
-        image:"/png/smm-second.png",
-        title: "SMM for ai startup",
-        link: "/casestudy/social-media-marketing-for-ai-startup",
-        description:
-          "Aimtech Innovate resolved many problems for AI startups..",
-      },
 ];
 
+const extracase =[
+  {
+    date: "Feb 12, 2024",
+    image:"/png/web-first.png",
+    title: "highschool web design",
+    link: "/casestudy/web-design-for-high-school",
+    description:
+      "Aimtech Innovate helped create a best-in-class website for a high school...",
+  },
+  {
+    date: "May 12, 2024",
+    image:"/png/smm-second.png",
+    title: "SMM for ai startup",
+    link: "/casestudy/social-media-marketing-for-ai-startup",
+    description:
+      "Aimtech Innovate resolved many problems for AI startups..",
+  },
+  {
+    date: "May 12, 2024",
+    image:"/png/smm-second.png",
+    title: "SMM for ai startup",
+    link: "/casestudy/social-media-marketing-for-ai-startup",
+    description:
+      "Aimtech Innovate resolved many problems for AI startups..",
+  },
+]
 const Cards = ({ heading, getStartedButton }) => (
   <section className="w-screen h-autoxl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex flex-col justify-center items-center">
-    <h1 className="text-center text-5xl font-bold text-white mb-16">{heading}</h1>
+    <span className="text-center text-5xl font-bold text-white mb-16">{heading}</span>
     <div className="grid h-auto justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
 
     {caseStudiesData.map((casestudy,index)=>(
 
   
 
-      <div key={index} className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden ">
+      <div key={index} className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden lg:p-8 ">
         <img
           className=" h-auto aspect-video w-full object-contain"
           src={casestudy.image}
           alt={casestudy.title}
         />
-        <div className=" h-full   flex border">
+        <div className=" h-full   flex ">
           <div className="space-y-5  pt-4">
             <h4 className="font-semibold text-2xl leading-6 text-gray-700 my-2 px-3">
             {casestudy.title}

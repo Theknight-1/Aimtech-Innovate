@@ -15,7 +15,7 @@ const FCStudy = () => {
         <div className="flex-1 mr-10">
           <div className="space-y-5">
             <div className="space-y-5">
-              <h1 className="text-3xl font-medium underline ">Objectives</h1>
+              <span className="text-3xl font-medium underline ">Objectives</span>
               <p className="text-xl tracking-wide text-white leading-relaxed">
                 To grow the organic search visibility of the Careers page
                 subdomain, balancing national and local keywords to expand
@@ -23,7 +23,7 @@ const FCStudy = () => {
               </p>
             </div>
             <div className="space-y-5">
-              <h1 className="text-3xl font-medium underline">Challenges</h1>
+              <span className="text-3xl font-medium underline">Challenges</span>
               <p className="text-xl tracking-wide text-white leading-relaxed">
                 The primary challenge was to enhance the site's SEO performance
                 to increase job applications amid the competitive job market in
@@ -31,7 +31,7 @@ const FCStudy = () => {
               </p>
             </div>
             <div className="space-y-5">
-              <h1 className="text-3xl font-medium underline">Process</h1>
+              <span className="text-3xl font-medium underline">Process</span>
               <p className="text-xl tracking-wide text-white leading-relaxed">
                 Conducted technical SEO audits, identified keyword
                 opportunities, and implemented a full-funnel content strategy
@@ -39,7 +39,7 @@ const FCStudy = () => {
               </p>
             </div>
             <div className="space-y-5">
-              <h1 className="text-3xl font-medium underline">Results</h1>
+              <span className="text-3xl font-medium underline">Results</span>
               <p className="text-xl tracking-wide text-white leading-relaxed">
                 Conducted technical SEO audits, identified keyword
                 opportunities, and implemented a full-funnel content strategy
@@ -54,7 +54,7 @@ const FCStudy = () => {
               <img src="/image31.png" alt="" />
             </div>
             <div className="space-y-3 mt-8">
-              <h1 className="text-2xl font-semibold underline">Learnings</h1>
+              <span className="text-2xl font-semibold underline">Learnings</span>
               <p className="text-xl tracking-wide text-white leading-normal">
                 Dot Foods’ SEO improvements underscore the significance of a
                 multifaceted SEO strategy that includes technical optimization,

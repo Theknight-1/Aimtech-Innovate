@@ -6,7 +6,6 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { CiMail } from "react-icons/ci";
-import { TfiWorld } from "react-icons/tfi";
 import Link from "next/link";
 
 const ProvidedSchems = () => {
@@ -41,7 +40,7 @@ const ProvidedSchems = () => {
           <ul className="lg:space-y-3 space-y-2 text-sm">
             <li>
               <a className=" hover:underline" href="/services/web-development">
-                Web design & development
+                Web Design & Development
               </a>
             </li>
             <li>
@@ -96,12 +95,12 @@ const ProvidedSchems = () => {
         <nav aria-label="Footer Navigation" className="">
           <ul className="lg:space-y-2 space-y-1 text-sm">
             <li>
-              <a className=" hover:underline" href="#">
+              <a className=" hover:underline" href="/sitemap.xml">
                 Sitemap
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/terms-and-conditions">
+              <a className=" hover:underline" href="/terms-and-conditions" target="_blank">
                 T & C
               </a>
             </li>
@@ -167,57 +166,7 @@ export default function Footer() {
               />
             </svg>
           </button>
-          <div
-            className={`z-10 ${
-              isCaseStudyDropdownOpen ? "" : "hidden"
-            } divide-y divide-gray-100 rounded-lg shadow w-full`}
-          >
-            <ul
-              className="py-2 text-sm text-white dark:text-white"
-              aria-labelledby="caseStudyDropdownButton"
-            >
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary"
-                >
-                  Integrations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary"
-                >
-                  Docs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary"
-                >
-                  Linear Method
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary"
-                >
-                  Download
-                </Link>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
       {/* Company Dropdown */}

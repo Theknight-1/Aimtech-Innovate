@@ -8,10 +8,13 @@ export default function NotFound() {
         <Navbar />
         <div class="w-full h-[90vh]  bg-brand-primary flex flex-col items-center justify-center">
           <div class="flex flex-col items-center justify-center">
-            <img src="/404.svg" alt="" />
+            <div className=" w-3/4">
 
-            <p class="md:text-lg lg:text-xl mt-8 text-white">
-              Sorry, the page you are looking for could not be found.
+            <img src="/404.png" alt="" />
+            </div>
+
+            <p class="md:text-3xl lg:text-6xl mt-8 text-white">
+            Page Not found
             </p>
             <a
               href="/"
