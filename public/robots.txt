@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Allow: /about
+Allow: /contact
+Allow: /casestudies
+Allow: services/seo-service

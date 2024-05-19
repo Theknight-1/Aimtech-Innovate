@@ -114,23 +114,12 @@ const Navbar = () => {
       icon: "📧",
       data: [
         {
-          title: "Next coach",
-          link: "",
+          title: "SEO For Fintech",
+          link: "/casestudy/seo-for-fintech",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
+            "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
         },
-        {
-          title: "ABC company",
-          link: "",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
-        },
-        {
-          title: "Rk builders",
-          link: "",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
-        },
+       
       ],
     },
     {
@@ -149,12 +138,7 @@ const Navbar = () => {
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
         },
-        {
-          title: "Canada Market",
-          link: "",
-          description:
-            "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company..",
-        },
+        
       ],
     },
     {
@@ -168,17 +152,12 @@ const Navbar = () => {
             "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
         },
         {
-          title: "high-school web design",
+          title: "highschool web design",
           link: "/casestudy/web-design-for-high-school",
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
         },
-        {
-          title: "Google Tags",
-          link: "",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
-        },
+        
       ],
     },
     {
@@ -186,23 +165,12 @@ const Navbar = () => {
       icon: "💰",
       data: [
         {
-          title: "social-media-marketing-for-ai-startup",
+          title: "SMM for ai startup",
           link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-        {
-          title: "FANGG",
-          link: "",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
-        },
-        {
-          title: "Meta Vr",
-          link: "",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aut.",
-        },
+        
       ],
     },
   ];
@@ -429,24 +397,25 @@ const Navbar = () => {
                               {ckey.category}
                             </h1>
                             {ckey.data.map((cstudy, idx) => (
+                               <Link key={idx} href={cstudy.link}>
                               <div
-                                key={idx}
-                                className="flex flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer"
+                                className="flex hover:bg-brand-secondary rounded flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer"
                               >
                                 <span>📑</span>
 
                                 <div className="flex flex-col items-start gap-2 ">
-                                  <Link href={cstudy.link}>
+                                  
                                     <span className=" font-bold">
                                       {cstudy.title}
                                     </span>
-                                  </Link>
+                                  
 
                                   <article className="text-sm">
                                     {cstudy.description}
                                   </article>
                                 </div>
                               </div>
+                              </Link>
                             ))}
                           </div>
                         ))}

@@ -4,58 +4,58 @@ import Link from "next/link";
 
 const caseStudiesData = [
   {
-    id: 1,
+    
     image:
-      "https://static.vecteezy.com/system/resources/previews/029/772/275/large_2x/happy-successful-asian-businessman-celebrating-in-modern-office-celebrate-success-and-achieving-goals-male-entrepreneur-celebrate-winning-moments-free-photo.jpeg",
-    title: "Title",
-    description:
-      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
-    link: "/casestudy/aimtech",
+      "/png/seo-first.png",
+      title: "SEO For Fintech",
+      link: "/casestudy/seo-for-fintech",
+      description:
+        "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
   },
   {
-    id: 2,
+    
     image:
-      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Aimtech",
-    description:
-      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
-    link: "/casestudy/aimtech",
+      "/png/ppc-ads.png",
+      title: "Fultime service for automobiles",
+      link: "/casestudy/full-time-operatonal-services-for-automobile",
+      description:
+        "Aimtech Innovate provided comprehensive IT infrastructure ..",
   },
   {
-    id: 2,
+    
     image:
-      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "Next coach",
-    description:
-      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
-    link: "/casestudy/aimtech",
+      "/png/smm-first.png",
+      title: "CRM For Fintech",
+      link: "/casestudy/crm-for-fintech",
+      description:
+        "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
   },
   {
-    id: 2,
+    
     image:
-      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "FANGG",
-    description:
-      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
-    link: "/casestudy/aimtech",
+      "/png/web-first.png",
+      title: "Highschool web design",
+      link: "/casestudy/web-design-for-high-school",
+      description:
+        "Aimtech Innovate helped create a best-in-class website for a high school...",
   },
   {
-    id: 2,
+    
     image:
-      "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
-    title: "GOOGLE",
-    description:
-      "Aimtech Innovate is considered the most cost-effective digital marketing agency across the US and Canada due to its ability to enhance digital presence and achieve market excellence while offering competitive pricing and comprehensive solutions for web development and digital marketing services",
-    link: "/casestudy/aimtech",
+      "/png/smm-second.png",
+      title: "SMM for ai startup",
+      link: "/casestudy/social-media-marketing-for-ai-startup",
+      description:
+        "Aimtech Innovate resolved many problems for AI startups..",
   },
   {
-    id: 2,
+  
     image:
       "/landingPage/questionmark.jpg",
     title: "This can be you",
     description:
       "Contact us for your case study",
-    link: "/casestudy/aimtech",
+    link: "/contact",
   },
   // Add more case study data objects as needed
 ];
@@ -100,17 +100,17 @@ export default function CaseStudies() {
         <div class="w-1/10"></div>
       </div>
       <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
-        {caseStudiesData.map((study) => (
-          <div key={study.id} className="flip-card aspect-square h-auto w-full  ">
+        {caseStudiesData.map((study,index) => (
+          <div key={index} className="flip-card aspect-square h-auto w-full  ">
             <div className="flip-card-inner w-full h-full p-2">
               <div className="flip-card-front overflow-hidden">
                 <img
-                  className="w-full h-full object-cover "
+                  className="w-full h-full object-fit "
                   src={study.image}
                   alt=""
                 />
               </div>
-              <div className="flip-card-back flex flex-col items-center justify-center px-8 text-justify font-bold">
+              <div className="flip-card-back flex flex-col items-center justify-center px-8  font-bold">
                 <h1 className="text-4xl border-b-2 border-brand-primary">{study.title}</h1>
                 <br />
                 <p>{study.description}</p>

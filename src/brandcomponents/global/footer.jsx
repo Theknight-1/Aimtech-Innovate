@@ -85,7 +85,7 @@ const ProvidedSchems = () => {
             </li>
             <li>
               <a className=" hover:underline" href="/casestudy">
-                Tranding
+                Trending
               </a>
             </li>
           </ul>

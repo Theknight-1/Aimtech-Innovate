@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Cards from "@/brandcomponents/casestudy/cards";
-import Hcta from '@/brandcomponents/landing/cta'
+import Hcta from '@/brandcomponents/landing/cta';
+import Recentcase from "@/brandcomponents/casestudy/recentcase"
 export default function CaseLanding({casedata}) {
   const cdata = casedata;
   return (
@@ -106,19 +107,19 @@ export default function CaseLanding({casedata}) {
             </ol>
           </div>
         </div>
-        <div className="aspect-square h-auto flex-1">
+        <div className="aspect-square h-auto lg:p-32  flex-1">
           <img
-            className="h-full w-full object-contain"
-            src="https://nrtimes.co.uk/wp-content/uploads/2021/02/19199739-scaled.jpg"
+            className="h-full w-full object-fit"
+            src="/png/case-first.png"
             alt=""
           />
         </div>
       </section>
       <section className="flex w-full flex-col p-2 px-10 md:flex-row">
-        <div className="aspect-square h-auto flex-1">
+        <div className="aspect-square h-auto lg:p-32 flex-1">
           <img
             className="h-full w-full object-contain"
-            src="https://nrtimes.co.uk/wp-content/uploads/2021/02/19199739-scaled.jpg"
+            src="/png/case-second.png"
             alt=""
           />
         </div>
@@ -132,6 +133,7 @@ export default function CaseLanding({casedata}) {
         </div>
       </section>
       
+      {/* <Recentcase/> */}
       <section className="">
         <Cards
           heading={"Recent Case studies"}

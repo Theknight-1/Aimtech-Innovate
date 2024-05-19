@@ -19,7 +19,8 @@ const DMsg = () => {
                 className="w-9/12 lg:w-auto h-auto object-cover rounded-lg shadow-2xl"
               />
             </div>
-              <span className="text-2xl text-brand-secondary w-full text-center font-bold ">Adil Muhammad</span>
+            <br />
+              <span className="text-2xl text-brand-secondary w-full text-center ">Adil Muhammad</span>
           </div>
           <div className=" lg:w-2/3  h-full text-justify lg:pr-0 space-y-2    p-2 ">
             <div className="w-full  h-auto text-white text-base md:text-xl lg:text-2xl  lg:space-y-7 md:space-y-4">

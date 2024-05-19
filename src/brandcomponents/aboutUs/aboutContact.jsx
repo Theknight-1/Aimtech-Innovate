@@ -8,7 +8,7 @@ const AboutContact = () => {
       <div className="w-full h-full flex justify-center items-center">
         <div className="flex flex-col md:flex-row md:items-center justify-center lg:gap-8 gap-0">
           <div className=" w-full  mx-auto flex justify-center items-center p-2 sm:p-0">
-            <img className="md:w-9/12 lg:w-11/12 /2 sm:w-1/2 w-80" src="/about/aboutLast.png" alt="" />
+            <img className="md:w-9/12 lg:w-11/12 /2 sm:w-1/2 w-80" src="/png/about-last.png" alt="" />
           </div>
           <div className="flex flex-col lg:gap-4 gap-2 max-w-md md:max-w-lg p-2 md:p-6 lg:p-4 xl:p-2 ">
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-brand-secondary font-bold leading-normal">

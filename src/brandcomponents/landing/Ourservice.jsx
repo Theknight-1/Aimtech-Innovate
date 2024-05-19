@@ -1,13 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import Link from "next/link";
 
 const images = [
   "https://blog.4psa.com/wp-content/uploads/Reasons-worth-colaborating-with-your-teammates-1024x536.jpg",
 ];
 
-export default function Services() {
+export default function Ourservice() {
   const [currentContent, setCurrentContent] = useState("businessImpact");
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -48,10 +47,9 @@ export default function Services() {
               Attract, engage, and convert visitors with a stunning, user-friendly website designed to achieve your business goals.
 
               </h2>
-              <br />
-              <Link href="/services/web-development" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <button className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
-              </Link>
+              </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
@@ -73,10 +71,9 @@ export default function Services() {
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
               Reach the right audience at the right time with strategic PPC campaigns that deliver measurable results.
               </h2>
-              <br />
-              <Link href="/services/ppc-advertisement" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <button className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
-              </Link>
+              </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
@@ -97,10 +94,9 @@ export default function Services() {
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
               Unleash the power of SEO to maximize search rankings that attract qualified leads, and grow your online presence organically.
               </h2>
-              <br />
-              <Link href="/services/seo-service" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <button className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
-              </Link>
+              </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
@@ -121,10 +117,9 @@ export default function Services() {
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
               Building social media presence with engaging content, community management, and targeted social media advertising.
               </h2>
-              <br />
-              <Link href="/services/social-media-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <button className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
-              </Link>
+              </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
@@ -145,10 +140,9 @@ export default function Services() {
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
               Targeted email campaigns that nurture leads, build brand loyalty, and drive sales through powerful email marketing strategies.
               </h2>
-              <br />
-              <Link href="/services/email-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <button className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
-              </Link>
+              </button>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
