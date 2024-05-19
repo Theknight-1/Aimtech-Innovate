@@ -2,7 +2,6 @@
 import React from "react";
 import Cards from "@/brandcomponents/casestudy/cards";
 import Hcta from '@/brandcomponents/landing/cta';
-import Recentcase from "@/brandcomponents/casestudy/recentcase"
 export default function CaseLanding({casedata}) {
   const cdata = casedata;
   return (
