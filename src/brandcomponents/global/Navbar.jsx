@@ -367,7 +367,7 @@ const Navbar = () => {
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-5" : ""
+                      scrolling ? "-top-7" : ""
                     }`}
                   >
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
@@ -415,7 +415,7 @@ const Navbar = () => {
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-5" : ""
+                      scrolling ? "-top-7" : ""
                     }`}
                   >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">

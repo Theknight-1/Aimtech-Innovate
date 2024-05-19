@@ -16,20 +16,18 @@ export default function Pland({faqdata = []}) {
         <div class=" h-auto w-full ">
           <div className="  w-full h-auto ">
             <div className="w-full h-auto flex flex-col lg:flex-row   bg-[#050505e1]  lg:p-5 rounded-xl">
-              <div className="flex gap-y-12  h-full  space-y-8 flex-col justify-between w-full lg:w-1/3 h-full p-4 sm:p-7 md:p-6 xl:p-5">
-                <div className="mb-3 text-center md:text-left">
-                  <p className="text-3xl font-bold sm:text-4xl flex flex-col items-start justify-start gap-y-4 md:text-6xl xl:text-6xl 2xl:text-6xl text-white leading-normal">
+              <div className="flex  h-full space-y-2 lg:space-y-8 flex-col justify-between w-full lg:w-1/3  p-4 sm:px-7 md:p-6 lg:p-4 xl:p-5 ">
+                <div className="text-center md:text-left">
+                  <p className="text-3xl sm:text-4xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-bold flex flex-col items-start justify-start lg:gap-y-4 gap-y-2  text-white leading-normal">
                     <span>Frequently</span>
                     <span>Asked</span>
                     <span>Questions</span>
                   </p>
                   <br />
                 </div>
-                <div className="text-center md:text-left md:block hidden">
+                <div className="text-center md:text-left md:block hidden lg:py-4  space-y-8">
                   <div>
-
-                  
-                  <span className="  text-2xl text-white mt-16">
+                  <span className="  text-2xl text-white lg:mt-10">
                     Still have some Questions?{" "}
                   </span>
                   <br />
@@ -38,10 +36,10 @@ export default function Pland({faqdata = []}) {
                   </span>{" "}
                   <br />
                   </div>
-                  <div className=" mt-12 w-full h-full ">
+                  <div className="  w-full h-full ">
                     <Link
                       href="tel:+1905-399-6642"
-                      className="bg-brand-secondary hover:bg-yellow-400 w-max h-full xl:p-5 lg:p-3 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-brand-primary rounded mt-4 "
+                      className="bg-brand-secondary hover:bg-yellow-400 w-max h-full xl:p-4 xl:px-3 2xl:p-5 lg:p-2 lg:py-4 md:p-4  xl:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text-brand-primary rounded mt-4 "
                     >
                       {" "}
                       +1 905-399-6642

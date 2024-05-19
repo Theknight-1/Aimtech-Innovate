@@ -300,7 +300,7 @@ function MegaMenu() {
                   </span>
                 </button>
 
-                <div className="mx-auto  w-full bg-white h-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 max-w-screen  transform">
+                <div className="mx-auto  w-full bg-white h-auto fixed top-36 left-0 transition group-hover:-translate-y-10 translate-y-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-500 ease-in-out group-hover:transform z-50 transform max-w-screen  ">
                   <div className="relative  p-6 h-auto rounded-lg  w-full  ">
                     <div className=" z-10  ">
                       <div className="flex gap-5 ">

@@ -19,10 +19,10 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen font-satoshi pt-20 overflow-hidden lg:overflow-visible  h-auto   flex flex-col lg:flex-row justify-between items-center  px-4 md:px-8 lg:px-24 xl:px-28">
+      <section className="w-screen font-satoshi pt-20 overflow-hidden lg:overflow-visible h-auto   flex flex-col lg:flex-row justify-between items-center  px-4 md:px-8 lg:px-24 xl:px-28">
         <div className="grid  max-w-screen py-8 lg:py-16 lg:grid-cols-12 gap-8  ">
-          <div className="lg:col-span-6 h-full space-y-8 ">
-            <h1 className=" max-w-7xl text-white font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl xl:text-6xl 2xl:text-7xl  ">
+          <div className="lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6  space-y-5 ">
+            <h1 className=" max-w-7xl text-white font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl  ">
               Enhance your digital presence and gain market excellence
             </h1>
             <h3 className="max-w-4xl  text-white  text-sm md:text-lg xl:text-lg 2xl:text-2xl bg-gradient-to-r bg-clip-text tracking-wider">
@@ -45,8 +45,8 @@ export default function GradientSection() {
               </svg>
             </div> */}
 
-            <div className="flex flex-col  justify-start space-y-6">
-              <p className="max-w-2xl text-2xl  text-white">
+            <div className="flex flex-col  justify-start xl:space-y-6 lg:space-y-4 space-y-2">
+              <p className="max-w-2xl xl:text-2xl lg:text-lg text-base  text-white">
                 Don't believe it? Request a free quotation today
               </p>
               <div className=" flex justify-start ">
@@ -55,7 +55,7 @@ export default function GradientSection() {
                     <select
                       value={selectedOption}
                       onChange={handleSelectChange}
-                      className="block font-bold appearance-none w-full bg-white border-gray-300 text-gray-800 text-xl py-5 px-4 pr-8 leading-tight rounded-tl-lg rounded-bl-lg"
+                      className="block font-bold appearance-none w-full bg-white border-gray-300 text-gray-800 xl:text-xl lg:text-lg md:text-base sm:text-sm py-5 px-4 pr-8 leading-tight rounded-tl-lg rounded-bl-lg"
                     >
                       <option
                         value="Select Digital Presence Services"
@@ -90,15 +90,15 @@ export default function GradientSection() {
                   Get Started
                 </button>
               </div>
-              <div className=" flex flex-col md:flex-row gap-5 ">
-                <ul className="flex gap-2 text-xl text-white">
+              <div className=" flex items-baseline gap-5 ">
+                <ul className="flex gap-2 lg:gap-1 xl:text-xl lg:text-base md:text-base text-sm text-white">
                   {[...Array(5)].map((_, index) => (
                     <li key={index}>
                       <FaStar className="text-brand-secondary" />
                     </li>
                   ))}
                 </ul>
-                <span className="text-white font-bold">
+                <span className="text-white font-bold xl:text-2xl lg:text-base sm:text-base text-xs">
                   4.8/5 based on 6,873 reviews | GDPR Compliant
                 </span>
               </div>
