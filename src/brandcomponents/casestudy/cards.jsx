@@ -32,9 +32,27 @@ const Card = ({ imageUrl, title, description, date }) => (
 );
 
 const Cards = ({ heading, getStartedButton }) => (
-  <section className="w-screen h-screen xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex flex-col justify-center items-center">
-    <h1 className="text-center text-5xl font-bold text-white">{heading}</h1>
-    <div className="grid h-[60vh] justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
+  <section className="w-screen h-autoxl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex flex-col justify-center items-center">
+    <h1 className="text-center text-5xl font-bold text-white mb-16">{heading}</h1>
+    <div className="grid h-auto justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
+      <Card
+        imageUrl="/Maskgroup.png"
+        title="Tools, Resources, and Education"
+        description="Happy Women's Day 2022: Read on to know all about the history and significance..."
+        date="November 19, 2022"
+      />
+      <Card
+        imageUrl="/Maskgroup.png"
+        title="Tools, Resources, and Education"
+        description="Happy Women's Day 2022: Read on to know all about the history and significance..."
+        date="November 19, 2022"
+      />
+      <Card
+        imageUrl="/Maskgroup.png"
+        title="Tools, Resources, and Education"
+        description="Happy Women's Day 2022: Read on to know all about the history and significance..."
+        date="November 19, 2022"
+      />
       <Card
         imageUrl="/Maskgroup.png"
         title="Tools, Resources, and Education"

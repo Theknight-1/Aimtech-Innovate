@@ -1,10 +1,10 @@
 import React from "react";
 
-const Terms = () => {
+const Privacy = () => {
   return (
     <section className="w-full h-full flex items-center justify-center  py-20 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
       <div className="text-white  space-y-4 flex  flex-col justify-center  ">
-        <h1 className="text-4xl font-bold ">Terms and Conditions</h1>
+        <h1 className="text-4xl font-bold ">Privacy policy</h1>
         <p className="text-gray-300 text-lg tracking-normal">
         Welcome to Aimtech Innovate, a leading provider of digital marketing solutions serving clients in the USA and Canada. These terms and conditions govern your use of our services. By accessing or using our services, you agree to be bound by these terms and conditions.
         </p>
@@ -94,7 +94,7 @@ const Terms = () => {
 
           </h2>
           <p className="text-gray-300 text-lg tracking-normal">
-          If you have any questions or concerns about these terms and conditions, please contact us at <a href="mailto:contact@aimtechinnovate.com" className="text-brand-secondary">contact@aimtechinnovate.com</a>  call us at <a href="tel:+1 905-399-6642" className="text-brand-secondary">+1 905-399-6642.</a>.
+          If you have any questions or concerns about these terms and conditions, please contact us at [email :  contact@aimtechinnovate.com or call us at +1 905-399-6642].
           </p>
         </div>
         <div className="space-y-2">
