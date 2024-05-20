@@ -170,27 +170,27 @@ const ContactPage = () => {
                 Development. Here are 4 reasons why you should opt us as your
                 digital marketing agency:
               </p>
-              <div className="space-y-3 lg:space-y-5">
-                <p className="flex items-center gap-6  text-xl lg:text-2xl">
+              <div className=" grid grid-cols-2 gap-2 text-brand-secondary text-xl lg:text-xl  ">
+                
+              <p className="flex items-start gap-6  ">
                   <span>
                     <FaCheckCircle />
                   </span>{" "}
-                  Cost Effective Marketing Solutions
+                  Cost Effective marketing Solutions
                 </p>
-                <p className="flex items-center gap-6  text-xl lg:text-2xl">
+                <p className="flex items-start gap-6  ">
                   <span>
                     <FaCheckCircle />
                   </span>{" "}
                   Less Turn-around Time
                 </p>
-                <p className="flex items-center gap-6  text-xl lg:text-2xl">
+                <p className="flex items-start gap-6  ">
                   <span>
                     <FaCheckCircle />
                   </span>{" "}
                   Commitment to transparency
                 </p>
-
-                <p className="flex items-center gap-6  text-xl lg:text-2xl">
+                <p className="flex items-start gap-6  ">
                   <span>
                     <FaCheckCircle />
                   </span>{" "}

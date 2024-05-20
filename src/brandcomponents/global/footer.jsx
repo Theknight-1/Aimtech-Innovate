@@ -45,7 +45,7 @@ const ProvidedSchems = () => {
             </li>
             <li>
               <a className=" hover:underline" href="/services/ppc-advertisement">
-                Pay-Per-Click Advertisement
+                PPC Advertisement
               </a>
             </li>
             <li>

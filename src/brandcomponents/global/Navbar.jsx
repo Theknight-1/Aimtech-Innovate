@@ -119,7 +119,7 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-       
+
       ],
     },
     {
@@ -138,7 +138,7 @@ const Navbar = () => {
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
         },
-        
+
       ],
     },
     {
@@ -157,7 +157,7 @@ const Navbar = () => {
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
         },
-        
+
       ],
     },
     {
@@ -170,7 +170,7 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-        
+
       ],
     },
   ];
@@ -216,9 +216,8 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${
-          scrolling ? "bg-white text-black shadow" : "text-white"
-        } z-50 mb-2 w-screen`}
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${scrolling ? "bg-white text-black shadow" : "text-white"
+          } z-50 mb-2 w-screen`}
       >
         <div className={`  mx-auto flex justify-between items-center py-2`}>
           <div className=" relative block  text-xl text-blue-600 font-bold">
@@ -226,9 +225,8 @@ const Navbar = () => {
               {" "}
               <img
                 src={imageUrl}
-                className={` object-scale-down ${
-                  scrolling ? "w-28 " : "w-28  lg:w-40 xl:w-48"
-                }`}
+                className={` object-scale-down ${scrolling ? "w-28 " : "w-28  lg:w-40 xl:w-48"
+                  }`}
                 alt="logo"
               />
               {/* <img src={logo.src} width={200} height={150} alt="" /> */}
@@ -241,9 +239,8 @@ const Navbar = () => {
         }`}> */}
               <div className={`lg:flex gap-4 lg:gap-7 hidden`}>
                 <h4
-                  className={`flex  items-center gap-2 text-base ${
-                    scrolling ? "hidden" : ""
-                  }`}
+                  className={`flex  items-center gap-2 text-base ${scrolling ? "hidden" : ""
+                    }`}
                 >
                   <a
                     href="https://calendly.com/himanshusaxena5500/30min"
@@ -257,9 +254,8 @@ const Navbar = () => {
                   </a>
                 </h4>
                 <h4
-                  className={`flex  items-center gap-2 text-base ${
-                    scrolling ? "hidden" : ""
-                  }`}
+                  className={`flex  items-center gap-2 text-base ${scrolling ? "hidden" : ""
+                    }`}
                 >
                   <span>
                     <FaWhatsapp size={22} />
@@ -273,9 +269,8 @@ const Navbar = () => {
                   </a>
                 </h4>
                 <h4
-                  className={`flex  items-center gap-2  text-lg font-bold hover:text-brand-secondary ${
-                    scrolling ? "hidden" : ""
-                  }`}
+                  className={`flex  items-center gap-2  text-lg font-bold hover:text-brand-secondary ${scrolling ? "hidden" : ""
+                    }`}
                 >
                   <span>
                     <FaPhone size={15} />
@@ -334,9 +329,8 @@ const Navbar = () => {
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-7" : ""
-                    }`}
+                    className={`relative bg-white p-6 w-full h-auto ${scrolling ? "-top-7" : ""
+                      }`}
                   >
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
                       {servicedata.map((service, idx) => (
@@ -382,9 +376,8 @@ const Navbar = () => {
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto ${
-                      scrolling ? "-top-7" : ""
-                    }`}
+                    className={`relative bg-white p-6 w-full h-auto ${scrolling ? "-top-7" : ""
+                      }`}
                   >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
                       <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-6  ">
@@ -397,24 +390,24 @@ const Navbar = () => {
                               {ckey.category}
                             </span>
                             {ckey.data.map((cstudy, idx) => (
-                               <Link key={idx} href={cstudy.link}>
-                              <div
-                                className="flex hover:bg-brand-secondary rounded flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer"
-                              >
-                                <span>📑</span>
+                              <Link key={idx} href={cstudy.link}>
+                                <div
+                                  className="flex hover:bg-brand-secondary rounded flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer"
+                                >
+                                  <span>📑</span>
 
-                                <div className="flex flex-col items-start gap-2 ">
-                                  
+                                  <div className="flex flex-col items-start gap-2 ">
+
                                     <span className=" font-bold">
                                       {cstudy.title}
                                     </span>
-                                  
 
-                                  <article className="text-sm">
-                                    {cstudy.description}
-                                  </article>
+
+                                    <article className="text-sm">
+                                      {cstudy.description}
+                                    </article>
+                                  </div>
                                 </div>
-                              </div>
                               </Link>
                             ))}
                           </div>
