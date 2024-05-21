@@ -95,6 +95,15 @@ export default function page() {
           content: "Our team size is flexible, allowing us to scale our expertise to meet your project's needs. We have a network of skilled professionals to ensure we deliver exceptional results.",
         },
       ];
+
+      const featuredcase = {
+        title: "CRM For Fintech",
+        objective:"To grow the organic search visibility of the Careers page subdomain, balancing national and local keywords to expand regional visibility.",
+        challenge : "The primary challenge was to enhance the site's SEO performance to increase job applications amid the competitive job market in the food industry.",
+        Process:"Conducted technical SEO audits, identified keyword opportunities, and implemented a full-funnel content strategy alongside offsite tactics like securing relevant backlinks.",
+        Results: "Conducted technical SEO audits, identified keyword opportunities, and implemented a full-funnel content strategy alongside offsite tactics like securing relevant backlinks.",
+        learnings:"Dot Foods’ SEO improvements underscore the significance of a multifaceted SEO strategy that includes technical optimization, content strategy, and offsite tactics. Balancing branded and unbranded keywords while focusing on full-funnel content led to increased organic visibility and job applications."
+      }
   return (
     <>
     <Navbar />
@@ -108,7 +117,7 @@ export default function page() {
         <div className="text-4xl text-center text-white">{params.slug}</div>
       )}
     </section> */}
-    <FCStudy />
+    <FCStudy featured={featuredcase} />
     <CaseStudies />
     <Testimonial />
     <Pland faqdata={accordionData} />

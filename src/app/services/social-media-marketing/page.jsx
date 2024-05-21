@@ -101,6 +101,16 @@ export default function page() {
    
     
   ];
+
+  const featuredcase = {
+    title: "Social Media Marketing for AI Startup ",
+    objective:"Develop a comprehensive social media marketing strategy, identify relevant target audience and platforms, create engaging content, increase brand awareness, website traffic, lead generation, and achieve a positive return on investment (ROI) for the AI startup.",
+    challenge : "Reach more customers with ads and branding while creating an effective social media marketing strategy for the AI startup's products and services.",
+    Process:"Aimtech Innovate's experts collaborated with the startup, conducted in-depth market research, identified the most promising platforms and target segments, created a tailored social media marketing plan, and implemented targeted advertising campaigns to reach the ideal customers.",
+    Results: "By implementing a comprehensive social media marketing strategy, the AI startup experienced significant improvements in brand awareness, website traffic, lead generation, and achieved a positive return on investment (ROI) from social media marketing efforts.",
+    learnings:"Aimtech Innovate's social media marketing campaign for the AI startup underscores the importance of a tailored approach that considers the unique needs and challenges of the client, thorough market research, identifying relevant platforms and target audience, and creating engaging content to achieve positive ROI."
+  }
+
   return (
     <>
     <Navbar />
@@ -114,7 +124,8 @@ export default function page() {
         <div className="text-4xl text-center text-white">{params.slug}</div>
       )}
     </section> */}
-    <FCStudy />
+    <FCStudy featured={featuredcase} />
+
     <CaseStudies />
     <Testimonial />
     <Pland faqdata={accordionData} />

@@ -103,6 +103,15 @@ export default function page() {
     },
     
   ];
+
+  const featuredcase = {
+    title: "Boosting E-Commerce Sales with Targeted Facebook Ads",
+    objective:"The primary objective was to increase online sales for an e-commerce store specializing in home decor products by reaching a targeted audience interested in home decor and interior design. The goal was also to maximize return on investment (ROI) from Facebook advertising and gather valuable data for future campaign optimization.",
+    challenge : "The main challenge was to effectively target the right audience amidst the competitive e-commerce landscape and ensure a positive ROI from the Facebook ads campaign.",
+    Process:"We began by conducting thorough market research to identify the target audience's preferences and behaviors. Utilizing this data, we crafted compelling ad creatives and messaging tailored to resonate with the audience's interests. Through continuous monitoring and optimization, we refined the targeting parameters and ad content to maximize performance.",
+    Results: "The Facebook ads campaign yielded a significant increase in online sales for the e-commerce store, surpassing the client's expectations. The ROI from the campaign was positive, demonstrating the effectiveness of targeted advertising in driving sales and revenue growth.",
+    learnings:"This case study highlights the power of targeted Facebook ads in driving e-commerce sales when tailored to the specific interests of the audience. By leveraging data-driven insights and continuous optimization, businesses can achieve tangible results and maximize their advertising ROI in the competitive digital landscape."
+  }
    
   return (
     <>
@@ -117,7 +126,7 @@ export default function page() {
         <div className="text-4xl text-center text-white">{params.slug}</div>
       )}
     </section> */}
-    <FCStudy />
+    <FCStudy featured={featuredcase} />
     <CaseStudies />
     <Testimonial />
     <Pland faqdata={accordionData} />

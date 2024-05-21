@@ -73,17 +73,17 @@ const ProvidedSchems = () => {
         <nav aria-label="Footer Navigation" className="">
           <ul className="lg:space-y-2 space-y-1 text-sm ">
             <li>
-              <a className=" hover:underline" href="/casestudy">
+              <a className=" hover:underline" href="/casestudy/seo-for-fintech">
                 Popular
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/casestudy">
+              <a className=" hover:underline" href="/casestudy/social-media-marketing-for-ai-startup">
                 Recent
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/casestudy">
+              <a className=" hover:underline" href="/casestudy/web-design-for-high-school">
                 Trending
               </a>
             </li>

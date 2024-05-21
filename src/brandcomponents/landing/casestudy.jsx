@@ -10,7 +10,7 @@ const caseStudiesData = [
       title: "SEO For Fintech",
       link: "/casestudy/seo-for-fintech",
       description:
-        "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
+        "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company, addressing their primary challenge of low backlinking within a month.",
   },
   {
     
@@ -19,7 +19,7 @@ const caseStudiesData = [
       title: "Fultime service for automobiles",
       link: "/casestudy/full-time-operatonal-services-for-automobile",
       description:
-        "Aimtech Innovate provided comprehensive IT infrastructure ..",
+        "Aimtech Innovate provided comprehensive IT infrastructure and digital marketing services to an automotive company, enabling them to streamline operations and enhance their online presence.",
   },
   {
     
@@ -28,7 +28,7 @@ const caseStudiesData = [
       title: "CRM For Fintech",
       link: "/casestudy/crm-for-fintech",
       description:
-        "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
+        "Aimtech Innovate created an AI-enabled CRM for a fintech company, enabling smart decisions based on accurate and real-time data. The CRM provides deep insights into sales metrics, revenue forecasts, team performance analysis, and custom dashboards.",
   },
   {
     
@@ -37,7 +37,7 @@ const caseStudiesData = [
       title: "Highschool web design",
       link: "/casestudy/web-design-for-high-school",
       description:
-        "Aimtech Innovate helped create a best-in-class website for a high school...",
+        "Aimtech Innovate helped create a best-in-class website for a high school, achieving remarkable results.",
   },
   {
     
@@ -46,7 +46,7 @@ const caseStudiesData = [
       title: "SMM for ai startup",
       link: "/casestudy/social-media-marketing-for-ai-startup",
       description:
-        "Aimtech Innovate resolved many problems for AI startups..",
+        "Aimtech Innovate resolved many problems for AI startups and provided them with the best target audience and regional market research to create the most effective marketing campaigns.",
   },
   {
   
@@ -111,9 +111,9 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="flip-card-back flex flex-col items-center justify-center px-8  font-bold">
-                <h1 className="text-4xl border-b-2 border-brand-primary">{study.title}</h1>
+                <h1 className="text-4xl border-b-2 border-brand-primary font-bold">{study.title}</h1>
                 <br />
-                <p>{study.description}</p>
+                <p className="text-justify text-xl">{study.description}</p>
                 <br />
                 <Link
                   href={study.link}

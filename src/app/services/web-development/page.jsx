@@ -102,6 +102,15 @@ export default function page() {
       content: "Through our maintenance service, we can help you in improving the design, features and overall performance of your website without the need for a new one. Our web experts can also help you with suggestions on improving user experience in an existing website hence, we can enhance your existing website without any hassle.",
     },
   ];
+
+  const featuredcase = {
+    title: "CRM For Fintech",
+    objective:"Aimtech Innovate aimed to develop an AI-enabled CRM solution for a fintech company to enhance sales processes, decision-making, and customer relationship management Challenges. The challenges included integrating AI technology seamlessly with existing systems, ensuring accurate data analysis for sales forecasting, and creating a user-friendly platform for managing customer interactions.",
+    challenge : "The primary challenge was to enhance the site's SEO performance to increase job applications amid the competitive job market in the food industry.",
+    Process:"Aimtech Innovate's experts utilised machine learning to develop an AI-powered CRM system that analysed real-time sales data, provided revenue forecasts, and offered insights into team performance. The CRM was seamlessly integrated with existing FinTech tools, ensuring a smooth transition and enhancing user experience.",
+    Results: "The implementation of the AI-powered CRM led to streamlined sales processes, improved decision-making, and enhanced customer relationship management. The custom dashboards provided deep insights into sales metrics, enabling the FinTech company to optimize revenue forecasting and team performance effectively.",
+    learnings:"The successful implementation of the AI-enabled CRM highlighted the importance of leveraging technology to streamline processes, gain valuable insights, and enhance customer interactions in the fintech industry. The project emphasised the significance of integrating AI seamlessly with existing systems and focusing on user-friendly design for efficient CRM operations."
+  }
    
   return (
     <>
@@ -116,7 +125,7 @@ export default function page() {
         <div className="text-4xl text-center text-white">{params.slug}</div>
       )}
     </section> */}
-    <FCStudy />
+    <FCStudy featured={featuredcase} />
     <CaseStudies />
     <Testimonial />
     <Pland faqdata={accordionData} />
