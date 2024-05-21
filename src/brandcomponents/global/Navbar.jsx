@@ -119,6 +119,12 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
+        {
+          title: "SMM for ai startup",
+          link: "/casestudy/social-media-marketing-for-ai-startup",
+          description:
+            "Aimtech Innovate resolved many problems for AI startups..",
+        },
 
       ],
     },
@@ -164,6 +170,12 @@ const Navbar = () => {
       category: "PPC related",
       icon: "💰",
       data: [
+        {
+          title: "SMM For AI Atartup",
+          link: "/casestudy/social-media-marketing-for-ai-startup",
+          description:
+            "Aimtech Innovate resolved many problems for AI startups..",
+        },
         {
           title: "SMM For AI Atartup",
           link: "/casestudy/social-media-marketing-for-ai-startup",

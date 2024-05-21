@@ -49,7 +49,7 @@ export default function Services() {
 
               </h2>
               <br />
-              <Link href="/services/web-development" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/web-development" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -74,7 +74,7 @@ export default function Services() {
               Reach the right audience at the right time with strategic PPC campaigns that deliver measurable results.
               </h2>
               <br />
-              <Link href="/services/ppc-advertisement" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/ppc-advertisement" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -98,7 +98,7 @@ export default function Services() {
               Unleash the power of SEO to maximize search rankings that attract qualified leads, and grow your online presence organically.
               </h2>
               <br />
-              <Link href="/services/seo-service" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/seo-service" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -122,7 +122,7 @@ export default function Services() {
               Building social media presence with engaging content, community management, and targeted social media advertising.
               </h2>
               <br />
-              <Link href="/services/social-media-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/social-media-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -146,7 +146,7 @@ export default function Services() {
               Targeted email campaigns that nurture leads, build brand loyalty, and drive sales through powerful email marketing strategies.
               </h2>
               <br />
-              <Link href="/services/email-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-xl bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/email-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -187,7 +187,7 @@ export default function Services() {
               <React.Fragment key={contentId}>
                 <button
                   onClick={() => handleButtonClick(contentId)}
-                  className={`flex h-12 sm:h-14 lg:h-20 w-full items-center text-wrap tracking-tight text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl py-8 pl-4 rounded-md service-btn ${
+                  className={`flex h-12 sm:h-14 font-bold lg:h-20 w-full items-center text-wrap tracking-tight text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl py-8 pl-4 rounded-md service-btn ${
                     currentContent === contentId
                       ? "bg-brand-secondary hover:bg-yellow-400 text-brand-primary font-semibold"
                       : "text-white"

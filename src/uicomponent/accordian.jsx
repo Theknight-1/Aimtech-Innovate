@@ -56,7 +56,7 @@ const Accordion = ({
         className="px-6 overflow-hidden transition-max-height"
         style={{
           maxHeight: maxHeight,
-          transition: `max-height ${isOpen ? "0.6s" : "0.3s"} ease-in`,
+          transition: `max-height ${isOpen ? "0.3s" : "0.1s"} ease-in`,
         }}
       >
         <div className="flex items-start flex-col justify-center">

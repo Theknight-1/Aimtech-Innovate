@@ -68,7 +68,7 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
-          <article className="w-full  text-xl z-10 sm:text-xl md:text-xl lg:text-2xl  text-white text-justify">
+          <article className="w-full lg:w-3/4  text-xl z-10 sm:text-xl md:text-xl lg:text-2xl  text-white text-justify">
             <span className="font-satoshi">
               Aimtech Innovate offers premium digital marketing services at
               unbeatable pricing in the US and Canada, thanks to our partnership

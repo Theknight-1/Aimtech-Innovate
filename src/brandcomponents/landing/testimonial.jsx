@@ -64,7 +64,7 @@ export default function Testimonial() {
             <div className="h-auto w-full  flex items-center justify-center  ">
 
               <span className="text-2xl sm:text-4xl md:text-5xl text-center lg:text-left lg:text-[4rem]  text-white leading-normal">
-              We helped businesses achieve massive <br /> <span className="border-b-2 border-brand-secondary">profitable</span> results
+              We helped businesses achieve massive <br /> <span className="border-b-4 text-brand-secondary border-brand-secondary">profitable</span> results
               </span>
             </div>
             <div className="flex flex-col items-center lg:items-start justify-center   mt-2 h-auto w-full text-center lg:text-left">

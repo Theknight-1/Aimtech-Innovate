@@ -9,7 +9,7 @@ const LearnMore = () => {
     "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   ];
   return (
-    <section className="w-full h-auto lg:h-screen flex justify-center items-center">
+    <section className="w-full h-auto lg:h-[calc(100vh-30vh)] flex justify-center items-center">
       <div className="w-full lg:max-w-full  lg:px-0">
         <div className="flex flex-col lg:flex-row items-center  px-16">
           
@@ -19,13 +19,13 @@ const LearnMore = () => {
                 World Class Creative Digital Marketing Agency
 
               </h1>
-              <p className="text-lg lg:text-xl text-white">
+              <p className="text-lg lg:text-xl text-white text-justify">
                 We're more than an agency, we're your long-term growth partner. <br /> <br />
 
                 Our team of 10+ experienced digital marketing experts is hand-picked for their specific skills. We have social media wizards, Google gurus, talented web developers, creative graphic designers, data-driven business analysts, and strategic masterminds.
                 <br /><br />
 
-                Located in Canada and the USA, we're here to serve you across North America. <br /> <br />
+                Located in Canada and the US, we're here to serve you across North America. <br /> <br />
 
 
 

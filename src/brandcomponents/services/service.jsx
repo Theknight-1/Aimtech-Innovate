@@ -6,7 +6,7 @@ export default function brandservice({ data }) {
   const dataOBJ = data;
 
   return (
-    <section class="overflow-x-hidden h-auto  text-white gap-y-8  lg:px-24">
+    <section class="overflow-x-hidden h-auto p-4 text-white gap-y-8   lg:px-24">
       <section className="w-full h-auto  flex flex-col md:flex-row    justify-evenly items-center  ">
         <div className="w-full lg:w-1/2  flex items-center justify-center p-8 ">
           
@@ -22,14 +22,14 @@ export default function brandservice({ data }) {
             /> */}
           
         </div>
-        <div className=" flex-1  flex items-center  text-justify  justify-start ">
+        <div className=" flex-1  flex items-center    justify-start ">
           <div className="w-full h-auto space-y-8 ">
             <h1 className="text-brand-secondary text-2xl font-semibold uppercase">
               {dataOBJ.title}
             </h1>
-            <article className="text-xl lg:text-5xl font-semibold">{dataOBJ.tagLine}</article>
-            <p className="text-white text-xl lg:text-lg">{dataOBJ.desciption}</p>
-            <div className="grid grid-cols-2  text-brand-secondary font-semibold gap-4 text-2xl">
+            <p className="text-xl lg:text-5xl font-semibold leading-loose ">{dataOBJ.tagLine}</p>
+            <p className="text-white text-xl lg:text-lg leading-loose">{dataOBJ.desciption}</p>
+            <div className="grid grid-cols-1 lg:grid-cols-2  text-brand-secondary font-semibold gap-4 text-xl lg:text-2xl">
               {dataOBJ.benifits.map((ben, index) => (
                 <span key={index}> {ben}</span>
               ))}
@@ -45,14 +45,14 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full mt-20 h-auto flex justify-center items-center  ">
+      <section class=" w-full mt-20 h-auto flex justify-center items-center p-2 ">
         <div class=" h-full flex flex-col-reverse md:flex-row items-start justify-start gap-2">
           <div class="w-full lg:w-3/5 h-full  lg:pr-8     overflow-hidden flex flex-col items-center justify-center ">
             
             <div class="w-full">
               {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
 
-              <p className="mt-2 text-6xl font-semibold tracking-tight text-white sm:text-5xl " >{dataOBJ.second.title}</p>
+              <p className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-5xl " >{dataOBJ.second.title}</p>
               
               <br />
               <div>
@@ -61,7 +61,7 @@ export default function brandservice({ data }) {
               <br />
 
               <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
-                <ul class="pl-4 font-satoshi list-disc space-y-6 text-sm " >
+                <ul class="pl-4 font-satoshi list-inside list-disc space-y-6 text-xl " >
 
                   {dataOBJ.second.points.map(item => (
                     <li key={item}>{item}</li>
@@ -91,7 +91,7 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full  mt-20 h-auto flex justify-center items-center  ">
+      <section class=" w-full  mt-20 h-auto flex justify-center items-center p-2 ">
         <div class=" h-full  flex flex-col-reverse md:flex-row-reverse items-start justify-start gap-2">
           <div class="w-full lg:w-3/5 h-full  lg:pr-8    overflow-hidden flex flex-col items-start justify-center ">
             <div class="w-full">
@@ -127,8 +127,8 @@ export default function brandservice({ data }) {
 
               </dl>
             </div>
-            <div class="list-disc space-y-5 text-xl mt-5">
-                <button className=" bg-brand-secondary font-bold text-brand-primary p-4 rounded hover:bg-yellow-400">{dataOBJ.fourth.ctatext}</button>  
+            <div class=" border min-h-12 bg-brand-secondary rounded hover:bg-yellow-400  space-y-5 text-xl mt-5 p-2 px-6 flex items-center justify-center">
+                <Link href={dataOBJ.fourth.ctalink} className="font-bold text-brand-primary  ">{dataOBJ.fourth.ctatext}</Link>  
             </div>
           </div>
           <div className="flex-1 h-full  flex items-center justify-center ">

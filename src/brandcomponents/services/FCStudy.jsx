@@ -2,13 +2,15 @@ import React from "react";
 
 const FCStudy = () => {
   return (
-    <section class="overflow-hidden lg:mt-20 text-white h-auto   lg:mb-16  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+    <section class="overflow-hidden p-4 lg:mt-20 text-white h-auto   lg:mb-16  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
       <div className="w-full h-auto  flex flex-col items-center justify-center p-2 ">
-        <article className="text-4xl lg:text-5xl font-semibold tracking-wider text-center text-brand-secondary">
-          Featured Case Study: Dot Foods
-        </article>
+        <p className="text-4xl lg:text-5xl  text-justify font-semibold tracking-wider text-center text-brand-secondary">
+          <span>Featured Case Study</span>
+          <br />
+        </p>
+        <br />
         <span className="text-3xl lg:text-5xl font-semibold">
-          Expanding Organic Reach for Dot Foods Careers.
+        CRM For Fintech
         </span>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">

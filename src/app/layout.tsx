@@ -32,7 +32,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/brand/favicon.png" type="image/x-icon" />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap" rel="stylesheet"></link>
       </head>
-      <GoogleTagManager gtmId="G-ZQV8D40BP7" />
+      <GoogleTagManager gtmId="GTM-PTWCNN2R" />
       <body className={satoshi.className}>{children}</body>
     </html>
   );

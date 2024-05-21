@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
-import { FaStar,FaStarHalfAlt  } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
 
 export default function GradientSection() {
@@ -19,34 +19,24 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen font-satoshi pt-20 overflow-hidden lg:overflow-visible h-auto   flex flex-col lg:flex-row justify-between items-center  px-4 md:px-8 lg:px-24 xl:px-28">
-        <div className="grid  max-w-screen py-8 lg:py-16 lg:grid-cols-12 gap-8  ">
-          <div className="lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6  space-y-5 ">
+      <section className="w-screen   font-satoshi pt-20  h-auto     px-4 md:px-8 lg:px-24 xl:px-28">
+        <div className="flex flex-col-reverse justify-between md:flex-row   ">
+          <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 p-2  space-y-5 ">
+            <div className=" space-y-4 p-2">
+            <div className="space-y-4">
+
             <h1 className=" max-w-7xl text-white  font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl  ">
               Enhance your digital presence and gain market excellence
             </h1>
-            <h3 className="max-w-4xl  text-white  text-sm md:text-lg xl:text-lg 2xl:text-2xl bg-gradient-to-r bg-clip-text tracking-wider">
+            <h3 className="max-w-4xl  text-white  text-sm md:text-[22px] xl:text-[22px] 2xl:text-2xl bg-gradient-to-r bg-clip-text tracking-wider">
               Most cost-effective digital marketing agency of <span>US</span>{" "}
               and <span>Canada</span>
             </h3>
-            {/* <div className="flex justify-end items-center my-5 ">
-              <svg
-                className="w-[60%] md:w-[70%]"
-                viewBox="0 0 529 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 32C79.7361 10.8706 289.967 -18.7107 525 32"
-                  stroke="#FFB700"
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </div> */}
+            </div>
+
 
             <div className="flex flex-col  justify-start xl:space-y-6 lg:space-y-4 space-y-2">
-              <p className="max-w-2xl xl:text-2xl lg:text-lg text-base  text-white">
+              <p className="max-w-2xl xl:text-xl lg:text-[20px] text-[20px]  text-white">
                 Don't believe it? Request a free quotation today
               </p>
               <div className=" flex justify-start ">
@@ -85,7 +75,7 @@ export default function GradientSection() {
                 </div>
                 <button
                   onClick={() => newValue && setIsOpen(true)}
-                  className="inline-flex font-semibold w-max items-center justify-center px-8 lg:py-4 lg:text-lg md:py-4 sm:py-3 py-2.5 md:text-lg text-sm text-center text-gray-900 bg-brand-secondary hover:bg-yellow-300 dark:text-black/80  dark:bg-[#FFB700] dark:hover:bg-[#ffb700d3] dark:border-gray-700 rounded-tr-lg rounded-br-lg "
+                  className="border bg-brand-secondary px-4 w-64 font-bold text-brand-primary text-xl hover:bg-yellow-400 rounded-r-lg"
                 >
                   Get Started
                 </button>
@@ -97,23 +87,31 @@ export default function GradientSection() {
                       <FaStar className="text-brand-secondary" />
                     </li>
                   ))}
-                    <li >
-                      <FaStarHalfAlt className="text-brand-secondary" />
-                    </li>
+                  <li >
+                    <FaStarHalfAlt className="text-brand-secondary" />
+                  </li>
                 </ul>
-                <span className="text-white font-bold xl:text-2xl lg:text-base sm:text-base text-xs">
+                <span className="text-white font-semibold xl:text-[18px]  text-xs">
                   4.8/5 based on 6,873 reviews | GDPR Compliant
                 </span>
               </div>
             </div>
+            </div>
           </div>
-          <div className="relative lg:col-span-6 lg:flex items-center justify-end  ">
-            <div className="absolute left-10 -z-0 w-full h-auto aspect-square justify-end rounded-full  bg-[#15BEE3]/25 blur-3xl "></div>
-            <img
-              src="/landingPage/hero-image.svg"
-              alt="mockup"
-              className="absolute z-0 w-[80%] object-cover"
-            />
+          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end  p-2 lg:justify-end  ">
+            <div className="w-full h-full  lg:col-span-6 lg:flex items-center justify-center p-2 lg:justify-end">
+              <div className=" w-full h-full flex items-center justify-end relative  ">
+                <img
+                  src="/landingPage/hero-image.svg"
+                  alt="mockup"
+                  className="w-auto min-h-96 max-h-[500px] aspect-square  object-fit "
+                />
+                <div className="absolute -z-10  w-auto min-h-96 max-h-[500px] aspect-square    bg-blue-300/50 blur-3xl rounded-full "></div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </section>
