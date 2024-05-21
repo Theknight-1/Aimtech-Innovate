@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
+import { GoogleTagManager } from '@next/third-parties/google'
 import localFont  from "next/font/local";
 import "./globals.css";
+
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,10 @@ const satoshi = localFont({
   weight: "400",
 });
 
+
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,6 +32,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/brand/favicon.png" type="image/x-icon" />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap" rel="stylesheet"></link>
       </head>
+      <GoogleTagManager gtmId="G-ZQV8D40BP7" />
       <body className={satoshi.className}>{children}</body>
     </html>
   );
