@@ -166,6 +166,33 @@ export default function Footer() {
               />
             </svg>
           </button>
+          <div
+            className={`z-10 ${
+              isCaseStudyDropdownOpen ? "" : "hidden"
+            } divide-y divide-gray-100 rounded-lg shadow w-full`}
+          >
+            <ul
+              className="py-2 text-sm text-white dark:text-white"
+              aria-labelledby="servicesDropdownButton"
+            >
+              <li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/casestudy/seo-for-fintech">
+                Popular
+              </a>
+            </li>
+            <li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/casestudy/social-media-marketing-for-ai-startup">
+                Recent
+              </a>
+            </li>
+            <li>
+              <a className="block px-4 py-2 hover:bg-brand-secondary" href="/casestudy/web-design-for-high-school">
+                Trending
+              </a>
+            </li>
+              
+            </ul>
+          </div>
           
         </div>
       </div>
@@ -204,29 +231,22 @@ export default function Footer() {
               aria-labelledby="companyDropdownButton"
             >
               <li>
-                <Link
-                  href={"/about"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  Media Coverage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  Media Coverage
-                </Link>
-              </li>
+              <a className="block px-4 py-2 hover:bg-brand-secondary " href="/about">
+                About us
+              </a>
+            </li>
+            <li>
+              <a className="block px-4 py-2 hover:bg-brand-secondary " href="/about">
+                Blog
+              </a>
+            </li>
+
+            <li>
+              <a className="block px-4 py-2 hover:bg-brand-secondary " href="/about">
+                Media Coverage
+              </a>
+            </li>
+              
             </ul>
           </div>
         </div>
@@ -266,45 +286,31 @@ export default function Footer() {
               aria-labelledby="servicesDropdownButton"
             >
               <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  Web Development & Design
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  PPC Advertisement
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  SEO
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  Digital Marketing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"#"}
-                  className="block px-4 py-2 hover:bg-brand-secondary "
-                >
-                  Email Marketing
-                </Link>
-              </li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/web-development">
+                Web Design & Development
+              </a>
+            </li>
+            <li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/ppc-advertisement">
+                PPC Advertisement
+              </a>
+            </li>
+            <li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/seo-service">
+                Search Engine Optimization
+              </a>
+            </li>
+            <li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/social-media-marketing">
+                Social Media Management
+              </a>
+            </li>
+            <li>
+              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/email-marketing">
+                Email Marketing
+              </a>
+            </li>
+              
             </ul>
           </div>
         </div>
@@ -345,7 +351,7 @@ export default function Footer() {
             >
               <li>
                 <Link
-                  href={"#"}
+                  href={"/sitemap.xml"}
                   className="block px-4 py-2 hover:bg-brand-secondary "
                 >
                   Sitemap
@@ -353,7 +359,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={"#"}
+                  href={"/terms-and-conditions"}
                   className="block px-4 py-2 hover:bg-brand-secondary "
                 >
                   T&C
@@ -361,7 +367,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={"#"}
+                  href={"/privacy-policy"}
                   className="block px-4 py-2 hover:bg-brand-secondary "
                 >
                   Privacy Policy

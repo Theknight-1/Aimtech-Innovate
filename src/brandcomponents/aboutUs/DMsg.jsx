@@ -51,10 +51,11 @@ const DMsg = () => {
             <article class="flex flex-col items-center justify-center gap-4 md:flex-row lg:gap-6 animate-fade-right p-2">
               <div class="flex flex-col gap-2 ">
                 <h2 class="font-bold text-2xl">
-                  Localized Tech and Market Expertise
+                Less Cost, Maximum Revenue
                 </h2>
                 <p class="text-justify">
-                  With HQ in Canada and Production in Nepal, our agency offers deep understanding and expertise in the unique digital landscapes of latest technology and marketplace. We tailor our strategies to resonate with the diverse demographics, cultural nuances, and regulatory environments of each region, ensuring maximum effectiveness for our clients.
+                We become an extension of your marketing team, delivering exceptional results without the hefty overhead costs of hiring a full-time digital marketing staff. Our streamlined operations and data-driven approach ensure we target the most impactful strategies, maximizing your return on investment and driving significant revenue growth. You'll see a tangible difference in your bottom line without breaking the bank.
+
                 </p>
               </div>
               <div class=" flex items-center justify-center p-4 min-h-64  w-full shrink-0 self-start overflow-hidden rounded-lg shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
@@ -83,20 +84,23 @@ const DMsg = () => {
               </div>
               <div class="flex flex-col gap-2 ">
                 <h2 class="font-bold text-2xl">
-                  Quick Data-Driven Results
+                Quality Service Round the Clock
+
                 </h2>
                 <p class="text-justify">
-                  Our commitment to data-driven marketing ensures that we deliver measurable results with lightning-fast turnaround times. Leveraging advanced analytics and technology, we track, analyze, and optimize campaigns in real-time, enabling us to adapt quickly and maximize ROI for our clients. This agile approach means our clients see tangible business growth faster than ever before.
+                We take pride in offering exceptional service that goes above and beyond.  Our team of digital marketing experts is available 24/7 to address your needs and concerns.  Whether you have a pressing question or require strategic guidance, we're here to ensure your campaigns run smoothly and deliver consistent results. We provide constant communication and transparent reporting, keeping you informed and involved every step of the way.
+
                 </p>
               </div>
             </article>
             <article class="flex flex-col items-center justify-center gap-4 md:flex-row lg:gap-6 animate-fade-right p-2">
               <div class="flex flex-col gap-2 ">
                 <h2 class="font-bold text-2xl">
-                  Multifaceted Digital Presence Services
+                Personalized Growth Plan
                 </h2>
                 <p class="text-justify">
-                  We offer a comprehensive suite of services covering every aspect of digital marketing. From SEO and SEM to social media management, content marketing, email marketing, and more, our integrated approach ensures consistent messaging and maximum impact across all channels. Clients benefit from the convenience of a one-stop solution and the synergistic effect of cohesive, multi-channel campaigns.            </p>
+                An All-in-one personalised digital growth approach only works in today's dynamic digital landscape.  We take the time to understand your unique business goals, target audience, and competitive environment.  With this in-depth knowledge, we craft a personalized growth plan tailored specifically to your needs.  We leverage the most effective strategies to achieve your desired outcomes, propelling your brand to new heights and achieving sustainable growth in the long term.
+                  </p>
               </div>
               <div class=" flex items-center justify-center p-4 min-h-64  w-full shrink-0 self-start overflow-hidden rounded-lg shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
                 <div className="w-full h-auto aspect-square p-2 rounded-lg lg:bg-brand-secondary p-6 flex items-center justify-center ">

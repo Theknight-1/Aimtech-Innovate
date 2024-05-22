@@ -79,7 +79,7 @@ export default function CaseStudies() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="text-5xl md:text-6xl">
+          <div className="text-3xl md:text-6xl">
             <span>Learn More About</span> <br />
             <span>the Work We've Done</span>
           </div>
@@ -99,10 +99,10 @@ export default function CaseStudies() {
         </div>
         <div class="w-1/10"></div>
       </div>
-      <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
+      <div className=" h-full w-full grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
         {caseStudiesData.map((study,index) => (
-          <div key={index} className="flip-card aspect-square h-auto w-full  ">
-            <div className="flip-card-inner w-full h-full p-2">
+          <div key={index} className="flip-card  overflow-hidden aspect-square h-auto w-full  ">
+            <div className="flip-card-inner w-full h-full">
               <div className="flip-card-front overflow-hidden">
                 <img
                   className="w-full h-full object-cover "
@@ -110,14 +110,14 @@ export default function CaseStudies() {
                   alt=""
                 />
               </div>
-              <div className="flip-card-back flex flex-col items-center justify-center px-8  font-bold">
-                <h1 className="text-4xl border-b-2 border-brand-primary font-bold">{study.title}</h1>
+              <div className="flip-card-back flex flex-col items-center justify-center px-2 lg:px-8  font-bold ">
+                <h1 className="text-2xl border-b-2 border-brand-primary font-bold">{study.title}</h1>
                 <br />
-                <p className="text-justify text-xl">{study.description}</p>
+                <p className="text-justify text-lg">{study.description}</p>
                 <br />
                 <Link
                   href={study.link}
-                  className="bg-brand-secondary hover:bg-yellow-400 w-1/2 text-center p-3 rounded-lg text-brand-primary"
+                  className="bg-brand-secondary hover:bg-yellow-400  lg:w-1/2 text-center p-3 rounded-lg text-brand-primary"
                 >
                   <p>Learn more...</p>
                 </Link>

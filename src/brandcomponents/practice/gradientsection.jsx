@@ -19,8 +19,8 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen   font-satoshi pt-20  h-auto     px-4 md:px-8 lg:px-24 xl:px-28">
-        <div className="flex flex-col-reverse justify-between md:flex-row   ">
+      <section className="w-screen   font-satoshi lg:pt-20  h-auto     px-4 md:px-8 lg:px-24 xl:px-28">
+        <div className="flex  flex-col-reverse justify-between md:flex-row   ">
           <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 p-2  space-y-5 ">
             <div className=" space-y-4 p-2">
             <div className="space-y-4">
@@ -28,7 +28,7 @@ export default function GradientSection() {
             <h1 className=" max-w-7xl text-white  font-semibold tracking-wide text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl  ">
               Enhance your digital presence and gain market excellence
             </h1>
-            <h3 className="max-w-4xl  text-white  text-sm md:text-[22px] xl:text-[22px] 2xl:text-2xl bg-gradient-to-r bg-clip-text tracking-wider">
+            <h3 className="max-w-4xl  text-white  text-[22px]  2xl:text-2xl bg-gradient-to-r bg-clip-text tracking-wider">
               Most cost-effective digital marketing agency of <span>US</span>{" "}
               and <span>Canada</span>
             </h3>
@@ -39,13 +39,13 @@ export default function GradientSection() {
               <p className="max-w-2xl xl:text-xl lg:text-[20px] text-[20px]  text-white">
                 Don't believe it? Request a free quotation today
               </p>
-              <div className=" flex justify-start ">
-                <div className="relative w-full md:w-[50%] rounded-lg ">
+              <div className="flex flex-col md:flex-row justify-start ">
+                <div className="relative  w-full  ">
                   <div className="relative ">
                     <select
                       value={selectedOption}
                       onChange={handleSelectChange}
-                      className="block font-bold appearance-none w-full bg-white border-gray-300 text-gray-800 xl:text-xl lg:text-lg md:text-base sm:text-sm py-5 px-4 pr-8 leading-tight rounded-tl-lg rounded-bl-lg"
+                      className="block font-bold appearance-none w-full bg-white lg:rounded-l-lg border-gray-300 text-gray-800 xl:text-xl lg:text-lg md:text-base sm:text-sm py-5 px-4 pr-8 leading-tight "
                     >
                       <option
                         value="Select Digital Presence Services"
@@ -75,7 +75,7 @@ export default function GradientSection() {
                 </div>
                 <button
                   onClick={() => newValue && setIsOpen(true)}
-                  className="border bg-brand-secondary px-4 w-64 font-bold text-brand-primary text-xl hover:bg-yellow-400 rounded-r-lg"
+                  className=" w-full lg:w-1/2 bg-brand-secondary p-4 lg:rounded-r-lg  lg:px-4  font-bold text-brand-primary text-xl hover:bg-yellow-400 "
                 >
                   Get Started
                 </button>

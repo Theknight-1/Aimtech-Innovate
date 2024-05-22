@@ -56,7 +56,7 @@ export default function Services() {
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
               <img
-                src="/landingPage/web-service.png"
+                src="/landingPage/web-dev.png"
                 alt=""
                 className="h-full w-full object-cover  "
               />
@@ -81,7 +81,7 @@ export default function Services() {
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
               <img
-                src="/landingPage/smm-service.png"
+                src="/landingPage/ppc.png"
                 alt=""
                 className="h-full w-full object-cover "
               />
@@ -105,7 +105,7 @@ export default function Services() {
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
               <img
-                src="/landingPage/seo-service.jpg"
+                src="/landingPage/seo.png"
                 alt=""
                 className="h-full w-full object-cover "
               />
@@ -129,7 +129,7 @@ export default function Services() {
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
               <img
-                src="/landingPage/smm-service.png"
+                src="/landingPage/smm.png"
                 alt=""
                 className="h-full w-full object-cover "
               />
@@ -153,7 +153,7 @@ export default function Services() {
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
               <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
               <img
-                src="/landingPage/email-service.png"
+                src="/landingPage/mail.png"
                 alt=""
                 className="h-full w-full object-cover "
               />

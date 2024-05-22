@@ -21,7 +21,7 @@ export default function CaseLanding({casedata}) {
               {cdata.title}
               </h1>
               <div className=" text-center  flex items-center justify-center mt-6 block w-full text-xl text-wrap lg:text-2xl  ">
-                <p className="lg:px-24 lg:w-1/2">
+                <p className="lg:px-24 lg:w-1/2 tracking-tight text-justify">
                  {cdata.description}
                 </p>
               </div>
@@ -88,8 +88,8 @@ export default function CaseLanding({casedata}) {
         </div>
       </section>
 
-      <section className="flex w-full flex-col p-2 px-10 md:flex-row ">
-        <div className="flex aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 lg:w-1/2">
+      <section className="flex w-full flex-col-reverse p-2 px-10 md:flex-row  ">
+        <div className="flex   h-auto w-full flex-col items-start justify-center gap-y-4 p-2 lg:w-1/2">
           <h2 className="mb-4 pl-2 text-4xl lg:text-8xl font-bold text-brand-secondary">
             Client Goals
           </h2>
@@ -106,7 +106,7 @@ export default function CaseLanding({casedata}) {
             </ol>
           </div>
         </div>
-        <div className="aspect-square h-auto lg:p-32  flex-1">
+        <div className=" h-[60vh]  overflow-hidden   flex-1">
           <img
             className="h-full w-full object-fit"
             src="/CaseStudy/case-one.svg"
@@ -115,18 +115,18 @@ export default function CaseLanding({casedata}) {
         </div>
       </section>
       <section className="flex w-full flex-col  p-2 px-10 md:flex-row">
-        <div className="aspect-square h-auto p-16 flex-1 ">
+        <div className="aspect-square h-[60vh]  flex-1 ">
           <img
             className="h-full w-full object-contain"
             src="/CaseStudy/case-two.svg"
             alt=""
           />
         </div>
-        <div className="flex lg:space-x-6  aspect-square h-auto w-full flex-col items-start justify-center gap-y-4 p-2 md:w-1/2">
+        <div className="flex lg:space-x-6   h-auto w-full flex-col items-start justify-center gap-y-4 p-2 md:w-1/2">
           <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-brand-secondary ">
             How We Helped
           </h2>
-          <p className="text-xl md:text-2xl leading-normal text-white">
+          <p className="text-xl text-justify tracking-tight md:text-2xl leading-normal text-white">
            {cdata.help}
           </p>
         </div>

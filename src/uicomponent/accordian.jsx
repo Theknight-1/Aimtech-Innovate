@@ -33,7 +33,7 @@ const Accordion = ({
         onClick={handleClick}
       >
         <div className="flex gap-x-4 items-center">
-          <h2 className="text-sm sm:text-lg md:text-xl xl:text-2xl">{title}</h2>
+          <h2 className="text-lg sm:text-lg md:text-xl xl:text-2xl">{title}</h2>
         </div>
         <svg
           className={`w-6 h-6 transition-transform duration-300 ${
@@ -60,7 +60,7 @@ const Accordion = ({
         }}
       >
         <div className="flex items-start flex-col justify-center">
-          <article className="text-sm sm:text-sm md:text-lg py-3">
+          <article className="text-lg text-justify sm:text-sm md:text-lg py-3">
             {content}
           </article>
         </div>

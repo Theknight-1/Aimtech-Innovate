@@ -8,30 +8,21 @@ export default function Whyus() {
 
   const accordionData = [
     {
-      title: "Localized Tech and Market Experience",
+      title: "Less Cost, Maximum Revenue",
       content:
-        "With HQ in Canada and Production in Nepal, our agency offers deep understanding and expertise in the unique digital landscapes of the latest technology and marketplace. We tailor our strategies to resonate with the diverse demographics, cultural nuances, and regulatory environments of each region, ensuring maximum effectiveness for our clients.",
+        "We become an extension of your marketing team, delivering exceptional results without the hefty overhead costs of hiring a full-time digital marketing staff. Our streamlined operations and data-driven approach ensure we target the most impactful strategies, maximizing your return on investment and driving significant revenue growth. You'll see a tangible difference in your bottom line without breaking the bank.",
     },
     {
-      title: "Quick Data driven Results",
+      title: "Quality Service Round the Clock",
       content:
-        "Our commitment to data-driven marketing ensures that we deliver measurable results with lightning-fast turnaround times. Leveraging advanced analytics and technology, we track, analyze, and optimize campaigns in real-time, enabling us to adapt quickly and maximize ROI for our clients. This agile approach means our clients see tangible business growth faster than ever before.",
+        "We take pride in offering exceptional service that goes above and beyond.  Our team of digital marketing experts is available 24/7 to address your needs and concerns.  Whether you have a pressing question or require strategic guidance, we're here to ensure your campaigns run smoothly and deliver consistent results. We provide constant communication and transparent reporting, keeping you informed and involved every step of the way.",
     },
     {
-      title: "Multifaceted Digital Presence Service",
+      title: "Personalized Growth Plan",
       content:
-        "We offer a comprehensive suite of services covering every aspect of digital marketing. From SEO and SEM to social media management, content marketing, email marketing, and more, our integrated approach ensures consistent messaging and maximum impact across all channels. Clients benefit from the convenience of a one-stop solution and the synergistic effect of cohesive, multi-channel campaigns.",
+        "An All-in-one personalised digital growth approach only works in today's dynamic digital landscape.  We take the time to understand your unique business goals, target audience, and competitive environment.  With this in-depth knowledge, we craft a personalized growth plan tailored specifically to your needs.  We leverage the most effective strategies to achieve your desired outcomes, propelling your brand to new heights and achieving sustainable growth in the long term.",
     },
-    {
-      title: "Creative innovation on repeat",
-      content:
-        "Creativity is our cornerstone. Our team of talented professionals excels at developing innovative, attention-grabbing campaigns that captivate audiences and drive engagement. Whether it's crafting compelling content, designing interactive experiences, or engineering viral-worthy campaigns, our creative prowess sets our clients apart from the competition.",
-    },
-    {
-      title: "24/7 Client-centric approach",
-      content:
-        "We prioritize client satisfaction above all else. Our streamlined processes and dedicated account managers make it easy for clients to work with us, ensuring a seamless experience from start to finish. Plus, our commitment to cost-cutting means clients get maximum value for their investment without compromising on quality. By offering competitive pricing and transparent billing, we empower clients to achieve their goals without breaking the bank.",
-    },
+   
   ];
 
   return (
@@ -78,7 +69,7 @@ export default function Whyus() {
           </article>
           <Link href="/about" className="z-10">
             <button className="w-auto rounded-lg flex items-center justify-center gap-x-2 border bg-white md:p-4 px-8 p-3 shadow-lg group">
-              <span className="font-bold text-[#122B59] md:text-base lg:text-lg text-sm">
+              <span className="font-bold text-[#122B59] md:text-base lg:text-lg text-sm uppercase">
                 Know More About Us
               </span>
               <img
