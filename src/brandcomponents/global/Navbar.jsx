@@ -16,6 +16,44 @@ import {
   FcFeedback,
 } from "react-icons/fc";
 
+const AnimatedHamburger = ({ handleMobileView, scrolling }) => {
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+    handleMobileView((pre) => !pre);
+  };
+
+  return (
+    <div className="  flex flex-col justify-center">
+      <div className="relative  mx-auto">
+        <button
+          className="w-14 h-10 relative focus:outline-none rounded"
+          onClick={toggleMenu}
+        >
+          <div className="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span
+              className={`block absolute h-0.5 w-7 transition-transform duration-400 ease-in-out ${
+                open ? "rotate-45 " : "-translate-y-1.5"
+              } ${scrolling ? "bg-black" : "bg-white"}`}
+            ></span>
+            <span
+              className={`block absolute h-0.5 w-5  transition-opacity duration-400 ease-in-out ${
+                open ? "opacity-0" : "opacity-100"
+              } ${scrolling ? "bg-black" : "bg-white"}`}
+            ></span>
+            <span
+              className={`block absolute h-0.5 w-7  transition-transform duration-400 ease-in-out ${
+                open ? "-rotate-45 " : "translate-y-1.5"
+              } ${scrolling ? "bg-black" : "bg-white"}`}
+            ></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -107,7 +145,6 @@ const Navbar = () => {
     },
   ];
 
-
   const caseStudiesData = [
     {
       category: "SMM related",
@@ -125,7 +162,6 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-
       ],
     },
     {
@@ -144,7 +180,6 @@ const Navbar = () => {
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
         },
-
       ],
     },
     {
@@ -163,7 +198,6 @@ const Navbar = () => {
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
         },
-
       ],
     },
     {
@@ -182,7 +216,6 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-
       ],
     },
   ];
@@ -228,8 +261,9 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ${scrolling ? "bg-white text-black shadow" : "text-white"
-          } z-50 mb-2 w-screen`}
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-2  ${
+          scrolling ? "bg-white text-black shadow" : "text-white"
+        } z-50 w-screen`}
       >
         <div className={`  mx-auto flex justify-between items-center py-2`}>
           <div className=" relative block  text-xl text-blue-600 font-bold">
@@ -237,8 +271,9 @@ const Navbar = () => {
               {" "}
               <img
                 src={imageUrl}
-                className={` object-scale-down ${scrolling ? "w-28 " : "w-28  lg:w-40 xl:w-48"
-                  }`}
+                className={` object-scale-down ${
+                  scrolling ? "w-28 " : "w-28  lg:w-40 xl:w-48"
+                }`}
                 alt="logo"
               />
               {/* <img src={logo.src} width={200} height={150} alt="" /> */}
@@ -251,8 +286,9 @@ const Navbar = () => {
         }`}> */}
               <div className={`lg:flex gap-4 lg:gap-7 hidden`}>
                 <h4
-                  className={`flex  items-center gap-2 text-base ${scrolling ? "hidden" : ""
-                    }`}
+                  className={`flex  items-center gap-2 text-base ${
+                    scrolling ? "hidden" : ""
+                  }`}
                 >
                   <a
                     href="https://calendly.com/himanshusaxena5500/30min"
@@ -266,8 +302,9 @@ const Navbar = () => {
                   </a>
                 </h4>
                 <h4
-                  className={`flex  items-center gap-2 text-base ${scrolling ? "hidden" : ""
-                    }`}
+                  className={`flex  items-center gap-2 text-base ${
+                    scrolling ? "hidden" : ""
+                  }`}
                 >
                   <span>
                     <FaWhatsapp size={22} />
@@ -281,8 +318,9 @@ const Navbar = () => {
                   </a>
                 </h4>
                 <h4
-                  className={`flex  items-center gap-2  text-lg font-bold hover:text-brand-secondary ${scrolling ? "hidden" : ""
-                    }`}
+                  className={`flex  items-center gap-2  text-lg font-bold hover:text-brand-secondary ${
+                    scrolling ? "hidden" : ""
+                  }`}
                 >
                   <span>
                     <FaPhone size={15} />
@@ -300,10 +338,17 @@ const Navbar = () => {
                   }}
                   className="rounded-lg px-2 py-1.5  font-semibold bg-brand-secondary hover:bg-yellow-400 w-max-lg "
                 >
-                  <span className="text-brand-primary hover:text-white font-bold text-lg">
+                  <span className="text-brand-primary hover:text-white font-bold text-sm sm:text-lg">
                     Get Proposal
                   </span>
                 </button>
+                {/* mobile navvar */}
+                <nav className="block lg:hidden  cursor-pointer">
+                  <AnimatedHamburger
+                    handleMobileView={handleMobileView}
+                    scrolling={scrolling}
+                  />
+                </nav>
               </div>
             </div>
             <ul
@@ -341,8 +386,9 @@ const Navbar = () => {
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto ${scrolling ? "-top-7" : ""
-                      }`}
+                    className={`relative bg-white p-6 w-full h-auto ${
+                      scrolling ? "-top-7" : ""
+                    }`}
                   >
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
                       {servicedata.map((service, idx) => (
@@ -388,8 +434,9 @@ const Navbar = () => {
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto ${scrolling ? "-top-7" : ""
-                      }`}
+                    className={`relative bg-white p-6 w-full h-auto ${
+                      scrolling ? "-top-7" : ""
+                    }`}
                   >
                     <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
                       <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-6  ">
@@ -403,17 +450,13 @@ const Navbar = () => {
                             </span>
                             {ckey.data.map((cstudy, idx) => (
                               <Link key={idx} href={cstudy.link}>
-                                <div
-                                  className="flex hover:bg-brand-secondary rounded flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer"
-                                >
+                                <div className="flex hover:bg-brand-secondary rounded flex-row gap-2 mt-2 xl:text-xl lg:text-lg  hover:shadow-lg p-2 cursor-pointer">
                                   <span>📑</span>
 
                                   <div className="flex flex-col items-start gap-2 ">
-
                                     <span className=" font-bold">
                                       {cstudy.title}
                                     </span>
-
 
                                     <article className="text-sm">
                                       {cstudy.description}
@@ -483,6 +526,113 @@ const Navbar = () => {
       {isOpen && (
         <div className={``}>
           <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
+      )}
+      {mobileNav && (
+        <div
+          className="lg:hidden fixed  w-full bg-white z-50 overflow-y-auto "
+          style={{ zIndex: 100 }}
+        >
+          <div className="container mx-auto px-4 py-3 w-full font-bold ">
+            <Link href="/" className="block py-2 text-gray-800">
+              Home
+            </Link>
+            <div className="relative w-full group">
+              <button
+                onClick={toggleServices}
+                className="w-full py-2 text-gray-800 flex items-center justify-between"
+              >
+                Services
+                <span>
+                  <RiArrowDropDownLine
+                    size={30}
+                    className={`transform transition-transform duration-300 ${
+                      servicesOpen ? "rotate-180 opacity-50" : ""
+                    }`}
+                  />
+                </span>
+              </button>
+              <div
+                className={`w-full transition-all duration-500 ease-linear overflow-hidden ${
+                  servicesOpen
+                    ? "max-h-screen  visible opacity-100 transition translate-y-0 duration-300 ease-linear"
+                    : "max-h-0 invisible opacity-0 translate-y-10"
+                }`}
+              >
+                {servicedata.map((service, index) => (
+                  <Link
+                    href={service.pagelink}
+                    key={index}
+                    className="py-2 text-gray-800 flex items-center gap-4 "
+                  >
+                    {service.icon}{" "}
+                    <span className="font-medium">{service.title}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <button
+                onClick={toggleCaseStudies}
+                className="w-full py-2 text-gray-800 flex items-center justify-between"
+              >
+                Case Studies{" "}
+                <RiArrowDropDownLine
+                  size={30}
+                  className={`transform transition-transform duration-300 ${
+                    caseStudiesOpen ? "rotate-180 opacity-50" : ""
+                  }`}
+                />
+              </button>
+
+              <div
+                className={`w-full transition-all duration-500 ease-linear overflow-hidden ${
+                  caseStudiesOpen
+                    ? "max-h-screen  visible opacity-100 transition translate-y-0 duration-300 ease-linear"
+                    : "max-h-0 invisible opacity-0 translate-y-10"
+                }`}
+              >
+                {caseStudiesData.map((category, index) => (
+                  <div key={index} className="py-2">
+                    <button
+                      onClick={() => toggleCategory(category.category)}
+                      className="py-2 text-gray-600 w-full flex items-center justify-between "
+                    >
+                      <div className="flex items-center font-semibold">
+                        {category.icon} {category.category}
+                      </div>
+                      <span>
+                        <RiArrowDropDownLine
+                          size={30}
+                          className={`transform transition-transform duration-300 ${
+                            openCategory === category.category
+                              ? "rotate-180 opacity-50"
+                              : ""
+                          }`}
+                        />
+                      </span>
+                    </button>
+                    {openCategory === category.category &&
+                      category.data.map((study, i) => (
+                        <Link
+                          href={study.link}
+                          key={i}
+                          className="block ml-4 py-1 text-gray-800 font-normal"
+                        >
+                          {study.title}
+                        </Link>
+                      ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <Link href="/about" className="block py-2 text-gray-800">
+              About
+            </Link>
+            <Link href="/contact" className="block py-2 text-gray-800">
+              Contact
+            </Link>
+          </div>
         </div>
       )}
     </>

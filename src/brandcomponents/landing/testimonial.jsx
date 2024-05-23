@@ -96,7 +96,7 @@ export default function Testimonial() {
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div> */}
             <div className="  lg:px-32 space-y-8 relative z-10 w-full h-full flex flex-col items-center justify-center ">
-              <div className="flex flex-row h-auto gap-x-24 min-h-16 w-full items-center justify-center">
+              <div className="flex flex-row space-x-6  w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
                   <img
                     src="/arrow-double-start.svg"
@@ -107,7 +107,7 @@ export default function Testimonial() {
                 <img
                   key={currentTestimonialIndex}
                   src={currentTestimonial.image}
-                  className="h-48 w-48 border animate-fade-left   rounded-full bg-white object-cover"
+                  className="h-48 w-48  border animate-fade-left rounded-full bg-white object-cover"
                   alt=""
                 />
                 <button onClick={showNextTestimonial}>

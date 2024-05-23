@@ -65,7 +65,7 @@ export default function CaseStudies() {
     <section className="flex flex-col w-full items-center justify-center  h-auto xl:min-h-screen   gap-y-8 space-y-5">
       <div class="flex h-full flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
         <div class="w-1/10 h-full"></div>
-        <div class="flex-1 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl  gap-x-4 capitalize ">
+        <div class="flex-1 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl gap-2 capitalize ">
           <svg
             className="w-10 h-auto md:w-20 lg:w-32 md:h-12 lg:h-16 scale-x-[-1]"
             viewBox="0 0 129 146"
@@ -79,7 +79,7 @@ export default function CaseStudies() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="text-3xl md:text-6xl">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             <span>Learn More About</span> <br />
             <span>the Work We've Done</span>
           </div>

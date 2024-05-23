@@ -166,30 +166,30 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             // onClick={() => setIsOpen(false)}
-            className="bg-slate-900/20 backdrop-blur p-8  inset-0 z-50 grid place-items-center overflow-y-scroll  fixed w-[100vw] h-[100vh] left-0 "
+            className="bg-slate-900/20 backdrop-blur p-3 sm:p-8  inset-0 z-50 grid place-items-center overflow-y-scroll  fixed w-[100vw] h-[100vh] left-0 "
           >
             <motion.div
               initial={{ scale: 0, rotate: "12.5deg" }}
               animate={{ scale: 1, rotate: "0deg" }}
               exit={{ scale: 0, rotate: "0deg" }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white text-white p-5 rounded-lg w-full max-w-3xl shadow-xl cursor-default relative overflow-hidden "
+              className="bg-white text-white p-5 rounded-lg w-full  max-w-3xl shadow-xl cursor-default relative overflow-hidden "
             >
               <span
-                className="absolute z-10  text-black md:right-5 right-2 md:top-5 top-5 cursor-pointer"
+                className="absolute z-10  text-black md:right-5 right-1 md:top-5 top-2 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 <IoCloseSharp size={30} />
               </span>
-              <div className=" space-y-4">
-                <span className="text-black text-center text-5xl font-bold">
+              <div className=" md:space-y-4">
+                <h1 className="text-black text-center text-2xl sm:text-3xl md:text-5xl font-bold">
                   Request a Proposal
-                </span>
-                <p className="text-black text-center">
+                </h1>
+                <p className="text-black text-center text-sm md:text-lg lg:text-xl">
                   Just fill in the form, and let our experts handle the rest.
                 </p>
               </div>
-              <div className="relative p-5">
+              <div className="relative  md:p-5">
                 <form
                   onSubmit={handleSubmit}
                   className="max-w-full mx-auto bg-white rounded-lg md:space-y-8 space-y-5"

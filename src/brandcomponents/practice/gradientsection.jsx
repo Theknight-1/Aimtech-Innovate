@@ -19,7 +19,7 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen   font-satoshi lg:pt-20  h-auto     px-4 md:px-8 lg:px-24 xl:px-28">
+      <section className="w-screen   font-satoshi lg:pt-20  h-auto     px-4 md:px-8 lg:px-24 xl:px-28 ">
         <div className="flex  flex-col-reverse justify-between md:flex-row   ">
           <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 p-2  space-y-5 ">
             <div className=" space-y-4 p-2">

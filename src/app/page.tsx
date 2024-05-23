@@ -58,7 +58,7 @@ export default function Home() {
 
 
       <Navbar />
-      <main className="flex h-auto w-screen flex-col items-center justify-start ">
+      <main className="flex  flex-col items-center justify-start ">
         {/* <Header /> */}
         {/* <Carousel/> */}
         <GradientSection />
