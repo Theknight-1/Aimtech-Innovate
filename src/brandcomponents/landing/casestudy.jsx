@@ -65,9 +65,9 @@ export default function CaseStudies() {
     <section className="flex flex-col w-full items-center justify-center  h-auto xl:min-h-screen   gap-y-8 space-y-5">
       <div class="flex h-full flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
         <div class="w-1/10 h-full"></div>
-        <div class="flex-1 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl gap-2 capitalize ">
+        <div class="flex-1 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl gap-2 capitalize px-6 sm:px-0">
           <svg
-            className="w-10 h-auto md:w-20 lg:w-32 md:h-12 lg:h-16 scale-x-[-1]"
+            className="w-10 h-auto hidden sm:block md:w-20 lg:w-32 md:h-12 lg:h-16 scale-x-[-1]"
             viewBox="0 0 129 146"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -79,12 +79,12 @@ export default function CaseStudies() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          <div className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl">
             <span>Learn More About</span> <br />
             <span>the Work We've Done</span>
           </div>
           <svg
-            className="w-10 h-auto md:w-20 lg:w-32 md:h-12 lg:h-16"
+            className="w-10 h-auto hidden sm:block md:w-20 lg:w-32 md:h-12 lg:h-16"
             viewBox="0 0 129 146"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ export default function CaseStudies() {
         </div>
         <div class="w-1/10"></div>
       </div>
-      <div className=" h-full w-full grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 px-10 lg:px-64">
+      <div className=" h-full w-full grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8  px-6  lg:px-16 md:px-20 xl:px-24 2xl:px-56 ">
         {caseStudiesData.map((study,index) => (
           <div key={index} className="flip-card  overflow-hidden aspect-square h-auto w-full  ">
             <div className="flip-card-inner w-full h-full">
@@ -110,14 +110,12 @@ export default function CaseStudies() {
                   alt=""
                 />
               </div>
-              <div className="flip-card-back flex flex-col items-center justify-center px-2 lg:px-8  font-bold ">
+              <div className="flip-card-back flex flex-col items-center justify-center px-2 lg:px-8 font-bold ">
                 <h1 className="text-2xl border-b-2 border-brand-primary font-bold">{study.title}</h1>
-                <br />
-                <p className="text-justify text-lg">{study.description}</p>
-                <br />
+                <p className="text-lg sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl">{study.description}</p>
                 <Link
                   href={study.link}
-                  className="bg-brand-secondary hover:bg-yellow-400  lg:w-1/2 text-center p-3 rounded-lg text-brand-primary"
+                  className="bg-brand-secondary hover:bg-yellow-400  lg:w-1/2 text-center p-2 rounded-lg text-brand-primary"
                 >
                   <p>Learn more...</p>
                 </Link>

@@ -334,7 +334,7 @@ const Navbar = () => {
               <div className=" lg:hidden w-full  flex justify-end ">
                 <button
                   onClick={() => {
-                    setIsOpen(!isOpen);
+                    setIsOpen((pre)=>!pre), setMobileNav(false);
                   }}
                   className="rounded-lg px-2 py-1.5  font-semibold bg-brand-secondary hover:bg-yellow-400 w-max-lg "
                 >
@@ -530,7 +530,7 @@ const Navbar = () => {
       )}
       {mobileNav && (
         <div
-          className="lg:hidden fixed  w-full bg-white z-50 overflow-y-auto "
+          className="lg:hidden fixed  w-full bg-white z-0 overflow-y-auto "
           style={{ zIndex: 100 }}
         >
           <div className="container mx-auto px-4 py-3 w-full font-bold ">

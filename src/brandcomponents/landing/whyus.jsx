@@ -26,7 +26,7 @@ export default function Whyus() {
   ];
 
   return (
-    <section className="w-full font-satoshi   min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center xl:px-28 lg:px-24 md:px-12 lg:gap-x-16 sm:px-8 px-4">
+    <section className="w-full font-satoshi   min-h-[calc(100vh-20vh)] flex flex-col md:flex-row md:justify-center md:items-center lg:gap-x-16 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
       <div className="w-full md:w-1/2 h-full flex flex-col justify-start  p-4  ">
         <div className="relative  w-full h-full flex flex-col items-center justify-center space-y-7  ">
           <div className="absolute -z-0 top-0 left-0 w-full h-full rounded-full bg-[#15BEE3]/15 blur-3xl"></div>
@@ -52,14 +52,14 @@ export default function Whyus() {
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
 
-            <span className="text-brand-secondary  h-auto p-2 text-center  overflow-hidden whitespace-nowrap  z-10 pr-5  md:text-6xl sm:text-2xl text-2xl md:tracking-tighter lg:tracking-normal font-semibold">
+            <span className="text-brand-secondary  h-auto p-2 text-center  overflow-hidden whitespace-nowrap  z-10   md:text-5xl sm:text-5xl text-4xl md:tracking-tighter lg:tracking-normal font-semibold">
               Why Us?
             </span>
             {/* <svg width="129" height="146" className='' viewBox="0 0 129 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M123.279 4.00354C130.739 42.3166 117.577 119.002 5.24102 119.237M5.24102 119.237L34.3014 84.6331M5.24102 119.237L41.4143 142.348" stroke="#FFB700" stroke-width="7" stroke-linecap="round" />
                         </svg> */}
           </div>
-          <article className="w-full lg:w-3/4  text-xl z-10 sm:text-xl md:text-xl lg:text-2xl  text-white text-justify">
+          <article className="w-full lg:w-3.5/4  text-xl z-10 sm:text-xl md:text-xl lg:text-2xl  text-white text-justify">
             <span className="font-satoshi">
               Aimtech Innovate offers premium digital marketing services at
               unbeatable pricing in the US and Canada, thanks to our partnership
