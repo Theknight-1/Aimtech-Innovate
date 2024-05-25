@@ -378,8 +378,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="md:flex md:items-center justify-between md:gap-20 lg:gap-24 xl:gap-28 h-[80%]  w-full  2xl:px-32 xl:px-24">
-        <div className="text-sm w-full md:w-[25%] lg:w-[20%] space-y-3  lg:space-y-5 p-2 md:p-0">
-          <div className="m-4 md:m-0 md:flex md:items-start md:justify-start text-center flex-col h-32  ">
+        <div className="text-sm w-full md:w-[25%] lg:w-[20%] space-y-3  lg:space-y-5 p-2 md:p-0 ">
+          <div className="m-4 md:m-0 md:flex md:items-start md:justify-start text-center flex-col h-20 md:h-32  ">
             <img
               className=" h-full object-contain"
               src="/brand/logo/footer-logo.png"

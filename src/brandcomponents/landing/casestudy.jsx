@@ -115,7 +115,7 @@ export default function CaseStudies() {
                 <p className="text-lg sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl">{study.description}</p>
                 <Link
                   href={study.link}
-                  className="bg-brand-secondary hover:bg-yellow-400  lg:w-1/2 text-center p-2 rounded-lg text-brand-primary"
+                  className="bg-brand-secondary hover:bg-yellow-400 mt-1 lg:w-1/2 text-center p-2 rounded-lg text-brand-primary"
                 >
                   <p>Learn more...</p>
                 </Link>

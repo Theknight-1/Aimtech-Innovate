@@ -6,7 +6,7 @@ import { IoBagHandleOutline } from "react-icons/io5";
 const DMsg = () => {
   return (
     <>
-      <section className=" h-auto w-full  overflow-hidden  px-4 md:px-8 lg:px-24 xl:px-28 border">
+      <section className=" h-auto w-full  overflow-hidden  px-4 md:px-8 lg:px-24 xl:px-28">
         <div className=" flex items-center justify-center p-4">
           <span className=" text-5xl lg:text-6xl text-center  text-brand-secondary font-bold  mb-3 ">
             Director’s Message

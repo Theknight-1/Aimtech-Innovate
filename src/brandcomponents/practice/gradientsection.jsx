@@ -27,14 +27,14 @@ export default function GradientSection() {
                 <h1 className=" max-w-7xl text-white  font-semibold md:tracking-wide text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl  ">
                   Enhance your digital presence and gain market excellence
                 </h1>
-                <h3 className="max-w-4xl  text-white  text-[22px] md:text-[18px] lg:text-xl 2xl:text-2xl bg-gradient-to-r bg-clip-text md:tracking-wider">
+                <h3 className="max-w-4xl  text-white  text-[18px] md:text-[18px] lg:text-xl 2xl:text-2xl bg-gradient-to-r bg-clip-text md:tracking-wider leading-tight sm:leading-normal">
                   Most cost-effective digital marketing agency of{" "}
                   <span>US</span> and <span>Canada</span>
                 </h3>
               </div>
 
               <div className="flex flex-col  justify-start xl:space-y-6 lg:space-y-4 space-y-2">
-                <p className="max-w-2xl text-[22px] md:text-[18px] lg:text-xl 2xl:text-2xl  text-white">
+                <p className="max-w-2xl text-[18px] md:text-[18px] lg:text-xl 2xl:text-2xl  text-white leading-tight sm:leading-normal">
                   Don't believe it? Request a free quotation today
                 </p>
                 <div className="flex flex-col md:flex-row justify-start ">

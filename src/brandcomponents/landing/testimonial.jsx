@@ -102,7 +102,7 @@ export default function Testimonial() {
             {/* <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div> */}
-            <div className="  space-y-8 relative z-10 w-full h-full flex flex-col items-center justify-center">
+            <div className="  space-y-4 lg:space-y-6 relative z-10 w-full h-full flex flex-col items-center justify-center">
               <div className="flex flex-row space-x-6  w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
                   <img
@@ -135,7 +135,7 @@ export default function Testimonial() {
               </div>
               <div
                 key={currentTestimonialIndex}
-                className="flex animate-fade-left h-auto min-h-16 w-full flex-col items-center justify-center "
+                className="flex animate-fade-left h-auto min-h-16 w-full flex-col items-center justify-center"
               >
                 <span className="text-gray-200 text-2xl lg:text-3xl">
                   {currentTestimonial.author}

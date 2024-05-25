@@ -2,36 +2,33 @@ import React from "react";
 import file from "@/Data.json";
 import Link from "next/link";
 
-export default function brandservice({ data }) {
+export default function BrandService({ data }) {
   const dataOBJ = data;
 
   return (
-    <section class="overflow-x-hidden h-auto p-4 text-white gap-y-8   lg:px-24">
-      <section className="w-full h-auto  flex flex-col md:flex-row    justify-evenly items-center  ">
-        <div className="w-full lg:w-1/2  flex items-center justify-center p-8 ">
-          
-            <img
-              src={dataOBJ.image}
-              alt="Product screenshot"
-              class=" h-full object-cover"
-            />
-            {/* <img
-              src="/service/Img2-about-section.png"
-              alt="Product screenshot"
-              class=" h-full object-cover"
-            /> */}
-          
+    <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
+      <section className="w-full h-auto flex flex-col md:flex-row justify-between items-center p-4 gap-4">
+        <div className="md:w-2/4 w-full flex items-center justify-center">
+          <img
+            src={dataOBJ.image}
+            alt="Product screenshot"
+            className="h-full w-full object-cover"
+          />
         </div>
-        <div className=" flex-1  flex items-center    justify-start ">
-          <div className="w-full h-auto space-y-8 ">
-            <h1 className="text-brand-secondary text-2xl font-semibold uppercase">
+        <div className="flex-1 flex items-center justify-start">
+          <div className="w-full h-auto space-y-3 lg:space-y-4 xl:space-y-6 2xl:space-y-8 ">
+            <h1 className="text-brand-secondary text-xl md:text-2xl font-semibold uppercase tracking-wide ">
               {dataOBJ.title}
             </h1>
-            <p className="text-xl lg:text-5xl font-semibold leading-loose ">{dataOBJ.tagLine}</p>
-            <p className="text-white text-xl lg:text-lg leading-loose">{dataOBJ.desciption}</p>
-            <div className="grid grid-cols-1 lg:grid-cols-2  text-brand-secondary font-semibold gap-4 text-xl lg:text-2xl">
+            <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-wide">
+              {dataOBJ.tagLine}
+            </p>
+            <p className="text-white text-lg md:text-base lg:text-lg xl:text-xl tracking-wide ">
+              {dataOBJ.desciption}
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 text-brand-secondary font-semibold gap-2 text-lg md:text-xl lg:text-xl ">
               {dataOBJ.benifits.map((ben, index) => (
-                <span key={index}> {ben}</span>
+                <span key={index}>{ben}</span>
               ))}
             </div>
             <div className="hidden">
@@ -45,102 +42,82 @@ export default function brandservice({ data }) {
           </div>
         </div>
       </section>
-      <section class=" w-full mt-20 h-auto flex justify-center items-center p-2 ">
-        <div class=" h-full flex flex-col-reverse md:flex-row items-start justify-start gap-2">
-          <div class="w-full lg:w-3/5 h-full  lg:pr-8     overflow-hidden flex flex-col items-center justify-center ">
-            
-            <div class="w-full">
-              {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
-
-              <p className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-5xl " >{dataOBJ.second.title}</p>
-              
-              <br />
+      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-between items-center p-4">
+        <div className="h-full flex flex-col-reverse md:flex-row items-center justify-between gap-2">
+          <div className="w-full lg:w-3/5 h-full lg:pr-8 overflow-hidden flex flex-col items-center justify-center ">
+            <div className="w-full space-y-5">
+              <p className="mt-2 text-[28px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold  text-white tracking-wide">
+                {dataOBJ.second.title}
+              </p>
               <div>
-                <span className="lg:text-xl">Does this sound like you Business?</span>
+                <span className="text-xl md:text-xl">
+                  Does this sound like your Business?
+                </span>
               </div>
-              <br />
-
-              <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
-                <ul class="pl-4 font-satoshi list-inside list-disc space-y-6 text-xl " >
-
-                  {dataOBJ.second.points.map(item => (
+              <dl className="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+                <ul className="pl-4 font-satoshi list-inside list-disc space-y-2 text-base sm:text-lg md:text-lg xl:text-xl">
+                  {dataOBJ.second.points.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
-
-
                 </ul>
               </dl>
             </div>
-            <div class=" font-satoshi w-full space-y-5 text-xl mt-5 flex flex-col items-start justify-start">
-              
-                {/* {dataOBJ.second.short} */}
-                
-                  {dataOBJ.second.short.map((dn, index) => (
+            <div className="font-satoshi w-full space-y-2 text-base sm:text-lg md:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide">
+              {dataOBJ.second.short.map((dn, index) => (
                 <span key={index}>{dn}</span>
               ))}
-              
-           
             </div>
           </div>
-          <div className="flex-1  h-full lg:pt-32 flex items-center justify-center ">
+          <div className=" h-full w-full sm:w-[80%] md:w-[40%] flex items-center justify-center  ">
             <img
               src={dataOBJ.second.image}
               alt="Product screenshot"
-              class="w-2/3 h-full object-contain aspect-square"
+              className="w-full  h-full object-contain"
             />
           </div>
         </div>
       </section>
-      <section class=" w-full  mt-20 h-auto flex justify-center items-center p-2 ">
-        <div class=" h-full  flex flex-col-reverse md:flex-row-reverse items-start justify-start gap-2">
-          <div class="w-full lg:w-3/5 h-full  lg:pr-8    overflow-hidden flex flex-col items-start justify-center ">
-            <div class="w-full">
-              {/* <h2 class="text-base font-semibold leading-7 text-indigo-600">Produce faster</h2> */}
-
-              <p className="mt-2  text-3xl font-normal tracking-tight text-white sm:text-5xl text-justify" >{dataOBJ.third.title}</p>
-             
-              <br />
-              {/* <div>
-                <span>Does this sound like you Business</span>
-              </div> */}
-
-              <dl class=" max-w-xl space-y-8 text-base leading-7  lg:max-w-none  ">
-              <div class="  w-full space-y-5 text-xl mt-5 flex flex-col items-start justify-start">
-              
-                {/* {dataOBJ.second.short} */}
-                
+      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-center items-center p-4 ">
+        <div className="h-full flex flex-col-reverse md:flex-row-reverse items-center justify-center gap-5">
+          <div className="w-full lg:w-3/5 h-full lg:pr-8 overflow-hidden flex flex-col items-start justify-center">
+            <div className="w-full  lg:p-4">
+              <p className="mt-2 text-[28px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white tracking-wide ">
+                {dataOBJ.third.title}
+              </p>
+              <dl className="max-w-xl space-y-4 text-base leading-7 lg:max-w-none">
+                <div className="w-full space-y-3 text-base sm:text-lg md:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide">
                   {dataOBJ.third.short.map((dn, index) => (
-                <span key={index}>{dn}</span>
-              ))}
-              
-           
-            </div>
-             
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 list-inside list-disc text-sm lg:text-xl">
-              {dataOBJ.third.points.map((item, index) => (
-                <div key={index} className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>{item}</span>
+                    <span key={index}>{dn}</span>
+                  ))}
                 </div>
-              ))}
-            </div>
-
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 list-inside list-disc text-base sm:text-lg md:text-lg xl:text-xl">
+                  {dataOBJ.third.points.map((item, index) => (
+                    <div key={index} className="flex items-start">
+                      <span className="mr-2">•</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </dl>
             </div>
-            <div class=" border min-h-12 bg-brand-secondary rounded hover:bg-yellow-400  space-y-5 text-xl mt-5 p-2 px-6 flex items-center justify-center">
-                <Link href={dataOBJ.fourth.ctalink} className="font-bold text-brand-primary  ">{dataOBJ.fourth.ctatext}</Link>  
+            <div className=" min-h-12 bg-brand-secondary rounded hover:bg-yellow-400 space-y-5 text-lg md:text-xl mt-5 p-2 px-6 flex items-center justify-center">
+              <Link
+                href={dataOBJ.fourth.ctalink}
+                className="font-bold text-brand-primary"
+              >
+                {dataOBJ.fourth.ctatext}
+              </Link>
             </div>
           </div>
-          <div className="flex-1 h-full  flex items-center justify-center ">
+          <div className=" h-full flex items-center justify-center">
             <img
               src={dataOBJ.third.image}
               alt="Product screenshot"
-              class="w-2/3 mt-32 h-full object-contain aspect-square"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
       </section>
-      
     </section>
   );
 }
