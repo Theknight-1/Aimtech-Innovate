@@ -25,7 +25,7 @@ const ThirdPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[40%] md:h-96 lg:h-auto rounded-r-3xl overflow-hidden ">
+          <div className="w-full lg:w-[40%] md:h-96 lg:h-auto lg:rounded-r-3xl overflow-hidden ">
             <img
               src="/Contacts.png"
               alt=""

@@ -352,7 +352,7 @@ const ContactPage = () => {
 
                     <div className="relative z-0 md:w-[30%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
                       <input
-                        type="tel"
+                        type="number"
                         name="phoneNumber"
                         id="floating_phone_number"
                         value={formData.phoneNumber}

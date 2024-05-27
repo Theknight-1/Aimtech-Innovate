@@ -61,7 +61,7 @@ const extracase =[
 ]
 const Cards = ({ heading, getStartedButton }) => (
   <section className="w-screen h-autoxl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex flex-col justify-center items-center">
-    <span className="text-center text-5xl font-bold text-white mb-16">{heading}</span>
+    <span className="text-center text-5xl font-bold text-white my-8">{heading}</span>
     <div className="grid h-auto justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
 
     {caseStudiesData.map((casestudy,index)=>(

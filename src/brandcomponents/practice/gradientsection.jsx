@@ -20,7 +20,7 @@ export default function GradientSection() {
   return (
     <>
       <section className="w-screen   font-satoshi lg:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
-        <div className="flex  flex-col-reverse justify-between md:flex-row items-center  ">
+        <div className="flex  flex-col justify-between md:flex-row items-center  ">
           <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-5 ">
             <div className=" lg:space-y-4 space-y-2 ">
               <div className="space-y-4">
@@ -34,7 +34,7 @@ export default function GradientSection() {
               </div>
 
               <div className="flex flex-col  justify-start xl:space-y-6 lg:space-y-4 space-y-2">
-                <p className="max-w-2xl text-[18px] md:text-[18px] lg:text-xl 2xl:text-2xl  text-white leading-tight sm:leading-normal">
+                <p className="max-w-2xl text-[14px] md:text-[16px] lg:text-lg 2xl:text-xl  text-white leading-tight sm:leading-normal">
                   Don't believe it? Request a free quotation today
                 </p>
                 <div className="flex flex-col md:flex-row justify-start ">

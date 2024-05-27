@@ -23,7 +23,7 @@ export default function BrandService({ data }) {
             <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-wide">
               {dataOBJ.tagLine}
             </p>
-            <p className="text-white text-lg md:text-base lg:text-lg xl:text-xl tracking-wide ">
+            <p className="text-white text-lg md:text-base lg:text-lg xl:text-xl tracking-wide text-justify ">
               {dataOBJ.desciption}
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 text-brand-secondary font-semibold gap-2 text-lg md:text-xl lg:text-xl ">
@@ -55,14 +55,14 @@ export default function BrandService({ data }) {
                 </span>
               </div>
               <dl className="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-                <ul className="pl-4 font-satoshi list-inside list-disc space-y-2 text-base sm:text-lg md:text-lg xl:text-xl">
+                <ul className="pl-4 font-satoshi list-inside list-disc space-y-2 text-base sm:text-lg md:text-lg xl:text-xl text-justify">
                   {dataOBJ.second.points.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
               </dl>
             </div>
-            <div className="font-satoshi w-full space-y-2 text-base sm:text-lg md:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide">
+            <div className="font-satoshi w-full space-y-2 text-base sm:text-lg md:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide text-justify">
               {dataOBJ.second.short.map((dn, index) => (
                 <span key={index}>{dn}</span>
               ))}
@@ -85,12 +85,12 @@ export default function BrandService({ data }) {
                 {dataOBJ.third.title}
               </p>
               <dl className="max-w-xl space-y-4 text-base leading-7 lg:max-w-none">
-                <div className="w-full space-y-3 text-base sm:text-lg md:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide">
+                <div className="w-full space-y-3 text-base sm:text-lg md:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide text-justify">
                   {dataOBJ.third.short.map((dn, index) => (
                     <span key={index}>{dn}</span>
                   ))}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 list-inside list-disc text-base sm:text-lg md:text-lg xl:text-xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 list-inside list-disc text-base sm:text-lg md:text-lg xl:text-xl ">
                   {dataOBJ.third.points.map((item, index) => (
                     <div key={index} className="flex items-start">
                       <span className="mr-2">•</span>

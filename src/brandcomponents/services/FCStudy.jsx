@@ -20,7 +20,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-3xl font-medium text-brand-secondary ">
                 Objectives
               </span>
-              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed">
+              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.objective}
               </p>
             </div>
@@ -28,7 +28,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-3xl font-medium text-brand-secondary">
                 Challenges
               </span>
-              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed">
+              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.challenge}
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-3xl font-medium text-brand-secondary">
                 Process
               </span>
-              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed">
+              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.Process}
               </p>
             </div>
@@ -44,7 +44,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-3xl font-medium text-brand-secondary">
                 Results
               </span>
-              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed">
+              <p className="text-base sm:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.Results}
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-3xl font-medium text-brand-secondary">
                 Learnings
               </span>
-              <p className="text-base sm:text-xl tracking-wide text-white leading-normal">
+              <p className="text-base sm:text-xl tracking-wide text-white leading-normal text-justify">
                 {fcase.learnings}
               </p>
             </div>

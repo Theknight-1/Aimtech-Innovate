@@ -146,24 +146,7 @@ const Navbar = () => {
   ];
 
   const caseStudiesData = [
-    {
-      category: "SMM related",
-      icon: "📧",
-      data: [
-        {
-          title: "SMM for ai startup",
-          link: "/casestudy/social-media-marketing-for-ai-startup",
-          description:
-            "Aimtech Innovate resolved many problems for AI startups..",
-        },
-        {
-          title: "SMM for ai startup",
-          link: "/casestudy/social-media-marketing-for-ai-startup",
-          description:
-            "Aimtech Innovate resolved many problems for AI startups..",
-        },
-      ],
-    },
+    
     {
       category: "SEO related",
       icon: "🔍",
@@ -210,12 +193,20 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
+        
+      ],
+    },
+    {
+      category: "SMM related",
+      icon: "📧",
+      data: [
         {
-          title: "SMM For AI Atartup",
+          title: "SMM for ai startup",
           link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
+        
       ],
     },
   ];
@@ -334,11 +325,11 @@ const Navbar = () => {
               <div className=" lg:hidden w-full  flex justify-end ">
                 <button
                   onClick={() => {
-                    setIsOpen((pre)=>!pre), setMobileNav(false);
+                    setIsOpen((pre) => !pre), setMobileNav(false);
                   }}
                   className="rounded-lg px-2 py-1.5  font-semibold bg-brand-secondary hover:bg-yellow-400 w-max-lg "
                 >
-                  <span className="text-brand-primary hover:text-white font-bold text-sm sm:text-lg">
+                  <span className="text-brand-primary hover:text-white  text-sm sm:text-lg font-bold">
                     Get Proposal
                   </span>
                 </button>
@@ -393,7 +384,7 @@ const Navbar = () => {
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
                       {servicedata.map((service, idx) => (
                         <Link key={idx} href={service.pagelink}>
-                          <div className="h-full text-black p-4  hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
+                          <div className="h-full text-black p-3  hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
                             <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
                               {service.icon}
                               <span className="font-bold">{service.title}</span>
@@ -402,7 +393,7 @@ const Navbar = () => {
                               {service.services.map((srv, serviceIndex) => (
                                 <li
                                   key={serviceIndex}
-                                  className="text-brand-primary cursor-pointer px-0 text-sm md:text-base xl:text-lg flex items-center justify-start p-1 gap-2"
+                                  className="text-brand-primary cursor-pointer px-0 text-sm md:text-base xl:text-base 2xl:text-lg flex items-center justify-start p-1 gap-2"
                                 >
                                   <span>
                                     <FcNext />
@@ -443,7 +434,7 @@ const Navbar = () => {
                         {caseStudiesData.map((ckey, index) => (
                           <div
                             key={index}
-                            className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-4  xl:p-8 overflow-hidden text-wrap  "
+                            className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-3  xl:p-6 overflow-hidden text-wrap  "
                           >
                             <span className="font-bold text-blue-500 text-xl ">
                               {ckey.category}
@@ -454,11 +445,11 @@ const Navbar = () => {
                                   <span>📑</span>
 
                                   <div className="flex flex-col items-start gap-2 ">
-                                    <span className=" font-bold">
+                                    <span className="font-bold text-sm md:text-base">
                                       {cstudy.title}
                                     </span>
 
-                                    <article className="text-sm">
+                                    <article className="text-sm ">
                                       {cstudy.description}
                                     </article>
                                   </div>

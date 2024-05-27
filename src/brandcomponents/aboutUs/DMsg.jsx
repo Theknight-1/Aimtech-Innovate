@@ -6,7 +6,7 @@ import { IoBagHandleOutline } from "react-icons/io5";
 const DMsg = () => {
   return (
     <>
-      <section className=" h-auto w-full  overflow-hidden  px-4 md:px-8 lg:px-24 xl:px-28">
+      <section className=" h-auto w-full  overflow-hidden   px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
         <div className=" flex items-center justify-center p-4">
           <span className=" text-5xl lg:text-6xl text-center  text-brand-secondary font-bold  mb-3 ">
             Director’s Message
@@ -14,7 +14,7 @@ const DMsg = () => {
         </div>
         <div className="flex   flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:h-[70%]">
           <div className="flex-1 lg:w-1/3 flex flex-col items-center justify-center ">
-            <div className="w-full lg:w-2/3  rounded ">
+            <div className="w-full md:w-[45%] lg:[40%] rounded">
               <img
                 src="/director-aimtech.jpeg"
                 alt="Team Member"
@@ -26,8 +26,8 @@ const DMsg = () => {
               Adil Muhammad
             </span>
           </div>
-          <div className=" lg:w-2/3  h-full text-justify lg:pr-0 space-y-2   p-2 ">
-            <div className="w-full  h-auto text-white text-base md:text-xl lg:text-2xl  lg:space-y-7 md:space-y-4">
+          <div className=" lg:w-1/2  h-full text-justify lg:pr-0 space-y-2   p-2 ">
+            <div className="w-full h-auto text-white text-base md:text-base lg:text-xl 2xl:text-2xl 2xl:space-y-7 md:space-y-4">
               <p>
                 At Aimtech Innovate, we attribute our success to the unwavering
                 commitment to delivering exceptional quality services, which

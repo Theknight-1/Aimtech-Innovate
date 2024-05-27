@@ -5,8 +5,8 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 const AboutContact = () => {
   return (
     <section className="w-full relative h-auto p-1 sm:p-3 md:p-6 lg:p-10">
-      <div className="w-full h-full flex justify-center items-center">
-        <div className="flex flex-col md:flex-row md:items-center justify-center lg:gap-8 gap-0">
+      <div className="w-full h-full flex justify-center items-center p-4 md:p-0">
+        <div className="flex flex-col md:flex-row md:items-center justify-center lg:gap-8 gap-0 mt-3 md:mt-0">
           <div className=" w-full  mx-auto flex justify-center items-center p-2 sm:p-0">
             <img className="md:w-9/12 lg:w-11/12 /2 sm:w-1/2 w-80" src="/png/about-last.png" alt="" />
           </div>
@@ -38,7 +38,7 @@ const AboutContact = () => {
                 <p>Stay ahead of the curve with cutting-edge digital marketing techniques</p>
               </span>
             </div>
-            <Link href="/contact" className="px-4 py-3 md:py-4 w-max bg-brand-secondary rounded-lg text-[#122B59] text-lg md:text-xl font-semibold">
+            <Link href="/contact" className="px-4 py-3 md:py-4 w-max bg-brand-secondary rounded-lg text-[#122B59] text-lg md:text-xl font-bold">
               Contact Us
             </Link>
           </div>

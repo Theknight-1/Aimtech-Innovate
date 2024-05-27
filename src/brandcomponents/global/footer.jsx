@@ -139,7 +139,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative md:h-[50vh]  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-4 sm:px-8 px-4 ">
+    <footer className="relative md:h-auto  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-4 sm:px-8 px-4 ">
       {/* dropdown */}
       <div className="md:hidden block w-full  mt-3">
         {/* Case Study Dropdown */}
@@ -377,7 +377,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="md:flex md:items-center justify-between md:gap-20 lg:gap-24 xl:gap-28 h-[80%]  w-full  2xl:px-32 xl:px-24">
+      <div className="md:flex md:items-center justify-between md:gap-20 lg:gap-24 xl:gap-28 xl:h-auto h-auto  w-full  2xl:px-32 xl:px-24 p-3">
         <div className="text-sm w-full md:w-[25%] lg:w-[20%] space-y-3  lg:space-y-5 p-2 md:p-0 ">
           <div className="m-4 md:m-0 md:flex md:items-start md:justify-start text-center flex-col h-20 md:h-32  ">
             <img

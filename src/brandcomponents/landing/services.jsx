@@ -49,7 +49,7 @@ export default function Services() {
 
               </h2>
               <br />
-              <Link href="/services/web-development" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/web-development" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-extrabold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2 ">
                 Learn More
               </Link>
             </div>
@@ -74,7 +74,7 @@ export default function Services() {
               Reach the right audience at the right time with strategic PPC campaigns that deliver measurable results.
               </h2>
               <br />
-              <Link href="/services/ppc-advertisement" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/ppc-advertisement" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-extrabold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -98,7 +98,7 @@ export default function Services() {
               Unleash the power of SEO to maximize search rankings that attract qualified leads, and grow your online presence organically.
               </h2>
               <br />
-              <Link href="/services/seo-service" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/seo-service" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-extrabold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -122,7 +122,7 @@ export default function Services() {
               Building social media presence with engaging content, community management, and targeted social media advertising.
               </h2>
               <br />
-              <Link href="/services/social-media-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/social-media-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-extrabold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -146,7 +146,7 @@ export default function Services() {
               Targeted email campaigns that nurture leads, build brand loyalty, and drive sales through powerful email marketing strategies.
               </h2>
               <br />
-              <Link href="/services/email-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-bold  text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
+              <Link href="/services/email-marketing" className=" text-base sm:text-lg lg:text-lg text-brand-primary font-extrabold text-center rounded-lg bg-brand-secondary  hover:bg-yellow-400 lg:px-6 lg:py-2 p-2">
                 Learn More
               </Link>
             </div>
@@ -173,7 +173,7 @@ export default function Services() {
       <section className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Service Buttons */}
         <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2">
-          <span className=" leading-snug text-[2.3rem] sm:text-[3.5rem] lg:text-[3rem] font-bold text-brand-secondary">
+          <span className=" leading-snug text-4xl sm:text-[3.5rem] lg:text-[3rem] font-bold text-brand-secondary">
             What We Provide
           </span>
           <div className="w-full md:space-y-5 lg:pr-16 pr-0">
