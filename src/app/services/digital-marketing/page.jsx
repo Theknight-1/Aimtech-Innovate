@@ -102,7 +102,8 @@ export default function page() {
         challenge : "The primary challenge was to enhance the site's SEO performance to increase job applications amid the competitive job market in the food industry.",
         Process:"Conducted technical SEO audits, identified keyword opportunities, and implemented a full-funnel content strategy alongside offsite tactics like securing relevant backlinks.",
         Results: "Conducted technical SEO audits, identified keyword opportunities, and implemented a full-funnel content strategy alongside offsite tactics like securing relevant backlinks.",
-        learnings:"Dot Foods’ SEO improvements underscore the significance of a multifaceted SEO strategy that includes technical optimization, content strategy, and offsite tactics. Balancing branded and unbranded keywords while focusing on full-funnel content led to increased organic visibility and job applications."
+        learnings:"Dot Foods’ SEO improvements underscore the significance of a multifaceted SEO strategy that includes technical optimization, content strategy, and offsite tactics. Balancing branded and unbranded keywords while focusing on full-funnel content led to increased organic visibility and job applications.",
+        
       }
   return (
     <>

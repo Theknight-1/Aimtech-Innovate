@@ -20,7 +20,7 @@ export default function CaseLanding({ casedata }) {
                 <span className="">Published Date:</span> {cdata.pubdate}
               </p>
               <h1 className=" text-3xl font-bold sm:text-5xl">{cdata.title}</h1>
-              <div className=" text-center  flex items-center justify-center mt-6 block w-full text-xl text-wrap lg:text-2xl  ">
+              <div className=" md:text-center  flex items-center justify-center mt-6 block w-full  text-wrap   text-base sm:text-lg md:text-lg xl:text-xl text-justify ">
                 <p className="lg:px-24 lg:w-1/2 tracking-tight text-justify">
                   {cdata.description}
                 </p>
@@ -95,8 +95,8 @@ export default function CaseLanding({ casedata }) {
         </div>
       </section>
 
-      <section className="flex w-full flex-col-reverse  md:flex-row  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
-        <div className="flex   h-auto w-full flex-col items-start justify-center gap-y-4  lg:w-1/2">
+      <section className="flex w-full flex-col-reverse  md:flex-row  items-center justify-center px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
+        <div className="flex   flex-col items-start justify-center gap-y-4  w-[50%] ">
           <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary">
             Client Goals
           </h2>
@@ -104,7 +104,7 @@ export default function CaseLanding({ casedata }) {
             Reach more customers with ads and Branding.
           </p>
           <div className="w-full">
-            <ol className="flex h-full list-inside list-decimal flex-col  text-2xl lg:text-2xl  text-white">
+            <ol className="flex  h-full list-inside list-decimal flex-col  text-base sm:text-lg md:text-lg xl:text-xl text-justify  text-white">
               {cdata.goal.points.map((point, index) => (
                 <li key={index} className="rounded  p-2">
                   {point}
@@ -113,10 +113,10 @@ export default function CaseLanding({ casedata }) {
             </ol>
           </div>
         </div>
-        <div className="aspect-square    flex-1 flex items-center justify-center">
-          <div className="md:w-[50%] ">
+        <div className="aspect-square w-[50%]  flex items-center justify-center">
+          <div className="">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover "
               src="/CaseStudy/case-one.svg"
               alt=""
             />
@@ -135,7 +135,7 @@ export default function CaseLanding({ casedata }) {
           <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-brand-secondary ">
             How We Helped
           </h2>
-          <p className="text-xl text-justify tracking-tight md:text-2xl leading-normal text-white">
+          <p className="space-y-2 text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal text-white">
             {cdata.help}
           </p>
         </div>

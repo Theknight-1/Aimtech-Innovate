@@ -18,7 +18,7 @@ export default function page() {
       "Attract your ideal customers through highly targeted, ROI-driven pay-per-click advertising campaigns. Our PPC specialists use advanced strategies and continual optimization to ensure your ads are seen by the right audiences at the perfect moment when they're ready to buy.",
     benifits: ["Google & Microsoft Ads", "Social PPC (Facebook, Instagram, etc.)", "YouTube & Video Ads", "Amazon PPC"],
     link: "/contact",
-    image:"/png/revenue.png",
+    image:"/png/ppc-header.svg",
 
     second : {
         title : "Get More Leads and Sales with Optimized PPC Campaigns",
@@ -110,7 +110,8 @@ export default function page() {
     challenge : "The main challenge was to effectively target the right audience amidst the competitive e-commerce landscape and ensure a positive ROI from the Facebook ads campaign.",
     Process:"We began by conducting thorough market research to identify the target audience's preferences and behaviors. Utilizing this data, we crafted compelling ad creatives and messaging tailored to resonate with the audience's interests. Through continuous monitoring and optimization, we refined the targeting parameters and ad content to maximize performance.",
     Results: "The Facebook ads campaign yielded a significant increase in online sales for the e-commerce store, surpassing the client's expectations. The ROI from the campaign was positive, demonstrating the effectiveness of targeted advertising in driving sales and revenue growth.",
-    learnings:"This case study highlights the power of targeted Facebook ads in driving e-commerce sales when tailored to the specific interests of the audience. By leveraging data-driven insights and continuous optimization, businesses can achieve tangible results and maximize their advertising ROI in the competitive digital landscape."
+    learnings:"This case study highlights the power of targeted Facebook ads in driving e-commerce sales when tailored to the specific interests of the audience. By leveraging data-driven insights and continuous optimization, businesses can achieve tangible results and maximize their advertising ROI in the competitive digital landscape.",
+    img: "/png/digital-agency.png",
   }
    
   return (

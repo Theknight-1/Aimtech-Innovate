@@ -9,7 +9,7 @@ const caseStudiesData = [
 
       {
         date: "Sep 10, 2023",
-        image:"/png/seo-first.png",
+        image:"/landingPage/seo.png",
         title: "SEO For Fintech",
         link: "/casestudy/seo-for-fintech",
         description:
@@ -17,7 +17,7 @@ const caseStudiesData = [
       },
       {
         date: "May 18, 2024",
-        image:"/png/ppc-ads.png",
+        image:"/landingPage/smm.png",
         title: "fultime service for automobiles",
         link: "/casestudy/full-time-operatonal-services-for-automobile",
         description:
@@ -25,7 +25,7 @@ const caseStudiesData = [
       },
       {
         date: "Dec 21, 2023",
-        image:"/png/smm-first.png",
+        image:"/landingPage/ppc.png",
         title: "CRM For Fintech",
         link: "/casestudy/crm-for-fintech",
         description:

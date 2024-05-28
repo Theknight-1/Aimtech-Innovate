@@ -103,7 +103,8 @@ export default function page() {
     challenge : "The challenge was to design a website that not only met the aesthetic and functional needs of the high school but also catered to the diverse audience of students, parents, and the community while ensuring accessibility and engagement.",
     Process:"Aimtech Innovate's web design experts collaborated closely with the high school to develop a clean, intuitive interface aligned with the school's branding. The design was optimized for mobile devices, featuring a soft scroll design for seamless navigation. Ongoing support was provided to keep the website up-to-date and secure.",
     Results: "The partnership resulted in a modern, engaging website with a low bounce rate, effectively communicating the school's brand and providing valuable information to visitors. The website successfully showcases academic programs, extracurricular activities, and achievements, enhancing stakeholder engagement and improving online visibility.",
-    learnings:"This project highlighted the importance of collaboration between web design experts and clients to create a website that not only meets design and functionality requirements but also resonates with the target audience. By focusing on branding, mobile optimization, and user experience, the website achieved its goals of enhancing the school's online presence and communication with stakeholders."
+    learnings:"This project highlighted the importance of collaboration between web design experts and clients to create a website that not only meets design and functionality requirements but also resonates with the target audience. By focusing on branding, mobile optimization, and user experience, the website achieved its goals of enhancing the school's online presence and communication with stakeholders.",
+    img: "/png/email.png",
   }
    
   return (

@@ -8,14 +8,16 @@ export default function BrandService({ data }) {
   return (
     <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
       <section className="w-full h-auto flex flex-col md:flex-row justify-between items-center p-4 gap-4">
-        <div className="md:w-2/4 w-full flex items-center justify-center">
-          <img
-            src={dataOBJ.image}
-            alt="Product screenshot"
-            className="h-full w-full object-cover"
-          />
+        <div className="md:w-[50%]  flex items-center justify-center">
+          <div className="overflow-hidden h-[80%] w-[80%] object-cover ">
+            <img
+              src={dataOBJ.image}
+              alt="Product screenshot"
+              className="h-full w-full object-cover "
+            />
+          </div>
         </div>
-        <div className="flex-1 flex items-center justify-start">
+        <div className="md:w-[50%] flex items-center justify-start">
           <div className="w-full h-auto space-y-3 lg:space-y-4 xl:space-y-6 2xl:space-y-8 ">
             <h1 className="text-brand-secondary text-xl md:text-2xl font-semibold uppercase tracking-wide ">
               {dataOBJ.title}

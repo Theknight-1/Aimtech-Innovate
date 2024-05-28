@@ -60,7 +60,7 @@ const Accordion = ({
         }}
       >
         <div className="flex items-start flex-col justify-center">
-          <article className="text-lg text-justify sm:text-sm md:text-lg py-3">
+          <article className="text-sm text-justify sm:text-sm md:text-base py-3">
             {content}
           </article>
         </div>

@@ -53,7 +53,7 @@ export default function FCStudy({ featured = {} }) {
         <div className="flex-1  w-full">
           <div className="flex flex-col items-center justify-center">
             <div className="">
-              <img src="/png/revenue.png" alt="" />
+              <img src={fcase.img} alt="" />
             </div>
             <div className="space-y-3 mt-8">
               <span className="text-xl sm:text-2xl md:text-3xl font-medium text-brand-secondary">

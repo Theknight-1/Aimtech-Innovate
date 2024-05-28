@@ -3,8 +3,8 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const SecondPage = () => {
   return (
-    <section className="w-full h-screen mt-5 lg:mt-0">
-      <div className="flex flex-col lg:flex-row h-full">
+    <section className="w-full h-auto mt-5 lg:mt-0">
+      <div className="flex flex-col lg:flex-row items-center justify-center h-full">
         <div className="flex-1 flex justify-start lg:justify-start items-center h-full ">
           <div className="w-12/12 sm:w-9/12 md:w-8/12 lg:w-full">
             <img src="./Frame.png" alt="" className="w-full h-full" />

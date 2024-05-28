@@ -54,7 +54,7 @@ export default function Services() {
               </Link>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
-              <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+              <div className="absolute inset-0 w-full h-full bg-black opacity-40"></div>
               <img
                 src="/landingPage/web-dev.png"
                 alt=""
@@ -79,7 +79,7 @@ export default function Services() {
               </Link>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
-              <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+              <div className="absolute inset-0 w-full h-full bg-black opacity-40"></div>
               <img
                 src="/landingPage/ppc.png"
                 alt=""
@@ -103,7 +103,7 @@ export default function Services() {
               </Link>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
-              <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+              <div className="absolute inset-0 w-full h-full bg-black opacity-40"></div>
               <img
                 src="/landingPage/seo.png"
                 alt=""
@@ -127,7 +127,7 @@ export default function Services() {
               </Link>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
-              <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+              <div className="absolute inset-0 w-full h-full bg-black opacity-40"></div>
               <img
                 src="/landingPage/smm.png"
                 alt=""
@@ -151,7 +151,7 @@ export default function Services() {
               </Link>
             </div>
             <div className="absolute w-full h-full rounded-xl overflow-hidden ">
-              <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+              <div className="absolute inset-0 w-full h-full bg-black opacity-40"></div>
               <img
                 src="/landingPage/mail.png"
                 alt=""
