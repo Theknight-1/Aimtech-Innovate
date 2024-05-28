@@ -96,7 +96,7 @@ export default function CaseLanding({ casedata }) {
       </section>
 
       <section className="flex w-full flex-col-reverse  md:flex-row  items-center justify-center px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
-        <div className="flex   flex-col items-start justify-center gap-y-4  w-[50%] ">
+        <div className="flex   flex-col items-start justify-center gap-y-4  md:w-[50%] ">
           <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary">
             Client Goals
           </h2>
@@ -113,7 +113,7 @@ export default function CaseLanding({ casedata }) {
             </ol>
           </div>
         </div>
-        <div className="aspect-square w-[50%]  flex items-center justify-center">
+        <div className="aspect-square md:w-[50%]  flex items-center justify-center">
           <div className="">
             <img
               className="h-full w-full object-cover "
