@@ -64,7 +64,7 @@ const Cards = ({ heading, getStartedButton }) => (
           className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden lg:p-8 "
         >
           <img
-            className=" h-auto aspect-video w-full object-cover"
+            className=" h-auto w-full object-cover"
             src={casestudy.image}
             alt={casestudy.title}
           />

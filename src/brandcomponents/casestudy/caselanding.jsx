@@ -40,7 +40,7 @@ export default function CaseLanding({ casedata }) {
                 </spna>
               ))}
             </div>
-            <span className="text-2xl lg:text-5xl font-bold mt-24">
+            <span className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-24">
               Our Achievements
             </span>
           </header>
@@ -57,37 +57,33 @@ export default function CaseLanding({ casedata }) {
           </div> */}
         {/* </div> */}
 
-        <div className="grid gap-5 p-2  sm:grid-cols-2 lg:grid-cols-4 ">
+        <div className="grid  p-2  sm:grid-cols-2 lg:grid-cols-4 space-y-12 sm:space-y-6 lg:space-y-0 ">
           <div className="flex flex-col items-center justify-center rounded-md  shadow-sm ">
-            <div className="my-4 flex items-center">
+            <div className=" flex items-center">
               <h3 className="text-6xl font-bold">7.5X</h3>
-              <br />
             </div>
             <h3 className="text-2xl font-bold md:text-xl">ROAS (Facebook)</h3>
             <p className="">Increase of 20% in profit sale</p>
           </div>
-          <div className="flex text-center flex-col items-center justify-center rounded-md p-8 shadow-sm ">
-            <div className="my-4 flex items-center">
+          <div className="flex text-center flex-col items-center justify-center rounded-md  shadow-sm ">
+            <div className=" flex items-center">
               <h3 className="text-6xl font-bold">20X</h3>
-              <br />
             </div>
             <h3 className=" text-2xl  font-bold md:text-xl">
               ROAS (Google ads spend)
             </h3>
             <p className="">Increased 36% website traffic in one month.</p>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-md p-8 shadow-sm">
-            <div className="my-4 flex items-center">
+          <div className="flex flex-col items-center justify-center rounded-md  shadow-sm">
+            <div className=" flex items-center">
               <h3 className="text-6xl font-bold">49%</h3>
-              <br />
             </div>
             <h3 className="text-2xl font-bold">ROI (Facebook)</h3>
             <p className="">Increase in Attributed Sales</p>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-md p-8 shadow-sm">
-            <div className="my-4 flex items-center">
+          <div className="flex flex-col items-center justify-center rounded-md  shadow-sm">
+            <div className=" flex items-center">
               <h3 className="text-6xl font-bold">1.8%</h3>
-              <br />
             </div>
             <h3 className="text-2xl font-bold">CTR</h3>
             <p className="">on mobile and website</p>
@@ -95,7 +91,7 @@ export default function CaseLanding({ casedata }) {
         </div>
       </section>
 
-      <section className="flex w-full flex-col-reverse  md:flex-row  items-center justify-center px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
+      <section className="flex w-full flex-col-reverse  md:flex-row  items-center justify-center px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
         <div className="flex   flex-col items-start justify-center gap-y-4  md:w-[50%] ">
           <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary">
             Client Goals
@@ -106,7 +102,7 @@ export default function CaseLanding({ casedata }) {
           <div className="w-full">
             <ol className="flex  h-full list-inside list-decimal flex-col  text-base sm:text-lg md:text-lg xl:text-xl text-justify  text-white">
               {cdata.goal.points.map((point, index) => (
-                <li key={index} className="rounded  p-2">
+                <li key={index} className="rounded p-1">
                   {point}
                 </li>
               ))}
@@ -123,7 +119,7 @@ export default function CaseLanding({ casedata }) {
           </div>
         </div>
       </section>
-      <section className="flex w-full flex-col   md:flex-row  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
+      <section className="flex w-full flex-col   md:flex-row  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
         <div className="aspect-square h-[60vh]  flex-1 ">
           <img
             className="h-full w-full object-contain"
@@ -132,7 +128,7 @@ export default function CaseLanding({ casedata }) {
           />
         </div>
         <div className="flex lg:space-x-6   h-auto w-full flex-col items-start justify-center gap-y-4  md:w-1/2">
-          <h2 className="mb-4 pl-2 text-center md:text-left text-6xl font-bold text-brand-secondary ">
+          <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary ">
             How We Helped
           </h2>
           <p className="space-y-2 text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal text-white">
