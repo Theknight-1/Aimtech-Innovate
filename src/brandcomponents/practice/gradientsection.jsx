@@ -97,8 +97,8 @@ export default function GradientSection() {
             </div>
           </div>
           <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end   md:p-2 lg:justify-end  ">
-            <div className="w-auto h-full  lg:col-span-6 lg:flex items-center justify-center  p-2 lg:justify-end">
-              <div className=" w-full h-full flex items-center justify-center relative  ">
+            <div className="w-auto h-full  lg:col-span-6 lg:flex items-center justify-end  p-2 lg:justify-end">
+              <div className=" w-full h-full flex items-center justify-end relative  ">
                 <img
                   src="/landingPage/hero-image.svg"
                   alt="mockup"
