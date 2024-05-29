@@ -36,7 +36,7 @@ const Accordion = ({
           <h2 className="text-lg sm:text-lg md:text-xl xl:text-2xl">{title}</h2>
         </div>
         <svg
-          className={`w-6 h-6 transition-transform duration-300 ${
+          className={`min-w-5 max-w-5 min-h-5 max-h-5 transition-transform duration-300  ${
             isOpen ? "transform rotate-180" : ""
           }`}
           fill="none"

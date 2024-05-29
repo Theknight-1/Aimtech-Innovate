@@ -112,7 +112,7 @@ export default function CaseStudies() {
               </div>
               <div className="flip-card-back flex flex-col items-center justify-center px-2 lg:px-8 font-bold ">
                 <h1 className="text-2xl border-b-2 border-brand-primary font-bold">{study.title}</h1>
-                <p className="text-lg sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl">{study.description}</p>
+                <p className="text-lg sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl font-medium">{study.description}</p>
                 <Link
                   href={study.link}
                   className="bg-brand-secondary hover:bg-yellow-400 mt-1 lg:w-1/2 text-center p-2 rounded-lg text-brand-primary"

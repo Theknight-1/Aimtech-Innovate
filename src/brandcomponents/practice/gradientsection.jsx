@@ -21,9 +21,9 @@ export default function GradientSection() {
     <>
       <section className="w-screen   font-satoshi lg:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
         <div className="flex  flex-col-reverse justify-between md:flex-row items-center  ">
-          <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-5 ">
+          <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-4 ">
             <div className=" lg:space-y-4 space-y-2 ">
-              <div className="space-y-4">
+              <div className="space-y-4 ">
                 <h1 className=" max-w-7xl text-white  font-semibold md:tracking-wide text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl  ">
                   Enhance your digital presence and gain market excellence
                 </h1>
@@ -96,9 +96,9 @@ export default function GradientSection() {
               </div>
             </div>
           </div>
-          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end  md:p-2 lg:justify-end  ">
-            <div className="w-full h-full  lg:col-span-6 lg:flex items-center justify-center p-2 lg:justify-end">
-              <div className=" w-full h-full flex items-center justify-end relative  ">
+          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end   md:p-2 lg:justify-end  ">
+            <div className="w-auto h-full  lg:col-span-6 lg:flex items-center justify-center  p-2 lg:justify-end">
+              <div className=" w-full h-full flex items-center justify-center relative  ">
                 <img
                   src="/landingPage/hero-image.svg"
                   alt="mockup"
