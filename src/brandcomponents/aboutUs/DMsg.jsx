@@ -21,7 +21,7 @@ const SingleCard = ({ image, CardDescription, CardTitle, titleHref }) => {
           <h3>
             <a
               href={titleHref}
-              className="mb-3 inline-block text-lg font-semibold text-dark hover:text-primary sm:text-xl lg:text-lg xl:text-2xl"
+              className="mb-3 inline-block text-lg font-semibold text-dark hover:text-primary sm:text-xl lg:text-lg xl:text-2xl tracking-wider"
             >
               {CardTitle}
             </a>
@@ -89,7 +89,7 @@ const DMsg = () => {
           </div>
         </div>
       </section>
-      <section className="text-white lg:px-16 py-6 sm:py-8 lg:py-12 mt-12 p-4">
+      <section className="text-white lg:px-16 py-6 sm:py-8 lg:py-12 mt-12 p-4 font-satoshi">
         <div className="">
           <div class="">
             <h2 className="text-center text-4xl md:text-5xl font-bold md:mb-4 lg:text-6xl">
