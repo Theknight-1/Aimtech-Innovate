@@ -11,7 +11,7 @@ const LearnMore = () => {
   return (
     <section className="w-full h-auto  flex justify-center items-center  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 py-10 font-satoshi">
       <div className="w-full lg:max-w-full ">
-        <div className="flex flex-col lg:flex-row items-center justify-center">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
           <div className="flex-1 ">
             <div className=" lg:px-0 md:space-y-6 space-y-2">
               <h1 className=" text-brand-secondary text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl tracking-wide font-semibold ">

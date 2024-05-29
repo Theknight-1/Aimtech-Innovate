@@ -66,18 +66,13 @@ const DMsg = () => {
                 have consistently exceeded the expectations of our valued
                 clientele. Our reputation as a premier provider of business
                 solutions is a testament to our steadfast dedication to
-                excellence.
-              </p>
-              <p>
-                Central to our organizational ethos is a culture of integrity,
-                professionalism, and innovation. Our diverse and talented teams
-                are the cornerstone of our operations, embodying our core values
-                and principles. We take immense pride in fostering an
-                environment where expertise is cultivated, and each member of
-                our team is empowered to contribute to our collective success.
-              </p>
-              <p>
-                Whether you represent a governmental institution, a
+                excellence. Central to our organizational ethos is a culture of
+                integrity, professionalism, and innovation. Our diverse and
+                talented teams are the cornerstone of our operations, embodying
+                our core values and principles. We take immense pride in
+                fostering an environment where expertise is cultivated, and each
+                member of our team is empowered to contribute to our collective
+                success. Whether you represent a governmental institution, a
                 manufacturing enterprise, a retail establishment, or any other
                 facet of industry, Aimtech Innovate stands ready to collaborate
                 with you in achieving your objectives. Our commitment to
