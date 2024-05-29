@@ -158,7 +158,7 @@ const ContactPage = () => {
       <section className="w-full h-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 font-satoshi">
         <div className="flex flex-col lg:flex-row mt-10 w-full h-full">
           <div className="flex-1 flex justify-center items-start md:mt-10 h-[90vh] ">
-            <div className="w-full lg:w-[80%] space-y-4 md:space-y-10 py-5 text-white">
+            <div className="w-full lg:w-[80%] space-y-4 md:space-y-10  text-white  p-4 sm:p-0">
               <h1 className=" text-3xl text-brand-secondary sm:text-5xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
                 Get Seen, Get Heard, Get Found Online
               </h1>
