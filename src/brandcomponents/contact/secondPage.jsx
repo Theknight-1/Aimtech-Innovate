@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const SecondPage = () => {
   return (
-    <section className="w-full h-auto mt-5 lg:mt-0">
+    <section className="w-full h-auto  mt-5 lg:mt-0 font-satoshi">
       <div className="flex flex-col lg:flex-row items-center justify-center h-full">
         <div className="flex-1 flex justify-start lg:justify-start items-center h-full ">
           <div className="w-12/12 sm:w-9/12 md:w-8/12 lg:w-full">
@@ -17,7 +17,7 @@ const SecondPage = () => {
 
             </span>
             <div className="space-y-3 lg:space-y-5">
-              <ul className=" text-white text-xl lg:text-2xl">
+              <ul className=" text-white text-xl lg:text-2xl space-y-2">
                 <li className="flex items-center gap-6"><FaCheckCircle  />Customized Strategies</li>
                 <li className="flex items-center gap-6"><FaCheckCircle />Dedicated Account Manager</li>
                 <li className="flex items-center gap-6"><FaCheckCircle />Cutting-Edge Tactics</li>

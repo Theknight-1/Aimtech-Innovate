@@ -6,7 +6,7 @@ export default function CaseLanding({ casedata }) {
   const cdata = casedata;
   return (
     <>
-      <section className="w-full  text-white">
+      <section className="w-full  text-white font-satoshi">
         <article>
           <header className="h-auto w-full   text-center">
             <img

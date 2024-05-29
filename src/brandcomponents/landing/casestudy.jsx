@@ -62,7 +62,7 @@ const caseStudiesData = [
 
 export default function CaseStudies() {
   return (
-    <section className="flex flex-col w-full items-center justify-center  h-auto xl:min-h-screen   gap-y-8 space-y-5">
+    <section className="flex flex-col w-full items-center justify-center  h-auto xl:min-h-screen   gap-y-8 space-y-5 font-satoshi">
       <div class="flex h-full flex-col items-center justify-center text-center text-4xl font-bold text-white md:flex-row">
         <div class="w-1/10 h-full"></div>
         <div class="flex-1 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl gap-2 capitalize px-6 sm:px-0">

@@ -58,7 +58,7 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className="  mt-20 lg:py-20 h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+      <section className="font-satoshi  mt-20 lg:py-20 h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
         <div className="flex relative h-full   w-full flex-col gap-10 lg:gap-0 lg:flex-row py-6  sm:p-10 lg:p-0 ">
           {/* <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>             */}
 

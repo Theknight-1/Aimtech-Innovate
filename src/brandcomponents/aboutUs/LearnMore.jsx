@@ -9,7 +9,7 @@ const LearnMore = () => {
     "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   ];
   return (
-    <section className="w-full h-auto  flex justify-center items-center  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 py-10">
+    <section className="w-full h-auto  flex justify-center items-center  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 py-10 font-satoshi">
       <div className="w-full lg:max-w-full ">
         <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="flex-1 ">

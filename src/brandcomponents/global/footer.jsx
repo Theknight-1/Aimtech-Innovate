@@ -139,7 +139,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative md:h-auto  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-4 sm:px-8 px-4 ">
+    <footer className="relative md:h-auto  text-white bg-black flex flex-col xl:px-28 lg:px-24 md:px-4 sm:px-8 px-4 font-satoshi">
       {/* dropdown */}
       <div className="md:hidden block w-full  mt-3">
         {/* Case Study Dropdown */}

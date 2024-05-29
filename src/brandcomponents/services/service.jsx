@@ -6,7 +6,7 @@ export default function BrandService({ data }) {
   const dataOBJ = data;
 
   return (
-    <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
+    <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
       <section className="w-full h-auto flex flex-col md:flex-row justify-between items-center p-4 gap-4">
         <div className="md:w-[50%]  flex items-center justify-center">
           <div className="overflow-hidden h-[80%] w-[80%] object-cover ">
@@ -19,10 +19,10 @@ export default function BrandService({ data }) {
         </div>
         <div className="md:w-[50%] flex items-center justify-start">
           <div className="w-full h-auto space-y-3 lg:space-y-4 xl:space-y-6 2xl:space-y-8 ">
-            <h1 className="text-brand-secondary text-xl md:text-2xl font-semibold uppercase tracking-wide ">
+            <h1 className="text-brand-secondary text-lg sm:text-xl md:text-2xl font-semibold uppercase tracking-wide ">
               {dataOBJ.title}
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-wide">
+            <p className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-wide">
               {dataOBJ.tagLine}
             </p>
             <p className="text-white text-lg md:text-base lg:text-lg xl:text-xl tracking-wide text-justify ">

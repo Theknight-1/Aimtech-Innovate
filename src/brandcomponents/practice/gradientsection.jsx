@@ -20,7 +20,7 @@ export default function GradientSection() {
   return (
     <>
       <section className="w-screen   font-satoshi lg:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
-        <div className="flex  flex-col justify-between md:flex-row items-center  ">
+        <div className="flex  flex-col-reverse justify-between md:flex-row items-center  ">
           <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-5 ">
             <div className=" lg:space-y-4 space-y-2 ">
               <div className="space-y-4">
@@ -96,13 +96,13 @@ export default function GradientSection() {
               </div>
             </div>
           </div>
-          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end  p-2 lg:justify-end  ">
+          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end  md:p-2 lg:justify-end  ">
             <div className="w-full h-full  lg:col-span-6 lg:flex items-center justify-center p-2 lg:justify-end">
               <div className=" w-full h-full flex items-center justify-end relative  ">
                 <img
                   src="/landingPage/hero-image.svg"
                   alt="mockup"
-                  className="w-auto min-h-96 max-h-[500px] aspect-square  object-fit "
+                  className="w-auto min-h-96 max-h-[500px] aspect-square  object-fit"
                 />
                 <div className="absolute -z-10  w-auto min-h-96 max-h-[500px] aspect-square    bg-blue-300/50 blur-3xl rounded-full "></div>
               </div>

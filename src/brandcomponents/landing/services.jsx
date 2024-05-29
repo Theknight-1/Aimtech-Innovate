@@ -168,7 +168,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full h-auto flex justify-center items-centerpx-6 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 mb-10 "
+      className="w-full h-auto flex justify-center items-centerpx-6 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 mb-10 font-satoshi"
     >
       <section className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Service Buttons */}

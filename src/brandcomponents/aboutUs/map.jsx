@@ -2,7 +2,7 @@ import React from "react";
 
 const Map = () => {
   return (
-    <section className="overflow-hidden text-white xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4  h-full w-full flex flex-col justify-center items-center">
+    <section className="overflow-hidden text-white xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4  h-full w-full flex flex-col justify-center items-center font-satoshi">
       <div className="w-full h-auto flex flex-col items-center justify-center p-2">
         <article className="text-3xl md:text-4xl lg:text-6xl font-medium text-center">
           We’re here for you

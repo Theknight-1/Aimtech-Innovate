@@ -2,7 +2,7 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <section className="w-full h-full flex items-center justify-center  py-20 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4">
+    <section className="w-full h-full flex items-center justify-center  py-20 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 font-satoshi">
       <div className="text-white  space-y-4 flex  flex-col justify-center  ">
         <h1 className="text-4xl font-bold ">Terms and Conditions</h1>
         <p className="text-gray-300 text-lg tracking-normal">

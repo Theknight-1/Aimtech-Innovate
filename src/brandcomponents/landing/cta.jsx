@@ -4,7 +4,7 @@ import React from "react";
 export default function Hcta({title="Get a Free Audit Report",d1="Get your free consultation today.",d2="Learn how we can boost your ROI."}) {
   return (
     // <section className="py-10 w-full border flex flex-col items-center justify-center text-gray-800 sm:py-16 md:py-20 overflow-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-    <section className=" w-full mx-auto lg:overflow-visible overflow-hidden container flex flex-col items-center justify-center p-10">
+    <section className="font-satoshi w-full mx-auto lg:overflow-visible overflow-hidden container flex flex-col items-center justify-center p-10">
       <div className="relative w-full z-10  flex items-center justify-center aspect-video sm:w-[80%] md:w-[70%] lg:w-[60%]   rounded-xl   ">
         <div className="absolute top-0 -left-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
         <div className="absolute top-0 -right-2/4 -z-0 w-3/4 h-auto aspect-square   rounded-full  bg-[#15BEE3]/30 blur-3xl"></div>
