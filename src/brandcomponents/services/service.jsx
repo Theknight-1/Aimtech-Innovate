@@ -44,7 +44,7 @@ export default function BrandService({ data }) {
           </div>
         </div>
       </section>
-      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-between items-center p-4">
+      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-between items-center p-4 ">
         <div className="h-full flex flex-col-reverse md:flex-row items-center justify-between gap-2">
           <div className="w-full lg:w-3/5 h-full lg:pr-8 overflow-hidden flex flex-col items-center justify-center ">
             <div className="w-full space-y-5">
@@ -79,7 +79,7 @@ export default function BrandService({ data }) {
           </div>
         </div>
       </section>
-      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-center items-center p-4 ">
+      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-center items-center p-4">
         <div className="h-full flex flex-col-reverse md:flex-row-reverse items-center justify-center gap-5">
           <div className="w-full lg:w-3/5 h-full lg:pr-8 overflow-hidden flex flex-col items-start justify-center">
             <div className="w-full  lg:p-4">

@@ -17,7 +17,7 @@ const LearnMore = () => {
               <h1 className=" text-brand-secondary text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl tracking-wide font-semibold ">
                 World Class Creative Digital Marketing Agency
               </h1>
-              <p className="text-lg lg:text-xl text-white text-justify">
+              <p className="text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal  text-white">
                 We're more than an agency, we're your long-term growth partner.{" "}
                 <br />
                 Our team of 10+ experienced digital marketing experts is

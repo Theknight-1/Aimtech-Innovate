@@ -37,13 +37,13 @@ export default function GradientSection() {
                 <p className="max-w-2xl text-[14px] md:text-[16px] lg:text-lg 2xl:text-xl  text-white leading-tight sm:leading-normal">
                   Don't believe it? Request a free quotation today
                 </p>
-                <div className="flex flex-col md:flex-row justify-start ">
+                <div className="flex flex-col md:flex-row justify-start gap-2 md:gap-0">
                   <div className="relative lg:w-full w-full md:w-80">
                     <div className="relative ">
                       <select
                         value={selectedOption}
                         onChange={handleSelectChange}
-                        className="block font-bold appearance-none w-full bg-white lg:rounded-l-lg border-gray-300 text-gray-800 xl:text-xl lg:text-lg md:text-base sm:text-sm py-5 px-4 pr-8 leading-tight "
+                        className="block font-bold appearance-none w-full bg-white lg:rounded-l-lg border-gray-300 text-gray-800 xl:text-xl lg:text-lg md:text-base sm:text-sm py-4 sm:py-5 px-4 pr-8 leading-tight rounded-md md:rounded-none"
                       >
                         <option
                           value="Select Digital Presence Services"
@@ -73,7 +73,7 @@ export default function GradientSection() {
                   </div>
                   <button
                     onClick={() => newValue && setIsOpen(true)}
-                    className=" w-full md:w-1/3 lg:w-1/2 bg-brand-secondary lg:rounded-r-lg p-4 lg:px-4 md:text-lg lg:text-xl font-bold text-brand-primary text-xl hover:bg-yellow-400 "
+                    className=" w-full md:w-1/3 lg:w-1/2 bg-brand-secondary lg:rounded-r-lg p-3 sm:p-4 lg:px-4 md:text-lg lg:text-xl font-bold text-brand-primary text-xl hover:bg-yellow-400 rounded-md md:rounded-none"
                   >
                     Get Started
                   </button>
