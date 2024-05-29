@@ -252,7 +252,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-2 font-satoshi ${
+        className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 font-satoshi ${
           scrolling ? "bg-white text-black shadow" : "text-white"
         } z-50 w-screen`}
       >
