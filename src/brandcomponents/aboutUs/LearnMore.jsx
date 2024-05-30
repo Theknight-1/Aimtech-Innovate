@@ -19,15 +19,17 @@ const LearnMore = () => {
               </h1>
               <p className="text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal  text-white">
                 We're more than an agency, we're your long-term growth partner.{" "}
-                <br />
+              </p>
+              <p className="text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal  text-white">
                 Our team of 10+ experienced digital marketing experts is
                 hand-picked for their specific skills. We have social media
                 wizards, Google gurus, talented web developers, creative graphic
                 designers, data-driven business analysts, and strategic
                 masterminds.
-                <br />
+              </p>
+              <p className="text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal  text-white">
                 Located in Canada and the US, we're here to serve you across
-                North America. <br />
+                North America.
               </p>
               <div className="flex items-center space-x-4 lg:space-x-8  h-auto p-2">
                 <div className="flex items-center  p-2  overflow-x-hidden">

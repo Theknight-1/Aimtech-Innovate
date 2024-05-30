@@ -10,12 +10,12 @@ export default function Customer() {
                         <h2 class="mb-3 text-xs font-bold uppercase tracking-wide text-gray-500 xl:text-base">Aimtech innovate</h2>
                         <h3 class=" font-bold text-gray-800 sm:text-2xl xl:text-4xl">Proud Partners</h3>
                     </div>
-                    <div class="hidden sm:block">
+                    <div class="block">
                         <div class="grid grid-cols-2 place-items-center ">
-                           <div class="w-32 h-32 aspect-square  flex items-center justify-center">
+                           <div class="sm:w-32 sm:h-32 aspect-square  flex items-center justify-center">
                                 <img src="/markneed.png" alt="" class="" />
                             </div>
-                            <div class="w-32 h-32 aspect-square  flex items-center justify-center">
+                            <div class="sm:w-32 sm:h-32 aspect-square  flex items-center justify-center">
                                 <img src="/nextcoach.png" alt="" class="" />
                             </div>
                         </div>
