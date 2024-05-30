@@ -156,7 +156,7 @@ const ContactPage = () => {
   return (
     <>
       <section className="w-full h-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 font-satoshi">
-        <div className="flex flex-col lg:flex-row mt-10 w-full h-full">
+        <div className="flex flex-col lg:flex-row mt-10 w-full h-full ">
           <div className="flex-1 flex justify-center items-start md:mt-10 h-[90vh] ">
             <div className="w-full lg:w-[80%] space-y-4 md:space-y-10  text-white  p-4 sm:p-0">
               <h1 className=" text-3xl text-brand-secondary sm:text-5xl md:text-6xl lg:text-[3rem] font-semibold leading-snug ">
@@ -199,9 +199,9 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 flex items-center justify-center h-full text-brand-primary">
+          <div className="flex-1 flex items-center justify-center h-full text-brand-primary mt-8 sm:mt-5 md:mt-3">
             <div className="bg-white rounded-lg lg:rounded-[2rem] space-y-5 lg:w-[90%] p-4 md:p-8 lg:py-10 xl:p-16 ">
-              <span className="text-2xl text-primary lg:text-4xl font-bold">
+              <span className="text-2xl md:text-3xl text-primary lg:text-4xl font-bold">
                 Get in touch
               </span>
               <p className="font-bold text-base sm:text-lg md:text-lg xl:text-xl text-justify">
