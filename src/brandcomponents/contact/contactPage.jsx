@@ -4,10 +4,7 @@ import axios from "axios";
 import { FaCheckCircle } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
-const DeleteConfirmationModal = ({
-  confirmation,
-  setConfirmation,
-}) => {
+const DeleteConfirmationModal = ({ confirmation, setConfirmation }) => {
   const handleClose = () => {
     setConfirmation(!confirmation);
   };
@@ -171,8 +168,7 @@ const ContactPage = () => {
                 digital marketing agency:
               </p>
               <div className=" grid md:grid-cols-2 gap-2 text-brand-secondary text-xl lg:text-xl  ">
-                
-              <p className="flex items-start gap-6  ">
+                <p className="flex items-start gap-6  ">
                   <span>
                     <FaCheckCircle />
                   </span>{" "}
@@ -394,7 +390,7 @@ const ContactPage = () => {
                       onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                       checked={isCheckboxChecked}
                     />
-                    <p className="text-black text-lg">
+                    <p className="text-black text-sm md:text-base lg:text-lg">
                       I agree to share my above information for Aimtech
                       Marketing and Promotional activities
                     </p>

@@ -16,7 +16,7 @@ const caseStudiesData = [
     image: "/landingPage/smm.png",
     title: "fultime service for automobiles",
     link: "/casestudy/full-time-operatonal-services-for-automobile",
-    description: "Aimtech Innovate provided comprehensive IT infrastructure ..",
+    description: "Aimtech Innovate provided comprehensive IT infrastructure for startups ..",
   },
   {
     date: "Dec 21, 2023",
@@ -24,7 +24,7 @@ const caseStudiesData = [
     title: "CRM For Fintech",
     link: "/casestudy/crm-for-fintech",
     description:
-      "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
+      "Aimtech Innovate created an AI-enabled CRM for a fintech company ...",
   },
 ];
 
@@ -61,22 +61,22 @@ const Cards = ({ heading, getStartedButton }) => (
       {caseStudiesData.map((casestudy, index) => (
         <div
           key={index}
-          className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden lg:p-8 "
+          className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden  "
         >
           <img
             className=" h-auto w-full object-cover"
             src={casestudy.image}
             alt={casestudy.title}
           />
-          <div className=" h-full   flex ">
-            <div className="space-y-5  pt-4">
+          <div className=" h-[40%]   flex w-full ">
+            <div className="space-y-5  pt-4 ">
               <h4 className="font-semibold text-2xl leading-6 text-gray-700 my-2 px-3">
                 {casestudy.title}
               </h4>
               <p className="paragraph-normal text-gray-600 text-[1rem] px-3">
                 {casestudy.description}
               </p>
-              <div className="  flex items-center justify-between h-20 w-full p-3">
+              <div className="  flex items-center justify-between h-20 w-full p-3 ">
                 <span className="text-sm text-primary">{casestudy.date}</span>
                 <Link
                   href={casestudy.link}

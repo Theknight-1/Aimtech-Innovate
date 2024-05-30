@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="h-auto md:h-[calc(100vh-10vh)] w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex justify-center items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center w-full">
+    <section className="h-auto md:h-[calc(100vh-10vh)] w-full xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 flex justify-center items-center font-satoshi">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full mt-6 sm:mt-0">
         <div className="flex flex-col md:w-[60%] w-full md:pr-8 space-y-3 xl:space-y-4 2xl:space-y-6 p-4">
           <h1 className="text-[#FCCF40] text-xl md:text-2xl font-bold">
             EXPLORE OUR CASE STUDIES

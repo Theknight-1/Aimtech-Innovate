@@ -377,7 +377,7 @@ const Navbar = () => {
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto ${
+                    className={`relative bg-white p-6 w-full h-auto top-25 ${
                       scrolling ? "-top-7" : ""
                     }`}
                   >
