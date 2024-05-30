@@ -1,3 +1,6 @@
+
+'use client'
+import { NextSeo } from 'next-seo';
 import React from "react";
 
 //components
@@ -134,6 +137,20 @@ export default function page() {
 
   return (
     <>
+     <NextSeo
+        title="Lead Generating Web Design and Development"
+        description="Make a good impression on potential customers right away. Our talented team of web designers and developers creates websites that are both aesthetically pleasing and conversion-focused. We believe that a unique, customized website design makes the business stand out from the crowd and creates an online presence."
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'WordPress,Shopify,WooCommerce,Custom Code (Almost any Tech Stack)',
+          },
+          {
+            name: 'author',
+            content: 'Aimtech Innovate',
+          },
+        ]}
+      />
       <Navbar />
       <Brandservice data={dataOBJ} />
       {/* <section className="w-full h-full px-44">

@@ -1,3 +1,5 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
 import Navbar from '@/brandcomponents/global/Navbar'
 import CaseLanding from '@/brandcomponents/casestudy/caselanding'
@@ -27,6 +29,20 @@ export default function page() {
 
   return (
     <>
+    <NextSeo 
+    title='CRM For Fintech'
+    description='Aimtech Innovate created an AI-enabled CRM for a fintech company, enabling smart decisions based on accurate and real-time data. The CRM provides deep insights into sales metrics, revenue forecasts, team performance analysis, and custom dashboards.'
+    additionalMetaTags={[
+      {
+        name: 'keywords',
+        content: 'Finance,CRM,AI,Data Analytics',
+      },
+      {
+        name: 'author',
+        content: 'Aimtech Innovate',
+      },
+    ]}
+    />
     <Navbar/>
     <CaseLanding casedata={casedata}/>
     <Footer/>

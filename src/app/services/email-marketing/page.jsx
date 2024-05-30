@@ -1,5 +1,6 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
-
 //components
 import Navbar from "@/brandcomponents/global/Navbar"
 import Brandservice from "@/brandcomponents/services/service";
@@ -109,6 +110,20 @@ export default function page() {
    
   return (
     <>
+     <NextSeo
+        title="Email Marketing Campaigns That Drive Conversions"
+        description="Are you looking for an effective way to reach and engage with your customers? Look no further than email marketing! Email marketing is the most effective digital marketing channel and delivers even higher ROI than paid ads or social media."
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'Audience Segmentation,Compelling Content, Eye-catching Design, Clear Call-to-Action (CTA)',
+          },
+          {
+            name: 'author',
+            content: 'Aimtech Innovate',
+          },
+        ]}
+      />
     <Navbar />
     <Brandservice data={dataOBJ} />
     {/* <section className="w-full h-full px-44">

@@ -1,3 +1,5 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
 import Navbar from '@/brandcomponents/global/Navbar'
 import CaseLanding from '@/brandcomponents/casestudy/caselanding'
@@ -26,6 +28,20 @@ export default function page() {
 
   return (
     <>
+    <NextSeo 
+    title='SEO For Fintech'
+    description='Aimtech Innovate successfully implemented a strategic SEO plan for a finance company, addressing their primary challenge of low backlinking within a month.'
+    additionalMetaTags={[
+      {
+        name: 'keywords',
+        content: 'Finance,SEO,Canada,US',
+      },
+      {
+        name: 'author',
+        content: 'Aimtech Innovate',
+      },
+    ]}
+    />
     <Navbar/>
     <CaseLanding casedata={casedata}/>
     <Footer/>

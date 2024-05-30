@@ -1,3 +1,5 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
 import Navbar from '@/brandcomponents/global/Navbar'
 import CaseLanding from '@/brandcomponents/casestudy/caselanding'
@@ -27,6 +29,20 @@ const casedata = {
 
   return (
     <>
+    <NextSeo 
+    title='Social Media Marketing for AI Startup'
+    description='Aimtech Innovate resolved many problems for AI startups and provided them with the best target audience and regional market research to create the most effective marketing campaigns.'
+    additionalMetaTags={[
+      {
+        name: 'keywords',
+        content: 'Social Media Marketing,AI Solutions,Market Research,Digital Marketing,Startup Consulting',
+      },
+      {
+        name: 'author',
+        content: 'Aimtech Innovate',
+      },
+    ]}
+    />
     <Navbar/>
     <CaseLanding casedata={casedata}/>
     <Footer/>

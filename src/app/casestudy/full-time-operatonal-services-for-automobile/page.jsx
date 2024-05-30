@@ -1,3 +1,5 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
 import Navbar from '@/brandcomponents/global/Navbar'
 import CaseLanding from '@/brandcomponents/casestudy/caselanding'
@@ -26,6 +28,20 @@ export default function page() {
 
   return (
     <>
+    <NextSeo 
+    title='Full Time Operational Services for Automobile'
+    description='Aimtech Innovate provided comprehensive IT infrastructure and digital marketing services to an automotive company, enabling them to streamline operations and enhance their online presence.'
+    additionalMetaTags={[
+      {
+        name: 'keywords',
+        content: 'Automotive,IT Infrastructure,Web Development,Digital Marketing,Content Marketing,,Email Marketing,Canada,US',
+      },
+      {
+        name: 'author',
+        content: 'Aimtech Innovate',
+      },
+    ]}
+    />
     <Navbar/>
     <CaseLanding casedata={casedata}/>
     <Footer/>

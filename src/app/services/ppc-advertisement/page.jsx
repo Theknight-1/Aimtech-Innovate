@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 //components
@@ -9,6 +10,7 @@ import Footer from "@/brandcomponents/global/footer";
 import CaseStudies from "@/brandcomponents/landing/casestudy";
 import Testimonial from "@/brandcomponents/landing/testimonial";
 import Hcta from "@/brandcomponents/landing/cta";
+import { NextSeo } from 'next-seo';
 
 export default function page() {
   const dataOBJ = {
@@ -116,6 +118,20 @@ export default function page() {
    
   return (
     <>
+     <NextSeo
+        title="Lead Generating Pay-Per-Click (PPC) Advertising"
+        description="Attract your ideal customers through highly targeted, ROI-driven pay-per-click advertising campaigns. Our PPC specialists use advanced strategies and continual optimization to ensure your ads are seen by the right audiences at the perfect moment when they're ready to buy."
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'Google & Microsoft Ads,Social PPC (Facebook, Instagram, etc.),YouTube & Video Ads, Amazon PPC',
+          },
+          {
+            name: 'author',
+            content: 'Aimtech Innovate',
+          },
+        ]}
+      />
     <Navbar />
     <Brandservice data={dataOBJ} />
     {/* <section className="w-full h-full px-44">

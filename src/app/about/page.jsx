@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React from "react";
 import Navbar from "@/brandcomponents/global/Navbar";
 import Footer from "@/brandcomponents/global/footer";
@@ -45,6 +45,16 @@ export default function About() {
       <NextSeo
         title="Helping Business to grow with digitaly | Aim Tech Innovate "
         description="Online Marketing Team passionate about helping businesses, generate leads and grow online through smart, measurable Marketing Strategies."
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'Marketing Company, Digital Partner, latest tech',
+          },
+          {
+            name: 'author',
+            content: 'Aimtech Innovate',
+          },
+        ]}
       />
       <Navbar />
       <LearnMore />

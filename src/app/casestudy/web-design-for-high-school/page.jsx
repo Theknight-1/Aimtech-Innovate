@@ -1,3 +1,5 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
 import Navbar from '@/brandcomponents/global/Navbar'
 import CaseLanding from '@/brandcomponents/casestudy/caselanding'
@@ -26,6 +28,20 @@ export default function page() {
 
   return (
     <>
+    <NextSeo 
+    title='Web Design For High School'
+    description='Aimtech Innovate helped create a best-in-class website for a high school, achieving remarkable results.'
+    additionalMetaTags={[
+      {
+        name: 'keywords',
+        content: 'Education,Website Design, Marketing,Branding,SEO,Canada,US,Modern UI',
+      },
+      {
+        name: 'author',
+        content: 'Aimtech Innovate',
+      },
+    ]}
+    />
     <Navbar/>
     <CaseLanding casedata={casedata}/>
     <Footer/>

@@ -1,5 +1,6 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
-
 //components
 import Navbar from "@/brandcomponents/global/Navbar"
 import Brandservice from "@/brandcomponents/services/service";
@@ -113,6 +114,20 @@ export default function page() {
 
   return (
     <>
+     <NextSeo
+        title="Helping Business to grow with digitaly | Aim Tech Innovate "
+        description="Online Marketing Team passionate about helping businesses, generate leads and grow online through smart, measurable Marketing Strategies."
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'SEO, On page SEO , Off page SEO , google tag manager,google analytics',
+          },
+          {
+            name: 'author',
+            content: 'Aimtech Innovate',
+          },
+        ]}
+      />
     <Navbar />
     <Brandservice data={dataOBJ} />
     {/* <section className="w-full h-full px-44">

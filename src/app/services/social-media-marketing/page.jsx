@@ -1,5 +1,6 @@
+'use client'
+import { NextSeo } from 'next-seo';
 import React from 'react'
-
 //components
 import Navbar from "@/brandcomponents/global/Navbar"
 import Brandservice from "@/brandcomponents/services/service";
@@ -115,6 +116,20 @@ export default function page() {
   return (
     <>
     <Navbar />
+    <NextSeo
+        title="Reach Your Niche Market Audience With a Robust Social Presence"
+        description="Take your business to the next level with our comprehensive social media management solutions. Our team of social media experts creates and implements customized strategies that drive engagement, increase brand awareness, and generate leads. We believe that a strong social media presence is crucial for businesses to thrive in today's digital landscape."
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'Facebook & Instagram, LinkedIn  & Twitter, TikTok, Youtube',
+          },
+          {
+            name: 'author',
+            content: 'Aimtech Innovate',
+          },
+        ]}
+      />
     <Brandservice data={dataOBJ} />
     {/* <section className="w-full h-full px-44">
       {params?.slug === "seo-services" ? (
