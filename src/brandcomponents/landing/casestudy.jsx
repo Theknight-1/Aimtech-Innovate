@@ -102,7 +102,7 @@ export default function CaseStudies() {
       <div className=" h-full w-full grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8  px-6  lg:px-16 md:px-20 xl:px-24 2xl:px-56 ">
         {caseStudiesData.map((study,index) => (
           <div key={index} className="flip-card  overflow-hidden aspect-square h-auto w-full  ">
-            <div className="flip-card-inner w-full h-full">
+            <div className="flip-card-inner w-full h-full ">
               <div className="flip-card-front overflow-hidden">
                 <img
                   className="w-full h-full object-cover "
@@ -110,9 +110,9 @@ export default function CaseStudies() {
                   alt=""
                 />
               </div>
-              <div className="flip-card-back flex flex-col items-center justify-center px-2 lg:px-8 font-bold ">
+              <div className="flip-card-back flex flex-col items-center justify-center px-2 lg:px-8 font-bold space-y-2">
                 <h1 className="text-2xl border-b-2 border-brand-primary font-bold">{study.title}</h1>
-                <p className="text-lg sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl font-medium">{study.description}</p>
+                <p className="text-base sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl font-medium leading-normal">{study.description}</p>
                 <Link
                   href={study.link}
                   className="bg-brand-secondary hover:bg-yellow-400 mt-1 lg:w-1/2 text-center p-2 rounded-lg text-brand-primary"

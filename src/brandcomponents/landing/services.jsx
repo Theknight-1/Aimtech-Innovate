@@ -41,7 +41,7 @@ export default function Services() {
     switch (currentContent) {
       case "businessImpact":
         return (
-          <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[35rem] flex items-center justify-center ">
+          <div className="relative w-full h-[18rem] sm:h-[23rem] md:h-[28rem] lg:h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 xl:px-12 2xl:p-14 lg:px-10 md:p-24 sm:p-12 ">
               <h1 className="xl:text-4xl lg:text-3xl md:text-4xl  text-2xl  font-bold">Design a Website That Converts Visitors into Leads</h1>
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
@@ -66,7 +66,7 @@ export default function Services() {
 
       case "contentMarketing":
         return (
-          <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[35rem] flex items-center justify-center ">
+          <div className="relative w-full h-[18rem] sm:h-[23rem] md:h-[28rem] lg:h-[35rem] flex items-center justify-center ">
 
             <div className="absolute text-white z-20 text-center space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 xl:px-12 2xl:p-14 lg:px-10 md:p-24 sm:p-12  ">
               <h1 className="xl:text-4xl lg:text-3xl md:text-4xl  text-2xl  font-bold">Target Your Ideal Customers to Maximize Your Sales</h1>
@@ -91,7 +91,7 @@ export default function Services() {
 
       case "ecommerceDevelopment":
         return (
-          <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[35rem] flex items-center justify-center ">
+          <div className="relative w-full h-[18rem] sm:h-[23rem] md:h-[28rem] lg:h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 xl:px-12 2xl:p-14 lg:px-10 md:p-24 sm:p-12 ">
               <h1 className="xl:text-4xl lg:text-3xl md:text-4xl  text-2xl  font-bold">Dominate Search Results to Drive Organic Traffic</h1>
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
@@ -115,7 +115,7 @@ export default function Services() {
 
       case "webDesign":
         return (
-          <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[35rem] flex items-center justify-center ">
+          <div className="relative w-full h-[18rem] sm:h-[23rem] md:h-[28rem] lg:h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 xl:px-12 2xl:p-14 lg:px-10 md:p-24 sm:p-12 ">
               <h1 className="xl:text-4xl lg:text-3xl md:text-4xl  text-2xl  font-bold">Build Trust to Drive Engagement and Customer Interaction</h1>
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">
@@ -139,7 +139,7 @@ export default function Services() {
 
       case "seoService":
         return (
-          <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[35rem] flex items-center justify-center ">
+          <div className="relative w-full h-[18rem] sm:h-[23rem] md:h-[28rem] lg:h-[35rem] flex items-center justify-center ">
             <div className="absolute text-white z-20 text-center space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 xl:px-12 2xl:p-14 lg:px-10 md:p-24 sm:p-12 ">
               <h1 className="xl:text-4xl lg:text-3xl md:text-4xl  text-2xl  font-bold">Personalized Emails that build Customer Base</h1>
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl ">

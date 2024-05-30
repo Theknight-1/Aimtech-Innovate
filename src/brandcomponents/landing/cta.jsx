@@ -13,7 +13,7 @@ export default function Hcta({title="Get a Free Audit Report",d1="Get your free 
         </div>
       </div>
       <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">
-        <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white">
+        <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white space-y-3">
           <h2 className=" font-semibold leading-tight text-2xl sm:text-5xl lg:text-6xl">
             {title}
 
@@ -26,7 +26,7 @@ export default function Hcta({title="Get a Free Audit Report",d1="Get your free 
           </p>
 
           <div className="flex flex-col sm:flex-row sm:space-x-4 sm:px-0">
-            <Link href="/contact" className="relative mt-4 rounded-lg p-2 md:p-3 md:text-lg lg:text-xl  text-brand-primary font-bold  shadow transition bg-brand-secondary hover:bg-yellow-400">
+            <Link href="/contact" className="relative sm:mt-2  rounded-lg p-2 md:p-3 md:text-lg lg:text-xl  text-brand-primary font-bold  shadow transition bg-brand-secondary hover:bg-yellow-400">
               Get Started
             </Link>
           </div>

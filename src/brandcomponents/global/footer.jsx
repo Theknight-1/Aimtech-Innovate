@@ -34,7 +34,7 @@ const ProvidedSchems = () => {
           </ul>
         </nav>
       </div>
-     <div className="">
+      <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Services</div>
         <nav aria-label="Guides Navigation" className="">
           <ul className="lg:space-y-3 space-y-2 text-sm">
@@ -44,7 +44,10 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/services/ppc-advertisement">
+              <a
+                className=" hover:underline"
+                href="/services/ppc-advertisement"
+              >
                 PPC Advertisement
               </a>
             </li>
@@ -54,7 +57,10 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/services/social-media-marketing">
+              <a
+                className=" hover:underline"
+                href="/services/social-media-marketing"
+              >
                 Social Media Management
               </a>
             </li>
@@ -67,7 +73,6 @@ const ProvidedSchems = () => {
         </nav>
       </div>
 
-     
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Case studies</div>
         <nav aria-label="Footer Navigation" className="">
@@ -78,12 +83,18 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/casestudy/social-media-marketing-for-ai-startup">
+              <a
+                className=" hover:underline"
+                href="/casestudy/social-media-marketing-for-ai-startup"
+              >
                 Recent
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/casestudy/web-design-for-high-school">
+              <a
+                className=" hover:underline"
+                href="/casestudy/web-design-for-high-school"
+              >
                 Trending
               </a>
             </li>
@@ -100,12 +111,20 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/terms-and-conditions" target="_blank">
+              <a
+                className=" hover:underline"
+                href="/terms-and-conditions"
+                target="_blank"
+              >
                 T & C
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/privacy-policy" target="_blank">
+              <a
+                className=" hover:underline"
+                href="/privacy-policy"
+                target="_blank"
+              >
                 Privacy Policy
               </a>
             </li>
@@ -176,24 +195,31 @@ export default function Footer() {
               aria-labelledby="servicesDropdownButton"
             >
               <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/casestudy/seo-for-fintech">
-                Popular
-              </a>
-            </li>
-            <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/casestudy/social-media-marketing-for-ai-startup">
-                Recent
-              </a>
-            </li>
-            <li>
-              <a className="block px-4 py-2 hover:bg-brand-secondary" href="/casestudy/web-design-for-high-school">
-                Trending
-              </a>
-            </li>
-              
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/casestudy/seo-for-fintech"
+                >
+                  Popular
+                </a>
+              </li>
+              <li>
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/casestudy/social-media-marketing-for-ai-startup"
+                >
+                  Recent
+                </a>
+              </li>
+              <li>
+                <a
+                  className="block px-4 py-2 hover:bg-brand-secondary"
+                  href="/casestudy/web-design-for-high-school"
+                >
+                  Trending
+                </a>
+              </li>
             </ul>
           </div>
-          
         </div>
       </div>
       {/* Company Dropdown */}
@@ -231,22 +257,30 @@ export default function Footer() {
               aria-labelledby="companyDropdownButton"
             >
               <li>
-              <a className="block px-4 py-2 hover:bg-brand-secondary " href="/about">
-                About us
-              </a>
-            </li>
-            <li>
-              <a className="block px-4 py-2 hover:bg-brand-secondary " href="/about">
-                Blog
-              </a>
-            </li>
+                <a
+                  className="block px-4 py-2 hover:bg-brand-secondary "
+                  href="/about"
+                >
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  className="block px-4 py-2 hover:bg-brand-secondary "
+                  href="/about"
+                >
+                  Blog
+                </a>
+              </li>
 
-            <li>
-              <a className="block px-4 py-2 hover:bg-brand-secondary " href="/about">
-                Media Coverage
-              </a>
-            </li>
-              
+              <li>
+                <a
+                  className="block px-4 py-2 hover:bg-brand-secondary "
+                  href="/about"
+                >
+                  Media Coverage
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -286,31 +320,45 @@ export default function Footer() {
               aria-labelledby="servicesDropdownButton"
             >
               <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/web-development">
-                Web Design & Development
-              </a>
-            </li>
-            <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/ppc-advertisement">
-                PPC Advertisement
-              </a>
-            </li>
-            <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/seo-service">
-                Search Engine Optimization
-              </a>
-            </li>
-            <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/social-media-marketing">
-                Social Media Management
-              </a>
-            </li>
-            <li>
-              <a className=" block px-4 py-2 hover:bg-brand-secondary" href="/services/email-marketing">
-                Email Marketing
-              </a>
-            </li>
-              
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/services/web-development"
+                >
+                  Web Design & Development
+                </a>
+              </li>
+              <li>
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/services/ppc-advertisement"
+                >
+                  PPC Advertisement
+                </a>
+              </li>
+              <li>
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/services/seo-service"
+                >
+                  Search Engine Optimization
+                </a>
+              </li>
+              <li>
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/services/social-media-marketing"
+                >
+                  Social Media Management
+                </a>
+              </li>
+              <li>
+                <a
+                  className=" block px-4 py-2 hover:bg-brand-secondary"
+                  href="/services/email-marketing"
+                >
+                  Email Marketing
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -398,13 +446,19 @@ export default function Footer() {
             <span className="text-xl">
               <LuPhoneCall />
             </span>
-            <span><a href="tel:+1 905 399 6642">+1 905 399 6642</a> </span>
+            <span>
+              <a href="tel:+1 905 399 6642">+1 905 399 6642</a>{" "}
+            </span>
           </div>
           <div className="flex items-center gap-5 ">
             <span className="text-xl">
               <CiMail />
             </span>
-            <span><a href="mailto:support@aimtechinnovate.com">support@aimtechinnovate.com</a></span>
+            <span>
+              <a href="mailto:support@aimtechinnovate.com">
+                support@aimtechinnovate.com
+              </a>
+            </span>
           </div>
 
           <div className="flex flex-row items-center justify-start text-2xl gap-4 ">
@@ -434,9 +488,11 @@ export default function Footer() {
       </div>
       <div className="border-t-2 text-white">
         <div className="mx-auto  max-w-lg gap-5  py-4 text-center flex  text-xs justify-center items-center cursor-pointer">
-          <p className="w-max  text-xm lg:text-lg ">
-            © 2024 Aimtech Innovate | A Joint venture With{" "}
-          </p>
+          <a href="https://nxtcoach.com" target="_blank">
+            <p className="w-max  text-xm lg:text-lg ">
+              © 2024 Aimtech Innovate | A Joint venture With{" "}
+            </p>
+          </a>
           <div>
             <a href="https://nxtcoach.com" target="_blank">
               <img src="/brand/logo/nxtcoachlogo.png" alt="next coach logo" />

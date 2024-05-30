@@ -19,12 +19,12 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen   font-satoshi lg:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
+      <section className="w-screen   font-satoshi lg:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
         <div className="flex  flex-col-reverse justify-between md:flex-row items-center  ">
           <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-4 ">
             <div className=" lg:space-y-4 space-y-2 ">
               <div className="space-y-4 ">
-                <h1 className=" max-w-7xl text-white  font-semibold md:tracking-wide text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl  ">
+                <h1 className=" max-w-7xl text-white  font-semibold md:tracking-wide text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight sm:leading-normal ">
                   Enhance your digital presence and gain market excellence
                 </h1>
                 <h3 className="max-w-4xl  text-white  text-[18px] md:text-[18px] lg:text-xl 2xl:text-2xl bg-gradient-to-r bg-clip-text md:tracking-wider leading-tight sm:leading-normal">
@@ -37,7 +37,7 @@ export default function GradientSection() {
                 <p className="max-w-2xl text-[14px] md:text-[16px] lg:text-lg 2xl:text-xl  text-white leading-tight sm:leading-normal">
                   Don't believe it? Request a free quotation today
                 </p>
-                <div className="flex flex-col md:flex-row justify-start gap-2 md:gap-0">
+                <div className="flex flex-col md:flex-row justify-start gap-5 md:gap-0 py-2 sm:py-0">
                   <div className="relative lg:w-full w-full md:w-80">
                     <div className="relative ">
                       <select
@@ -73,7 +73,12 @@ export default function GradientSection() {
                   </div>
                   <button
                     onClick={() => newValue && setIsOpen(true)}
-                    className=" w-full md:w-1/3 lg:w-1/2 bg-brand-secondary lg:rounded-r-lg p-3 sm:p-4 lg:px-4 md:text-lg lg:text-xl font-bold text-brand-primary text-xl hover:bg-yellow-400 rounded-md md:rounded-none"
+                    disabled={selectedOption === "Select Digital Presence Services"}
+                    className={`w-full md:w-1/3 lg:w-1/2 p-3 sm:p-4 lg:px-4 md:text-lg lg:text-xl font-bold text-xl lg:rounded-r-lg rounded-md md:rounded-none ${
+                      selectedOption === "Select Digital Presence Services"
+                        ? "bg-gray-400 text-gray-600 cursor-not-allowed"
+                        : "bg-brand-secondary text-brand-primary hover:bg-yellow-400"
+                    }`}
                   >
                     Get Started
                   </button>
@@ -89,7 +94,7 @@ export default function GradientSection() {
                       <FaStarHalfAlt className="text-brand-secondary" />
                     </li>
                   </ul>
-                  <span className="text-white font-semibold xl:text-[18px]  text-xs">
+                  <span className="text-white font-semibold xl:text-[18px]  text-sm">
                     4.8/5 based on 6,873 reviews | GDPR Compliant
                   </span>
                 </div>
