@@ -53,8 +53,7 @@ const DMsg = () => {
                 className="w-full lg:w-auto h-auto object-cover rounded-lg shadow-2xl"
               />
             </div>
-            <br />
-            <span className="text-2xl text-brand-secondary w-full text-center">
+            <span className="text-2xl text-brand-secondary w-full text-center mb-5 mt-2">
               Adil Muhammad
             </span>
           </div>

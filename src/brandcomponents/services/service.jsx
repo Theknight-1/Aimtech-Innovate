@@ -1,6 +1,7 @@
 import React from "react";
 import file from "@/Data.json";
 import Link from "next/link";
+import { FaAnglesRight } from "react-icons/fa6";
 
 export default function BrandService({ data }) {
   const dataOBJ = data;
@@ -56,13 +57,13 @@ export default function BrandService({ data }) {
                   Does this sound like your Business?
                 </span>
               </div>
-              <dl className="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-                <ul className="pl-4 font-satoshi list-inside list-disc space-y-2 text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl text-justify">
+              <div className="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+                <ul className=" font-satoshi list-inside list-disc space-y-2 text-sm sm:text-xl md:text-sm lg:text-lg xl:text-xl text-justify ">
                   {dataOBJ.second.points.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-              </dl>
+              </div>
             </div>
             <div className="font-satoshi w-full space-y-2 text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl mt-5 flex flex-col items-start justify-start tracking-wide text-justify">
               {dataOBJ.second.short.map((dn, index) => (
@@ -105,9 +106,10 @@ export default function BrandService({ data }) {
             <div className=" min-h-10 sm:min-h-12 bg-brand-secondary rounded hover:bg-yellow-400  text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mt-5 p-2 sm:px-6 flex items-center justify-center ">
               <Link
                 href={dataOBJ.fourth.ctalink}
-                className="font-bold text-brand-primary"
+                className="font-bold text-brand-primary flex items-center justify-center gap-2"
               >
                 {dataOBJ.fourth.ctatext}
+                <FaAnglesRight />
               </Link>
             </div>
           </div>

@@ -146,19 +146,18 @@ const Navbar = () => {
   ];
 
   const caseStudiesData = [
-    
     {
       category: "SEO related",
       icon: "🔍",
       data: [
         {
-          title: "fultime service for automobiles",
+          title: "Fulltime service for automobiles",
           link: "/casestudy/full-time-operatonal-services-for-automobile",
           description:
             "Aimtech Innovate provided comprehensive IT infrastructure ..",
         },
         {
-          title: "SEO For Fintech",
+          title: "SEO for Fintech",
           link: "/casestudy/seo-for-fintech",
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
@@ -170,13 +169,13 @@ const Navbar = () => {
       icon: "🌐",
       data: [
         {
-          title: "CRM For Fintech",
+          title: "CRM for Fintech",
           link: "/casestudy/crm-for-fintech",
           description:
             "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
         },
         {
-          title: "Highschool Web Design",
+          title: "Highschool web design",
           link: "/casestudy/web-design-for-high-school",
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
@@ -188,12 +187,11 @@ const Navbar = () => {
       icon: "💰",
       data: [
         {
-          title: "SMM For AI Atartup",
+          title: "SMM for AI startup",
           link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-        
       ],
     },
     {
@@ -206,7 +204,6 @@ const Navbar = () => {
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
-        
       ],
     },
   ];

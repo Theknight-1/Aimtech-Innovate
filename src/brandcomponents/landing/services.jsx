@@ -172,10 +172,10 @@ export default function Services() {
     >
       <section className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Service Buttons */}
-        <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2">
-          <span className=" leading-snug text-4xl sm:text-[3.5rem] lg:text-[3rem] font-bold text-brand-secondary">
-            What We Provide
-          </span>
+        <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2 ">
+          <h1 className=" leading-snug text-4xl sm:text-[3.5rem] lg:text-[3rem] font-bold text-center text-brand-secondary w-full lg:text-left">
+            Our Solutions
+          </h1>
           <div className="w-full md:space-y-5 lg:pr-16 pr-0">
             {[
               "businessImpact",

@@ -5,7 +5,7 @@ export default function Testimonial() {
   const testimonials = [
     {
       quote:
-        "I couldn't be happier with the web design services provided by Aimtech Innovate. Their team transformed our outdated website into a stunning, user-friendly platform that perfectly captures our brand's essence. From the initial consultation to the final launch, their professionalism, creativity, and attention to detail were outstanding. The result is a sleek, responsive site that has significantly improved our online presence and customer engagement. Aimtech Innovate exceeded our expectations in every way. Highly recommended!",
+        "I couldn't be happier with the web design services provided by Aimtech Innovate. Their team transformed our outdated website into a stunning, user-friendly platform that perfectly captures our brand's essence. ",
       author: "Michael McEwen",
       company: "Web Design Service",
       image:
@@ -13,15 +13,15 @@ export default function Testimonial() {
     },
     {
       quote:
-      "Aimtech Innovate did an incredible job developing our WordPress website. Their expertise and creativity turned our vision into a reality, delivering a site that is both visually appealing and highly functional. The team was responsive, attentive to our needs, and provided excellent support throughout the process. Our new website has enhanced our online presence and made it easier for our customers to navigate and engage with our content. We highly recommend Aimtech Innovate for their outstanding web development services!",
+        "Their expertise and creativity turned our vision into a reality, delivering a site that is both visually appealing and highly functional. The team was responsive, attentive to our needs, and provided excellent support throughout the process. Our new website has enhanced our online presence and made it easier for our customers to navigate and engage with our content.",
       author: "Adam Simson ",
-      company: "Word Press Website",
+      company: "WordPress Website",
       image:
         "https://w7.pngwing.com/pngs/214/506/png-transparent-company-chief-executive-business-finance-goal-lorm-ipsum.png",
     },
     {
       quote:
-      "Aimtech Innovate has completely transformed our social media presence. Their social media management services are exceptional, bringing creativity, consistency, and strategic insight to our online platforms. Since partnering with them, we've seen a significant increase in engagement, followers, and overall brand visibility. The team is professional, responsive, and truly understands our brand's voice and goals. We couldn't be happier with the results and highly recommend Aimtech Innovate for anyone looking to elevate their social media game!",
+        "Their social media management services are exceptional, bringing creativity, consistency, and strategic insight to our online platforms. Since partnering with them, we've seen a significant increase in engagement, followers, and overall brand visibility. We couldn't be happier with the results and highly recommend Aimtech Innovate.",
       author: "Lindsay Risi ",
       company: "Social Media Management",
       image:
@@ -29,7 +29,7 @@ export default function Testimonial() {
     },
     {
       quote:
-      "Aimtech Innovate's SEO services have had a profound impact on our website's performance. Their team conducted a thorough analysis and implemented effective strategies that have significantly improved our search engine rankings and organic traffic. Their expertise, attention to detail, and ongoing support have been invaluable. Thanks to Aimtech Innovate, our online visibility has increased, leading to higher engagement and more business opportunities. We highly recommend their SEO services to anyone looking to enhance their online presence.",
+        "Their team conducted a thorough analysis and implemented effective strategies that have significantly improved our search engine rankings and organic traffic.Thanks to Aimtech Innovate, our online visibility has increased, leading to higher engagement and more business opportunities. We highly recommend their SEO services to anyone looking to enhance their online presence.",
       author: "Nicole Kerrigan ",
       company: "SEO Service",
       image:
@@ -37,7 +37,7 @@ export default function Testimonial() {
     },
     {
       quote:
-      "The PPC Strategy Development service provided by Aimtech Innovate has revolutionized our business. Their team designed a targeted and efficient PPC campaign that dramatically increased our online traffic and conversions. Throughout the process, they demonstrated expertise, clear communication, and a proactive approach. The results have far exceeded our expectations, providing an exceptional return on investment. We highly recommend Aimtech Innovate to anyone looking to enhance their PPC strategy and achieve outstanding results.",
+        "The PPC Strategy Development service provided by Aimtech Innovate has revolutionized our business. Their team designed a targeted and efficient PPC campaign that dramatically increased our online traffic and conversions.We highly recommend Aimtech Innovate to anyone looking to enhance their PPC strategy and achieve outstanding results.",
       author: "Brian Balkwill ",
       company: "PPC Strategy development",
       image:
@@ -45,7 +45,7 @@ export default function Testimonial() {
     },
     {
       quote:
-      "The email marketing service provided by Aimtech Innovate has been transformative for our online vitamin business. Their team crafted engaging and effective email campaigns that have significantly boosted our customer engagement and sales. Their expertise, creativity, and attention to detail have been outstanding. Since partnering with them, we've seen a remarkable increase in our open rates and conversions. We highly recommend Aimtech Innovate for anyone looking to elevate their email marketing strategy.",
+        "The email marketing service provided by Aimtech Innovate has been transformative for our online vitamin business. Their team crafted engaging and effective email campaigns that have significantly boosted our customer engagement and sales. Their expertise, creativity, and attention to detail have been outstanding.",
       author: "Helder Valentim ",
       company: "Email Marketing",
       image:
