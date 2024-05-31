@@ -26,7 +26,7 @@ const SingleCard = ({ image, CardDescription, CardTitle, titleHref }) => {
               {CardTitle}
             </a>
           </h3>
-          <p className="text-sm lg:text-base text-body-color dark:text-dark-6">
+          <p className="text-sm lg:text-base text-body-color dark:text-dark-6 text-justify">
             {CardDescription}
           </p>
         </div>
@@ -40,7 +40,7 @@ const DMsg = () => {
     <>
       <section className="h-auto w-full overflow-hidden px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
         <div className="flex items-center justify-center p-4">
-          <span className="text-5xl lg:text-6xl text-center text-brand-secondary font-bold md:py-7 ">
+          <span className="text-3xl lg:text-6xl text-center text-brand-secondary font-bold md:py-7 ">
             Director’s Message
           </span>
         </div>
@@ -54,12 +54,12 @@ const DMsg = () => {
               />
             </div>
             <br />
-            <span className="text-4xl text-brand-secondary w-full text-center">
+            <span className="text-2xl text-brand-secondary w-full text-center">
               Adil Muhammad
             </span>
           </div>
-          <div className="lg:w-1/2 h-full text-justify  space-y-2 md:p-8">
-            <div className="w-full h-auto text-white text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal 2xl:space-y-7 md:space-y-4">
+          <div className="lg:w-1/2 h-full text-justify  space-y-2 xl:pr-20">
+            <div className="w-full h-auto text-white text-sm sm:text-lg md:text-lg xl:text-2xl text-justify leading-normal 2xl:space-y-7 md:space-y-4">
               <p>
                 At Aimtech Innovate, we attribute our success to the unwavering
                 commitment to delivering exceptional quality services, which

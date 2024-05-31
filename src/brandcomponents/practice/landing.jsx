@@ -12,13 +12,13 @@ export default function Pland({ faqdata = [] }) {
       {/* <div class="h-[calc(100vh-10vh)] w-full p-10 bg-[#185493]">
                 <div className='border w-full h-full '></div>
             </div> */}
-      <section class=" lg:min-h-[calc(100vh-30vh)] mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4 font-satoshi ">
+      <section class=" xl:min-h-[calc(100vh-20vh)]  mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4 font-satoshi ">
         <div class=" h-auto w-full ">
           <div className="  w-full h-auto ">
             <div className="w-full h-auto flex flex-col lg:flex-row  bg-[#050505e1]  lg:py-4 xl:p-4 rounded-xl">
-              <div className="flex  h-full space-y-2 lg:space-y-6 flex-col justify-between w-full lg:w-1/3  p-4 sm:px-7 md:p-6 lg:p-4 xl:p-5 ">
+              <div className="flex  h-full space-y-2 lg:space-y-6 flex-col justify-between w-full lg:w-1/3  px-6 sm:px-7 md:p-6 lg:p-6 xl:p-5 ">
                 <div className="text-center md:text-left">
-                  <p className="text-3xl sm:text-4xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-bold flex flex-col items-start justify-start lg:gap-y-4 gap-y-2  text-white leading-normal">
+                  <p className=" text-3xl sm:text-4xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-bold flex flex-col items-start justify-start lg:gap-y-4 gap-y-2  text-white leading-normal">
                     <span>Frequently</span>
                     <span>Asked</span>
                     <span>Questions</span>

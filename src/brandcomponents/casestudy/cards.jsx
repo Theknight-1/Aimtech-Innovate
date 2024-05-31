@@ -5,7 +5,7 @@ import { PaginationNav1Presentation } from "@/uicomponent/PagiNation";
 const caseStudiesData = [
   {
     date: "Sep 10, 2023",
-    image: "/landingPage/seo.png",
+    image: "/landingPage/fintech.jpg",
     title: "SEO For Fintech",
     link: "/casestudy/seo-for-fintech",
     description:
@@ -13,14 +13,14 @@ const caseStudiesData = [
   },
   {
     date: "May 18, 2024",
-    image: "/landingPage/smm.png",
+    image: "/landingPage/automotive.jpg",
     title: "fultime service for automobiles",
     link: "/casestudy/full-time-operatonal-services-for-automobile",
     description: "Aimtech Innovate provided comprehensive IT infrastructure for startups ..",
   },
   {
     date: "Dec 21, 2023",
-    image: "/landingPage/ppc.png",
+    image: "/landingPage/crm.jpg",
     title: "CRM For Fintech",
     link: "/casestudy/crm-for-fintech",
     description:

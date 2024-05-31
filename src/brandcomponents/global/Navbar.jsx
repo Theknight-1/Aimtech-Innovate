@@ -385,7 +385,7 @@ const Navbar = () => {
                       {servicedata.map((service, idx) => (
                         <Link key={idx} href={service.pagelink}>
                           <div className="h-full text-black p-3  hover:shadow-2xl border hover:border-brand-secondary rounded-xl transition duration-300 ease-in-out border-transparent">
-                            <div className="flex justify-normal items-center text-lg text-brand-primary gap-4 h-16">
+                            <div className="flex justify-normal items-center text-base xl:text-lg text-brand-primary gap-4 h-16">
                               {service.icon}
                               <span className="font-bold">{service.title}</span>
                             </div>
@@ -393,7 +393,7 @@ const Navbar = () => {
                               {service.services.map((srv, serviceIndex) => (
                                 <li
                                   key={serviceIndex}
-                                  className="text-brand-primary cursor-pointer px-0 text-sm md:text-base xl:text-base 2xl:text-lg flex items-center justify-start p-1 gap-2"
+                                  className="text-brand-primary cursor-pointer px-0  md:text-xs lg:text-sm xl:text-base 2xl:text-lg flex items-center justify-start p-1 gap-2  "
                                 >
                                   <span>
                                     <FcNext />
