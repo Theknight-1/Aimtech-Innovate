@@ -442,7 +442,7 @@ const Navbar = () => {
                                   <span>📑</span>
 
                                   <div className="flex flex-col items-start gap-2 ">
-                                    <span className="font-bold text-sm md:text-base">
+                                    <span className="font-bold text-sm md:text-base capitalize">
                                       {cstudy.title}
                                     </span>
 

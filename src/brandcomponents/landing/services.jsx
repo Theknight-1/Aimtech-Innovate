@@ -168,12 +168,12 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full h-auto flex justify-center items-centerpx-6 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 mb-10 font-satoshi"
+      className="w-full h-auto   flex justify-center items-center px-6  md:px-8 lg:px-16 xl:px-24 2xl:px-28 xl:mb-24  font-satoshi"
     >
       <section className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Service Buttons */}
         <div className="flex-1 flex flex-col justify-start items-start w-full py-12 md:space-y-5 space-y-2 ">
-          <h1 className=" leading-snug text-4xl sm:text-[3.5rem] lg:text-[3rem] font-bold text-center text-brand-secondary w-full lg:text-left">
+          <h1 className=" leading-snug text-4xl sm:text-[3.5rem] lg:text-[3rem] font-bold  text-brand-secondary w-full text-left">
             Our Solutions
           </h1>
           <div className="w-full md:space-y-5 lg:pr-16 pr-0">

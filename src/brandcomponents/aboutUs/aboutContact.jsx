@@ -48,7 +48,7 @@ const AboutContact = () => {
                 </p>
               </span>
             </div>
-            <div className=" w-full h-full flex items-center justify-center sm:justify-start mt-1">
+            <div className=" w-full h-full flex items-center justify-center sm:justify-start mt-2">
               <Link
                 href="/contact"
                 className="px-4 py-2 md:py-4 w-max bg-brand-secondary rounded-lg text-[#122B59] text-lg md:text-xl font-bold"

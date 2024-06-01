@@ -8,8 +8,7 @@ export default function Testimonial() {
         "I couldn't be happier with the web design services provided by Aimtech Innovate. Their team transformed our outdated website into a stunning, user-friendly platform that perfectly captures our brand's essence. ",
       author: "Michael McEwen",
       company: "Web Design Service",
-      image:
-        "https://m.foolcdn.com/media/dubs/images/original_imageshttpsg.foolcdn.comeditorialimag.width-880_wkaciBt.jpg",
+      image: "/testimonial/micheal.png",
     },
     {
       quote:
@@ -17,7 +16,7 @@ export default function Testimonial() {
       author: "Adam Simson ",
       company: "WordPress Website",
       image:
-        "https://w7.pngwing.com/pngs/214/506/png-transparent-company-chief-executive-business-finance-goal-lorm-ipsum.png",
+        "/testimonial/adam.png",
     },
     {
       quote:
@@ -25,7 +24,7 @@ export default function Testimonial() {
       author: "Lindsay Risi ",
       company: "Social Media Management",
       image:
-        "https://toppng.com/uploads/preview/osco-daewoo-ceo-kim-young-sang-young-sang-kim-posco-daewoo-11563201738ixvi9ad3ey.png",
+        "/testimonial/lindsay.png",
     },
     {
       quote:
@@ -33,7 +32,7 @@ export default function Testimonial() {
       author: "Nicole Kerrigan ",
       company: "SEO Service",
       image:
-        "https://toppng.com/uploads/preview/osco-daewoo-ceo-kim-young-sang-young-sang-kim-posco-daewoo-11563201738ixvi9ad3ey.png",
+        "/testimonial/nicole.png",
     },
     {
       quote:
@@ -41,7 +40,7 @@ export default function Testimonial() {
       author: "Brian Balkwill ",
       company: "PPC Strategy development",
       image:
-        "https://toppng.com/uploads/preview/osco-daewoo-ceo-kim-young-sang-young-sang-kim-posco-daewoo-11563201738ixvi9ad3ey.png",
+        "/testimonial/brian.png",
     },
     {
       quote:
@@ -49,7 +48,7 @@ export default function Testimonial() {
       author: "Helder Valentim ",
       company: "Email Marketing",
       image:
-        "https://toppng.com/uploads/preview/osco-daewoo-ceo-kim-young-sang-young-sang-kim-posco-daewoo-11563201738ixvi9ad3ey.png",
+        "/testimonial/helder.png",
     },
     // Add more testimonials as needed
   ];
@@ -82,8 +81,8 @@ export default function Testimonial() {
 
   return (
     <>
-      <section className="font-satoshi  mt-20 lg:py-20 h-auto flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
-        <div className="flex relative h-full   w-full flex-col gap-10 lg:gap-5 xl:gap-0 lg:flex-row py-6  sm:p-10 lg:p-0 ">
+      <section className="font-satoshi  mt-20 lg:py-20 h-auto xl:h-[80vh] flex flex-col items-center justify-center w-full  overflow-x-hidden  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 ">
+        <div className="flex relative h-full   w-full flex-col gap-10  lg:gap-5 xl:gap-8 lg:flex-row py-6  sm:p-10 lg:p-0 ">
           {/* <div className="absolute -top-80 -left-20 -z-0 w-96 h-auto aspect-square   rounded-full  bg-[#15BEE3]/20 blur-3xl"></div>             */}
 
           <div className="flex  lg:space-y-20 space-y-8  h-auto  w-full flex-col items-center justify-center  lg:w-1/2 ">
@@ -161,7 +160,7 @@ export default function Testimonial() {
                 key={currentTestimonialIndex}
                 className="flex animate-fade-left h-auto min-h-16 w-full flex-col items-center justify-center"
               >
-                <span className="text-gray-200 text-2xl lg:text-3xl">
+                <span className="text-white font-semibold  text-2xl lg:text-3xl">
                   {currentTestimonial.author}
                 </span>
                 <span className="text-gray-100 ">

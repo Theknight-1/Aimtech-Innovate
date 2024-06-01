@@ -10,8 +10,8 @@ export default function CaseLanding({ casedata }) {
         <article>
           <header className="h-auto w-full   text-center">
             <img
-              className="mt-2 w-full  object-cover sm:h-[34rem]"
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              className="mt-2 w-full  object-cover object-center  h-[40vh] md:h-[80vh]"
+              src={cdata.image}
               alt="Featured Image"
             />
 
@@ -20,7 +20,7 @@ export default function CaseLanding({ casedata }) {
                 <span className="">Published Date:</span> {cdata.pubdate}
               </p>
               <h1 className=" text-3xl font-bold sm:text-5xl">{cdata.title}</h1>
-              <div className=" md:text-center  flex items-center justify-center mt-6 block w-full  text-wrap   text-base sm:text-lg md:text-lg xl:text-xl text-justify ">
+              <div className=" md:text-center  flex items-center justify-center mt-6 block w-full  text-wrap   text-base sm:text-lg md:text-lg xl:text-xl text-justify px-4 sm:px-0">
                 <p className="lg:px-24 lg:w-1/2 tracking-tight text-justify">
                   {cdata.description}
                 </p>
@@ -34,7 +34,7 @@ export default function CaseLanding({ casedata }) {
               {cdata.keywords.map((keyword, index) => (
                 <spna
                   key={index}
-                  className="rounded-lg bg-brand-secondary text-brand-primary px-4 py-2 text-xl font-bold hover:bg-yellow-600"
+                  className="rounded-lg bg-brand-secondary text-brand-primary px-2 py-1 sm:px-4 sm:py-2 sm:text-xl font-bold hover:bg-yellow-600"
                 >
                   {keyword}
                 </spna>

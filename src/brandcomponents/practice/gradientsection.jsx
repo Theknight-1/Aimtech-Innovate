@@ -94,7 +94,7 @@ export default function GradientSection() {
                       <FaStarHalfAlt className="text-brand-secondary" />
                     </li>
                   </ul>
-                  <span className="text-white font-semibold xl:text-[18px]  text-sm">
+                  <span className="text-white font-semibold xl:text-[18px]  text-xs">
                     4.8/5 based on 6,873 reviews | GDPR Compliant
                   </span>
                 </div>

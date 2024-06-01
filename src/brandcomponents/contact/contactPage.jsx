@@ -195,7 +195,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 flex items-center justify-center h-full text-brand-primary mt-8 sm:mt-5 md:mt-3">
+          <div className="flex-1 flex items-center justify-center h-full text-brand-primary my-8 sm:my-5 md:my-3">
             <div className="bg-white rounded-lg lg:rounded-[2rem] space-y-5 lg:w-[90%] p-4 md:p-8 lg:py-10 xl:p-16 ">
               <span className="text-2xl md:text-3xl text-primary lg:text-4xl font-bold">
                 Get in touch

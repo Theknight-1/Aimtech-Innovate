@@ -53,7 +53,7 @@ const DMsg = () => {
                 className="w-full lg:w-auto h-auto object-cover rounded-lg shadow-2xl"
               />
             </div>
-            <span className="text-2xl text-brand-secondary w-full text-center mb-5 mt-2">
+            <span className="text-2xl md:text-3xl text-brand-secondary w-full text-center mb-5 mt-2">
               Adil Muhammad
             </span>
           </div>
@@ -83,14 +83,14 @@ const DMsg = () => {
           </div>
         </div>
       </section>
-      <section className="text-white lg:px-16 py-6 sm:py-8 lg:py-12 mt-12 p-4 font-satoshi">
+      <section className="text-white lg:px-16  sm:py-8 lg:py-8 mt-8 p-4 font-satoshi">
         <div className="">
           <div class="">
             <h2 className="text-center text-4xl md:text-5xl font-bold md:mb-4 lg:text-6xl">
               Our Core Values
             </h2>
           </div>
-          <section className="bg-gray-2  pt-5 dark:bg-dark">
+          <section className="bg-gray-2   dark:bg-dark">
             <div className=" hidden mx-auto md:flex md:container ">
               <SingleCard
                 image="/about/card1.png"

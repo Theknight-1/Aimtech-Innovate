@@ -6,7 +6,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/CaseStudy/seo-fintech.jpg",
+      "/CaseStudy/seo-for-fintech.jpg",
       title: "SEO For Fintech",
       link: "/casestudy/seo-for-fintech",
       description:
@@ -15,7 +15,7 @@ const caseStudiesData = [
   {
     
     image:
-      "/CaseStudy/digital.jpg",
+      "/CaseStudy/fulltime-service.jpg",
       title: "Fultime service for automobiles",
       link: "/casestudy/full-time-operatonal-services-for-automobile",
       description:

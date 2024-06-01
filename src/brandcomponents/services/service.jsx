@@ -80,8 +80,8 @@ export default function BrandService({ data }) {
           </div>
         </div>
       </section>
-      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-center items-center p-4 sm:p-0">
-        <div className="h-full flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-5">
+      <section className="w-full mt-5 sm:mt-10 h-auto flex justify-center items-center p-4 sm:p-0 ">
+        <div className="h-full flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-5 xl:gap-10">
           <div className="w-full lg:w-3/5 h-full  overflow-hidden flex flex-col items-start justify-end ">
             <div className="w-full  ">
               <p className="mt-2 text-[28px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white tracking-wide ">
@@ -103,7 +103,7 @@ export default function BrandService({ data }) {
                 </div>
               </dl>
             </div>
-            <div className=" min-h-10 sm:min-h-12 bg-brand-secondary rounded hover:bg-yellow-400  text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mt-5 p-2 sm:px-6 flex items-center justify-center ">
+            <div className=" min-h-10 sm:min-h-12 bg-brand-secondary rounded hover:bg-yellow-400  text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mt-9 p-2 sm:px-6 flex items-center justify-center ">
               <Link
                 href={dataOBJ.fourth.ctalink}
                 className="font-bold text-brand-primary flex items-center justify-center gap-2"

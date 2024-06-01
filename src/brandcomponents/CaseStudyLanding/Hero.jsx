@@ -8,7 +8,7 @@ const Hero = () => {
           <h1 className="text-[#FCCF40] text-xl md:text-2xl font-bold">
             EXPLORE OUR CASE STUDIES
           </h1>
-          <h2 className="text-5xl md:text-4xl xl:text-5xl 2xl:text-7xl font-bold text-white md:leading-[140%]">
+          <h2 className="text-5xl md:text-4xl xl:text-5xl 2xl:text-7xl font-bold text-white md:leading-[140%] ">
             Experience our expertise <br /> based projects
           </h2>
           <p className="font-normal text-lg md:text-xl 2xl:text-2xl leading-relaxed text-gray-100 ">
