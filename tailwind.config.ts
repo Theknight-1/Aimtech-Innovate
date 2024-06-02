@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config"; // Import PluginAPI type
 const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
@@ -57,7 +58,7 @@ const config: Config = {
       },
       animation: {
         typing:
-          "typing 4s steps(20) infinite  alternate, ease-out blink .7s infinite",
+          "typing 4s steps(20) infinite alternate, ease-out blink .7s infinite",
       },
     },
     fontFamily: {
@@ -66,7 +67,8 @@ const config: Config = {
   },
   plugins: [
     require("tailwindcss-animated"),
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addUtilities }: PluginAPI) {
+      // Define type for addUtilities
       addUtilities({
         ".no-spinners::-webkit-outer-spin-button, .no-spinners::-webkit-inner-spin-button":
           {
@@ -80,4 +82,5 @@ const config: Config = {
     }),
   ],
 };
+
 export default config;
