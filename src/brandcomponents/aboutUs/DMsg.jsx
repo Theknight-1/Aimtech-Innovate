@@ -19,7 +19,7 @@ const SingleCard = ({ image, CardDescription, CardTitle, titleHref }) => {
           />
         </div>
         <div className="px-[10px]">
-          <h3 className="mb-3 inline-block text-lg font-semibold text-dark hover:text-primary sm:text-xl lg:text-lg xl:text-2xl tracking-wider md:h-8 xl:h-10 ">
+          <h3 className="mb-3 inline-block text-lg font-semibold text-dark hover:text-primary sm:text-xl lg:text-lg xl:text-2xl tracking-wider md:h-8 xl:h-12 ">
             {CardTitle}
           </h3>
           <p className="text-sm lg:text-base text-body-color dark:text-dark-6 text-justify">
