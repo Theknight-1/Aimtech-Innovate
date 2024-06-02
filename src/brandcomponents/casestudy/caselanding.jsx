@@ -125,7 +125,7 @@ export default function CaseLanding({ casedata }) {
         <div className="aspect-square h-[50vh]  flex-1 ">
           <img
             className="h-full w-full object-contain"
-            src="/CaseStudy/How-we-helped.png"
+            src="/CaseStudy/how-we-helped.png"
             alt=""
           />
         </div>
