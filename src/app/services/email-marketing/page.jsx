@@ -19,7 +19,7 @@ export default function page() {
       "Are you looking for an effective way to reach and engage with your customers? Look no further than email marketing! Email marketing is the most effective digital marketing channel and delivers even higher ROI than paid ads or social media.",
     benifits: ["Audience Segmentation", "Compelling Content", "Eye-catching Design", "Clear Call-to-Action (CTA)"],
     link: "/contact",
-    image:"/png/svg/email-hero.svg",
+    image:"/png/Head/service-email-head.png",
     second : {
         title : "Attract. Connect. Win Over Customers with Email Marketing",
         points : [

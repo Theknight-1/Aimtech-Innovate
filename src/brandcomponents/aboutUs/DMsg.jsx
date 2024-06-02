@@ -1,5 +1,6 @@
 import "swiper/css";
 import "swiper/css/bundle";
+import "../../../src/app/globals.css";
 import { FaSignal } from "react-icons/fa";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { IoBagHandleOutline } from "react-icons/io5";
@@ -10,7 +11,7 @@ const SingleCard = ({ image, CardDescription, CardTitle, titleHref }) => {
   return (
     <div className="w-full md:w-1/2 lg:w-1/3">
       <div className="mb-10 rounded-lg p-4 pb-6 shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card">
-        <div className="mb-6 w-full overflow-hidden rounded-md">
+        <div className="mb-6 h-60 w-full overflow-hidden rounded-md">
           <img
             src={image}
             alt="card image"
@@ -18,13 +19,8 @@ const SingleCard = ({ image, CardDescription, CardTitle, titleHref }) => {
           />
         </div>
         <div className="px-[10px]">
-          <h3>
-            <a
-              href={titleHref}
-              className="mb-3 inline-block text-lg font-semibold text-dark hover:text-primary sm:text-xl lg:text-lg xl:text-2xl tracking-wider"
-            >
-              {CardTitle}
-            </a>
+          <h3 className="mb-3 inline-block text-lg font-semibold text-dark hover:text-primary sm:text-xl lg:text-lg xl:text-2xl tracking-wider md:h-8 xl:h-10 ">
+            {CardTitle}
           </h3>
           <p className="text-sm lg:text-base text-body-color dark:text-dark-6 text-justify">
             {CardDescription}
@@ -68,16 +64,13 @@ const DMsg = () => {
                 excellence. Central to our organizational ethos is a culture of
                 integrity, professionalism, and innovation. Our diverse and
                 talented teams are the cornerstone of our operations, embodying
-                our core values and principles. We take immense pride in
-                fostering an environment where expertise is cultivated, and each
-                member of our team is empowered to contribute to our collective
-                success. Whether you represent a governmental institution, a
-                manufacturing enterprise, a retail establishment, or any other
-                facet of industry, Aimtech Innovate stands ready to collaborate
-                with you in achieving your objectives. Our commitment to
-                delivering bespoke solutions tailored to your unique
-                requirements is unwavering, and your satisfaction remains our
-                paramount concern.
+                our core values and principles. Whether you represent a
+                governmental institution, a manufacturing enterprise, a retail
+                establishment, or any other facet of industry, Aimtech Innovate
+                stands ready to collaborate with you in achieving your
+                objectives. Our commitment to delivering bespoke solutions
+                tailored to your unique requirements is unwavering, and your
+                satisfaction remains our paramount concern.
               </p>
             </div>
           </div>
@@ -93,19 +86,19 @@ const DMsg = () => {
           <section className="bg-gray-2   dark:bg-dark">
             <div className=" hidden mx-auto md:flex md:container ">
               <SingleCard
-                image="/about/card1.png"
+                image="/about/card1.jpg"
                 CardTitle="Less Cost, Maximum Revenue"
                 titleHref="#"
                 CardDescription="We become an extension of your marketing team, delivering exceptional results without the hefty overhead costs of hiring a full-time digital marketing staff. Our streamlined operations and data-driven approach ensure we target the most impactful strategies, maximizing your return on investment and driving significant revenue growth. You'll see a tangible difference in your bottom line without breaking the bank."
               />
               <SingleCard
-                image="/about/card2.png"
+                image="/about/card3.jpeg"
                 CardTitle="Quality Service Round the Clock"
                 titleHref="#"
                 CardDescription="We take pride in offering exceptional service that goes above and beyond. Our team of digital marketing experts is available 24/7 to address your needs and concerns. Whether you have a pressing question or require strategic guidance, we're here to ensure your campaigns run smoothly and deliver consistent results. We provide constant communication and transparent reporting, keeping you informed and involved every step of the way."
               />
               <SingleCard
-                image="/about/card3.png"
+                image="/about/card2.jpeg"
                 CardTitle="Personalized Growth Plan"
                 titleHref="#"
                 CardDescription="An All-in-one personalised digital growth approach only works in today's dynamic digital landscape. We take the time to understand your unique business goals, target audience, and competitive environment. With this in-depth knowledge, we craft a personalized growth plan tailored specifically to your needs. We leverage the most effective strategies to achieve your desired outcomes, propelling your brand to new heights and achieving sustainable growth in the long term."
@@ -138,7 +131,7 @@ const DMsg = () => {
               >
                 <SwiperSlide>
                   <SingleCard
-                    image="/about/card1.png"
+                    image="/about/card1.jpg"
                     CardTitle="Less Cost, Maximum Revenue"
                     titleHref="#"
                     CardDescription="We become an extension of your marketing team, delivering exceptional results without the hefty overhead costs of hiring a full-time digital marketing staff. Our streamlined operations and data-driven approach ensure we target the most impactful strategies, maximizing your return on investment and driving significant revenue growth. You'll see a tangible difference in your bottom line without breaking the bank."
@@ -146,7 +139,7 @@ const DMsg = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <SingleCard
-                    image="/about/card2.png"
+                    image="/about/card3.jpeg"
                     CardTitle="Quality Service Round the Clock"
                     titleHref="#"
                     CardDescription="We take pride in offering exceptional service that goes above and beyond. Our team of digital marketing experts is available 24/7 to address your needs and concerns. Whether you have a pressing question or require strategic guidance, we're here to ensure your campaigns run smoothly and deliver consistent results. We provide constant communication and transparent reporting, keeping you informed and involved every step of the way."
@@ -154,7 +147,7 @@ const DMsg = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <SingleCard
-                    image="/about/card3.png"
+                    image="/about/card2.jpeg"
                     CardTitle="Personalized Growth Plan"
                     titleHref="#"
                     CardDescription="An All-in-one personalised digital growth approach only works in today's dynamic digital landscape. We take the time to understand your unique business goals, target audience, and competitive environment. With this in-depth knowledge, we craft a personalized growth plan tailored specifically to your needs. We leverage the most effective strategies to achieve your desired outcomes, propelling your brand to new heights and achieving sustainable growth in the long term."

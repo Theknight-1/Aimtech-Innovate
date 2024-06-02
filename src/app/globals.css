@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'limelight';
+  font-family: "limelight";
   font-style: regular;
   font-weight: 400;
-  src: url('/fonts/satoshi.ttf') format('truetype'); 
+  src: url("/fonts/satoshi.ttf") format("truetype");
 }
-
-
 
 body {
   width: 100vw;
@@ -43,9 +40,8 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFA300;
+  background: #ffa300;
 }
-
 
 /* mega menu */
 .mega-menu {
@@ -57,19 +53,15 @@ body {
   width: 100%;
 }
 
-
-
 /* #hoverable Class Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hoverable {
   position: static;
 }
 
-
 .hoverable:hover .mega-menu {
   display: block;
 }
-
 
 /* #toggle Class Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -104,4 +96,14 @@ body {
   padding-left: 6px;
   position: relative;
   top: -1px;
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #FFB700; /* Change the bullet color to yellow */
+}
+
+/* Swiper pagination bullets when active */
+.swiper-pagination-bullet-active {
+  background-color: #FFB700; /* Change the active bullet color to yellow */
 }

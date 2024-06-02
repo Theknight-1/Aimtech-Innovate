@@ -33,7 +33,7 @@ const Accordion = ({
         onClick={handleClick}
       >
         <div className="flex gap-x-4 items-center">
-          <h2 className="text-lg sm:text-lg md:text-lg xl:text-xl 2xl:text-2xl">{title}</h2>
+          <h2 className="text-lg sm:text-lg md:text-lg xl:text-xl 2xl:text-2xl font-semibold">{title}</h2>
         </div>
         <svg
           className={`min-w-5 max-w-5 min-h-5 max-h-5 transition-transform duration-300  ${

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -60,9 +61,23 @@ const config: Config = {
       },
     },
     fontFamily: {
-      satoshi: ['satoshi', 'sans-serif'],
-     },
+      satoshi: ["satoshi", "sans-serif"],
+    },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [
+    require("tailwindcss-animated"),
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".no-spinners::-webkit-outer-spin-button, .no-spinners::-webkit-inner-spin-button":
+          {
+            "-webkit-appearance": "none",
+            margin: "0",
+          },
+        ".no-spinners": {
+          "-moz-appearance": "textfield",
+        },
+      });
+    }),
+  ],
 };
 export default config;

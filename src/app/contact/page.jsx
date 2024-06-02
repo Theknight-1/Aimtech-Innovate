@@ -11,7 +11,7 @@ import { NextSeo } from "next-seo";
 export default function Contact() {
   return (
     <>
-    <title>Aimtech -Contact Us</title>
+    <title>Aimtech Innovate - Contact Us</title>
     <NextSeo
         title="Contact Us Today | Aimtech Innovate"
         description="We offer extensive digital marketing solutions to help you boost your brand online. Contact us today to learn more about our services."

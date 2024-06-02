@@ -18,13 +18,13 @@ const ThirdPage = () => {
                   online presence to the next level.{" "}
                 </span>{" "}
                 <br />
-                <span className="text-base md:text-lg lg:text-2xl font-medium ">
+                <span className="text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium  ">
                   Schedule a meeting with our Digital Marketing Expert to
                   discuss your goals and unlock the possibilities.
                 </span>
               </p>
               <div className="w-full">
-                <a href="https://calendly.com/aimtechinnovate">
+                <a href="https://calendly.com/aimtechinnovate" target="_blank">
                   <button className="bg-brand-primary px-8 lg:px-5 py-3 text-white rounded-lg font-bold text-lg">
                     LET’S SCHEDULE
                   </button>

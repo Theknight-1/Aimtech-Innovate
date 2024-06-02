@@ -45,7 +45,7 @@ const DeleteConfirmationModal = ({ confirmation, setConfirmation }) => {
               <button
                 type="submit"
                 onClick={handleClose}
-                className="py-2 px-3 font-bold text-sm font-medium text-center text-brand-primary  rounded-lg  bg-brand-secondary hover:bg-yellow-400"
+                className="py-2 px-3 font-bold text-sm  text-center text-brand-primary  rounded-lg  bg-brand-secondary hover:bg-yellow-400"
               >
                 Okay
               </button>
@@ -310,7 +310,7 @@ const ContactPage = () => {
                     </label>
                   </div>
                   <div className="flex flex-col md:flex-row w-full md:gap-6">
-                    <div className="relative z-0 md:w-[70%] w-full  group">
+                    <div className="relative z-0 md:w-[60%] w-full  group">
                       <select
                         name="country"
                         value={formData.country}
@@ -357,18 +357,17 @@ const ContactPage = () => {
                       </label>
                     </div>
 
-                    <div className="relative z-0 md:w-[30%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
+                    <div className="relative z-0 md:w-[40%] w-full mt-5 md:mt-0 mb-5 md:mb-0 group">
                       <input
                         type="number"
                         name="phoneNumber"
                         id="floating_phone_number"
                         value={formData.phoneNumber}
                         onChange={handleInputChange}
-                        className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer no-spinners"
                         placeholder=""
                         required
                       />
-
                       <label
                         htmlFor="floating_phone_number"
                         className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -402,7 +401,8 @@ const ContactPage = () => {
                       checked={isCheckboxChecked}
                     />
                     <p className="text-black text-sm md:text-base lg:text-lg">
-                    I agree to share the above information for contact purposes.
+                      I agree to share the above information for
+                      contact purposes.
                     </p>
                   </div>
                   <div className="flex ">

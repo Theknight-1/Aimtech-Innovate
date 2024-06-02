@@ -15,7 +15,7 @@ export default function Customer() {
               </h3>
             </div>
             <div class="block">
-              <div class="flex px-2 justify-center ">
+              <div class="flex px-2 xl:px-16 justify-center ">
                 <div class="w-24 h-24 sm:w-28 sm:h-28 aspect-square  flex items-center justify-center">
                   <img src="/nextcoach.png" alt="" className="object-cover" />
                 </div>

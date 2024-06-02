@@ -14,7 +14,7 @@ const caseStudiesData = [
   {
     date: "May 18, 2024",
     image: "/landingPage/automotive.jpg",
-    title: "fultime service for automobiles",
+    title: "Fulltime service for automobiles",
     link: "/casestudy/full-time-operatonal-services-for-automobile",
     description:
       "Aimtech Innovate provided comprehensive IT infrastructure for startups ..",
@@ -93,7 +93,7 @@ const Cards = ({ heading, getStartedButton }) => (
           <img className="rounded-t-lg 2xl:max-h-[18rem]  2xl:min-h-[18rem] xl:max-h-[15rem]  xl:min-h-[15rem] lg:max-h-[12rem]  lg:min-h-[12rem] md:max-h-[15rem]  md:min-h-[15rem] w-full" src={casestudy.image} alt="" />
 
           <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-black capitalize">
               {casestudy.title}
             </h5>
 

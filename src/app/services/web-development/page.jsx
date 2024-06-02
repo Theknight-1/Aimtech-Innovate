@@ -27,7 +27,7 @@ export default function page() {
       "Custom Code (Almost any Tech Stack)",
     ],
     link: "/contact",
-    image: "/png/svg/webdev.svg",
+    image: "/png/Head/service-webdev-head.png",
 
     second: {
       title: "Designing your business web presence and generating leads online",

@@ -25,11 +25,8 @@ const LearnMore = () => {
                 hand-picked for their specific skills. We have social media
                 wizards, Google gurus, talented web developers, creative graphic
                 designers, data-driven business analysts, and strategic
-                masterminds.
-              </p>
-              <p className="text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal  text-white">
-                Located in Canada and the US, we're here to serve you across
-                North America.
+                masterminds.Located in Canada and the US, we're here to serve
+                you across North America.
               </p>
               <div className="flex items-center space-x-4 lg:space-x-8  h-auto p-2">
                 <div className="flex items-center  p-2  overflow-x-hidden">
@@ -57,7 +54,7 @@ const LearnMore = () => {
           <div className="flex-1 flex justify-center ">
             <div className="md:w-[60%]">
               <img
-                src="/png/aboutus-head.png"
+                src="/about/About-Head.png"
                 alt="About Us"
                 className="w-full h-auto lg:w-full lg:h-full object-cover"
               />

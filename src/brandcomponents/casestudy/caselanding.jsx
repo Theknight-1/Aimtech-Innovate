@@ -115,22 +115,22 @@ export default function CaseLanding({ casedata }) {
           <div className="">
             <img
               className="h-full w-full object-cover "
-              src="/CaseStudy/case-one.svg"
+              src="/CaseStudy/client-goals.png"
               alt=""
             />
           </div>
         </div>
       </section>
       <section className="flex w-full flex-col   md:flex-row  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi ">
-        <div className="aspect-square h-[60vh]  flex-1 ">
+        <div className="aspect-square h-[50vh]  flex-1 ">
           <img
             className="h-full w-full object-contain"
-            src="/CaseStudy/case-two.svg"
+            src="/CaseStudy/How-we-helped.png"
             alt=""
           />
         </div>
         <div className="flex lg:space-x-6   h-auto w-full flex-col items-start justify-center gap-y-4  md:w-1/2">
-          <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary ">
+          <h2 className="mb-4 lg:ml-5 text-4xl lg:text-6xl font-bold text-brand-secondary  tracking-tight ">
             How We Helped
           </h2>
           <p className="space-y-2 text-base sm:text-lg md:text-lg 2xl:text-xl text-justify leading-normal text-white">

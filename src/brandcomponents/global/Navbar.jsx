@@ -353,8 +353,8 @@ const Navbar = () => {
               
               {/* Hoverable Link */}
               <li className="hoverable group py-2  relative ">
-                <Link
-                  href="#"
+                <div
+                  
                   className="border-b border-transparent hover:border-brand-secondary  flex justify-center items-center"
                 >
                   Services
@@ -364,7 +364,7 @@ const Navbar = () => {
                       className="group-hover:-rotate-180 transition duration-300"
                     />
                   </span>
-                </Link>
+                </div>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-6 w-full h-auto top-25 ${
@@ -401,8 +401,8 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="hoverable group py-2  relative  ">
-                <Link
-                  href="#"
+                <div
+                  
                   className="border-b border-transparent hover:border-brand-secondary cursor-pointer flex justify-center items-center"
                 >
                   Case Study
@@ -412,7 +412,7 @@ const Navbar = () => {
                       className="group-hover:-rotate-180 transition duration-300"
                     />
                   </span>
-                </Link>
+                </div>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
                     className={`relative bg-white p-2 2xl:p-6 w-full h-auto ${
@@ -450,7 +450,7 @@ const Navbar = () => {
                         ))}
                       </div>
 
-                      <div className="lg:w-1/4 hidden xl:block h-auto rounded-lg  bg-brand-secondary hover:shadow-2xl  p-8 lg:p-5 xl:p-3 overflow-hidden text-wrap ">
+                      <div className="lg:w-1/4 hidden xl:block h-auto rounded-lg  bg-brand-secondary hover:shadow-2xl  p-8 lg:p-5 xl:p-3 overflow-hidden text-wrap xl:pr-4 2xl:p-0">
                         <div className="w-full h-full flex justify-center items-center">
                           {/* Use flex-2 class for the third box */}
                           <div className="space-y-5 text-center">
