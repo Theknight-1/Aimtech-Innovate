@@ -23,7 +23,7 @@ const DeleteConfirmationModal = ({
         id="deleteModal"
         tabIndex="-1"
         aria-hidden="true"
-        className="fixed inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto overflow-x-hidden"
+        className="fixed inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto overflow-x-hidden font-satoshi"
       >
         <div className="relative p-4 w-full max-w-md h-full md:h-auto">
           <div className="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5 ">
@@ -48,15 +48,15 @@ const DeleteConfirmationModal = ({
               <span className="sr-only">Close modal</span>
             </button>
             <p className="mb-4 text-gray-500 dark:text-gray-300 p-3">
-              Thank you. I will get back to you as soon as possible.
+              Thank you. We will reach out to you soon.
             </p>
             <div className="flex justify-center items-center space-x-4">
               <button
                 type="submit"
                 onClick={handleClose}
-                className="py-2 px-3 text-sm font-medium text-center text-brand-primary  rounded-lg  bg-brand-secondary hover:bg-yellow-400"
+                className="py-2 px-3 font-bold text-sm font-medium text-center text-brand-primary  rounded-lg  bg-brand-secondary hover:bg-yellow-400"
               >
-                Thank you
+                Okay
               </button>
             </div>
           </div>
@@ -78,7 +78,7 @@ const ExampleWrapper = () => {
     companyName: "",
     service: "Select Digital Presence Services",
     phoneNumber: "",
-    country: "Canada",
+    country: "Select Country",
   });
   const [countries, setCountries] = useState([]);
   const [phoneCode, setPhoneCode] = useState("+124");
@@ -89,7 +89,18 @@ const ExampleWrapper = () => {
     const fetchCountries = async () => {
       try {
         const response = await axios.get("https://restcountries.com/v3.1/all");
-        setCountries(response.data);
+        const sortedCountries = response.data.sort((a, b) => {
+          const nameA = a.name.common.toUpperCase();
+          const nameB = b.name.common.toUpperCase();
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+          return 0;
+        });
+        setCountries(sortedCountries);
       } catch (error) {
         console.error("Error fetching countries:", error);
       }
@@ -135,10 +146,10 @@ const ExampleWrapper = () => {
     setLoading(true);
     emailjs
       .send(
-        "service_g79hhi5",
-        "template_1ns7gma",
+        "service_zqvo0ef",
+        "template_d38l2gp",
         { message: JSON.stringify(message) },
-        "TTp0Vsx20RoZKcD4I"
+        "cpXxwCNklsmo4GHxt"
       )
       .then(
         () => {
@@ -151,7 +162,7 @@ const ExampleWrapper = () => {
             companyName: "",
             service: "Web Design and Development",
             phoneNumber: "",
-            country: "Canada",
+            country: "Select Country",
           });
         },
         (error) => {
@@ -275,9 +286,9 @@ const ExampleWrapper = () => {
                       className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       required
                     >
-                      <option value={formData?.country}>
-                        {formData?.country}
-                      </option>
+                      <option disabled={true} value={formData?.country}>
+                          {formData?.country}
+                        </option>
                       {countries.map((country) => (
                         <option
                           key={
@@ -359,8 +370,7 @@ const ExampleWrapper = () => {
                     checked={isCheckboxChecked}
                   />
                   <p className="text-black text-lg">
-                    I agree to share my above information for Aimtech Marketing
-                    and Promotional activities.
+                  I agree to share the above information for contact purposes.
                   </p>
                 </div>
                 <div className="flex ">

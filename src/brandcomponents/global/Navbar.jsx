@@ -279,7 +279,7 @@ const Navbar = () => {
                   }`}
                 >
                   <a
-                    href="https://calendly.com/himanshusaxena5500/30min"
+                    href="https://calendly.com/aimtechinnovate"
                     target="_blank"
                     className="flex items-center gap-2"
                   >
@@ -350,14 +350,7 @@ const Navbar = () => {
                   <span>Home</span>
                 </Link>
               </li>
-              <li className="relative block py-2  ">
-                <Link
-                  href="/about"
-                  className="border-b border-transparent hover:border-brand-secondary cursor-pointer"
-                >
-                  About us
-                </Link>
-              </li>
+              
               {/* Hoverable Link */}
               <li className="hoverable group py-2  relative ">
                 <Link
@@ -422,16 +415,16 @@ const Navbar = () => {
                 </Link>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto ${
+                    className={`relative bg-white p-2 2xl:p-6 w-full h-auto ${
                       scrolling ? "-top-7" : ""
                     }`}
                   >
-                    <div className=" w-full h-auto p-2 flex flex-col md:flex-row gap-6  text-brand-primary">
-                      <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-6  ">
+                    <div className=" w-full h-auto p-1 2xl:p-2 flex flex-col md:flex-row gap-3 2xl:gap-6  text-brand-primary">
+                      <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-4 2xl:gap-6  ">
                         {caseStudiesData.map((ckey, index) => (
                           <div
                             key={index}
-                            className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-3  xl:p-6 overflow-hidden text-wrap  "
+                            className="w-1/4 border-2    rounded-lg h-auto blue-200  lg:p-3  2xl:p-6 overflow-hidden text-wrap  "
                           >
                             <span className="font-bold text-blue-500 text-xl ">
                               {ckey.category}
@@ -487,6 +480,14 @@ const Navbar = () => {
                   {/* Third Column */}
                 </div>
               </li>
+              <li className="relative block py-2  ">
+                <Link
+                  href="/about"
+                  className="border-b border-transparent hover:border-brand-secondary cursor-pointer"
+                >
+                  About us
+                </Link>
+              </li>
               <li className="relative block py-4 ">
                 <Link
                   href="/contact"
@@ -502,7 +503,7 @@ const Navbar = () => {
                   }}
                   className="rounded-lg px-1 lg:px-2 xl:px-3 py-2 font-semibold bg-brand-secondary hover:bg-yellow-400 flex items-center group z-10"
                 >
-                  <span className="mr-2 text-brand-primary  font-bold xl:text-xl lg:text-lg text-base">
+                  <span className=" text-brand-primary  font-bold xl:text-xl lg:text-lg text-base">
                     Get Proposal
                   </span>
                 </button>

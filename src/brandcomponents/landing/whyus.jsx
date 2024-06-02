@@ -26,7 +26,7 @@ export default function Whyus() {
   ];
 
   return (
-    <section className="w-full font-satoshi   h-auto lg:h-[80vh] flex flex-col md:flex-row md:justify-center md:items-center lg:gap-x-16 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
+    <section className="w-full font-satoshi   h-auto 2xl:h-[80vh] flex flex-col md:flex-row md:justify-center md:items-center lg:gap-x-16 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
       <div className="w-full md:w-1/2 h-full flex flex-col justify-start  p-4  ">
         <div className="relative  w-full h-full flex flex-col items-center justify-center space-y-7  ">
           <div className="absolute -z-0 top-0 left-0 w-full h-full rounded-full bg-[#15BEE3]/15 blur-3xl"></div>

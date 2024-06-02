@@ -4,12 +4,12 @@ export default function FCStudy({ featured = {} }) {
   const fcase = featured;
 
   return (
-    <section class="overflow-hidden p-4 lg:mt-20 text-white h-auto   lg:mb-16  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 py-8 sm:py-3 md:py-0 font-satoshi">
+    <section class="overflow-hidden p-4 lg:mt-20 text-white h-auto  lg:mb-16  xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 py-8 sm:py-6 2xl:py-0 font-satoshi">
       <div className="w-full h-auto  flex flex-col items-center justify-center ">
         <p className="text-[28px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl  font-semibold tracking-wider text-start sm:text-center text-brand-secondary">
           <span>Featured Case Study</span>
         </p>
-        <span className="sm:mt-3 text-[20px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+        <span className=" text-[20px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center">
           {fcase.title}
         </span>
       </div>
@@ -20,7 +20,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-2xl font-medium text-brand-secondary ">
                 Objectives
               </span>
-              <p className="text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
+              <p className="text-base sm:text-xl md:text-sm lg:text-lg 2xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.objective}
               </p>
             </div>
@@ -28,7 +28,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-2xl font-medium text-brand-secondary">
                 Challenges
               </span>
-              <p className="text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
+              <p className="text-base sm:text-xl md:text-sm lg:text-lg 2xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.challenge}
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-2xl font-medium text-brand-secondary">
                 Process
               </span>
-              <p className="text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
+              <p className="text-base sm:text-xl md:text-sm lg:text-lg 2xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.Process}
               </p>
             </div>
@@ -44,7 +44,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-2xl font-medium text-brand-secondary">
                 Results
               </span>
-              <p className="text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
+              <p className="text-base sm:text-xl md:text-sm lg:text-lg 2xl:text-xl tracking-wide text-white lg:leading-relaxed text-justify">
                 {fcase.Results}
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function FCStudy({ featured = {} }) {
               <span className="text-xl sm:text-2xl md:text-2xl font-medium text-brand-secondary">
                 Learnings
               </span>
-              <p className="text-base sm:text-xl md:text-sm lg:text-lg xl:text-xl tracking-wide text-white leading-normal text-justify">
+              <p className="text-base sm:text-xl md:text-sm lg:text-lg 2xl:text-xl tracking-wide text-white leading-normal text-justify">
                 {fcase.learnings}
               </p>
             </div>

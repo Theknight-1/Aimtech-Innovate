@@ -19,11 +19,11 @@ export default function GradientSection() {
 
   return (
     <>
-      <section className="w-screen  font-satoshi 2xl:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28">
+      <section className="w-screen  font-satoshi 2xl:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
         <div className="flex  flex-col-reverse justify-between md:flex-row items-center  ">
-          <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-4 mt-2 sm:mt-0">
+          <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-4  sm:mt-0">
             <div className=" lg:space-y-4 space-y-2 ">
-              <div className="space-y-4 ">
+              <div className="space-y-4">
                 <h1 className=" max-w-7xl text-white  font-semibold md:tracking-wide text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight sm:leading-normal ">
                   Enhance your digital presence and gain market excellence
                 </h1>
@@ -95,19 +95,19 @@ export default function GradientSection() {
                     </li>
                   </ul>
                   <span className="text-white font-semibold xl:text-[18px]  text-xs">
-                    4.8/5 based on 6,873 reviews | GDPR Compliant
+                    4.8/5 based on 220 reviews | GDPR Compliant
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end   md:p-2 lg:justify-end  ">
-            <div className="w-auto h-full  lg:col-span-6 lg:flex items-center justify-end -my-4 sm:-my-0 sm:p-2 lg:justify-end">
+          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end    lg:justify-end  ">
+            <div className="w-auto h-full  lg:col-span-6 lg:flex items-center justify-end -my-4 sm:-my-0  lg:justify-end">
               <div className=" w-full h-full flex items-center justify-end relative  ">
                 <img
                   src="/landingPage/hero-image.svg"
                   alt="mockup"
-                  className="w-auto min-h-96 max-h-[500px] aspect-square  object-fit"
+                  className="w-auto min-h-96 max-h-[500px] aspect-square  object-fit "
                 />
                 <div className="absolute -z-10  w-auto min-h-96 max-h-[500px] aspect-square    bg-blue-300/50 blur-3xl rounded-full "></div>
               </div>

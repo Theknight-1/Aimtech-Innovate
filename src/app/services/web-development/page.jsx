@@ -131,7 +131,7 @@ export default function page() {
       "The implementation of the AI-powered CRM led to streamlined sales processes, improved decision-making, and enhanced customer relationship management. The custom dashboards provided deep insights into sales metrics, enabling the FinTech company to optimize revenue forecasting and team performance effectively.",
     learnings:
       "The successful implementation of the AI-enabled CRM highlighted the importance of leveraging technology to streamline processes, gain valuable insights, and enhance customer interactions in the fintech industry. The project emphasised the significance of integrating AI seamlessly with existing systems and focusing on user-friendly design for efficient CRM operations.",
-    img: "/png/web-first.png",
+    img: "/png/web-head.png",
   };
  
 

@@ -93,8 +93,8 @@ export default function CaseLanding({ casedata }) {
         </div>
       </section>
 
-      <section className="flex w-full flex-col-reverse  md:flex-row  items-center justify-center px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
-        <div className="flex   flex-col items-start justify-center gap-y-4  md:w-[50%] ">
+      <section className="flex w-full flex-col-reverse  md:flex-row  items-center justify-center px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi ">
+        <div className="flex   flex-col items-start justify-center gap-y-4  md:w-full">
           <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary">
             Client Goals
           </h2>
@@ -102,7 +102,7 @@ export default function CaseLanding({ casedata }) {
             Reach more customers with ads and Branding.
           </p>
           <div className="w-full">
-            <ol className="flex  h-full list-inside list-decimal flex-col  text-base sm:text-lg md:text-lg xl:text-xl text-justify  text-white">
+            <ol className="flex  h-full list-inside list-decimal flex-col  text-base sm:text-lg md:text-lg 2xl:text-xl text-justify  text-white">
               {cdata.goal.points.map((point, index) => (
                 <li key={index} className="rounded p-1">
                   {point}
@@ -111,7 +111,7 @@ export default function CaseLanding({ casedata }) {
             </ol>
           </div>
         </div>
-        <div className="aspect-square md:w-[50%]  flex items-center justify-center">
+        <div className="aspect-square md:w-[40%]  flex items-center justify-center">
           <div className="">
             <img
               className="h-full w-full object-cover "
@@ -121,7 +121,7 @@ export default function CaseLanding({ casedata }) {
           </div>
         </div>
       </section>
-      <section className="flex w-full flex-col   md:flex-row  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
+      <section className="flex w-full flex-col   md:flex-row  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi ">
         <div className="aspect-square h-[60vh]  flex-1 ">
           <img
             className="h-full w-full object-contain"
@@ -133,7 +133,7 @@ export default function CaseLanding({ casedata }) {
           <h2 className="mb-4  text-4xl lg:text-6xl font-bold text-brand-secondary ">
             How We Helped
           </h2>
-          <p className="space-y-2 text-base sm:text-lg md:text-lg xl:text-xl text-justify leading-normal text-white">
+          <p className="space-y-2 text-base sm:text-lg md:text-lg 2xl:text-xl text-justify leading-normal text-white">
             {cdata.help}
           </p>
         </div>

@@ -12,43 +12,38 @@ export default function Testimonial() {
     },
     {
       quote:
-        "Their expertise and creativity turned our vision into a reality, delivering a site that is both visually appealing and highly functional. The team was responsive, attentive to our needs, and provided excellent support throughout the process. Our new website has enhanced our online presence and made it easier for our customers to navigate and engage with our content.",
+        "Their expertise and creativity turned our vision into a reality, delivering a site that is both visually appealing and highly functional. The team was responsive, attentive to our needs, and provided excellent support throughout the process.",
       author: "Adam Simson ",
       company: "WordPress Website",
-      image:
-        "/testimonial/adam.png",
+      image: "/testimonial/adam.png",
     },
     {
       quote:
-        "Their social media management services are exceptional, bringing creativity, consistency, and strategic insight to our online platforms. Since partnering with them, we've seen a significant increase in engagement, followers, and overall brand visibility. We couldn't be happier with the results and highly recommend Aimtech Innovate.",
+        "Their social media management services are exceptional, bringing creativity, consistency, and strategic insight to our online platforms. Since partnering with them, we've seen a significant increase in engagement, followers, and overall brand visibility.",
       author: "Lindsay Risi ",
       company: "Social Media Management",
-      image:
-        "/testimonial/lindsay.png",
+      image: "/testimonial/lindsay.png",
     },
     {
       quote:
-        "Their team conducted a thorough analysis and implemented effective strategies that have significantly improved our search engine rankings and organic traffic.Thanks to Aimtech Innovate, our online visibility has increased, leading to higher engagement and more business opportunities. We highly recommend their SEO services to anyone looking to enhance their online presence.",
+        "Their team conducted a thorough analysis and implemented effective strategies that have significantly improved our search engine rankings and organic traffic. Our online visibility has increased, leading to higher engagement and more business opportunities.",
       author: "Nicole Kerrigan ",
       company: "SEO Service",
-      image:
-        "/testimonial/nicole.png",
+      image: "/testimonial/nicole.png",
     },
     {
       quote:
-        "The PPC Strategy Development service provided by Aimtech Innovate has revolutionized our business. Their team designed a targeted and efficient PPC campaign that dramatically increased our online traffic and conversions.We highly recommend Aimtech Innovate to anyone looking to enhance their PPC strategy and achieve outstanding results.",
+        "The PPC Strategy Development service provided by Aimtech Innovate has revolutionized our business. Their team designed a targeted and efficient PPC campaign that dramatically increased our online traffic and conversions.",
       author: "Brian Balkwill ",
       company: "PPC Strategy development",
-      image:
-        "/testimonial/brian.png",
+      image: "/testimonial/brian.png",
     },
     {
       quote:
-        "The email marketing service provided by Aimtech Innovate has been transformative for our online vitamin business. Their team crafted engaging and effective email campaigns that have significantly boosted our customer engagement and sales. Their expertise, creativity, and attention to detail have been outstanding.",
+        "The email marketing service provided by Aimtech Innovate has been transformative for our online vitamin business. Their team crafted engaging and effective email campaigns that have significantly boosted our customer engagement and sales. ",
       author: "Helder Valentim ",
       company: "Email Marketing",
-      image:
-        "/testimonial/helder.png",
+      image: "/testimonial/helder.png",
     },
     // Add more testimonials as needed
   ];

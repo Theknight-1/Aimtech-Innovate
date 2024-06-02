@@ -24,8 +24,8 @@ const ThirdPage = () => {
                 </span>
               </p>
               <div className="w-full">
-                <a href="https://calendly.com/himanshusaxena5500/30min">
-                  <button className="bg-brand-primary px-8 lg:px-12 py-3 text-white rounded-lg font-bold">
+                <a href="https://calendly.com/aimtechinnovate">
+                  <button className="bg-brand-primary px-8 lg:px-5 py-3 text-white rounded-lg font-bold text-lg">
                     LET’S SCHEDULE
                   </button>
                 </a>

@@ -16,7 +16,8 @@ const caseStudiesData = [
     image: "/landingPage/automotive.jpg",
     title: "fultime service for automobiles",
     link: "/casestudy/full-time-operatonal-services-for-automobile",
-    description: "Aimtech Innovate provided comprehensive IT infrastructure for startups ..",
+    description:
+      "Aimtech Innovate provided comprehensive IT infrastructure for startups ..",
   },
   {
     date: "Dec 21, 2023",
@@ -59,32 +60,69 @@ const Cards = ({ heading, getStartedButton }) => (
     </span>
     <div className="grid h-auto justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 my-5">
       {caseStudiesData.map((casestudy, index) => (
-        <div
-          key={index}
-          className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden  "
-        >
-          <img
-            className=" h-auto w-full object-cover"
-            src={casestudy.image}
-            alt={casestudy.title}
-          />
-          <div className=" h-[40%]   flex w-full ">
-            <div className="space-y-5  pt-4 ">
-              <h4 className="font-semibold text-2xl leading-6 text-gray-700 my-2 px-3">
-                {casestudy.title}
-              </h4>
-              <p className="paragraph-normal text-gray-600 text-[1rem] px-3">
-                {casestudy.description}
-              </p>
-              <div className="  flex items-center justify-between h-20 w-full p-3 ">
-                <span className="text-sm text-primary">{casestudy.date}</span>
-                <Link
-                  href={casestudy.link}
-                  className="px-4 py-2 text-white rounded-lg bg-[#122b59ec] hover:bg-[#122B59]"
+        // <div
+        //   key={index}
+        //   className="bg-white w-full h-auto rounded-lg shadow-md overflow-hidden  "
+        // >
+        //   <img
+        //     className=" h-auto w-full object-cover"
+        //     src={casestudy.image}
+        //     alt={casestudy.title}
+        //   />
+        //   <div className=" h-[40%]   flex w-full ">
+        //     <div className="space-y-5  pt-4 ">
+        //       <h4 className="font-semibold text-2xl leading-6 text-gray-700 my-2 px-3">
+        //         {casestudy.title}
+        //       </h4>
+        //       <p className="paragraph-normal text-gray-600 text-[1rem] px-3">
+        //         {casestudy.description}
+        //       </p>
+        //       <div className="  flex items-center justify-between h-20 w-full p-3 ">
+        //         <span className="text-sm text-primary">{casestudy.date}</span>
+        //         <Link
+        //           href={casestudy.link}
+        //           className="px-4 py-2 text-white rounded-lg bg-[#122b59ec] hover:bg-[#122B59]"
+        //         >
+        //           Read More
+        //         </Link>
+        //       </div>
+        //     </div>
+        //   </div>
+        // </div>
+        <div key={index} className="max-w-lg bg-white  rounded-lg shadow ">
+          <img className="rounded-t-lg 2xl:max-h-[18rem]  2xl:min-h-[18rem] xl:max-h-[15rem]  xl:min-h-[15rem] lg:max-h-[12rem]  lg:min-h-[12rem] md:max-h-[15rem]  md:min-h-[15rem] w-full" src={casestudy.image} alt="" />
+
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">
+              {casestudy.title}
+            </h5>
+
+            <p className="mb-3 font-normal text-black ">
+              {casestudy.description}
+            </p>
+            <div className=" flex items-center justify-between h-20 w-full ">
+              <span className="text-sm text-primary">{casestudy.date}</span>
+              <Link
+                href={casestudy.link}
+                className="px-4 py-2 text-white rounded-lg bg-[#122b59ec] hover:bg-[#122B59] flex items-center"
+              >
+                Read more
+                <svg
+                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
                 >
-                  Read More
-                </Link>
-              </div>
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </Link>
             </div>
           </div>
         </div>

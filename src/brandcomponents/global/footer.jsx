@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const ProvidedSchems = () => {
   return (
-    <div className=" grid lg:gap-10 gap-8  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-gray-300 p-2 md:p-0">
+    <div className=" grid lg:gap-5  gap-8  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-gray-300 p-2 md:p-0">
       <div className="">
         <div className=" xl:mb-4 text-lg font-semibold">Company</div>
         <nav aria-label="Footer Navigation" className="">
@@ -21,8 +21,8 @@ const ProvidedSchems = () => {
               </a>
             </li>
             <li>
-              <a className=" hover:underline" href="/about">
-                Blog
+              <a className=" hover:underline" href="/Blogs">
+                Blogs
               </a>
             </li>
 
@@ -425,7 +425,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="md:flex md:items-center justify-between md:gap-20 lg:gap-24 xl:gap-28 xl:h-auto h-auto  w-full  2xl:px-32 xl:px-24 p-3">
+      <div className="md:flex md:items-center justify-between md:gap-20 lg:gap-24 xl:gap-20 xl:h-auto h-auto  w-full  2xl:px-20 xl:px-8 p-3 ">
         <div className="text-sm w-full md:w-[25%] lg:w-[20%] space-y-3  lg:space-y-5 p-2 md:p-0 ">
           <div className="m-4 md:m-0 md:flex md:items-start md:justify-start text-center flex-col h-20 md:h-32  ">
             <img
@@ -482,7 +482,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="md:block hidden w-[60%]">
+        <div className="md:block hidden w-[75%]">
           <ProvidedSchems />
         </div>
       </div>

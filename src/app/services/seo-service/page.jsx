@@ -109,7 +109,7 @@ export default function page() {
     Process:"Aimtech Innovate conducted a comprehensive audit of the finance company's website, identifying key SEO improvements. Recommendations included strategic link-building and on-page optimization to enhance backlinking and SEO performance. By addressing broken links on relevant websites and suggesting the company as a replacement, valuable backlinks were created.",
     Results: "The implementation of strategic SEO tactics led to a significant improvement in the finance company's search engine ranking, resulting in increased organic traffic and enhanced lead generation. Aimtech Innovate's expertise in SEO was evident through the successful navigation of the competitive fintech landscape.",
     learnings:"This case study highlights the importance of addressing backlinking challenges in the fintech industry through strategic SEO initiatives. By focusing on link-building, on-page optimization, and leveraging broken link opportunities, Aimtech Innovate effectively improved the client's online visibility and credibility, showcasing the impact of a well-rounded SEO strategy in the finance sector.",
-    img: "/png/SEO.png",
+    img: "/png/seo-head.png",
   }
 
   return (
