@@ -43,8 +43,8 @@ export default function About() {
     <>
     <title> Helping Business to grow with digitaly | Aim Tech Innovate </title>
       <NextSeo
-        title="Helping Business to grow with digitaly | Aim Tech Innovate "
-        description="Online Marketing Team passionate about helping businesses, generate leads and grow online through smart, measurable Marketing Strategies."
+        title="About Us | Aimtech Innovate "
+        description="Looking for a digital marketing agency that delivers? Aimtech Innovate has the tools your company needs to thrive. Get in touch to get started now!"
         additionalMetaTags={[
           {
             name: 'keywords',

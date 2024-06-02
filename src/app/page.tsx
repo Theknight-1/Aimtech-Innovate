@@ -52,8 +52,8 @@ export default function Home() {
     <>
       <title> Digital Marketing Agency Based in Canada, | Aim Tech Innovate</title>
       <NextSeo
-        title="Digital Marketing Agency Based in Canada | Aim Tech Innovate"
-        description="Increase ROI with the best digital marketing agency || Performance guarantees || Canada Based Company ||  Local & global | Get in touch today!"
+        title="#1 Digital Marketing Agency In Canada - Get Up To 50% Off"
+        description="Looking for digital marketing services in Canada? Our agency offers comprehensive digital marketing solutions to help your business succeed online!"
         additionalMetaTags={[
           {
             name: 'keywords',

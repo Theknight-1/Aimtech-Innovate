@@ -41,8 +41,8 @@ export default function page() {
   return (
     <>
       <NextSeo
-        title="Social Media Marketing for AI Startup"
-        description="Aimtech Innovate resolved many problems for AI startups and provided them with the best target audience and regional market research to create the most effective marketing campaigns."
+        title="Social Media Marketing for AI Startup | Aimtech Innovate"
+        description="Learn how we help our client with social media marketing that helps them achieve their growth target to reach the right audience with engaging content."
         additionalMetaTags={[
           {
             name: "keywords",

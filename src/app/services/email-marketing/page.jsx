@@ -111,8 +111,8 @@ export default function page() {
   return (
     <>
      <NextSeo
-        title="Email Marketing Campaigns That Drive Conversions"
-        description="Are you looking for an effective way to reach and engage with your customers? Look no further than email marketing! Email marketing is the most effective digital marketing channel and delivers even higher ROI than paid ads or social media."
+        title="Email Marketing Services | Effective Email Marketing Management"
+        description="We offer email marketing management and newsletter services. Contact Aimtech Innovate and let us tailor an email campaign for you!"
         additionalMetaTags={[
           {
             name: 'keywords',

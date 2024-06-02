@@ -117,8 +117,8 @@ export default function page() {
     <>
     <Navbar />
     <NextSeo
-        title="Reach Your Niche Market Audience With a Robust Social Presence"
-        description="Take your business to the next level with our comprehensive social media management solutions. Our team of social media experts creates and implements customized strategies that drive engagement, increase brand awareness, and generate leads. We believe that a strong social media presence is crucial for businesses to thrive in today's digital landscape."
+        title="Social Media Marketing Services & Agency in Canada"
+        description="We are top social media marketing agency in Canada for your Facebook, Instagram, LinkedIn, Tiktok, influencer, creative & community management."
         additionalMetaTags={[
           {
             name: 'keywords',

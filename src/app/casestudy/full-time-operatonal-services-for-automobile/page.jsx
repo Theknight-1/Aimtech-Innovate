@@ -42,7 +42,7 @@ export default function page() {
     <>
       <NextSeo
         title="Full Time Operational Services for Automobile"
-        description="Aimtech Innovate provided comprehensive IT infrastructure and digital marketing services to an automotive company, enabling them to streamline operations and enhance their online presence."
+        description="We help streamline operations and boost customer satisfaction to grow auto repair shops with powerful operational software services."
         additionalMetaTags={[
           {
             name: "keywords",

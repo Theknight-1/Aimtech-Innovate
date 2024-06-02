@@ -13,8 +13,8 @@ export default function Contact() {
     <>
     <title>Aimtech -Contact Us</title>
     <NextSeo
-        title="Helping Business to grow with digitaly | Aim Tech Innovate "
-        description="Online Marketing Team passionate about helping businesses, generate leads and grow online through smart, measurable Marketing Strategies."
+        title="Contact Us Today | Aimtech Innovate"
+        description="We offer extensive digital marketing solutions to help you boost your brand online. Contact us today to learn more about our services."
         additionalMetaTags={[
           {
             name: 'keywords',

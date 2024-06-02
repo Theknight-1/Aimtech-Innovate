@@ -138,8 +138,8 @@ export default function page() {
   return (
     <>
      <NextSeo
-        title="Lead Generating Web Design and Development"
-        description="Make a good impression on potential customers right away. Our talented team of web designers and developers creates websites that are both aesthetically pleasing and conversion-focused. We believe that a unique, customized website design makes the business stand out from the crowd and creates an online presence."
+        title="Website Design & Development Services in Canada "
+        description="We provide website design services to create unique, beautiful and functional websites that are easy to navigate and increase user interaction"
         additionalMetaTags={[
           {
             name: 'keywords',

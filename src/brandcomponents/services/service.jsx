@@ -7,9 +7,9 @@ export default function BrandService({ data }) {
   const dataOBJ = data;
 
   return (
-    <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
-      <section className="w-full h-auto flex flex-col md:flex-row justify-between items-center p-4 gap-4">
-        <div className="md:w-[50%]  md:h-[600px] flex items-center justify-center ">
+    <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi ">
+      <section className="w-full h-auto flex flex-col md:flex-row justify-between items-center 2xl:p-4 gap-4">
+        <div className="md:w-[50%] md:h-[450px]  2xl:h-[600px] flex items-center justify-center ">
           <div className="overflow-hidden h-full lg:w-[100%] xl:w-[70%] object-contain ">
             <img
               src={dataOBJ.image}

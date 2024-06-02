@@ -119,8 +119,8 @@ export default function page() {
   return (
     <>
      <NextSeo
-        title="Lead Generating Pay-Per-Click (PPC) Advertising"
-        description="Attract your ideal customers through highly targeted, ROI-driven pay-per-click advertising campaigns. Our PPC specialists use advanced strategies and continual optimization to ensure your ads are seen by the right audiences at the perfect moment when they're ready to buy."
+        title="Creative Digital Performance Marketing Services in Canada"
+        description="Maximize your online ad ROI with Google Ads Marketing Management Services in Canada. Our agency offers customized strategies that deliver results."
         additionalMetaTags={[
           {
             name: 'keywords',

@@ -115,8 +115,8 @@ export default function page() {
   return (
     <>
      <NextSeo
-        title="Helping Business to grow with digitaly | Aim Tech Innovate "
-        description="Online Marketing Team passionate about helping businesses, generate leads and grow online through smart, measurable Marketing Strategies."
+        title="Best SEO Agency in Canada | Aimtech Innovate"
+        description="Choose Canada's Best SEO agency to rank top on Google SERPs. Our award-winning SEO Services unleash powerful marketing strategies for your business's success."
         additionalMetaTags={[
           {
             name: 'keywords',

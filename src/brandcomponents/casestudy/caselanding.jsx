@@ -9,7 +9,7 @@ export default function CaseLanding({ casedata }) {
       <section className="w-full  text-white font-satoshi">
         <article>
           <header className="h-auto w-full   text-center">
-            <div className="w-full h-[40vh] xl:h-[85vh] overflow-hidden object-contain">
+            <div className="w-full h-[40vh] xl:h-[45vh] overflow-hidden object-contain">
               <img
                 className="mt-2 w-full  object-cover object-center h-full "
                 src={cdata.image}
