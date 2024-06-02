@@ -6,7 +6,7 @@ import CaseLanding from "@/brandcomponents/casestudy/caselanding";
 import Footer from "@/brandcomponents/global/footer";
 export default function page() {
   const casedata = {
-    image: "/CaseStudy/social-media-ai.jpg",
+    image: "/CaseStudy/AI.jpg",
     pubdate: "May 12, 2024",
     title: "Social Media Marketing for AI Startup",
     description:

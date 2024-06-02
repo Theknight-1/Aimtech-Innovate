@@ -9,19 +9,21 @@ export default function CaseLanding({ casedata }) {
       <section className="w-full  text-white font-satoshi">
         <article>
           <header className="h-auto w-full   text-center">
-            <img
-              className="mt-2 w-full  object-cover object-center  h-[40vh] md:h-[80vh]"
-              src={cdata.image}
-              alt="Featured Image"
-            />
+            <div className="w-full h-[40vh] xl:h-[85vh] overflow-hidden object-contain">
+              <img
+                className="mt-2 w-full  object-cover object-center h-full "
+                src={cdata.image}
+                alt="Featured Image"
+              />
+            </div>
 
-            <div className="p-2 space-y-10 mt-4">
-              <p className="text-2xl">
+            <div className="p-2 space-y-5 md:space-y-10 mt-4">
+              <p className="text-base md:text-lg xl:text-2xl">
                 <span className="">Published Date:</span> {cdata.pubdate}
               </p>
               <h1 className=" text-3xl font-bold sm:text-5xl">{cdata.title}</h1>
-              <div className=" md:text-center  flex items-center justify-center mt-6 block w-full  text-wrap   text-base sm:text-lg md:text-lg xl:text-xl text-justify px-4 sm:px-0">
-                <p className="lg:px-24 lg:w-1/2 tracking-tight text-justify">
+              <div className=" md:text-center  flex items-center justify-center mt-6  w-full  text-wrap   text-base sm:text-lg md:text-lg xl:text-xl text-justify px-4 sm:px-0">
+                <p className="lg:px-4 lg:w-1/2 md:px-8 tracking-tight text-justify">
                   {cdata.description}
                 </p>
               </div>

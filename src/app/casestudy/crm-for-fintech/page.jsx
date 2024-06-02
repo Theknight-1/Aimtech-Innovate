@@ -8,7 +8,7 @@ export default function page() {
 
  const casedata = {
   image:
-  "/CaseStudy/crm.jpg",
+  "/landingPage/crm.jpg",
     pubdate:"Dec 21, 2023",
     title:"CRM For Fintech",
     description:"Aimtech Innovate created an AI-enabled CRM for a fintech company, enabling smart decisions based on accurate and real-time data. The CRM provides deep insights into sales metrics, revenue forecasts, team performance analysis, and custom dashboards.",

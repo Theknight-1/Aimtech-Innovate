@@ -6,7 +6,7 @@ import CaseLanding from "@/brandcomponents/casestudy/caselanding";
 import Footer from "@/brandcomponents/global/footer";
 export default function page() {
   const casedata = {
-    image: "/CaseStudy/seo-for-fintech.jpg",
+    image: "/landingPage/fintech.jpg",
     pubdate: "Sep 10, 2023",
     title: "SEO For Fintech",
     description:

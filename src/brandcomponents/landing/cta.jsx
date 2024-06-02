@@ -12,13 +12,13 @@ export default function Hcta({title="Get a Free Audit Report",d1="Get your free 
           <img className="h-full w-auto" src="/brand/logo/ctaimage.svg" alt="CTA image" />
         </div>
       </div>
-      <div className="mx-auto max-w-7xl mt-2 p-2 sm:px-6 md:flex lg:px-8">
+      <div className="mx-auto max-w-7xl  p-2 sm:px-6 md:flex lg:px-8">
         <div className="relative mx-auto my-auto flex flex-col items-center text-center text-white space-y-3">
-          <h2 className=" font-semibold leading-tight text-2xl sm:text-5xl lg:text-6xl">
+          <h2 className=" font-semibold leading-tight text-2xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
             {title}
 
           </h2>
-          <p className="mt-1 font-medium md:text-2xl sm:text-xl text-sm">
+          <p className="mt-1 font-medium xl:text-xl 2xl:text-2xl md:text-2xl sm:text-xl text-sm">
             <span>{d1}
               <br />
                {d2}

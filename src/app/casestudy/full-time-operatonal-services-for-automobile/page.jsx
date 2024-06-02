@@ -6,7 +6,7 @@ import CaseLanding from "@/brandcomponents/casestudy/caselanding";
 import Footer from "@/brandcomponents/global/footer";
 export default function page() {
   const casedata = {
-    image: "/CaseStudy/fulltime-service.jpg",
+    image: "/landingPage/automotive.jpg",
     pubdate: "May 18, 2024",
     title: "Full Time Operational Services for Automobile",
     description:

@@ -7,12 +7,12 @@ const ThirdPage = () => {
       <div className="flex items-center justify-center w-full h-full py-4 xl:p-0">
         <div className=" flex flex-col lg:flex-row">
           <div className="w-full lg:w-3/5 bg-brand-secondary flex justify-center items-center rounded-lg lg:rounded-none lg:rounded-l-3xl ">
-            <div className="p-8 sm:p-10 lg:p-8 xl:p-10 space-y-10  ">
-              <span className="text-2xl md:text-3xl lg:text-5xl font-bold tracking-wide">
+            <div className="p-8 sm:p-10 lg:p-8 xl:p-10 space-y-5 2xl:space-y-10 ">
+              <span className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-wide">
                 Still confused how a digital marketing agency can help your
                 business?{" "}
               </span>
-              <p className="text-base md:text-lg lg:text-2xl font-medium ">
+              <p className="text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium ">
                 <span>
                   We have industry experts to crack the code and take your
                   online presence to the next level.{" "}

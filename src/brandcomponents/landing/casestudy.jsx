@@ -79,7 +79,7 @@ export default function CaseStudies() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl">
+          <div className="text-4xl sm:text-3xl  md:text-4xl lg:text-5xl 2xl:text-6xl ">
             <span>Learn More About</span> <br />
             <span>the Work We've Done</span>
           </div>

@@ -40,7 +40,7 @@ const DMsg = () => {
     <>
       <section className="h-auto w-full overflow-hidden px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi">
         <div className="flex items-center justify-center p-4">
-          <span className="text-3xl lg:text-6xl text-center text-brand-secondary font-bold md:py-7 ">
+          <span className="text-3xl lg:text-6xl text-center text-brand-secondary font-bold 2xl:py-7 md:py-2 ">
             Director’s Message
           </span>
         </div>
@@ -58,7 +58,7 @@ const DMsg = () => {
             </span>
           </div>
           <div className="lg:w-1/2 h-full text-justify  space-y-2 xl:pr-20">
-            <div className="w-full h-auto text-white text-sm sm:text-lg md:text-lg xl:text-2xl text-justify leading-normal 2xl:space-y-7 md:space-y-4">
+            <div className="w-full h-auto text-white text-sm sm:text-lg md:text-lg xl:text-xl 2xl:text-2xl text-justify leading-normal 2xl:space-y-7 md:space-y-4">
               <p>
                 At Aimtech Innovate, we attribute our success to the unwavering
                 commitment to delivering exceptional quality services, which

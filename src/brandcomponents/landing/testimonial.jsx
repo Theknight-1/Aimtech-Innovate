@@ -125,7 +125,7 @@ export default function Testimonial() {
             {/* <div class="absolute inset-0 z-0 p-8  flex items-center justify-center">
               <div class="h-full w-auto aspect-square rounded-full bg-blue-400/40 blur-3xl"></div>
             </div> */}
-            <div className="  space-y-4 lg:space-y-6 relative z-10 w-full h-full flex flex-col items-center justify-center">
+            <div className="  space-y-4  relative z-10 w-full h-full flex flex-col items-center justify-center">
               <div className="flex flex-row space-x-6  w-full items-center justify-center">
                 <button onClick={showPreviousTestimonial}>
                   <img
@@ -137,7 +137,7 @@ export default function Testimonial() {
                 <img
                   key={currentTestimonialIndex}
                   src={currentTestimonial.image}
-                  className="md:h-48 h-28  md:w-48 w-28 border animate-fade-left rounded-full bg-white object-cover"
+                  className="2xl:h-48 lg:h-32 h-28  2xl:w-48 lg:w-32 w-28 border animate-fade-left rounded-full bg-white object-cover"
                   alt=""
                 />
                 <button onClick={showNextTestimonial}>
@@ -148,10 +148,10 @@ export default function Testimonial() {
                   />
                 </button>
               </div>
-              <div className="flex h-auto min-h-16 w-full items-center justify-center  ">
+              <div className="flex h-auto  w-full items-center justify-center  ">
                 <span
                   key={currentTestimonialIndex}
-                  className=" animate-fade-left text-sm sm:text-xl md:text-2xl lg:text-lg xl:text-xl text-justify  text-white "
+                  className=" animate-fade-left text-sm sm:text-xl md:text-2xl lg:text-base xl:text-lg 2xl:text-xl text-justify  text-white"
                 >
                   “{currentTestimonial.quote}”
                 </span>

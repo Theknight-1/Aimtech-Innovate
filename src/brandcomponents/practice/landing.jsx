@@ -15,10 +15,10 @@ export default function Pland({ faqdata = [] }) {
       <section class=" xl:min-h-[calc(100vh-20vh)]  mt-8 w-full flex  items-center justify-center xl:px-28 lg:px-24 md:px-20 sm:px-8 px-4 font-satoshi ">
         <div class=" h-auto w-full ">
           <div className="  w-full h-auto ">
-            <div className="w-full h-auto flex flex-col lg:flex-row  bg-[#050505e1]  lg:py-4 xl:p-4 rounded-xl">
+            <div className="w-full h-auto flex flex-col lg:flex-row  bg-[#050505e1]  lg:py-4 2xl:p-4 rounded-xl">
               <div className="flex  h-full space-y-2 lg:space-y-6 flex-col justify-between w-full lg:w-1/3  py-5 px-9 sm:px-12  md:p-6 lg:p-6 xl:p-5 ">
                 <div className="text-center md:text-left">
-                  <p className="text-3xl sm:text-4xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-bold flex flex-col items-start justify-start lg:gap-y-4 gap-y-2  text-white leading-normal">
+                  <p className="text-3xl sm:text-4xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold flex flex-col items-start justify-start lg:gap-y-4 gap-y-2  text-white leading-normal">
                     <span>Frequently</span>
                     <span>Asked</span>
                     <span>Questions</span>
@@ -26,11 +26,11 @@ export default function Pland({ faqdata = [] }) {
                 </div>
                 <div className="text-center md:text-left md:block hidden py-4 space-y-12">
                   <div className="">
-                    <span className="  text-2xl text-white lg:mt-10">
+                    <span className=" text-base md:text-xl 2xl:text-2xl text-white lg:mt-10">
                       Still have some Questions?{" "}
                     </span>
                     <br />
-                    <span className="text-2xl text-white">
+                    <span className=" text-base md:text-xl 2xl:text-2xl text-white">
                       Contact us! We will be happy to help you
                     </span>{" "}
                   </div>
@@ -48,7 +48,7 @@ export default function Pland({ faqdata = [] }) {
               {/* Accordion */}
               {/* accordian End */}
 
-              <div className="flex flex-col gap-y-4 p-4 sm:p-7 md:p-8 xl:p-6 h-auto overflow-hidden flex-1 ">
+              <div className="flex flex-col gap-y-2 2xl:gap-y-4 p-4 sm:p-7 md:p-8 xl:p-6 h-auto overflow-hidden flex-1 ">
                 {faqs.map((item, index) => (
                   <Accordion
                     key={index}

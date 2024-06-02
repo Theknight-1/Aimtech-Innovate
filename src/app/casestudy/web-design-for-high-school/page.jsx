@@ -6,7 +6,7 @@ import CaseLanding from "@/brandcomponents/casestudy/caselanding";
 import Footer from "@/brandcomponents/global/footer";
 export default function page() {
   const casedata = {
-    image: "/CaseStudy/education.jpg",
+    image: "/CaseStudy/high-school.jpg",
     pubdate: "Feb 12, 2024",
     title: "Web Design For High School",
     description:

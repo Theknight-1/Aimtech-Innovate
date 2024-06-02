@@ -166,14 +166,14 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             // onClick={() => setIsOpen(false)}
-            className="bg-slate-900/20 backdrop-blur p-3 sm:p-8  inset-0 z-50 grid place-items-center overflow-y-scroll  fixed w-[100vw] h-[100vh] left-0 "
+            className="bg-slate-900/20 backdrop-blur p-3 sm:p-8  inset-0 z-50 grid place-items-center overflow-y-scroll  fixed w-[100vw] h-[100vh]  left-0 "
           >
             <motion.div
               initial={{ scale: 0, rotate: "12.5deg" }}
               animate={{ scale: 1, rotate: "0deg" }}
               exit={{ scale: 0, rotate: "0deg" }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white text-white p-5 rounded-lg w-full  max-w-3xl shadow-xl cursor-default relative overflow-hidden "
+              className="bg-white text-white 2xl:p-5 p-2 rounded-lg w-full  max-w-3xl shadow-xl cursor-default relative overflow-hidden"
             >
               <span
                 className="absolute z-10  text-black md:right-5 right-1 md:top-5 top-2 cursor-pointer"
@@ -181,18 +181,18 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
               >
                 <IoCloseSharp size={30} />
               </span>
-              <div className=" md:space-y-4">
-                <h1 className="text-black text-center text-2xl sm:text-3xl md:text-5xl font-bold">
+              <div className=" 2xl:space-y-4">
+                <h1 className="text-black text-center text-2xl sm:text-3xl md:text-2xl xl:text-3xl 2xl:text-5xl font-bold">
                   Request a Proposal
                 </h1>
-                <p className="text-black text-center text-sm md:text-lg lg:text-xl">
+                <p className="text-black text-center text-sm md:text-base 2xl:text-lg lg:text-xl">
                   Just fill in the form, and let our experts handle the rest.
                 </p>
               </div>
               <div className="relative  md:p-5">
                 <form
                   onSubmit={handleSubmit}
-                  className="max-w-full mx-auto bg-white rounded-lg md:space-y-8 space-y-5"
+                  className="max-w-full mx-auto bg-white rounded-lg 2xl:space-y-8 space-y-5"
                 >
                   <div className="relative z-0 w-full mb-5 group">
                     <input
@@ -201,13 +201,13 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       id="floating_first_name"
                       value={formData.fullName}
                       onChange={handleInputChange}
-                      className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base 2xl:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=""
                       required
                     />
                     <label
                       htmlFor="floating_first_name"
-                      className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-base 2xl:text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Full name
                     </label>
@@ -219,13 +219,13 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       id="floating_email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base 2xl:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=""
                       required
                     />
                     <label
                       htmlFor="floating_email"
-                      className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-base 2xl:text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Email address
                     </label>
@@ -235,7 +235,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
-                      className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base 2xl:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       required
                     >
                       <option
@@ -276,7 +276,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     </div>
                     <label
                       htmlFor="service"
-                      className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-base 2xl:text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Services
                     </label>
@@ -287,7 +287,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                         name="country"
                         value={formData.country}
                         onChange={handleCountryChange}
-                        className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full text-base 2xl:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         required
                       >
                         <option value={formData?.country}>
@@ -323,7 +323,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       </div>
                       <label
                         htmlFor="country"
-                        className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute text-base 2xl:text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         Country
                       </label>
@@ -336,14 +336,14 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                         id="floating_phone_number"
                         value={formData.phoneNumber}
                         onChange={handleInputChange}
-                        className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full text-base 2xl:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=""
                         required
                       />
 
                       <label
                         htmlFor="floating_phone_number"
-                        className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute text-base 2xl:text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         Phone number
                       </label>
@@ -356,12 +356,12 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       id="floating_company_name"
                       value={formData.companyName}
                       onChange={handleInputChange}
-                      className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-base 2xl:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=""
                     />
                     <label
                       htmlFor="floating_company_name"
-                      className="peer-focus:font-medium absolute text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-base 2xl:text-lg text-black dark:text-black duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Company name <span className="text-sm">(optional)</span>
                     </label>
@@ -373,7 +373,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                       onChange={() => setIsCheckboxChecked(!isCheckboxChecked)}
                       checked={isCheckboxChecked}
                     />
-                    <p className="text-black md:text-lg text-sm ">
+                    <p className="text-black md:text-base 2xl:text-lg text-sm ">
                       I agree to share my above information for Aimtech
                       Marketing and Promotional activities.
                     </p>
@@ -382,7 +382,7 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
                     <button
                       type="submit"
                       disabled={!isCheckboxChecked} // Disable button if checkbox is not checked
-                      className={`bg-[#FFA300] hover:bg-yellow-400 transition-opacity text-[#122B59] font-semibold w-full py-3 rounded text-lg flex justify-center ${
+                      className={`bg-[#FFA300] hover:bg-yellow-400 transition-opacity text-[#122B59] font-semibold w-full py-3 rounded text-base 2xl:text-lg flex justify-center ${
                         !isCheckboxChecked
                           ? "cursor-not-allowed opacity-50"
                           : ""
