@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
@@ -16,6 +16,10 @@ export default function GradientSection() {
     setNewValue(e.target.value);
     // Open modal only when a different value is selected
   };
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }, []);
 
   return (
     <>

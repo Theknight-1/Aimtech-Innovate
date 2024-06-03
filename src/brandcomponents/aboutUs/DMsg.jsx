@@ -86,13 +86,13 @@ const DMsg = () => {
           <section className="bg-gray-2   dark:bg-dark">
             <div className=" hidden mx-auto md:flex md:container ">
               <SingleCard
-                image="/about/card1.jpg"
+                image="/about/low-cost.jpg"
                 CardTitle="Less Cost, Maximum Revenue"
                 titleHref="#"
                 CardDescription="We become an extension of your marketing team, delivering exceptional results without the hefty overhead costs of hiring a full-time digital marketing staff. Our streamlined operations and data-driven approach ensure we target the most impactful strategies, maximizing your return on investment and driving significant revenue growth. You'll see a tangible difference in your bottom line without breaking the bank."
               />
               <SingleCard
-                image="/about/card3.jpeg"
+                image="/about/quality.jpeg"
                 CardTitle="Quality Service Round the Clock"
                 titleHref="#"
                 CardDescription="We take pride in offering exceptional service that goes above and beyond. Our team of digital marketing experts is available 24/7 to address your needs and concerns. Whether you have a pressing question or require strategic guidance, we're here to ensure your campaigns run smoothly and deliver consistent results. We provide constant communication and transparent reporting, keeping you informed and involved every step of the way."
@@ -131,7 +131,7 @@ const DMsg = () => {
               >
                 <SwiperSlide>
                   <SingleCard
-                    image="/about/card1.jpg"
+                    image="/about/low-cost.jpg"
                     CardTitle="Less Cost, Maximum Revenue"
                     titleHref="#"
                     CardDescription="We become an extension of your marketing team, delivering exceptional results without the hefty overhead costs of hiring a full-time digital marketing staff. Our streamlined operations and data-driven approach ensure we target the most impactful strategies, maximizing your return on investment and driving significant revenue growth. You'll see a tangible difference in your bottom line without breaking the bank."
@@ -139,7 +139,7 @@ const DMsg = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <SingleCard
-                    image="/about/card3.jpeg"
+                    image="/about/quality.jpeg"
                     CardTitle="Quality Service Round the Clock"
                     titleHref="#"
                     CardDescription="We take pride in offering exceptional service that goes above and beyond. Our team of digital marketing experts is available 24/7 to address your needs and concerns. Whether you have a pressing question or require strategic guidance, we're here to ensure your campaigns run smoothly and deliver consistent results. We provide constant communication and transparent reporting, keeping you informed and involved every step of the way."

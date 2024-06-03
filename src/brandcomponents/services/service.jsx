@@ -1,11 +1,14 @@
-import React from "react";
-import file from "@/Data.json";
+'use client'
+import {React,useEffect} from "react";
 import Link from "next/link";
 import { FaAnglesRight } from "react-icons/fa6";
 
 export default function BrandService({ data }) {
   const dataOBJ = data;
-
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }, []);
   return (
     <section className="overflow-x-hidden h-auto text-white gap-y-8 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-28 font-satoshi ">
       <section className="w-full h-auto flex flex-col md:flex-row justify-between items-center 2xl:p-4 gap-4">

@@ -1,9 +1,13 @@
 "use client";
-import React from "react";
+import {React,useEffect} from "react";
 import Cards from "@/brandcomponents/casestudy/cards";
 import Hcta from "@/brandcomponents/landing/cta";
 export default function CaseLanding({ casedata }) {
   const cdata = casedata;
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }, []);
   return (
     <>
       <section className="w-full  text-white font-satoshi">

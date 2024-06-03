@@ -20,7 +20,7 @@ export default function page() {
       "Attract your ideal customers through highly targeted, ROI-driven pay-per-click advertising campaigns. Our PPC specialists use advanced strategies and continual optimization to ensure your ads are seen by the right audiences at the perfect moment when they're ready to buy.",
     benifits: ["Google & Microsoft Ads", "Social PPC (Facebook, Instagram, etc.)", "YouTube & Video Ads", "Amazon PPC"],
     link: "/contact",
-    image:"/png/Head/service-ppc-head.png",
+    image:"/service/ppc-hero.svg",
 
     second : {
         title : "Get More Leads and Sales with Optimized PPC Campaigns",

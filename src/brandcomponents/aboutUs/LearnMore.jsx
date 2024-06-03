@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import {React,useEffect} from "react";
 
 const LearnMore = () => {
   const imageUrls = [
@@ -8,6 +9,11 @@ const LearnMore = () => {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   ];
+
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }, []);
   return (
     <section className="w-full h-auto  flex justify-center items-center  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 py-10 font-satoshi">
       <div className="w-full lg:max-w-full ">
@@ -54,7 +60,7 @@ const LearnMore = () => {
           <div className="flex-1 flex justify-center ">
             <div className="md:w-[60%]">
               <img
-                src="/about/About-Head.png"
+                src="/about/about_hero.svg"
                 alt="About Us"
                 className="w-full h-auto lg:w-full lg:h-full object-cover"
               />

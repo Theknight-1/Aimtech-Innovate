@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useLayoutEffect  } from "react";
 import Link from "next/link";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaWhatsapp, FaSignal } from "react-icons/fa";
@@ -65,17 +65,29 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
 
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    const halfScreenHeight = window.innerHeight / 4;
-    if (offset > halfScreenHeight) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-
-  useEffect(() => {
+  // const handleScroll = () => {
+  //   const offset = window.scrollY;
+  //   setScrolling(offset > 0);
+  // };
+  
+ 
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+  useLayoutEffect (() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+        setImageUrl("/brand/logo/blue-logo.png");
+      } else {
+        setScrolling(false);
+        setImageUrl("/brand/logo/logoFinal.png");
+      }
+    };
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -249,14 +261,18 @@ const Navbar = () => {
     setServicesOpen(false);
     setOpenCategory(false);
   };
+
+  useEffect(() => {
+    document.body.focus();
+  }, []);
   return (
     <>
       <nav
         className={`sticky top-0 xl:px-28 lg:px-24 md:px-12 sm:px-8 px-4 font-satoshi ${
-          scrolling ? "bg-white text-black shadow" : "text-white"
+          scrolling ? "bg-white text-black shadow" : "bg-brand-primary/10  text-white"
         } z-50 w-screen`}
       >
-        <div className={`  mx-auto flex justify-between items-center py-2`}>
+        <div className={` mx-auto flex justify-between items-center py-2`}>
           <div className=" relative block  text-xl text-blue-600 font-bold">
             <Link href="/" className="font-bold text-black  text-xl ">
               {" "}
