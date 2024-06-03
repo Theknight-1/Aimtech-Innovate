@@ -64,23 +64,24 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    const halfScreenHeight = window.innerHeight / 4;
+    if (offset > halfScreenHeight) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolling(true);
-        setImageUrl("/brand/logo/blue-logo.png");
-      } else {
-        setScrolling(false);
-        setImageUrl("/brand/logo/logoFinal.png");
-      }
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
-
-    // Check the scroll position on initial render
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   const servicedata = [
     {
@@ -147,17 +148,17 @@ const Navbar = () => {
 
   const caseStudiesData = [
     {
-      category: "SEO related",
+      category: "SEO Related",
       icon: "🔍",
       data: [
         {
-          title: "Fulltime service for automobiles",
+          title: "Fulltime Service For Automobiles",
           link: "/casestudy/full-time-operatonal-services-for-automobile",
           description:
             "Aimtech Innovate provided comprehensive IT infrastructure ..",
         },
         {
-          title: "SEO for Fintech",
+          title: "SEO For Fintech",
           link: "/casestudy/seo-for-fintech",
           description:
             "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company...",
@@ -165,17 +166,17 @@ const Navbar = () => {
       ],
     },
     {
-      category: "Web Development related",
+      category: "Web Development Related",
       icon: "🌐",
       data: [
         {
-          title: "CRM for Fintech",
+          title: "CRM For Fintech",
           link: "/casestudy/crm-for-fintech",
           description:
             "Aimtech Innovate created an AI-enabled CRM for a fintech company...",
         },
         {
-          title: "Highschool web design",
+          title: "Highschool Web Design",
           link: "/casestudy/web-design-for-high-school",
           description:
             "Aimtech Innovate helped create a best-in-class website for a high school...",
@@ -183,23 +184,25 @@ const Navbar = () => {
       ],
     },
     {
-      category: "PPC related",
+      category: "PPC Related",
       icon: "💰",
       data: [
         {
-          title: "SMM for AI startup",
-          link: "/casestudy/social-media-marketing-for-ai-startup",
+          title: "Boosting E-Commerce Sales with Targeted Facebook Ads",
+          link: "/casestudy/boosting-ecommerce-with-targeted-faceboook-ads",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
         },
+        
+        
       ],
     },
     {
-      category: "SMM related",
+      category: "SMM Related",
       icon: "📧",
       data: [
         {
-          title: "SMM for ai startup",
+          title: "SMM For AI Startup",
           link: "/casestudy/social-media-marketing-for-ai-startup",
           description:
             "Aimtech Innovate resolved many problems for AI startups..",
@@ -365,11 +368,9 @@ const Navbar = () => {
                     />
                   </span>
                 </div>
-                <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
+                <div className=" mega-menu mb-16 sm:mb-0  shadow-xl ">
                   <div
-                    className={`relative bg-white p-6 w-full h-auto top-25 ${
-                      scrolling ? "-top-7" : ""
-                    }`}
+                    className={` bg-white  mt-4 p-6 w-full h-auto  `}
                   >
                     <div className="flex justify-evenly lg:gap-3 xl:gap-6">
                       {servicedata.map((service, idx) => (
@@ -415,9 +416,7 @@ const Navbar = () => {
                 </div>
                 <div className=" mega-menu mb-16 sm:mb-0 shadow-xl ">
                   <div
-                    className={`relative bg-white p-2 2xl:p-6 w-full h-auto ${
-                      scrolling ? "-top-7" : ""
-                    }`}
+                    className={` bg-white p-2 2xl:p-6 mt-4 w-full h-auto`}
                   >
                     <div className=" w-full h-auto p-1 2xl:p-2 flex flex-col md:flex-row gap-3 2xl:gap-6  text-brand-primary">
                       <div className="flex flex-col md:flex-row  gap-0 lg:gap-3 xl:gap-4 2xl:gap-6  ">
@@ -485,7 +484,7 @@ const Navbar = () => {
                   href="/about"
                   className="border-b border-transparent hover:border-brand-secondary cursor-pointer"
                 >
-                  About us
+                  About Us
                 </Link>
               </li>
               <li className="relative block py-4 ">

@@ -34,8 +34,8 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 0px;
+  background: #FFA300;
+  border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -46,7 +46,6 @@ body {
 /* mega menu */
 .mega-menu {
   display: none;
-  top: 94px;
   left: 0;
   position: absolute;
   text-align: left;
