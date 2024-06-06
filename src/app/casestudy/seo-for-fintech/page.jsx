@@ -11,12 +11,12 @@ export default function page() {
     title: "SEO For Fintech",
     description:
       "Aimtech Innovate successfully implemented a strategic SEO plan for a finance company, addressing their primary challenge of low backlinking within a month.",
-    keywords: ["Finance"],
+    keywords: ["Finance","On Page","Off Page","Technical SEO","SEO Strategies"],
     achievements: [
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
+      { h1: "200%", h2: "Search Engine Rankings", h3: "Boosted search engine rankings by 200%" },
+      { h1: "800%", h2: "Website Traffic", h3: "Increased website traffic by 800%" },
+      { h1: "80%", h2: "Conversion Rate", h3: "Improved conversion rate by 80%" },
+      { h1: "16%", h2: "Bounce Rate", h3: "Decreased bounce rate by 16%" },
     ],
     goal: {
       title: "",
@@ -28,7 +28,7 @@ export default function page() {
         "Finding broken links on relevant websites and suggesting the company's website as a replacement, creating valuable backlinks.",
       ],
     },
-    help: "Aimtech Innovate audited a finance company's website, identifying SEO improvements. Their recommendations enhanced backlinking and SEO performance. Through strategic link-building and on-page optimization, Aimtech Innovate improved the company's search engine ranking, resulting in significant organic traffic and lead generation. This showcases Aimtech Innovate's SEO expertise in the competitive fintech industry. ",
+    help: "We have audited a finance company's website, identifying SEO improvements. Their recommendations enhanced backlinking and SEO performance. Through strategic link-building and on-page optimization, Aimtech Innovate improved the company's search engine ranking, resulting in significant organic traffic and lead generation. This showcases Aimtech Innovate's SEO expertise in the competitive fintech industry.",
   };
 
   return (

@@ -17,13 +17,13 @@ export default function CaseLanding({ casedata }) {
               />
             </div>
 
-            <div className="p-2 space-y-5 md:space-y-10 mt-4">
+            <div className="p-2 space-y-5 md:space-y-10 mt-4 md:w-1/2 mx-auto block">
               <p className="text-base md:text-lg xl:text-2xl">
                 <span className="">Published Date:</span> {cdata.pubdate}
               </p>
               <h1 className=" text-3xl font-bold sm:text-5xl">{cdata.title}</h1>
               <div className=" md:text-center  flex items-center justify-center mt-6  w-full  text-wrap   text-base sm:text-lg md:text-lg xl:text-xl text-justify px-4 sm:px-0">
-                <p className="lg:px-4 lg:w-1/2 md:px-8 tracking-tight text-justify">
+                <p className="lg:px-4  md:px-8 tracking-tight text-center  ">
                   {cdata.description}
                 </p>
               </div>
@@ -62,33 +62,33 @@ export default function CaseLanding({ casedata }) {
         <div className="grid  p-2  sm:grid-cols-2 lg:grid-cols-4 space-y-12 sm:space-y-6 lg:space-y-0 ">
           <div className="flex flex-col items-center justify-center rounded-md  shadow-sm ">
             <div className=" flex items-center">
-              <h3 className="text-6xl font-bold">7.5X</h3>
+              <h3 className="text-6xl font-bold">{cdata.achievements[0].h1}</h3>
             </div>
-            <h3 className="text-2xl font-bold md:text-xl">ROAS (Facebook)</h3>
-            <p className="">Increase of 20% in profit sale</p>
+            <h3 className="text-2xl font-bold md:text-xl">{cdata.achievements[0].h2}</h3>
+            <p className="">{cdata.achievements[0].h3}</p>
           </div>
           <div className="flex text-center flex-col items-center justify-center rounded-md  shadow-sm ">
             <div className=" flex items-center">
-              <h3 className="text-6xl font-bold">20X</h3>
+              <h3 className="text-6xl font-bold">{cdata.achievements[1].h1}</h3>
             </div>
             <h3 className=" text-2xl  font-bold md:text-xl">
-              ROAS (Google ads spend)
+            {cdata.achievements[1].h2}
             </h3>
-            <p className="">Increased 36% website traffic in one month.</p>
+            <p className="">{cdata.achievements[1].h3}</p>
           </div>
           <div className="flex flex-col items-center justify-center rounded-md  shadow-sm">
             <div className=" flex items-center">
-              <h3 className="text-6xl font-bold">49%</h3>
+              <h3 className="text-6xl font-bold">{cdata.achievements[2].h1}</h3>
             </div>
-            <h3 className="text-2xl font-bold">ROI (Facebook)</h3>
-            <p className="">Increase in Attributed Sales</p>
+            <h3 className="text-2xl font-bold">{cdata.achievements[2].h2}</h3>
+            <p className="">{cdata.achievements[2].h3}</p>
           </div>
           <div className="flex flex-col items-center justify-center rounded-md  shadow-sm">
             <div className=" flex items-center">
-              <h3 className="text-6xl font-bold">1.8%</h3>
+              <h3 className="text-6xl font-bold">{cdata.achievements[3].h1}</h3>
             </div>
-            <h3 className="text-2xl font-bold">CTR</h3>
-            <p className="">on mobile and website</p>
+            <h3 className="text-2xl font-bold">{cdata.achievements[3].h2}</h3>
+            <p className="">{cdata.achievements[3].h3}</p>
           </div>
         </div>
       </section>

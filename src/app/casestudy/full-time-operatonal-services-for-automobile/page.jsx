@@ -10,7 +10,7 @@ export default function page() {
     pubdate: "May 18, 2024",
     title: "Full Time Operational Services for Automobile",
     description:
-      "Aimtech Innovate provided comprehensive IT infrastructure and digital marketing services to an automotive company, enabling them to streamline operations and enhance their online presence.",
+      "We provided comprehensive IT infrastructure and digital marketing services to an automotive company, enabling them to streamline operations and enhance their online presence.",
     keywords: [
       "Automotive",
       " IT Infrastructure",
@@ -20,10 +20,10 @@ export default function page() {
       "Email Marketing",
     ],
     achievements: [
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
+      { h1: "4X", h2: "Serviced Vehicles", h3: "Increased by 4 times" },
+      { h1: "12%", h2: "Repair Time", h3: "Reduced by 12%" },
+      { h1: "95%", h2: "Customer Satisfaction", h3: "Achieved 95% satisfaction rate" },
+      { h1: "6%", h2: "Preventive Maintenance", h3: "Increased by 6%" },
     ],
     goal: {
       title: "",
@@ -35,7 +35,7 @@ export default function page() {
         "Provide ongoing maintenance and support for the IT systems and digital assets",
       ],
     },
-    help: "Aimtech Innovate provided comprehensive services to an automotive client, including web development, digital marketing, content marketing, and IT infrastructure support, leading to a strong online presence, streamlined marketing, and a 3-year contract.",
+    help: "We provided comprehensive services to an automotive client, including web development, digital marketing, content marketing, and IT infrastructure support, leading to a strong online presence, streamlined marketing, and a 3-year contract.",
   };
 
   return (

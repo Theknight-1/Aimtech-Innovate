@@ -19,10 +19,10 @@ export default function page() {
       "Startup Consulting",
     ],
     achievements: [
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
+      { h1: "25%", h2: "Engagement Rate (Social Media)", h3: "Boosted social media engagement by 28%" },
+      { h1: "15%", h2: "Conversion Rate (AI Solution)", h3: "Increased conversions by 8x" },
+      { h1: "34%", h2: "Click-Through Rate (Ad Campaign)", h3: "Increase in attributed clicks" },
+      { h1: "5%", h2: "Unsubscribe Rate (Newsletter)", h3: "Decrease in newsletter unsubscribes" },
     ],
     goal: {
       title: "",
@@ -35,7 +35,7 @@ export default function page() {
         "Achieve a positive return on investment (ROI) from the social media marketing efforts",
       ],
     },
-    help: "Aimtech Innovate's social media marketing experts collaborated closely with the AI startup to understand their unique challenges, target audience, and business goals. We conducted in-depth market research to identify the most promising platforms and target segments for the startup's offerings.",
+    help: "Our social media marketing experts collaborated closely with the AI startup to understand their unique challenges, target audience, and business goals. We conducted in-depth market research to identify the most promising platforms and target segments for the startup's offerings.",
   };
 
   return (

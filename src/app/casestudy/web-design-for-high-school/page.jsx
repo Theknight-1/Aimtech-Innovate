@@ -10,7 +10,7 @@ export default function page() {
     pubdate: "Feb 12, 2024",
     title: "Web Design For High School",
     description:
-      "Aimtech Innovate helped create a best-in-class website for a high school, achieving remarkable results.",
+      "We helped create a best-in-class website for a high school, achieving remarkable results.",
     keywords: [
       "Education",
       "Website Design",
@@ -19,10 +19,22 @@ export default function page() {
       "Modern UI",
     ],
     achievements: [
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
+      { h1: "4x", h2: "Enrollment", h3: "Course enrollment increased by 4X" },
+      {
+        h1: "95%",
+        h2: "Satisfaction",
+        h3: "Attained a 95% student satisfaction rate",
+      },
+      {
+        h1: "45",
+        h2: "Weeks Development",
+        h3: "Completed project within 45 days timeframe.",
+      },
+      {
+        h1: "50%",
+        h2: "Bounce Rate Reduction",
+        h3: "Decrease bounce rate by 50%",
+      },
     ],
     goal: {
       title: "",
