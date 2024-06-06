@@ -18,7 +18,7 @@ export default function page() {
       "Need help to attract customers to your new website? Quality traffic increases sales and boosts business profits. SEO is the only solution! Our Canada based SEO services optimize your website for search engines, driving organic traffic and boosting your online presence. Let's help your business grow!",
     benifits: ["Technical & Local SEO", "On-Page Optimization", "Content Marketing", "Link Building"],
     link: "/contact",
-    image:"/png/Head/service-seo-head.png",
+    image:"/service/seo-hero.svg",
     second : {
         title : "Take Your Business to the Top of Search Engine Rankings",
         points : [

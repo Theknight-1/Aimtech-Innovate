@@ -5,8 +5,6 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 
-
-
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,20 +17,18 @@ const satoshi = localFont({
   weight: "400",
 });
 
-
-
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/brand/logo/Blue-favicon.png" type="image/x-png" />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap" rel="stylesheet"></link>
+        <link rel="shortcut icon" href="/brand/logo/favicon.png" type="image/x-icon" />
       </head>
       <GoogleTagManager gtmId="GTM-PTWCNN2R" />
       <body className={satoshi.className}>{children}</body>

@@ -16,7 +16,7 @@ const caseStudiesData = [
     
     image:
       "/CaseStudy/fulltime-service.jpg",
-      title: "Fultime service for automobiles",
+      title: "Fulltime Service For Automobiles",
       link: "/casestudy/full-time-operatonal-services-for-automobile",
       description:
         "Aimtech Innovate provided comprehensive IT infrastructure and digital marketing services to an automotive company, enabling them to streamline operations and enhance their online presence.",
@@ -34,7 +34,7 @@ const caseStudiesData = [
     
     image:
       "/CaseStudy/education.jpg",
-      title: "Highschool web design",
+      title: "Highschool Web Design",
       link: "/casestudy/web-design-for-high-school",
       description:
         "Aimtech Innovate helped create a best-in-class website for a high school, achieving remarkable results.",
@@ -43,7 +43,7 @@ const caseStudiesData = [
     
     image:
       "/CaseStudy/social-media-ai.jpg",
-      title: "SMM for ai startup",
+      title: "SMM For AI Startup",
       link: "/casestudy/social-media-marketing-for-ai-startup",
       description:
         "Aimtech Innovate resolved many problems for AI startups and provided them with the best target audience and regional market research to create the most effective marketing campaigns.",

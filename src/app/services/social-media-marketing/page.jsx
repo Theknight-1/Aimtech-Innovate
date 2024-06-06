@@ -19,7 +19,7 @@ export default function page() {
       "Take your business to the next level with our comprehensive social media management solutions. Our team of social media experts creates and implements customized strategies that drive engagement, increase brand awareness, and generate leads. We believe that a strong social media presence is crucial for businesses to thrive in today's digital landscape.",
     benifits: ["Facebook & Instagram", "LinkedIn  & Twitter", "TikTok", "Youtube"],
     link: "/contact",
-    image:"/png/Head/service-smm-head.png",
+    image:"/service/smm-hero.svg",
 
     second : {
         title : "Elevate Your Social Media Game and Grow Your Business",

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import SpringModal from "@/brandcomponents/Modal/SpringModal";
@@ -16,11 +16,15 @@ export default function GradientSection() {
     setNewValue(e.target.value);
     // Open modal only when a different value is selected
   };
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }, []);
 
   return (
     <>
       <section className="w-screen  font-satoshi 2xl:pt-20  h-auto  px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-28 ">
-        <div className="flex  flex-col-reverse justify-between md:flex-row items-center  ">
+        <div className="flex gap-x-4 gap-y-6  flex-col-reverse justify-between md:flex-row items-center  ">
           <div className=" lg:col-span-6 h-full xl:space-y-8 lg:space-y-4 md:space-y-6 lg:p-2  space-y-4  sm:mt-0">
             <div className=" lg:space-y-4 space-y-2 ">
               <div className="space-y-4">
@@ -101,9 +105,9 @@ export default function GradientSection() {
               </div>
             </div>
           </div>
-          <div className=" w-full h-full  lg:col-span-6 lg:flex items-center justify-end    lg:justify-end  ">
+          <div className=" w-full h-full   lg:col-span-6 lg:flex items-center justify-end    lg:justify-end  ">
             <div className="w-auto h-full  lg:col-span-6 lg:flex items-center justify-end -my-4 sm:-my-0  lg:justify-end">
-              <div className=" w-full h-full flex items-center justify-end relative  ">
+              <div className=" w-full h-full flex items-center justify-center lg:justify-end relative  ">
                 <img
                   src="/landingPage/hero-image.svg"
                   alt="mockup"

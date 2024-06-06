@@ -19,7 +19,7 @@ export default function page() {
       "Are you looking for an effective way to reach and engage with your customers? Look no further than email marketing! Email marketing is the most effective digital marketing channel and delivers even higher ROI than paid ads or social media.",
     benifits: ["Audience Segmentation", "Compelling Content", "Eye-catching Design", "Clear Call-to-Action (CTA)"],
     link: "/contact",
-    image:"/png/Head/service-email-head.png",
+    image:"/png/email_hero.svg",
     second : {
         title : "Attract. Connect. Win Over Customers with Email Marketing",
         points : [
@@ -99,12 +99,12 @@ export default function page() {
     },
   ];
   const featuredcase = {
-    title: "Web Design For High School ",
-    objective:"The objective was to create a modern, responsive website that reflects the high school's brand and values, improves online presence, showcases academic programs and achievements, and enhances communication with stakeholders.",
-    challenge : "The challenge was to design a website that not only met the aesthetic and functional needs of the high school but also catered to the diverse audience of students, parents, and the community while ensuring accessibility and engagement.",
-    Process:"Aimtech Innovate's web design experts collaborated closely with the high school to develop a clean, intuitive interface aligned with the school's branding. The design was optimized for mobile devices, featuring a soft scroll design for seamless navigation. Ongoing support was provided to keep the website up-to-date and secure.",
-    Results: "The partnership resulted in a modern, engaging website with a low bounce rate, effectively communicating the school's brand and providing valuable information to visitors. The website successfully showcases academic programs, extracurricular activities, and achievements, enhancing stakeholder engagement and improving online visibility.",
-    learnings:"This project highlighted the importance of collaboration between web design experts and clients to create a website that not only meets design and functionality requirements but also resonates with the target audience. By focusing on branding, mobile optimization, and user experience, the website achieved its goals of enhancing the school's online presence and communication with stakeholders.",
+    title: "Increasing Email Open Rates by Resending Campaigns ",
+    objective:"The objective was to improve email open rates by strategically resending campaigns to subscribers, ensuring that the content reaches the intended audience and maximizes engagement.",
+    challenge : "The challenge was to identify the most effective approach to resending campaigns without overwhelming subscribers or compromising the overall effectiveness of the email marketing strategy.",
+    Process:"Aimtech Innovate's email marketing experts analyzed the performance of previous campaigns, identifying the most effective subject lines, content, and timing. They then developed a targeted resending strategy that focused on subscribers who had previously engaged with the content or had not opened the email. The strategy included adjusting subject lines, adding personalized content, and optimizing the timing of the resend.",
+    Results: "The targeted resending strategy resulted in a significant increase in email open rates, with a higher percentage of subscribers engaging with the content. The approach ensured that the content reached the intended audience, maximizing the effectiveness of the email marketing campaign.",
+    learnings:"This project highlighted the importance of analyzing campaign performance and developing targeted strategies to improve email open rates. By focusing on subscriber engagement and adjusting content and timing accordingly, email marketers can increase the effectiveness of their campaigns and maximize engagement with their audience.",
     img: "/png/email.png",
   }
    

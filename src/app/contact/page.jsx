@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import {React,useEffect} from "react";
 import Navbar from "@/brandcomponents/global/Navbar";
 import Hero from "@/brandcomponents/landing/hero";
 import CaseStudy from "@/brandcomponents/landing/casestudy";
@@ -9,6 +9,10 @@ import ThirdPage from "@/brandcomponents/contact/thirdPage";
 import Footer from "@/brandcomponents/global/footer";
 import { NextSeo } from "next-seo";
 export default function Contact() {
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }, []);
   return (
     <>
     <title>Aimtech Innovate - Contact Us</title>
