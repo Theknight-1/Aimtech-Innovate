@@ -63,7 +63,7 @@ export default function CaseLanding({ casedata }) {
           </div> */}
         {/* </div> */}
 
-        <div className="grid  p-2  sm:grid-cols-2 lg:grid-cols-4 space-y-12 sm:space-y-6 lg:space-y-0 ">
+        <div className="grid  p-2  sm:grid-cols-2 lg:grid-cols-4 space-y-12 sm:space-y-6 lg:space-y-0 text-center">
           <div className="flex flex-col items-center justify-center rounded-md  shadow-sm ">
             <div className=" flex items-center">
               <h3 className="text-6xl font-bold">{cdata.achievements[0].h1}</h3>

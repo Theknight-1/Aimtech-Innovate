@@ -13,10 +13,10 @@ export default function page() {
       "We launched a successful Facebook ads campaign for an e-commerce store, resulting in a significant increase in sales and a positive return on investment.",
     keywords: ["Finance","E-Commerce", "Digital Marketing", "Facebook Advertising", "Sales Campaign", "PPC"],
     achievements: [
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
-      { h1: "", h2: "", h3: "" },
+      { h1: "3X", h2: "Return on Ad Spend (ROAS)", h3: "Increase in Return on Ad Spend " },
+      { h1: "10X ", h2: "Increase in Conversion Rate", h3: "10X using targeted Facebook ads." },
+      { h1: "15% ", h2: "Growth in Average Order Value (AOV)", h3: "Witnessed a 15% increase in AOV with Ads" },
+      { h1: "2% ", h2: "Click-Through Rate (CTR)", h3: "Facebook ads lead to increased traffic and sales." },
     ],
     goal: {
       title: "",
