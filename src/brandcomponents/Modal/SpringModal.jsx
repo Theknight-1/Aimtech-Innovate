@@ -85,7 +85,10 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
     // Fetch country data from the REST Countries API
     const fetchCountries = async () => {
       try {
+        console.log("Fetching countries...");
         const response = await axios.get("https://restcountries.com/v3.1/all");
+        console.log("Countries fetched successfully:", response.data);
+
         const sortedCountries = response.data.sort((a, b) => {
           const nameA = a.name.common.toUpperCase();
           const nameB = b.name.common.toUpperCase();
@@ -105,7 +108,6 @@ const ExampleWrapper = ({ isOpen, setIsOpen, selectedOption }) => {
 
     fetchCountries();
   }, []);
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
