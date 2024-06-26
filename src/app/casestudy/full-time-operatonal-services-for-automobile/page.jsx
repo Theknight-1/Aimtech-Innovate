@@ -22,7 +22,11 @@ export default function page() {
     achievements: [
       { h1: "4X", h2: "Serviced Vehicles", h3: "Increased by 4 times" },
       { h1: "12%", h2: "Repair Time", h3: "Reduced by 12%" },
-      { h1: "95%", h2: "Customer Satisfaction", h3: "Achieved 95% satisfaction rate" },
+      {
+        h1: "95%",
+        h2: "Customer Satisfaction",
+        h3: "Achieved 95% satisfaction rate",
+      },
       { h1: "6%", h2: "Preventive Maintenance", h3: "Increased by 6%" },
     ],
     goal: {
@@ -40,6 +44,7 @@ export default function page() {
 
   return (
     <>
+      <title>Full Time Operational Services for Automobile</title>
       <NextSeo
         title="Full Time Operational Services for Automobile"
         description="We help streamline operations and boost customer satisfaction to grow auto repair shops with powerful operational software services."

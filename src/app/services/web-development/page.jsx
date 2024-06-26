@@ -1,6 +1,5 @@
-
-'use client'
-import { NextSeo } from 'next-seo';
+"use client";
+import { NextSeo } from "next-seo";
 import React from "react";
 
 //components
@@ -133,21 +132,22 @@ export default function page() {
       "The successful implementation of the AI-enabled CRM highlighted the importance of leveraging technology to streamline processes, gain valuable insights, and enhance customer interactions in the fintech industry. The project emphasised the significance of integrating AI seamlessly with existing systems and focusing on user-friendly design for efficient CRM operations.",
     img: "/service/web-featured.svg",
   };
- 
 
   return (
     <>
-     <NextSeo
+      <title>Website Design & Development Services in Canada </title>
+      <NextSeo
         title="Website Design & Development Services in Canada "
         description="We provide website design services to create unique, beautiful and functional websites that are easy to navigate and increase user interaction"
         additionalMetaTags={[
           {
-            name: 'keywords',
-            content: 'WordPress,Shopify,WooCommerce,Custom Code (Almost any Tech Stack)',
+            name: "keywords",
+            content:
+              "WordPress,Shopify,WooCommerce,Custom Code (Almost any Tech Stack)",
           },
           {
-            name: 'author',
-            content: 'Aimtech Innovate',
+            name: "author",
+            content: "Aimtech Innovate",
           },
         ]}
       />

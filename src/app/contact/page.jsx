@@ -15,7 +15,7 @@ export default function Contact() {
   }, []);
   return (
     <>
-    <title>Aimtech Innovate - Contact Us</title>
+    <title>Contact Us Today | Aimtech Innovate</title>
     <NextSeo
         title="Contact Us Today | Aimtech Innovate"
         description="We offer extensive digital marketing solutions to help you boost your brand online. Contact us today to learn more about our services."

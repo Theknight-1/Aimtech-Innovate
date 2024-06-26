@@ -1,8 +1,8 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 //components
-import Navbar from "@/brandcomponents/global/Navbar"
+import Navbar from "@/brandcomponents/global/Navbar";
 import Brandservice from "@/brandcomponents/services/service";
 import FCStudy from "@/brandcomponents/services/FCStudy";
 import Pland from "@/brandcomponents/practice/landing";
@@ -10,7 +10,7 @@ import Footer from "@/brandcomponents/global/footer";
 import CaseStudies from "@/brandcomponents/landing/casestudy";
 import Testimonial from "@/brandcomponents/landing/testimonial";
 import Hcta from "@/brandcomponents/landing/cta";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 
 export default function page() {
   const dataOBJ = {
@@ -18,63 +18,67 @@ export default function page() {
     tagLine: "Drive Qualified Leads and Sales with Our PPC Management Services",
     desciption:
       "Attract your ideal customers through highly targeted, ROI-driven pay-per-click advertising campaigns. Our PPC specialists use advanced strategies and continual optimization to ensure your ads are seen by the right audiences at the perfect moment when they're ready to buy.",
-    benifits: ["Google & Microsoft Ads", "Social PPC (Facebook, Instagram, etc.)", "YouTube & Video Ads", "Amazon PPC"],
+    benifits: [
+      "Google & Microsoft Ads",
+      "Social PPC (Facebook, Instagram, etc.)",
+      "YouTube & Video Ads",
+      "Amazon PPC",
+    ],
     link: "/contact",
-    image:"/service/ppc-hero.svg",
+    image: "/service/ppc-hero.svg",
 
-    second : {
-        title : "Get More Leads and Sales with Optimized PPC Campaigns",
-        points : [
-            "Your ads aren't showing up in the top positions on search engines, so you're missing out on valuable clicks.",
-            "Your ad spend is eating up your marketing budget with little return on investment (ROI).",
-            "You're getting clicks, but they aren't converting into leads or sales.",
-            "You're overspending on paid ads with no measurable return.",
-            "Managing your campaigns is becoming too complex and time-consuming",
-            "You're unsure which platforms and ad types are most effective",
-           
-        ],
-        short : [
-          "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
-          "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
-          "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
-        ],
-        image : "/png/ppc-marketing.png",
-        description : "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days. Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring."
+    second: {
+      title: "Get More Leads and Sales with Optimized PPC Campaigns",
+      points: [
+        "Your ads aren't showing up in the top positions on search engines, so you're missing out on valuable clicks.",
+        "Your ad spend is eating up your marketing budget with little return on investment (ROI).",
+        "You're getting clicks, but they aren't converting into leads or sales.",
+        "You're overspending on paid ads with no measurable return.",
+        "Managing your campaigns is becoming too complex and time-consuming",
+        "You're unsure which platforms and ad types are most effective",
+      ],
+      short: [
+        "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.",
+        "Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days.",
+        "Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring.",
+      ],
+      image: "/png/ppc-marketing.png",
+      description:
+        "Without optimized paid advertising campaigns, you could be wasting thousands on ineffective ads that don't reach your target buyers – and that bleeds your marketing budget dry with little results to show for it.Our PPC experts optimize every aspect of your campaigns - audience targeting, ad copy, landing pages, bidding strategies and more. Which attracts more qualified clicks from purchase-ready buyers, increases conversions, and maximizes your ROI. On average, our clients see a 200%+ increase in lead volume within 90 days. Our company’s PPC advertisement services will make these steps easier for you. We offer bespoke PPC marketing and management services to help you grow your business. Our PPC advertising experts will handle everything from planning and optimizing to monitoring.",
     },
-    third : {
-        title : "PPC Management Tailored to Your Business Goals",
-        points : [
-            "Compelling Ad Copy & Creative",
-            "Landing Page Optimization",
-            "Google Analytics & Conversion Tracking",
-            "Bid Management & Budgeting",
-            "Retargeting & Remarketing",
-            "Advanced PPC Reporting & Analysis",
-            "Continuous Split Testing",
-            "Campaign Monitoring & Adjustments",
-            "Google Ads Management",
-            "Microsoft Advertising (Bing Ads)",
-            "Facebook & Instagram Ads",
-            "LinkedIn Ads",
-            "Amazon Advertising",
-            "Dynamic Search Ads",
-            "Conversion Rate Optimization (CRO)",
-            "And many more",
-          
-        ],
-        image : "/png/ppc-ads.png",
-        short : [
-          "At Aimtech Innovate, our pay-per-click management services are fully customized based on your specific goals, industry, products/services, and audience. We take a data-driven approach using advanced PPC software, AI bidding technologies, and ongoing A/B testing to continually improve performance.",
-          "We have skilled expertise in Google Ads, Facebook Ads, Instagram Ads, YouTube Ads, Pinterest Ads, Linkedin Ads and Native Ads. ",
-          "We always provide a custom PPC Management plan for our clients but in general, it consists of:"
-        ],
-        descriptions : "At Aimtech Innovate, our pay-per-click management services are fully customized based on your specific goals, industry, products/services, and audience. We take a data-driven approach using advanced PPC software, AI bidding technologies, and ongoing A/B testing to continually improve performance"
+    third: {
+      title: "PPC Management Tailored to Your Business Goals",
+      points: [
+        "Compelling Ad Copy & Creative",
+        "Landing Page Optimization",
+        "Google Analytics & Conversion Tracking",
+        "Bid Management & Budgeting",
+        "Retargeting & Remarketing",
+        "Advanced PPC Reporting & Analysis",
+        "Continuous Split Testing",
+        "Campaign Monitoring & Adjustments",
+        "Google Ads Management",
+        "Microsoft Advertising (Bing Ads)",
+        "Facebook & Instagram Ads",
+        "LinkedIn Ads",
+        "Amazon Advertising",
+        "Dynamic Search Ads",
+        "Conversion Rate Optimization (CRO)",
+        "And many more",
+      ],
+      image: "/png/ppc-ads.png",
+      short: [
+        "At Aimtech Innovate, our pay-per-click management services are fully customized based on your specific goals, industry, products/services, and audience. We take a data-driven approach using advanced PPC software, AI bidding technologies, and ongoing A/B testing to continually improve performance.",
+        "We have skilled expertise in Google Ads, Facebook Ads, Instagram Ads, YouTube Ads, Pinterest Ads, Linkedin Ads and Native Ads. ",
+        "We always provide a custom PPC Management plan for our clients but in general, it consists of:",
+      ],
+      descriptions:
+        "At Aimtech Innovate, our pay-per-click management services are fully customized based on your specific goals, industry, products/services, and audience. We take a data-driven approach using advanced PPC software, AI bidding technologies, and ongoing A/B testing to continually improve performance",
     },
-    fourth:{
-      ctatext : "LET’S DISCUSS YOUR PPC STRATEGY",
-      ctalink : "/contact",
-    }
-
+    fourth: {
+      ctatext: "LET’S DISCUSS YOUR PPC STRATEGY",
+      ctalink: "/contact",
+    },
   };
   const accordionData = [
     {
@@ -89,52 +93,62 @@ export default function page() {
     },
     {
       title: "How much should I spend on PPC ads?",
-      content: "Depending on the requirements of your project. When establishing your campaign's budget, you must decide on your target audience and objectives. Generally, keywords and their cost per click (CPC) define the budget.",
+      content:
+        "Depending on the requirements of your project. When establishing your campaign's budget, you must decide on your target audience and objectives. Generally, keywords and their cost per click (CPC) define the budget.",
     },
     {
       title: "Are you a Google certified PPC agency?",
-      content: "Our team of certified Google Ads experts has years of experience managing thousands of budgets for clients in the United States and Canada. The leading PPC agency in Canada, AimTech Innovate, is committed to assisting clients in reaching their goals by offering audience-targeted and conversion-focused PPC services.",
+      content:
+        "Our team of certified Google Ads experts has years of experience managing thousands of budgets for clients in the United States and Canada. The leading PPC agency in Canada, AimTech Innovate, is committed to assisting clients in reaching their goals by offering audience-targeted and conversion-focused PPC services.",
     },
     {
       title: "How long until PPC ads start generating leads?",
-      content: "With professional PPC management, you can start generating leads very quickly - often within a week or two. However, it takes 1-3 months to fully optimize campaigns based on performance data to hit peak lead volume and ROI. From there, campaigns continually need adjusting to maintain results.",
+      content:
+        "With professional PPC management, you can start generating leads very quickly - often within a week or two. However, it takes 1-3 months to fully optimize campaigns based on performance data to hit peak lead volume and ROI. From there, campaigns continually need adjusting to maintain results.",
     },
     {
       title: "How much should I spend on PPC ads?",
-      content: "Depending on the requirements of your project. When establishing your campaign's budget, you must decide on your target audience and objectives. Generally, keywords and their cost per click (CPC) define the budget.",
+      content:
+        "Depending on the requirements of your project. When establishing your campaign's budget, you must decide on your target audience and objectives. Generally, keywords and their cost per click (CPC) define the budget.",
     },
-    
   ];
 
   const featuredcase = {
     title: "Boosting E-Commerce Sales with Targeted Facebook Ads",
-    objective:"The primary objective was to increase online sales for an e-commerce store specializing in home decor products by reaching a targeted audience interested in home decor and interior design. The goal was also to maximize return on investment (ROI) from Facebook advertising and gather valuable data for future campaign optimization.",
-    challenge : "The main challenge was to effectively target the right audience amidst the competitive e-commerce landscape and ensure a positive ROI from the Facebook ads campaign.",
-    Process:"We began by conducting thorough market research to identify the target audience's preferences and behaviors. Utilizing this data, we crafted compelling ad creatives and messaging tailored to resonate with the audience's interests. Through continuous monitoring and optimization, we refined the targeting parameters and ad content to maximize performance.",
-    Results: "The Facebook ads campaign yielded a significant increase in online sales for the e-commerce store, surpassing the client's expectations. The ROI from the campaign was positive, demonstrating the effectiveness of targeted advertising in driving sales and revenue growth.",
-    learnings:"This case study highlights the power of targeted Facebook ads in driving e-commerce sales when tailored to the specific interests of the audience. By leveraging data-driven insights and continuous optimization, businesses can achieve tangible results and maximize their advertising ROI in the competitive digital landscape.",
+    objective:
+      "The primary objective was to increase online sales for an e-commerce store specializing in home decor products by reaching a targeted audience interested in home decor and interior design. The goal was also to maximize return on investment (ROI) from Facebook advertising and gather valuable data for future campaign optimization.",
+    challenge:
+      "The main challenge was to effectively target the right audience amidst the competitive e-commerce landscape and ensure a positive ROI from the Facebook ads campaign.",
+    Process:
+      "We began by conducting thorough market research to identify the target audience's preferences and behaviors. Utilizing this data, we crafted compelling ad creatives and messaging tailored to resonate with the audience's interests. Through continuous monitoring and optimization, we refined the targeting parameters and ad content to maximize performance.",
+    Results:
+      "The Facebook ads campaign yielded a significant increase in online sales for the e-commerce store, surpassing the client's expectations. The ROI from the campaign was positive, demonstrating the effectiveness of targeted advertising in driving sales and revenue growth.",
+    learnings:
+      "This case study highlights the power of targeted Facebook ads in driving e-commerce sales when tailored to the specific interests of the audience. By leveraging data-driven insights and continuous optimization, businesses can achieve tangible results and maximize their advertising ROI in the competitive digital landscape.",
     img: "/png/digital-agency.png",
-  }
-   
+  };
+
   return (
     <>
-     <NextSeo
+      <title>Creative Digital Performance Marketing Services in Canada</title>
+      <NextSeo
         title="Creative Digital Performance Marketing Services in Canada"
         description="Maximize your online ad ROI with Google Ads Marketing Management Services in Canada. Our agency offers customized strategies that deliver results."
         additionalMetaTags={[
           {
-            name: 'keywords',
-            content: 'Google & Microsoft Ads,Social PPC (Facebook, Instagram, etc.),YouTube & Video Ads, Amazon PPC',
+            name: "keywords",
+            content:
+              "Pay Per Click Advertisement,Google & Microsoft Ads,Social PPC (Facebook, Instagram, etc.),YouTube & Video Ads, Amazon PPC",
           },
           {
-            name: 'author',
-            content: 'Aimtech Innovate',
+            name: "author",
+            content: "Aimtech Innovate",
           },
         ]}
       />
-    <Navbar />
-    <Brandservice data={dataOBJ} />
-    {/* <section className="w-full h-full px-44">
+      <Navbar />
+      <Brandservice data={dataOBJ} />
+      {/* <section className="w-full h-full px-44">
       {params?.slug === "seo-services" ? (
         <div className="text-4xl text-center text-white">
           <h1>{file?.description}</h1>
@@ -143,12 +157,16 @@ export default function page() {
         <div className="text-4xl text-center text-white">{params.slug}</div>
       )}
     </section> */}
-    <FCStudy featured={featuredcase} />
-    <CaseStudies />
-    <Testimonial />
-    <Pland faqdata={accordionData} />
-    <Hcta title='Get a Free PPC Performance Audit'  d1="Book your free PPC consultation today." d2='Learn how we can boost your ROI.' />
-    <Footer />
-  </>
-  )
+      <FCStudy featured={featuredcase} />
+      <CaseStudies />
+      <Testimonial />
+      <Pland faqdata={accordionData} />
+      <Hcta
+        title="Get a Free PPC Performance Audit"
+        d1="Book your free PPC consultation today."
+        d2="Learn how we can boost your ROI."
+      />
+      <Footer />
+    </>
+  );
 }

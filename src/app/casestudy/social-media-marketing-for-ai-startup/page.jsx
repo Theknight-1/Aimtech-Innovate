@@ -19,10 +19,26 @@ export default function page() {
       "Startup Consulting",
     ],
     achievements: [
-      { h1: "25%", h2: "Engagement Rate (Social Media)", h3: "Boosted social media engagement by 28%" },
-      { h1: "15%", h2: "Conversion Rate (AI Solution)", h3: "Increased conversions by 8x" },
-      { h1: "34%", h2: "Click-Through Rate (Ad Campaign)", h3: "Increase in attributed clicks" },
-      { h1: "5%", h2: "Unsubscribe Rate (Newsletter)", h3: "Decrease in newsletter unsubscribes" },
+      {
+        h1: "25%",
+        h2: "Engagement Rate (Social Media)",
+        h3: "Boosted social media engagement by 28%",
+      },
+      {
+        h1: "15%",
+        h2: "Conversion Rate (AI Solution)",
+        h3: "Increased conversions by 8x",
+      },
+      {
+        h1: "34%",
+        h2: "Click-Through Rate (Ad Campaign)",
+        h3: "Increase in attributed clicks",
+      },
+      {
+        h1: "5%",
+        h2: "Unsubscribe Rate (Newsletter)",
+        h3: "Decrease in newsletter unsubscribes",
+      },
     ],
     goal: {
       title: "",
@@ -40,6 +56,7 @@ export default function page() {
 
   return (
     <>
+      <title>Social Media Marketing for AI Startup | Aimtech Innovate</title>
       <NextSeo
         title="Social Media Marketing for AI Startup | Aimtech Innovate"
         description="Learn how we help our client with social media marketing that helps them achieve their growth target to reach the right audience with engaging content."

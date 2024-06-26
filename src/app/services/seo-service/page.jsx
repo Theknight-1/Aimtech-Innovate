@@ -129,6 +129,7 @@ export default function page() {
 
   return (
     <>
+      <title>Best SEO Agency in Canada | Aimtech Innovate</title>
       <NextSeo
         title="Best SEO Agency in Canada | Aimtech Innovate"
         description="Choose Canada's Best SEO agency to rank top on Google SERPs. Our award-winning SEO Services unleash powerful marketing strategies for your business's success."
@@ -136,7 +137,7 @@ export default function page() {
           {
             name: "keywords",
             content:
-              "SEO, On page SEO , Off page SEO , google tag manager,google analytics",
+              "Search Engine Optimization, SEO, On page SEO , Off page SEO , google tag manager,google analytics",
           },
           {
             name: "author",

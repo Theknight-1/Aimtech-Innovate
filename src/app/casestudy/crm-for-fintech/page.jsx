@@ -11,12 +11,28 @@ export default function page() {
     title: "CRM For Fintech",
     description:
       "We have created an AI-enabled CRM for a fintech company, enabling smart decisions based on accurate and real-time data. The CRM provides deep insights into sales metrics, revenue forecasts, team performance analysis, and custom dashboards.",
-    keywords: ["Finance", "CRM", "AI", "Data Analytics","Fintech"],
+    keywords: ["Finance", "CRM", "AI", "Data Analytics", "Fintech"],
     achievements: [
-      { h1: "28%", h2: "Conversion Rate (Payment Gateway)", h3: "Boosted conversion rate by 28%" },
-      { h1: "34%", h2: "Transaction Volume (Digital Wallet)", h3: "Increased transaction volume by 34%" },
-      { h1: "15%", h2: "Customer Retention (Mobile Banking)", h3: "Improved customer retention by 15%" },
-      { h1: "0%", h2: "Fraud Detection (Security)", h3: "Enhanced fraud detection by 0%" },
+      {
+        h1: "28%",
+        h2: "Conversion Rate (Payment Gateway)",
+        h3: "Boosted conversion rate by 28%",
+      },
+      {
+        h1: "34%",
+        h2: "Transaction Volume (Digital Wallet)",
+        h3: "Increased transaction volume by 34%",
+      },
+      {
+        h1: "15%",
+        h2: "Customer Retention (Mobile Banking)",
+        h3: "Improved customer retention by 15%",
+      },
+      {
+        h1: "0%",
+        h2: "Fraud Detection (Security)",
+        h3: "Enhanced fraud detection by 0%",
+      },
     ],
     goal: {
       title: "",
@@ -34,6 +50,7 @@ export default function page() {
 
   return (
     <>
+      <title>CRM for Fintech Company | Aimtech Innovate</title>
       <NextSeo
         title="CRM for Fintech Company | Aimtech Innovate"
         description="Provided custom CRM software that builds customer relationships and drives business success."

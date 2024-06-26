@@ -17,7 +17,7 @@ import { NextSeo } from 'next-seo';
 
 
 export default function Home() {
-  
+
 
   const accordionData = [
     {
@@ -46,11 +46,11 @@ export default function Home() {
       title: "What questions should I ask a digital marketing agency before I hire them?",
       content: "Before hiring a digital marketing agency, ensure alignment by asking key questions: Understand your needs and their process, inquire about their experience with similar companies, clarify team composition for consistent communication, discuss cost, billing, and potential expenses, question their success measurement and analytics provision, understand their service offerings and integration with your plan, and discuss reporting frequency, key metrics, and progress tracking tools. These questions help assess expertise, approach, experience, and fit with your goals, ensuring a successful partnership that drives your business forward.",
     },
-    
+
   ];
   return (
     <>
-      <title> Digital Marketing Agency Based in Canada, | Aim Tech Innovate</title>
+      <title> #1 Digital Marketing Agency In Canada - Get Up To 50% Off</title>
       <NextSeo
         title="#1 Digital Marketing Agency In Canada - Get Up To 50% Off"
         description="Looking for digital marketing services in Canada? Our agency offers comprehensive digital marketing solutions to help your business succeed online!"

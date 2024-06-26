@@ -51,6 +51,7 @@ export default function page() {
 
   return (
     <>
+      <title>Web Design For High School | Aimtech Innovate</title>
       <NextSeo
         title="Web Design For High School | Aimtech Innovate"
         description="Helped our client to get new customers & skyrocket sales! We craft stunning, user-friendly websites designed to grow their business."

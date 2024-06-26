@@ -41,7 +41,7 @@ export default function About() {
   ];
   return (
     <>
-    <title> Helping Business to grow with digitaly | Aim Tech Innovate </title>
+    <title> About Us | Aimtech Innovate </title>
       <NextSeo
         title="About Us | Aimtech Innovate "
         description="Looking for a digital marketing agency that delivers? Aimtech Innovate has the tools your company needs to thrive. Get in touch to get started now!"
